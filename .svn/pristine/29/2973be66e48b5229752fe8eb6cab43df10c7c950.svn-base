@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.TbPlateClassMapper">
+    
+    <resultMap type="TbPlateClass" id="TbPlateClassResult">
+        <result property="id"    column="id"    />
+        <result property="name"    column="name"    />
+        <result property="code"    column="code"    />
+        <result property="parentId"    column="parent_id"    />
+    </resultMap>
+
+    <sql id="selectTbPlateClassVo">
+        select id, name, code, parent_id from tb_plate_class
+    </sql>
+
+    <select id="selectTbPlateClassList" parameterType="TbPlateClass" resultMap="TbPlateClassResult">
+        <include refid="selectTbPlateClassVo"/>
+        <where>  
+            <if test="name != null  and name != ''"> and name like concat('%', #{name}, '%')</if>
+            <if test="code != null  and code != ''"> and code = #{code}</if>
+            <if test="parentId != null "> and parent_id = #{parentId}</if>
+        </where>
+    </select>
+    
+    <select id="selectTbPlateClassById" parameterType="Long" resultMap="TbPlateClassResult">
+        <include refid="selectTbPlateClassVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertTbPlateClass" parameterType="TbPlateClass" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_plate_class
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="name != null">name,</if>
+            <if test="code != null">code,</if>
+            <if test="parentId != null">parent_id,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="name != null">#{name},</if>
+            <if test="code != null">#{code},</if>
+            <if test="parentId != null">#{parentId},</if>
+         </trim>
+    </insert>
+
+    <update id="updateTbPlateClass" parameterType="TbPlateClass">
+        update tb_plate_class
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="name != null">name = #{name},</if>
+            <if test="code != null">code = #{code},</if>
+            <if test="parentId != null">parent_id = #{parentId},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteTbPlateClassById" parameterType="Long">
+        delete from tb_plate_class where id = #{id}
+    </delete>
+
+    <delete id="deleteTbPlateClassByIds" parameterType="String">
+        delete from tb_plate_class where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+</mapper>

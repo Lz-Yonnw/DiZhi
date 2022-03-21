@@ -1,0 +1,88 @@
+package com.ruoyi.netty.client.handler;
+
+
+
+import com.google.protobuf.ByteString;
+import com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase;
+import com.ruoyi.netty.client.NettyClient;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.SimpleChannelInboundHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class LogicClientHandler extends SimpleChannelInboundHandler<Object> {
+
+	private static final Logger log = LoggerFactory.getLogger(LogicClientHandler.class);
+
+	private final static String CLIENTID = "123456789";
+
+	public  static  int i=1;
+
+	// 连接成功后，向server发送消息  
+	@Override  
+	public void channelActive(ChannelHandlerContext ctx) throws Exception {
+		MessageBase.Builder authMsg = MessageBase.newBuilder();
+		authMsg.setClientId(ctx.channel().id().toString());
+//		byte[] imageFromNetByUrl = getImageFromNetByUrl("https://app-1255978856.cos.ap-shanghai.myqcloud.com/upload/2021/10/21/588cf9fd4dc449128179a2ed1c1ebf76.png");
+
+//		authMsg.setType(MessageBase.Type.LOGIN_REQ);
+//		authMsg.setLoginOrRegisterUpdateUserInfoReq(MessageBase.LoginOrRegisterUpdateUserInfoReq.newBuilder().setPassword("8888").setPhoneNumber("8888"));
+		authMsg.setType(MessageBase.Type.LOGIN_REQ);
+		authMsg.setLoginOrRegisterUpdateUserInfoReq(MessageBase.LoginOrRegisterUpdateUserInfoReq.newBuilder().setPhoneNumber("15172864264").setCode("1111"));
+//		authMsg.setType(MessageBase.Type.UPDATE_USER_REQ);
+//		authMsg.setUpdateUserReq(MessageBase.UpdateUserReq.newBuilder().setId(1).setNickname("zzz"));
+
+		byte dataBytes[] = authMsg.build().toByteArray();
+		ctx.writeAndFlush(dataBytes);
+	}
+
+
+	public static byte[] getImageFromNetByUrl(String strUrl){
+		try {
+			URL url = new URL(strUrl);
+			HttpURLConnection conn = (HttpURLConnection)url.openConnection();
+			conn.setRequestMethod("GET");
+			conn.setConnectTimeout(5 * 1000);
+			InputStream inStream = conn.getInputStream();//通过输入流获取图片数据
+			byte[] btImg = readInputStream(inStream);//得到图片的二进制数据
+			return btImg;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public static byte[] readInputStream(InputStream inStream) throws Exception{
+		ByteArrayOutputStream outStream = new ByteArrayOutputStream();
+		byte[] buffer = new byte[1024];
+		int len = 0;
+		while( (len=inStream.read(buffer)) != -1 ){
+			outStream.write(buffer, 0, len);
+		}
+		inStream.close();
+		return outStream.toByteArray();
+	}
+
+	@Override
+	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+		log.debug("连接断开 ");
+	}
+
+
+	@Override
+	protected void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception {
+		byte[] bytes = (byte[]) msg;
+
+        MessageBase msgBase = MessageBase.parseFrom(bytes);
+		if(msgBase.getType().equals(MessageBase.Type.LOGIN_RESP)){
+			log.info("登录返回==={}",msgBase.getLoginResp().toString());
+		}else if(msgBase.getType().equals(MessageBase.Type.UPDATE_USER_RESP)){
+			log.info("更新用户信息返回==={}",msgBase.getUpdateUserResp().toString());
+		}
+	}
+}

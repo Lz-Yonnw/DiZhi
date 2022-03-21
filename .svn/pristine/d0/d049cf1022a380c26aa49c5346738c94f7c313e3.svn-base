@@ -1,0 +1,1702 @@
+<template xmlns:v-bind="http://www.w3.org/1999/xhtml">
+  <div class="app-container">
+    <el-row :gutter="20">
+      <!--部门数据-->
+      <el-col :span="4" :xs="24">
+        <div class="head-container">
+          <el-input v-model="deptName" placeholder="请输入名称" clearable size="small" prefix-icon="el-icon-search" style="margin-bottom: 20px" />
+        </div>
+        <div class="head-container">
+          <el-tree :data="deptOptions" :props="defaultProps" :expand-on-click-node="true" :filter-node-method="filterNode" ref="tree" default-expand-all @node-click="handleNodeClick" />
+        </div>
+      </el-col>
+      <!--用户数据-->
+<!--        <div class="swiper-wrapper">-->
+<!--          <div class="swiper-slide">Slide 1</div>-->
+<!--          <div class="swiper-slide">Slide 2</div>-->
+<!--          <div class="swiper-slide">Slide 3</div>-->
+<!--          <div class="swiper-slide">Slide 5</div>-->
+<!--          <div class="swiper-slide">Slide 6</div>-->
+<!--        </div>-->
+      <el-col :span="19" :xs="24">
+            <el-row :span="1" style="">
+              <el-collapse class="el-col el-col-24 el-col-xs-24"  style="border: none!important; "  accordion>
+                <el-collapse-item  style="margin-right: 0px!important;" >
+                  <template slot="title" style="position:relative" >
+                    <p style="font-size: 16px!important;font-weight:bold!important;" >部位</p>
+                  </template>
+                  <a @click="openFourDialog" style="position:absolute;left: 210px;top: 13px;font-size: 18px;color: #1ab394"><i class="el-icon-circle-plus-outline"></i></a>
+                  <a @click="deleteComponent" style="position:absolute;left: 240px;top: 13px;font-size: 18px;color: red"><i class="el-icon-document-remove"></i></a>
+                  <!--swiper-->
+                  <div  class="swiper-container" >
+                    <div class="swiper-wrapper" >
+                      <div  @click="parts(data.id,index)" v-bind:class="{activeAll:index==isActiveAll}" class="swiper-slide" v-for="(data,index) in componentList" style="width:221px; display: inline-block;"   >
+                        <el-card   class="box-card" style="border: none;-webkit-box-shadow:none!important;padding-right: 0px!important;padding-left: 0px!important;">
+                        <div slot="header" style="font-weight: bold;font-size: 13px;background:gray;width: 79%;margin: 0 auto;color: white;border-bottom:none!important;" ><span>{{data.name}}</span></div>
+                            <img  :src="getBaseUrl()+data.picture" width="150px" height="150px">
+                            <div class="cell" style="text-align: left;margin-left: 20px;font-size: 16px;color: #7DBEFF">面料用量:{{data.materialDosage}}</div>
+                             <div class="cell" style="text-align: left;margin-left: 20px;font-size: 16px;color: #7DBEFF">基础价:{{data.basicPrice}}</div>
+                        </el-card>
+                      </div>
+
+
+
+                  </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- 如果需要导航按钮 -->
+<!--                    <div class="swiper-button-prev"></div>-->
+<!--                    <div class="swiper-button-next"></div>-->
+
+
+                  </div>
+                </el-collapse-item>
+
+              </el-collapse>
+            </el-row>
+
+        <!-- 外部图案 -->
+        <el-row  style="overflow: hidden;margin-top: 20px;" :span="24" :xs="24">
+          <div class="el-col el-col-24 el-col-xs-24">
+          <el-collapse v-model="outPatternName" class="el-col el-col-24 el-col-xs-24" style="border: none!important;"  accordion>
+            <el-collapse-item  style="margin-right: 0px!important;" name="outPatternName">
+              <template slot="title" >
+                <p style="font-size: 16px!important;font-weight:bold!important; ">图案</p>
+              </template>
+              <el-row style="overflow: hidden;display: inline-block;margin-left: 39px" >
+                <div style="border: none!important;" class="el-col el-col-3 el-col-xs-3" accordion>
+                  <div class="el-col el-col-3 el-col-xs-3 el-collapse-item__header" :span="1" style="border: none;">
+                    <i class="el-icon-circle-plus-outline"  @click="watChPicture(0,1)" style="border: none;margin-right: 25px;font-size: 20px"></i>
+                  </div>
+                </div>
+              </el-row>
+              <vue-scroll :span="3" class="el-col el-col-3 el-col-xs-3"  style="background: #5a5e66;color: white;height:207px;">
+                <p style="cursor:pointer;text-indent:15px"  v-bind:class="{active:index==isActive}" @click="checkItem(index,data.id,1,0)"  v-for="(data,index) in outPattern" >{{data.name}}</p>
+              </vue-scroll>
+              <el-row :span="1"  class="el-col el-col-21 el-col-xs-21" style="overflow: hidden">
+              <div  class="swiper-container_four" style="min-height: 150px;" >
+                <div class="swiper-wrapper" >
+                  <div  class="swiper-slide"   v-for="(data,i) in outPatternPicture" style="min-height: 150px;"  >
+
+                    <div >
+                      <img :src="getBaseUrl()+data.picture" width="150px" height="150px">
+                    </div>
+                  </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+
+                <!-- 如果需要导航按钮 -->
+<!--                <div v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-prev" ></div>-->
+<!--                <div  v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-next"></div>-->
+              </div>
+              </el-row>
+            </el-collapse-item>
+          </el-collapse>
+          </div>
+        </el-row>
+        <!-- 不可填充配饰 -->
+        <el-row  style="overflow: hidden;margin-top: 20px;" :span="24" :xs="24">
+          <div class="el-col el-col-24 el-col-xs-24">
+            <el-collapse v-model="outUnfilledName" class="el-col el-col-24 el-col-xs-24" style="border: none!important;"  accordion>
+              <el-collapse-item  style="margin-right: 0px!important;" name="outUnfilledName">
+                <template slot="title" >
+                  <p style="font-size: 16px!important;font-weight:bold!important; ">不可填充配饰</p>
+                </template>
+                <el-row style="overflow: hidden;display: inline-block;margin-left: 39px" >
+                  <div style="border: none!important;" class="el-col el-col-3 el-col-xs-3" accordion>
+                    <div class="el-col el-col-3 el-col-xs-3 el-collapse-item__header" :span="1" style="border: none;">
+                      <i class="el-icon-circle-plus-outline"  @click="watChPicture(0,2)" style="border: none;margin-right: 25px;font-size: 20px"></i>
+                    </div>
+                  </div>
+                </el-row>
+                <vue-scroll :span="3" class="el-col el-col-3 el-col-xs-3"  style="background: #5a5e66;color: white;height:207px;">
+                  <p style="cursor:pointer;text-indent:15px"  v-bind:class="{active:index==isActiveOne}" @click="checkItem(index,data.id,2,0)"  v-for="(data,index) in outUnfilled" >{{data.name}}</p>
+                </vue-scroll>
+                <el-row :span="1"  class="el-col el-col-21 el-col-xs-21" style="overflow: hidden">
+                  <div  class="swiper-container_four" style="min-height: 150px;" >
+                    <div class="swiper-wrapper" >
+                      <div  class="swiper-slide"   v-for="(data,i) in outUnfilledPicture" style="min-height: 150px;"  >
+
+                        <div >
+                          <img :src="getBaseUrl()+data.picture" width="150px" height="150px">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- 如果需要导航按钮 -->
+                    <!--                <div v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-prev" ></div>-->
+                    <!--                <div  v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-next"></div>-->
+                  </div>
+                </el-row>
+              </el-collapse-item>
+            </el-collapse>
+          </div>
+        </el-row>
+
+        <!--表层面料-->
+<!--        <el-row  style="overflow: hidden;margin-top: 20px;" :span="24" :xs="24">-->
+<!--          <div class="el-col el-col-24 el-col-xs-24">-->
+<!--            <el-collapse v-model="outSurfaceFabricName" class="el-col el-col-24 el-col-xs-24" style="border: none!important;"  accordion>-->
+<!--              <el-collapse-item  style="margin-right: 0px!important;" name="outSurfaceFabricName">-->
+<!--                <template slot="title" >-->
+<!--                  <p style="font-size: 16px!important;font-weight:bold!important; ">表层面料</p>-->
+<!--                </template>-->
+<!--                <el-row style="overflow: hidden;display: inline-block;margin-left: 39px" >-->
+<!--                  <div style="border: none!important;" class="el-col el-col-3 el-col-xs-3" accordion>-->
+<!--                    <div class="el-col el-col-3 el-col-xs-3 el-collapse-item__header" :span="1" style="border: none;">-->
+<!--                      <i class="el-icon-circle-plus-outline"  @click="watChPicture(0,3)" style="border: none;margin-right: 25px;font-size: 20px"></i>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </el-row>-->
+<!--                <vue-scroll :span="3" class="el-col el-col-3 el-col-xs-3"  style="background: #5a5e66;color: white;height:207px;">-->
+<!--                  <p style="cursor:pointer;text-indent:15px"  v-bind:class="{active:index==isActiveTwo}" @click="checkItem(index,data.id,3,0)"  v-for="(data,index) in outSurfaceFabric" >{{data.name}}</p>-->
+<!--                </vue-scroll>-->
+<!--                <el-row :span="1"  class="el-col el-col-21 el-col-xs-21" style="overflow: hidden">-->
+<!--                  <div  class="swiper-container_four" style="min-height: 150px;" >-->
+<!--                    <div class="swiper-wrapper" >-->
+<!--                      <div  class="swiper-slide"   v-for="(data,i) in outSurfaceFabricPicture" style="min-height: 150px;"  >-->
+
+<!--                        <div >-->
+<!--                          <img :src="getBaseUrl()+data.picture" width="150px" height="150px">-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; 如果需要分页器 &ndash;&gt;-->
+<!--                    <div class="swiper-pagination"></div>-->
+
+<!--                    &lt;!&ndash; 如果需要导航按钮 &ndash;&gt;-->
+<!--                    &lt;!&ndash;                <div v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-prev" ></div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                <div  v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-next"></div>&ndash;&gt;-->
+<!--                  </div>-->
+<!--                </el-row>-->
+<!--              </el-collapse-item>-->
+<!--            </el-collapse>-->
+<!--          </div>-->
+<!--        </el-row>-->
+
+        <!--底层面料-->
+        <el-row  style="overflow: hidden;margin-top: 20px;" :span="24" :xs="24">
+          <div class="el-col el-col-24 el-col-xs-24">
+            <el-collapse v-model="outBottomFabricName" class="el-col el-col-24 el-col-xs-24" style="border: none!important;"  accordion>
+              <el-collapse-item  style="margin-right: 0px!important;" name="outBottomFabricName">
+                <template slot="title" >
+                  <p style="font-size: 16px!important;font-weight:bold!important; ">面料</p>
+                </template>
+                <el-row style="overflow: hidden;display: inline-block;margin-left: 39px" >
+                  <div style="border: none!important;" class="el-col el-col-3 el-col-xs-3" accordion>
+                    <div class="el-col el-col-3 el-col-xs-3 el-collapse-item__header" :span="1" style="border: none;">
+                      <i class="el-icon-circle-plus-outline"  @click="watChPicture(0,4)" style="border: none;margin-right: 25px;font-size: 20px"></i>
+                    </div>
+                  </div>
+                </el-row>
+                <vue-scroll :span="3" class="el-col el-col-3 el-col-xs-3"  style="background: #5a5e66;color: white;height:207px;">
+                  <p style="cursor:pointer;text-indent:15px"  v-bind:class="{active:index==isActiveThree}" @click="checkItem(index,data.id,4,0)"  v-for="(data,index) in outBottomFabric" >{{data.name}}</p>
+                </vue-scroll>
+                <el-row :span="1"  class="el-col el-col-21 el-col-xs-21" style="overflow: hidden">
+                  <div  class="swiper-container_four" style="min-height: 150px;" >
+                    <div class="swiper-wrapper" >
+                      <div  class="swiper-slide"   v-for="(data,i) in outBottomFabricPicture" style="min-height: 150px;"  >
+
+                        <div >
+                          <img :src="getBaseUrl()+data.picture" width="150px" height="150px">
+                        </div>
+                      </div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- 如果需要导航按钮 -->
+                    <!--                <div v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-prev" ></div>-->
+                    <!--                <div  v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-next"></div>-->
+                  </div>
+                </el-row>
+              </el-collapse-item>
+            </el-collapse>
+          </div>
+        </el-row>
+
+        <!--可填充配饰-->
+<!--        <el-row  style="overflow: hidden;margin-top: 20px;" :span="24" :xs="24">-->
+<!--          <div class="el-col el-col-24 el-col-xs-24">-->
+<!--            <el-collapse v-model="outFillAbleName" class="el-col el-col-24 el-col-xs-24" style="border: none!important;"  accordion>-->
+<!--              <el-collapse-item  style="margin-right: 0px!important;" name="outFillAbleName">-->
+<!--                <template slot="title" >-->
+<!--                  <p style="font-size: 16px!important;font-weight:bold!important; ">可填充配饰</p>-->
+<!--                </template>-->
+<!--                <el-row style="overflow: hidden;display: inline-block;margin-left: 39px" >-->
+<!--                  <div style="border: none!important;" class="el-col el-col-3 el-col-xs-3" accordion>-->
+<!--                    <div class="el-col el-col-3 el-col-xs-3 el-collapse-item__header" :span="1" style="border: none;">-->
+<!--                      <i class="el-icon-circle-plus-outline"  @click="watChPicture(0,5)" style="border: none;margin-right: 25px;font-size: 20px"></i>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </el-row>-->
+<!--                <vue-scroll :span="3" class="el-col el-col-3 el-col-xs-3"  style="background: #5a5e66;color: white;height:207px;">-->
+<!--                  <p style="cursor:pointer;text-indent:15px"  v-bind:class="{active:index==isActiveTour}" @click="checkItem(index,data.id,5,0)"  v-for="(data,index) in outFillAble" >{{data.name}}</p>-->
+<!--                </vue-scroll>-->
+<!--                <el-row :span="1"  class="el-col el-col-21 el-col-xs-21" style="overflow: hidden">-->
+<!--                  <div  class="swiper-container_four" style="min-height: 150px;" >-->
+<!--                    <div class="swiper-wrapper" >-->
+<!--                      <div  class="swiper-slide"   v-for="(data,i) in outFillAblePicture" style="min-height: 150px;"  >-->
+
+<!--                        <div >-->
+<!--                          <img :src="getBaseUrl()+data.picture" width="150px" height="150px">-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; 如果需要分页器 &ndash;&gt;-->
+<!--                    <div class="swiper-pagination"></div>-->
+
+<!--                    &lt;!&ndash; 如果需要导航按钮 &ndash;&gt;-->
+<!--                    &lt;!&ndash;                <div v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-prev" ></div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                <div  v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-next"></div>&ndash;&gt;-->
+<!--                  </div>-->
+<!--                </el-row>-->
+<!--              </el-collapse-item>-->
+<!--            </el-collapse>-->
+<!--          </div>-->
+<!--        </el-row>-->
+
+        <!--内部-->
+
+        <!--内部表层面料-->
+<!--        <el-row  style="overflow: hidden;margin-top: 20px;padding-left: 4.12%;padding-right: 4.12%" :span="24" :xs="24">-->
+
+<!--          <div class="el-col el-col-24 el-col-xs-24">-->
+<!--            <el-collapse v-model="innerSurfaceFabricName" class="el-col el-col-24 el-col-xs-24" style="border: none!important; "  accordion>-->
+<!--              <el-collapse-item  style="margin-right: 0px!important;" name="innerSurfaceFabricName">-->
+<!--                <template slot="title" >-->
+<!--                  <p style="font-size: 16px!important;font-weight:bold!important; ">表层面料</p>-->
+<!--                </template>-->
+<!--                <el-row style="overflow: hidden;display: inline-block;margin-left: 29px" >-->
+<!--                  <div style="border: none!important;" class="el-col el-col-3 el-col-xs-3" accordion>-->
+<!--                    <div class="el-col el-col-3 el-col-xs-3 el-collapse-item__header" :span="1" style="border: none;">-->
+<!--                      <i class="el-icon-circle-plus-outline"  @click="watChPicture(innerId,8)" style="border: none;margin-right: 25px;font-size: 20px"></i>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </el-row>-->
+<!--                <vue-scroll :span="3" class="el-col el-col-3 el-col-xs-3" style="background: #5a5e66;color: white;height:207px">-->
+<!--                  <p style="cursor:pointer;text-indent:15px"  v-bind:class="{active:index==isActiveSeven}" @click="checkItem(index,data.id,8,innerId)"  v-for="(data,index) in innerSurfaceFabric" >{{data.name}}</p>-->
+<!--                </vue-scroll>-->
+<!--                <el-row :span="1"  class="el-col el-col-21 el-col-xs-21" style="overflow: hidden">-->
+<!--                  <div  class="swiper-container_four" style="min-height: 150px;" >-->
+<!--                    <div class="swiper-wrapper" >-->
+<!--                      <div  class="swiper-slide"  v-for="(data,i) in innerSurfaceFabricPicture" style="min-height: 150px;width: 210.8px"  >-->
+
+<!--                        <div >-->
+<!--                          <img :src="getBaseUrl()+data.picture" width="150px" height="150px">-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; 如果需要分页器 &ndash;&gt;-->
+<!--                    <div class="swiper-pagination"></div>-->
+
+<!--                    &lt;!&ndash;                    &lt;!&ndash; 如果需要导航按钮 &ndash;&gt;&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <div v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-prev" ></div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <div  v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-next"></div>&ndash;&gt;-->
+<!--                  </div>-->
+<!--                </el-row>-->
+<!--              </el-collapse-item>-->
+<!--            </el-collapse>-->
+
+<!--          </div>-->
+
+
+
+<!--        </el-row>-->
+
+<!--        &lt;!&ndash;内部底层面料&ndash;&gt;-->
+<!--        <el-row  style="overflow: hidden;margin-top: 20px;padding-left: 4.12%;padding-right: 4.12%" :span="24" :xs="24">-->
+
+<!--          <div class="el-col el-col-24 el-col-xs-24">-->
+<!--            <el-collapse v-model="innerBottomFabricName" class="el-col el-col-24 el-col-xs-24" style="border: none!important; "  accordion>-->
+<!--              <el-collapse-item  style="margin-right: 0px!important;" name="innerBottomFabricName">-->
+<!--                <template slot="title" >-->
+<!--                  <p style="font-size: 16px!important;font-weight:bold!important; ">底层面料</p>-->
+<!--                </template>-->
+<!--                <el-row style="overflow: hidden;display: inline-block;margin-left: 29px" >-->
+<!--                  <div style="border: none!important;" class="el-col el-col-3 el-col-xs-3" accordion>-->
+<!--                    <div class="el-col el-col-3 el-col-xs-3 el-collapse-item__header" :span="1" style="border: none;">-->
+<!--                      <i class="el-icon-circle-plus-outline"  @click="watChPicture(innerId,9)" style="border: none;margin-right: 25px;font-size: 20px"></i>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </el-row>-->
+<!--                <vue-scroll :span="3" class="el-col el-col-3 el-col-xs-3" style="background: #5a5e66;color: white;height:207px">-->
+<!--                  <p style="cursor:pointer;text-indent:15px"  v-bind:class="{active:index==isActiveEight}" @click="checkItem(index,data.id,9,innerId)"  v-for="(data,index) in innerBottomFabric" >{{data.name}}</p>-->
+<!--                </vue-scroll>-->
+<!--                <el-row :span="1"  class="el-col el-col-21 el-col-xs-21" style="overflow: hidden">-->
+<!--                  <div  class="swiper-container_four" style="min-height: 150px;" >-->
+<!--                    <div class="swiper-wrapper" >-->
+<!--                      <div  class="swiper-slide"  v-for="(data,i) in innerBottomFabricPicture" style="min-height: 150px;width: 210.8px"  >-->
+
+<!--                        <div >-->
+<!--                          <img :src="getBaseUrl()+data.picture" width="150px" height="150px">-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; 如果需要分页器 &ndash;&gt;-->
+<!--                    <div class="swiper-pagination"></div>-->
+
+<!--                    &lt;!&ndash;                    &lt;!&ndash; 如果需要导航按钮 &ndash;&gt;&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <div v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-prev" ></div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <div  v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-next"></div>&ndash;&gt;-->
+<!--                  </div>-->
+<!--                </el-row>-->
+<!--              </el-collapse-item>-->
+<!--            </el-collapse>-->
+
+<!--          </div>-->
+<!--        </el-row>-->
+
+<!--        &lt;!&ndash;内部图案&ndash;&gt;-->
+<!--        <el-row  style="overflow: hidden;margin-top: 20px;padding-left: 4.12%;padding-right: 4.12%" :span="24" :xs="24">-->
+
+<!--          <div class="el-col el-col-24 el-col-xs-24">-->
+<!--            <el-collapse v-model="innerPatternName" class="el-col el-col-24 el-col-xs-24" style="border: none!important; "  accordion>-->
+<!--              <el-collapse-item  style="margin-right: 0px!important;" name="innerPatternName">-->
+<!--                <template slot="title" >-->
+<!--                  <p style="font-size: 16px!important;font-weight:bold!important; ">图案</p>-->
+<!--                </template>-->
+<!--                <el-row style="overflow: hidden;display: inline-block;margin-left: 29px" >-->
+<!--                  <div style="border: none!important;" class="el-col el-col-3 el-col-xs-3" accordion>-->
+<!--                    <div class="el-col el-col-3 el-col-xs-3 el-collapse-item__header" :span="1" style="border: none;">-->
+<!--                      <i class="el-icon-circle-plus-outline"  @click="watChPicture(innerId,6)" style="border: none;margin-right: 25px;font-size: 20px"></i>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </el-row>-->
+<!--                <vue-scroll :span="3" class="el-col el-col-3 el-col-xs-3" style="background: #5a5e66;color: white;height:207px">-->
+<!--                  <p style="cursor:pointer;text-indent:15px"  v-bind:class="{active:index==isActiveFive}" @click="checkItem(index,data.id,6,innerId)"  v-for="(data,index) in innerPattern" >{{data.name}}</p>-->
+<!--                </vue-scroll>-->
+<!--                <el-row :span="1"  class="el-col el-col-21 el-col-xs-21" style="overflow: hidden">-->
+<!--                  <div  class="swiper-container_four" style="min-height: 150px;" >-->
+<!--                    <div class="swiper-wrapper" >-->
+<!--                      <div  class="swiper-slide"  v-for="(data,i) in innerPatternPicture" style="min-height: 150px;width: 210.8px"  >-->
+
+<!--                        <div >-->
+<!--                          <img :src="getBaseUrl()+data.picture" width="150px" height="150px">-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; 如果需要分页器 &ndash;&gt;-->
+<!--                    <div class="swiper-pagination"></div>-->
+
+<!--                    &lt;!&ndash;                    &lt;!&ndash; 如果需要导航按钮 &ndash;&gt;&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <div v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-prev" ></div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <div  v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-next"></div>&ndash;&gt;-->
+<!--                  </div>-->
+<!--                </el-row>-->
+<!--              </el-collapse-item>-->
+<!--            </el-collapse>-->
+
+<!--          </div>-->
+<!--        </el-row>-->
+
+<!--        &lt;!&ndash;内部不可填充配饰&ndash;&gt;-->
+<!--        <el-row  style="overflow: hidden;margin-top: 20px;padding-left: 4.12%;padding-right: 4.12%" :span="24" :xs="24">-->
+
+<!--          <div class="el-col el-col-24 el-col-xs-24">-->
+<!--            <el-collapse v-model="innerUnfilledName" class="el-col el-col-24 el-col-xs-24" style="border: none!important; "  accordion>-->
+<!--              <el-collapse-item  style="margin-right: 0px!important;" name="innerUnfilledName">-->
+<!--                <template slot="title" >-->
+<!--                  <p style="font-size: 16px!important;font-weight:bold!important; ">不可填充配饰</p>-->
+<!--                </template>-->
+<!--                <el-row style="overflow: hidden;display: inline-block;margin-left: 29px" >-->
+<!--                  <div style="border: none!important;" class="el-col el-col-3 el-col-xs-3" accordion>-->
+<!--                    <div class="el-col el-col-3 el-col-xs-3 el-collapse-item__header" :span="1" style="border: none;">-->
+<!--                      <i class="el-icon-circle-plus-outline"  @click="watChPicture(innerId,7)" style="border: none;margin-right: 25px;font-size: 20px"></i>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </el-row>-->
+<!--                <vue-scroll :span="3" class="el-col el-col-3 el-col-xs-3" style="background: #5a5e66;color: white;height:207px">-->
+<!--                  <p style="cursor:pointer;text-indent:15px"  v-bind:class="{active:index==isActiveSix}" @click="checkItem(index,data.id,7,innerId)"  v-for="(data,index) in innerUnfilled" >{{data.name}}</p>-->
+<!--                </vue-scroll>-->
+<!--                <el-row :span="1"  class="el-col el-col-21 el-col-xs-21" style="overflow: hidden">-->
+<!--                  <div  class="swiper-container_four" style="min-height: 150px;" >-->
+<!--                    <div class="swiper-wrapper" >-->
+<!--                      <div  class="swiper-slide"  v-for="(data,i) in innerUnfilledPicture" style="min-height: 150px;width: 210.8px"  >-->
+
+<!--                        <div >-->
+<!--                          <img :src="getBaseUrl()+data.picture" width="150px" height="150px">-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; 如果需要分页器 &ndash;&gt;-->
+<!--                    <div class="swiper-pagination"></div>-->
+
+<!--                    &lt;!&ndash;                    &lt;!&ndash; 如果需要导航按钮 &ndash;&gt;&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <div v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-prev" ></div>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <div  v-show="componentList!== undefined && componentList!== null && componentList.length>0" class="swiper-button-next"></div>&ndash;&gt;-->
+<!--                  </div>-->
+<!--                </el-row>-->
+<!--              </el-collapse-item>-->
+<!--            </el-collapse>-->
+
+<!--          </div>-->
+<!--        </el-row>-->
+      </el-col>
+    </el-row>
+
+
+    <!-- 用户导入对话框 -->
+    <el-dialog   :visible.sync="open" width="89%" style="margin-right: 20px;float: right!important;min-height: 600px"  append-to-body>
+          <div slot="title" class="header-title">
+            {{dialogTitle}}
+            <i class="el-icon-circle-plus-outline" @click="openInnerOneVisible" style="border: none;margin-left: 20px;font-size: 16px;cursor: pointer;"></i>
+          </div>
+      <el-dialog id="innerLogOne"
+                 width="30%"
+                 title="添加分类"
+                 :visible.sync="innerOneVisible"
+                 style="margin: 0 auto !important;"
+                 append-to-body>
+        <el-form ref="formClass" :model="formClass" :rules="rulesClass" label-width="80px">
+          <el-form-item label="分类名称" prop="name">
+            <el-input v-model="formClass.name" placeholder="请输入分类名称" />
+          </el-form-item>
+          </el-form-item>
+        </el-form>
+        <div slot="footer" class="dialog-footer">
+          <el-button type="primary" @click="submitClassForm">确 定</el-button>
+          <el-button @click="cancelTwo">取 消</el-button>
+        </div>
+      </el-dialog>
+          <el-dialog id="innerLog"
+            width="30%"
+            title="添加分类图片"
+            :visible.sync="innerVisible"
+                     style="margin: 0 auto !important;"
+            append-to-body>
+            <el-form ref="form" :model="form" :rules="rules" label-width="80px">
+
+              <el-form-item label="图片" prop="picture">
+                <el-upload
+                  ref="picture"
+                  :file-list="fileList"
+                  :action="uploadImgUrl"
+                  :headers="headers"
+                  :on-remove="handleRemove"
+                  :before-upload="quillImgBefore"
+                  :on-success="quillImgSuccess"
+                  :limit="1"
+                  list-type="picture-card"
+                  accept=".jpg,.jpeg,.png"
+                  name="file">
+
+                  <i class="el-icon-plus"></i>
+                  <!--            <img v-if="imageUrl" :src="imageUrl" class="avatar">-->
+                  <!--            <i v-else class="el-icon-plus avatar-uploader-icon"></i>-->
+                </el-upload>
+              </el-form-item>
+
+              <el-form-item label="基本价" prop="price">
+                <el-input v-model="form.price" placeholder="请输入基本价" />
+              </el-form-item>
+              <el-form-item label="编号" prop="code">
+                <el-input v-model="form.code" placeholder="请输入编号" />
+              </el-form-item>
+              <el-form-item label="编号后缀" prop="suffixCode">
+                <el-input v-model="form.suffixCode" placeholder="请输入编号后缀" />
+              </el-form-item>
+              <el-form-item label="用量" prop="consumption">
+                <el-input v-model="form.consumption" placeholder="请输入用量" />
+              </el-form-item>
+              <el-form-item label="名称" prop="name">
+                <el-input v-model="form.name" placeholder="请输入名称" />
+              </el-form-item>
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+              <el-button type="primary" @click="submitForm">确 定</el-button>
+              <el-button @click="cancelOne">取 消</el-button>
+            </div>
+          </el-dialog>
+      <el-dialog id="innerLogThree"
+                 width="30%"
+                 title="修改分类图片信息"
+                 :visible.sync="innerVisibleThree"
+                 style="margin: 0 auto !important;"
+                 append-to-body>
+        <el-form ref="formImgUpdate" :model="formImgUpdate" :rules="rules" label-width="80px">
+
+          <el-form-item label="名称" prop="name">
+            <el-input v-model="formImgUpdate.name" placeholder="请输入名称" />
+          </el-form-item>
+          <el-form-item label="基本价" prop="price">
+            <el-input v-model="formImgUpdate.price" placeholder="请输入基本价" />
+          </el-form-item>
+          <el-form-item label="用量" prop="consumption">
+            <el-input v-model="formImgUpdate.consumption" placeholder="请输入用量" />
+          </el-form-item>
+          <el-form-item label="模型路径" prop="code">
+            <el-input v-model="formImgUpdate.code" placeholder="总路径" />
+          </el-form-item>
+          <el-form-item label="模型路径后缀" prop="suffixCode">
+            <el-input v-model="formImgUpdate.suffixCode" placeholder="模型路径后缀" />
+          </el-form-item>
+
+        </el-form>
+        <div slot="footer" class="dialog-footer">
+          <el-button type="primary" @click="submitForm">确 定</el-button>
+          <el-button @click="cancelOne">取 消</el-button>
+        </div>
+      </el-dialog>
+          <el-dialog id="innerLogTwo"
+                 width="30%"
+                 title="上传文件夹所有图片"
+                 :visible.sync="innerVisibleTwo"
+                 style="margin: 0 auto !important;"
+                 append-to-body>
+            <uploader :key="uploader_key" :options="options" class="uploader-example" ref="upload"
+                      @file-success="onFileSuccess" @file-progress="onFileProgress">
+              <uploader-unsupport></uploader-unsupport>
+              <uploader-drop>
+                <uploader-btn :directory="true" :single="true">选择文件夹</uploader-btn>
+              </uploader-drop>
+              <uploader-list></uploader-list>
+            </uploader>
+        <div slot="footer" class="dialog-footer">
+          <el-button @click="cancelThree">取 消</el-button>
+        </div>
+      </el-dialog>
+          <div  v-for="(data,i) in pictureInfo" style="margin-bottom: 30px">
+            <div style="border: none;display: inline-block;">
+                <a style="border: none;margin-right: 10px;font-size: 16px;">{{data.className}}</a>
+                <i class="el-icon-remove-outline"  @click="removeClassById(data.classId,data.className)" style="border: none;margin-right: 10px;cursor: pointer;font-size: 16px"></i>
+                <i class="el-icon-picture-outline-round" @click="openInnerDialog(data.classId)" style="border: none;font-size: 16px;cursor: pointer;margin-right: 10px;"></i>
+<!--                <i class="el-icon-edit" @click="openInnerDialogThree(data.classId)" style="border: none;font-size: 16px;cursor: pointer;margin-right: 10px;"></i>-->
+                <i class="el-icon-folder-opened" @click="openInnerDialogTwo(data.classId)" style="border: none;font-size: 16px;cursor: pointer;"></i>
+            </div>
+              <el-row>
+                <div class="el-col el-col-4 el-col-xs-4" style="margin-top: 20px;" v-for="(dataTwo,j) in data.patterns">
+                  <div style="margin: 0 auto;position: relative;">
+                    <img width="100px" height="100px" :src="getBaseUrl()+dataTwo.picture" :id="dataTwo.id" @click="clickImg(dataTwo.id)">
+                    <el-checkbox :key="dataTwo.id"  @change="checkedBox($event,dataTwo.id,data.classId)" v-model="dataTwo.indexCount" :true-label="1" :false-label="0"  style="position: absolute;left:110px;"></el-checkbox>
+                    <i class="el-icon-remove-outline" @click="removeImg(dataTwo.id)" style="position: absolute;left:110px;cursor: pointer;top:20px;border: none;margin-right:15px;font-size:16px"></i>
+
+                  </div>
+                </div>
+              </el-row>
+
+
+          </div>
+    </el-dialog>
+
+
+    <el-dialog id="innerLogFour" title="添加部件" :visible.sync="openFour"  append-to-body>
+      <el-form ref="componentForm" :model="componentForm" :rules="rulesFour" label-width="80px">
+        <el-form-item label="名称" prop="name">
+          <el-input v-model="componentForm.name" placeholder="请输入名称" />
+        </el-form-item>
+        <el-form-item label="编号" prop="code">
+          <el-input v-model="componentForm.code" placeholder="请输入编号" />
+        </el-form-item>
+        <el-form-item label="编号后缀" prop="suffixCode">
+          <el-input v-model="componentForm.suffixCode" placeholder="请输入编号后缀" />
+        </el-form-item>
+        <el-form-item label="基础价" prop="basicPrice">
+          <el-input v-model="componentForm.basicPrice" placeholder="请输入基础价" />
+        </el-form-item>
+        <el-form-item label="面料用量" prop="materialDosage">
+          <el-input v-model="componentForm.materialDosage" placeholder="请输入面料用量" />
+        </el-form-item>
+
+        <el-form-item label="图片" prop="picture">
+          <el-upload
+            ref="picture"
+            :file-list="fileListFour"
+            :action="uploadImgUrl"
+            :headers="headers"
+            :on-remove="handleRemoveFour"
+            :before-upload="quillImgBeforeFour"
+            :on-success="quillImgSuccessFour"
+            :limit="1"
+            list-type="picture-card"
+            accept=".jpg,.jpeg,.png"
+            name="file">
+
+            <i class="el-icon-plus"></i>
+            <!--            <img v-if="imageUrl" :src="imageUrl" class="avatar">-->
+            <!--            <i v-else class="el-icon-plus avatar-uploader-icon"></i>-->
+          </el-upload>
+        </el-form-item>
+      </el-form>
+      <div slot="footer" class="dialog-footer">
+        <el-button type="primary" @click="submitFormFour">确 定</el-button>
+        <el-button @click="cancelFour">取 消</el-button>
+      </div>
+    </el-dialog>
+  </div>
+
+</template>
+
+<style scoped>
+  /deep/.el-collapse-item__header{
+    width: 12.5%!important;
+    border-bottom:none;
+  }
+  /deep/.el-col-3{
+    width: 12.5%!important;
+  }
+
+  .uploader-example {
+    width: 90%;
+    padding: 15px;
+    margin: 40px auto 0;
+    font-size: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  }
+
+  .uploader-example .uploader-btn {
+    margin-right: 4px;
+  }
+
+  .uploader-example .uploader-list {
+    max-height: 440px;
+    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .active{
+    background: #1ab394;
+  }
+
+  .activeAll{
+    border: 2px solid red;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-container_one{
+
+    width: 100%;
+    height: 100%;
+  }
+
+  swiper-container_two{
+    width: 100%;
+    height: 100%;
+  }
+  swiper-container_four{
+    width: 100%;
+    height: 100%;
+  }
+  /deep/.swiper-slide{
+    width:229.6px;
+  }
+
+
+  /deep/ .el-checkbox__inner{
+    border: 1px solid red;
+  }
+
+  /deep/ .el-dialog{
+    float:right;
+    min-height: 800px;
+  }
+
+  #innerLog /deep/ .el-dialog{
+    float:none!important;
+    min-height: 800px;
+  }
+
+  #innerLogFour /deep/ .el-dialog{
+    float:none!important;
+    width: 600px;
+    min-height: 600px;
+  }
+
+  #innerLogThree /deep/ .el-dialog{
+    float:none!important;
+    min-height: 800px;
+  }
+
+  #innerLogTwo /deep/ .el-dialog{
+    float:none!important;
+    min-height: 400px;
+  }
+
+  #innerLogOne /deep/ .el-dialog{
+    float:none!important;
+    min-height: min-content;
+  }
+
+
+  /deep/.el-card__header{
+    border:none;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    /*background-color: rgb(128, 134, 132);*/
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    /*transition: 300ms;*/
+    /*transform: scale(0.8);*/
+  }
+  /*.swiper-slide-active,*/
+  /*.swiper-slide-duplicate-active {*/
+  /*  transform: scale(1);*/
+  /*}*/
+
+  .text {
+    background-color: aquamarine;
+    width: 400px;
+    height: 400px;
+  }
+</style>
+<script>
+import {
+  listUser,
+  getUser,
+  delUser,
+  addUser,
+  updateUser,
+  exportUser,
+  resetUserPwd,
+  changeUserStatus,
+  importTemplate,
+} from "@/api/system/user";
+import { getToken } from "@/utils/auth";
+import { treeselect,getComponents } from "@/api/system/material";
+import { getClassifyByComponentId,removeClassById } from "@/api/system/classify";
+import { getClassifyPictureById,updateComponentImg } from "@/api/system/componentPattern";
+import { removePatternImg } from "@/api/system/pattern";
+import { addComponent,delComponent } from "@/api/system/component";
+
+import Treeselect from "@riophae/vue-treeselect";
+import {watChPicture,addPattern } from "@/api/system/pattern";
+import "@riophae/vue-treeselect/dist/vue-treeselect.css";
+import { Swiper, Navigation } from 'swiper'
+import {addClassify} from "../../../api/system/classify";
+
+
+
+export default {
+  name: "User",
+  components: { Treeselect },
+  data() {
+
+    return {
+      classId:null,
+      headers: {
+        Authorization: 'Bearer ' + getToken()
+      },
+      uploader_key: new Date().getTime(),//这个用来刷新组件--解决不刷新页面连续上传的缓存上传数据（注：每次上传时，强制这个值进行更改---根据自己的实际情况重新赋值）
+      options: {
+        target: process.env.VUE_APP_BASE_API +'/common/uploadCategory',//SpringBoot后台接收文件夹数据的接口
+        testChunks: false,//是否分片-不分片
+        fileParameterName: 'files',
+        query:{
+
+        },
+
+      },
+      uploadImgUrl: process.env.VUE_APP_BASE_API + "/common/upload",
+      // 遮罩层
+      loading: true,
+      // 选中数组
+      ids: [],
+      // 非单个禁用
+      single: true,
+      // 非多个禁用
+      multiple: true,
+      innerVisible:false,
+      innerOneVisible:false,
+      innerVisibleTwo:false,
+      innerVisibleThree:false,
+      // 显示搜索条件
+      showSearch: true,
+
+      bar: {
+        hoverStyle: true,
+        onlyShowBarOnScroll: false, //是否只有滚动的时候才显示滚动条
+        background: 'red',
+      },
+      // 总条数
+      total: 0,
+      fileList:[],
+      fileListFour: [],
+      // 用户表格数据
+      userList: null,
+      // 部件数据
+      componentList: null,
+      // 图案数据
+      patternList: null,
+      // 可填充配饰数据
+      accessoryList: null,
+      // 不可填充配饰数据
+      externalAccessoryList: null,
+      // 表层面料
+      surfaceFabricList: null,
+      // 底层面料
+      bottomSurfaceFabricList: null,
+      //选中的compinetId
+      compinetId:null,
+      pId:null,
+      type:null,
+      dialogTitle:null,
+
+      //自定义返回列表
+      innerBottomFabric:null,
+      innerBottomFabricPicture:null,
+      innerPattern:null,
+      innerPatternPicture:null,
+      innerSurfaceFabric:null,
+      innerSurfaceFabricPicture:null,
+      innerUnfilled:null,
+      innerUnfilledPicture:null,
+      outBottomFabric:null,
+      outBottomFabricPicture:null,
+      outFillAble:null,
+      outFillAblePicture:null,
+      outPattern:null,
+      outPatternPicture:null,
+      outSurfaceFabric:null,
+      outSurfaceFabricPicture:null,
+      outUnfilled:null,
+      outUnfilledPicture:null,
+
+      isActive:0,
+      isActiveOne:0,
+      isActiveTwo:0,
+      isActiveThree:0,
+      isActiveTour:0,
+      isActiveFive:0,
+      isActiveSix:0,
+      isActiveSeven:0,
+      isActiveEight:0,
+      isActiveAll:0,
+
+
+
+
+      //收缩节点
+      outPatternName:null,
+      outUnfilledName:null,
+      outSurfaceFabricName:null,
+      outBottomFabricName:null,
+      outFillAbleName:null,
+
+      innerPatternName:null,
+      innerUnfilledName:null,
+      innerBottomFabricName:null,
+      innerSurfaceFabricName:null,
+
+
+      //模态框
+      pictureInfo: null,
+
+      innerId:null,
+      patternId: null,
+      cutWayId: null,
+
+
+      // 弹出层标题
+      title: "",
+      // 部门树选项
+      deptOptions: undefined,
+      // 是否显示弹出层
+      open: false,
+      openFour: false,
+      // 部门名称
+      deptName: undefined,
+      // 默认密码
+      initPassword: undefined,
+      // 日期范围
+      dateRange: [],
+      // 状态数据字典
+      statusOptions: [],
+      // 性别状态字典
+      sexOptions: [],
+      // 岗位选项
+      postOptions: [],
+      // 角色选项
+      roleOptions: [],
+      // 表单参数
+      form: {},
+      formImgUpdate:{
+
+      },
+
+      componentForm:{
+        name: null,
+        code:null ,
+        suffixCode:null,
+        parentId:null,
+        picture:null,
+        basicPrice: null,
+        materialDosage: null,
+      },
+      formClass:{
+        parentId:null,
+        pId:null,
+        type:null,
+        name:null,
+      },
+      defaultProps: {
+        children: "children",
+        label: "label",
+      },
+      // 用户导入参数
+      upload: {
+        // 是否显示弹出层（用户导入）
+        open: false,
+        // 弹出层标题（用户导入）
+        title: "",
+        // 是否禁用上传
+        isUploading: false,
+        // 是否更新已经存在的用户数据
+        updateSupport: 0,
+        // 设置上传的请求头部
+        headers: { Authorization: "Bearer " + getToken() },
+        // 上传的地址
+        url: process.env.VUE_APP_BASE_API + "/system/user/importData",
+      },
+      // 查询参数
+      queryParams: {
+        pageNum: 1,
+        pageSize: 10,
+        userName: undefined,
+        phonenumber: undefined,
+        status: undefined,
+        deptId: undefined,
+      },
+
+      // 表单校验
+      rules: {
+        price: [
+          { required: true, message: "价格不能为空", trigger: "blur" },
+        ],
+        consumption: [
+          { required: true, message: "用量不能为空", trigger: "blur" },
+        ],
+        picture: [
+          { required: true, message: "图片不能为空", trigger: "blur" },
+        ],
+        // code: [
+        //   { required: true, message: "用户名称不能为空", trigger: "blur" },
+        // ],
+        name: [
+          { required: true, message: "图片名称不能为空", trigger: "blur" },
+        ],
+      },
+      rulesFour: {
+
+        code: [
+          { required: true, message: "编号不能为空", trigger: "blur" },
+        ],
+        suffixCode: [
+          { required: true, message: "编号后缀不能为空", trigger: "blur" },
+        ],
+        picture: [
+          { required: true, message: "图片不能为空", trigger: "blur" },
+        ],
+        picture: [
+          { required: true, message: "编号不能为空", trigger: "blur" },
+        ],
+        basicPrice: [
+          { required: true, message: "基础价不能为空", trigger: "blur" },
+        ],
+        materialDosage: [
+          { required: true, message: "面料用量不能为空", trigger: "blur" },
+        ],
+      },
+      rulesClass:{
+        name: [
+          { required: true, message: "分类名称不能为空", trigger: "blur" },
+        ],
+      }
+    };
+  },
+  watch: {
+    // 根据名称筛选部门树
+    deptName(val) {
+      this.$refs.tree.filter(val);
+    },
+  },
+  mounted(){
+   let mySwiper = new Swiper ('.swiper-container', {
+     slidesPerView: 6,
+     grabCursor:true,
+
+     observer:true,
+     // centeredSlides: true,
+     autoplay: {
+       delay: 2500,
+       disableOnInteraction: false
+     },
+     loop: true,
+     pagination: {
+       el: '.swiper-pagination',
+       clickable: true
+     },
+     navigation: {
+       nextEl: '.swiper-button-next',
+       prevEl: '.swiper-button-prev'
+     },
+    })
+
+
+    let mySwiperfour = new Swiper ('.swiper-container_four', {
+      slidesPerView: 5,
+      grabCursor:true,
+      lazyLoading : true,
+      observer:true,
+      // centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+    })
+
+    let mySwipertwo = new Swiper ('.swiper-container_two', {
+      slidesPerView: 5,
+      grabCursor:true,
+
+      observer:true,
+      // centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+    })
+
+  },
+  created() {
+    this.getList();
+    this.getTreeselect();
+    this.getDicts("sys_normal_disable").then((response) => {
+      this.statusOptions = response.data;
+    });
+    this.getDicts("sys_user_sex").then((response) => {
+      this.sexOptions = response.data;
+    });
+    this.getConfigKey("sys.user.initPassword").then((response) => {
+      this.initPassword = response.msg;
+    });
+  },
+  methods: {
+    onFileSuccess: function (rootFile, file, response, chunk) {
+      //这里可以根据response（接口）返回的数据处理自己的实际问题（如：从response拿到后台返回的想要的数据进行组装并显示）
+      //注，这里从文件夹每上传成功一个文件会调用一次这个方法
+
+    },
+    openFourDialog(){
+      this.openFour=true;
+    },
+    clickImg(patternId){
+      this.patternId=patternId;
+      document.getElementById(patternId).set = "1000px";
+    },
+    onFileProgress(rootFile, file, chunk) {
+      this.parts(this.compinetId);
+      this.watChPicture(this.pId,this.type);
+      this.msgSuccess("新增改分类图片成功");
+    },
+    getBaseUrl(){
+      return process.env.VUE_APP_IMG_BASE_API;
+    },
+    openInnerOneVisible(){
+      this.innerOneVisible=true;
+    },
+    cancelTwo(){
+      this.innerOneVisible=false;
+    },
+    quillImgSuccess(res, file) {
+      // res为图片服务器返回的数据
+      // 如果上传成功
+      if (res.code == 200) {
+        // 插入图片  res.url为服务器返回的图片地址
+        // this.form.pictureUrl=res.url;
+        this.form.picture=res.fileName;
+      } else {
+        this.$message.error("图片插入失败");
+      }
+    },
+    //删除图片操作
+    handleRemove(file, fileList) {
+      this.fileList=[];
+      this.form.picture='';
+      this.timer = setTimeout(()=>{   //设置延迟执行
+      },1000);
+    },
+    // 图片上传前校验方法
+    quillImgBefore(file) {
+      let fileType = file.type;
+      if(fileType === 'image/jpg'||fileType === 'image/jpeg' || fileType === 'image/png'){
+        return true;
+      }else {
+        this.$message.error('请插入图片类型文件(jpg)');
+        return false;
+      }
+    },
+    quillImgSuccessFour(res, file) {
+      // res为图片服务器返回的数据
+      // 如果上传成功
+      if (res.code == 200) {
+        // 插入图片  res.url为服务器返回的图片地址
+        // this.form.pictureUrl=res.url;
+        this.componentForm.picture=res.fileName;
+      } else {
+        this.$message.error("图片插入失败");
+      }
+    },
+    //删除图片操作
+    handleRemoveFour(file, fileList) {
+      this.fileListFour=[];
+      this.componentForm.picture='';
+      this.timer = setTimeout(()=>{   //设置延迟执行
+      },1000);
+    },
+    // 图片上传前校验方法
+    quillImgBeforeFour(file) {
+      let fileType = file.type;
+      if(fileType === 'image/jpg'||fileType === 'image/jpeg' || fileType === 'image/png'){
+        return true;
+      }else {
+        this.$message.error('请插入图片类型文件(jpg)');
+        return false;
+      }
+    },
+    getMaterials(){
+
+    },
+    submitClassForm(){
+      this.$refs["formClass"].validate(valid => {
+        if (valid) {
+          this.formClass.parentId=this.compinetId;
+          this.formClass.type=this.type;
+          if (this.formClass.type>5){
+            this.formClass.superiorId=this.innerId;
+
+          }else{
+            this.formClass.superiorId=this.pId;
+          }
+
+            addClassify(this.formClass).then(response => {
+              if (response.code === 200) {
+                this.parts(this.compinetId);
+                this.watChPicture(this.pId,this.type);
+                this.msgSuccess("新增分类成功");
+                this.innerOneVisible = false;
+              }
+            });
+        }
+      });
+    },
+    /** 提交按钮 */
+    submitForm() {
+      this.$refs["form"].validate(valid => {
+        if (valid) {
+          this.form.typeId=this.classId;
+              addPattern(this.form).then(response => {
+              if (response.code === 200) {
+                this.parts(this.compinetId);
+                this.watChPicture(this.pId,this.type);
+                this.msgSuccess("新增改分类图片成功");
+                this.innerVisible = false;
+
+              }
+            });
+        }
+      });
+    },
+
+    /** 提交按钮 */
+    submitFormFour() {
+      this.$refs["componentForm"].validate(valid => {
+        if (valid) {
+          this.componentForm.parentId=this.cutWayId;
+          if (this.componentForm.parentId!=null && this.componentForm.parentId!=undefined){
+            addComponent(this.componentForm).then(response => {
+              if (response.code === 200) {
+                this.getComponents(this.cutWayId);
+                this.openFour=false;
+              }
+            });
+          }else{
+            this.$message.error("请选择模块小类");
+          }
+
+        }
+      });
+    },
+    removeClassById(id,name){
+      this.$confirm('是否确认删除"' + name + '"该分类么?', "警告", {
+        confirmButtonText: "确定",
+        cancelButtonText: "取消",
+        type: "warning"
+      }).then(function() {
+        return removeClassById(id);
+      }).then(() => {
+        this.parts(this.compinetId);
+        this.watChPicture(this.pId,this.type);
+        this.msgSuccess("删除成功");
+      }).catch(function() {});
+    },
+
+    deleteComponent(){
+      // if (this.compinetId==null || this.compinetId==undefined){
+      //     this.$message.error("请选择部件");
+      //     return;
+      // }
+      const  ids=this.compinetId || this.ids;
+      this.$confirm('是否确认删除该部件么?', "警告", {
+        confirmButtonText: "确定",
+        cancelButtonText: "取消",
+        type: "warning"
+      }).then(function() {
+        return delComponent(ids);
+      }).then(() => {
+        this.getComponents(this.cutWayId);
+        this.msgSuccess("删除成功");
+      }).catch(function() {});
+    },
+
+    //选择部件
+    parts(parentId,index){
+      this.isActiveAll=index;
+      this.compinetId=parentId;
+      console.log("部件id="+this.compinetId);
+      this.outPatternPicture=null;
+      this.outUnfilledPicture=null;
+      this.outSurfaceFabricPicture=null;
+      this.outBottomFabricPicture=null;
+      this.outFillAblePicture=null;
+      this.innerPatternPicture=null;
+      this.innerUnfilledPicture=null;
+      this.innerSurfaceFabricPicture=null;
+      this.innerBottomFabricPicture=null;
+      this.innerPattern=null;
+      this.innerUnfilled=null;
+      this.innerSurfaceFabric=null;
+      this.innerBottomFabric=null;
+      getClassifyByComponentId(parentId).then(
+        (response) => {
+          this.outBottomFabric=response.data.outBottomFabric;
+          if ( this.outBottomFabric.length>0){
+            this.checkItem(this.isActiveThree,this.outBottomFabric[this.isActiveThree].id,4,0);
+          }
+
+          this.outFillAble=response.data.outFillAble;
+          if ( this.outFillAble.length>0) {
+            this.checkItem(this.isActiveFive, this.outFillAble[this.isActiveFive].id, 5, 0);
+          }
+
+          this.outPattern=response.data.outPattern;
+          if ( this.outPattern.length>0) {
+            this.checkItem(this.isActive, this.outPattern[this.isActive].id, 1, 0);
+          }
+
+          this.outSurfaceFabric=response.data.outSurfaceFabric;
+          if ( this.outSurfaceFabric.length>0) {
+            this.checkItem(this.isActiveTwo, this.outSurfaceFabric[this.isActiveTwo].id, 3, 0);
+          }
+
+          this.outUnfilled=response.data.outUnfilled;
+          if ( this.outUnfilled.length>0) {
+            this.checkItem(this.isActiveOne, this.outUnfilled[this.isActiveOne].id, 2, 0);
+          }
+
+          this.outPatternName='outPatternName';
+          this.outUnfilledName='outUnfilledName';
+          this.outSurfaceFabricName='outSurfaceFabricName';
+          this.outBottomFabricName='outBottomFabricName';
+          this.outFillAbleName='outFillAbleName';
+
+          // this.componentList = response.data;
+        }
+      );
+    },
+    checkItem(index,id,type,pId){
+      this.classId=id;
+
+        if (type==1){
+          this.isActive=index;
+        }else if(type==2){
+          this.isActiveOne=index;
+        }else if(type==3){
+          this.isActiveTwo=index;
+        }else if(type==4){
+          this.isActiveThree=index;
+        }else if(type==5) {
+          this.isActiveTour = index;
+          this.innerId = id;
+          this.innerPatternPicture=null;
+          this.innerUnfilledPicture=null;
+          this.innerSurfaceFabricPicture=null;
+          this.innerBottomFabricPicture=null;
+          getClassifyByComponentId(this.compinetId, id).then(
+            (response) => {
+              this.innerSurfaceFabric = response.data.innerSurfaceFabric;
+              if (this.innerSurfaceFabric.length > 0) {
+                this.checkItem(this.isActiveSeven, this.innerSurfaceFabric[this.isActiveSeven].id, 8, id);
+              }
+
+              this.innerBottomFabric = response.data.innerBottomFabric;
+              if (this.innerBottomFabric.length > 0) {
+                this.checkItem(this.isActiveEight, this.innerBottomFabric[this.isActiveEight].id, 9, id);
+              }
+
+              this.innerPattern = response.data.innerPattern;
+              if (this.innerPattern.length > 0) {
+                this.checkItem(this.isActiveFive, this.innerPattern[this.isActiveFive].id, 6, id);
+              }
+
+              this.innerUnfilled = response.data.innerUnfilled;
+              if (this.innerUnfilled.length > 0) {
+                this.checkItem(this.isActiveSix, this.innerUnfilled[this.isActiveSix].id, 7, id);
+              }
+              if (this.outFillAble.length > 0) {
+                this.innerPatternName = 'innerPatternName';
+                this.innerUnfilledName = 'innerUnfilledName';
+                this.innerBottomFabricName = 'innerBottomFabricName';
+                this.innerSurfaceFabricName = 'innerSurfaceFabricName';
+              }
+
+              // this.componentList = response.data;
+            }
+          );
+        }else if(type==6){
+            this.isActiveFive=index;
+          }else if(type==7){
+            this.isActiveSix=index;
+          }else if(type==8){
+            console.log("这个"+index);
+            this.isActiveSeven=index;
+          }else if(type==9){
+            this.isActiveEight=index;
+          }
+
+
+
+      console.log("type"+type);
+      getClassifyPictureById(id).then(
+        (response) =>  {
+          if (pId==0){
+            if (type==1){
+              this.outPatternPicture=response.data;
+            }else if(type==2){
+              this.outUnfilledPicture=response.data;
+            }else if(type==3){
+              this.outSurfaceFabricPicture=response.data;
+            }else if(type==4){
+              this.outBottomFabricPicture=response.data;
+            }else if(type==5){
+              this.outFillAblePicture=response.data;
+            }
+
+          }else{
+            if(type==6){
+              this.innerPatternPicture=response.data;
+            }else if(type==7){
+              this.innerUnfilledPicture=response.data;
+            }else if(type==8){
+              this.innerSurfaceFabricPicture=response.data;
+            }else if(type==9){
+              this.innerBottomFabricPicture=response.data;
+            }
+          }
+        }
+      )
+    },
+
+    //选择分类
+    removeImg(id){
+      this.$confirm('是否确认删除该图片?', "警告", {
+        confirmButtonText: "确定",
+        cancelButtonText: "取消",
+        type: "warning"
+      }).then(function() {
+        return removePatternImg(id);
+      }).then(() => {
+        this.parts(this.compinetId);
+        this.watChPicture(this.pId,this.type);
+        this.msgSuccess("删除成功");
+      }).catch(function() {});
+    },
+    checkedBox(val,id,classId){
+      updateComponentImg(val,id,classId).then(
+        (response) =>  {
+          this.outPatternPicture=response.data;
+          this.checkItem(this.isActiveTour,this.innerId,5,0)
+          this.parts(this.compinetId);
+        }
+      )
+    },
+    openInnerDialog(classId){
+      this.fileList=[];
+      this.innerVisible=true;
+      this.classId=classId;
+
+    },
+    openInnerDialogTwo(classId){
+      // this.options.target=null;
+      // let className= document.getElementsByTagName('.uploader-list ul');
+      //
+      // console.log(className);
+      // if (className!=undefined && className!=null) {
+      //   let childs = className.childNodes;
+      //   console.log(childs);
+      //   if (childs != undefined && childs != null) {
+      //     console.log(111);
+      //     for (let i = childs.length - 1; i >= 0; i--) {
+      //       alert(childs[i].nodeName);
+      //       className.removeChild(childs[i]);
+      //     }
+      //   }
+      // }
+      if (this.$refs.upload!=undefined && this.$refs.upload!=null){
+        console.log(this.$refs.upload);
+        this.$refs.upload.fileList=[];
+        this.$refs.upload.files=[];
+        for(let i=0;i<this.$refs.upload.uploader.fileList.length;i++){
+          this.$refs.upload.uploader.fileList[i].cancel();
+        }
+      }
+      this.innerVisibleTwo=true;
+      this.classId=classId;
+      this.options.query.classId=classId;
+      //
+      // this.options.target=process.env.VUE_APP_BASE_API +'/common/uploadCategory?classId='+this.classId;
+      // console.log("路徑:"+this.options.target);
+    },
+
+    openInnerDialogThree(classId){
+      this.innerVisibleThree=true;
+      this.classId=classId;
+    },
+    watChPicture(pId,type){
+      this.open=true;
+      let parentId=this.compinetId;
+      this.pId=pId;
+      this.type=type;
+      if (type==1){
+        this.dialogTitle='图案';
+      }else if(type==2){
+        this.dialogTitle='不可填充配饰';
+      }else if(type==3){
+        this.dialogTitle='表层面料';
+      }else if(type==4){
+        this.dialogTitle='底层面料';
+      }else if(type==5){
+        this.dialogTitle='可填充配饰';
+      }else if(type==6){
+        this.dialogTitle='图案';
+      }else if(type==7){
+        this.dialogTitle='不可填充配饰';
+      }else if(type==8){
+        this.dialogTitle='表层面料';
+      }else if(type==9){
+        this.dialogTitle='底层面料';
+      }
+      watChPicture(parentId,pId,type).then((response) => {
+        this.pictureInfo=response.data;
+      });
+
+    },
+
+    /** 查询用户列表 */
+    getList() {
+      this.loading = true;
+      listUser(this.addDateRange(this.queryParams, this.dateRange)).then(
+        (response) => {
+          this.userList = response.rows;
+          this.total = response.total;
+          this.loading = false;
+        }
+      );
+    },
+    getComponents(parentId) {
+      getComponents(parentId).then(
+        (response) => {
+          this.componentList = response.data;
+        }
+      );
+    },
+    /** 查询部门下拉树结构 */
+    getTreeselect() {
+      treeselect().then((response) => {
+        this.deptOptions = response.data;
+      });
+    },
+    // 筛选节点
+    filterNode(value, data) {
+      if (!value) return true;
+      return data.label.indexOf(value) !== -1;
+    },
+    // 节点单击事件
+    handleNodeClick(data) {
+      if(data.code == 'plateCutWay' /*&& data.children==undefined*/ ){
+        this.queryParams.deptId = data.id;
+        this.cutWayId=data.id;
+        // this.getList();
+        this.compinetId=null;
+        this.innerBottomFabric=null;
+        this.innerPattern=null;
+        this.innerSurfaceFabric=null;
+        this.innerUnfilled=null;
+        this.outBottomFabric=null;
+        this.outFillAble=null;
+        this.outPattern=null;
+        this.outSurfaceFabric=null;
+        this.outUnfilled=null;
+        this.classId=null;
+        this.outPatternPicture=null;
+        this.pId=null;
+        this.type=null;
+        this.pictureInfo=null;
+        this.title=null;
+        this.outPatternPicture=null;
+        this.outUnfilledPicture=null;
+        this.outSurfaceFabricPicture=null;
+        this.outBottomFabricPicture=null;
+        this.outFillAblePicture=null;
+        this.innerPatternPicture=null;
+        this.innerUnfilledPicture=null;
+        this.innerSurfaceFabricPicture=null;
+        this.innerBottomFabricPicture=null;
+        this.getComponents(data.id);
+      }
+    },
+
+    // 取消按钮
+    cancel() {
+      this.open = false;
+
+    },
+
+    cancelFour(){
+      this.openFour = false;
+    },
+
+    cancelOne(){
+      this.innerVisible=false;
+      this.reset();
+    },
+    cancelThree(){
+
+      this.innerVisibleTwo=false;
+
+
+    },
+
+    // 表单重置
+    reset() {
+      this.form = {
+        userId: undefined,
+        deptId: undefined,
+        userName: undefined,
+        nickName: undefined,
+        password: undefined,
+        phonenumber: undefined,
+        email: undefined,
+        sex: undefined,
+        status: "0",
+        remark: undefined,
+        postIds: [],
+        roleIds: [],
+      };
+      this.resetForm("form");
+    },
+    /** 搜索按钮操作 */
+    handleQuery() {
+      this.queryParams.page = 1;
+      this.getList();
+    },
+    /** 重置按钮操作 */
+    resetQuery() {
+      this.dateRange = [];
+      this.resetForm("queryForm");
+      this.handleQuery();
+    },
+    // 多选框选中数据
+    handleSelectionChange(selection) {
+      this.ids = selection.map((item) => item.userId);
+      this.single = selection.length != 1;
+      this.multiple = !selection.length;
+    },
+    /** 新增按钮操作 */
+    handleAdd() {
+      this.reset();
+      this.getTreeselect();
+      getUser().then((response) => {
+        this.postOptions = response.posts;
+        this.roleOptions = response.roles;
+        this.open = true;
+        this.title = "添加用户";
+        this.form.password = this.initPassword;
+      });
+    },
+    /** 修改按钮操作 */
+    handleUpdate(row) {
+      this.reset();
+      this.getTreeselect();
+      const userId = row.userId || this.ids;
+      getUser(userId).then((response) => {
+        this.form = response.data;
+        this.postOptions = response.posts;
+        this.roleOptions = response.roles;
+        this.form.postIds = response.postIds;
+        this.form.roleIds = response.roleIds;
+        this.open = true;
+        this.title = "修改用户";
+        this.form.password = "";
+      });
+    },
+    /** 提交按钮 */
+    // 文件上传中处理
+    handleFileUploadProgress(event, file, fileList) {
+      this.upload.isUploading = true;
+    },
+    // 文件上传成功处理
+    handleFileSuccess(response, file, fileList) {
+      this.upload.open = false;
+      this.upload.isUploading = false;
+      this.$refs.upload.clearFiles();
+      this.$alert(response.msg, "导入结果", { dangerouslyUseHTMLString: true });
+      this.getList();
+    },
+    // 提交上传文件
+    submitFileForm() {
+      this.$refs.upload.submit();
+    },
+  },
+};
+</script>

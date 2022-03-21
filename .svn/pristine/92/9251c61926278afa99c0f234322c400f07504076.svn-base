@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.TbDesignRecommendMapper">
+    
+    <resultMap type="TbDesignRecommend" id="TbDesignRecommendResult">
+        <result property="id"    column="id"    />
+        <result property="name"    column="name"    />
+        <result property="clothesJson"    column="clothes_json"    />
+        <result property="qrCode"    column="qr_code"    />
+        <result property="image"    column="image"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="boardCount"    column="board_count"    />
+    </resultMap>
+
+    <sql id="selectTbDesignRecommendVo">
+        select id, name, clothes_json, qr_code, image, create_time, update_time, board_count from tb_design_recommend
+    </sql>
+
+    <select id="selectTbDesignRecommendList" parameterType="TbDesignRecommend" resultMap="TbDesignRecommendResult">
+        <include refid="selectTbDesignRecommendVo"/>
+        <where>  
+            <if test="name != null  and name != ''"> and name like concat('%', #{name}, '%')</if>
+            <if test="clothesJson != null  and clothesJson != ''"> and clothes_json = #{clothesJson}</if>
+            <if test="qrCode != null  and qrCode != ''"> and qr_code = #{qrCode}</if>
+            <if test="image != null  and image != ''"> and image = #{image}</if>
+            <if test="boardCount != null "> and board_count = #{boardCount}</if>
+        </where>
+    </select>
+    
+    <select id="selectTbDesignRecommendById" parameterType="Long" resultMap="TbDesignRecommendResult">
+        <include refid="selectTbDesignRecommendVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertTbDesignRecommend" parameterType="TbDesignRecommend" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_design_recommend
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="name != null">name,</if>
+            <if test="clothesJson != null">clothes_json,</if>
+            <if test="qrCode != null">qr_code,</if>
+            <if test="image != null">image,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="boardCount != null">board_count,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="name != null">#{name},</if>
+            <if test="clothesJson != null">#{clothesJson},</if>
+            <if test="qrCode != null">#{qrCode},</if>
+            <if test="image != null">#{image},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="boardCount != null">#{boardCount},</if>
+         </trim>
+    </insert>
+
+    <update id="updateTbDesignRecommend" parameterType="TbDesignRecommend">
+        update tb_design_recommend
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="name != null">name = #{name},</if>
+            <if test="clothesJson != null">clothes_json = #{clothesJson},</if>
+            <if test="qrCode != null">qr_code = #{qrCode},</if>
+            <if test="image != null">image = #{image},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="boardCount != null">board_count = #{boardCount},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteTbDesignRecommendById" parameterType="Long">
+        delete from tb_design_recommend where id = #{id}
+    </delete>
+
+    <delete id="deleteTbDesignRecommendByIds" parameterType="String">
+        delete from tb_design_recommend where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+</mapper>

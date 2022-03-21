@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.TbUserWardrobeMapper">
+    
+    <resultMap type="TbUserWardrobe" id="TbUserWardrobeResult">
+        <result property="id"    column="id"    />
+        <result property="userId"    column="user_id"    />
+        <result property="name"    column="name"    />
+        <result property="clothesJson"    column="clothes_json"    />
+        <result property="qrCode"    column="qr_code"    />
+        <result property="image"    column="image"    />
+        <result property="userName"    column="user_name"    />
+        <result property="phoneNumber"    column="phone_number"    />
+        <result property="headImg"    column="head_img"    />
+        <result property="styleId"    column="style_id"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="clothesType"    column="clothes_type"    />
+    </resultMap>
+
+    <sql id="selectTbUserWardrobeVo">
+        select a.id, a.user_id, a.name, a.clothes_json, a.qr_code, a.image, a.create_time,
+        a.update_time, a.clothes_type,b.head_img,b.user_name,b.phone_number from tb_user_wardrobe as a inner join tb_user_info
+        as b on a.user_id=b.id
+    </sql>
+
+    <select id="selectTbUserWardrobeList" parameterType="TbUserWardrobe" resultMap="TbUserWardrobeResult">
+        <include refid="selectTbUserWardrobeVo"/>
+        <where>  
+            <if test="userId != null "> and a.user_id = #{userId}</if>
+            <if test="styleId != null "> and style_id = #{styleId}</if>
+            <if test="name != null  and name != ''"> and name like concat('%', #{name}, '%')</if>
+            <if test="userName != null  and userName != ''"> and b.user_name like concat('%', #{userName}, '%')</if>
+            <if test="phoneNumber != null  and phoneNumber != ''"> and b.phone_number like concat('%', #{phoneNumber}, '%')</if>
+            <if test="clothesJson != null  and clothesJson != ''"> and clothes_json = #{clothesJson}</if>
+            <if test="qrCode != null  and qrCode != ''"> and qr_code = #{qrCode}</if>
+            <if test="image != null  and image != ''"> and image = #{image}</if>
+            <if test="clothesType != null "> and clothes_type = #{clothesType}</if>
+        </where>
+    </select>
+    
+    <select id="selectTbUserWardrobeById" parameterType="Long" resultMap="TbUserWardrobeResult">
+        <include refid="selectTbUserWardrobeVo"/>
+        where a.id = #{id}
+    </select>
+        
+    <insert id="insertTbUserWardrobe" parameterType="TbUserWardrobe" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_user_wardrobe
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">user_id,</if>
+            <if test="name != null">name,</if>
+            <if test="clothesJson != null">clothes_json,</if>
+            <if test="qrCode != null">qr_code,</if>
+            <if test="image != null">image,</if>
+            <if test="styleId != null">style_id,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="clothesType != null">clothes_type,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">#{userId},</if>
+            <if test="name != null">#{name},</if>
+            <if test="clothesJson != null">#{clothesJson},</if>
+            <if test="qrCode != null">#{qrCode},</if>
+            <if test="image != null">#{image},</if>
+            <if test="styleId != null">#{styleId},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="clothesType != null">#{clothesType},</if>
+         </trim>
+    </insert>
+
+    <update id="updateTbUserWardrobe" parameterType="TbUserWardrobe">
+        update tb_user_wardrobe
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="name != null">name = #{name},</if>
+            <if test="clothesJson != null">clothes_json = #{clothesJson},</if>
+            <if test="qrCode != null">qr_code = #{qrCode},</if>
+            <if test="image != null">image = #{image},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="clothesType != null">clothes_type = #{clothesType},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteTbUserWardrobeById" parameterType="Long">
+        delete from tb_user_wardrobe where id = #{id}
+    </delete>
+
+    <delete id="deleteTbUserWardrobeByIds" parameterType="String">
+        delete from tb_user_wardrobe where id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+</mapper>

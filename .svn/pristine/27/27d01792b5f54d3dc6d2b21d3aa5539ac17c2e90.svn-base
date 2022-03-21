@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.TbPatternComponentMapper">
+    
+    <resultMap type="TbPatternComponent" id="TbPatternComponentResult">
+        <result property="patternId"    column="pattern_id"    />
+        <result property="id"    column="id"    />
+        <result property="componentId"    column="component_id"    />
+        <result property="accessoryId"    column="accessory_id"    />
+        <result property="classId"    column="class_id"    />
+        <result property="code"    column="code"    />
+        <result property="price"    column="price"    />
+        <result property="name"    column="name"    />
+        <result property="typeId"    column="type_id"    />
+        <result property="picture"    column="picture"    />
+        <result property="suffixCode"    column="suffix_code"    />
+        <result property="qrCode"    column="qr_code"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+    </resultMap>
+
+    <sql id="selectTbPatternComponentVo">
+        select pattern_id, id, component_id, accessory_id, class_id, create_time, update_time from tb_pattern_component
+    </sql>
+
+    <select id="selectTbPatternComponentList" parameterType="TbPatternComponent" resultMap="TbPatternComponentResult">
+        <include refid="selectTbPatternComponentVo"/>
+        <where>  
+            <if test="patternId != null "> and pattern_id = #{patternId}</if>
+            <if test="componentId != null "> and component_id = #{componentId}</if>
+            <if test="accessoryId != null "> and accessory_id = #{accessoryId}</if>
+            <if test="classId != null "> and class_id = #{classId}</if>
+        </where>
+    </select>
+
+    <select id="selectTbPatternComponentAllList" parameterType="TbPatternComponent" resultMap="TbPatternComponentResult">
+        SELECT a.*,b.code,b.price,b.name,b.picture,b.type_id,b.suffix_code,b.qr_code   FROM tb_pattern_component as a,tb_pattern b WHERE a.pattern_id=b.id and a.class_id=#{classId}
+    </select>
+    
+    <select id="selectTbPatternComponentById" parameterType="Long" resultMap="TbPatternComponentResult">
+        <include refid="selectTbPatternComponentVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertTbPatternComponent" parameterType="TbPatternComponent" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_pattern_component
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="patternId != null">pattern_id,</if>
+            <if test="componentId != null">component_id,</if>
+            <if test="accessoryId != null">accessory_id,</if>
+            <if test="classId != null">class_id,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="patternId != null">#{patternId},</if>
+            <if test="componentId != null">#{componentId},</if>
+            <if test="accessoryId != null">#{accessoryId},</if>
+            <if test="classId != null">#{classId},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+         </trim>
+    </insert>
+
+    <update id="updateTbPatternComponent" parameterType="TbPatternComponent">
+        update tb_pattern_component
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="patternId != null">pattern_id = #{patternId},</if>
+            <if test="componentId != null">component_id = #{componentId},</if>
+            <if test="accessoryId != null">accessory_id = #{accessoryId},</if>
+            <if test="classId != null">class_id = #{classId},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteTbPatternComponentById" parameterType="Long">
+        delete from tb_pattern_component where id = #{id}
+    </delete>
+
+    <delete id="deleteTbPatternComponentByPatternId" parameterType="Long">
+        delete from tb_pattern_component where pattern_id = #{patternId}
+    </delete>
+
+    <delete id="deleteTbPatternComponentByClassId" parameterType="Long">
+        delete from tb_pattern_component where class_id = #{classId}
+    </delete>
+
+    <delete id="deleteTbPatternComponent" parameterType="TbPatternComponent">
+        delete from tb_pattern_component where pattern_id = #{patternId} AND class_id = #{classId} AND component_id = #{componentId}
+    </delete>
+
+    <delete id="deleteTbPatternComponentByIds" parameterType="String">
+        delete from tb_pattern_component where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+</mapper>

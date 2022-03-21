@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.TbPlateCutWayMapper">
+    
+    <resultMap type="TbPlateCutWay" id="TbPlateCutWayResult">
+        <result property="id"    column="id"    />
+        <result property="name"    column="name"    />
+        <result property="img"    column="img"    />
+        <result property="code"    column="code"    />
+        <result property="parentId"    column="parent_id"    />
+        <result property="qrCode"    column="qr_code"    />
+        <result property="suffixCode"    column="suffix_code"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+    </resultMap>
+
+    <sql id="selectTbPlateCutWayVo">
+        select id, name, img, code, parent_id,qr_code,suffix_code, create_time, update_time from tb_plate_cut_way
+    </sql>
+
+    <select id="selectTbPlateCutWayList" parameterType="TbPlateCutWay" resultMap="TbPlateCutWayResult">
+        <include refid="selectTbPlateCutWayVo"/>
+        <where>  
+            <if test="name != null  and name != ''"> and name like concat('%', #{name}, '%')</if>
+            <if test="img != null  and img != ''"> and img = #{img}</if>
+            <if test="code != null  and code != ''"> and code = #{code}</if>
+            <if test="parentId != null "> and parent_id = #{parentId}</if>
+        </where>
+    </select>
+    
+    <select id="selectTbPlateCutWayById" parameterType="Long" resultMap="TbPlateCutWayResult">
+        <include refid="selectTbPlateCutWayVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertTbPlateCutWay" parameterType="TbPlateCutWay" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_plate_cut_way
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="name != null">name,</if>
+            <if test="img != null">img,</if>
+            <if test="code != null">code,</if>
+            <if test="parentId != null">parent_id,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="name != null">#{name},</if>
+            <if test="img != null">#{img},</if>
+            <if test="code != null">#{code},</if>
+            <if test="parentId != null">#{parentId},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+         </trim>
+    </insert>
+
+    <update id="updateTbPlateCutWay" parameterType="TbPlateCutWay">
+        update tb_plate_cut_way
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="name != null">name = #{name},</if>
+            <if test="img != null">img = #{img},</if>
+            <if test="code != null">code = #{code},</if>
+            <if test="parentId != null">parent_id = #{parentId},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteTbPlateCutWayById" parameterType="Long">
+        delete from tb_plate_cut_way where id = #{id}
+    </delete>
+
+    <delete id="deleteTbPlateCutWayByIds" parameterType="String">
+        delete from tb_plate_cut_way where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+</mapper>

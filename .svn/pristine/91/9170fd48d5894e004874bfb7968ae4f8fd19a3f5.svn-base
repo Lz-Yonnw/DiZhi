@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9c33880b-bb9d-4bbc-a5af-670949d6ab38" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/software/apache-maven-3.5.0" />
+        <option name="userSettingsFile" value="D:\software\apache-maven-3.5.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hJKsmQASuj3QWYvNV7B2IZcaew" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ruoyi.common.constant" />
+      <recent name="com.ruoyi.common.utils.http" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\english-server\admin-api\src\main\java\com\ruoyi\netty\common\protobuf" />
+      <recent name="D:\workspace\english-server\admin-system\src\main\resources\mapper\system" />
+      <recent name="D:\workspace\english-server\admin-system\src\main\java\com\ruoyi\system" />
+      <recent name="D:\workspace\english-server\admin-api\src\main\java\com\ruoyi\web\controller\system" />
+      <recent name="D:\workspace\english-server\admin-api\src\main\java\com\ruoyi\netty" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TreeTest">
+    <configuration name="NettyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ruoyi.netty.client.NettyClient" />
+      <module name="admin-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ruoyi.netty.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TreeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.TreeTest" />
+      <module name="admin-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XunTengUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ruoyi.common.utils.XunTengUtils" />
+      <module name="admin-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ruoyi.common.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RuoYiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="admin-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ruoyi.RuoYiApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TreeTest" />
+        <item itemvalue="Application.XunTengUtils" />
+        <item itemvalue="Application.NettyClient" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9c33880b-bb9d-4bbc-a5af-670949d6ab38" name="Default Changelist" comment="" />
+      <created>1599723963158</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599723963158</updated>
+      <workItem from="1599723971139" duration="3079000" />
+      <workItem from="1599728255817" duration="2550000" />
+      <workItem from="1608015767749" duration="3034000" />
+      <workItem from="1608271515242" duration="3743000" />
+      <workItem from="1608278925944" duration="1318000" />
+      <workItem from="1608284783164" duration="648000" />
+      <workItem from="1608535134346" duration="66000" />
+      <workItem from="1608794491075" duration="2603000" />
+      <workItem from="1608882901343" duration="867000" />
+      <workItem from="1608972777711" duration="293000" />
+      <workItem from="1615196110893" duration="2004000" />
+      <workItem from="1615279561999" duration="45000" />
+      <workItem from="1616122988543" duration="61000" />
+      <workItem from="1617931320634" duration="968000" />
+      <workItem from="1618990313963" duration="639000" />
+      <workItem from="1618991022030" duration="859000" />
+      <workItem from="1625733739847" duration="20372000" />
+      <workItem from="1626140069262" duration="2022000" />
+      <workItem from="1626507921614" duration="18130000" />
+      <workItem from="1627453476009" duration="10857000" />
+      <workItem from="1628216119603" duration="1317000" />
+      <workItem from="1628474208705" duration="3781000" />
+      <workItem from="1628559305076" duration="11712000" />
+    </task>
+    <task id="LOCAL-00001">
+      <created>1608017010629</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608017010629</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <created>1608275614669</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608275614669</updated>
+    </task>
+    <task id="LOCAL-00003" summary="同步表结构生成代码">
+      <created>1608277859597</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608277859597</updated>
+    </task>
+    <task id="LOCAL-00004" summary="生成代码增加同步表结构功能">
+      <created>1608278967088</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608278967088</updated>
+    </task>
+    <task id="LOCAL-00005">
+      <created>1608287586601</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608287586601</updated>
+    </task>
+    <task id="LOCAL-00006" summary="修改令牌有效期">
+      <created>1608535196822</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1608535196822</updated>
+    </task>
+    <task id="LOCAL-00007">
+      <created>1608794531854</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608794531854</updated>
+    </task>
+    <task id="LOCAL-00008">
+      <created>1608883165236</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608883165236</updated>
+    </task>
+    <task id="LOCAL-00009">
+      <created>1608972835117</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1608972835117</updated>
+    </task>
+    <task id="LOCAL-00010">
+      <created>1615197254666</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1615197254666</updated>
+    </task>
+    <task id="LOCAL-00011">
+      <created>1615279595297</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615279595297</updated>
+    </task>
+    <task id="LOCAL-00012">
+      <created>1616123022094</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1616123022094</updated>
+    </task>
+    <task id="LOCAL-00013">
+      <created>1617931346507</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1617931346507</updated>
+    </task>
+    <task id="LOCAL-00014">
+      <created>1617931407809</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1617931407809</updated>
+    </task>
+    <task id="LOCAL-00015">
+      <created>1625821092161</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1625821092161</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="同步表结构生成代码" />
+    <MESSAGE value="生成代码增加同步表结构功能" />
+    <MESSAGE value="修改令牌有效期" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1625815065799">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1625815065798" />
+    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1628584023657">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1628584023657" />
+    <state x="471" y="121" key="CommitChangelistDialog2" timestamp="1625821064921">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="471" y="121" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1625821064921" />
+    <state width="423" height="466" key="DebuggerActiveHint" timestamp="1628582165113">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="423" height="466" key="DebuggerActiveHint/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1628582165113" />
+    <state x="282" y="297" key="FileChooserDialogImpl" timestamp="1625736884268">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="282" y="297" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1625736884268" />
+    <state width="1877" height="318" key="GridCell.Tab.0.bottom" timestamp="1628584046345">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="318" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1628584046345" />
+    <state width="1877" height="318" key="GridCell.Tab.0.center" timestamp="1628584046344">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="318" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1628584046344" />
+    <state width="1877" height="318" key="GridCell.Tab.0.left" timestamp="1628584046344">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="318" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1628584046344" />
+    <state width="1877" height="318" key="GridCell.Tab.0.right" timestamp="1628584046345">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="318" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1628584046345" />
+    <state width="1877" height="370" key="GridCell.Tab.1.bottom" timestamp="1628582216328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="370" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1628582216328" />
+    <state width="1877" height="370" key="GridCell.Tab.1.center" timestamp="1628582216328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="370" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1628582216328" />
+    <state width="1877" height="370" key="GridCell.Tab.1.left" timestamp="1628582216328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="370" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1628582216328" />
+    <state width="1877" height="370" key="GridCell.Tab.1.right" timestamp="1628582216328">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="370" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1628582216328" />
+    <state width="1877" height="242" key="GridCell.Tab.2.bottom" timestamp="1628579587488">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="242" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1628579587488" />
+    <state width="1877" height="242" key="GridCell.Tab.2.center" timestamp="1628579587488">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="242" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1628579587488" />
+    <state width="1877" height="242" key="GridCell.Tab.2.left" timestamp="1628579587488">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="242" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1628579587488" />
+    <state width="1877" height="242" key="GridCell.Tab.2.right" timestamp="1628579587488">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="242" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1628579587488" />
+    <state x="501" y="124" width="976" height="636" key="find.popup" timestamp="1628567992900">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="501" y="124" width="976" height="636" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1628567992900" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1625816595249">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1625816595249" />
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1628584042562">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1628584042562" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin-api/src/main/java/com/ruoyi/netty/server/handler/AuthServerHandler.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin-api/src/main/java/com/ruoyi/netty/server/handler/AuthServerHandler.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin-common/src/main/java/com/ruoyi/common/utils/http/HttpUtil.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/admin-api/src/test/java/com/TreeTest.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="tbUser.getNickname()" />
+        <watch expression="msgBase.getUpdateUserReq().toString()" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

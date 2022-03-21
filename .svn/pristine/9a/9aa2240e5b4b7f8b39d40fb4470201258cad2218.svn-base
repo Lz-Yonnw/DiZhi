@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.TbWhiteDesignMapper">
+    
+    <resultMap type="TbWhiteDesign" id="TbWhiteDesignResult">
+        <result property="id"    column="id"    />
+        <result property="name"    column="name"    />
+        <result property="clothesJson"    column="clothes_json"    />
+        <result property="qrCode"    column="qr_code"    />
+        <result property="image"    column="image"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="styleId"    column="style_id"    />
+        <result property="boardCount"    column="board_count"    />
+    </resultMap>
+
+    <sql id="selectTbWhiteDesignVo">
+        select id, name, clothes_json, qr_code, image, create_time, update_time, style_id, board_count from tb_white_design
+    </sql>
+
+    <select id="selectTbWhiteDesignList" parameterType="TbWhiteDesign" resultMap="TbWhiteDesignResult">
+        <include refid="selectTbWhiteDesignVo"/>
+        <where>  
+            <if test="name != null  and name != ''"> and name like concat('%', #{name}, '%')</if>
+            <if test="clothesJson != null  and clothesJson != ''"> and clothes_json = #{clothesJson}</if>
+            <if test="qrCode != null  and qrCode != ''"> and qr_code = #{qrCode}</if>
+            <if test="image != null  and image != ''"> and image = #{image}</if>
+            <if test="styleId != null "> and style_id = #{styleId}</if>
+            <if test="boardCount != null "> and board_count = #{boardCount}</if>
+        </where>
+    </select>
+    
+    <select id="selectTbWhiteDesignById" parameterType="Long" resultMap="TbWhiteDesignResult">
+        <include refid="selectTbWhiteDesignVo"/>
+        where id = #{id}
+    </select>
+
+    <select id="selectTbWhiteDesignByStyleId" parameterType="Long" resultMap="TbWhiteDesignResult">
+        <include refid="selectTbWhiteDesignVo"/>
+        where style_id = #{styleId}
+    </select>
+        
+    <insert id="insertTbWhiteDesign" parameterType="TbWhiteDesign" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_white_design
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="name != null">name,</if>
+            <if test="clothesJson != null">clothes_json,</if>
+            <if test="qrCode != null">qr_code,</if>
+            <if test="image != null">image,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="styleId != null">style_id,</if>
+            <if test="boardCount != null">board_count,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="name != null">#{name},</if>
+            <if test="clothesJson != null">#{clothesJson},</if>
+            <if test="qrCode != null">#{qrCode},</if>
+            <if test="image != null">#{image},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="styleId != null">#{styleId},</if>
+            <if test="boardCount != null">#{boardCount},</if>
+         </trim>
+    </insert>
+
+    <update id="updateTbWhiteDesign" parameterType="TbWhiteDesign">
+        update tb_white_design
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="name != null">name = #{name},</if>
+            <if test="clothesJson != null">clothes_json = #{clothesJson},</if>
+            <if test="qrCode != null">qr_code = #{qrCode},</if>
+            <if test="image != null">image = #{image},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="styleId != null">style_id = #{styleId},</if>
+            <if test="boardCount != null">board_count = #{boardCount},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteTbWhiteDesignById" parameterType="Long">
+        delete from tb_white_design where id = #{id}
+    </delete>
+
+    <delete id="deleteTbWhiteDesignByIds" parameterType="String">
+        delete from tb_white_design where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+</mapper>

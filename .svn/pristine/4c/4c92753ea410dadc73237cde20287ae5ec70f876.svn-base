@@ -1,0 +1,84 @@
+package com.ruoyi.netty.server.handler;
+
+
+import com.ruoyi.common.utils.StringUtils;
+import com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase;
+import com.ruoyi.netty.server.ChannelRepository;
+import io.netty.channel.ChannelHandler;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.ChannelInboundHandlerAdapter;
+import io.netty.util.AttributeKey;
+import io.netty.util.ReferenceCountUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+
+/**
+ * 连接认证Handler
+ * 1. 连接成功后客户端发送CommandType.AUTH指令，Sever端验证通过后返回CommandType.AUTH_BACK指令
+ * 2. 处理心跳指令
+ * 3. 触发下一个Handler
+ * @author Ke Shanqiang
+ *
+ */
+@Component
+@Qualifier("authServerHandler")
+@ChannelHandler.Sharable
+public class AuthServerHandler extends ChannelInboundHandlerAdapter {
+	private static final Logger log = LoggerFactory.getLogger(AuthServerHandler.class);
+	private final AttributeKey<String> clientInfo = AttributeKey.valueOf("clientInfo");
+	
+	@Autowired
+	@Qualifier("channelRepository")
+	ChannelRepository channelRepository;
+
+	/**
+	 * 通道建立调用
+	 * @param ctx
+	 * @throws Exception
+	 */
+	@Override
+	public void channelActive(ChannelHandlerContext ctx) throws Exception {
+		System.out.println("与客户端建立连接，通道开启！");
+
+		//将链接存入连接池(自定义)
+	}
+
+	/**
+	 * 通道断开调用
+	 * @param ctx
+	 * @throws Exception
+	 */
+	@Override
+	public void channelInactive(ChannelHandlerContext ctx) throws Exception {
+		log.info("与客户端断开连接，通道关闭！");
+		//移除channelGroup 通道组
+	}
+
+
+	@SuppressWarnings("deprecation")
+	@Override
+	public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+		byte[] dataBytes = (byte[]) msg;
+		MessageBase msgBase = MessageBase.parseFrom(dataBytes);
+		if(msgBase.getType().equals(MessageBase.Type.LOGIN_REQ)){
+			log.info("登录操作===用户名：{},验证码：{},返回密码：{}", msgBase.getLoginReq().getUsername(), msgBase.getLoginReq().getPassword(), msgBase.getLoginReq().getCode());
+		}else if(msgBase.getType().equals(MessageBase.Type.UPDATE_USER_REQ)){
+			log.info("更新用户信息操作==={}", msgBase.getUpdateUserReq().toString());
+		}else{
+			log.info("===============没有该协议类型=============");
+		}
+
+		ReferenceCountUtil.release(msg);
+	}
+
+
+	public void send(ChannelHandlerContext ctx,MessageBase.Builder builder,int code) {
+		builder.setCode(code);
+		ctx.writeAndFlush(builder.build().toByteArray());
+	}
+
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.TbPatternMapper">
+    
+    <resultMap type="TbPattern" id="TbPatternResult">
+        <result property="id"    column="id"    />
+        <result property="name"    column="name"    />
+        <result property="code"    column="code"    />
+        <result property="picture"    column="picture"    />
+        <result property="indexCount"    column="index_count"    />
+        <result property="classId"    column="class_id"    />
+        <result property="price"    column="price"    />
+        <result property="typeId"    column="type_id"    />
+        <result property="suffixCode"    column="suffix_code"    />
+        <result property="qrCode"    column="qr_code"    />
+    </resultMap>
+
+    <sql id="selectTbPatternVo">
+        select id, name,suffix_code,qr_code, code, picture, price, type_id from tb_pattern
+    </sql>
+
+    <select id="selectTbPatternList" parameterType="TbPattern" resultMap="TbPatternResult">
+        <include refid="selectTbPatternVo"/>
+        <where>  
+            <if test="name != null  and name != ''"> and name like concat('%', #{name}, '%')</if>
+            <if test="code != null  and code != ''"> and code = #{code}</if>
+            <if test="picture != null  and picture != ''"> and picture = #{picture}</if>
+            <if test="price != null "> and price = #{price}</if>
+            <if test="typeId != null  and typeId != ''"> and type_id = #{typeId}</if>
+        </where>
+    </select>
+    
+    <select id="selectTbPatternById" parameterType="Long" resultMap="TbPatternResult">
+        <include refid="selectTbPatternVo"/>
+        where id = #{id}
+    </select>
+
+    <select id="selectTbPatternByAllClassPicture"  resultMap="TbPatternResult">
+        SELECT
+	*,
+	( SELECT COUNT( 1 ) FROM tb_pattern AS b, tb_pattern_component AS c, tb_classify AS d
+	 where b.id=c.pattern_id and d.id=c.class_id and b.id=a.id and d.id=#{classId}) as index_count
+FROM
+	( SELECT * FROM tb_pattern where type_id=#{classId}) AS a
+    </select>
+        
+    <insert id="insertTbPattern" parameterType="TbPattern" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_pattern
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="name != null">name,</if>
+            <if test="code != null">code,</if>
+            <if test="picture != null">picture,</if>
+            <if test="price != null">price,</if>
+            <if test="suffixCode != null">suffix_code,</if>
+            <if test="consumption != null">consumption,</if>
+            <if test="typeId != null">type_id,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="name != null">#{name},</if>
+            <if test="code != null">#{code},</if>
+            <if test="picture != null">#{picture},</if>
+            <if test="price != null">#{price},</if>
+            <if test="suffixCode != null">#{suffixCode},</if>
+            <if test="consumption != null">#{consumption},</if>
+            <if test="typeId != null">#{typeId},</if>
+         </trim>
+    </insert>
+
+    <update id="updateTbPattern" parameterType="TbPattern">
+        update tb_pattern
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="name != null">name = #{name},</if>
+            <if test="code != null">code = #{code},</if>
+            <if test="picture != null">picture = #{picture},</if>
+            <if test="price != null">price = #{price},</if>
+            <if test="typeId != null">type_id = #{typeId},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteTbPatternById" parameterType="Long">
+        delete from tb_pattern where id = #{id}
+    </delete>
+
+    <delete id="deleteTbPatternByIds" parameterType="String">
+        delete from tb_pattern where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+</mapper>

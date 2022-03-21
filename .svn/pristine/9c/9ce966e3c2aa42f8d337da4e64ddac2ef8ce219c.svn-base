@@ -1,0 +1,259 @@
+syntax = "proto3";
+
+package NettyProtobufWebsocketClient;
+
+option java_package = "com.ruoyi.netty.common.protobuf";//修改为对应的包目录
+option java_outer_classname = "MessageProtocol";
+
+// netty 编解码的根对象
+message MessageBase {
+
+    string clientId = 1;
+
+    int32 code = 2;//状态码：200:正常  302:登录信息失效  404:找不到数据  500:系统错误  501:改手机号已经注册 502：账号或密码有误
+
+    // 协议类型
+    Type type = 3;
+
+    LoginReq loginReq = 4;//登录请求
+
+    LoginResp loginResp = 5;//登录响应
+
+    UpdateUserReq updateUserReq = 6;//修改用户信息请求
+
+    UpdateUserResp updateUserResp = 7;//修改用户信息响应
+
+    ModelTypeListResp modelTypeListResp=8;//返回版型大类列表
+
+    ModelTypeReq modelTypeReq=9;//请求版型大类或小类
+
+    ModelStyleResp modelStyle=10; //版型小类实体
+
+    PlateClassListResp plateClassListResp=11; //板块大类-部位
+
+    LoginOrRegisterUpdateUserInfoReq loginOrRegisterUpdateUserInfoReq=12;//登录页面的所有请求
+
+    UserInfoResp userInfoResp=13;// 返回用户信息响应
+
+    UserWardrobeReq userWardrobeReq=14; //
+
+    UserWardrobeListResp userWardrobeListResp=15; //衣柜信息返回
+
+    // 包的类型
+    enum Type {
+        PING = 0;//心跳
+        UPDATE_USER_REQ = 3;//修改用户信息请求
+        UPDATE_USER_RESP = 4;//修改用户信息响应
+        MODEL_TYPE_RESP = 5; //获取版型大类
+        MODEL_STYLE_RESP = 6; //获取版型小 类
+        MODEL_TYPE_REQ=7;//请求获取版型大类
+        MODEL_STYLE_REQ=8;//请求获取版型小类
+        PLATE_CLASS_RESP = 9; //响应板块大类-部位
+        PLATE_CLASS_REQ=10; //请求板块大类-部位
+
+        REGISTER_REQ =11; //注册请求
+        REGISTER_RESP = 12;//注册响应
+
+        LOGIN_REQ =1; //登录请求
+        LOGIN_RESP = 2;//登录响应 返回用户信息
+
+        PERFECT_REQ =13; //完善个人信息请求
+        PERFECT_RESP = 14;//完善个人信息响应
+
+        WARDROBE_SAVE_REQ=15; //衣服保存到衣櫃請求
+        WARDROBE_SAVE_RESP = 16;//衣服保存到衣櫃响应
+
+        GET_USER_WARDROBE_REQ=17; //获取用户数据請求
+        GET_USER_WARDROBE_RESP = 18;//获取用户数据响应
+
+        WHITE_DESIGN_REQ=19; // 获取白膜信息
+        WHITE_DESIGN_RESP = 20;//获取白膜信息
+    }
+
+//-------------------登录/注册-------------------
+    // 登录请求
+    message LoginReq {
+        string username = 1;//用户名
+        string password = 2;//密码，非必填
+        string code = 3;//验证码
+    }
+
+    // 登录响应，返回用户信息
+    message LoginResp {
+        int32 id = 1;//用户ID
+        string username = 2;//用户名
+        string nickname = 3;//昵称
+        int32 gender = 4;//性别
+    }
+
+//-------------------修改用户信息-------------------
+    // 修改用户信息请求
+    message UpdateUserReq {
+        int32 id = 1;//用户id
+        string nickname = 2;//昵称
+        int32 gender = 3;//性别，1:男，2:女
+    }
+
+    // 修改用户信息响应
+    message UpdateUserResp {
+        int32 id = 1;//用户ID
+        string username = 2;//用户名
+        string nickname = 3;//昵称
+        int32 gender = 4;//性别
+    }
+
+    // 获取版型大类列表信息响应
+    message ModelTypeResp {
+        int64 id = 1;//版型大类ID
+        string name = 2;//名称
+        int32 type = 3;//男装或女装
+        string img=4;//图片
+        repeated ModelStyleResp modelStyleResp=5;
+    }
+
+    // 获取版型大类列表信息响应
+    message ModelTypeListResp {
+      repeated ModelTypeResp modelTypeResp=1;
+    }
+
+    // 获取版型大类和小类列表信息请求
+    message ModelTypeReq {
+        int64 modelId = 1;//版型大类ID
+        int32 type =2;//男装或女装
+        int64 styleId=3;//版型小类
+    }
+
+    // 获取版型小类列表信息请求
+    message ModelStyleResp {
+        int64 modelId = 1;//版型大类ID
+        string name =2;//版型小类名称
+        string code =3;//版型小类编号
+        int64 id=4;//版型小类id
+        string img=5;//图片
+
+    }
+
+    // 完善个人信息 和 登录 和注册  请求参数
+    message LoginOrRegisterUpdateUserInfoReq {
+        //完善个人信息请求
+        int64  id=1; //用户id
+        int32  gender=2; // 性别：0：男，1：女，2：保密
+        string userNickname =3;//昵称
+        string birthday =4;//生日 格式 yyyy-MM-dd HH:mm:ss
+        double height=5;//身高
+        double weight=6;//体重
+        int32 isFirst=7; //填完个人信息完成后  强制 isFirst=1传过来
+
+        //登录或注册 请求
+        string phoneNumber=8; //手机号码账号
+        string password=9; //密码
+
+        //注册
+        string code =10; //验证码
+    }
+
+    //返回用户信息
+    message UserInfoResp{
+        int64  id=1; //用户id
+        int32  gender=2; // 性别：0：男，1：女，2：保密
+        string userNickname =3;//昵称
+        string phoneNumber=4; //手机号码账号
+        int32 isFirst=5; //为0时跳入完善页面  为1时直接进入首页
+        string headImg=6; //头像
+    }
+
+
+    //设计页返回的结果
+    message PlateClassListResp{
+        repeated PlateClassResp plateClassResp=1;
+        UserWardrobeReq userWardrobeReq=6; //白膜信息
+    }
+
+
+    //板块大类-部位 (设计页返回) (下摆之类的)
+    message PlateClassResp
+    {
+        int64 id=1;//id
+        string name=2; //部件名称
+        string code=3; //部件编号
+        int64 parentId=4; //版型小类Id
+        string img=5; //图片链接
+        repeated PlateCutWay plateCutWay=6; //裁剪方式列表
+    }
+
+    //板块小类-裁剪方式 （缝线之类的）
+    message PlateCutWay{
+        int64 id=1;//id
+        string name=2; //裁剪方式名称
+        string code=3; //裁剪方式编号
+        int64 parentId=4; //板块大类Id
+        string img=5; //图片链接
+        string suffixCode=6; //简略编号
+        string qrCode=7; //二维码
+        repeated Component componentList=8; //部件列表
+    }
+
+    // 裁剪方式-部件（前衣身，后衣身之类的）
+    message Component{
+        int64 id=1;//id
+        string name=2; //部件名称
+        string code=3; //部件编号
+        int64 parentId=4; //裁剪方式Id
+        string picture=5; //图片链接
+        string modelUrl=6; //模型地址
+        double  basicPrice=7; //基础价
+        double  materialDosage=8; //面料用量
+        string  suffixCode=14;
+        string  qrCode=15;
+        repeated Classify outBottomFabric=9;//底层面料列表
+        repeated Classify outSurfaceFabric=10;//表层面料列表
+        repeated Classify outUnfilled=11;//不可填充列表
+        repeated Classify outFillAble=12;//可填充配饰列表
+        repeated Classify outPattern=13;//图案列表
+
+    }
+
+    // 部件-分类
+    message Classify{
+        int64 id=1;//id
+        string name=2; //分类名称
+        int32 type=3; //类型 1：图案 2.不可填充配饰 3.表层面料  4.底层面料  5.可填充配
+        int64 pId=4; //分类上级ID
+        int64 parentId=5; //部件Id
+        repeated Classify innerSurfaceFabric=6;//内部  表层面料列表
+        repeated Classify innerBottomFabric=7;//内部 底层面料列表
+        repeated Classify innerPattern=8;//内部 图案列表
+        repeated Classify innerUnfilled=9;//内部 不可填充列表
+        repeated Pattern pattern=10; //图案列表
+    }
+
+    // 分类-图案
+    message Pattern{
+        int64 id=1;//id
+        string name=2; //材料名称
+        string code=3; //材料编号
+        string picture=4; //图片链接
+        int32  typeId=5; //分类ID
+        double price=6;//价格
+        string suffixCode=7;//编号前缀
+        string qrCode=8;//二维码
+
+    }
+
+    //我的-衣柜
+    message UserWardrobeReq {
+        int64 userId=1;//用户id
+        string  name=2; //衣服名称
+        string clothesJson=3; //每个部位的拼接字符串
+        string qrCode=4; //二维码
+        int64 styleId=5; //版型小类id
+        bytes image=6; //衣服图片
+        int64 id=7;//衣服id
+    }
+
+    // 衣柜数据返回
+    message UserWardrobeListResp {
+        repeated UserWardrobeReq userWardrobeReq=1;
+    }
+}
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.TbComponentMapper">
+    
+    <resultMap type="TbComponent" id="TbComponentResult">
+        <result property="id"    column="id"    />
+        <result property="name"    column="name"    />
+        <result property="code"    column="code"    />
+        <result property="suffixCode"    column="suffix_code"    />
+        <result property="qrCode"    column="qr_code"    />
+        <result property="parentId"    column="parent_id"    />
+        <result property="picture"    column="picture"    />
+        <result property="modelUrl"    column="model_url"    />
+        <result property="basicPrice"    column="basic_price"    />
+        <result property="materialDosage"    column="material_dosage"    />
+    </resultMap>
+
+    <sql id="selectTbComponentVo">
+        select id, name, code,suffix_code,qr_code, parent_id, picture, model_url, basic_price, material_dosage from tb_component
+    </sql>
+
+    <select id="selectTbComponentList" parameterType="TbComponent" resultMap="TbComponentResult">
+        <include refid="selectTbComponentVo"/>
+        <where>  
+            <if test="name != null  and name != ''"> and name like concat('%', #{name}, '%')</if>
+            <if test="code != null  and code != ''"> and code = #{code}</if>
+            <if test="parentId != null "> and parent_id = #{parentId}</if>
+            <if test="picture != null  and picture != ''"> and picture = #{picture}</if>
+            <if test="modelUrl != null  and modelUrl != ''"> and model_url = #{modelUrl}</if>
+            <if test="basicPrice != null "> and basic_price = #{basicPrice}</if>
+            <if test="materialDosage != null "> and material_dosage = #{materialDosage}</if>
+        </where>
+    </select>
+    
+    <select id="selectTbComponentById" parameterType="Long" resultMap="TbComponentResult">
+        <include refid="selectTbComponentVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertTbComponent" parameterType="TbComponent" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_component
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="name != null">name,</if>
+            <if test="code != null">code,</if>
+            <if test="parentId != null">parent_id,</if>
+            <if test="picture != null">picture,</if>
+            <if test="modelUrl != null">model_url,</if>
+            <if test="basicPrice != null">basic_price,</if>
+            <if test="materialDosage != null">material_dosage,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="name != null">#{name},</if>
+            <if test="code != null">#{code},</if>
+            <if test="parentId != null">#{parentId},</if>
+            <if test="picture != null">#{picture},</if>
+            <if test="modelUrl != null">#{modelUrl},</if>
+            <if test="basicPrice != null">#{basicPrice},</if>
+            <if test="materialDosage != null">#{materialDosage},</if>
+         </trim>
+    </insert>
+
+    <update id="updateTbComponent" parameterType="TbComponent">
+        update tb_component
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="name != null">name = #{name},</if>
+            <if test="code != null">code = #{code},</if>
+            <if test="parentId != null">parent_id = #{parentId},</if>
+            <if test="picture != null">picture = #{picture},</if>
+            <if test="modelUrl != null">model_url = #{modelUrl},</if>
+            <if test="basicPrice != null">basic_price = #{basicPrice},</if>
+            <if test="materialDosage != null">material_dosage = #{materialDosage},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteTbComponentById" parameterType="Long">
+        delete from tb_component where id = #{id}
+    </delete>
+
+    <delete id="deleteTbComponentByIds" parameterType="String">
+        delete from tb_component where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+</mapper>

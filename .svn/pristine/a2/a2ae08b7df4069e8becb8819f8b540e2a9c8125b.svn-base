@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.TbUserInfoMapper">
+    
+    <resultMap type="TbUserInfo" id="TbUserInfoResult">
+        <result property="id"    column="id"    />
+        <result property="userId"    column="user_id"    />
+        <result property="userNickname"    column="user_nickname"    />
+        <result property="userName"    column="user_name"    />
+        <result property="gender"    column="gender"    />
+        <result property="phoneNumber"    column="phone_number"    />
+        <result property="password"    column="password"    />
+        <result property="eMail"    column="e_mail"    />
+        <result property="wechatNumber"    column="wechat_number"    />
+        <result property="qqNumber"    column="qq_number"    />
+        <result property="headImg"    column="head_img"    />
+        <result property="openId"    column="open_id"    />
+        <result property="registerTime"    column="register_time"    />
+        <result property="source"    column="source"    />
+        <result property="status"    column="status"    />
+        <result property="intro"    column="intro"    />
+        <result property="tags"    column="tags"    />
+        <result property="signature"    column="signature"    />
+        <result property="province"    column="province"    />
+        <result property="city"    column="city"    />
+        <result property="country"    column="country"    />
+        <result property="area"    column="area"    />
+        <result property="homePic"    column="home_pic"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="birthday"    column="birthday"    />
+        <result property="price"    column="price"    />
+        <result property="height"    column="height"    />
+        <result property="isFirst"    column="is_first"    />
+        <result property="weight"    column="weight"    />
+    </resultMap>
+
+    <sql id="selectTbUserInfoVo">
+        select id, user_id, user_nickname, user_name, gender, phone_number, password, e_mail, wechat_number, qq_number, head_img, open_id, register_time, source, status, intro, tags, signature, province, city, country, area, home_pic, update_time, birthday, price, height, is_first, weight from tb_user_info
+    </sql>
+
+    <select id="selectTbUserInfoList" parameterType="TbUserInfo" resultMap="TbUserInfoResult">
+        <include refid="selectTbUserInfoVo"/>
+        <where>  
+            <if test="userId != null  and userId != ''"> and user_id = #{userId}</if>
+            <if test="userNickname != null  and userNickname != ''"> and user_nickname like concat('%', #{userNickname}, '%')</if>
+            <if test="userName != null  and userName != ''"> and user_name like concat('%', #{userName}, '%')</if>
+            <if test="gender != null  and gender != ''"> and gender = #{gender}</if>
+            <if test="phoneNumber != null  and phoneNumber != ''"> and phone_number = #{phoneNumber}</if>
+            <if test="password != null  and password != ''"> and password = #{password}</if>
+            <if test="eMail != null  and eMail != ''"> and e_mail = #{eMail}</if>
+            <if test="wechatNumber != null  and wechatNumber != ''"> and wechat_number = #{wechatNumber}</if>
+            <if test="qqNumber != null  and qqNumber != ''"> and qq_number = #{qqNumber}</if>
+            <if test="headImg != null  and headImg != ''"> and head_img = #{headImg}</if>
+            <if test="openId != null  and openId != ''"> and open_id = #{openId}</if>
+            <if test="registerTime != null "> and register_time = #{registerTime}</if>
+            <if test="source != null "> and source = #{source}</if>
+            <if test="status != null "> and status = #{status}</if>
+            <if test="intro != null  and intro != ''"> and intro = #{intro}</if>
+            <if test="tags != null  and tags != ''"> and tags = #{tags}</if>
+            <if test="signature != null  and signature != ''"> and signature = #{signature}</if>
+            <if test="province != null  and province != ''"> and province = #{province}</if>
+            <if test="city != null  and city != ''"> and city = #{city}</if>
+            <if test="country != null  and country != ''"> and country = #{country}</if>
+            <if test="area != null  and area != ''"> and area = #{area}</if>
+            <if test="homePic != null  and homePic != ''"> and home_pic = #{homePic}</if>
+            <if test="birthday != null "> and birthday = #{birthday}</if>
+            <if test="price != null "> and price = #{price}</if>
+            <if test="height != null "> and height = #{height}</if>
+            <if test="isFirst != null "> and is_first = #{isFirst}</if>
+            <if test="weight != null "> and weight = #{weight}</if>
+        </where>
+    </select>
+    
+    <select id="selectTbUserInfoByOtherParam" parameterType="TbUserInfo" resultMap="TbUserInfoResult">
+        <include refid="selectTbUserInfoVo"/>
+        <where>
+        <if test="phoneNumber != null  and phoneNumber != ''"> and phone_number = #{phoneNumber}</if>
+        <if test="password != null  and password != ''"> and password = #{password}</if>
+        </where>
+    </select>
+
+    <select id="selectTbUserInfoById" parameterType="Long" resultMap="TbUserInfoResult">
+        <include refid="selectTbUserInfoVo"/>
+        where id = #{id}
+    </select>
+
+    <select id="selectTbUserInfoByPhoneNumber" parameterType="String" resultMap="TbUserInfoResult">
+        <include refid="selectTbUserInfoVo"/>
+        where phone_number = #{phoneNumber}
+    </select>
+
+    <insert id="insertTbUserInfo" parameterType="TbUserInfo" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_user_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null and userId != ''">user_id,</if>
+            <if test="userNickname != null">user_nickname,</if>
+            <if test="userName != null">user_name,</if>
+            <if test="gender != null">gender,</if>
+            <if test="phoneNumber != null and phoneNumber != ''">phone_number,</if>
+            <if test="password != null and password != ''">password,</if>
+            <if test="eMail != null">e_mail,</if>
+            <if test="wechatNumber != null">wechat_number,</if>
+            <if test="qqNumber != null">qq_number,</if>
+            <if test="headImg != null">head_img,</if>
+            <if test="openId != null">open_id,</if>
+            <if test="registerTime != null">register_time,</if>
+            <if test="source != null">source,</if>
+            <if test="status != null">status,</if>
+            <if test="intro != null">intro,</if>
+            <if test="tags != null">tags,</if>
+            <if test="signature != null">signature,</if>
+            <if test="province != null">province,</if>
+            <if test="city != null">city,</if>
+            <if test="country != null">country,</if>
+            <if test="area != null">area,</if>
+            <if test="homePic != null">home_pic,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="birthday != null">birthday,</if>
+            <if test="price != null">price,</if>
+            <if test="height != null">height,</if>
+            <if test="isFirst != null">is_first,</if>
+            <if test="weight != null">weight,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null and userId != ''">#{userId},</if>
+            <if test="userNickname != null">#{userNickname},</if>
+            <if test="userName != null">#{userName},</if>
+            <if test="gender != null">#{gender},</if>
+            <if test="phoneNumber != null and phoneNumber != ''">#{phoneNumber},</if>
+            <if test="password != null and password != ''">#{password},</if>
+            <if test="eMail != null">#{eMail},</if>
+            <if test="wechatNumber != null">#{wechatNumber},</if>
+            <if test="qqNumber != null">#{qqNumber},</if>
+            <if test="headImg != null">#{headImg},</if>
+            <if test="openId != null">#{openId},</if>
+            <if test="registerTime != null">#{registerTime},</if>
+            <if test="source != null">#{source},</if>
+            <if test="status != null">#{status},</if>
+            <if test="intro != null">#{intro},</if>
+            <if test="tags != null">#{tags},</if>
+            <if test="signature != null">#{signature},</if>
+            <if test="province != null">#{province},</if>
+            <if test="city != null">#{city},</if>
+            <if test="country != null">#{country},</if>
+            <if test="area != null">#{area},</if>
+            <if test="homePic != null">#{homePic},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="birthday != null">#{birthday},</if>
+            <if test="price != null">#{price},</if>
+            <if test="height != null">#{height},</if>
+            <if test="isFirst != null">#{isFirst},</if>
+            <if test="weight != null">#{weight},</if>
+         </trim>
+    </insert>
+
+    <update id="updateTbUserInfo" parameterType="TbUserInfo">
+        update tb_user_info
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="userId != null and userId != ''">user_id = #{userId},</if>
+            <if test="userNickname != null">user_nickname = #{userNickname},</if>
+            <if test="userName != null">user_name = #{userName},</if>
+            <if test="gender != null">gender = #{gender},</if>
+            <if test="phoneNumber != null and phoneNumber != ''">phone_number = #{phoneNumber},</if>
+            <if test="password != null and password != ''">password = #{password},</if>
+            <if test="eMail != null">e_mail = #{eMail},</if>
+            <if test="wechatNumber != null">wechat_number = #{wechatNumber},</if>
+            <if test="qqNumber != null">qq_number = #{qqNumber},</if>
+            <if test="headImg != null">head_img = #{headImg},</if>
+            <if test="openId != null">open_id = #{openId},</if>
+            <if test="registerTime != null">register_time = #{registerTime},</if>
+            <if test="source != null">source = #{source},</if>
+            <if test="status != null">status = #{status},</if>
+            <if test="intro != null">intro = #{intro},</if>
+            <if test="tags != null">tags = #{tags},</if>
+            <if test="signature != null">signature = #{signature},</if>
+            <if test="province != null">province = #{province},</if>
+            <if test="city != null">city = #{city},</if>
+            <if test="country != null">country = #{country},</if>
+            <if test="area != null">area = #{area},</if>
+            <if test="homePic != null">home_pic = #{homePic},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="birthday != null">birthday = #{birthday},</if>
+            <if test="price != null">price = #{price},</if>
+            <if test="height != null">height = #{height},</if>
+            <if test="isFirst != null">is_first = #{isFirst},</if>
+            <if test="weight != null">weight = #{weight},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteTbUserInfoById" parameterType="Long">
+        delete from tb_user_info where id = #{id}
+    </delete>
+
+    <delete id="deleteTbUserInfoByIds" parameterType="String">
+        delete from tb_user_info where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+    
+</mapper>

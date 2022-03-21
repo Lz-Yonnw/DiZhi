@@ -1,0 +1,51 @@
+package com.ruoyi.netty.client.handler;
+
+
+import com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase;
+import com.ruoyi.netty.client.NettyClient;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.channel.SimpleChannelInboundHandler;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class LogicClientHandler extends SimpleChannelInboundHandler<Object> {
+
+	private static final Logger log = LoggerFactory.getLogger(LogicClientHandler.class);
+
+	private final static String CLIENTID = "123456789";
+
+	public  static  int i=1;
+
+	// 连接成功后，向server发送消息  
+	@Override  
+	public void channelActive(ChannelHandlerContext ctx) throws Exception {
+		MessageBase.Builder authMsg = MessageBase.newBuilder();
+		authMsg.setClientId(ctx.channel().id().toString());
+		authMsg.setType(MessageBase.Type.LOGIN_REQ);
+		authMsg.setLoginReq(MessageBase.LoginReq.newBuilder().setUsername("122343").setPassword("1").setCode("895424"));
+
+//		authMsg.setType(MessageBase.Type.UPDATE_USER_REQ);
+//		authMsg.setUpdateUserReq(MessageBase.UpdateUserReq.newBuilder().setId(1).setNickname("zzz"));
+
+		byte dataBytes[] = authMsg.build().toByteArray();
+		ctx.writeAndFlush(dataBytes);
+	}
+
+	@Override
+	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+		log.debug("连接断开 ");
+	}
+
+
+	@Override
+	protected void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception {
+		byte[] bytes = (byte[]) msg;
+
+        MessageBase msgBase = MessageBase.parseFrom(bytes);
+		if(msgBase.getType().equals(MessageBase.Type.LOGIN_RESP)){
+			log.info("登录返回==={}",msgBase.getLoginResp().toString());
+		}else if(msgBase.getType().equals(MessageBase.Type.UPDATE_USER_RESP)){
+			log.info("更新用户信息返回==={}",msgBase.getUpdateUserResp().toString());
+		}
+	}
+}
