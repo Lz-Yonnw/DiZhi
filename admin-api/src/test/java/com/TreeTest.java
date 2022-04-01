@@ -1,11 +1,15 @@
 package com;
 
-import com.ruoyi.netty.common.protobuf.MessageProtocol;
+import org.json.JSONObject;
 
-import java.util.*;
+import java.io.UnsupportedEncodingException;
 
 public class TreeTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UnsupportedEncodingException {
+
+//        String s1 = base64Encoder.encodeBuffer(bytes1);
+//        System.out.println(s1);
+
 
 //        List<Map<String,Object>> firstList = new ArrayList<>();
 //        Map<String,Object> map = new HashMap<>();
@@ -66,4 +70,6 @@ public class TreeTest {
 //        System.out.println(indexMap);
 //        System.out.println(firstList);
     }
+
+
 }

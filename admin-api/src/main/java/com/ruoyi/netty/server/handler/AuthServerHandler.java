@@ -5,7 +5,6 @@ import com.ruoyi.common.constant.Constants;
 import com.ruoyi.common.core.redis.RedisCache;
 import com.ruoyi.common.utils.DateUtils;
 import com.ruoyi.common.utils.StringUtils;
-import com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase;
 import com.ruoyi.netty.server.ChannelRepository;
 import com.ruoyi.netty.server.entity.MyClass;
 import com.ruoyi.netty.server.serviceImpl.AuthServiceImpl;
@@ -15,6 +14,7 @@ import com.ruoyi.system.domain.*;
 import com.ruoyi.system.service.*;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
+import com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.AttributeKey;
 import io.netty.util.ReferenceCountUtil;
@@ -23,18 +23,17 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
-import org.springframework.util.ResourceUtils;
 import sun.misc.BASE64Decoder;
 
 import javax.imageio.stream.FileImageOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
 import java.net.InetSocketAddress;
 import java.util.HashMap;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -93,7 +92,13 @@ public class AuthServerHandler extends ChannelInboundHandlerAdapter {
 	ITbUserWardrobeService iTbUserWardrobeService;
 
 	@Autowired
+	TbMallService tbMallService;
+
+	@Autowired
 	AuthServiceImpl authService;
+
+	@Autowired
+	RedisCache redisCache;
 
 	/**
 	 * 通道建立调用
@@ -121,12 +126,18 @@ public class AuthServerHandler extends ChannelInboundHandlerAdapter {
 
 
 
+
 	@SuppressWarnings("deprecation")
 	@Override
-	public void channelRead(ChannelHandlerContext ctx, Object msg) {
+	public void channelRead(ChannelHandlerContext ctx, Object msg) throws UnsupportedEncodingException {
 		try {
 			byte[] dataBytes = (byte[]) msg;
+			if (dataBytes==null){
+				throw new RuntimeException("无效参数");
+			}
+
 			MessageBase msgBase = MessageBase.parseFrom(dataBytes);
+
 			if(msgBase.getType().equals(MessageBase.Type.LOGIN_REQ)){
 				log.info("===登录/注册===");
 				authService.login(ctx, msgBase);
@@ -220,6 +231,7 @@ public class AuthServerHandler extends ChannelInboundHandlerAdapter {
 
 
 			}else if(msgBase.getType().equals(MessageBase.Type.MODEL_TYPE_REQ)){
+				//TODO =====
 				log.info("根据版型类型获取版型大类列表==={}");
 				MessageBase.Builder authMsg= MessageBase.newBuilder();
 				authMsg.setClientId(ctx.channel().id().toString());
@@ -419,7 +431,9 @@ public class AuthServerHandler extends ChannelInboundHandlerAdapter {
 				}
 				authMsg.setUserWardrobeListResp(list);
 				this.send(ctx,authMsg,200);
-			}else if(msgBase.getType().equals(MessageBase.Type.WHITE_DESIGN_REQ)){
+				}
+
+			else if(msgBase.getType().equals(MessageBase.Type.WHITE_DESIGN_REQ)){
 				log.info("查看白膜==={}");
 				MessageBase.Builder authMsg= MessageBase.newBuilder();
 				authMsg.setClientId(ctx.channel().id().toString());
@@ -476,7 +490,95 @@ public class AuthServerHandler extends ChannelInboundHandlerAdapter {
 				}
 				this.send(ctx,authMsg,500);*/
 
-			}else{
+			}else if(msgBase.getType().equals(MessageBase.Type.MALL_REQ)){
+				log.info("===商城信息===");
+				MessageBase.Builder authMsg= MessageBase.newBuilder();//new msg的内容
+				authMsg.setClientId(ctx.channel().id().toString());//拿到ClientId
+				authMsg.setType(MessageBase.Type.MALL_LIST_RESP);
+
+				//获取登录用户id
+				int id = msgBase.getMallImgReq().getId();
+				List<TbMall> tbMallList = tbMallService.selectTbMallList();//查询所有商品
+				MessageBase.MallListResp.Builder builders = MessageBase.MallListResp.newBuilder();
+				for (TbMall tbMall : tbMallList) {
+					TbCollection tbCollection = tbMallService.selectTbCollection(id,tbMall.getId());
+
+					MessageBase.MallResp.Builder builder = MessageBase.MallResp.newBuilder();
+					builder.setId(tbMall.getId().intValue());
+					builder.setTbStoreId(tbMall.getTbStoreId());
+					builder.setName(tbMall.getName());
+					builder.setImg(tbMall.getImg());
+					builder.setPrice(tbMall.getPrice().toString());
+					if (tbCollection==null){
+						builder.setStatus(0);
+					}else {
+						builder.setStatus(tbCollection.getStatus());
+					}
+					builders.addMallResp(builder);
+				}
+				authMsg.setMallListResp(builders);
+				this.send(ctx,authMsg,200);
+
+
+			}else if (msgBase.getType().equals(MessageBase.Type.COLLECTION_REQ)){
+				log.info("===收藏商品===");
+				MessageBase.Builder authMsg= MessageBase.newBuilder();//new msg的内容
+				authMsg.setClientId(ctx.channel().id().toString());//拿到ClientId
+
+
+				TbCollection tbCollection = new TbCollection();
+				Long mallId = (long) msgBase.getCollectionReq().getMallId();
+				Long userId = (long) msgBase.getCollectionReq().getUserId();
+
+				tbCollection.setMallId(mallId);
+				tbCollection.setUserId(userId);
+				tbCollection.setStatus(msgBase.getCollectionReq().getStatus());
+
+				tbMallService.updataStatus(tbCollection);
+
+				this.send(ctx,authMsg,200);
+
+			}else if (msgBase.getType().equals(MessageBase.Type.COLLECTION_LIST_REQ)){
+				log.info("===我的收藏===");
+				MessageBase.Builder authMsg= MessageBase.newBuilder();//new msg的内容
+				authMsg.setClientId(ctx.channel().id().toString());//拿到ClientId
+				authMsg.setType(MessageBase.Type.COLLECTION_LIST_RESP);
+
+				//获取用户id
+				int userId = msgBase.getCollectionListReq().getUserId();
+				//查询该用户所有的藏品
+				List<TbMall> tbMallList = tbMallService.selectTbMallListStatus((long) userId);
+
+				MessageBase.CollectionListResp.Builder builders = MessageBase.CollectionListResp.newBuilder();
+				for (TbMall tbMall : tbMallList) {
+					MessageBase.MallResp.Builder builder = MessageBase.MallResp.newBuilder();
+					builder.setId(tbMall.getId().intValue());
+					builder.setTbStoreId(tbMall.getTbStoreId());
+					builder.setName(tbMall.getName());
+					builder.setImg(tbMall.getImg());
+					builder.setPrice(tbMall.getPrice().toString());
+					builder.setStatus(1);
+					builders.addMallResp(builder);
+
+				}
+				authMsg.setCollectionListResp(builders);
+				this.send(ctx,authMsg,200);
+
+
+
+			}
+			/*else if (msgBase.getType().equals(MessageBase.Type.WX_REQ)){
+				log.info("微信支付");
+				MessageBase.Builder authMsg = MessageBase.newBuilder();
+				authMsg.setClientId(ctx.channel().id().toString());
+				authMsg.setType(MessageBase.Type.ORDER_RESP);
+
+
+
+
+
+
+			}*/else{
 				log.info("===============没有该协议类型=============");
 				MessageBase.Builder authMsg= MessageBase.newBuilder();
 				authMsg.setClientId(ctx.channel().id().toString());
@@ -485,6 +587,7 @@ public class AuthServerHandler extends ChannelInboundHandlerAdapter {
 			ReferenceCountUtil.release(msg);
 		}catch (Exception e){
 			e.printStackTrace();
+
 		}
 	}
 

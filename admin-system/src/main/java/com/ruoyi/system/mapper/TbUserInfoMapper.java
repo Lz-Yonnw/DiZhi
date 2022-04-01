@@ -2,6 +2,9 @@ package com.ruoyi.system.mapper;
 
 import java.util.List;
 import com.ruoyi.system.domain.TbUserInfo;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
 /**
  * 用户信息Mapper接口
@@ -67,5 +70,6 @@ public interface TbUserInfoMapper
      * @param phoneNumber
      * @return
      */
-    public TbUserInfo selectTbUserInfoByPhoneNumber(String phoneNumber);
+//    @Select("select * from tb_user_info where phone_number = #{phoneNumber}")
+    public TbUserInfo selectTbUserInfoByPhoneNumber(@Param("phoneNumber") String phoneNumber);
 }

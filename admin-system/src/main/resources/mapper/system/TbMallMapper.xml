@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.TbMallMapper">
+    <resultMap id="TbMall" type="com.ruoyi.system.domain.TbMall">
+        <result property="id" column="id" />
+        <result property="tbStoreId" column="tb_store_id" />
+        <result property="name" column="name" />
+        <result property="description" column="description" />
+        <result property="status" column="status" />
+        <result property="img" column="img" />
+        <result property="price" column="price" />
+
+    </resultMap>
+
+    <sql id="selectTbMallVo">
+        select id,tb_store_id, name,img, price from tb_mall
+    </sql>
+
+    <select id="selectList" resultType="com.ruoyi.system.domain.TbMall" resultMap="TbMall">
+        <include refid="selectTbMallVo"></include>
+    </select>
+
+    <!--根据id查询商品-->
+    <select id="selectListMall" resultType="com.ruoyi.system.domain.TbMall">
+        select * from tb_mall where id in (#{mallIds})
+    </select>
+</mapper>

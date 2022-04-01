@@ -1,6 +1,10 @@
 package com.ruoyi.web.controller.system;
 
 import java.util.List;
+
+import com.ruoyi.system.domain.TbMall;
+import com.ruoyi.system.service.TbMallService;
+import org.apache.poi.ss.formula.functions.T;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,12 +40,32 @@ public class TbUserWardrobeController extends BaseController
 {
     @Autowired
     private ITbUserWardrobeService tbUserWardrobeService;
+    @Autowired
+    private TbMallService tbMallService;
+
+
+
+    /*//TODO 商品Controller
+    *//**
+     * 商品信息
+     *//*
+    @ApiOperation("查询商品列表列表")
+//    @PreAuthorize("@ss.hasPermi('system:userWardrobe:listMall')")
+    @GetMapping("/listMall")
+    public TableDataInfo<List<TbMall>> listMall(TbMall tbMall){
+        startPage();
+        List<TbMall> list = tbMallService.selectTbMallList();
+        return getDataTable(list);
+
+    }
+*/
+
 
     /**
      * 查询衣柜列表列表
      */
     @ApiOperation("查询衣柜列表列表")
-    @PreAuthorize("@ss.hasPermi('system:userWardrobe:list')")
+//    @PreAuthorize("@ss.hasPermi('system:userWardrobe:list')")
     @GetMapping("/list")
     public TableDataInfo<List<TbUserWardrobe>> list(TbUserWardrobe tbUserWardrobe)
     {

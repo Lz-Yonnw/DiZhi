@@ -7,6 +7,7 @@ import com.fasterxml.classmate.TypeResolver;
 import com.github.xiaoymin.knife4j.spring.annotations.EnableKnife4j;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import org.mybatis.spring.boot.autoconfigure.ConfigurationCustomizer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -146,6 +147,7 @@ public class SwaggerConfig
 @EnableKnife4j
 @Import(BeanValidatorPluginsConfiguration.class)
 class SwaggerDataConfig {
+
 
     @Bean
     public AlternateTypeRuleConvention pageableConvention(final TypeResolver resolver) {
