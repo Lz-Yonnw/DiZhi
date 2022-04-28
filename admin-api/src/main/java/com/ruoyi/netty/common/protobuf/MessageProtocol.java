@@ -703,6 +703,356 @@ public final class MessageProtocol {
          * <code>.NettyProtobufWebsocketClient.MessageBase.CollectionListResp collectionListResp = 29;</code>
          */
         com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.CollectionListRespOrBuilder getCollectionListRespOrBuilder();
+
+        /**
+         * <pre>
+         *订单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsReq particularsReq = 30;</code>
+         */
+        boolean hasParticularsReq();
+        /**
+         * <pre>
+         *订单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsReq particularsReq = 30;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq getParticularsReq();
+        /**
+         * <pre>
+         *订单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsReq particularsReq = 30;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReqOrBuilder getParticularsReqOrBuilder();
+
+        /**
+         * <pre>
+         *订单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 31;</code>
+         */
+        boolean hasParticularsResp();
+        /**
+         * <pre>
+         *订单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 31;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp getParticularsResp();
+        /**
+         * <pre>
+         *订单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 31;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsRespOrBuilder getParticularsRespOrBuilder();
+
+        /**
+         * <pre>
+         *找回密码
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq loginPasswordReq = 32;</code>
+         */
+        boolean hasLoginPasswordReq();
+        /**
+         * <pre>
+         *找回密码
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq loginPasswordReq = 32;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq getLoginPasswordReq();
+        /**
+         * <pre>
+         *找回密码
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq loginPasswordReq = 32;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReqOrBuilder getLoginPasswordReqOrBuilder();
+
+        /**
+         * <pre>
+         *用户全部订单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListReq particularsListReq = 33;</code>
+         */
+        boolean hasParticularsListReq();
+        /**
+         * <pre>
+         *用户全部订单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListReq particularsListReq = 33;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq getParticularsListReq();
+        /**
+         * <pre>
+         *用户全部订单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListReq particularsListReq = 33;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReqOrBuilder getParticularsListReqOrBuilder();
+
+        /**
+         * <pre>
+         *用户全部订单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListResp particularsListResp = 34;</code>
+         */
+        boolean hasParticularsListResp();
+        /**
+         * <pre>
+         *用户全部订单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListResp particularsListResp = 34;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp getParticularsListResp();
+        /**
+         * <pre>
+         *用户全部订单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListResp particularsListResp = 34;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListRespOrBuilder getParticularsListRespOrBuilder();
+
+        /**
+         * <pre>
+         *用户全部订单数据响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 35;</code>
+         */
+        boolean hasParticularsOrderResp();
+        /**
+         * <pre>
+         *用户全部订单数据响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 35;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp getParticularsOrderResp();
+        /**
+         * <pre>
+         *用户全部订单数据响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 35;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderRespOrBuilder getParticularsOrderRespOrBuilder();
+
+        /**
+         * <pre>
+         *下单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq placeAnOrderReq = 36;</code>
+         */
+        boolean hasPlaceAnOrderReq();
+        /**
+         * <pre>
+         *下单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq placeAnOrderReq = 36;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq getPlaceAnOrderReq();
+        /**
+         * <pre>
+         *下单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq placeAnOrderReq = 36;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReqOrBuilder getPlaceAnOrderReqOrBuilder();
+
+        /**
+         * <pre>
+         *下单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp placeAnOrderResp = 37;</code>
+         */
+        boolean hasPlaceAnOrderResp();
+        /**
+         * <pre>
+         *下单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp placeAnOrderResp = 37;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp getPlaceAnOrderResp();
+        /**
+         * <pre>
+         *下单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp placeAnOrderResp = 37;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderRespOrBuilder getPlaceAnOrderRespOrBuilder();
+
+        /**
+         * <pre>
+         *添加收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 38;</code>
+         */
+        boolean hasAddressReq();
+        /**
+         * <pre>
+         *添加收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 38;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq getAddressReq();
+        /**
+         * <pre>
+         *添加收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 38;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder getAddressReqOrBuilder();
+
+        /**
+         * <pre>
+         *添加、修改、删除收货地址响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.AddressResp addressResp = 39;</code>
+         */
+        boolean hasAddressResp();
+        /**
+         * <pre>
+         *添加、修改、删除收货地址响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.AddressResp addressResp = 39;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp getAddressResp();
+        /**
+         * <pre>
+         *添加、修改、删除收货地址响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.AddressResp addressResp = 39;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressRespOrBuilder getAddressRespOrBuilder();
+
+        /**
+         * <pre>
+         *修改收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq updateAddressReq = 40;</code>
+         */
+        boolean hasUpdateAddressReq();
+        /**
+         * <pre>
+         *修改收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq updateAddressReq = 40;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq getUpdateAddressReq();
+        /**
+         * <pre>
+         *修改收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq updateAddressReq = 40;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReqOrBuilder getUpdateAddressReqOrBuilder();
+
+        /**
+         * <pre>
+         *删除收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq deleteAddressReq = 41;</code>
+         */
+        boolean hasDeleteAddressReq();
+        /**
+         * <pre>
+         *删除收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq deleteAddressReq = 41;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq getDeleteAddressReq();
+        /**
+         * <pre>
+         *删除收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq deleteAddressReq = 41;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReqOrBuilder getDeleteAddressReqOrBuilder();
+
+        /**
+         * <pre>
+         *查询该用户所有收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressReq selectAddressReq = 42;</code>
+         */
+        boolean hasSelectAddressReq();
+        /**
+         * <pre>
+         *查询该用户所有收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressReq selectAddressReq = 42;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq getSelectAddressReq();
+        /**
+         * <pre>
+         *查询该用户所有收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressReq selectAddressReq = 42;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReqOrBuilder getSelectAddressReqOrBuilder();
+
+        /**
+         * <pre>
+         *查询该用户所有收货地址响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressResp selectAddressResp = 43;</code>
+         */
+        boolean hasSelectAddressResp();
+        /**
+         * <pre>
+         *查询该用户所有收货地址响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressResp selectAddressResp = 43;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp getSelectAddressResp();
+        /**
+         * <pre>
+         *查询该用户所有收货地址响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressResp selectAddressResp = 43;</code>
+         */
+        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressRespOrBuilder getSelectAddressRespOrBuilder();
     }
     /**
      * <pre>
@@ -739,6 +1089,7 @@ public final class MessageProtocol {
                 throw new java.lang.NullPointerException();
             }
             int mutable_bitField0_ = 0;
+            int mutable_bitField1_ = 0;
             com.google.protobuf.UnknownFieldSet.Builder unknownFields =
                     com.google.protobuf.UnknownFieldSet.newBuilder();
             try {
@@ -1104,6 +1455,188 @@ public final class MessageProtocol {
 
                             break;
                         }
+                        case 242: {
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.Builder subBuilder = null;
+                            if (particularsReq_ != null) {
+                                subBuilder = particularsReq_.toBuilder();
+                            }
+                            particularsReq_ = input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.parser(), extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(particularsReq_);
+                                particularsReq_ = subBuilder.buildPartial();
+                            }
+
+                            break;
+                        }
+                        case 250: {
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder subBuilder = null;
+                            if (particularsResp_ != null) {
+                                subBuilder = particularsResp_.toBuilder();
+                            }
+                            particularsResp_ = input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.parser(), extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(particularsResp_);
+                                particularsResp_ = subBuilder.buildPartial();
+                            }
+
+                            break;
+                        }
+                        case 258: {
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.Builder subBuilder = null;
+                            if (loginPasswordReq_ != null) {
+                                subBuilder = loginPasswordReq_.toBuilder();
+                            }
+                            loginPasswordReq_ = input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.parser(), extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(loginPasswordReq_);
+                                loginPasswordReq_ = subBuilder.buildPartial();
+                            }
+
+                            break;
+                        }
+                        case 266: {
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.Builder subBuilder = null;
+                            if (particularsListReq_ != null) {
+                                subBuilder = particularsListReq_.toBuilder();
+                            }
+                            particularsListReq_ = input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.parser(), extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(particularsListReq_);
+                                particularsListReq_ = subBuilder.buildPartial();
+                            }
+
+                            break;
+                        }
+                        case 274: {
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.Builder subBuilder = null;
+                            if (particularsListResp_ != null) {
+                                subBuilder = particularsListResp_.toBuilder();
+                            }
+                            particularsListResp_ = input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.parser(), extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(particularsListResp_);
+                                particularsListResp_ = subBuilder.buildPartial();
+                            }
+
+                            break;
+                        }
+                        case 282: {
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder subBuilder = null;
+                            if (particularsOrderResp_ != null) {
+                                subBuilder = particularsOrderResp_.toBuilder();
+                            }
+                            particularsOrderResp_ = input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.parser(), extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(particularsOrderResp_);
+                                particularsOrderResp_ = subBuilder.buildPartial();
+                            }
+
+                            break;
+                        }
+                        case 290: {
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.Builder subBuilder = null;
+                            if (placeAnOrderReq_ != null) {
+                                subBuilder = placeAnOrderReq_.toBuilder();
+                            }
+                            placeAnOrderReq_ = input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.parser(), extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(placeAnOrderReq_);
+                                placeAnOrderReq_ = subBuilder.buildPartial();
+                            }
+
+                            break;
+                        }
+                        case 298: {
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.Builder subBuilder = null;
+                            if (placeAnOrderResp_ != null) {
+                                subBuilder = placeAnOrderResp_.toBuilder();
+                            }
+                            placeAnOrderResp_ = input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.parser(), extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(placeAnOrderResp_);
+                                placeAnOrderResp_ = subBuilder.buildPartial();
+                            }
+
+                            break;
+                        }
+                        case 306: {
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder subBuilder = null;
+                            if (addressReq_ != null) {
+                                subBuilder = addressReq_.toBuilder();
+                            }
+                            addressReq_ = input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.parser(), extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(addressReq_);
+                                addressReq_ = subBuilder.buildPartial();
+                            }
+
+                            break;
+                        }
+                        case 314: {
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.Builder subBuilder = null;
+                            if (addressResp_ != null) {
+                                subBuilder = addressResp_.toBuilder();
+                            }
+                            addressResp_ = input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.parser(), extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(addressResp_);
+                                addressResp_ = subBuilder.buildPartial();
+                            }
+
+                            break;
+                        }
+                        case 322: {
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.Builder subBuilder = null;
+                            if (updateAddressReq_ != null) {
+                                subBuilder = updateAddressReq_.toBuilder();
+                            }
+                            updateAddressReq_ = input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.parser(), extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(updateAddressReq_);
+                                updateAddressReq_ = subBuilder.buildPartial();
+                            }
+
+                            break;
+                        }
+                        case 330: {
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.Builder subBuilder = null;
+                            if (deleteAddressReq_ != null) {
+                                subBuilder = deleteAddressReq_.toBuilder();
+                            }
+                            deleteAddressReq_ = input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.parser(), extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(deleteAddressReq_);
+                                deleteAddressReq_ = subBuilder.buildPartial();
+                            }
+
+                            break;
+                        }
+                        case 338: {
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.Builder subBuilder = null;
+                            if (selectAddressReq_ != null) {
+                                subBuilder = selectAddressReq_.toBuilder();
+                            }
+                            selectAddressReq_ = input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.parser(), extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(selectAddressReq_);
+                                selectAddressReq_ = subBuilder.buildPartial();
+                            }
+
+                            break;
+                        }
+                        case 346: {
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.Builder subBuilder = null;
+                            if (selectAddressResp_ != null) {
+                                subBuilder = selectAddressResp_.toBuilder();
+                            }
+                            selectAddressResp_ = input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.parser(), extensionRegistry);
+                            if (subBuilder != null) {
+                                subBuilder.mergeFrom(selectAddressResp_);
+                                selectAddressResp_ = subBuilder.buildPartial();
+                            }
+
+                            break;
+                        }
                         default: {
                             if (!parseUnknownField(
                                     input, unknownFields, extensionRegistry, tag)) {
@@ -1331,7 +1864,7 @@ public final class MessageProtocol {
             SEND_MSG_RESP(22),
             /**
              * <pre>
-             *发送验证码请求
+             *请求订单
              * </pre>
              *
              * <code>ORDER_REQ = 23;</code>
@@ -1339,7 +1872,7 @@ public final class MessageProtocol {
             ORDER_REQ(23),
             /**
              * <pre>
-             *发送验证码响应
+             *响应订单
              * </pre>
              *
              * <code>ORDER_RESP = 24;</code>
@@ -1441,6 +1974,118 @@ public final class MessageProtocol {
              * <code>COLLECTION_LIST_RESP = 36;</code>
              */
             COLLECTION_LIST_RESP(36),
+            /**
+             * <pre>
+             *找回密码
+             * </pre>
+             *
+             * <code>LOGIN_PASSWORD_REQ = 37;</code>
+             */
+            LOGIN_PASSWORD_REQ(37),
+            /**
+             * <pre>
+             *用户订单请求
+             * </pre>
+             *
+             * <code>PARTICULARS_REQ = 38;</code>
+             */
+            PARTICULARS_REQ(38),
+            /**
+             * <pre>
+             *用户订单响应
+             * </pre>
+             *
+             * <code>PARTICULARS_RESP = 39;</code>
+             */
+            PARTICULARS_RESP(39),
+            /**
+             * <pre>
+             *我的全部订单请求
+             * </pre>
+             *
+             * <code>PARTICULARS_LIST_REQ = 40;</code>
+             */
+            PARTICULARS_LIST_REQ(40),
+            /**
+             * <pre>
+             *我的全部订单响应
+             * </pre>
+             *
+             * <code>PARTICULARS_LIST_RESP = 41;</code>
+             */
+            PARTICULARS_LIST_RESP(41),
+            /**
+             * <pre>
+             *我的全部订单数据响应
+             * </pre>
+             *
+             * <code>PARTICULARS_ORDER_RESP = 42;</code>
+             */
+            PARTICULARS_ORDER_RESP(42),
+            /**
+             * <pre>
+             *下单请求
+             * </pre>
+             *
+             * <code>PLACEANORDER_REQ = 43;</code>
+             */
+            PLACEANORDER_REQ(43),
+            /**
+             * <pre>
+             *下单响应
+             * </pre>
+             *
+             * <code>PLACEANORDER_RESP = 44;</code>
+             */
+            PLACEANORDER_RESP(44),
+            /**
+             * <pre>
+             *添加收货地址请求
+             * </pre>
+             *
+             * <code>ADDRESS_REP = 45;</code>
+             */
+            ADDRESS_REP(45),
+            /**
+             * <pre>
+             *添加、修改、删除收货地址响应
+             * </pre>
+             *
+             * <code>ADDRESS_RESP = 46;</code>
+             */
+            ADDRESS_RESP(46),
+            /**
+             * <pre>
+             *修改收货地址请求
+             * </pre>
+             *
+             * <code>UPDATE_ADDRESS_REQ = 47;</code>
+             */
+            UPDATE_ADDRESS_REQ(47),
+            /**
+             * <pre>
+             *删除收货地址请求
+             * </pre>
+             *
+             * <code>DELETE_ADDRESS_REQ = 48;</code>
+             */
+            DELETE_ADDRESS_REQ(48),
+            /**
+             * <pre>
+             *查询该用户所有收货地址请求
+             * </pre>
+             *
+             * <code>SELECT_ADDRESS_REQ = 49;</code>
+             */
+            SELECT_ADDRESS_REQ(49),
+            /**
+             * <pre>
+             *查询该用户所有收货地址响应
+             * </pre>
+             *
+             * <code>SELECT_ADDRESS_RESP = 50;</code>
+             */
+            SELECT_ADDRESS_RESP(50),
             UNRECOGNIZED(-1),
             ;
 
@@ -1630,7 +2275,7 @@ public final class MessageProtocol {
             public static final int SEND_MSG_RESP_VALUE = 22;
             /**
              * <pre>
-             *发送验证码请求
+             *请求订单
              * </pre>
              *
              * <code>ORDER_REQ = 23;</code>
@@ -1638,7 +2283,7 @@ public final class MessageProtocol {
             public static final int ORDER_REQ_VALUE = 23;
             /**
              * <pre>
-             *发送验证码响应
+             *响应订单
              * </pre>
              *
              * <code>ORDER_RESP = 24;</code>
@@ -1740,6 +2385,118 @@ public final class MessageProtocol {
              * <code>COLLECTION_LIST_RESP = 36;</code>
              */
             public static final int COLLECTION_LIST_RESP_VALUE = 36;
+            /**
+             * <pre>
+             *找回密码
+             * </pre>
+             *
+             * <code>LOGIN_PASSWORD_REQ = 37;</code>
+             */
+            public static final int LOGIN_PASSWORD_REQ_VALUE = 37;
+            /**
+             * <pre>
+             *用户订单请求
+             * </pre>
+             *
+             * <code>PARTICULARS_REQ = 38;</code>
+             */
+            public static final int PARTICULARS_REQ_VALUE = 38;
+            /**
+             * <pre>
+             *用户订单响应
+             * </pre>
+             *
+             * <code>PARTICULARS_RESP = 39;</code>
+             */
+            public static final int PARTICULARS_RESP_VALUE = 39;
+            /**
+             * <pre>
+             *我的全部订单请求
+             * </pre>
+             *
+             * <code>PARTICULARS_LIST_REQ = 40;</code>
+             */
+            public static final int PARTICULARS_LIST_REQ_VALUE = 40;
+            /**
+             * <pre>
+             *我的全部订单响应
+             * </pre>
+             *
+             * <code>PARTICULARS_LIST_RESP = 41;</code>
+             */
+            public static final int PARTICULARS_LIST_RESP_VALUE = 41;
+            /**
+             * <pre>
+             *我的全部订单数据响应
+             * </pre>
+             *
+             * <code>PARTICULARS_ORDER_RESP = 42;</code>
+             */
+            public static final int PARTICULARS_ORDER_RESP_VALUE = 42;
+            /**
+             * <pre>
+             *下单请求
+             * </pre>
+             *
+             * <code>PLACEANORDER_REQ = 43;</code>
+             */
+            public static final int PLACEANORDER_REQ_VALUE = 43;
+            /**
+             * <pre>
+             *下单响应
+             * </pre>
+             *
+             * <code>PLACEANORDER_RESP = 44;</code>
+             */
+            public static final int PLACEANORDER_RESP_VALUE = 44;
+            /**
+             * <pre>
+             *添加收货地址请求
+             * </pre>
+             *
+             * <code>ADDRESS_REP = 45;</code>
+             */
+            public static final int ADDRESS_REP_VALUE = 45;
+            /**
+             * <pre>
+             *添加、修改、删除收货地址响应
+             * </pre>
+             *
+             * <code>ADDRESS_RESP = 46;</code>
+             */
+            public static final int ADDRESS_RESP_VALUE = 46;
+            /**
+             * <pre>
+             *修改收货地址请求
+             * </pre>
+             *
+             * <code>UPDATE_ADDRESS_REQ = 47;</code>
+             */
+            public static final int UPDATE_ADDRESS_REQ_VALUE = 47;
+            /**
+             * <pre>
+             *删除收货地址请求
+             * </pre>
+             *
+             * <code>DELETE_ADDRESS_REQ = 48;</code>
+             */
+            public static final int DELETE_ADDRESS_REQ_VALUE = 48;
+            /**
+             * <pre>
+             *查询该用户所有收货地址请求
+             * </pre>
+             *
+             * <code>SELECT_ADDRESS_REQ = 49;</code>
+             */
+            public static final int SELECT_ADDRESS_REQ_VALUE = 49;
+            /**
+             * <pre>
+             *查询该用户所有收货地址响应
+             * </pre>
+             *
+             * <code>SELECT_ADDRESS_RESP = 50;</code>
+             */
+            public static final int SELECT_ADDRESS_RESP_VALUE = 50;
 
 
             public final int getNumber() {
@@ -1797,6 +2554,20 @@ public final class MessageProtocol {
                     case 34: return COLLECTION_RESP;
                     case 35: return COLLECTION_LIST_REQ;
                     case 36: return COLLECTION_LIST_RESP;
+                    case 37: return LOGIN_PASSWORD_REQ;
+                    case 38: return PARTICULARS_REQ;
+                    case 39: return PARTICULARS_RESP;
+                    case 40: return PARTICULARS_LIST_REQ;
+                    case 41: return PARTICULARS_LIST_RESP;
+                    case 42: return PARTICULARS_ORDER_RESP;
+                    case 43: return PLACEANORDER_REQ;
+                    case 44: return PLACEANORDER_RESP;
+                    case 45: return ADDRESS_REP;
+                    case 46: return ADDRESS_RESP;
+                    case 47: return UPDATE_ADDRESS_REQ;
+                    case 48: return DELETE_ADDRESS_REQ;
+                    case 49: return SELECT_ADDRESS_REQ;
+                    case 50: return SELECT_ADDRESS_RESP;
                     default: return null;
                 }
             }
@@ -29400,18 +30171,18 @@ public final class MessageProtocol {
              *手机号
              * </pre>
              *
-             * <code>string prepayId = 1;</code>
+             * <code>string phoneNumber = 1;</code>
              */
-            java.lang.String getPrepayId();
+            java.lang.String getPhoneNumber();
             /**
              * <pre>
              *手机号
              * </pre>
              *
-             * <code>string prepayId = 1;</code>
+             * <code>string phoneNumber = 1;</code>
              */
             com.google.protobuf.ByteString
-            getPrepayIdBytes();
+            getPhoneNumberBytes();
         }
         /**
          * <pre>
@@ -29430,7 +30201,7 @@ public final class MessageProtocol {
                 super(builder);
             }
             private OrderReq() {
-                prepayId_ = "";
+                phoneNumber_ = "";
             }
 
             @java.lang.Override
@@ -29460,7 +30231,7 @@ public final class MessageProtocol {
                             case 10: {
                                 java.lang.String s = input.readStringRequireUtf8();
 
-                                prepayId_ = s;
+                                phoneNumber_ = s;
                                 break;
                             }
                             default: {
@@ -29495,24 +30266,24 @@ public final class MessageProtocol {
                                 com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.OrderReq.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.OrderReq.Builder.class);
             }
 
-            public static final int PREPAYID_FIELD_NUMBER = 1;
-            private volatile java.lang.Object prepayId_;
+            public static final int PHONENUMBER_FIELD_NUMBER = 1;
+            private volatile java.lang.Object phoneNumber_;
             /**
              * <pre>
              *手机号
              * </pre>
              *
-             * <code>string prepayId = 1;</code>
+             * <code>string phoneNumber = 1;</code>
              */
-            public java.lang.String getPrepayId() {
-                java.lang.Object ref = prepayId_;
+            public java.lang.String getPhoneNumber() {
+                java.lang.Object ref = phoneNumber_;
                 if (ref instanceof java.lang.String) {
                     return (java.lang.String) ref;
                 } else {
                     com.google.protobuf.ByteString bs =
                             (com.google.protobuf.ByteString) ref;
                     java.lang.String s = bs.toStringUtf8();
-                    prepayId_ = s;
+                    phoneNumber_ = s;
                     return s;
                 }
             }
@@ -29521,16 +30292,16 @@ public final class MessageProtocol {
              *手机号
              * </pre>
              *
-             * <code>string prepayId = 1;</code>
+             * <code>string phoneNumber = 1;</code>
              */
             public com.google.protobuf.ByteString
-            getPrepayIdBytes() {
-                java.lang.Object ref = prepayId_;
+            getPhoneNumberBytes() {
+                java.lang.Object ref = phoneNumber_;
                 if (ref instanceof java.lang.String) {
                     com.google.protobuf.ByteString b =
                             com.google.protobuf.ByteString.copyFromUtf8(
                                     (java.lang.String) ref);
-                    prepayId_ = b;
+                    phoneNumber_ = b;
                     return b;
                 } else {
                     return (com.google.protobuf.ByteString) ref;
@@ -29551,8 +30322,8 @@ public final class MessageProtocol {
             @java.lang.Override
             public void writeTo(com.google.protobuf.CodedOutputStream output)
                     throws java.io.IOException {
-                if (!getPrepayIdBytes().isEmpty()) {
-                    com.google.protobuf.GeneratedMessageV3.writeString(output, 1, prepayId_);
+                if (!getPhoneNumberBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 1, phoneNumber_);
                 }
                 unknownFields.writeTo(output);
             }
@@ -29563,8 +30334,8 @@ public final class MessageProtocol {
                 if (size != -1) return size;
 
                 size = 0;
-                if (!getPrepayIdBytes().isEmpty()) {
-                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, prepayId_);
+                if (!getPhoneNumberBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, phoneNumber_);
                 }
                 size += unknownFields.getSerializedSize();
                 memoizedSize = size;
@@ -29581,8 +30352,8 @@ public final class MessageProtocol {
                 }
                 com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.OrderReq other = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.OrderReq) obj;
 
-                if (!getPrepayId()
-                        .equals(other.getPrepayId())) return false;
+                if (!getPhoneNumber()
+                        .equals(other.getPhoneNumber())) return false;
                 if (!unknownFields.equals(other.unknownFields)) return false;
                 return true;
             }
@@ -29594,8 +30365,8 @@ public final class MessageProtocol {
                 }
                 int hash = 41;
                 hash = (19 * hash) + getDescriptor().hashCode();
-                hash = (37 * hash) + PREPAYID_FIELD_NUMBER;
-                hash = (53 * hash) + getPrepayId().hashCode();
+                hash = (37 * hash) + PHONENUMBER_FIELD_NUMBER;
+                hash = (53 * hash) + getPhoneNumber().hashCode();
                 hash = (29 * hash) + unknownFields.hashCode();
                 memoizedHashCode = hash;
                 return hash;
@@ -29733,7 +30504,7 @@ public final class MessageProtocol {
                 @java.lang.Override
                 public Builder clear() {
                     super.clear();
-                    prepayId_ = "";
+                    phoneNumber_ = "";
 
                     return this;
                 }
@@ -29761,7 +30532,7 @@ public final class MessageProtocol {
                 @java.lang.Override
                 public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.OrderReq buildPartial() {
                     com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.OrderReq result = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.OrderReq(this);
-                    result.prepayId_ = prepayId_;
+                    result.phoneNumber_ = phoneNumber_;
                     onBuilt();
                     return result;
                 }
@@ -29810,8 +30581,8 @@ public final class MessageProtocol {
 
                 public Builder mergeFrom(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.OrderReq other) {
                     if (other == com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.OrderReq.getDefaultInstance()) return this;
-                    if (!other.getPrepayId().isEmpty()) {
-                        prepayId_ = other.prepayId_;
+                    if (!other.getPhoneNumber().isEmpty()) {
+                        phoneNumber_ = other.phoneNumber_;
                         onChanged();
                     }
                     this.mergeUnknownFields(other.unknownFields);
@@ -29843,21 +30614,21 @@ public final class MessageProtocol {
                     return this;
                 }
 
-                private java.lang.Object prepayId_ = "";
+                private java.lang.Object phoneNumber_ = "";
                 /**
                  * <pre>
                  *手机号
                  * </pre>
                  *
-                 * <code>string prepayId = 1;</code>
+                 * <code>string phoneNumber = 1;</code>
                  */
-                public java.lang.String getPrepayId() {
-                    java.lang.Object ref = prepayId_;
+                public java.lang.String getPhoneNumber() {
+                    java.lang.Object ref = phoneNumber_;
                     if (!(ref instanceof java.lang.String)) {
                         com.google.protobuf.ByteString bs =
                                 (com.google.protobuf.ByteString) ref;
                         java.lang.String s = bs.toStringUtf8();
-                        prepayId_ = s;
+                        phoneNumber_ = s;
                         return s;
                     } else {
                         return (java.lang.String) ref;
@@ -29868,16 +30639,16 @@ public final class MessageProtocol {
                  *手机号
                  * </pre>
                  *
-                 * <code>string prepayId = 1;</code>
+                 * <code>string phoneNumber = 1;</code>
                  */
                 public com.google.protobuf.ByteString
-                getPrepayIdBytes() {
-                    java.lang.Object ref = prepayId_;
+                getPhoneNumberBytes() {
+                    java.lang.Object ref = phoneNumber_;
                     if (ref instanceof String) {
                         com.google.protobuf.ByteString b =
                                 com.google.protobuf.ByteString.copyFromUtf8(
                                         (java.lang.String) ref);
-                        prepayId_ = b;
+                        phoneNumber_ = b;
                         return b;
                     } else {
                         return (com.google.protobuf.ByteString) ref;
@@ -29888,15 +30659,15 @@ public final class MessageProtocol {
                  *手机号
                  * </pre>
                  *
-                 * <code>string prepayId = 1;</code>
+                 * <code>string phoneNumber = 1;</code>
                  */
-                public Builder setPrepayId(
+                public Builder setPhoneNumber(
                         java.lang.String value) {
                     if (value == null) {
                         throw new NullPointerException();
                     }
 
-                    prepayId_ = value;
+                    phoneNumber_ = value;
                     onChanged();
                     return this;
                 }
@@ -29905,11 +30676,11 @@ public final class MessageProtocol {
                  *手机号
                  * </pre>
                  *
-                 * <code>string prepayId = 1;</code>
+                 * <code>string phoneNumber = 1;</code>
                  */
-                public Builder clearPrepayId() {
+                public Builder clearPhoneNumber() {
 
-                    prepayId_ = getDefaultInstance().getPrepayId();
+                    phoneNumber_ = getDefaultInstance().getPhoneNumber();
                     onChanged();
                     return this;
                 }
@@ -29918,16 +30689,16 @@ public final class MessageProtocol {
                  *手机号
                  * </pre>
                  *
-                 * <code>string prepayId = 1;</code>
+                 * <code>string phoneNumber = 1;</code>
                  */
-                public Builder setPrepayIdBytes(
+                public Builder setPhoneNumberBytes(
                         com.google.protobuf.ByteString value) {
                     if (value == null) {
                         throw new NullPointerException();
                     }
                     checkByteStringIsUtf8(value);
 
-                    prepayId_ = value;
+                    phoneNumber_ = value;
                     onChanged();
                     return this;
                 }
@@ -30008,7 +30779,7 @@ public final class MessageProtocol {
 
             /**
              * <pre>
-             *订单id
+             *商品id
              * </pre>
              *
              * <code>string prepayId = 2;</code>
@@ -30016,7 +30787,7 @@ public final class MessageProtocol {
             java.lang.String getPrepayId();
             /**
              * <pre>
-             *订单id
+             *商品id
              * </pre>
              *
              * <code>string prepayId = 2;</code>
@@ -30026,6 +30797,7 @@ public final class MessageProtocol {
 
             /**
              * <pre>
+             *UUID
              * </pre>
              *
              * <code>string nonceStr = 3;</code>
@@ -30033,6 +30805,7 @@ public final class MessageProtocol {
             java.lang.String getNonceStr();
             /**
              * <pre>
+             *UUID
              * </pre>
              *
              * <code>string nonceStr = 3;</code>
@@ -30228,7 +31001,7 @@ public final class MessageProtocol {
             private volatile java.lang.Object prepayId_;
             /**
              * <pre>
-             *订单id
+             *商品id
              * </pre>
              *
              * <code>string prepayId = 2;</code>
@@ -30247,7 +31020,7 @@ public final class MessageProtocol {
             }
             /**
              * <pre>
-             *订单id
+             *商品id
              * </pre>
              *
              * <code>string prepayId = 2;</code>
@@ -30270,6 +31043,7 @@ public final class MessageProtocol {
             private volatile java.lang.Object nonceStr_;
             /**
              * <pre>
+             *UUID
              * </pre>
              *
              * <code>string nonceStr = 3;</code>
@@ -30288,6 +31062,7 @@ public final class MessageProtocol {
             }
             /**
              * <pre>
+             *UUID
              * </pre>
              *
              * <code>string nonceStr = 3;</code>
@@ -30852,7 +31627,7 @@ public final class MessageProtocol {
                 private java.lang.Object prepayId_ = "";
                 /**
                  * <pre>
-                 *订单id
+                 *商品id
                  * </pre>
                  *
                  * <code>string prepayId = 2;</code>
@@ -30871,7 +31646,7 @@ public final class MessageProtocol {
                 }
                 /**
                  * <pre>
-                 *订单id
+                 *商品id
                  * </pre>
                  *
                  * <code>string prepayId = 2;</code>
@@ -30891,7 +31666,7 @@ public final class MessageProtocol {
                 }
                 /**
                  * <pre>
-                 *订单id
+                 *商品id
                  * </pre>
                  *
                  * <code>string prepayId = 2;</code>
@@ -30908,7 +31683,7 @@ public final class MessageProtocol {
                 }
                 /**
                  * <pre>
-                 *订单id
+                 *商品id
                  * </pre>
                  *
                  * <code>string prepayId = 2;</code>
@@ -30921,7 +31696,7 @@ public final class MessageProtocol {
                 }
                 /**
                  * <pre>
-                 *订单id
+                 *商品id
                  * </pre>
                  *
                  * <code>string prepayId = 2;</code>
@@ -30941,6 +31716,7 @@ public final class MessageProtocol {
                 private java.lang.Object nonceStr_ = "";
                 /**
                  * <pre>
+                 *UUID
                  * </pre>
                  *
                  * <code>string nonceStr = 3;</code>
@@ -30959,6 +31735,7 @@ public final class MessageProtocol {
                 }
                 /**
                  * <pre>
+                 *UUID
                  * </pre>
                  *
                  * <code>string nonceStr = 3;</code>
@@ -30978,6 +31755,7 @@ public final class MessageProtocol {
                 }
                 /**
                  * <pre>
+                 *UUID
                  * </pre>
                  *
                  * <code>string nonceStr = 3;</code>
@@ -30994,6 +31772,7 @@ public final class MessageProtocol {
                 }
                 /**
                  * <pre>
+                 *UUID
                  * </pre>
                  *
                  * <code>string nonceStr = 3;</code>
@@ -31006,6 +31785,7 @@ public final class MessageProtocol {
                 }
                 /**
                  * <pre>
+                 *UUID
                  * </pre>
                  *
                  * <code>string nonceStr = 3;</code>
@@ -38710,6 +39490,17406 @@ public final class MessageProtocol {
 
         }
 
+        public interface LoginPasswordReqOrBuilder extends
+                // @@protoc_insertion_point(interface_extends:NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq)
+                com.google.protobuf.MessageOrBuilder {
+
+            /**
+             * <pre>
+             *手机号
+             * </pre>
+             *
+             * <code>string phoneNumber = 1;</code>
+             */
+            java.lang.String getPhoneNumber();
+            /**
+             * <pre>
+             *手机号
+             * </pre>
+             *
+             * <code>string phoneNumber = 1;</code>
+             */
+            com.google.protobuf.ByteString
+            getPhoneNumberBytes();
+
+            /**
+             * <pre>
+             *密码，密码不为空则是密码登录
+             * </pre>
+             *
+             * <code>string password = 2;</code>
+             */
+            java.lang.String getPassword();
+            /**
+             * <pre>
+             *密码，密码不为空则是密码登录
+             * </pre>
+             *
+             * <code>string password = 2;</code>
+             */
+            com.google.protobuf.ByteString
+            getPasswordBytes();
+
+            /**
+             * <pre>
+             *验证码。验证码不为空则短信验证码登录
+             * </pre>
+             *
+             * <code>string code = 3;</code>
+             */
+            java.lang.String getCode();
+            /**
+             * <pre>
+             *验证码。验证码不为空则短信验证码登录
+             * </pre>
+             *
+             * <code>string code = 3;</code>
+             */
+            com.google.protobuf.ByteString
+            getCodeBytes();
+        }
+        /**
+         * <pre>
+         *找回密码
+         * </pre>
+         *
+         * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq}
+         */
+        public  static final class LoginPasswordReq extends
+                com.google.protobuf.GeneratedMessageV3 implements
+                // @@protoc_insertion_point(message_implements:NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq)
+                LoginPasswordReqOrBuilder {
+            private static final long serialVersionUID = 0L;
+            // Use LoginPasswordReq.newBuilder() to construct.
+            private LoginPasswordReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+                super(builder);
+            }
+            private LoginPasswordReq() {
+                phoneNumber_ = "";
+                password_ = "";
+                code_ = "";
+            }
+
+            @java.lang.Override
+            public final com.google.protobuf.UnknownFieldSet
+            getUnknownFields() {
+                return this.unknownFields;
+            }
+            private LoginPasswordReq(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                this();
+                if (extensionRegistry == null) {
+                    throw new java.lang.NullPointerException();
+                }
+                int mutable_bitField0_ = 0;
+                com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                        com.google.protobuf.UnknownFieldSet.newBuilder();
+                try {
+                    boolean done = false;
+                    while (!done) {
+                        int tag = input.readTag();
+                        switch (tag) {
+                            case 0:
+                                done = true;
+                                break;
+                            case 10: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                phoneNumber_ = s;
+                                break;
+                            }
+                            case 18: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                password_ = s;
+                                break;
+                            }
+                            case 26: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                code_ = s;
+                                break;
+                            }
+                            default: {
+                                if (!parseUnknownField(
+                                        input, unknownFields, extensionRegistry, tag)) {
+                                    done = true;
+                                }
+                                break;
+                            }
+                        }
+                    }
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    throw e.setUnfinishedMessage(this);
+                } catch (java.io.IOException e) {
+                    throw new com.google.protobuf.InvalidProtocolBufferException(
+                            e).setUnfinishedMessage(this);
+                } finally {
+                    this.unknownFields = unknownFields.build();
+                    makeExtensionsImmutable();
+                }
+            }
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_LoginPasswordReq_descriptor;
+            }
+
+            @java.lang.Override
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_LoginPasswordReq_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.Builder.class);
+            }
+
+            public static final int PHONENUMBER_FIELD_NUMBER = 1;
+            private volatile java.lang.Object phoneNumber_;
+            /**
+             * <pre>
+             *手机号
+             * </pre>
+             *
+             * <code>string phoneNumber = 1;</code>
+             */
+            public java.lang.String getPhoneNumber() {
+                java.lang.Object ref = phoneNumber_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    phoneNumber_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *手机号
+             * </pre>
+             *
+             * <code>string phoneNumber = 1;</code>
+             */
+            public com.google.protobuf.ByteString
+            getPhoneNumberBytes() {
+                java.lang.Object ref = phoneNumber_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    phoneNumber_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int PASSWORD_FIELD_NUMBER = 2;
+            private volatile java.lang.Object password_;
+            /**
+             * <pre>
+             *密码，密码不为空则是密码登录
+             * </pre>
+             *
+             * <code>string password = 2;</code>
+             */
+            public java.lang.String getPassword() {
+                java.lang.Object ref = password_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    password_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *密码，密码不为空则是密码登录
+             * </pre>
+             *
+             * <code>string password = 2;</code>
+             */
+            public com.google.protobuf.ByteString
+            getPasswordBytes() {
+                java.lang.Object ref = password_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    password_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int CODE_FIELD_NUMBER = 3;
+            private volatile java.lang.Object code_;
+            /**
+             * <pre>
+             *验证码。验证码不为空则短信验证码登录
+             * </pre>
+             *
+             * <code>string code = 3;</code>
+             */
+            public java.lang.String getCode() {
+                java.lang.Object ref = code_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    code_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *验证码。验证码不为空则短信验证码登录
+             * </pre>
+             *
+             * <code>string code = 3;</code>
+             */
+            public com.google.protobuf.ByteString
+            getCodeBytes() {
+                java.lang.Object ref = code_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    code_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            private byte memoizedIsInitialized = -1;
+            @java.lang.Override
+            public final boolean isInitialized() {
+                byte isInitialized = memoizedIsInitialized;
+                if (isInitialized == 1) return true;
+                if (isInitialized == 0) return false;
+
+                memoizedIsInitialized = 1;
+                return true;
+            }
+
+            @java.lang.Override
+            public void writeTo(com.google.protobuf.CodedOutputStream output)
+                    throws java.io.IOException {
+                if (!getPhoneNumberBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 1, phoneNumber_);
+                }
+                if (!getPasswordBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 2, password_);
+                }
+                if (!getCodeBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 3, code_);
+                }
+                unknownFields.writeTo(output);
+            }
+
+            @java.lang.Override
+            public int getSerializedSize() {
+                int size = memoizedSize;
+                if (size != -1) return size;
+
+                size = 0;
+                if (!getPhoneNumberBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, phoneNumber_);
+                }
+                if (!getPasswordBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, password_);
+                }
+                if (!getCodeBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, code_);
+                }
+                size += unknownFields.getSerializedSize();
+                memoizedSize = size;
+                return size;
+            }
+
+            @java.lang.Override
+            public boolean equals(final java.lang.Object obj) {
+                if (obj == this) {
+                    return true;
+                }
+                if (!(obj instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq)) {
+                    return super.equals(obj);
+                }
+                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq other = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq) obj;
+
+                if (!getPhoneNumber()
+                        .equals(other.getPhoneNumber())) return false;
+                if (!getPassword()
+                        .equals(other.getPassword())) return false;
+                if (!getCode()
+                        .equals(other.getCode())) return false;
+                if (!unknownFields.equals(other.unknownFields)) return false;
+                return true;
+            }
+
+            @java.lang.Override
+            public int hashCode() {
+                if (memoizedHashCode != 0) {
+                    return memoizedHashCode;
+                }
+                int hash = 41;
+                hash = (19 * hash) + getDescriptor().hashCode();
+                hash = (37 * hash) + PHONENUMBER_FIELD_NUMBER;
+                hash = (53 * hash) + getPhoneNumber().hashCode();
+                hash = (37 * hash) + PASSWORD_FIELD_NUMBER;
+                hash = (53 * hash) + getPassword().hashCode();
+                hash = (37 * hash) + CODE_FIELD_NUMBER;
+                hash = (53 * hash) + getCode().hashCode();
+                hash = (29 * hash) + unknownFields.hashCode();
+                memoizedHashCode = hash;
+                return hash;
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq parseFrom(
+                    java.nio.ByteBuffer data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq parseFrom(
+                    java.nio.ByteBuffer data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq parseFrom(
+                    com.google.protobuf.ByteString data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq parseFrom(
+                    com.google.protobuf.ByteString data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq parseFrom(byte[] data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq parseFrom(
+                    byte[] data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq parseFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq parseFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq parseDelimitedFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq parseDelimitedFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq parseFrom(
+                    com.google.protobuf.CodedInputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq parseFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+
+            @java.lang.Override
+            public Builder newBuilderForType() { return newBuilder(); }
+            public static Builder newBuilder() {
+                return DEFAULT_INSTANCE.toBuilder();
+            }
+            public static Builder newBuilder(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq prototype) {
+                return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+            }
+            @java.lang.Override
+            public Builder toBuilder() {
+                return this == DEFAULT_INSTANCE
+                        ? new Builder() : new Builder().mergeFrom(this);
+            }
+
+            @java.lang.Override
+            protected Builder newBuilderForType(
+                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                Builder builder = new Builder(parent);
+                return builder;
+            }
+            /**
+             * <pre>
+             *找回密码
+             * </pre>
+             *
+             * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq}
+             */
+            public static final class Builder extends
+                    com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+                    // @@protoc_insertion_point(builder_implements:NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq)
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReqOrBuilder {
+                public static final com.google.protobuf.Descriptors.Descriptor
+                getDescriptor() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_LoginPasswordReq_descriptor;
+                }
+
+                @java.lang.Override
+                protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+                internalGetFieldAccessorTable() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_LoginPasswordReq_fieldAccessorTable
+                            .ensureFieldAccessorsInitialized(
+                                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.Builder.class);
+                }
+
+                // Construct using com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.newBuilder()
+                private Builder() {
+                    maybeForceBuilderInitialization();
+                }
+
+                private Builder(
+                        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                    super(parent);
+                    maybeForceBuilderInitialization();
+                }
+                private void maybeForceBuilderInitialization() {
+                    if (com.google.protobuf.GeneratedMessageV3
+                            .alwaysUseFieldBuilders) {
+                    }
+                }
+                @java.lang.Override
+                public Builder clear() {
+                    super.clear();
+                    phoneNumber_ = "";
+
+                    password_ = "";
+
+                    code_ = "";
+
+                    return this;
+                }
+
+                @java.lang.Override
+                public com.google.protobuf.Descriptors.Descriptor
+                getDescriptorForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_LoginPasswordReq_descriptor;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq getDefaultInstanceForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.getDefaultInstance();
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq build() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq result = buildPartial();
+                    if (!result.isInitialized()) {
+                        throw newUninitializedMessageException(result);
+                    }
+                    return result;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq buildPartial() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq result = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq(this);
+                    result.phoneNumber_ = phoneNumber_;
+                    result.password_ = password_;
+                    result.code_ = code_;
+                    onBuilt();
+                    return result;
+                }
+
+                @java.lang.Override
+                public Builder clone() {
+                    return super.clone();
+                }
+                @java.lang.Override
+                public Builder setField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.setField(field, value);
+                }
+                @java.lang.Override
+                public Builder clearField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field) {
+                    return super.clearField(field);
+                }
+                @java.lang.Override
+                public Builder clearOneof(
+                        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+                    return super.clearOneof(oneof);
+                }
+                @java.lang.Override
+                public Builder setRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        int index, java.lang.Object value) {
+                    return super.setRepeatedField(field, index, value);
+                }
+                @java.lang.Override
+                public Builder addRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.addRepeatedField(field, value);
+                }
+                @java.lang.Override
+                public Builder mergeFrom(com.google.protobuf.Message other) {
+                    if (other instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq) {
+                        return mergeFrom((com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq)other);
+                    } else {
+                        super.mergeFrom(other);
+                        return this;
+                    }
+                }
+
+                public Builder mergeFrom(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq other) {
+                    if (other == com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.getDefaultInstance()) return this;
+                    if (!other.getPhoneNumber().isEmpty()) {
+                        phoneNumber_ = other.phoneNumber_;
+                        onChanged();
+                    }
+                    if (!other.getPassword().isEmpty()) {
+                        password_ = other.password_;
+                        onChanged();
+                    }
+                    if (!other.getCode().isEmpty()) {
+                        code_ = other.code_;
+                        onChanged();
+                    }
+                    this.mergeUnknownFields(other.unknownFields);
+                    onChanged();
+                    return this;
+                }
+
+                @java.lang.Override
+                public final boolean isInitialized() {
+                    return true;
+                }
+
+                @java.lang.Override
+                public Builder mergeFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws java.io.IOException {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq parsedMessage = null;
+                    try {
+                        parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                        parsedMessage = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq) e.getUnfinishedMessage();
+                        throw e.unwrapIOException();
+                    } finally {
+                        if (parsedMessage != null) {
+                            mergeFrom(parsedMessage);
+                        }
+                    }
+                    return this;
+                }
+
+                private java.lang.Object phoneNumber_ = "";
+                /**
+                 * <pre>
+                 *手机号
+                 * </pre>
+                 *
+                 * <code>string phoneNumber = 1;</code>
+                 */
+                public java.lang.String getPhoneNumber() {
+                    java.lang.Object ref = phoneNumber_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        phoneNumber_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *手机号
+                 * </pre>
+                 *
+                 * <code>string phoneNumber = 1;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getPhoneNumberBytes() {
+                    java.lang.Object ref = phoneNumber_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        phoneNumber_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *手机号
+                 * </pre>
+                 *
+                 * <code>string phoneNumber = 1;</code>
+                 */
+                public Builder setPhoneNumber(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    phoneNumber_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *手机号
+                 * </pre>
+                 *
+                 * <code>string phoneNumber = 1;</code>
+                 */
+                public Builder clearPhoneNumber() {
+
+                    phoneNumber_ = getDefaultInstance().getPhoneNumber();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *手机号
+                 * </pre>
+                 *
+                 * <code>string phoneNumber = 1;</code>
+                 */
+                public Builder setPhoneNumberBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    phoneNumber_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object password_ = "";
+                /**
+                 * <pre>
+                 *密码，密码不为空则是密码登录
+                 * </pre>
+                 *
+                 * <code>string password = 2;</code>
+                 */
+                public java.lang.String getPassword() {
+                    java.lang.Object ref = password_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        password_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *密码，密码不为空则是密码登录
+                 * </pre>
+                 *
+                 * <code>string password = 2;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getPasswordBytes() {
+                    java.lang.Object ref = password_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        password_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *密码，密码不为空则是密码登录
+                 * </pre>
+                 *
+                 * <code>string password = 2;</code>
+                 */
+                public Builder setPassword(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    password_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *密码，密码不为空则是密码登录
+                 * </pre>
+                 *
+                 * <code>string password = 2;</code>
+                 */
+                public Builder clearPassword() {
+
+                    password_ = getDefaultInstance().getPassword();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *密码，密码不为空则是密码登录
+                 * </pre>
+                 *
+                 * <code>string password = 2;</code>
+                 */
+                public Builder setPasswordBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    password_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object code_ = "";
+                /**
+                 * <pre>
+                 *验证码。验证码不为空则短信验证码登录
+                 * </pre>
+                 *
+                 * <code>string code = 3;</code>
+                 */
+                public java.lang.String getCode() {
+                    java.lang.Object ref = code_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        code_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *验证码。验证码不为空则短信验证码登录
+                 * </pre>
+                 *
+                 * <code>string code = 3;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getCodeBytes() {
+                    java.lang.Object ref = code_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        code_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *验证码。验证码不为空则短信验证码登录
+                 * </pre>
+                 *
+                 * <code>string code = 3;</code>
+                 */
+                public Builder setCode(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    code_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *验证码。验证码不为空则短信验证码登录
+                 * </pre>
+                 *
+                 * <code>string code = 3;</code>
+                 */
+                public Builder clearCode() {
+
+                    code_ = getDefaultInstance().getCode();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *验证码。验证码不为空则短信验证码登录
+                 * </pre>
+                 *
+                 * <code>string code = 3;</code>
+                 */
+                public Builder setCodeBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    code_ = value;
+                    onChanged();
+                    return this;
+                }
+                @java.lang.Override
+                public final Builder setUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.setUnknownFields(unknownFields);
+                }
+
+                @java.lang.Override
+                public final Builder mergeUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.mergeUnknownFields(unknownFields);
+                }
+
+
+                // @@protoc_insertion_point(builder_scope:NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq)
+            }
+
+            // @@protoc_insertion_point(class_scope:NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq)
+            private static final com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq DEFAULT_INSTANCE;
+            static {
+                DEFAULT_INSTANCE = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq();
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq getDefaultInstance() {
+                return DEFAULT_INSTANCE;
+            }
+
+            private static final com.google.protobuf.Parser<LoginPasswordReq>
+                    PARSER = new com.google.protobuf.AbstractParser<LoginPasswordReq>() {
+                @java.lang.Override
+                public LoginPasswordReq parsePartialFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws com.google.protobuf.InvalidProtocolBufferException {
+                    return new LoginPasswordReq(input, extensionRegistry);
+                }
+            };
+
+            public static com.google.protobuf.Parser<LoginPasswordReq> parser() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.google.protobuf.Parser<LoginPasswordReq> getParserForType() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq getDefaultInstanceForType() {
+                return DEFAULT_INSTANCE;
+            }
+
+        }
+
+        public interface ParticularsReqOrBuilder extends
+                // @@protoc_insertion_point(interface_extends:NettyProtobufWebsocketClient.MessageBase.ParticularsReq)
+                com.google.protobuf.MessageOrBuilder {
+
+            /**
+             * <pre>
+             *订单信息表id
+             * </pre>
+             *
+             * <code>int32 orderDerailsId = 1;</code>
+             */
+            int getOrderDerailsId();
+
+            /**
+             * <pre>
+             *用户手机号
+             * </pre>
+             *
+             * <code>string phoneNumber = 2;</code>
+             */
+            java.lang.String getPhoneNumber();
+            /**
+             * <pre>
+             *用户手机号
+             * </pre>
+             *
+             * <code>string phoneNumber = 2;</code>
+             */
+            com.google.protobuf.ByteString
+            getPhoneNumberBytes();
+        }
+        /**
+         * <pre>
+         *用户订单请求
+         * </pre>
+         *
+         * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.ParticularsReq}
+         */
+        public  static final class ParticularsReq extends
+                com.google.protobuf.GeneratedMessageV3 implements
+                // @@protoc_insertion_point(message_implements:NettyProtobufWebsocketClient.MessageBase.ParticularsReq)
+                ParticularsReqOrBuilder {
+            private static final long serialVersionUID = 0L;
+            // Use ParticularsReq.newBuilder() to construct.
+            private ParticularsReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+                super(builder);
+            }
+            private ParticularsReq() {
+                phoneNumber_ = "";
+            }
+
+            @java.lang.Override
+            public final com.google.protobuf.UnknownFieldSet
+            getUnknownFields() {
+                return this.unknownFields;
+            }
+            private ParticularsReq(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                this();
+                if (extensionRegistry == null) {
+                    throw new java.lang.NullPointerException();
+                }
+                int mutable_bitField0_ = 0;
+                com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                        com.google.protobuf.UnknownFieldSet.newBuilder();
+                try {
+                    boolean done = false;
+                    while (!done) {
+                        int tag = input.readTag();
+                        switch (tag) {
+                            case 0:
+                                done = true;
+                                break;
+                            case 8: {
+
+                                orderDerailsId_ = input.readInt32();
+                                break;
+                            }
+                            case 18: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                phoneNumber_ = s;
+                                break;
+                            }
+                            default: {
+                                if (!parseUnknownField(
+                                        input, unknownFields, extensionRegistry, tag)) {
+                                    done = true;
+                                }
+                                break;
+                            }
+                        }
+                    }
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    throw e.setUnfinishedMessage(this);
+                } catch (java.io.IOException e) {
+                    throw new com.google.protobuf.InvalidProtocolBufferException(
+                            e).setUnfinishedMessage(this);
+                } finally {
+                    this.unknownFields = unknownFields.build();
+                    makeExtensionsImmutable();
+                }
+            }
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsReq_descriptor;
+            }
+
+            @java.lang.Override
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsReq_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.Builder.class);
+            }
+
+            public static final int ORDERDERAILSID_FIELD_NUMBER = 1;
+            private int orderDerailsId_;
+            /**
+             * <pre>
+             *订单信息表id
+             * </pre>
+             *
+             * <code>int32 orderDerailsId = 1;</code>
+             */
+            public int getOrderDerailsId() {
+                return orderDerailsId_;
+            }
+
+            public static final int PHONENUMBER_FIELD_NUMBER = 2;
+            private volatile java.lang.Object phoneNumber_;
+            /**
+             * <pre>
+             *用户手机号
+             * </pre>
+             *
+             * <code>string phoneNumber = 2;</code>
+             */
+            public java.lang.String getPhoneNumber() {
+                java.lang.Object ref = phoneNumber_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    phoneNumber_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *用户手机号
+             * </pre>
+             *
+             * <code>string phoneNumber = 2;</code>
+             */
+            public com.google.protobuf.ByteString
+            getPhoneNumberBytes() {
+                java.lang.Object ref = phoneNumber_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    phoneNumber_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            private byte memoizedIsInitialized = -1;
+            @java.lang.Override
+            public final boolean isInitialized() {
+                byte isInitialized = memoizedIsInitialized;
+                if (isInitialized == 1) return true;
+                if (isInitialized == 0) return false;
+
+                memoizedIsInitialized = 1;
+                return true;
+            }
+
+            @java.lang.Override
+            public void writeTo(com.google.protobuf.CodedOutputStream output)
+                    throws java.io.IOException {
+                if (orderDerailsId_ != 0) {
+                    output.writeInt32(1, orderDerailsId_);
+                }
+                if (!getPhoneNumberBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 2, phoneNumber_);
+                }
+                unknownFields.writeTo(output);
+            }
+
+            @java.lang.Override
+            public int getSerializedSize() {
+                int size = memoizedSize;
+                if (size != -1) return size;
+
+                size = 0;
+                if (orderDerailsId_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(1, orderDerailsId_);
+                }
+                if (!getPhoneNumberBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, phoneNumber_);
+                }
+                size += unknownFields.getSerializedSize();
+                memoizedSize = size;
+                return size;
+            }
+
+            @java.lang.Override
+            public boolean equals(final java.lang.Object obj) {
+                if (obj == this) {
+                    return true;
+                }
+                if (!(obj instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq)) {
+                    return super.equals(obj);
+                }
+                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq other = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq) obj;
+
+                if (getOrderDerailsId()
+                        != other.getOrderDerailsId()) return false;
+                if (!getPhoneNumber()
+                        .equals(other.getPhoneNumber())) return false;
+                if (!unknownFields.equals(other.unknownFields)) return false;
+                return true;
+            }
+
+            @java.lang.Override
+            public int hashCode() {
+                if (memoizedHashCode != 0) {
+                    return memoizedHashCode;
+                }
+                int hash = 41;
+                hash = (19 * hash) + getDescriptor().hashCode();
+                hash = (37 * hash) + ORDERDERAILSID_FIELD_NUMBER;
+                hash = (53 * hash) + getOrderDerailsId();
+                hash = (37 * hash) + PHONENUMBER_FIELD_NUMBER;
+                hash = (53 * hash) + getPhoneNumber().hashCode();
+                hash = (29 * hash) + unknownFields.hashCode();
+                memoizedHashCode = hash;
+                return hash;
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq parseFrom(
+                    java.nio.ByteBuffer data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq parseFrom(
+                    java.nio.ByteBuffer data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq parseFrom(
+                    com.google.protobuf.ByteString data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq parseFrom(
+                    com.google.protobuf.ByteString data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq parseFrom(byte[] data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq parseFrom(
+                    byte[] data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq parseFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq parseFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq parseDelimitedFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq parseDelimitedFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq parseFrom(
+                    com.google.protobuf.CodedInputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq parseFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+
+            @java.lang.Override
+            public Builder newBuilderForType() { return newBuilder(); }
+            public static Builder newBuilder() {
+                return DEFAULT_INSTANCE.toBuilder();
+            }
+            public static Builder newBuilder(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq prototype) {
+                return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+            }
+            @java.lang.Override
+            public Builder toBuilder() {
+                return this == DEFAULT_INSTANCE
+                        ? new Builder() : new Builder().mergeFrom(this);
+            }
+
+            @java.lang.Override
+            protected Builder newBuilderForType(
+                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                Builder builder = new Builder(parent);
+                return builder;
+            }
+            /**
+             * <pre>
+             *用户订单请求
+             * </pre>
+             *
+             * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.ParticularsReq}
+             */
+            public static final class Builder extends
+                    com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+                    // @@protoc_insertion_point(builder_implements:NettyProtobufWebsocketClient.MessageBase.ParticularsReq)
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReqOrBuilder {
+                public static final com.google.protobuf.Descriptors.Descriptor
+                getDescriptor() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsReq_descriptor;
+                }
+
+                @java.lang.Override
+                protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+                internalGetFieldAccessorTable() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsReq_fieldAccessorTable
+                            .ensureFieldAccessorsInitialized(
+                                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.Builder.class);
+                }
+
+                // Construct using com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.newBuilder()
+                private Builder() {
+                    maybeForceBuilderInitialization();
+                }
+
+                private Builder(
+                        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                    super(parent);
+                    maybeForceBuilderInitialization();
+                }
+                private void maybeForceBuilderInitialization() {
+                    if (com.google.protobuf.GeneratedMessageV3
+                            .alwaysUseFieldBuilders) {
+                    }
+                }
+                @java.lang.Override
+                public Builder clear() {
+                    super.clear();
+                    orderDerailsId_ = 0;
+
+                    phoneNumber_ = "";
+
+                    return this;
+                }
+
+                @java.lang.Override
+                public com.google.protobuf.Descriptors.Descriptor
+                getDescriptorForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsReq_descriptor;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq getDefaultInstanceForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.getDefaultInstance();
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq build() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq result = buildPartial();
+                    if (!result.isInitialized()) {
+                        throw newUninitializedMessageException(result);
+                    }
+                    return result;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq buildPartial() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq result = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq(this);
+                    result.orderDerailsId_ = orderDerailsId_;
+                    result.phoneNumber_ = phoneNumber_;
+                    onBuilt();
+                    return result;
+                }
+
+                @java.lang.Override
+                public Builder clone() {
+                    return super.clone();
+                }
+                @java.lang.Override
+                public Builder setField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.setField(field, value);
+                }
+                @java.lang.Override
+                public Builder clearField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field) {
+                    return super.clearField(field);
+                }
+                @java.lang.Override
+                public Builder clearOneof(
+                        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+                    return super.clearOneof(oneof);
+                }
+                @java.lang.Override
+                public Builder setRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        int index, java.lang.Object value) {
+                    return super.setRepeatedField(field, index, value);
+                }
+                @java.lang.Override
+                public Builder addRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.addRepeatedField(field, value);
+                }
+                @java.lang.Override
+                public Builder mergeFrom(com.google.protobuf.Message other) {
+                    if (other instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq) {
+                        return mergeFrom((com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq)other);
+                    } else {
+                        super.mergeFrom(other);
+                        return this;
+                    }
+                }
+
+                public Builder mergeFrom(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq other) {
+                    if (other == com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.getDefaultInstance()) return this;
+                    if (other.getOrderDerailsId() != 0) {
+                        setOrderDerailsId(other.getOrderDerailsId());
+                    }
+                    if (!other.getPhoneNumber().isEmpty()) {
+                        phoneNumber_ = other.phoneNumber_;
+                        onChanged();
+                    }
+                    this.mergeUnknownFields(other.unknownFields);
+                    onChanged();
+                    return this;
+                }
+
+                @java.lang.Override
+                public final boolean isInitialized() {
+                    return true;
+                }
+
+                @java.lang.Override
+                public Builder mergeFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws java.io.IOException {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq parsedMessage = null;
+                    try {
+                        parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                        parsedMessage = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq) e.getUnfinishedMessage();
+                        throw e.unwrapIOException();
+                    } finally {
+                        if (parsedMessage != null) {
+                            mergeFrom(parsedMessage);
+                        }
+                    }
+                    return this;
+                }
+
+                private int orderDerailsId_ ;
+                /**
+                 * <pre>
+                 *订单信息表id
+                 * </pre>
+                 *
+                 * <code>int32 orderDerailsId = 1;</code>
+                 */
+                public int getOrderDerailsId() {
+                    return orderDerailsId_;
+                }
+                /**
+                 * <pre>
+                 *订单信息表id
+                 * </pre>
+                 *
+                 * <code>int32 orderDerailsId = 1;</code>
+                 */
+                public Builder setOrderDerailsId(int value) {
+
+                    orderDerailsId_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单信息表id
+                 * </pre>
+                 *
+                 * <code>int32 orderDerailsId = 1;</code>
+                 */
+                public Builder clearOrderDerailsId() {
+
+                    orderDerailsId_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object phoneNumber_ = "";
+                /**
+                 * <pre>
+                 *用户手机号
+                 * </pre>
+                 *
+                 * <code>string phoneNumber = 2;</code>
+                 */
+                public java.lang.String getPhoneNumber() {
+                    java.lang.Object ref = phoneNumber_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        phoneNumber_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *用户手机号
+                 * </pre>
+                 *
+                 * <code>string phoneNumber = 2;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getPhoneNumberBytes() {
+                    java.lang.Object ref = phoneNumber_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        phoneNumber_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *用户手机号
+                 * </pre>
+                 *
+                 * <code>string phoneNumber = 2;</code>
+                 */
+                public Builder setPhoneNumber(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    phoneNumber_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *用户手机号
+                 * </pre>
+                 *
+                 * <code>string phoneNumber = 2;</code>
+                 */
+                public Builder clearPhoneNumber() {
+
+                    phoneNumber_ = getDefaultInstance().getPhoneNumber();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *用户手机号
+                 * </pre>
+                 *
+                 * <code>string phoneNumber = 2;</code>
+                 */
+                public Builder setPhoneNumberBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    phoneNumber_ = value;
+                    onChanged();
+                    return this;
+                }
+                @java.lang.Override
+                public final Builder setUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.setUnknownFields(unknownFields);
+                }
+
+                @java.lang.Override
+                public final Builder mergeUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.mergeUnknownFields(unknownFields);
+                }
+
+
+                // @@protoc_insertion_point(builder_scope:NettyProtobufWebsocketClient.MessageBase.ParticularsReq)
+            }
+
+            // @@protoc_insertion_point(class_scope:NettyProtobufWebsocketClient.MessageBase.ParticularsReq)
+            private static final com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq DEFAULT_INSTANCE;
+            static {
+                DEFAULT_INSTANCE = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq();
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq getDefaultInstance() {
+                return DEFAULT_INSTANCE;
+            }
+
+            private static final com.google.protobuf.Parser<ParticularsReq>
+                    PARSER = new com.google.protobuf.AbstractParser<ParticularsReq>() {
+                @java.lang.Override
+                public ParticularsReq parsePartialFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws com.google.protobuf.InvalidProtocolBufferException {
+                    return new ParticularsReq(input, extensionRegistry);
+                }
+            };
+
+            public static com.google.protobuf.Parser<ParticularsReq> parser() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.google.protobuf.Parser<ParticularsReq> getParserForType() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq getDefaultInstanceForType() {
+                return DEFAULT_INSTANCE;
+            }
+
+        }
+
+        public interface ParticularsRespOrBuilder extends
+                // @@protoc_insertion_point(interface_extends:NettyProtobufWebsocketClient.MessageBase.ParticularsResp)
+                com.google.protobuf.MessageOrBuilder {
+
+            /**
+             * <pre>
+             *订单明细表id
+             * </pre>
+             *
+             * <code>int32 derailsId = 1;</code>
+             */
+            int getDerailsId();
+
+            /**
+             * <pre>
+             *商品名称
+             * </pre>
+             *
+             * <code>string name = 2;</code>
+             */
+            java.lang.String getName();
+            /**
+             * <pre>
+             *商品名称
+             * </pre>
+             *
+             * <code>string name = 2;</code>
+             */
+            com.google.protobuf.ByteString
+            getNameBytes();
+
+            /**
+             * <pre>
+             *订单id
+             * </pre>
+             *
+             * <code>int32 orderInfoId = 3;</code>
+             */
+            int getOrderInfoId();
+
+            /**
+             * <pre>
+             *商品id
+             * </pre>
+             *
+             * <code>int32 mallId = 4;</code>
+             */
+            int getMallId();
+
+            /**
+             * <pre>
+             *店铺id
+             * </pre>
+             *
+             * <code>int32 storeId = 5;</code>
+             */
+            int getStoreId();
+
+            /**
+             * <pre>
+             *衣服尺码
+             * </pre>
+             *
+             * <code>string size = 6;</code>
+             */
+            java.lang.String getSize();
+            /**
+             * <pre>
+             *衣服尺码
+             * </pre>
+             *
+             * <code>string size = 6;</code>
+             */
+            com.google.protobuf.ByteString
+            getSizeBytes();
+
+            /**
+             * <pre>
+             *颜色
+             * </pre>
+             *
+             * <code>string colour = 7;</code>
+             */
+            java.lang.String getColour();
+            /**
+             * <pre>
+             *颜色
+             * </pre>
+             *
+             * <code>string colour = 7;</code>
+             */
+            com.google.protobuf.ByteString
+            getColourBytes();
+
+            /**
+             * <pre>
+             *数量
+             * </pre>
+             *
+             * <code>int32 quantity = 8;</code>
+             */
+            int getQuantity();
+
+            /**
+             * <pre>
+             *价格
+             * </pre>
+             *
+             * <code>string amount = 9;</code>
+             */
+            java.lang.String getAmount();
+            /**
+             * <pre>
+             *价格
+             * </pre>
+             *
+             * <code>string amount = 9;</code>
+             */
+            com.google.protobuf.ByteString
+            getAmountBytes();
+
+            /**
+             * <pre>
+             *图片
+             * </pre>
+             *
+             * <code>string image = 10;</code>
+             */
+            java.lang.String getImage();
+            /**
+             * <pre>
+             *图片
+             * </pre>
+             *
+             * <code>string image = 10;</code>
+             */
+            com.google.protobuf.ByteString
+            getImageBytes();
+        }
+        /**
+         * <pre>
+         *用户订单响应
+         * </pre>
+         *
+         * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.ParticularsResp}
+         */
+        public  static final class ParticularsResp extends
+                com.google.protobuf.GeneratedMessageV3 implements
+                // @@protoc_insertion_point(message_implements:NettyProtobufWebsocketClient.MessageBase.ParticularsResp)
+                ParticularsRespOrBuilder {
+            private static final long serialVersionUID = 0L;
+            // Use ParticularsResp.newBuilder() to construct.
+            private ParticularsResp(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+                super(builder);
+            }
+            private ParticularsResp() {
+                name_ = "";
+                size_ = "";
+                colour_ = "";
+                amount_ = "";
+                image_ = "";
+            }
+
+            @java.lang.Override
+            public final com.google.protobuf.UnknownFieldSet
+            getUnknownFields() {
+                return this.unknownFields;
+            }
+            private ParticularsResp(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                this();
+                if (extensionRegistry == null) {
+                    throw new java.lang.NullPointerException();
+                }
+                int mutable_bitField0_ = 0;
+                com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                        com.google.protobuf.UnknownFieldSet.newBuilder();
+                try {
+                    boolean done = false;
+                    while (!done) {
+                        int tag = input.readTag();
+                        switch (tag) {
+                            case 0:
+                                done = true;
+                                break;
+                            case 8: {
+
+                                derailsId_ = input.readInt32();
+                                break;
+                            }
+                            case 18: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                name_ = s;
+                                break;
+                            }
+                            case 24: {
+
+                                orderInfoId_ = input.readInt32();
+                                break;
+                            }
+                            case 32: {
+
+                                mallId_ = input.readInt32();
+                                break;
+                            }
+                            case 40: {
+
+                                storeId_ = input.readInt32();
+                                break;
+                            }
+                            case 50: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                size_ = s;
+                                break;
+                            }
+                            case 58: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                colour_ = s;
+                                break;
+                            }
+                            case 64: {
+
+                                quantity_ = input.readInt32();
+                                break;
+                            }
+                            case 74: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                amount_ = s;
+                                break;
+                            }
+                            case 82: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                image_ = s;
+                                break;
+                            }
+                            default: {
+                                if (!parseUnknownField(
+                                        input, unknownFields, extensionRegistry, tag)) {
+                                    done = true;
+                                }
+                                break;
+                            }
+                        }
+                    }
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    throw e.setUnfinishedMessage(this);
+                } catch (java.io.IOException e) {
+                    throw new com.google.protobuf.InvalidProtocolBufferException(
+                            e).setUnfinishedMessage(this);
+                } finally {
+                    this.unknownFields = unknownFields.build();
+                    makeExtensionsImmutable();
+                }
+            }
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsResp_descriptor;
+            }
+
+            @java.lang.Override
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsResp_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder.class);
+            }
+
+            public static final int DERAILSID_FIELD_NUMBER = 1;
+            private int derailsId_;
+            /**
+             * <pre>
+             *订单明细表id
+             * </pre>
+             *
+             * <code>int32 derailsId = 1;</code>
+             */
+            public int getDerailsId() {
+                return derailsId_;
+            }
+
+            public static final int NAME_FIELD_NUMBER = 2;
+            private volatile java.lang.Object name_;
+            /**
+             * <pre>
+             *商品名称
+             * </pre>
+             *
+             * <code>string name = 2;</code>
+             */
+            public java.lang.String getName() {
+                java.lang.Object ref = name_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    name_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *商品名称
+             * </pre>
+             *
+             * <code>string name = 2;</code>
+             */
+            public com.google.protobuf.ByteString
+            getNameBytes() {
+                java.lang.Object ref = name_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    name_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int ORDERINFOID_FIELD_NUMBER = 3;
+            private int orderInfoId_;
+            /**
+             * <pre>
+             *订单id
+             * </pre>
+             *
+             * <code>int32 orderInfoId = 3;</code>
+             */
+            public int getOrderInfoId() {
+                return orderInfoId_;
+            }
+
+            public static final int MALLID_FIELD_NUMBER = 4;
+            private int mallId_;
+            /**
+             * <pre>
+             *商品id
+             * </pre>
+             *
+             * <code>int32 mallId = 4;</code>
+             */
+            public int getMallId() {
+                return mallId_;
+            }
+
+            public static final int STOREID_FIELD_NUMBER = 5;
+            private int storeId_;
+            /**
+             * <pre>
+             *店铺id
+             * </pre>
+             *
+             * <code>int32 storeId = 5;</code>
+             */
+            public int getStoreId() {
+                return storeId_;
+            }
+
+            public static final int SIZE_FIELD_NUMBER = 6;
+            private volatile java.lang.Object size_;
+            /**
+             * <pre>
+             *衣服尺码
+             * </pre>
+             *
+             * <code>string size = 6;</code>
+             */
+            public java.lang.String getSize() {
+                java.lang.Object ref = size_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    size_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *衣服尺码
+             * </pre>
+             *
+             * <code>string size = 6;</code>
+             */
+            public com.google.protobuf.ByteString
+            getSizeBytes() {
+                java.lang.Object ref = size_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    size_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int COLOUR_FIELD_NUMBER = 7;
+            private volatile java.lang.Object colour_;
+            /**
+             * <pre>
+             *颜色
+             * </pre>
+             *
+             * <code>string colour = 7;</code>
+             */
+            public java.lang.String getColour() {
+                java.lang.Object ref = colour_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    colour_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *颜色
+             * </pre>
+             *
+             * <code>string colour = 7;</code>
+             */
+            public com.google.protobuf.ByteString
+            getColourBytes() {
+                java.lang.Object ref = colour_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    colour_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int QUANTITY_FIELD_NUMBER = 8;
+            private int quantity_;
+            /**
+             * <pre>
+             *数量
+             * </pre>
+             *
+             * <code>int32 quantity = 8;</code>
+             */
+            public int getQuantity() {
+                return quantity_;
+            }
+
+            public static final int AMOUNT_FIELD_NUMBER = 9;
+            private volatile java.lang.Object amount_;
+            /**
+             * <pre>
+             *价格
+             * </pre>
+             *
+             * <code>string amount = 9;</code>
+             */
+            public java.lang.String getAmount() {
+                java.lang.Object ref = amount_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    amount_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *价格
+             * </pre>
+             *
+             * <code>string amount = 9;</code>
+             */
+            public com.google.protobuf.ByteString
+            getAmountBytes() {
+                java.lang.Object ref = amount_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    amount_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int IMAGE_FIELD_NUMBER = 10;
+            private volatile java.lang.Object image_;
+            /**
+             * <pre>
+             *图片
+             * </pre>
+             *
+             * <code>string image = 10;</code>
+             */
+            public java.lang.String getImage() {
+                java.lang.Object ref = image_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    image_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *图片
+             * </pre>
+             *
+             * <code>string image = 10;</code>
+             */
+            public com.google.protobuf.ByteString
+            getImageBytes() {
+                java.lang.Object ref = image_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    image_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            private byte memoizedIsInitialized = -1;
+            @java.lang.Override
+            public final boolean isInitialized() {
+                byte isInitialized = memoizedIsInitialized;
+                if (isInitialized == 1) return true;
+                if (isInitialized == 0) return false;
+
+                memoizedIsInitialized = 1;
+                return true;
+            }
+
+            @java.lang.Override
+            public void writeTo(com.google.protobuf.CodedOutputStream output)
+                    throws java.io.IOException {
+                if (derailsId_ != 0) {
+                    output.writeInt32(1, derailsId_);
+                }
+                if (!getNameBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 2, name_);
+                }
+                if (orderInfoId_ != 0) {
+                    output.writeInt32(3, orderInfoId_);
+                }
+                if (mallId_ != 0) {
+                    output.writeInt32(4, mallId_);
+                }
+                if (storeId_ != 0) {
+                    output.writeInt32(5, storeId_);
+                }
+                if (!getSizeBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 6, size_);
+                }
+                if (!getColourBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 7, colour_);
+                }
+                if (quantity_ != 0) {
+                    output.writeInt32(8, quantity_);
+                }
+                if (!getAmountBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 9, amount_);
+                }
+                if (!getImageBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 10, image_);
+                }
+                unknownFields.writeTo(output);
+            }
+
+            @java.lang.Override
+            public int getSerializedSize() {
+                int size = memoizedSize;
+                if (size != -1) return size;
+
+                size = 0;
+                if (derailsId_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(1, derailsId_);
+                }
+                if (!getNameBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, name_);
+                }
+                if (orderInfoId_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(3, orderInfoId_);
+                }
+                if (mallId_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(4, mallId_);
+                }
+                if (storeId_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(5, storeId_);
+                }
+                if (!getSizeBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, size_);
+                }
+                if (!getColourBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, colour_);
+                }
+                if (quantity_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(8, quantity_);
+                }
+                if (!getAmountBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, amount_);
+                }
+                if (!getImageBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, image_);
+                }
+                size += unknownFields.getSerializedSize();
+                memoizedSize = size;
+                return size;
+            }
+
+            @java.lang.Override
+            public boolean equals(final java.lang.Object obj) {
+                if (obj == this) {
+                    return true;
+                }
+                if (!(obj instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp)) {
+                    return super.equals(obj);
+                }
+                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp other = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp) obj;
+
+                if (getDerailsId()
+                        != other.getDerailsId()) return false;
+                if (!getName()
+                        .equals(other.getName())) return false;
+                if (getOrderInfoId()
+                        != other.getOrderInfoId()) return false;
+                if (getMallId()
+                        != other.getMallId()) return false;
+                if (getStoreId()
+                        != other.getStoreId()) return false;
+                if (!getSize()
+                        .equals(other.getSize())) return false;
+                if (!getColour()
+                        .equals(other.getColour())) return false;
+                if (getQuantity()
+                        != other.getQuantity()) return false;
+                if (!getAmount()
+                        .equals(other.getAmount())) return false;
+                if (!getImage()
+                        .equals(other.getImage())) return false;
+                if (!unknownFields.equals(other.unknownFields)) return false;
+                return true;
+            }
+
+            @java.lang.Override
+            public int hashCode() {
+                if (memoizedHashCode != 0) {
+                    return memoizedHashCode;
+                }
+                int hash = 41;
+                hash = (19 * hash) + getDescriptor().hashCode();
+                hash = (37 * hash) + DERAILSID_FIELD_NUMBER;
+                hash = (53 * hash) + getDerailsId();
+                hash = (37 * hash) + NAME_FIELD_NUMBER;
+                hash = (53 * hash) + getName().hashCode();
+                hash = (37 * hash) + ORDERINFOID_FIELD_NUMBER;
+                hash = (53 * hash) + getOrderInfoId();
+                hash = (37 * hash) + MALLID_FIELD_NUMBER;
+                hash = (53 * hash) + getMallId();
+                hash = (37 * hash) + STOREID_FIELD_NUMBER;
+                hash = (53 * hash) + getStoreId();
+                hash = (37 * hash) + SIZE_FIELD_NUMBER;
+                hash = (53 * hash) + getSize().hashCode();
+                hash = (37 * hash) + COLOUR_FIELD_NUMBER;
+                hash = (53 * hash) + getColour().hashCode();
+                hash = (37 * hash) + QUANTITY_FIELD_NUMBER;
+                hash = (53 * hash) + getQuantity();
+                hash = (37 * hash) + AMOUNT_FIELD_NUMBER;
+                hash = (53 * hash) + getAmount().hashCode();
+                hash = (37 * hash) + IMAGE_FIELD_NUMBER;
+                hash = (53 * hash) + getImage().hashCode();
+                hash = (29 * hash) + unknownFields.hashCode();
+                memoizedHashCode = hash;
+                return hash;
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp parseFrom(
+                    java.nio.ByteBuffer data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp parseFrom(
+                    java.nio.ByteBuffer data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp parseFrom(
+                    com.google.protobuf.ByteString data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp parseFrom(
+                    com.google.protobuf.ByteString data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp parseFrom(byte[] data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp parseFrom(
+                    byte[] data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp parseFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp parseFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp parseDelimitedFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp parseDelimitedFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp parseFrom(
+                    com.google.protobuf.CodedInputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp parseFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+
+            @java.lang.Override
+            public Builder newBuilderForType() { return newBuilder(); }
+            public static Builder newBuilder() {
+                return DEFAULT_INSTANCE.toBuilder();
+            }
+            public static Builder newBuilder(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp prototype) {
+                return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+            }
+            @java.lang.Override
+            public Builder toBuilder() {
+                return this == DEFAULT_INSTANCE
+                        ? new Builder() : new Builder().mergeFrom(this);
+            }
+
+            @java.lang.Override
+            protected Builder newBuilderForType(
+                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                Builder builder = new Builder(parent);
+                return builder;
+            }
+            /**
+             * <pre>
+             *用户订单响应
+             * </pre>
+             *
+             * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.ParticularsResp}
+             */
+            public static final class Builder extends
+                    com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+                    // @@protoc_insertion_point(builder_implements:NettyProtobufWebsocketClient.MessageBase.ParticularsResp)
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsRespOrBuilder {
+                public static final com.google.protobuf.Descriptors.Descriptor
+                getDescriptor() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsResp_descriptor;
+                }
+
+                @java.lang.Override
+                protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+                internalGetFieldAccessorTable() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsResp_fieldAccessorTable
+                            .ensureFieldAccessorsInitialized(
+                                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder.class);
+                }
+
+                // Construct using com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.newBuilder()
+                private Builder() {
+                    maybeForceBuilderInitialization();
+                }
+
+                private Builder(
+                        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                    super(parent);
+                    maybeForceBuilderInitialization();
+                }
+                private void maybeForceBuilderInitialization() {
+                    if (com.google.protobuf.GeneratedMessageV3
+                            .alwaysUseFieldBuilders) {
+                    }
+                }
+                @java.lang.Override
+                public Builder clear() {
+                    super.clear();
+                    derailsId_ = 0;
+
+                    name_ = "";
+
+                    orderInfoId_ = 0;
+
+                    mallId_ = 0;
+
+                    storeId_ = 0;
+
+                    size_ = "";
+
+                    colour_ = "";
+
+                    quantity_ = 0;
+
+                    amount_ = "";
+
+                    image_ = "";
+
+                    return this;
+                }
+
+                @java.lang.Override
+                public com.google.protobuf.Descriptors.Descriptor
+                getDescriptorForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsResp_descriptor;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp getDefaultInstanceForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.getDefaultInstance();
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp build() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp result = buildPartial();
+                    if (!result.isInitialized()) {
+                        throw newUninitializedMessageException(result);
+                    }
+                    return result;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp buildPartial() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp result = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp(this);
+                    result.derailsId_ = derailsId_;
+                    result.name_ = name_;
+                    result.orderInfoId_ = orderInfoId_;
+                    result.mallId_ = mallId_;
+                    result.storeId_ = storeId_;
+                    result.size_ = size_;
+                    result.colour_ = colour_;
+                    result.quantity_ = quantity_;
+                    result.amount_ = amount_;
+                    result.image_ = image_;
+                    onBuilt();
+                    return result;
+                }
+
+                @java.lang.Override
+                public Builder clone() {
+                    return super.clone();
+                }
+                @java.lang.Override
+                public Builder setField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.setField(field, value);
+                }
+                @java.lang.Override
+                public Builder clearField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field) {
+                    return super.clearField(field);
+                }
+                @java.lang.Override
+                public Builder clearOneof(
+                        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+                    return super.clearOneof(oneof);
+                }
+                @java.lang.Override
+                public Builder setRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        int index, java.lang.Object value) {
+                    return super.setRepeatedField(field, index, value);
+                }
+                @java.lang.Override
+                public Builder addRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.addRepeatedField(field, value);
+                }
+                @java.lang.Override
+                public Builder mergeFrom(com.google.protobuf.Message other) {
+                    if (other instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp) {
+                        return mergeFrom((com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp)other);
+                    } else {
+                        super.mergeFrom(other);
+                        return this;
+                    }
+                }
+
+                public Builder mergeFrom(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp other) {
+                    if (other == com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.getDefaultInstance()) return this;
+                    if (other.getDerailsId() != 0) {
+                        setDerailsId(other.getDerailsId());
+                    }
+                    if (!other.getName().isEmpty()) {
+                        name_ = other.name_;
+                        onChanged();
+                    }
+                    if (other.getOrderInfoId() != 0) {
+                        setOrderInfoId(other.getOrderInfoId());
+                    }
+                    if (other.getMallId() != 0) {
+                        setMallId(other.getMallId());
+                    }
+                    if (other.getStoreId() != 0) {
+                        setStoreId(other.getStoreId());
+                    }
+                    if (!other.getSize().isEmpty()) {
+                        size_ = other.size_;
+                        onChanged();
+                    }
+                    if (!other.getColour().isEmpty()) {
+                        colour_ = other.colour_;
+                        onChanged();
+                    }
+                    if (other.getQuantity() != 0) {
+                        setQuantity(other.getQuantity());
+                    }
+                    if (!other.getAmount().isEmpty()) {
+                        amount_ = other.amount_;
+                        onChanged();
+                    }
+                    if (!other.getImage().isEmpty()) {
+                        image_ = other.image_;
+                        onChanged();
+                    }
+                    this.mergeUnknownFields(other.unknownFields);
+                    onChanged();
+                    return this;
+                }
+
+                @java.lang.Override
+                public final boolean isInitialized() {
+                    return true;
+                }
+
+                @java.lang.Override
+                public Builder mergeFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws java.io.IOException {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp parsedMessage = null;
+                    try {
+                        parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                        parsedMessage = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp) e.getUnfinishedMessage();
+                        throw e.unwrapIOException();
+                    } finally {
+                        if (parsedMessage != null) {
+                            mergeFrom(parsedMessage);
+                        }
+                    }
+                    return this;
+                }
+
+                private int derailsId_ ;
+                /**
+                 * <pre>
+                 *订单明细表id
+                 * </pre>
+                 *
+                 * <code>int32 derailsId = 1;</code>
+                 */
+                public int getDerailsId() {
+                    return derailsId_;
+                }
+                /**
+                 * <pre>
+                 *订单明细表id
+                 * </pre>
+                 *
+                 * <code>int32 derailsId = 1;</code>
+                 */
+                public Builder setDerailsId(int value) {
+
+                    derailsId_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单明细表id
+                 * </pre>
+                 *
+                 * <code>int32 derailsId = 1;</code>
+                 */
+                public Builder clearDerailsId() {
+
+                    derailsId_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object name_ = "";
+                /**
+                 * <pre>
+                 *商品名称
+                 * </pre>
+                 *
+                 * <code>string name = 2;</code>
+                 */
+                public java.lang.String getName() {
+                    java.lang.Object ref = name_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        name_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *商品名称
+                 * </pre>
+                 *
+                 * <code>string name = 2;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getNameBytes() {
+                    java.lang.Object ref = name_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        name_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *商品名称
+                 * </pre>
+                 *
+                 * <code>string name = 2;</code>
+                 */
+                public Builder setName(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    name_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *商品名称
+                 * </pre>
+                 *
+                 * <code>string name = 2;</code>
+                 */
+                public Builder clearName() {
+
+                    name_ = getDefaultInstance().getName();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *商品名称
+                 * </pre>
+                 *
+                 * <code>string name = 2;</code>
+                 */
+                public Builder setNameBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    name_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private int orderInfoId_ ;
+                /**
+                 * <pre>
+                 *订单id
+                 * </pre>
+                 *
+                 * <code>int32 orderInfoId = 3;</code>
+                 */
+                public int getOrderInfoId() {
+                    return orderInfoId_;
+                }
+                /**
+                 * <pre>
+                 *订单id
+                 * </pre>
+                 *
+                 * <code>int32 orderInfoId = 3;</code>
+                 */
+                public Builder setOrderInfoId(int value) {
+
+                    orderInfoId_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单id
+                 * </pre>
+                 *
+                 * <code>int32 orderInfoId = 3;</code>
+                 */
+                public Builder clearOrderInfoId() {
+
+                    orderInfoId_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private int mallId_ ;
+                /**
+                 * <pre>
+                 *商品id
+                 * </pre>
+                 *
+                 * <code>int32 mallId = 4;</code>
+                 */
+                public int getMallId() {
+                    return mallId_;
+                }
+                /**
+                 * <pre>
+                 *商品id
+                 * </pre>
+                 *
+                 * <code>int32 mallId = 4;</code>
+                 */
+                public Builder setMallId(int value) {
+
+                    mallId_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *商品id
+                 * </pre>
+                 *
+                 * <code>int32 mallId = 4;</code>
+                 */
+                public Builder clearMallId() {
+
+                    mallId_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private int storeId_ ;
+                /**
+                 * <pre>
+                 *店铺id
+                 * </pre>
+                 *
+                 * <code>int32 storeId = 5;</code>
+                 */
+                public int getStoreId() {
+                    return storeId_;
+                }
+                /**
+                 * <pre>
+                 *店铺id
+                 * </pre>
+                 *
+                 * <code>int32 storeId = 5;</code>
+                 */
+                public Builder setStoreId(int value) {
+
+                    storeId_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *店铺id
+                 * </pre>
+                 *
+                 * <code>int32 storeId = 5;</code>
+                 */
+                public Builder clearStoreId() {
+
+                    storeId_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object size_ = "";
+                /**
+                 * <pre>
+                 *衣服尺码
+                 * </pre>
+                 *
+                 * <code>string size = 6;</code>
+                 */
+                public java.lang.String getSize() {
+                    java.lang.Object ref = size_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        size_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *衣服尺码
+                 * </pre>
+                 *
+                 * <code>string size = 6;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getSizeBytes() {
+                    java.lang.Object ref = size_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        size_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *衣服尺码
+                 * </pre>
+                 *
+                 * <code>string size = 6;</code>
+                 */
+                public Builder setSize(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    size_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *衣服尺码
+                 * </pre>
+                 *
+                 * <code>string size = 6;</code>
+                 */
+                public Builder clearSize() {
+
+                    size_ = getDefaultInstance().getSize();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *衣服尺码
+                 * </pre>
+                 *
+                 * <code>string size = 6;</code>
+                 */
+                public Builder setSizeBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    size_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object colour_ = "";
+                /**
+                 * <pre>
+                 *颜色
+                 * </pre>
+                 *
+                 * <code>string colour = 7;</code>
+                 */
+                public java.lang.String getColour() {
+                    java.lang.Object ref = colour_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        colour_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *颜色
+                 * </pre>
+                 *
+                 * <code>string colour = 7;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getColourBytes() {
+                    java.lang.Object ref = colour_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        colour_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *颜色
+                 * </pre>
+                 *
+                 * <code>string colour = 7;</code>
+                 */
+                public Builder setColour(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    colour_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *颜色
+                 * </pre>
+                 *
+                 * <code>string colour = 7;</code>
+                 */
+                public Builder clearColour() {
+
+                    colour_ = getDefaultInstance().getColour();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *颜色
+                 * </pre>
+                 *
+                 * <code>string colour = 7;</code>
+                 */
+                public Builder setColourBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    colour_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private int quantity_ ;
+                /**
+                 * <pre>
+                 *数量
+                 * </pre>
+                 *
+                 * <code>int32 quantity = 8;</code>
+                 */
+                public int getQuantity() {
+                    return quantity_;
+                }
+                /**
+                 * <pre>
+                 *数量
+                 * </pre>
+                 *
+                 * <code>int32 quantity = 8;</code>
+                 */
+                public Builder setQuantity(int value) {
+
+                    quantity_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *数量
+                 * </pre>
+                 *
+                 * <code>int32 quantity = 8;</code>
+                 */
+                public Builder clearQuantity() {
+
+                    quantity_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object amount_ = "";
+                /**
+                 * <pre>
+                 *价格
+                 * </pre>
+                 *
+                 * <code>string amount = 9;</code>
+                 */
+                public java.lang.String getAmount() {
+                    java.lang.Object ref = amount_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        amount_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *价格
+                 * </pre>
+                 *
+                 * <code>string amount = 9;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getAmountBytes() {
+                    java.lang.Object ref = amount_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        amount_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *价格
+                 * </pre>
+                 *
+                 * <code>string amount = 9;</code>
+                 */
+                public Builder setAmount(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    amount_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *价格
+                 * </pre>
+                 *
+                 * <code>string amount = 9;</code>
+                 */
+                public Builder clearAmount() {
+
+                    amount_ = getDefaultInstance().getAmount();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *价格
+                 * </pre>
+                 *
+                 * <code>string amount = 9;</code>
+                 */
+                public Builder setAmountBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    amount_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object image_ = "";
+                /**
+                 * <pre>
+                 *图片
+                 * </pre>
+                 *
+                 * <code>string image = 10;</code>
+                 */
+                public java.lang.String getImage() {
+                    java.lang.Object ref = image_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        image_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *图片
+                 * </pre>
+                 *
+                 * <code>string image = 10;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getImageBytes() {
+                    java.lang.Object ref = image_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        image_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *图片
+                 * </pre>
+                 *
+                 * <code>string image = 10;</code>
+                 */
+                public Builder setImage(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    image_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *图片
+                 * </pre>
+                 *
+                 * <code>string image = 10;</code>
+                 */
+                public Builder clearImage() {
+
+                    image_ = getDefaultInstance().getImage();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *图片
+                 * </pre>
+                 *
+                 * <code>string image = 10;</code>
+                 */
+                public Builder setImageBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    image_ = value;
+                    onChanged();
+                    return this;
+                }
+                @java.lang.Override
+                public final Builder setUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.setUnknownFields(unknownFields);
+                }
+
+                @java.lang.Override
+                public final Builder mergeUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.mergeUnknownFields(unknownFields);
+                }
+
+
+                // @@protoc_insertion_point(builder_scope:NettyProtobufWebsocketClient.MessageBase.ParticularsResp)
+            }
+
+            // @@protoc_insertion_point(class_scope:NettyProtobufWebsocketClient.MessageBase.ParticularsResp)
+            private static final com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp DEFAULT_INSTANCE;
+            static {
+                DEFAULT_INSTANCE = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp();
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp getDefaultInstance() {
+                return DEFAULT_INSTANCE;
+            }
+
+            private static final com.google.protobuf.Parser<ParticularsResp>
+                    PARSER = new com.google.protobuf.AbstractParser<ParticularsResp>() {
+                @java.lang.Override
+                public ParticularsResp parsePartialFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws com.google.protobuf.InvalidProtocolBufferException {
+                    return new ParticularsResp(input, extensionRegistry);
+                }
+            };
+
+            public static com.google.protobuf.Parser<ParticularsResp> parser() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.google.protobuf.Parser<ParticularsResp> getParserForType() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp getDefaultInstanceForType() {
+                return DEFAULT_INSTANCE;
+            }
+
+        }
+
+        public interface ParticularsListReqOrBuilder extends
+                // @@protoc_insertion_point(interface_extends:NettyProtobufWebsocketClient.MessageBase.ParticularsListReq)
+                com.google.protobuf.MessageOrBuilder {
+
+            /**
+             * <pre>
+             *用户手机号
+             * </pre>
+             *
+             * <code>string phoneNumber = 1;</code>
+             */
+            java.lang.String getPhoneNumber();
+            /**
+             * <pre>
+             *用户手机号
+             * </pre>
+             *
+             * <code>string phoneNumber = 1;</code>
+             */
+            com.google.protobuf.ByteString
+            getPhoneNumberBytes();
+        }
+        /**
+         * <pre>
+         *用户全部订单请求
+         * </pre>
+         *
+         * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.ParticularsListReq}
+         */
+        public  static final class ParticularsListReq extends
+                com.google.protobuf.GeneratedMessageV3 implements
+                // @@protoc_insertion_point(message_implements:NettyProtobufWebsocketClient.MessageBase.ParticularsListReq)
+                ParticularsListReqOrBuilder {
+            private static final long serialVersionUID = 0L;
+            // Use ParticularsListReq.newBuilder() to construct.
+            private ParticularsListReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+                super(builder);
+            }
+            private ParticularsListReq() {
+                phoneNumber_ = "";
+            }
+
+            @java.lang.Override
+            public final com.google.protobuf.UnknownFieldSet
+            getUnknownFields() {
+                return this.unknownFields;
+            }
+            private ParticularsListReq(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                this();
+                if (extensionRegistry == null) {
+                    throw new java.lang.NullPointerException();
+                }
+                int mutable_bitField0_ = 0;
+                com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                        com.google.protobuf.UnknownFieldSet.newBuilder();
+                try {
+                    boolean done = false;
+                    while (!done) {
+                        int tag = input.readTag();
+                        switch (tag) {
+                            case 0:
+                                done = true;
+                                break;
+                            case 10: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                phoneNumber_ = s;
+                                break;
+                            }
+                            default: {
+                                if (!parseUnknownField(
+                                        input, unknownFields, extensionRegistry, tag)) {
+                                    done = true;
+                                }
+                                break;
+                            }
+                        }
+                    }
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    throw e.setUnfinishedMessage(this);
+                } catch (java.io.IOException e) {
+                    throw new com.google.protobuf.InvalidProtocolBufferException(
+                            e).setUnfinishedMessage(this);
+                } finally {
+                    this.unknownFields = unknownFields.build();
+                    makeExtensionsImmutable();
+                }
+            }
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListReq_descriptor;
+            }
+
+            @java.lang.Override
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListReq_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.Builder.class);
+            }
+
+            public static final int PHONENUMBER_FIELD_NUMBER = 1;
+            private volatile java.lang.Object phoneNumber_;
+            /**
+             * <pre>
+             *用户手机号
+             * </pre>
+             *
+             * <code>string phoneNumber = 1;</code>
+             */
+            public java.lang.String getPhoneNumber() {
+                java.lang.Object ref = phoneNumber_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    phoneNumber_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *用户手机号
+             * </pre>
+             *
+             * <code>string phoneNumber = 1;</code>
+             */
+            public com.google.protobuf.ByteString
+            getPhoneNumberBytes() {
+                java.lang.Object ref = phoneNumber_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    phoneNumber_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            private byte memoizedIsInitialized = -1;
+            @java.lang.Override
+            public final boolean isInitialized() {
+                byte isInitialized = memoizedIsInitialized;
+                if (isInitialized == 1) return true;
+                if (isInitialized == 0) return false;
+
+                memoizedIsInitialized = 1;
+                return true;
+            }
+
+            @java.lang.Override
+            public void writeTo(com.google.protobuf.CodedOutputStream output)
+                    throws java.io.IOException {
+                if (!getPhoneNumberBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 1, phoneNumber_);
+                }
+                unknownFields.writeTo(output);
+            }
+
+            @java.lang.Override
+            public int getSerializedSize() {
+                int size = memoizedSize;
+                if (size != -1) return size;
+
+                size = 0;
+                if (!getPhoneNumberBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, phoneNumber_);
+                }
+                size += unknownFields.getSerializedSize();
+                memoizedSize = size;
+                return size;
+            }
+
+            @java.lang.Override
+            public boolean equals(final java.lang.Object obj) {
+                if (obj == this) {
+                    return true;
+                }
+                if (!(obj instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq)) {
+                    return super.equals(obj);
+                }
+                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq other = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq) obj;
+
+                if (!getPhoneNumber()
+                        .equals(other.getPhoneNumber())) return false;
+                if (!unknownFields.equals(other.unknownFields)) return false;
+                return true;
+            }
+
+            @java.lang.Override
+            public int hashCode() {
+                if (memoizedHashCode != 0) {
+                    return memoizedHashCode;
+                }
+                int hash = 41;
+                hash = (19 * hash) + getDescriptor().hashCode();
+                hash = (37 * hash) + PHONENUMBER_FIELD_NUMBER;
+                hash = (53 * hash) + getPhoneNumber().hashCode();
+                hash = (29 * hash) + unknownFields.hashCode();
+                memoizedHashCode = hash;
+                return hash;
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq parseFrom(
+                    java.nio.ByteBuffer data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq parseFrom(
+                    java.nio.ByteBuffer data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq parseFrom(
+                    com.google.protobuf.ByteString data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq parseFrom(
+                    com.google.protobuf.ByteString data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq parseFrom(byte[] data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq parseFrom(
+                    byte[] data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq parseFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq parseFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq parseDelimitedFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq parseDelimitedFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq parseFrom(
+                    com.google.protobuf.CodedInputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq parseFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+
+            @java.lang.Override
+            public Builder newBuilderForType() { return newBuilder(); }
+            public static Builder newBuilder() {
+                return DEFAULT_INSTANCE.toBuilder();
+            }
+            public static Builder newBuilder(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq prototype) {
+                return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+            }
+            @java.lang.Override
+            public Builder toBuilder() {
+                return this == DEFAULT_INSTANCE
+                        ? new Builder() : new Builder().mergeFrom(this);
+            }
+
+            @java.lang.Override
+            protected Builder newBuilderForType(
+                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                Builder builder = new Builder(parent);
+                return builder;
+            }
+            /**
+             * <pre>
+             *用户全部订单请求
+             * </pre>
+             *
+             * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.ParticularsListReq}
+             */
+            public static final class Builder extends
+                    com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+                    // @@protoc_insertion_point(builder_implements:NettyProtobufWebsocketClient.MessageBase.ParticularsListReq)
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReqOrBuilder {
+                public static final com.google.protobuf.Descriptors.Descriptor
+                getDescriptor() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListReq_descriptor;
+                }
+
+                @java.lang.Override
+                protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+                internalGetFieldAccessorTable() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListReq_fieldAccessorTable
+                            .ensureFieldAccessorsInitialized(
+                                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.Builder.class);
+                }
+
+                // Construct using com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.newBuilder()
+                private Builder() {
+                    maybeForceBuilderInitialization();
+                }
+
+                private Builder(
+                        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                    super(parent);
+                    maybeForceBuilderInitialization();
+                }
+                private void maybeForceBuilderInitialization() {
+                    if (com.google.protobuf.GeneratedMessageV3
+                            .alwaysUseFieldBuilders) {
+                    }
+                }
+                @java.lang.Override
+                public Builder clear() {
+                    super.clear();
+                    phoneNumber_ = "";
+
+                    return this;
+                }
+
+                @java.lang.Override
+                public com.google.protobuf.Descriptors.Descriptor
+                getDescriptorForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListReq_descriptor;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq getDefaultInstanceForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.getDefaultInstance();
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq build() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq result = buildPartial();
+                    if (!result.isInitialized()) {
+                        throw newUninitializedMessageException(result);
+                    }
+                    return result;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq buildPartial() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq result = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq(this);
+                    result.phoneNumber_ = phoneNumber_;
+                    onBuilt();
+                    return result;
+                }
+
+                @java.lang.Override
+                public Builder clone() {
+                    return super.clone();
+                }
+                @java.lang.Override
+                public Builder setField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.setField(field, value);
+                }
+                @java.lang.Override
+                public Builder clearField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field) {
+                    return super.clearField(field);
+                }
+                @java.lang.Override
+                public Builder clearOneof(
+                        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+                    return super.clearOneof(oneof);
+                }
+                @java.lang.Override
+                public Builder setRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        int index, java.lang.Object value) {
+                    return super.setRepeatedField(field, index, value);
+                }
+                @java.lang.Override
+                public Builder addRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.addRepeatedField(field, value);
+                }
+                @java.lang.Override
+                public Builder mergeFrom(com.google.protobuf.Message other) {
+                    if (other instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq) {
+                        return mergeFrom((com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq)other);
+                    } else {
+                        super.mergeFrom(other);
+                        return this;
+                    }
+                }
+
+                public Builder mergeFrom(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq other) {
+                    if (other == com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.getDefaultInstance()) return this;
+                    if (!other.getPhoneNumber().isEmpty()) {
+                        phoneNumber_ = other.phoneNumber_;
+                        onChanged();
+                    }
+                    this.mergeUnknownFields(other.unknownFields);
+                    onChanged();
+                    return this;
+                }
+
+                @java.lang.Override
+                public final boolean isInitialized() {
+                    return true;
+                }
+
+                @java.lang.Override
+                public Builder mergeFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws java.io.IOException {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq parsedMessage = null;
+                    try {
+                        parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                        parsedMessage = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq) e.getUnfinishedMessage();
+                        throw e.unwrapIOException();
+                    } finally {
+                        if (parsedMessage != null) {
+                            mergeFrom(parsedMessage);
+                        }
+                    }
+                    return this;
+                }
+
+                private java.lang.Object phoneNumber_ = "";
+                /**
+                 * <pre>
+                 *用户手机号
+                 * </pre>
+                 *
+                 * <code>string phoneNumber = 1;</code>
+                 */
+                public java.lang.String getPhoneNumber() {
+                    java.lang.Object ref = phoneNumber_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        phoneNumber_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *用户手机号
+                 * </pre>
+                 *
+                 * <code>string phoneNumber = 1;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getPhoneNumberBytes() {
+                    java.lang.Object ref = phoneNumber_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        phoneNumber_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *用户手机号
+                 * </pre>
+                 *
+                 * <code>string phoneNumber = 1;</code>
+                 */
+                public Builder setPhoneNumber(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    phoneNumber_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *用户手机号
+                 * </pre>
+                 *
+                 * <code>string phoneNumber = 1;</code>
+                 */
+                public Builder clearPhoneNumber() {
+
+                    phoneNumber_ = getDefaultInstance().getPhoneNumber();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *用户手机号
+                 * </pre>
+                 *
+                 * <code>string phoneNumber = 1;</code>
+                 */
+                public Builder setPhoneNumberBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    phoneNumber_ = value;
+                    onChanged();
+                    return this;
+                }
+                @java.lang.Override
+                public final Builder setUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.setUnknownFields(unknownFields);
+                }
+
+                @java.lang.Override
+                public final Builder mergeUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.mergeUnknownFields(unknownFields);
+                }
+
+
+                // @@protoc_insertion_point(builder_scope:NettyProtobufWebsocketClient.MessageBase.ParticularsListReq)
+            }
+
+            // @@protoc_insertion_point(class_scope:NettyProtobufWebsocketClient.MessageBase.ParticularsListReq)
+            private static final com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq DEFAULT_INSTANCE;
+            static {
+                DEFAULT_INSTANCE = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq();
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq getDefaultInstance() {
+                return DEFAULT_INSTANCE;
+            }
+
+            private static final com.google.protobuf.Parser<ParticularsListReq>
+                    PARSER = new com.google.protobuf.AbstractParser<ParticularsListReq>() {
+                @java.lang.Override
+                public ParticularsListReq parsePartialFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws com.google.protobuf.InvalidProtocolBufferException {
+                    return new ParticularsListReq(input, extensionRegistry);
+                }
+            };
+
+            public static com.google.protobuf.Parser<ParticularsListReq> parser() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.google.protobuf.Parser<ParticularsListReq> getParserForType() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq getDefaultInstanceForType() {
+                return DEFAULT_INSTANCE;
+            }
+
+        }
+
+        public interface ParticularsOrderRespOrBuilder extends
+                // @@protoc_insertion_point(interface_extends:NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp)
+                com.google.protobuf.MessageOrBuilder {
+
+            /**
+             * <pre>
+             *订单表主键
+             * </pre>
+             *
+             * <code>int32 orderId = 1;</code>
+             */
+            int getOrderId();
+
+            /**
+             * <pre>
+             *支付金额
+             * </pre>
+             *
+             * <code>string payAmont = 2;</code>
+             */
+            java.lang.String getPayAmont();
+            /**
+             * <pre>
+             *支付金额
+             * </pre>
+             *
+             * <code>string payAmont = 2;</code>
+             */
+            com.google.protobuf.ByteString
+            getPayAmontBytes();
+
+            /**
+             * <pre>
+             *实付金额
+             * </pre>
+             *
+             * <code>string amount = 3;</code>
+             */
+            java.lang.String getAmount();
+            /**
+             * <pre>
+             *实付金额
+             * </pre>
+             *
+             * <code>string amount = 3;</code>
+             */
+            com.google.protobuf.ByteString
+            getAmountBytes();
+
+            /**
+             * <pre>
+             *订单号
+             * </pre>
+             *
+             * <code>string orderSn = 4;</code>
+             */
+            java.lang.String getOrderSn();
+            /**
+             * <pre>
+             *订单号
+             * </pre>
+             *
+             * <code>string orderSn = 4;</code>
+             */
+            com.google.protobuf.ByteString
+            getOrderSnBytes();
+
+            /**
+             * <pre>
+             *订单类型
+             * </pre>
+             *
+             * <code>string modelType = 5;</code>
+             */
+            java.lang.String getModelType();
+            /**
+             * <pre>
+             *订单类型
+             * </pre>
+             *
+             * <code>string modelType = 5;</code>
+             */
+            com.google.protobuf.ByteString
+            getModelTypeBytes();
+
+            /**
+             * <pre>
+             *商户id
+             * </pre>
+             *
+             * <code>int32 storeId = 6;</code>
+             */
+            int getStoreId();
+
+            /**
+             * <pre>
+             *商品id
+             * </pre>
+             *
+             * <code>int32 mallId = 7;</code>
+             */
+            int getMallId();
+
+            /**
+             * <pre>
+             *用户id
+             * </pre>
+             *
+             * <code>int32 userId = 8;</code>
+             */
+            int getUserId();
+
+            /**
+             * <pre>
+             *状态码：0：未支付，1：待发货，2：支付失败，3：退款中，4：已退款，5：退款失败，6：待收货，7：已收货，8：待评价'
+             * </pre>
+             *
+             * <code>int32 status = 9;</code>
+             */
+            int getStatus();
+
+            /**
+             * <pre>
+             *创建时间
+             * </pre>
+             *
+             * <code>string createTime = 10;</code>
+             */
+            java.lang.String getCreateTime();
+            /**
+             * <pre>
+             *创建时间
+             * </pre>
+             *
+             * <code>string createTime = 10;</code>
+             */
+            com.google.protobuf.ByteString
+            getCreateTimeBytes();
+
+            /**
+             * <pre>
+             *支付方式 1：微信  2：支付宝  3：其他
+             * </pre>
+             *
+             * <code>int32 payType = 11;</code>
+             */
+            int getPayType();
+
+            /**
+             * <pre>
+             *地址
+             * </pre>
+             *
+             * <code>string address = 12;</code>
+             */
+            java.lang.String getAddress();
+            /**
+             * <pre>
+             *地址
+             * </pre>
+             *
+             * <code>string address = 12;</code>
+             */
+            com.google.protobuf.ByteString
+            getAddressBytes();
+
+            /**
+             * <pre>
+             *手机号
+             * </pre>
+             *
+             * <code>string phone = 13;</code>
+             */
+            java.lang.String getPhone();
+            /**
+             * <pre>
+             *手机号
+             * </pre>
+             *
+             * <code>string phone = 13;</code>
+             */
+            com.google.protobuf.ByteString
+            getPhoneBytes();
+
+            /**
+             * <pre>
+             *收货人
+             * </pre>
+             *
+             * <code>string consignee = 14;</code>
+             */
+            java.lang.String getConsignee();
+            /**
+             * <pre>
+             *收货人
+             * </pre>
+             *
+             * <code>string consignee = 14;</code>
+             */
+            com.google.protobuf.ByteString
+            getConsigneeBytes();
+
+            /**
+             * <pre>
+             *备注
+             * </pre>
+             *
+             * <code>string remark = 15;</code>
+             */
+            java.lang.String getRemark();
+            /**
+             * <pre>
+             *备注
+             * </pre>
+             *
+             * <code>string remark = 15;</code>
+             */
+            com.google.protobuf.ByteString
+            getRemarkBytes();
+
+            /**
+             * <pre>
+             *支付时间
+             * </pre>
+             *
+             * <code>string payTime = 16;</code>
+             */
+            java.lang.String getPayTime();
+            /**
+             * <pre>
+             *支付时间
+             * </pre>
+             *
+             * <code>string payTime = 16;</code>
+             */
+            com.google.protobuf.ByteString
+            getPayTimeBytes();
+
+            /**
+             * <pre>
+             *是否删除0为否，1为是
+             * </pre>
+             *
+             * <code>int32 delFlag = 17;</code>
+             */
+            int getDelFlag();
+
+            /**
+             * <pre>
+             *删除人
+             * </pre>
+             *
+             * <code>string delBy = 18;</code>
+             */
+            java.lang.String getDelBy();
+            /**
+             * <pre>
+             *删除人
+             * </pre>
+             *
+             * <code>string delBy = 18;</code>
+             */
+            com.google.protobuf.ByteString
+            getDelByBytes();
+
+            /**
+             * <pre>
+             *是否超时1是已取消订单， 0为否
+             * </pre>
+             *
+             * <code>int32 timeOutFlag = 19;</code>
+             */
+            int getTimeOutFlag();
+
+            /**
+             * <pre>
+             *完成时间
+             * </pre>
+             *
+             * <code>string updateTime = 20;</code>
+             */
+            java.lang.String getUpdateTime();
+            /**
+             * <pre>
+             *完成时间
+             * </pre>
+             *
+             * <code>string updateTime = 20;</code>
+             */
+            com.google.protobuf.ByteString
+            getUpdateTimeBytes();
+        }
+        /**
+         * <pre>
+         *用户全部订单数据响应
+         * </pre>
+         *
+         * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp}
+         */
+        public  static final class ParticularsOrderResp extends
+                com.google.protobuf.GeneratedMessageV3 implements
+                // @@protoc_insertion_point(message_implements:NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp)
+                ParticularsOrderRespOrBuilder {
+            private static final long serialVersionUID = 0L;
+            // Use ParticularsOrderResp.newBuilder() to construct.
+            private ParticularsOrderResp(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+                super(builder);
+            }
+            private ParticularsOrderResp() {
+                payAmont_ = "";
+                amount_ = "";
+                orderSn_ = "";
+                modelType_ = "";
+                createTime_ = "";
+                address_ = "";
+                phone_ = "";
+                consignee_ = "";
+                remark_ = "";
+                payTime_ = "";
+                delBy_ = "";
+                updateTime_ = "";
+            }
+
+            @java.lang.Override
+            public final com.google.protobuf.UnknownFieldSet
+            getUnknownFields() {
+                return this.unknownFields;
+            }
+            private ParticularsOrderResp(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                this();
+                if (extensionRegistry == null) {
+                    throw new java.lang.NullPointerException();
+                }
+                int mutable_bitField0_ = 0;
+                com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                        com.google.protobuf.UnknownFieldSet.newBuilder();
+                try {
+                    boolean done = false;
+                    while (!done) {
+                        int tag = input.readTag();
+                        switch (tag) {
+                            case 0:
+                                done = true;
+                                break;
+                            case 8: {
+
+                                orderId_ = input.readInt32();
+                                break;
+                            }
+                            case 18: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                payAmont_ = s;
+                                break;
+                            }
+                            case 26: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                amount_ = s;
+                                break;
+                            }
+                            case 34: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                orderSn_ = s;
+                                break;
+                            }
+                            case 42: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                modelType_ = s;
+                                break;
+                            }
+                            case 48: {
+
+                                storeId_ = input.readInt32();
+                                break;
+                            }
+                            case 56: {
+
+                                mallId_ = input.readInt32();
+                                break;
+                            }
+                            case 64: {
+
+                                userId_ = input.readInt32();
+                                break;
+                            }
+                            case 72: {
+
+                                status_ = input.readInt32();
+                                break;
+                            }
+                            case 82: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                createTime_ = s;
+                                break;
+                            }
+                            case 88: {
+
+                                payType_ = input.readInt32();
+                                break;
+                            }
+                            case 98: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                address_ = s;
+                                break;
+                            }
+                            case 106: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                phone_ = s;
+                                break;
+                            }
+                            case 114: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                consignee_ = s;
+                                break;
+                            }
+                            case 122: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                remark_ = s;
+                                break;
+                            }
+                            case 130: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                payTime_ = s;
+                                break;
+                            }
+                            case 136: {
+
+                                delFlag_ = input.readInt32();
+                                break;
+                            }
+                            case 146: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                delBy_ = s;
+                                break;
+                            }
+                            case 152: {
+
+                                timeOutFlag_ = input.readInt32();
+                                break;
+                            }
+                            case 162: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                updateTime_ = s;
+                                break;
+                            }
+                            default: {
+                                if (!parseUnknownField(
+                                        input, unknownFields, extensionRegistry, tag)) {
+                                    done = true;
+                                }
+                                break;
+                            }
+                        }
+                    }
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    throw e.setUnfinishedMessage(this);
+                } catch (java.io.IOException e) {
+                    throw new com.google.protobuf.InvalidProtocolBufferException(
+                            e).setUnfinishedMessage(this);
+                } finally {
+                    this.unknownFields = unknownFields.build();
+                    makeExtensionsImmutable();
+                }
+            }
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsOrderResp_descriptor;
+            }
+
+            @java.lang.Override
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsOrderResp_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder.class);
+            }
+
+            public static final int ORDERID_FIELD_NUMBER = 1;
+            private int orderId_;
+            /**
+             * <pre>
+             *订单表主键
+             * </pre>
+             *
+             * <code>int32 orderId = 1;</code>
+             */
+            public int getOrderId() {
+                return orderId_;
+            }
+
+            public static final int PAYAMONT_FIELD_NUMBER = 2;
+            private volatile java.lang.Object payAmont_;
+            /**
+             * <pre>
+             *支付金额
+             * </pre>
+             *
+             * <code>string payAmont = 2;</code>
+             */
+            public java.lang.String getPayAmont() {
+                java.lang.Object ref = payAmont_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    payAmont_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *支付金额
+             * </pre>
+             *
+             * <code>string payAmont = 2;</code>
+             */
+            public com.google.protobuf.ByteString
+            getPayAmontBytes() {
+                java.lang.Object ref = payAmont_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    payAmont_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int AMOUNT_FIELD_NUMBER = 3;
+            private volatile java.lang.Object amount_;
+            /**
+             * <pre>
+             *实付金额
+             * </pre>
+             *
+             * <code>string amount = 3;</code>
+             */
+            public java.lang.String getAmount() {
+                java.lang.Object ref = amount_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    amount_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *实付金额
+             * </pre>
+             *
+             * <code>string amount = 3;</code>
+             */
+            public com.google.protobuf.ByteString
+            getAmountBytes() {
+                java.lang.Object ref = amount_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    amount_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int ORDERSN_FIELD_NUMBER = 4;
+            private volatile java.lang.Object orderSn_;
+            /**
+             * <pre>
+             *订单号
+             * </pre>
+             *
+             * <code>string orderSn = 4;</code>
+             */
+            public java.lang.String getOrderSn() {
+                java.lang.Object ref = orderSn_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    orderSn_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *订单号
+             * </pre>
+             *
+             * <code>string orderSn = 4;</code>
+             */
+            public com.google.protobuf.ByteString
+            getOrderSnBytes() {
+                java.lang.Object ref = orderSn_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    orderSn_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int MODELTYPE_FIELD_NUMBER = 5;
+            private volatile java.lang.Object modelType_;
+            /**
+             * <pre>
+             *订单类型
+             * </pre>
+             *
+             * <code>string modelType = 5;</code>
+             */
+            public java.lang.String getModelType() {
+                java.lang.Object ref = modelType_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    modelType_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *订单类型
+             * </pre>
+             *
+             * <code>string modelType = 5;</code>
+             */
+            public com.google.protobuf.ByteString
+            getModelTypeBytes() {
+                java.lang.Object ref = modelType_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    modelType_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int STOREID_FIELD_NUMBER = 6;
+            private int storeId_;
+            /**
+             * <pre>
+             *商户id
+             * </pre>
+             *
+             * <code>int32 storeId = 6;</code>
+             */
+            public int getStoreId() {
+                return storeId_;
+            }
+
+            public static final int MALLID_FIELD_NUMBER = 7;
+            private int mallId_;
+            /**
+             * <pre>
+             *商品id
+             * </pre>
+             *
+             * <code>int32 mallId = 7;</code>
+             */
+            public int getMallId() {
+                return mallId_;
+            }
+
+            public static final int USERID_FIELD_NUMBER = 8;
+            private int userId_;
+            /**
+             * <pre>
+             *用户id
+             * </pre>
+             *
+             * <code>int32 userId = 8;</code>
+             */
+            public int getUserId() {
+                return userId_;
+            }
+
+            public static final int STATUS_FIELD_NUMBER = 9;
+            private int status_;
+            /**
+             * <pre>
+             *状态码：0：未支付，1：待发货，2：支付失败，3：退款中，4：已退款，5：退款失败，6：待收货，7：已收货，8：待评价'
+             * </pre>
+             *
+             * <code>int32 status = 9;</code>
+             */
+            public int getStatus() {
+                return status_;
+            }
+
+            public static final int CREATETIME_FIELD_NUMBER = 10;
+            private volatile java.lang.Object createTime_;
+            /**
+             * <pre>
+             *创建时间
+             * </pre>
+             *
+             * <code>string createTime = 10;</code>
+             */
+            public java.lang.String getCreateTime() {
+                java.lang.Object ref = createTime_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    createTime_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *创建时间
+             * </pre>
+             *
+             * <code>string createTime = 10;</code>
+             */
+            public com.google.protobuf.ByteString
+            getCreateTimeBytes() {
+                java.lang.Object ref = createTime_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    createTime_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int PAYTYPE_FIELD_NUMBER = 11;
+            private int payType_;
+            /**
+             * <pre>
+             *支付方式 1：微信  2：支付宝  3：其他
+             * </pre>
+             *
+             * <code>int32 payType = 11;</code>
+             */
+            public int getPayType() {
+                return payType_;
+            }
+
+            public static final int ADDRESS_FIELD_NUMBER = 12;
+            private volatile java.lang.Object address_;
+            /**
+             * <pre>
+             *地址
+             * </pre>
+             *
+             * <code>string address = 12;</code>
+             */
+            public java.lang.String getAddress() {
+                java.lang.Object ref = address_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    address_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *地址
+             * </pre>
+             *
+             * <code>string address = 12;</code>
+             */
+            public com.google.protobuf.ByteString
+            getAddressBytes() {
+                java.lang.Object ref = address_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    address_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int PHONE_FIELD_NUMBER = 13;
+            private volatile java.lang.Object phone_;
+            /**
+             * <pre>
+             *手机号
+             * </pre>
+             *
+             * <code>string phone = 13;</code>
+             */
+            public java.lang.String getPhone() {
+                java.lang.Object ref = phone_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    phone_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *手机号
+             * </pre>
+             *
+             * <code>string phone = 13;</code>
+             */
+            public com.google.protobuf.ByteString
+            getPhoneBytes() {
+                java.lang.Object ref = phone_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    phone_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int CONSIGNEE_FIELD_NUMBER = 14;
+            private volatile java.lang.Object consignee_;
+            /**
+             * <pre>
+             *收货人
+             * </pre>
+             *
+             * <code>string consignee = 14;</code>
+             */
+            public java.lang.String getConsignee() {
+                java.lang.Object ref = consignee_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    consignee_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *收货人
+             * </pre>
+             *
+             * <code>string consignee = 14;</code>
+             */
+            public com.google.protobuf.ByteString
+            getConsigneeBytes() {
+                java.lang.Object ref = consignee_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    consignee_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int REMARK_FIELD_NUMBER = 15;
+            private volatile java.lang.Object remark_;
+            /**
+             * <pre>
+             *备注
+             * </pre>
+             *
+             * <code>string remark = 15;</code>
+             */
+            public java.lang.String getRemark() {
+                java.lang.Object ref = remark_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    remark_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *备注
+             * </pre>
+             *
+             * <code>string remark = 15;</code>
+             */
+            public com.google.protobuf.ByteString
+            getRemarkBytes() {
+                java.lang.Object ref = remark_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    remark_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int PAYTIME_FIELD_NUMBER = 16;
+            private volatile java.lang.Object payTime_;
+            /**
+             * <pre>
+             *支付时间
+             * </pre>
+             *
+             * <code>string payTime = 16;</code>
+             */
+            public java.lang.String getPayTime() {
+                java.lang.Object ref = payTime_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    payTime_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *支付时间
+             * </pre>
+             *
+             * <code>string payTime = 16;</code>
+             */
+            public com.google.protobuf.ByteString
+            getPayTimeBytes() {
+                java.lang.Object ref = payTime_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    payTime_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int DELFLAG_FIELD_NUMBER = 17;
+            private int delFlag_;
+            /**
+             * <pre>
+             *是否删除0为否，1为是
+             * </pre>
+             *
+             * <code>int32 delFlag = 17;</code>
+             */
+            public int getDelFlag() {
+                return delFlag_;
+            }
+
+            public static final int DELBY_FIELD_NUMBER = 18;
+            private volatile java.lang.Object delBy_;
+            /**
+             * <pre>
+             *删除人
+             * </pre>
+             *
+             * <code>string delBy = 18;</code>
+             */
+            public java.lang.String getDelBy() {
+                java.lang.Object ref = delBy_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    delBy_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *删除人
+             * </pre>
+             *
+             * <code>string delBy = 18;</code>
+             */
+            public com.google.protobuf.ByteString
+            getDelByBytes() {
+                java.lang.Object ref = delBy_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    delBy_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int TIMEOUTFLAG_FIELD_NUMBER = 19;
+            private int timeOutFlag_;
+            /**
+             * <pre>
+             *是否超时1是已取消订单， 0为否
+             * </pre>
+             *
+             * <code>int32 timeOutFlag = 19;</code>
+             */
+            public int getTimeOutFlag() {
+                return timeOutFlag_;
+            }
+
+            public static final int UPDATETIME_FIELD_NUMBER = 20;
+            private volatile java.lang.Object updateTime_;
+            /**
+             * <pre>
+             *完成时间
+             * </pre>
+             *
+             * <code>string updateTime = 20;</code>
+             */
+            public java.lang.String getUpdateTime() {
+                java.lang.Object ref = updateTime_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    updateTime_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *完成时间
+             * </pre>
+             *
+             * <code>string updateTime = 20;</code>
+             */
+            public com.google.protobuf.ByteString
+            getUpdateTimeBytes() {
+                java.lang.Object ref = updateTime_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    updateTime_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            private byte memoizedIsInitialized = -1;
+            @java.lang.Override
+            public final boolean isInitialized() {
+                byte isInitialized = memoizedIsInitialized;
+                if (isInitialized == 1) return true;
+                if (isInitialized == 0) return false;
+
+                memoizedIsInitialized = 1;
+                return true;
+            }
+
+            @java.lang.Override
+            public void writeTo(com.google.protobuf.CodedOutputStream output)
+                    throws java.io.IOException {
+                if (orderId_ != 0) {
+                    output.writeInt32(1, orderId_);
+                }
+                if (!getPayAmontBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 2, payAmont_);
+                }
+                if (!getAmountBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 3, amount_);
+                }
+                if (!getOrderSnBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 4, orderSn_);
+                }
+                if (!getModelTypeBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 5, modelType_);
+                }
+                if (storeId_ != 0) {
+                    output.writeInt32(6, storeId_);
+                }
+                if (mallId_ != 0) {
+                    output.writeInt32(7, mallId_);
+                }
+                if (userId_ != 0) {
+                    output.writeInt32(8, userId_);
+                }
+                if (status_ != 0) {
+                    output.writeInt32(9, status_);
+                }
+                if (!getCreateTimeBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 10, createTime_);
+                }
+                if (payType_ != 0) {
+                    output.writeInt32(11, payType_);
+                }
+                if (!getAddressBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 12, address_);
+                }
+                if (!getPhoneBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 13, phone_);
+                }
+                if (!getConsigneeBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 14, consignee_);
+                }
+                if (!getRemarkBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 15, remark_);
+                }
+                if (!getPayTimeBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 16, payTime_);
+                }
+                if (delFlag_ != 0) {
+                    output.writeInt32(17, delFlag_);
+                }
+                if (!getDelByBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 18, delBy_);
+                }
+                if (timeOutFlag_ != 0) {
+                    output.writeInt32(19, timeOutFlag_);
+                }
+                if (!getUpdateTimeBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 20, updateTime_);
+                }
+                unknownFields.writeTo(output);
+            }
+
+            @java.lang.Override
+            public int getSerializedSize() {
+                int size = memoizedSize;
+                if (size != -1) return size;
+
+                size = 0;
+                if (orderId_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(1, orderId_);
+                }
+                if (!getPayAmontBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, payAmont_);
+                }
+                if (!getAmountBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, amount_);
+                }
+                if (!getOrderSnBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, orderSn_);
+                }
+                if (!getModelTypeBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, modelType_);
+                }
+                if (storeId_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(6, storeId_);
+                }
+                if (mallId_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(7, mallId_);
+                }
+                if (userId_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(8, userId_);
+                }
+                if (status_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(9, status_);
+                }
+                if (!getCreateTimeBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, createTime_);
+                }
+                if (payType_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(11, payType_);
+                }
+                if (!getAddressBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, address_);
+                }
+                if (!getPhoneBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, phone_);
+                }
+                if (!getConsigneeBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, consignee_);
+                }
+                if (!getRemarkBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, remark_);
+                }
+                if (!getPayTimeBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(16, payTime_);
+                }
+                if (delFlag_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(17, delFlag_);
+                }
+                if (!getDelByBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(18, delBy_);
+                }
+                if (timeOutFlag_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(19, timeOutFlag_);
+                }
+                if (!getUpdateTimeBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(20, updateTime_);
+                }
+                size += unknownFields.getSerializedSize();
+                memoizedSize = size;
+                return size;
+            }
+
+            @java.lang.Override
+            public boolean equals(final java.lang.Object obj) {
+                if (obj == this) {
+                    return true;
+                }
+                if (!(obj instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp)) {
+                    return super.equals(obj);
+                }
+                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp other = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp) obj;
+
+                if (getOrderId()
+                        != other.getOrderId()) return false;
+                if (!getPayAmont()
+                        .equals(other.getPayAmont())) return false;
+                if (!getAmount()
+                        .equals(other.getAmount())) return false;
+                if (!getOrderSn()
+                        .equals(other.getOrderSn())) return false;
+                if (!getModelType()
+                        .equals(other.getModelType())) return false;
+                if (getStoreId()
+                        != other.getStoreId()) return false;
+                if (getMallId()
+                        != other.getMallId()) return false;
+                if (getUserId()
+                        != other.getUserId()) return false;
+                if (getStatus()
+                        != other.getStatus()) return false;
+                if (!getCreateTime()
+                        .equals(other.getCreateTime())) return false;
+                if (getPayType()
+                        != other.getPayType()) return false;
+                if (!getAddress()
+                        .equals(other.getAddress())) return false;
+                if (!getPhone()
+                        .equals(other.getPhone())) return false;
+                if (!getConsignee()
+                        .equals(other.getConsignee())) return false;
+                if (!getRemark()
+                        .equals(other.getRemark())) return false;
+                if (!getPayTime()
+                        .equals(other.getPayTime())) return false;
+                if (getDelFlag()
+                        != other.getDelFlag()) return false;
+                if (!getDelBy()
+                        .equals(other.getDelBy())) return false;
+                if (getTimeOutFlag()
+                        != other.getTimeOutFlag()) return false;
+                if (!getUpdateTime()
+                        .equals(other.getUpdateTime())) return false;
+                if (!unknownFields.equals(other.unknownFields)) return false;
+                return true;
+            }
+
+            @java.lang.Override
+            public int hashCode() {
+                if (memoizedHashCode != 0) {
+                    return memoizedHashCode;
+                }
+                int hash = 41;
+                hash = (19 * hash) + getDescriptor().hashCode();
+                hash = (37 * hash) + ORDERID_FIELD_NUMBER;
+                hash = (53 * hash) + getOrderId();
+                hash = (37 * hash) + PAYAMONT_FIELD_NUMBER;
+                hash = (53 * hash) + getPayAmont().hashCode();
+                hash = (37 * hash) + AMOUNT_FIELD_NUMBER;
+                hash = (53 * hash) + getAmount().hashCode();
+                hash = (37 * hash) + ORDERSN_FIELD_NUMBER;
+                hash = (53 * hash) + getOrderSn().hashCode();
+                hash = (37 * hash) + MODELTYPE_FIELD_NUMBER;
+                hash = (53 * hash) + getModelType().hashCode();
+                hash = (37 * hash) + STOREID_FIELD_NUMBER;
+                hash = (53 * hash) + getStoreId();
+                hash = (37 * hash) + MALLID_FIELD_NUMBER;
+                hash = (53 * hash) + getMallId();
+                hash = (37 * hash) + USERID_FIELD_NUMBER;
+                hash = (53 * hash) + getUserId();
+                hash = (37 * hash) + STATUS_FIELD_NUMBER;
+                hash = (53 * hash) + getStatus();
+                hash = (37 * hash) + CREATETIME_FIELD_NUMBER;
+                hash = (53 * hash) + getCreateTime().hashCode();
+                hash = (37 * hash) + PAYTYPE_FIELD_NUMBER;
+                hash = (53 * hash) + getPayType();
+                hash = (37 * hash) + ADDRESS_FIELD_NUMBER;
+                hash = (53 * hash) + getAddress().hashCode();
+                hash = (37 * hash) + PHONE_FIELD_NUMBER;
+                hash = (53 * hash) + getPhone().hashCode();
+                hash = (37 * hash) + CONSIGNEE_FIELD_NUMBER;
+                hash = (53 * hash) + getConsignee().hashCode();
+                hash = (37 * hash) + REMARK_FIELD_NUMBER;
+                hash = (53 * hash) + getRemark().hashCode();
+                hash = (37 * hash) + PAYTIME_FIELD_NUMBER;
+                hash = (53 * hash) + getPayTime().hashCode();
+                hash = (37 * hash) + DELFLAG_FIELD_NUMBER;
+                hash = (53 * hash) + getDelFlag();
+                hash = (37 * hash) + DELBY_FIELD_NUMBER;
+                hash = (53 * hash) + getDelBy().hashCode();
+                hash = (37 * hash) + TIMEOUTFLAG_FIELD_NUMBER;
+                hash = (53 * hash) + getTimeOutFlag();
+                hash = (37 * hash) + UPDATETIME_FIELD_NUMBER;
+                hash = (53 * hash) + getUpdateTime().hashCode();
+                hash = (29 * hash) + unknownFields.hashCode();
+                memoizedHashCode = hash;
+                return hash;
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp parseFrom(
+                    java.nio.ByteBuffer data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp parseFrom(
+                    java.nio.ByteBuffer data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp parseFrom(
+                    com.google.protobuf.ByteString data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp parseFrom(
+                    com.google.protobuf.ByteString data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp parseFrom(byte[] data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp parseFrom(
+                    byte[] data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp parseFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp parseFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp parseDelimitedFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp parseDelimitedFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp parseFrom(
+                    com.google.protobuf.CodedInputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp parseFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+
+            @java.lang.Override
+            public Builder newBuilderForType() { return newBuilder(); }
+            public static Builder newBuilder() {
+                return DEFAULT_INSTANCE.toBuilder();
+            }
+            public static Builder newBuilder(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp prototype) {
+                return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+            }
+            @java.lang.Override
+            public Builder toBuilder() {
+                return this == DEFAULT_INSTANCE
+                        ? new Builder() : new Builder().mergeFrom(this);
+            }
+
+            @java.lang.Override
+            protected Builder newBuilderForType(
+                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                Builder builder = new Builder(parent);
+                return builder;
+            }
+            /**
+             * <pre>
+             *用户全部订单数据响应
+             * </pre>
+             *
+             * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp}
+             */
+            public static final class Builder extends
+                    com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+                    // @@protoc_insertion_point(builder_implements:NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp)
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderRespOrBuilder {
+                public static final com.google.protobuf.Descriptors.Descriptor
+                getDescriptor() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsOrderResp_descriptor;
+                }
+
+                @java.lang.Override
+                protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+                internalGetFieldAccessorTable() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsOrderResp_fieldAccessorTable
+                            .ensureFieldAccessorsInitialized(
+                                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder.class);
+                }
+
+                // Construct using com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.newBuilder()
+                private Builder() {
+                    maybeForceBuilderInitialization();
+                }
+
+                private Builder(
+                        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                    super(parent);
+                    maybeForceBuilderInitialization();
+                }
+                private void maybeForceBuilderInitialization() {
+                    if (com.google.protobuf.GeneratedMessageV3
+                            .alwaysUseFieldBuilders) {
+                    }
+                }
+                @java.lang.Override
+                public Builder clear() {
+                    super.clear();
+                    orderId_ = 0;
+
+                    payAmont_ = "";
+
+                    amount_ = "";
+
+                    orderSn_ = "";
+
+                    modelType_ = "";
+
+                    storeId_ = 0;
+
+                    mallId_ = 0;
+
+                    userId_ = 0;
+
+                    status_ = 0;
+
+                    createTime_ = "";
+
+                    payType_ = 0;
+
+                    address_ = "";
+
+                    phone_ = "";
+
+                    consignee_ = "";
+
+                    remark_ = "";
+
+                    payTime_ = "";
+
+                    delFlag_ = 0;
+
+                    delBy_ = "";
+
+                    timeOutFlag_ = 0;
+
+                    updateTime_ = "";
+
+                    return this;
+                }
+
+                @java.lang.Override
+                public com.google.protobuf.Descriptors.Descriptor
+                getDescriptorForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsOrderResp_descriptor;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp getDefaultInstanceForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.getDefaultInstance();
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp build() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp result = buildPartial();
+                    if (!result.isInitialized()) {
+                        throw newUninitializedMessageException(result);
+                    }
+                    return result;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp buildPartial() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp result = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp(this);
+                    result.orderId_ = orderId_;
+                    result.payAmont_ = payAmont_;
+                    result.amount_ = amount_;
+                    result.orderSn_ = orderSn_;
+                    result.modelType_ = modelType_;
+                    result.storeId_ = storeId_;
+                    result.mallId_ = mallId_;
+                    result.userId_ = userId_;
+                    result.status_ = status_;
+                    result.createTime_ = createTime_;
+                    result.payType_ = payType_;
+                    result.address_ = address_;
+                    result.phone_ = phone_;
+                    result.consignee_ = consignee_;
+                    result.remark_ = remark_;
+                    result.payTime_ = payTime_;
+                    result.delFlag_ = delFlag_;
+                    result.delBy_ = delBy_;
+                    result.timeOutFlag_ = timeOutFlag_;
+                    result.updateTime_ = updateTime_;
+                    onBuilt();
+                    return result;
+                }
+
+                @java.lang.Override
+                public Builder clone() {
+                    return super.clone();
+                }
+                @java.lang.Override
+                public Builder setField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.setField(field, value);
+                }
+                @java.lang.Override
+                public Builder clearField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field) {
+                    return super.clearField(field);
+                }
+                @java.lang.Override
+                public Builder clearOneof(
+                        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+                    return super.clearOneof(oneof);
+                }
+                @java.lang.Override
+                public Builder setRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        int index, java.lang.Object value) {
+                    return super.setRepeatedField(field, index, value);
+                }
+                @java.lang.Override
+                public Builder addRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.addRepeatedField(field, value);
+                }
+                @java.lang.Override
+                public Builder mergeFrom(com.google.protobuf.Message other) {
+                    if (other instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp) {
+                        return mergeFrom((com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp)other);
+                    } else {
+                        super.mergeFrom(other);
+                        return this;
+                    }
+                }
+
+                public Builder mergeFrom(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp other) {
+                    if (other == com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.getDefaultInstance()) return this;
+                    if (other.getOrderId() != 0) {
+                        setOrderId(other.getOrderId());
+                    }
+                    if (!other.getPayAmont().isEmpty()) {
+                        payAmont_ = other.payAmont_;
+                        onChanged();
+                    }
+                    if (!other.getAmount().isEmpty()) {
+                        amount_ = other.amount_;
+                        onChanged();
+                    }
+                    if (!other.getOrderSn().isEmpty()) {
+                        orderSn_ = other.orderSn_;
+                        onChanged();
+                    }
+                    if (!other.getModelType().isEmpty()) {
+                        modelType_ = other.modelType_;
+                        onChanged();
+                    }
+                    if (other.getStoreId() != 0) {
+                        setStoreId(other.getStoreId());
+                    }
+                    if (other.getMallId() != 0) {
+                        setMallId(other.getMallId());
+                    }
+                    if (other.getUserId() != 0) {
+                        setUserId(other.getUserId());
+                    }
+                    if (other.getStatus() != 0) {
+                        setStatus(other.getStatus());
+                    }
+                    if (!other.getCreateTime().isEmpty()) {
+                        createTime_ = other.createTime_;
+                        onChanged();
+                    }
+                    if (other.getPayType() != 0) {
+                        setPayType(other.getPayType());
+                    }
+                    if (!other.getAddress().isEmpty()) {
+                        address_ = other.address_;
+                        onChanged();
+                    }
+                    if (!other.getPhone().isEmpty()) {
+                        phone_ = other.phone_;
+                        onChanged();
+                    }
+                    if (!other.getConsignee().isEmpty()) {
+                        consignee_ = other.consignee_;
+                        onChanged();
+                    }
+                    if (!other.getRemark().isEmpty()) {
+                        remark_ = other.remark_;
+                        onChanged();
+                    }
+                    if (!other.getPayTime().isEmpty()) {
+                        payTime_ = other.payTime_;
+                        onChanged();
+                    }
+                    if (other.getDelFlag() != 0) {
+                        setDelFlag(other.getDelFlag());
+                    }
+                    if (!other.getDelBy().isEmpty()) {
+                        delBy_ = other.delBy_;
+                        onChanged();
+                    }
+                    if (other.getTimeOutFlag() != 0) {
+                        setTimeOutFlag(other.getTimeOutFlag());
+                    }
+                    if (!other.getUpdateTime().isEmpty()) {
+                        updateTime_ = other.updateTime_;
+                        onChanged();
+                    }
+                    this.mergeUnknownFields(other.unknownFields);
+                    onChanged();
+                    return this;
+                }
+
+                @java.lang.Override
+                public final boolean isInitialized() {
+                    return true;
+                }
+
+                @java.lang.Override
+                public Builder mergeFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws java.io.IOException {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp parsedMessage = null;
+                    try {
+                        parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                        parsedMessage = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp) e.getUnfinishedMessage();
+                        throw e.unwrapIOException();
+                    } finally {
+                        if (parsedMessage != null) {
+                            mergeFrom(parsedMessage);
+                        }
+                    }
+                    return this;
+                }
+
+                private int orderId_ ;
+                /**
+                 * <pre>
+                 *订单表主键
+                 * </pre>
+                 *
+                 * <code>int32 orderId = 1;</code>
+                 */
+                public int getOrderId() {
+                    return orderId_;
+                }
+                /**
+                 * <pre>
+                 *订单表主键
+                 * </pre>
+                 *
+                 * <code>int32 orderId = 1;</code>
+                 */
+                public Builder setOrderId(int value) {
+
+                    orderId_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单表主键
+                 * </pre>
+                 *
+                 * <code>int32 orderId = 1;</code>
+                 */
+                public Builder clearOrderId() {
+
+                    orderId_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object payAmont_ = "";
+                /**
+                 * <pre>
+                 *支付金额
+                 * </pre>
+                 *
+                 * <code>string payAmont = 2;</code>
+                 */
+                public java.lang.String getPayAmont() {
+                    java.lang.Object ref = payAmont_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        payAmont_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *支付金额
+                 * </pre>
+                 *
+                 * <code>string payAmont = 2;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getPayAmontBytes() {
+                    java.lang.Object ref = payAmont_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        payAmont_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *支付金额
+                 * </pre>
+                 *
+                 * <code>string payAmont = 2;</code>
+                 */
+                public Builder setPayAmont(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    payAmont_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *支付金额
+                 * </pre>
+                 *
+                 * <code>string payAmont = 2;</code>
+                 */
+                public Builder clearPayAmont() {
+
+                    payAmont_ = getDefaultInstance().getPayAmont();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *支付金额
+                 * </pre>
+                 *
+                 * <code>string payAmont = 2;</code>
+                 */
+                public Builder setPayAmontBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    payAmont_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object amount_ = "";
+                /**
+                 * <pre>
+                 *实付金额
+                 * </pre>
+                 *
+                 * <code>string amount = 3;</code>
+                 */
+                public java.lang.String getAmount() {
+                    java.lang.Object ref = amount_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        amount_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *实付金额
+                 * </pre>
+                 *
+                 * <code>string amount = 3;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getAmountBytes() {
+                    java.lang.Object ref = amount_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        amount_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *实付金额
+                 * </pre>
+                 *
+                 * <code>string amount = 3;</code>
+                 */
+                public Builder setAmount(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    amount_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *实付金额
+                 * </pre>
+                 *
+                 * <code>string amount = 3;</code>
+                 */
+                public Builder clearAmount() {
+
+                    amount_ = getDefaultInstance().getAmount();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *实付金额
+                 * </pre>
+                 *
+                 * <code>string amount = 3;</code>
+                 */
+                public Builder setAmountBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    amount_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object orderSn_ = "";
+                /**
+                 * <pre>
+                 *订单号
+                 * </pre>
+                 *
+                 * <code>string orderSn = 4;</code>
+                 */
+                public java.lang.String getOrderSn() {
+                    java.lang.Object ref = orderSn_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        orderSn_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *订单号
+                 * </pre>
+                 *
+                 * <code>string orderSn = 4;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getOrderSnBytes() {
+                    java.lang.Object ref = orderSn_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        orderSn_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *订单号
+                 * </pre>
+                 *
+                 * <code>string orderSn = 4;</code>
+                 */
+                public Builder setOrderSn(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    orderSn_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单号
+                 * </pre>
+                 *
+                 * <code>string orderSn = 4;</code>
+                 */
+                public Builder clearOrderSn() {
+
+                    orderSn_ = getDefaultInstance().getOrderSn();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单号
+                 * </pre>
+                 *
+                 * <code>string orderSn = 4;</code>
+                 */
+                public Builder setOrderSnBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    orderSn_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object modelType_ = "";
+                /**
+                 * <pre>
+                 *订单类型
+                 * </pre>
+                 *
+                 * <code>string modelType = 5;</code>
+                 */
+                public java.lang.String getModelType() {
+                    java.lang.Object ref = modelType_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        modelType_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *订单类型
+                 * </pre>
+                 *
+                 * <code>string modelType = 5;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getModelTypeBytes() {
+                    java.lang.Object ref = modelType_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        modelType_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *订单类型
+                 * </pre>
+                 *
+                 * <code>string modelType = 5;</code>
+                 */
+                public Builder setModelType(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    modelType_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单类型
+                 * </pre>
+                 *
+                 * <code>string modelType = 5;</code>
+                 */
+                public Builder clearModelType() {
+
+                    modelType_ = getDefaultInstance().getModelType();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单类型
+                 * </pre>
+                 *
+                 * <code>string modelType = 5;</code>
+                 */
+                public Builder setModelTypeBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    modelType_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private int storeId_ ;
+                /**
+                 * <pre>
+                 *商户id
+                 * </pre>
+                 *
+                 * <code>int32 storeId = 6;</code>
+                 */
+                public int getStoreId() {
+                    return storeId_;
+                }
+                /**
+                 * <pre>
+                 *商户id
+                 * </pre>
+                 *
+                 * <code>int32 storeId = 6;</code>
+                 */
+                public Builder setStoreId(int value) {
+
+                    storeId_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *商户id
+                 * </pre>
+                 *
+                 * <code>int32 storeId = 6;</code>
+                 */
+                public Builder clearStoreId() {
+
+                    storeId_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private int mallId_ ;
+                /**
+                 * <pre>
+                 *商品id
+                 * </pre>
+                 *
+                 * <code>int32 mallId = 7;</code>
+                 */
+                public int getMallId() {
+                    return mallId_;
+                }
+                /**
+                 * <pre>
+                 *商品id
+                 * </pre>
+                 *
+                 * <code>int32 mallId = 7;</code>
+                 */
+                public Builder setMallId(int value) {
+
+                    mallId_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *商品id
+                 * </pre>
+                 *
+                 * <code>int32 mallId = 7;</code>
+                 */
+                public Builder clearMallId() {
+
+                    mallId_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private int userId_ ;
+                /**
+                 * <pre>
+                 *用户id
+                 * </pre>
+                 *
+                 * <code>int32 userId = 8;</code>
+                 */
+                public int getUserId() {
+                    return userId_;
+                }
+                /**
+                 * <pre>
+                 *用户id
+                 * </pre>
+                 *
+                 * <code>int32 userId = 8;</code>
+                 */
+                public Builder setUserId(int value) {
+
+                    userId_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *用户id
+                 * </pre>
+                 *
+                 * <code>int32 userId = 8;</code>
+                 */
+                public Builder clearUserId() {
+
+                    userId_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private int status_ ;
+                /**
+                 * <pre>
+                 *状态码：0：未支付，1：待发货，2：支付失败，3：退款中，4：已退款，5：退款失败，6：待收货，7：已收货，8：待评价'
+                 * </pre>
+                 *
+                 * <code>int32 status = 9;</code>
+                 */
+                public int getStatus() {
+                    return status_;
+                }
+                /**
+                 * <pre>
+                 *状态码：0：未支付，1：待发货，2：支付失败，3：退款中，4：已退款，5：退款失败，6：待收货，7：已收货，8：待评价'
+                 * </pre>
+                 *
+                 * <code>int32 status = 9;</code>
+                 */
+                public Builder setStatus(int value) {
+
+                    status_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *状态码：0：未支付，1：待发货，2：支付失败，3：退款中，4：已退款，5：退款失败，6：待收货，7：已收货，8：待评价'
+                 * </pre>
+                 *
+                 * <code>int32 status = 9;</code>
+                 */
+                public Builder clearStatus() {
+
+                    status_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object createTime_ = "";
+                /**
+                 * <pre>
+                 *创建时间
+                 * </pre>
+                 *
+                 * <code>string createTime = 10;</code>
+                 */
+                public java.lang.String getCreateTime() {
+                    java.lang.Object ref = createTime_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        createTime_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *创建时间
+                 * </pre>
+                 *
+                 * <code>string createTime = 10;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getCreateTimeBytes() {
+                    java.lang.Object ref = createTime_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        createTime_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *创建时间
+                 * </pre>
+                 *
+                 * <code>string createTime = 10;</code>
+                 */
+                public Builder setCreateTime(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    createTime_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *创建时间
+                 * </pre>
+                 *
+                 * <code>string createTime = 10;</code>
+                 */
+                public Builder clearCreateTime() {
+
+                    createTime_ = getDefaultInstance().getCreateTime();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *创建时间
+                 * </pre>
+                 *
+                 * <code>string createTime = 10;</code>
+                 */
+                public Builder setCreateTimeBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    createTime_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private int payType_ ;
+                /**
+                 * <pre>
+                 *支付方式 1：微信  2：支付宝  3：其他
+                 * </pre>
+                 *
+                 * <code>int32 payType = 11;</code>
+                 */
+                public int getPayType() {
+                    return payType_;
+                }
+                /**
+                 * <pre>
+                 *支付方式 1：微信  2：支付宝  3：其他
+                 * </pre>
+                 *
+                 * <code>int32 payType = 11;</code>
+                 */
+                public Builder setPayType(int value) {
+
+                    payType_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *支付方式 1：微信  2：支付宝  3：其他
+                 * </pre>
+                 *
+                 * <code>int32 payType = 11;</code>
+                 */
+                public Builder clearPayType() {
+
+                    payType_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object address_ = "";
+                /**
+                 * <pre>
+                 *地址
+                 * </pre>
+                 *
+                 * <code>string address = 12;</code>
+                 */
+                public java.lang.String getAddress() {
+                    java.lang.Object ref = address_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        address_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *地址
+                 * </pre>
+                 *
+                 * <code>string address = 12;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getAddressBytes() {
+                    java.lang.Object ref = address_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        address_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *地址
+                 * </pre>
+                 *
+                 * <code>string address = 12;</code>
+                 */
+                public Builder setAddress(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    address_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址
+                 * </pre>
+                 *
+                 * <code>string address = 12;</code>
+                 */
+                public Builder clearAddress() {
+
+                    address_ = getDefaultInstance().getAddress();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址
+                 * </pre>
+                 *
+                 * <code>string address = 12;</code>
+                 */
+                public Builder setAddressBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    address_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object phone_ = "";
+                /**
+                 * <pre>
+                 *手机号
+                 * </pre>
+                 *
+                 * <code>string phone = 13;</code>
+                 */
+                public java.lang.String getPhone() {
+                    java.lang.Object ref = phone_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        phone_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *手机号
+                 * </pre>
+                 *
+                 * <code>string phone = 13;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getPhoneBytes() {
+                    java.lang.Object ref = phone_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        phone_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *手机号
+                 * </pre>
+                 *
+                 * <code>string phone = 13;</code>
+                 */
+                public Builder setPhone(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    phone_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *手机号
+                 * </pre>
+                 *
+                 * <code>string phone = 13;</code>
+                 */
+                public Builder clearPhone() {
+
+                    phone_ = getDefaultInstance().getPhone();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *手机号
+                 * </pre>
+                 *
+                 * <code>string phone = 13;</code>
+                 */
+                public Builder setPhoneBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    phone_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object consignee_ = "";
+                /**
+                 * <pre>
+                 *收货人
+                 * </pre>
+                 *
+                 * <code>string consignee = 14;</code>
+                 */
+                public java.lang.String getConsignee() {
+                    java.lang.Object ref = consignee_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        consignee_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *收货人
+                 * </pre>
+                 *
+                 * <code>string consignee = 14;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getConsigneeBytes() {
+                    java.lang.Object ref = consignee_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        consignee_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *收货人
+                 * </pre>
+                 *
+                 * <code>string consignee = 14;</code>
+                 */
+                public Builder setConsignee(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    consignee_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *收货人
+                 * </pre>
+                 *
+                 * <code>string consignee = 14;</code>
+                 */
+                public Builder clearConsignee() {
+
+                    consignee_ = getDefaultInstance().getConsignee();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *收货人
+                 * </pre>
+                 *
+                 * <code>string consignee = 14;</code>
+                 */
+                public Builder setConsigneeBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    consignee_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object remark_ = "";
+                /**
+                 * <pre>
+                 *备注
+                 * </pre>
+                 *
+                 * <code>string remark = 15;</code>
+                 */
+                public java.lang.String getRemark() {
+                    java.lang.Object ref = remark_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        remark_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *备注
+                 * </pre>
+                 *
+                 * <code>string remark = 15;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getRemarkBytes() {
+                    java.lang.Object ref = remark_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        remark_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *备注
+                 * </pre>
+                 *
+                 * <code>string remark = 15;</code>
+                 */
+                public Builder setRemark(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    remark_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *备注
+                 * </pre>
+                 *
+                 * <code>string remark = 15;</code>
+                 */
+                public Builder clearRemark() {
+
+                    remark_ = getDefaultInstance().getRemark();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *备注
+                 * </pre>
+                 *
+                 * <code>string remark = 15;</code>
+                 */
+                public Builder setRemarkBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    remark_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object payTime_ = "";
+                /**
+                 * <pre>
+                 *支付时间
+                 * </pre>
+                 *
+                 * <code>string payTime = 16;</code>
+                 */
+                public java.lang.String getPayTime() {
+                    java.lang.Object ref = payTime_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        payTime_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *支付时间
+                 * </pre>
+                 *
+                 * <code>string payTime = 16;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getPayTimeBytes() {
+                    java.lang.Object ref = payTime_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        payTime_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *支付时间
+                 * </pre>
+                 *
+                 * <code>string payTime = 16;</code>
+                 */
+                public Builder setPayTime(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    payTime_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *支付时间
+                 * </pre>
+                 *
+                 * <code>string payTime = 16;</code>
+                 */
+                public Builder clearPayTime() {
+
+                    payTime_ = getDefaultInstance().getPayTime();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *支付时间
+                 * </pre>
+                 *
+                 * <code>string payTime = 16;</code>
+                 */
+                public Builder setPayTimeBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    payTime_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private int delFlag_ ;
+                /**
+                 * <pre>
+                 *是否删除0为否，1为是
+                 * </pre>
+                 *
+                 * <code>int32 delFlag = 17;</code>
+                 */
+                public int getDelFlag() {
+                    return delFlag_;
+                }
+                /**
+                 * <pre>
+                 *是否删除0为否，1为是
+                 * </pre>
+                 *
+                 * <code>int32 delFlag = 17;</code>
+                 */
+                public Builder setDelFlag(int value) {
+
+                    delFlag_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *是否删除0为否，1为是
+                 * </pre>
+                 *
+                 * <code>int32 delFlag = 17;</code>
+                 */
+                public Builder clearDelFlag() {
+
+                    delFlag_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object delBy_ = "";
+                /**
+                 * <pre>
+                 *删除人
+                 * </pre>
+                 *
+                 * <code>string delBy = 18;</code>
+                 */
+                public java.lang.String getDelBy() {
+                    java.lang.Object ref = delBy_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        delBy_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *删除人
+                 * </pre>
+                 *
+                 * <code>string delBy = 18;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getDelByBytes() {
+                    java.lang.Object ref = delBy_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        delBy_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *删除人
+                 * </pre>
+                 *
+                 * <code>string delBy = 18;</code>
+                 */
+                public Builder setDelBy(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    delBy_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *删除人
+                 * </pre>
+                 *
+                 * <code>string delBy = 18;</code>
+                 */
+                public Builder clearDelBy() {
+
+                    delBy_ = getDefaultInstance().getDelBy();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *删除人
+                 * </pre>
+                 *
+                 * <code>string delBy = 18;</code>
+                 */
+                public Builder setDelByBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    delBy_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private int timeOutFlag_ ;
+                /**
+                 * <pre>
+                 *是否超时1是已取消订单， 0为否
+                 * </pre>
+                 *
+                 * <code>int32 timeOutFlag = 19;</code>
+                 */
+                public int getTimeOutFlag() {
+                    return timeOutFlag_;
+                }
+                /**
+                 * <pre>
+                 *是否超时1是已取消订单， 0为否
+                 * </pre>
+                 *
+                 * <code>int32 timeOutFlag = 19;</code>
+                 */
+                public Builder setTimeOutFlag(int value) {
+
+                    timeOutFlag_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *是否超时1是已取消订单， 0为否
+                 * </pre>
+                 *
+                 * <code>int32 timeOutFlag = 19;</code>
+                 */
+                public Builder clearTimeOutFlag() {
+
+                    timeOutFlag_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object updateTime_ = "";
+                /**
+                 * <pre>
+                 *完成时间
+                 * </pre>
+                 *
+                 * <code>string updateTime = 20;</code>
+                 */
+                public java.lang.String getUpdateTime() {
+                    java.lang.Object ref = updateTime_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        updateTime_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *完成时间
+                 * </pre>
+                 *
+                 * <code>string updateTime = 20;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getUpdateTimeBytes() {
+                    java.lang.Object ref = updateTime_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        updateTime_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *完成时间
+                 * </pre>
+                 *
+                 * <code>string updateTime = 20;</code>
+                 */
+                public Builder setUpdateTime(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    updateTime_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *完成时间
+                 * </pre>
+                 *
+                 * <code>string updateTime = 20;</code>
+                 */
+                public Builder clearUpdateTime() {
+
+                    updateTime_ = getDefaultInstance().getUpdateTime();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *完成时间
+                 * </pre>
+                 *
+                 * <code>string updateTime = 20;</code>
+                 */
+                public Builder setUpdateTimeBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    updateTime_ = value;
+                    onChanged();
+                    return this;
+                }
+                @java.lang.Override
+                public final Builder setUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.setUnknownFields(unknownFields);
+                }
+
+                @java.lang.Override
+                public final Builder mergeUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.mergeUnknownFields(unknownFields);
+                }
+
+
+                // @@protoc_insertion_point(builder_scope:NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp)
+            }
+
+            // @@protoc_insertion_point(class_scope:NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp)
+            private static final com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp DEFAULT_INSTANCE;
+            static {
+                DEFAULT_INSTANCE = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp();
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp getDefaultInstance() {
+                return DEFAULT_INSTANCE;
+            }
+
+            private static final com.google.protobuf.Parser<ParticularsOrderResp>
+                    PARSER = new com.google.protobuf.AbstractParser<ParticularsOrderResp>() {
+                @java.lang.Override
+                public ParticularsOrderResp parsePartialFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws com.google.protobuf.InvalidProtocolBufferException {
+                    return new ParticularsOrderResp(input, extensionRegistry);
+                }
+            };
+
+            public static com.google.protobuf.Parser<ParticularsOrderResp> parser() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.google.protobuf.Parser<ParticularsOrderResp> getParserForType() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp getDefaultInstanceForType() {
+                return DEFAULT_INSTANCE;
+            }
+
+        }
+
+        public interface ParticularsListRespOrBuilder extends
+                // @@protoc_insertion_point(interface_extends:NettyProtobufWebsocketClient.MessageBase.ParticularsListResp)
+                com.google.protobuf.MessageOrBuilder {
+
+            /**
+             * <pre>
+             *订单信息
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+             */
+            java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp>
+            getParticularsRespList();
+            /**
+             * <pre>
+             *订单信息
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+             */
+            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp getParticularsResp(int index);
+            /**
+             * <pre>
+             *订单信息
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+             */
+            int getParticularsRespCount();
+            /**
+             * <pre>
+             *订单信息
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+             */
+            java.util.List<? extends com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsRespOrBuilder>
+            getParticularsRespOrBuilderList();
+            /**
+             * <pre>
+             *订单信息
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+             */
+            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsRespOrBuilder getParticularsRespOrBuilder(
+                    int index);
+
+            /**
+             * <pre>
+             *订单表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+             */
+            java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp>
+            getParticularsOrderRespList();
+            /**
+             * <pre>
+             *订单表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+             */
+            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp getParticularsOrderResp(int index);
+            /**
+             * <pre>
+             *订单表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+             */
+            int getParticularsOrderRespCount();
+            /**
+             * <pre>
+             *订单表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+             */
+            java.util.List<? extends com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderRespOrBuilder>
+            getParticularsOrderRespOrBuilderList();
+            /**
+             * <pre>
+             *订单表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+             */
+            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderRespOrBuilder getParticularsOrderRespOrBuilder(
+                    int index);
+        }
+        /**
+         * <pre>
+         *用户全部订单响应
+         * </pre>
+         *
+         * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.ParticularsListResp}
+         */
+        public  static final class ParticularsListResp extends
+                com.google.protobuf.GeneratedMessageV3 implements
+                // @@protoc_insertion_point(message_implements:NettyProtobufWebsocketClient.MessageBase.ParticularsListResp)
+                ParticularsListRespOrBuilder {
+            private static final long serialVersionUID = 0L;
+            // Use ParticularsListResp.newBuilder() to construct.
+            private ParticularsListResp(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+                super(builder);
+            }
+            private ParticularsListResp() {
+                particularsResp_ = java.util.Collections.emptyList();
+                particularsOrderResp_ = java.util.Collections.emptyList();
+            }
+
+            @java.lang.Override
+            public final com.google.protobuf.UnknownFieldSet
+            getUnknownFields() {
+                return this.unknownFields;
+            }
+            private ParticularsListResp(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                this();
+                if (extensionRegistry == null) {
+                    throw new java.lang.NullPointerException();
+                }
+                int mutable_bitField0_ = 0;
+                com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                        com.google.protobuf.UnknownFieldSet.newBuilder();
+                try {
+                    boolean done = false;
+                    while (!done) {
+                        int tag = input.readTag();
+                        switch (tag) {
+                            case 0:
+                                done = true;
+                                break;
+                            case 10: {
+                                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                                    particularsResp_ = new java.util.ArrayList<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp>();
+                                    mutable_bitField0_ |= 0x00000001;
+                                }
+                                particularsResp_.add(
+                                        input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.parser(), extensionRegistry));
+                                break;
+                            }
+                            case 18: {
+                                if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+                                    particularsOrderResp_ = new java.util.ArrayList<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp>();
+                                    mutable_bitField0_ |= 0x00000002;
+                                }
+                                particularsOrderResp_.add(
+                                        input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.parser(), extensionRegistry));
+                                break;
+                            }
+                            default: {
+                                if (!parseUnknownField(
+                                        input, unknownFields, extensionRegistry, tag)) {
+                                    done = true;
+                                }
+                                break;
+                            }
+                        }
+                    }
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    throw e.setUnfinishedMessage(this);
+                } catch (java.io.IOException e) {
+                    throw new com.google.protobuf.InvalidProtocolBufferException(
+                            e).setUnfinishedMessage(this);
+                } finally {
+                    if (((mutable_bitField0_ & 0x00000001) != 0)) {
+                        particularsResp_ = java.util.Collections.unmodifiableList(particularsResp_);
+                    }
+                    if (((mutable_bitField0_ & 0x00000002) != 0)) {
+                        particularsOrderResp_ = java.util.Collections.unmodifiableList(particularsOrderResp_);
+                    }
+                    this.unknownFields = unknownFields.build();
+                    makeExtensionsImmutable();
+                }
+            }
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListResp_descriptor;
+            }
+
+            @java.lang.Override
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListResp_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.Builder.class);
+            }
+
+            public static final int PARTICULARSRESP_FIELD_NUMBER = 1;
+            private java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp> particularsResp_;
+            /**
+             * <pre>
+             *订单信息
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+             */
+            public java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp> getParticularsRespList() {
+                return particularsResp_;
+            }
+            /**
+             * <pre>
+             *订单信息
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+             */
+            public java.util.List<? extends com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsRespOrBuilder>
+            getParticularsRespOrBuilderList() {
+                return particularsResp_;
+            }
+            /**
+             * <pre>
+             *订单信息
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+             */
+            public int getParticularsRespCount() {
+                return particularsResp_.size();
+            }
+            /**
+             * <pre>
+             *订单信息
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp getParticularsResp(int index) {
+                return particularsResp_.get(index);
+            }
+            /**
+             * <pre>
+             *订单信息
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsRespOrBuilder getParticularsRespOrBuilder(
+                    int index) {
+                return particularsResp_.get(index);
+            }
+
+            public static final int PARTICULARSORDERRESP_FIELD_NUMBER = 2;
+            private java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp> particularsOrderResp_;
+            /**
+             * <pre>
+             *订单表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+             */
+            public java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp> getParticularsOrderRespList() {
+                return particularsOrderResp_;
+            }
+            /**
+             * <pre>
+             *订单表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+             */
+            public java.util.List<? extends com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderRespOrBuilder>
+            getParticularsOrderRespOrBuilderList() {
+                return particularsOrderResp_;
+            }
+            /**
+             * <pre>
+             *订单表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+             */
+            public int getParticularsOrderRespCount() {
+                return particularsOrderResp_.size();
+            }
+            /**
+             * <pre>
+             *订单表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp getParticularsOrderResp(int index) {
+                return particularsOrderResp_.get(index);
+            }
+            /**
+             * <pre>
+             *订单表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderRespOrBuilder getParticularsOrderRespOrBuilder(
+                    int index) {
+                return particularsOrderResp_.get(index);
+            }
+
+            private byte memoizedIsInitialized = -1;
+            @java.lang.Override
+            public final boolean isInitialized() {
+                byte isInitialized = memoizedIsInitialized;
+                if (isInitialized == 1) return true;
+                if (isInitialized == 0) return false;
+
+                memoizedIsInitialized = 1;
+                return true;
+            }
+
+            @java.lang.Override
+            public void writeTo(com.google.protobuf.CodedOutputStream output)
+                    throws java.io.IOException {
+                for (int i = 0; i < particularsResp_.size(); i++) {
+                    output.writeMessage(1, particularsResp_.get(i));
+                }
+                for (int i = 0; i < particularsOrderResp_.size(); i++) {
+                    output.writeMessage(2, particularsOrderResp_.get(i));
+                }
+                unknownFields.writeTo(output);
+            }
+
+            @java.lang.Override
+            public int getSerializedSize() {
+                int size = memoizedSize;
+                if (size != -1) return size;
+
+                size = 0;
+                for (int i = 0; i < particularsResp_.size(); i++) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeMessageSize(1, particularsResp_.get(i));
+                }
+                for (int i = 0; i < particularsOrderResp_.size(); i++) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeMessageSize(2, particularsOrderResp_.get(i));
+                }
+                size += unknownFields.getSerializedSize();
+                memoizedSize = size;
+                return size;
+            }
+
+            @java.lang.Override
+            public boolean equals(final java.lang.Object obj) {
+                if (obj == this) {
+                    return true;
+                }
+                if (!(obj instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp)) {
+                    return super.equals(obj);
+                }
+                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp other = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp) obj;
+
+                if (!getParticularsRespList()
+                        .equals(other.getParticularsRespList())) return false;
+                if (!getParticularsOrderRespList()
+                        .equals(other.getParticularsOrderRespList())) return false;
+                if (!unknownFields.equals(other.unknownFields)) return false;
+                return true;
+            }
+
+            @java.lang.Override
+            public int hashCode() {
+                if (memoizedHashCode != 0) {
+                    return memoizedHashCode;
+                }
+                int hash = 41;
+                hash = (19 * hash) + getDescriptor().hashCode();
+                if (getParticularsRespCount() > 0) {
+                    hash = (37 * hash) + PARTICULARSRESP_FIELD_NUMBER;
+                    hash = (53 * hash) + getParticularsRespList().hashCode();
+                }
+                if (getParticularsOrderRespCount() > 0) {
+                    hash = (37 * hash) + PARTICULARSORDERRESP_FIELD_NUMBER;
+                    hash = (53 * hash) + getParticularsOrderRespList().hashCode();
+                }
+                hash = (29 * hash) + unknownFields.hashCode();
+                memoizedHashCode = hash;
+                return hash;
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp parseFrom(
+                    java.nio.ByteBuffer data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp parseFrom(
+                    java.nio.ByteBuffer data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp parseFrom(
+                    com.google.protobuf.ByteString data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp parseFrom(
+                    com.google.protobuf.ByteString data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp parseFrom(byte[] data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp parseFrom(
+                    byte[] data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp parseFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp parseFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp parseDelimitedFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp parseDelimitedFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp parseFrom(
+                    com.google.protobuf.CodedInputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp parseFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+
+            @java.lang.Override
+            public Builder newBuilderForType() { return newBuilder(); }
+            public static Builder newBuilder() {
+                return DEFAULT_INSTANCE.toBuilder();
+            }
+            public static Builder newBuilder(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp prototype) {
+                return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+            }
+            @java.lang.Override
+            public Builder toBuilder() {
+                return this == DEFAULT_INSTANCE
+                        ? new Builder() : new Builder().mergeFrom(this);
+            }
+
+            @java.lang.Override
+            protected Builder newBuilderForType(
+                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                Builder builder = new Builder(parent);
+                return builder;
+            }
+            /**
+             * <pre>
+             *用户全部订单响应
+             * </pre>
+             *
+             * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.ParticularsListResp}
+             */
+            public static final class Builder extends
+                    com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+                    // @@protoc_insertion_point(builder_implements:NettyProtobufWebsocketClient.MessageBase.ParticularsListResp)
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListRespOrBuilder {
+                public static final com.google.protobuf.Descriptors.Descriptor
+                getDescriptor() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListResp_descriptor;
+                }
+
+                @java.lang.Override
+                protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+                internalGetFieldAccessorTable() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListResp_fieldAccessorTable
+                            .ensureFieldAccessorsInitialized(
+                                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.Builder.class);
+                }
+
+                // Construct using com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.newBuilder()
+                private Builder() {
+                    maybeForceBuilderInitialization();
+                }
+
+                private Builder(
+                        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                    super(parent);
+                    maybeForceBuilderInitialization();
+                }
+                private void maybeForceBuilderInitialization() {
+                    if (com.google.protobuf.GeneratedMessageV3
+                            .alwaysUseFieldBuilders) {
+                        getParticularsRespFieldBuilder();
+                        getParticularsOrderRespFieldBuilder();
+                    }
+                }
+                @java.lang.Override
+                public Builder clear() {
+                    super.clear();
+                    if (particularsRespBuilder_ == null) {
+                        particularsResp_ = java.util.Collections.emptyList();
+                        bitField0_ = (bitField0_ & ~0x00000001);
+                    } else {
+                        particularsRespBuilder_.clear();
+                    }
+                    if (particularsOrderRespBuilder_ == null) {
+                        particularsOrderResp_ = java.util.Collections.emptyList();
+                        bitField0_ = (bitField0_ & ~0x00000002);
+                    } else {
+                        particularsOrderRespBuilder_.clear();
+                    }
+                    return this;
+                }
+
+                @java.lang.Override
+                public com.google.protobuf.Descriptors.Descriptor
+                getDescriptorForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListResp_descriptor;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp getDefaultInstanceForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.getDefaultInstance();
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp build() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp result = buildPartial();
+                    if (!result.isInitialized()) {
+                        throw newUninitializedMessageException(result);
+                    }
+                    return result;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp buildPartial() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp result = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp(this);
+                    int from_bitField0_ = bitField0_;
+                    if (particularsRespBuilder_ == null) {
+                        if (((bitField0_ & 0x00000001) != 0)) {
+                            particularsResp_ = java.util.Collections.unmodifiableList(particularsResp_);
+                            bitField0_ = (bitField0_ & ~0x00000001);
+                        }
+                        result.particularsResp_ = particularsResp_;
+                    } else {
+                        result.particularsResp_ = particularsRespBuilder_.build();
+                    }
+                    if (particularsOrderRespBuilder_ == null) {
+                        if (((bitField0_ & 0x00000002) != 0)) {
+                            particularsOrderResp_ = java.util.Collections.unmodifiableList(particularsOrderResp_);
+                            bitField0_ = (bitField0_ & ~0x00000002);
+                        }
+                        result.particularsOrderResp_ = particularsOrderResp_;
+                    } else {
+                        result.particularsOrderResp_ = particularsOrderRespBuilder_.build();
+                    }
+                    onBuilt();
+                    return result;
+                }
+
+                @java.lang.Override
+                public Builder clone() {
+                    return super.clone();
+                }
+                @java.lang.Override
+                public Builder setField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.setField(field, value);
+                }
+                @java.lang.Override
+                public Builder clearField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field) {
+                    return super.clearField(field);
+                }
+                @java.lang.Override
+                public Builder clearOneof(
+                        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+                    return super.clearOneof(oneof);
+                }
+                @java.lang.Override
+                public Builder setRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        int index, java.lang.Object value) {
+                    return super.setRepeatedField(field, index, value);
+                }
+                @java.lang.Override
+                public Builder addRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.addRepeatedField(field, value);
+                }
+                @java.lang.Override
+                public Builder mergeFrom(com.google.protobuf.Message other) {
+                    if (other instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp) {
+                        return mergeFrom((com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp)other);
+                    } else {
+                        super.mergeFrom(other);
+                        return this;
+                    }
+                }
+
+                public Builder mergeFrom(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp other) {
+                    if (other == com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.getDefaultInstance()) return this;
+                    if (particularsRespBuilder_ == null) {
+                        if (!other.particularsResp_.isEmpty()) {
+                            if (particularsResp_.isEmpty()) {
+                                particularsResp_ = other.particularsResp_;
+                                bitField0_ = (bitField0_ & ~0x00000001);
+                            } else {
+                                ensureParticularsRespIsMutable();
+                                particularsResp_.addAll(other.particularsResp_);
+                            }
+                            onChanged();
+                        }
+                    } else {
+                        if (!other.particularsResp_.isEmpty()) {
+                            if (particularsRespBuilder_.isEmpty()) {
+                                particularsRespBuilder_.dispose();
+                                particularsRespBuilder_ = null;
+                                particularsResp_ = other.particularsResp_;
+                                bitField0_ = (bitField0_ & ~0x00000001);
+                                particularsRespBuilder_ =
+                                        com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                                                getParticularsRespFieldBuilder() : null;
+                            } else {
+                                particularsRespBuilder_.addAllMessages(other.particularsResp_);
+                            }
+                        }
+                    }
+                    if (particularsOrderRespBuilder_ == null) {
+                        if (!other.particularsOrderResp_.isEmpty()) {
+                            if (particularsOrderResp_.isEmpty()) {
+                                particularsOrderResp_ = other.particularsOrderResp_;
+                                bitField0_ = (bitField0_ & ~0x00000002);
+                            } else {
+                                ensureParticularsOrderRespIsMutable();
+                                particularsOrderResp_.addAll(other.particularsOrderResp_);
+                            }
+                            onChanged();
+                        }
+                    } else {
+                        if (!other.particularsOrderResp_.isEmpty()) {
+                            if (particularsOrderRespBuilder_.isEmpty()) {
+                                particularsOrderRespBuilder_.dispose();
+                                particularsOrderRespBuilder_ = null;
+                                particularsOrderResp_ = other.particularsOrderResp_;
+                                bitField0_ = (bitField0_ & ~0x00000002);
+                                particularsOrderRespBuilder_ =
+                                        com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                                                getParticularsOrderRespFieldBuilder() : null;
+                            } else {
+                                particularsOrderRespBuilder_.addAllMessages(other.particularsOrderResp_);
+                            }
+                        }
+                    }
+                    this.mergeUnknownFields(other.unknownFields);
+                    onChanged();
+                    return this;
+                }
+
+                @java.lang.Override
+                public final boolean isInitialized() {
+                    return true;
+                }
+
+                @java.lang.Override
+                public Builder mergeFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws java.io.IOException {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp parsedMessage = null;
+                    try {
+                        parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                        parsedMessage = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp) e.getUnfinishedMessage();
+                        throw e.unwrapIOException();
+                    } finally {
+                        if (parsedMessage != null) {
+                            mergeFrom(parsedMessage);
+                        }
+                    }
+                    return this;
+                }
+                private int bitField0_;
+
+                private java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp> particularsResp_ =
+                        java.util.Collections.emptyList();
+                private void ensureParticularsRespIsMutable() {
+                    if (!((bitField0_ & 0x00000001) != 0)) {
+                        particularsResp_ = new java.util.ArrayList<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp>(particularsResp_);
+                        bitField0_ |= 0x00000001;
+                    }
+                }
+
+                private com.google.protobuf.RepeatedFieldBuilderV3<
+                        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsRespOrBuilder> particularsRespBuilder_;
+
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp> getParticularsRespList() {
+                    if (particularsRespBuilder_ == null) {
+                        return java.util.Collections.unmodifiableList(particularsResp_);
+                    } else {
+                        return particularsRespBuilder_.getMessageList();
+                    }
+                }
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public int getParticularsRespCount() {
+                    if (particularsRespBuilder_ == null) {
+                        return particularsResp_.size();
+                    } else {
+                        return particularsRespBuilder_.getCount();
+                    }
+                }
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp getParticularsResp(int index) {
+                    if (particularsRespBuilder_ == null) {
+                        return particularsResp_.get(index);
+                    } else {
+                        return particularsRespBuilder_.getMessage(index);
+                    }
+                }
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public Builder setParticularsResp(
+                        int index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp value) {
+                    if (particularsRespBuilder_ == null) {
+                        if (value == null) {
+                            throw new NullPointerException();
+                        }
+                        ensureParticularsRespIsMutable();
+                        particularsResp_.set(index, value);
+                        onChanged();
+                    } else {
+                        particularsRespBuilder_.setMessage(index, value);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public Builder setParticularsResp(
+                        int index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder builderForValue) {
+                    if (particularsRespBuilder_ == null) {
+                        ensureParticularsRespIsMutable();
+                        particularsResp_.set(index, builderForValue.build());
+                        onChanged();
+                    } else {
+                        particularsRespBuilder_.setMessage(index, builderForValue.build());
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public Builder addParticularsResp(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp value) {
+                    if (particularsRespBuilder_ == null) {
+                        if (value == null) {
+                            throw new NullPointerException();
+                        }
+                        ensureParticularsRespIsMutable();
+                        particularsResp_.add(value);
+                        onChanged();
+                    } else {
+                        particularsRespBuilder_.addMessage(value);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public Builder addParticularsResp(
+                        int index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp value) {
+                    if (particularsRespBuilder_ == null) {
+                        if (value == null) {
+                            throw new NullPointerException();
+                        }
+                        ensureParticularsRespIsMutable();
+                        particularsResp_.add(index, value);
+                        onChanged();
+                    } else {
+                        particularsRespBuilder_.addMessage(index, value);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public Builder addParticularsResp(
+                        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder builderForValue) {
+                    if (particularsRespBuilder_ == null) {
+                        ensureParticularsRespIsMutable();
+                        particularsResp_.add(builderForValue.build());
+                        onChanged();
+                    } else {
+                        particularsRespBuilder_.addMessage(builderForValue.build());
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public Builder addParticularsResp(
+                        int index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder builderForValue) {
+                    if (particularsRespBuilder_ == null) {
+                        ensureParticularsRespIsMutable();
+                        particularsResp_.add(index, builderForValue.build());
+                        onChanged();
+                    } else {
+                        particularsRespBuilder_.addMessage(index, builderForValue.build());
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public Builder addAllParticularsResp(
+                        java.lang.Iterable<? extends com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp> values) {
+                    if (particularsRespBuilder_ == null) {
+                        ensureParticularsRespIsMutable();
+                        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+                                values, particularsResp_);
+                        onChanged();
+                    } else {
+                        particularsRespBuilder_.addAllMessages(values);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public Builder clearParticularsResp() {
+                    if (particularsRespBuilder_ == null) {
+                        particularsResp_ = java.util.Collections.emptyList();
+                        bitField0_ = (bitField0_ & ~0x00000001);
+                        onChanged();
+                    } else {
+                        particularsRespBuilder_.clear();
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public Builder removeParticularsResp(int index) {
+                    if (particularsRespBuilder_ == null) {
+                        ensureParticularsRespIsMutable();
+                        particularsResp_.remove(index);
+                        onChanged();
+                    } else {
+                        particularsRespBuilder_.remove(index);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder getParticularsRespBuilder(
+                        int index) {
+                    return getParticularsRespFieldBuilder().getBuilder(index);
+                }
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsRespOrBuilder getParticularsRespOrBuilder(
+                        int index) {
+                    if (particularsRespBuilder_ == null) {
+                        return particularsResp_.get(index);  } else {
+                        return particularsRespBuilder_.getMessageOrBuilder(index);
+                    }
+                }
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public java.util.List<? extends com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsRespOrBuilder>
+                getParticularsRespOrBuilderList() {
+                    if (particularsRespBuilder_ != null) {
+                        return particularsRespBuilder_.getMessageOrBuilderList();
+                    } else {
+                        return java.util.Collections.unmodifiableList(particularsResp_);
+                    }
+                }
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder addParticularsRespBuilder() {
+                    return getParticularsRespFieldBuilder().addBuilder(
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.getDefaultInstance());
+                }
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder addParticularsRespBuilder(
+                        int index) {
+                    return getParticularsRespFieldBuilder().addBuilder(
+                            index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.getDefaultInstance());
+                }
+                /**
+                 * <pre>
+                 *订单信息
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 1;</code>
+                 */
+                public java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder>
+                getParticularsRespBuilderList() {
+                    return getParticularsRespFieldBuilder().getBuilderList();
+                }
+                private com.google.protobuf.RepeatedFieldBuilderV3<
+                        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsRespOrBuilder>
+                getParticularsRespFieldBuilder() {
+                    if (particularsRespBuilder_ == null) {
+                        particularsRespBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsRespOrBuilder>(
+                                particularsResp_,
+                                ((bitField0_ & 0x00000001) != 0),
+                                getParentForChildren(),
+                                isClean());
+                        particularsResp_ = null;
+                    }
+                    return particularsRespBuilder_;
+                }
+
+                private java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp> particularsOrderResp_ =
+                        java.util.Collections.emptyList();
+                private void ensureParticularsOrderRespIsMutable() {
+                    if (!((bitField0_ & 0x00000002) != 0)) {
+                        particularsOrderResp_ = new java.util.ArrayList<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp>(particularsOrderResp_);
+                        bitField0_ |= 0x00000002;
+                    }
+                }
+
+                private com.google.protobuf.RepeatedFieldBuilderV3<
+                        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderRespOrBuilder> particularsOrderRespBuilder_;
+
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp> getParticularsOrderRespList() {
+                    if (particularsOrderRespBuilder_ == null) {
+                        return java.util.Collections.unmodifiableList(particularsOrderResp_);
+                    } else {
+                        return particularsOrderRespBuilder_.getMessageList();
+                    }
+                }
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public int getParticularsOrderRespCount() {
+                    if (particularsOrderRespBuilder_ == null) {
+                        return particularsOrderResp_.size();
+                    } else {
+                        return particularsOrderRespBuilder_.getCount();
+                    }
+                }
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp getParticularsOrderResp(int index) {
+                    if (particularsOrderRespBuilder_ == null) {
+                        return particularsOrderResp_.get(index);
+                    } else {
+                        return particularsOrderRespBuilder_.getMessage(index);
+                    }
+                }
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public Builder setParticularsOrderResp(
+                        int index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp value) {
+                    if (particularsOrderRespBuilder_ == null) {
+                        if (value == null) {
+                            throw new NullPointerException();
+                        }
+                        ensureParticularsOrderRespIsMutable();
+                        particularsOrderResp_.set(index, value);
+                        onChanged();
+                    } else {
+                        particularsOrderRespBuilder_.setMessage(index, value);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public Builder setParticularsOrderResp(
+                        int index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder builderForValue) {
+                    if (particularsOrderRespBuilder_ == null) {
+                        ensureParticularsOrderRespIsMutable();
+                        particularsOrderResp_.set(index, builderForValue.build());
+                        onChanged();
+                    } else {
+                        particularsOrderRespBuilder_.setMessage(index, builderForValue.build());
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public Builder addParticularsOrderResp(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp value) {
+                    if (particularsOrderRespBuilder_ == null) {
+                        if (value == null) {
+                            throw new NullPointerException();
+                        }
+                        ensureParticularsOrderRespIsMutable();
+                        particularsOrderResp_.add(value);
+                        onChanged();
+                    } else {
+                        particularsOrderRespBuilder_.addMessage(value);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public Builder addParticularsOrderResp(
+                        int index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp value) {
+                    if (particularsOrderRespBuilder_ == null) {
+                        if (value == null) {
+                            throw new NullPointerException();
+                        }
+                        ensureParticularsOrderRespIsMutable();
+                        particularsOrderResp_.add(index, value);
+                        onChanged();
+                    } else {
+                        particularsOrderRespBuilder_.addMessage(index, value);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public Builder addParticularsOrderResp(
+                        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder builderForValue) {
+                    if (particularsOrderRespBuilder_ == null) {
+                        ensureParticularsOrderRespIsMutable();
+                        particularsOrderResp_.add(builderForValue.build());
+                        onChanged();
+                    } else {
+                        particularsOrderRespBuilder_.addMessage(builderForValue.build());
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public Builder addParticularsOrderResp(
+                        int index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder builderForValue) {
+                    if (particularsOrderRespBuilder_ == null) {
+                        ensureParticularsOrderRespIsMutable();
+                        particularsOrderResp_.add(index, builderForValue.build());
+                        onChanged();
+                    } else {
+                        particularsOrderRespBuilder_.addMessage(index, builderForValue.build());
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public Builder addAllParticularsOrderResp(
+                        java.lang.Iterable<? extends com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp> values) {
+                    if (particularsOrderRespBuilder_ == null) {
+                        ensureParticularsOrderRespIsMutable();
+                        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+                                values, particularsOrderResp_);
+                        onChanged();
+                    } else {
+                        particularsOrderRespBuilder_.addAllMessages(values);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public Builder clearParticularsOrderResp() {
+                    if (particularsOrderRespBuilder_ == null) {
+                        particularsOrderResp_ = java.util.Collections.emptyList();
+                        bitField0_ = (bitField0_ & ~0x00000002);
+                        onChanged();
+                    } else {
+                        particularsOrderRespBuilder_.clear();
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public Builder removeParticularsOrderResp(int index) {
+                    if (particularsOrderRespBuilder_ == null) {
+                        ensureParticularsOrderRespIsMutable();
+                        particularsOrderResp_.remove(index);
+                        onChanged();
+                    } else {
+                        particularsOrderRespBuilder_.remove(index);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder getParticularsOrderRespBuilder(
+                        int index) {
+                    return getParticularsOrderRespFieldBuilder().getBuilder(index);
+                }
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderRespOrBuilder getParticularsOrderRespOrBuilder(
+                        int index) {
+                    if (particularsOrderRespBuilder_ == null) {
+                        return particularsOrderResp_.get(index);  } else {
+                        return particularsOrderRespBuilder_.getMessageOrBuilder(index);
+                    }
+                }
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public java.util.List<? extends com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderRespOrBuilder>
+                getParticularsOrderRespOrBuilderList() {
+                    if (particularsOrderRespBuilder_ != null) {
+                        return particularsOrderRespBuilder_.getMessageOrBuilderList();
+                    } else {
+                        return java.util.Collections.unmodifiableList(particularsOrderResp_);
+                    }
+                }
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder addParticularsOrderRespBuilder() {
+                    return getParticularsOrderRespFieldBuilder().addBuilder(
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.getDefaultInstance());
+                }
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder addParticularsOrderRespBuilder(
+                        int index) {
+                    return getParticularsOrderRespFieldBuilder().addBuilder(
+                            index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.getDefaultInstance());
+                }
+                /**
+                 * <pre>
+                 *订单表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 2;</code>
+                 */
+                public java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder>
+                getParticularsOrderRespBuilderList() {
+                    return getParticularsOrderRespFieldBuilder().getBuilderList();
+                }
+                private com.google.protobuf.RepeatedFieldBuilderV3<
+                        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderRespOrBuilder>
+                getParticularsOrderRespFieldBuilder() {
+                    if (particularsOrderRespBuilder_ == null) {
+                        particularsOrderRespBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderRespOrBuilder>(
+                                particularsOrderResp_,
+                                ((bitField0_ & 0x00000002) != 0),
+                                getParentForChildren(),
+                                isClean());
+                        particularsOrderResp_ = null;
+                    }
+                    return particularsOrderRespBuilder_;
+                }
+                @java.lang.Override
+                public final Builder setUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.setUnknownFields(unknownFields);
+                }
+
+                @java.lang.Override
+                public final Builder mergeUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.mergeUnknownFields(unknownFields);
+                }
+
+
+                // @@protoc_insertion_point(builder_scope:NettyProtobufWebsocketClient.MessageBase.ParticularsListResp)
+            }
+
+            // @@protoc_insertion_point(class_scope:NettyProtobufWebsocketClient.MessageBase.ParticularsListResp)
+            private static final com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp DEFAULT_INSTANCE;
+            static {
+                DEFAULT_INSTANCE = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp();
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp getDefaultInstance() {
+                return DEFAULT_INSTANCE;
+            }
+
+            private static final com.google.protobuf.Parser<ParticularsListResp>
+                    PARSER = new com.google.protobuf.AbstractParser<ParticularsListResp>() {
+                @java.lang.Override
+                public ParticularsListResp parsePartialFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws com.google.protobuf.InvalidProtocolBufferException {
+                    return new ParticularsListResp(input, extensionRegistry);
+                }
+            };
+
+            public static com.google.protobuf.Parser<ParticularsListResp> parser() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.google.protobuf.Parser<ParticularsListResp> getParserForType() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp getDefaultInstanceForType() {
+                return DEFAULT_INSTANCE;
+            }
+
+        }
+
+        public interface PlaceAnOrderReqOrBuilder extends
+                // @@protoc_insertion_point(interface_extends:NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq)
+                com.google.protobuf.MessageOrBuilder {
+
+            /**
+             * <pre>
+             *商品id
+             * </pre>
+             *
+             * <code>int32 mallId = 1;</code>
+             */
+            int getMallId();
+
+            /**
+             * <pre>
+             *收货地址id
+             * </pre>
+             *
+             * <code>int32 addressId = 2;</code>
+             */
+            int getAddressId();
+
+            /**
+             * <pre>
+             *备注
+             * </pre>
+             *
+             * <code>string remark = 3;</code>
+             */
+            java.lang.String getRemark();
+            /**
+             * <pre>
+             *备注
+             * </pre>
+             *
+             * <code>string remark = 3;</code>
+             */
+            com.google.protobuf.ByteString
+            getRemarkBytes();
+
+            /**
+             * <pre>
+             *颜色
+             * </pre>
+             *
+             * <code>string colour = 4;</code>
+             */
+            java.lang.String getColour();
+            /**
+             * <pre>
+             *颜色
+             * </pre>
+             *
+             * <code>string colour = 4;</code>
+             */
+            com.google.protobuf.ByteString
+            getColourBytes();
+
+            /**
+             * <pre>
+             *尺码
+             * </pre>
+             *
+             * <code>string size = 5;</code>
+             */
+            java.lang.String getSize();
+            /**
+             * <pre>
+             *尺码
+             * </pre>
+             *
+             * <code>string size = 5;</code>
+             */
+            com.google.protobuf.ByteString
+            getSizeBytes();
+
+            /**
+             * <pre>
+             *1是微信，2是支付宝，3其他
+             * </pre>
+             *
+             * <code>int32 pay = 6;</code>
+             */
+            int getPay();
+
+            /**
+             * <pre>
+             *用户id
+             * </pre>
+             *
+             * <code>int32 userId = 7;</code>
+             */
+            int getUserId();
+
+            /**
+             * <pre>
+             *商户id
+             * </pre>
+             *
+             * <code>int32 storeId = 8;</code>
+             */
+            int getStoreId();
+
+            /**
+             * <pre>
+             *数量
+             * </pre>
+             *
+             * <code>int32 quantity = 9;</code>
+             */
+            int getQuantity();
+
+            /**
+             * <pre>
+             *金额
+             * </pre>
+             *
+             * <code>string amount = 10;</code>
+             */
+            java.lang.String getAmount();
+            /**
+             * <pre>
+             *金额
+             * </pre>
+             *
+             * <code>string amount = 10;</code>
+             */
+            com.google.protobuf.ByteString
+            getAmountBytes();
+        }
+        /**
+         * <pre>
+         *用户下单请求
+         * </pre>
+         *
+         * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq}
+         */
+        public  static final class PlaceAnOrderReq extends
+                com.google.protobuf.GeneratedMessageV3 implements
+                // @@protoc_insertion_point(message_implements:NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq)
+                PlaceAnOrderReqOrBuilder {
+            private static final long serialVersionUID = 0L;
+            // Use PlaceAnOrderReq.newBuilder() to construct.
+            private PlaceAnOrderReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+                super(builder);
+            }
+            private PlaceAnOrderReq() {
+                remark_ = "";
+                colour_ = "";
+                size_ = "";
+                amount_ = "";
+            }
+
+            @java.lang.Override
+            public final com.google.protobuf.UnknownFieldSet
+            getUnknownFields() {
+                return this.unknownFields;
+            }
+            private PlaceAnOrderReq(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                this();
+                if (extensionRegistry == null) {
+                    throw new java.lang.NullPointerException();
+                }
+                int mutable_bitField0_ = 0;
+                com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                        com.google.protobuf.UnknownFieldSet.newBuilder();
+                try {
+                    boolean done = false;
+                    while (!done) {
+                        int tag = input.readTag();
+                        switch (tag) {
+                            case 0:
+                                done = true;
+                                break;
+                            case 8: {
+
+                                mallId_ = input.readInt32();
+                                break;
+                            }
+                            case 16: {
+
+                                addressId_ = input.readInt32();
+                                break;
+                            }
+                            case 26: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                remark_ = s;
+                                break;
+                            }
+                            case 34: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                colour_ = s;
+                                break;
+                            }
+                            case 42: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                size_ = s;
+                                break;
+                            }
+                            case 48: {
+
+                                pay_ = input.readInt32();
+                                break;
+                            }
+                            case 56: {
+
+                                userId_ = input.readInt32();
+                                break;
+                            }
+                            case 64: {
+
+                                storeId_ = input.readInt32();
+                                break;
+                            }
+                            case 72: {
+
+                                quantity_ = input.readInt32();
+                                break;
+                            }
+                            case 82: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                amount_ = s;
+                                break;
+                            }
+                            default: {
+                                if (!parseUnknownField(
+                                        input, unknownFields, extensionRegistry, tag)) {
+                                    done = true;
+                                }
+                                break;
+                            }
+                        }
+                    }
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    throw e.setUnfinishedMessage(this);
+                } catch (java.io.IOException e) {
+                    throw new com.google.protobuf.InvalidProtocolBufferException(
+                            e).setUnfinishedMessage(this);
+                } finally {
+                    this.unknownFields = unknownFields.build();
+                    makeExtensionsImmutable();
+                }
+            }
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderReq_descriptor;
+            }
+
+            @java.lang.Override
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderReq_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.Builder.class);
+            }
+
+            public static final int MALLID_FIELD_NUMBER = 1;
+            private int mallId_;
+            /**
+             * <pre>
+             *商品id
+             * </pre>
+             *
+             * <code>int32 mallId = 1;</code>
+             */
+            public int getMallId() {
+                return mallId_;
+            }
+
+            public static final int ADDRESSID_FIELD_NUMBER = 2;
+            private int addressId_;
+            /**
+             * <pre>
+             *收货地址id
+             * </pre>
+             *
+             * <code>int32 addressId = 2;</code>
+             */
+            public int getAddressId() {
+                return addressId_;
+            }
+
+            public static final int REMARK_FIELD_NUMBER = 3;
+            private volatile java.lang.Object remark_;
+            /**
+             * <pre>
+             *备注
+             * </pre>
+             *
+             * <code>string remark = 3;</code>
+             */
+            public java.lang.String getRemark() {
+                java.lang.Object ref = remark_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    remark_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *备注
+             * </pre>
+             *
+             * <code>string remark = 3;</code>
+             */
+            public com.google.protobuf.ByteString
+            getRemarkBytes() {
+                java.lang.Object ref = remark_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    remark_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int COLOUR_FIELD_NUMBER = 4;
+            private volatile java.lang.Object colour_;
+            /**
+             * <pre>
+             *颜色
+             * </pre>
+             *
+             * <code>string colour = 4;</code>
+             */
+            public java.lang.String getColour() {
+                java.lang.Object ref = colour_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    colour_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *颜色
+             * </pre>
+             *
+             * <code>string colour = 4;</code>
+             */
+            public com.google.protobuf.ByteString
+            getColourBytes() {
+                java.lang.Object ref = colour_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    colour_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int SIZE_FIELD_NUMBER = 5;
+            private volatile java.lang.Object size_;
+            /**
+             * <pre>
+             *尺码
+             * </pre>
+             *
+             * <code>string size = 5;</code>
+             */
+            public java.lang.String getSize() {
+                java.lang.Object ref = size_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    size_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *尺码
+             * </pre>
+             *
+             * <code>string size = 5;</code>
+             */
+            public com.google.protobuf.ByteString
+            getSizeBytes() {
+                java.lang.Object ref = size_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    size_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int PAY_FIELD_NUMBER = 6;
+            private int pay_;
+            /**
+             * <pre>
+             *1是微信，2是支付宝，3其他
+             * </pre>
+             *
+             * <code>int32 pay = 6;</code>
+             */
+            public int getPay() {
+                return pay_;
+            }
+
+            public static final int USERID_FIELD_NUMBER = 7;
+            private int userId_;
+            /**
+             * <pre>
+             *用户id
+             * </pre>
+             *
+             * <code>int32 userId = 7;</code>
+             */
+            public int getUserId() {
+                return userId_;
+            }
+
+            public static final int STOREID_FIELD_NUMBER = 8;
+            private int storeId_;
+            /**
+             * <pre>
+             *商户id
+             * </pre>
+             *
+             * <code>int32 storeId = 8;</code>
+             */
+            public int getStoreId() {
+                return storeId_;
+            }
+
+            public static final int QUANTITY_FIELD_NUMBER = 9;
+            private int quantity_;
+            /**
+             * <pre>
+             *数量
+             * </pre>
+             *
+             * <code>int32 quantity = 9;</code>
+             */
+            public int getQuantity() {
+                return quantity_;
+            }
+
+            public static final int AMOUNT_FIELD_NUMBER = 10;
+            private volatile java.lang.Object amount_;
+            /**
+             * <pre>
+             *金额
+             * </pre>
+             *
+             * <code>string amount = 10;</code>
+             */
+            public java.lang.String getAmount() {
+                java.lang.Object ref = amount_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    amount_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *金额
+             * </pre>
+             *
+             * <code>string amount = 10;</code>
+             */
+            public com.google.protobuf.ByteString
+            getAmountBytes() {
+                java.lang.Object ref = amount_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    amount_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            private byte memoizedIsInitialized = -1;
+            @java.lang.Override
+            public final boolean isInitialized() {
+                byte isInitialized = memoizedIsInitialized;
+                if (isInitialized == 1) return true;
+                if (isInitialized == 0) return false;
+
+                memoizedIsInitialized = 1;
+                return true;
+            }
+
+            @java.lang.Override
+            public void writeTo(com.google.protobuf.CodedOutputStream output)
+                    throws java.io.IOException {
+                if (mallId_ != 0) {
+                    output.writeInt32(1, mallId_);
+                }
+                if (addressId_ != 0) {
+                    output.writeInt32(2, addressId_);
+                }
+                if (!getRemarkBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 3, remark_);
+                }
+                if (!getColourBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 4, colour_);
+                }
+                if (!getSizeBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 5, size_);
+                }
+                if (pay_ != 0) {
+                    output.writeInt32(6, pay_);
+                }
+                if (userId_ != 0) {
+                    output.writeInt32(7, userId_);
+                }
+                if (storeId_ != 0) {
+                    output.writeInt32(8, storeId_);
+                }
+                if (quantity_ != 0) {
+                    output.writeInt32(9, quantity_);
+                }
+                if (!getAmountBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 10, amount_);
+                }
+                unknownFields.writeTo(output);
+            }
+
+            @java.lang.Override
+            public int getSerializedSize() {
+                int size = memoizedSize;
+                if (size != -1) return size;
+
+                size = 0;
+                if (mallId_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(1, mallId_);
+                }
+                if (addressId_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(2, addressId_);
+                }
+                if (!getRemarkBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, remark_);
+                }
+                if (!getColourBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, colour_);
+                }
+                if (!getSizeBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, size_);
+                }
+                if (pay_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(6, pay_);
+                }
+                if (userId_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(7, userId_);
+                }
+                if (storeId_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(8, storeId_);
+                }
+                if (quantity_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(9, quantity_);
+                }
+                if (!getAmountBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, amount_);
+                }
+                size += unknownFields.getSerializedSize();
+                memoizedSize = size;
+                return size;
+            }
+
+            @java.lang.Override
+            public boolean equals(final java.lang.Object obj) {
+                if (obj == this) {
+                    return true;
+                }
+                if (!(obj instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq)) {
+                    return super.equals(obj);
+                }
+                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq other = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq) obj;
+
+                if (getMallId()
+                        != other.getMallId()) return false;
+                if (getAddressId()
+                        != other.getAddressId()) return false;
+                if (!getRemark()
+                        .equals(other.getRemark())) return false;
+                if (!getColour()
+                        .equals(other.getColour())) return false;
+                if (!getSize()
+                        .equals(other.getSize())) return false;
+                if (getPay()
+                        != other.getPay()) return false;
+                if (getUserId()
+                        != other.getUserId()) return false;
+                if (getStoreId()
+                        != other.getStoreId()) return false;
+                if (getQuantity()
+                        != other.getQuantity()) return false;
+                if (!getAmount()
+                        .equals(other.getAmount())) return false;
+                if (!unknownFields.equals(other.unknownFields)) return false;
+                return true;
+            }
+
+            @java.lang.Override
+            public int hashCode() {
+                if (memoizedHashCode != 0) {
+                    return memoizedHashCode;
+                }
+                int hash = 41;
+                hash = (19 * hash) + getDescriptor().hashCode();
+                hash = (37 * hash) + MALLID_FIELD_NUMBER;
+                hash = (53 * hash) + getMallId();
+                hash = (37 * hash) + ADDRESSID_FIELD_NUMBER;
+                hash = (53 * hash) + getAddressId();
+                hash = (37 * hash) + REMARK_FIELD_NUMBER;
+                hash = (53 * hash) + getRemark().hashCode();
+                hash = (37 * hash) + COLOUR_FIELD_NUMBER;
+                hash = (53 * hash) + getColour().hashCode();
+                hash = (37 * hash) + SIZE_FIELD_NUMBER;
+                hash = (53 * hash) + getSize().hashCode();
+                hash = (37 * hash) + PAY_FIELD_NUMBER;
+                hash = (53 * hash) + getPay();
+                hash = (37 * hash) + USERID_FIELD_NUMBER;
+                hash = (53 * hash) + getUserId();
+                hash = (37 * hash) + STOREID_FIELD_NUMBER;
+                hash = (53 * hash) + getStoreId();
+                hash = (37 * hash) + QUANTITY_FIELD_NUMBER;
+                hash = (53 * hash) + getQuantity();
+                hash = (37 * hash) + AMOUNT_FIELD_NUMBER;
+                hash = (53 * hash) + getAmount().hashCode();
+                hash = (29 * hash) + unknownFields.hashCode();
+                memoizedHashCode = hash;
+                return hash;
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq parseFrom(
+                    java.nio.ByteBuffer data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq parseFrom(
+                    java.nio.ByteBuffer data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq parseFrom(
+                    com.google.protobuf.ByteString data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq parseFrom(
+                    com.google.protobuf.ByteString data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq parseFrom(byte[] data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq parseFrom(
+                    byte[] data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq parseFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq parseFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq parseDelimitedFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq parseDelimitedFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq parseFrom(
+                    com.google.protobuf.CodedInputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq parseFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+
+            @java.lang.Override
+            public Builder newBuilderForType() { return newBuilder(); }
+            public static Builder newBuilder() {
+                return DEFAULT_INSTANCE.toBuilder();
+            }
+            public static Builder newBuilder(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq prototype) {
+                return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+            }
+            @java.lang.Override
+            public Builder toBuilder() {
+                return this == DEFAULT_INSTANCE
+                        ? new Builder() : new Builder().mergeFrom(this);
+            }
+
+            @java.lang.Override
+            protected Builder newBuilderForType(
+                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                Builder builder = new Builder(parent);
+                return builder;
+            }
+            /**
+             * <pre>
+             *用户下单请求
+             * </pre>
+             *
+             * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq}
+             */
+            public static final class Builder extends
+                    com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+                    // @@protoc_insertion_point(builder_implements:NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq)
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReqOrBuilder {
+                public static final com.google.protobuf.Descriptors.Descriptor
+                getDescriptor() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderReq_descriptor;
+                }
+
+                @java.lang.Override
+                protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+                internalGetFieldAccessorTable() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderReq_fieldAccessorTable
+                            .ensureFieldAccessorsInitialized(
+                                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.Builder.class);
+                }
+
+                // Construct using com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.newBuilder()
+                private Builder() {
+                    maybeForceBuilderInitialization();
+                }
+
+                private Builder(
+                        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                    super(parent);
+                    maybeForceBuilderInitialization();
+                }
+                private void maybeForceBuilderInitialization() {
+                    if (com.google.protobuf.GeneratedMessageV3
+                            .alwaysUseFieldBuilders) {
+                    }
+                }
+                @java.lang.Override
+                public Builder clear() {
+                    super.clear();
+                    mallId_ = 0;
+
+                    addressId_ = 0;
+
+                    remark_ = "";
+
+                    colour_ = "";
+
+                    size_ = "";
+
+                    pay_ = 0;
+
+                    userId_ = 0;
+
+                    storeId_ = 0;
+
+                    quantity_ = 0;
+
+                    amount_ = "";
+
+                    return this;
+                }
+
+                @java.lang.Override
+                public com.google.protobuf.Descriptors.Descriptor
+                getDescriptorForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderReq_descriptor;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq getDefaultInstanceForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.getDefaultInstance();
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq build() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq result = buildPartial();
+                    if (!result.isInitialized()) {
+                        throw newUninitializedMessageException(result);
+                    }
+                    return result;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq buildPartial() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq result = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq(this);
+                    result.mallId_ = mallId_;
+                    result.addressId_ = addressId_;
+                    result.remark_ = remark_;
+                    result.colour_ = colour_;
+                    result.size_ = size_;
+                    result.pay_ = pay_;
+                    result.userId_ = userId_;
+                    result.storeId_ = storeId_;
+                    result.quantity_ = quantity_;
+                    result.amount_ = amount_;
+                    onBuilt();
+                    return result;
+                }
+
+                @java.lang.Override
+                public Builder clone() {
+                    return super.clone();
+                }
+                @java.lang.Override
+                public Builder setField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.setField(field, value);
+                }
+                @java.lang.Override
+                public Builder clearField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field) {
+                    return super.clearField(field);
+                }
+                @java.lang.Override
+                public Builder clearOneof(
+                        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+                    return super.clearOneof(oneof);
+                }
+                @java.lang.Override
+                public Builder setRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        int index, java.lang.Object value) {
+                    return super.setRepeatedField(field, index, value);
+                }
+                @java.lang.Override
+                public Builder addRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.addRepeatedField(field, value);
+                }
+                @java.lang.Override
+                public Builder mergeFrom(com.google.protobuf.Message other) {
+                    if (other instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq) {
+                        return mergeFrom((com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq)other);
+                    } else {
+                        super.mergeFrom(other);
+                        return this;
+                    }
+                }
+
+                public Builder mergeFrom(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq other) {
+                    if (other == com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.getDefaultInstance()) return this;
+                    if (other.getMallId() != 0) {
+                        setMallId(other.getMallId());
+                    }
+                    if (other.getAddressId() != 0) {
+                        setAddressId(other.getAddressId());
+                    }
+                    if (!other.getRemark().isEmpty()) {
+                        remark_ = other.remark_;
+                        onChanged();
+                    }
+                    if (!other.getColour().isEmpty()) {
+                        colour_ = other.colour_;
+                        onChanged();
+                    }
+                    if (!other.getSize().isEmpty()) {
+                        size_ = other.size_;
+                        onChanged();
+                    }
+                    if (other.getPay() != 0) {
+                        setPay(other.getPay());
+                    }
+                    if (other.getUserId() != 0) {
+                        setUserId(other.getUserId());
+                    }
+                    if (other.getStoreId() != 0) {
+                        setStoreId(other.getStoreId());
+                    }
+                    if (other.getQuantity() != 0) {
+                        setQuantity(other.getQuantity());
+                    }
+                    if (!other.getAmount().isEmpty()) {
+                        amount_ = other.amount_;
+                        onChanged();
+                    }
+                    this.mergeUnknownFields(other.unknownFields);
+                    onChanged();
+                    return this;
+                }
+
+                @java.lang.Override
+                public final boolean isInitialized() {
+                    return true;
+                }
+
+                @java.lang.Override
+                public Builder mergeFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws java.io.IOException {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq parsedMessage = null;
+                    try {
+                        parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                        parsedMessage = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq) e.getUnfinishedMessage();
+                        throw e.unwrapIOException();
+                    } finally {
+                        if (parsedMessage != null) {
+                            mergeFrom(parsedMessage);
+                        }
+                    }
+                    return this;
+                }
+
+                private int mallId_ ;
+                /**
+                 * <pre>
+                 *商品id
+                 * </pre>
+                 *
+                 * <code>int32 mallId = 1;</code>
+                 */
+                public int getMallId() {
+                    return mallId_;
+                }
+                /**
+                 * <pre>
+                 *商品id
+                 * </pre>
+                 *
+                 * <code>int32 mallId = 1;</code>
+                 */
+                public Builder setMallId(int value) {
+
+                    mallId_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *商品id
+                 * </pre>
+                 *
+                 * <code>int32 mallId = 1;</code>
+                 */
+                public Builder clearMallId() {
+
+                    mallId_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private int addressId_ ;
+                /**
+                 * <pre>
+                 *收货地址id
+                 * </pre>
+                 *
+                 * <code>int32 addressId = 2;</code>
+                 */
+                public int getAddressId() {
+                    return addressId_;
+                }
+                /**
+                 * <pre>
+                 *收货地址id
+                 * </pre>
+                 *
+                 * <code>int32 addressId = 2;</code>
+                 */
+                public Builder setAddressId(int value) {
+
+                    addressId_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *收货地址id
+                 * </pre>
+                 *
+                 * <code>int32 addressId = 2;</code>
+                 */
+                public Builder clearAddressId() {
+
+                    addressId_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object remark_ = "";
+                /**
+                 * <pre>
+                 *备注
+                 * </pre>
+                 *
+                 * <code>string remark = 3;</code>
+                 */
+                public java.lang.String getRemark() {
+                    java.lang.Object ref = remark_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        remark_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *备注
+                 * </pre>
+                 *
+                 * <code>string remark = 3;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getRemarkBytes() {
+                    java.lang.Object ref = remark_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        remark_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *备注
+                 * </pre>
+                 *
+                 * <code>string remark = 3;</code>
+                 */
+                public Builder setRemark(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    remark_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *备注
+                 * </pre>
+                 *
+                 * <code>string remark = 3;</code>
+                 */
+                public Builder clearRemark() {
+
+                    remark_ = getDefaultInstance().getRemark();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *备注
+                 * </pre>
+                 *
+                 * <code>string remark = 3;</code>
+                 */
+                public Builder setRemarkBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    remark_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object colour_ = "";
+                /**
+                 * <pre>
+                 *颜色
+                 * </pre>
+                 *
+                 * <code>string colour = 4;</code>
+                 */
+                public java.lang.String getColour() {
+                    java.lang.Object ref = colour_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        colour_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *颜色
+                 * </pre>
+                 *
+                 * <code>string colour = 4;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getColourBytes() {
+                    java.lang.Object ref = colour_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        colour_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *颜色
+                 * </pre>
+                 *
+                 * <code>string colour = 4;</code>
+                 */
+                public Builder setColour(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    colour_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *颜色
+                 * </pre>
+                 *
+                 * <code>string colour = 4;</code>
+                 */
+                public Builder clearColour() {
+
+                    colour_ = getDefaultInstance().getColour();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *颜色
+                 * </pre>
+                 *
+                 * <code>string colour = 4;</code>
+                 */
+                public Builder setColourBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    colour_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object size_ = "";
+                /**
+                 * <pre>
+                 *尺码
+                 * </pre>
+                 *
+                 * <code>string size = 5;</code>
+                 */
+                public java.lang.String getSize() {
+                    java.lang.Object ref = size_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        size_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *尺码
+                 * </pre>
+                 *
+                 * <code>string size = 5;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getSizeBytes() {
+                    java.lang.Object ref = size_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        size_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *尺码
+                 * </pre>
+                 *
+                 * <code>string size = 5;</code>
+                 */
+                public Builder setSize(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    size_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *尺码
+                 * </pre>
+                 *
+                 * <code>string size = 5;</code>
+                 */
+                public Builder clearSize() {
+
+                    size_ = getDefaultInstance().getSize();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *尺码
+                 * </pre>
+                 *
+                 * <code>string size = 5;</code>
+                 */
+                public Builder setSizeBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    size_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private int pay_ ;
+                /**
+                 * <pre>
+                 *1是微信，2是支付宝，3其他
+                 * </pre>
+                 *
+                 * <code>int32 pay = 6;</code>
+                 */
+                public int getPay() {
+                    return pay_;
+                }
+                /**
+                 * <pre>
+                 *1是微信，2是支付宝，3其他
+                 * </pre>
+                 *
+                 * <code>int32 pay = 6;</code>
+                 */
+                public Builder setPay(int value) {
+
+                    pay_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *1是微信，2是支付宝，3其他
+                 * </pre>
+                 *
+                 * <code>int32 pay = 6;</code>
+                 */
+                public Builder clearPay() {
+
+                    pay_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private int userId_ ;
+                /**
+                 * <pre>
+                 *用户id
+                 * </pre>
+                 *
+                 * <code>int32 userId = 7;</code>
+                 */
+                public int getUserId() {
+                    return userId_;
+                }
+                /**
+                 * <pre>
+                 *用户id
+                 * </pre>
+                 *
+                 * <code>int32 userId = 7;</code>
+                 */
+                public Builder setUserId(int value) {
+
+                    userId_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *用户id
+                 * </pre>
+                 *
+                 * <code>int32 userId = 7;</code>
+                 */
+                public Builder clearUserId() {
+
+                    userId_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private int storeId_ ;
+                /**
+                 * <pre>
+                 *商户id
+                 * </pre>
+                 *
+                 * <code>int32 storeId = 8;</code>
+                 */
+                public int getStoreId() {
+                    return storeId_;
+                }
+                /**
+                 * <pre>
+                 *商户id
+                 * </pre>
+                 *
+                 * <code>int32 storeId = 8;</code>
+                 */
+                public Builder setStoreId(int value) {
+
+                    storeId_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *商户id
+                 * </pre>
+                 *
+                 * <code>int32 storeId = 8;</code>
+                 */
+                public Builder clearStoreId() {
+
+                    storeId_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private int quantity_ ;
+                /**
+                 * <pre>
+                 *数量
+                 * </pre>
+                 *
+                 * <code>int32 quantity = 9;</code>
+                 */
+                public int getQuantity() {
+                    return quantity_;
+                }
+                /**
+                 * <pre>
+                 *数量
+                 * </pre>
+                 *
+                 * <code>int32 quantity = 9;</code>
+                 */
+                public Builder setQuantity(int value) {
+
+                    quantity_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *数量
+                 * </pre>
+                 *
+                 * <code>int32 quantity = 9;</code>
+                 */
+                public Builder clearQuantity() {
+
+                    quantity_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object amount_ = "";
+                /**
+                 * <pre>
+                 *金额
+                 * </pre>
+                 *
+                 * <code>string amount = 10;</code>
+                 */
+                public java.lang.String getAmount() {
+                    java.lang.Object ref = amount_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        amount_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *金额
+                 * </pre>
+                 *
+                 * <code>string amount = 10;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getAmountBytes() {
+                    java.lang.Object ref = amount_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        amount_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *金额
+                 * </pre>
+                 *
+                 * <code>string amount = 10;</code>
+                 */
+                public Builder setAmount(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    amount_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *金额
+                 * </pre>
+                 *
+                 * <code>string amount = 10;</code>
+                 */
+                public Builder clearAmount() {
+
+                    amount_ = getDefaultInstance().getAmount();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *金额
+                 * </pre>
+                 *
+                 * <code>string amount = 10;</code>
+                 */
+                public Builder setAmountBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    amount_ = value;
+                    onChanged();
+                    return this;
+                }
+                @java.lang.Override
+                public final Builder setUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.setUnknownFields(unknownFields);
+                }
+
+                @java.lang.Override
+                public final Builder mergeUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.mergeUnknownFields(unknownFields);
+                }
+
+
+                // @@protoc_insertion_point(builder_scope:NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq)
+            }
+
+            // @@protoc_insertion_point(class_scope:NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq)
+            private static final com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq DEFAULT_INSTANCE;
+            static {
+                DEFAULT_INSTANCE = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq();
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq getDefaultInstance() {
+                return DEFAULT_INSTANCE;
+            }
+
+            private static final com.google.protobuf.Parser<PlaceAnOrderReq>
+                    PARSER = new com.google.protobuf.AbstractParser<PlaceAnOrderReq>() {
+                @java.lang.Override
+                public PlaceAnOrderReq parsePartialFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws com.google.protobuf.InvalidProtocolBufferException {
+                    return new PlaceAnOrderReq(input, extensionRegistry);
+                }
+            };
+
+            public static com.google.protobuf.Parser<PlaceAnOrderReq> parser() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.google.protobuf.Parser<PlaceAnOrderReq> getParserForType() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq getDefaultInstanceForType() {
+                return DEFAULT_INSTANCE;
+            }
+
+        }
+
+        public interface PlaceAnOrderRespOrBuilder extends
+                // @@protoc_insertion_point(interface_extends:NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp)
+                com.google.protobuf.MessageOrBuilder {
+
+            /**
+             * <pre>
+             *订单号
+             * </pre>
+             *
+             * <code>string orderNumber = 1;</code>
+             */
+            java.lang.String getOrderNumber();
+            /**
+             * <pre>
+             *订单号
+             * </pre>
+             *
+             * <code>string orderNumber = 1;</code>
+             */
+            com.google.protobuf.ByteString
+            getOrderNumberBytes();
+        }
+        /**
+         * <pre>
+         *用户下单响应
+         * </pre>
+         *
+         * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp}
+         */
+        public  static final class PlaceAnOrderResp extends
+                com.google.protobuf.GeneratedMessageV3 implements
+                // @@protoc_insertion_point(message_implements:NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp)
+                PlaceAnOrderRespOrBuilder {
+            private static final long serialVersionUID = 0L;
+            // Use PlaceAnOrderResp.newBuilder() to construct.
+            private PlaceAnOrderResp(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+                super(builder);
+            }
+            private PlaceAnOrderResp() {
+                orderNumber_ = "";
+            }
+
+            @java.lang.Override
+            public final com.google.protobuf.UnknownFieldSet
+            getUnknownFields() {
+                return this.unknownFields;
+            }
+            private PlaceAnOrderResp(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                this();
+                if (extensionRegistry == null) {
+                    throw new java.lang.NullPointerException();
+                }
+                int mutable_bitField0_ = 0;
+                com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                        com.google.protobuf.UnknownFieldSet.newBuilder();
+                try {
+                    boolean done = false;
+                    while (!done) {
+                        int tag = input.readTag();
+                        switch (tag) {
+                            case 0:
+                                done = true;
+                                break;
+                            case 10: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                orderNumber_ = s;
+                                break;
+                            }
+                            default: {
+                                if (!parseUnknownField(
+                                        input, unknownFields, extensionRegistry, tag)) {
+                                    done = true;
+                                }
+                                break;
+                            }
+                        }
+                    }
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    throw e.setUnfinishedMessage(this);
+                } catch (java.io.IOException e) {
+                    throw new com.google.protobuf.InvalidProtocolBufferException(
+                            e).setUnfinishedMessage(this);
+                } finally {
+                    this.unknownFields = unknownFields.build();
+                    makeExtensionsImmutable();
+                }
+            }
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderResp_descriptor;
+            }
+
+            @java.lang.Override
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderResp_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.Builder.class);
+            }
+
+            public static final int ORDERNUMBER_FIELD_NUMBER = 1;
+            private volatile java.lang.Object orderNumber_;
+            /**
+             * <pre>
+             *订单号
+             * </pre>
+             *
+             * <code>string orderNumber = 1;</code>
+             */
+            public java.lang.String getOrderNumber() {
+                java.lang.Object ref = orderNumber_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    orderNumber_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *订单号
+             * </pre>
+             *
+             * <code>string orderNumber = 1;</code>
+             */
+            public com.google.protobuf.ByteString
+            getOrderNumberBytes() {
+                java.lang.Object ref = orderNumber_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    orderNumber_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            private byte memoizedIsInitialized = -1;
+            @java.lang.Override
+            public final boolean isInitialized() {
+                byte isInitialized = memoizedIsInitialized;
+                if (isInitialized == 1) return true;
+                if (isInitialized == 0) return false;
+
+                memoizedIsInitialized = 1;
+                return true;
+            }
+
+            @java.lang.Override
+            public void writeTo(com.google.protobuf.CodedOutputStream output)
+                    throws java.io.IOException {
+                if (!getOrderNumberBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 1, orderNumber_);
+                }
+                unknownFields.writeTo(output);
+            }
+
+            @java.lang.Override
+            public int getSerializedSize() {
+                int size = memoizedSize;
+                if (size != -1) return size;
+
+                size = 0;
+                if (!getOrderNumberBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, orderNumber_);
+                }
+                size += unknownFields.getSerializedSize();
+                memoizedSize = size;
+                return size;
+            }
+
+            @java.lang.Override
+            public boolean equals(final java.lang.Object obj) {
+                if (obj == this) {
+                    return true;
+                }
+                if (!(obj instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp)) {
+                    return super.equals(obj);
+                }
+                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp other = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp) obj;
+
+                if (!getOrderNumber()
+                        .equals(other.getOrderNumber())) return false;
+                if (!unknownFields.equals(other.unknownFields)) return false;
+                return true;
+            }
+
+            @java.lang.Override
+            public int hashCode() {
+                if (memoizedHashCode != 0) {
+                    return memoizedHashCode;
+                }
+                int hash = 41;
+                hash = (19 * hash) + getDescriptor().hashCode();
+                hash = (37 * hash) + ORDERNUMBER_FIELD_NUMBER;
+                hash = (53 * hash) + getOrderNumber().hashCode();
+                hash = (29 * hash) + unknownFields.hashCode();
+                memoizedHashCode = hash;
+                return hash;
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp parseFrom(
+                    java.nio.ByteBuffer data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp parseFrom(
+                    java.nio.ByteBuffer data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp parseFrom(
+                    com.google.protobuf.ByteString data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp parseFrom(
+                    com.google.protobuf.ByteString data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp parseFrom(byte[] data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp parseFrom(
+                    byte[] data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp parseFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp parseFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp parseDelimitedFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp parseDelimitedFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp parseFrom(
+                    com.google.protobuf.CodedInputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp parseFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+
+            @java.lang.Override
+            public Builder newBuilderForType() { return newBuilder(); }
+            public static Builder newBuilder() {
+                return DEFAULT_INSTANCE.toBuilder();
+            }
+            public static Builder newBuilder(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp prototype) {
+                return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+            }
+            @java.lang.Override
+            public Builder toBuilder() {
+                return this == DEFAULT_INSTANCE
+                        ? new Builder() : new Builder().mergeFrom(this);
+            }
+
+            @java.lang.Override
+            protected Builder newBuilderForType(
+                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                Builder builder = new Builder(parent);
+                return builder;
+            }
+            /**
+             * <pre>
+             *用户下单响应
+             * </pre>
+             *
+             * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp}
+             */
+            public static final class Builder extends
+                    com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+                    // @@protoc_insertion_point(builder_implements:NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp)
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderRespOrBuilder {
+                public static final com.google.protobuf.Descriptors.Descriptor
+                getDescriptor() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderResp_descriptor;
+                }
+
+                @java.lang.Override
+                protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+                internalGetFieldAccessorTable() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderResp_fieldAccessorTable
+                            .ensureFieldAccessorsInitialized(
+                                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.Builder.class);
+                }
+
+                // Construct using com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.newBuilder()
+                private Builder() {
+                    maybeForceBuilderInitialization();
+                }
+
+                private Builder(
+                        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                    super(parent);
+                    maybeForceBuilderInitialization();
+                }
+                private void maybeForceBuilderInitialization() {
+                    if (com.google.protobuf.GeneratedMessageV3
+                            .alwaysUseFieldBuilders) {
+                    }
+                }
+                @java.lang.Override
+                public Builder clear() {
+                    super.clear();
+                    orderNumber_ = "";
+
+                    return this;
+                }
+
+                @java.lang.Override
+                public com.google.protobuf.Descriptors.Descriptor
+                getDescriptorForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderResp_descriptor;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp getDefaultInstanceForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.getDefaultInstance();
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp build() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp result = buildPartial();
+                    if (!result.isInitialized()) {
+                        throw newUninitializedMessageException(result);
+                    }
+                    return result;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp buildPartial() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp result = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp(this);
+                    result.orderNumber_ = orderNumber_;
+                    onBuilt();
+                    return result;
+                }
+
+                @java.lang.Override
+                public Builder clone() {
+                    return super.clone();
+                }
+                @java.lang.Override
+                public Builder setField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.setField(field, value);
+                }
+                @java.lang.Override
+                public Builder clearField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field) {
+                    return super.clearField(field);
+                }
+                @java.lang.Override
+                public Builder clearOneof(
+                        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+                    return super.clearOneof(oneof);
+                }
+                @java.lang.Override
+                public Builder setRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        int index, java.lang.Object value) {
+                    return super.setRepeatedField(field, index, value);
+                }
+                @java.lang.Override
+                public Builder addRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.addRepeatedField(field, value);
+                }
+                @java.lang.Override
+                public Builder mergeFrom(com.google.protobuf.Message other) {
+                    if (other instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp) {
+                        return mergeFrom((com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp)other);
+                    } else {
+                        super.mergeFrom(other);
+                        return this;
+                    }
+                }
+
+                public Builder mergeFrom(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp other) {
+                    if (other == com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.getDefaultInstance()) return this;
+                    if (!other.getOrderNumber().isEmpty()) {
+                        orderNumber_ = other.orderNumber_;
+                        onChanged();
+                    }
+                    this.mergeUnknownFields(other.unknownFields);
+                    onChanged();
+                    return this;
+                }
+
+                @java.lang.Override
+                public final boolean isInitialized() {
+                    return true;
+                }
+
+                @java.lang.Override
+                public Builder mergeFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws java.io.IOException {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp parsedMessage = null;
+                    try {
+                        parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                        parsedMessage = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp) e.getUnfinishedMessage();
+                        throw e.unwrapIOException();
+                    } finally {
+                        if (parsedMessage != null) {
+                            mergeFrom(parsedMessage);
+                        }
+                    }
+                    return this;
+                }
+
+                private java.lang.Object orderNumber_ = "";
+                /**
+                 * <pre>
+                 *订单号
+                 * </pre>
+                 *
+                 * <code>string orderNumber = 1;</code>
+                 */
+                public java.lang.String getOrderNumber() {
+                    java.lang.Object ref = orderNumber_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        orderNumber_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *订单号
+                 * </pre>
+                 *
+                 * <code>string orderNumber = 1;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getOrderNumberBytes() {
+                    java.lang.Object ref = orderNumber_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        orderNumber_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *订单号
+                 * </pre>
+                 *
+                 * <code>string orderNumber = 1;</code>
+                 */
+                public Builder setOrderNumber(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    orderNumber_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单号
+                 * </pre>
+                 *
+                 * <code>string orderNumber = 1;</code>
+                 */
+                public Builder clearOrderNumber() {
+
+                    orderNumber_ = getDefaultInstance().getOrderNumber();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *订单号
+                 * </pre>
+                 *
+                 * <code>string orderNumber = 1;</code>
+                 */
+                public Builder setOrderNumberBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    orderNumber_ = value;
+                    onChanged();
+                    return this;
+                }
+                @java.lang.Override
+                public final Builder setUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.setUnknownFields(unknownFields);
+                }
+
+                @java.lang.Override
+                public final Builder mergeUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.mergeUnknownFields(unknownFields);
+                }
+
+
+                // @@protoc_insertion_point(builder_scope:NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp)
+            }
+
+            // @@protoc_insertion_point(class_scope:NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp)
+            private static final com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp DEFAULT_INSTANCE;
+            static {
+                DEFAULT_INSTANCE = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp();
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp getDefaultInstance() {
+                return DEFAULT_INSTANCE;
+            }
+
+            private static final com.google.protobuf.Parser<PlaceAnOrderResp>
+                    PARSER = new com.google.protobuf.AbstractParser<PlaceAnOrderResp>() {
+                @java.lang.Override
+                public PlaceAnOrderResp parsePartialFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws com.google.protobuf.InvalidProtocolBufferException {
+                    return new PlaceAnOrderResp(input, extensionRegistry);
+                }
+            };
+
+            public static com.google.protobuf.Parser<PlaceAnOrderResp> parser() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.google.protobuf.Parser<PlaceAnOrderResp> getParserForType() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp getDefaultInstanceForType() {
+                return DEFAULT_INSTANCE;
+            }
+
+        }
+
+        public interface AddressReqOrBuilder extends
+                // @@protoc_insertion_point(interface_extends:NettyProtobufWebsocketClient.MessageBase.AddressReq)
+                com.google.protobuf.MessageOrBuilder {
+
+            /**
+             * <pre>
+             *用户id
+             * </pre>
+             *
+             * <code>string userId = 1;</code>
+             */
+            java.lang.String getUserId();
+            /**
+             * <pre>
+             *用户id
+             * </pre>
+             *
+             * <code>string userId = 1;</code>
+             */
+            com.google.protobuf.ByteString
+            getUserIdBytes();
+
+            /**
+             * <pre>
+             *收货人
+             * </pre>
+             *
+             * <code>string consignee = 2;</code>
+             */
+            java.lang.String getConsignee();
+            /**
+             * <pre>
+             *收货人
+             * </pre>
+             *
+             * <code>string consignee = 2;</code>
+             */
+            com.google.protobuf.ByteString
+            getConsigneeBytes();
+
+            /**
+             * <pre>
+             *手机号
+             * </pre>
+             *
+             * <code>string phone = 3;</code>
+             */
+            java.lang.String getPhone();
+            /**
+             * <pre>
+             *手机号
+             * </pre>
+             *
+             * <code>string phone = 3;</code>
+             */
+            com.google.protobuf.ByteString
+            getPhoneBytes();
+
+            /**
+             * <pre>
+             *性别
+             * </pre>
+             *
+             * <code>string sex = 4;</code>
+             */
+            java.lang.String getSex();
+            /**
+             * <pre>
+             *性别
+             * </pre>
+             *
+             * <code>string sex = 4;</code>
+             */
+            com.google.protobuf.ByteString
+            getSexBytes();
+
+            /**
+             * <pre>
+             *省级名称
+             * </pre>
+             *
+             * <code>string provinceName = 5;</code>
+             */
+            java.lang.String getProvinceName();
+            /**
+             * <pre>
+             *省级名称
+             * </pre>
+             *
+             * <code>string provinceName = 5;</code>
+             */
+            com.google.protobuf.ByteString
+            getProvinceNameBytes();
+
+            /**
+             * <pre>
+             *市级名称
+             * </pre>
+             *
+             * <code>string cityName = 6;</code>
+             */
+            java.lang.String getCityName();
+            /**
+             * <pre>
+             *市级名称
+             * </pre>
+             *
+             * <code>string cityName = 6;</code>
+             */
+            com.google.protobuf.ByteString
+            getCityNameBytes();
+
+            /**
+             * <pre>
+             *区级名称
+             * </pre>
+             *
+             * <code>string districtName = 7;</code>
+             */
+            java.lang.String getDistrictName();
+            /**
+             * <pre>
+             *区级名称
+             * </pre>
+             *
+             * <code>string districtName = 7;</code>
+             */
+            com.google.protobuf.ByteString
+            getDistrictNameBytes();
+
+            /**
+             * <pre>
+             *详细地址
+             * </pre>
+             *
+             * <code>string detail = 8;</code>
+             */
+            java.lang.String getDetail();
+            /**
+             * <pre>
+             *详细地址
+             * </pre>
+             *
+             * <code>string detail = 8;</code>
+             */
+            com.google.protobuf.ByteString
+            getDetailBytes();
+
+            /**
+             * <pre>
+             *标签
+             * </pre>
+             *
+             * <code>string label = 9;</code>
+             */
+            java.lang.String getLabel();
+            /**
+             * <pre>
+             *标签
+             * </pre>
+             *
+             * <code>string label = 9;</code>
+             */
+            com.google.protobuf.ByteString
+            getLabelBytes();
+
+            /**
+             * <pre>
+             *默认
+             * </pre>
+             *
+             * <code>string isDefault = 10;</code>
+             */
+            java.lang.String getIsDefault();
+            /**
+             * <pre>
+             *默认
+             * </pre>
+             *
+             * <code>string isDefault = 10;</code>
+             */
+            com.google.protobuf.ByteString
+            getIsDefaultBytes();
+
+            /**
+             * <pre>
+             *创建时间
+             * </pre>
+             *
+             * <code>string createTime = 11;</code>
+             */
+            java.lang.String getCreateTime();
+            /**
+             * <pre>
+             *创建时间
+             * </pre>
+             *
+             * <code>string createTime = 11;</code>
+             */
+            com.google.protobuf.ByteString
+            getCreateTimeBytes();
+
+            /**
+             * <pre>
+             *更新时间
+             * </pre>
+             *
+             * <code>string updateTime = 12;</code>
+             */
+            java.lang.String getUpdateTime();
+            /**
+             * <pre>
+             *更新时间
+             * </pre>
+             *
+             * <code>string updateTime = 12;</code>
+             */
+            com.google.protobuf.ByteString
+            getUpdateTimeBytes();
+
+            /**
+             * <pre>
+             *创建人
+             * </pre>
+             *
+             * <code>string createUser = 13;</code>
+             */
+            java.lang.String getCreateUser();
+            /**
+             * <pre>
+             *创建人
+             * </pre>
+             *
+             * <code>string createUser = 13;</code>
+             */
+            com.google.protobuf.ByteString
+            getCreateUserBytes();
+
+            /**
+             * <pre>
+             *修改人
+             * </pre>
+             *
+             * <code>string updateUser = 14;</code>
+             */
+            java.lang.String getUpdateUser();
+            /**
+             * <pre>
+             *修改人
+             * </pre>
+             *
+             * <code>string updateUser = 14;</code>
+             */
+            com.google.protobuf.ByteString
+            getUpdateUserBytes();
+
+            /**
+             * <pre>
+             *是否删除
+             * </pre>
+             *
+             * <code>string isDeleted = 15;</code>
+             */
+            java.lang.String getIsDeleted();
+            /**
+             * <pre>
+             *是否删除
+             * </pre>
+             *
+             * <code>string isDeleted = 15;</code>
+             */
+            com.google.protobuf.ByteString
+            getIsDeletedBytes();
+
+            /**
+             * <pre>
+             *地址表主键
+             * </pre>
+             *
+             * <code>string id = 16;</code>
+             */
+            java.lang.String getId();
+            /**
+             * <pre>
+             *地址表主键
+             * </pre>
+             *
+             * <code>string id = 16;</code>
+             */
+            com.google.protobuf.ByteString
+            getIdBytes();
+        }
+        /**
+         * <pre>
+         *添加收货地址请求
+         * </pre>
+         *
+         * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.AddressReq}
+         */
+        public  static final class AddressReq extends
+                com.google.protobuf.GeneratedMessageV3 implements
+                // @@protoc_insertion_point(message_implements:NettyProtobufWebsocketClient.MessageBase.AddressReq)
+                AddressReqOrBuilder {
+            private static final long serialVersionUID = 0L;
+            // Use AddressReq.newBuilder() to construct.
+            private AddressReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+                super(builder);
+            }
+            private AddressReq() {
+                userId_ = "";
+                consignee_ = "";
+                phone_ = "";
+                sex_ = "";
+                provinceName_ = "";
+                cityName_ = "";
+                districtName_ = "";
+                detail_ = "";
+                label_ = "";
+                isDefault_ = "";
+                createTime_ = "";
+                updateTime_ = "";
+                createUser_ = "";
+                updateUser_ = "";
+                isDeleted_ = "";
+                id_ = "";
+            }
+
+            @java.lang.Override
+            public final com.google.protobuf.UnknownFieldSet
+            getUnknownFields() {
+                return this.unknownFields;
+            }
+            private AddressReq(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                this();
+                if (extensionRegistry == null) {
+                    throw new java.lang.NullPointerException();
+                }
+                int mutable_bitField0_ = 0;
+                com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                        com.google.protobuf.UnknownFieldSet.newBuilder();
+                try {
+                    boolean done = false;
+                    while (!done) {
+                        int tag = input.readTag();
+                        switch (tag) {
+                            case 0:
+                                done = true;
+                                break;
+                            case 10: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                userId_ = s;
+                                break;
+                            }
+                            case 18: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                consignee_ = s;
+                                break;
+                            }
+                            case 26: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                phone_ = s;
+                                break;
+                            }
+                            case 34: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                sex_ = s;
+                                break;
+                            }
+                            case 42: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                provinceName_ = s;
+                                break;
+                            }
+                            case 50: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                cityName_ = s;
+                                break;
+                            }
+                            case 58: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                districtName_ = s;
+                                break;
+                            }
+                            case 66: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                detail_ = s;
+                                break;
+                            }
+                            case 74: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                label_ = s;
+                                break;
+                            }
+                            case 82: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                isDefault_ = s;
+                                break;
+                            }
+                            case 90: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                createTime_ = s;
+                                break;
+                            }
+                            case 98: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                updateTime_ = s;
+                                break;
+                            }
+                            case 106: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                createUser_ = s;
+                                break;
+                            }
+                            case 114: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                updateUser_ = s;
+                                break;
+                            }
+                            case 122: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                isDeleted_ = s;
+                                break;
+                            }
+                            case 130: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                id_ = s;
+                                break;
+                            }
+                            default: {
+                                if (!parseUnknownField(
+                                        input, unknownFields, extensionRegistry, tag)) {
+                                    done = true;
+                                }
+                                break;
+                            }
+                        }
+                    }
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    throw e.setUnfinishedMessage(this);
+                } catch (java.io.IOException e) {
+                    throw new com.google.protobuf.InvalidProtocolBufferException(
+                            e).setUnfinishedMessage(this);
+                } finally {
+                    this.unknownFields = unknownFields.build();
+                    makeExtensionsImmutable();
+                }
+            }
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_AddressReq_descriptor;
+            }
+
+            @java.lang.Override
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_AddressReq_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder.class);
+            }
+
+            public static final int USERID_FIELD_NUMBER = 1;
+            private volatile java.lang.Object userId_;
+            /**
+             * <pre>
+             *用户id
+             * </pre>
+             *
+             * <code>string userId = 1;</code>
+             */
+            public java.lang.String getUserId() {
+                java.lang.Object ref = userId_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    userId_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *用户id
+             * </pre>
+             *
+             * <code>string userId = 1;</code>
+             */
+            public com.google.protobuf.ByteString
+            getUserIdBytes() {
+                java.lang.Object ref = userId_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    userId_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int CONSIGNEE_FIELD_NUMBER = 2;
+            private volatile java.lang.Object consignee_;
+            /**
+             * <pre>
+             *收货人
+             * </pre>
+             *
+             * <code>string consignee = 2;</code>
+             */
+            public java.lang.String getConsignee() {
+                java.lang.Object ref = consignee_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    consignee_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *收货人
+             * </pre>
+             *
+             * <code>string consignee = 2;</code>
+             */
+            public com.google.protobuf.ByteString
+            getConsigneeBytes() {
+                java.lang.Object ref = consignee_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    consignee_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int PHONE_FIELD_NUMBER = 3;
+            private volatile java.lang.Object phone_;
+            /**
+             * <pre>
+             *手机号
+             * </pre>
+             *
+             * <code>string phone = 3;</code>
+             */
+            public java.lang.String getPhone() {
+                java.lang.Object ref = phone_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    phone_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *手机号
+             * </pre>
+             *
+             * <code>string phone = 3;</code>
+             */
+            public com.google.protobuf.ByteString
+            getPhoneBytes() {
+                java.lang.Object ref = phone_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    phone_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int SEX_FIELD_NUMBER = 4;
+            private volatile java.lang.Object sex_;
+            /**
+             * <pre>
+             *性别
+             * </pre>
+             *
+             * <code>string sex = 4;</code>
+             */
+            public java.lang.String getSex() {
+                java.lang.Object ref = sex_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    sex_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *性别
+             * </pre>
+             *
+             * <code>string sex = 4;</code>
+             */
+            public com.google.protobuf.ByteString
+            getSexBytes() {
+                java.lang.Object ref = sex_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    sex_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int PROVINCENAME_FIELD_NUMBER = 5;
+            private volatile java.lang.Object provinceName_;
+            /**
+             * <pre>
+             *省级名称
+             * </pre>
+             *
+             * <code>string provinceName = 5;</code>
+             */
+            public java.lang.String getProvinceName() {
+                java.lang.Object ref = provinceName_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    provinceName_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *省级名称
+             * </pre>
+             *
+             * <code>string provinceName = 5;</code>
+             */
+            public com.google.protobuf.ByteString
+            getProvinceNameBytes() {
+                java.lang.Object ref = provinceName_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    provinceName_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int CITYNAME_FIELD_NUMBER = 6;
+            private volatile java.lang.Object cityName_;
+            /**
+             * <pre>
+             *市级名称
+             * </pre>
+             *
+             * <code>string cityName = 6;</code>
+             */
+            public java.lang.String getCityName() {
+                java.lang.Object ref = cityName_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    cityName_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *市级名称
+             * </pre>
+             *
+             * <code>string cityName = 6;</code>
+             */
+            public com.google.protobuf.ByteString
+            getCityNameBytes() {
+                java.lang.Object ref = cityName_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    cityName_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int DISTRICTNAME_FIELD_NUMBER = 7;
+            private volatile java.lang.Object districtName_;
+            /**
+             * <pre>
+             *区级名称
+             * </pre>
+             *
+             * <code>string districtName = 7;</code>
+             */
+            public java.lang.String getDistrictName() {
+                java.lang.Object ref = districtName_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    districtName_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *区级名称
+             * </pre>
+             *
+             * <code>string districtName = 7;</code>
+             */
+            public com.google.protobuf.ByteString
+            getDistrictNameBytes() {
+                java.lang.Object ref = districtName_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    districtName_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int DETAIL_FIELD_NUMBER = 8;
+            private volatile java.lang.Object detail_;
+            /**
+             * <pre>
+             *详细地址
+             * </pre>
+             *
+             * <code>string detail = 8;</code>
+             */
+            public java.lang.String getDetail() {
+                java.lang.Object ref = detail_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    detail_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *详细地址
+             * </pre>
+             *
+             * <code>string detail = 8;</code>
+             */
+            public com.google.protobuf.ByteString
+            getDetailBytes() {
+                java.lang.Object ref = detail_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    detail_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int LABEL_FIELD_NUMBER = 9;
+            private volatile java.lang.Object label_;
+            /**
+             * <pre>
+             *标签
+             * </pre>
+             *
+             * <code>string label = 9;</code>
+             */
+            public java.lang.String getLabel() {
+                java.lang.Object ref = label_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    label_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *标签
+             * </pre>
+             *
+             * <code>string label = 9;</code>
+             */
+            public com.google.protobuf.ByteString
+            getLabelBytes() {
+                java.lang.Object ref = label_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    label_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int ISDEFAULT_FIELD_NUMBER = 10;
+            private volatile java.lang.Object isDefault_;
+            /**
+             * <pre>
+             *默认
+             * </pre>
+             *
+             * <code>string isDefault = 10;</code>
+             */
+            public java.lang.String getIsDefault() {
+                java.lang.Object ref = isDefault_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    isDefault_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *默认
+             * </pre>
+             *
+             * <code>string isDefault = 10;</code>
+             */
+            public com.google.protobuf.ByteString
+            getIsDefaultBytes() {
+                java.lang.Object ref = isDefault_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    isDefault_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int CREATETIME_FIELD_NUMBER = 11;
+            private volatile java.lang.Object createTime_;
+            /**
+             * <pre>
+             *创建时间
+             * </pre>
+             *
+             * <code>string createTime = 11;</code>
+             */
+            public java.lang.String getCreateTime() {
+                java.lang.Object ref = createTime_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    createTime_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *创建时间
+             * </pre>
+             *
+             * <code>string createTime = 11;</code>
+             */
+            public com.google.protobuf.ByteString
+            getCreateTimeBytes() {
+                java.lang.Object ref = createTime_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    createTime_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int UPDATETIME_FIELD_NUMBER = 12;
+            private volatile java.lang.Object updateTime_;
+            /**
+             * <pre>
+             *更新时间
+             * </pre>
+             *
+             * <code>string updateTime = 12;</code>
+             */
+            public java.lang.String getUpdateTime() {
+                java.lang.Object ref = updateTime_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    updateTime_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *更新时间
+             * </pre>
+             *
+             * <code>string updateTime = 12;</code>
+             */
+            public com.google.protobuf.ByteString
+            getUpdateTimeBytes() {
+                java.lang.Object ref = updateTime_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    updateTime_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int CREATEUSER_FIELD_NUMBER = 13;
+            private volatile java.lang.Object createUser_;
+            /**
+             * <pre>
+             *创建人
+             * </pre>
+             *
+             * <code>string createUser = 13;</code>
+             */
+            public java.lang.String getCreateUser() {
+                java.lang.Object ref = createUser_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    createUser_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *创建人
+             * </pre>
+             *
+             * <code>string createUser = 13;</code>
+             */
+            public com.google.protobuf.ByteString
+            getCreateUserBytes() {
+                java.lang.Object ref = createUser_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    createUser_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int UPDATEUSER_FIELD_NUMBER = 14;
+            private volatile java.lang.Object updateUser_;
+            /**
+             * <pre>
+             *修改人
+             * </pre>
+             *
+             * <code>string updateUser = 14;</code>
+             */
+            public java.lang.String getUpdateUser() {
+                java.lang.Object ref = updateUser_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    updateUser_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *修改人
+             * </pre>
+             *
+             * <code>string updateUser = 14;</code>
+             */
+            public com.google.protobuf.ByteString
+            getUpdateUserBytes() {
+                java.lang.Object ref = updateUser_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    updateUser_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int ISDELETED_FIELD_NUMBER = 15;
+            private volatile java.lang.Object isDeleted_;
+            /**
+             * <pre>
+             *是否删除
+             * </pre>
+             *
+             * <code>string isDeleted = 15;</code>
+             */
+            public java.lang.String getIsDeleted() {
+                java.lang.Object ref = isDeleted_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    isDeleted_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *是否删除
+             * </pre>
+             *
+             * <code>string isDeleted = 15;</code>
+             */
+            public com.google.protobuf.ByteString
+            getIsDeletedBytes() {
+                java.lang.Object ref = isDeleted_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    isDeleted_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int ID_FIELD_NUMBER = 16;
+            private volatile java.lang.Object id_;
+            /**
+             * <pre>
+             *地址表主键
+             * </pre>
+             *
+             * <code>string id = 16;</code>
+             */
+            public java.lang.String getId() {
+                java.lang.Object ref = id_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    id_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *地址表主键
+             * </pre>
+             *
+             * <code>string id = 16;</code>
+             */
+            public com.google.protobuf.ByteString
+            getIdBytes() {
+                java.lang.Object ref = id_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    id_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            private byte memoizedIsInitialized = -1;
+            @java.lang.Override
+            public final boolean isInitialized() {
+                byte isInitialized = memoizedIsInitialized;
+                if (isInitialized == 1) return true;
+                if (isInitialized == 0) return false;
+
+                memoizedIsInitialized = 1;
+                return true;
+            }
+
+            @java.lang.Override
+            public void writeTo(com.google.protobuf.CodedOutputStream output)
+                    throws java.io.IOException {
+                if (!getUserIdBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 1, userId_);
+                }
+                if (!getConsigneeBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 2, consignee_);
+                }
+                if (!getPhoneBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 3, phone_);
+                }
+                if (!getSexBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 4, sex_);
+                }
+                if (!getProvinceNameBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 5, provinceName_);
+                }
+                if (!getCityNameBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 6, cityName_);
+                }
+                if (!getDistrictNameBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 7, districtName_);
+                }
+                if (!getDetailBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 8, detail_);
+                }
+                if (!getLabelBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 9, label_);
+                }
+                if (!getIsDefaultBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 10, isDefault_);
+                }
+                if (!getCreateTimeBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 11, createTime_);
+                }
+                if (!getUpdateTimeBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 12, updateTime_);
+                }
+                if (!getCreateUserBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 13, createUser_);
+                }
+                if (!getUpdateUserBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 14, updateUser_);
+                }
+                if (!getIsDeletedBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 15, isDeleted_);
+                }
+                if (!getIdBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 16, id_);
+                }
+                unknownFields.writeTo(output);
+            }
+
+            @java.lang.Override
+            public int getSerializedSize() {
+                int size = memoizedSize;
+                if (size != -1) return size;
+
+                size = 0;
+                if (!getUserIdBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, userId_);
+                }
+                if (!getConsigneeBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, consignee_);
+                }
+                if (!getPhoneBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, phone_);
+                }
+                if (!getSexBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, sex_);
+                }
+                if (!getProvinceNameBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, provinceName_);
+                }
+                if (!getCityNameBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(6, cityName_);
+                }
+                if (!getDistrictNameBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(7, districtName_);
+                }
+                if (!getDetailBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, detail_);
+                }
+                if (!getLabelBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(9, label_);
+                }
+                if (!getIsDefaultBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(10, isDefault_);
+                }
+                if (!getCreateTimeBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(11, createTime_);
+                }
+                if (!getUpdateTimeBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(12, updateTime_);
+                }
+                if (!getCreateUserBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(13, createUser_);
+                }
+                if (!getUpdateUserBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(14, updateUser_);
+                }
+                if (!getIsDeletedBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, isDeleted_);
+                }
+                if (!getIdBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(16, id_);
+                }
+                size += unknownFields.getSerializedSize();
+                memoizedSize = size;
+                return size;
+            }
+
+            @java.lang.Override
+            public boolean equals(final java.lang.Object obj) {
+                if (obj == this) {
+                    return true;
+                }
+                if (!(obj instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq)) {
+                    return super.equals(obj);
+                }
+                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq other = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq) obj;
+
+                if (!getUserId()
+                        .equals(other.getUserId())) return false;
+                if (!getConsignee()
+                        .equals(other.getConsignee())) return false;
+                if (!getPhone()
+                        .equals(other.getPhone())) return false;
+                if (!getSex()
+                        .equals(other.getSex())) return false;
+                if (!getProvinceName()
+                        .equals(other.getProvinceName())) return false;
+                if (!getCityName()
+                        .equals(other.getCityName())) return false;
+                if (!getDistrictName()
+                        .equals(other.getDistrictName())) return false;
+                if (!getDetail()
+                        .equals(other.getDetail())) return false;
+                if (!getLabel()
+                        .equals(other.getLabel())) return false;
+                if (!getIsDefault()
+                        .equals(other.getIsDefault())) return false;
+                if (!getCreateTime()
+                        .equals(other.getCreateTime())) return false;
+                if (!getUpdateTime()
+                        .equals(other.getUpdateTime())) return false;
+                if (!getCreateUser()
+                        .equals(other.getCreateUser())) return false;
+                if (!getUpdateUser()
+                        .equals(other.getUpdateUser())) return false;
+                if (!getIsDeleted()
+                        .equals(other.getIsDeleted())) return false;
+                if (!getId()
+                        .equals(other.getId())) return false;
+                if (!unknownFields.equals(other.unknownFields)) return false;
+                return true;
+            }
+
+            @java.lang.Override
+            public int hashCode() {
+                if (memoizedHashCode != 0) {
+                    return memoizedHashCode;
+                }
+                int hash = 41;
+                hash = (19 * hash) + getDescriptor().hashCode();
+                hash = (37 * hash) + USERID_FIELD_NUMBER;
+                hash = (53 * hash) + getUserId().hashCode();
+                hash = (37 * hash) + CONSIGNEE_FIELD_NUMBER;
+                hash = (53 * hash) + getConsignee().hashCode();
+                hash = (37 * hash) + PHONE_FIELD_NUMBER;
+                hash = (53 * hash) + getPhone().hashCode();
+                hash = (37 * hash) + SEX_FIELD_NUMBER;
+                hash = (53 * hash) + getSex().hashCode();
+                hash = (37 * hash) + PROVINCENAME_FIELD_NUMBER;
+                hash = (53 * hash) + getProvinceName().hashCode();
+                hash = (37 * hash) + CITYNAME_FIELD_NUMBER;
+                hash = (53 * hash) + getCityName().hashCode();
+                hash = (37 * hash) + DISTRICTNAME_FIELD_NUMBER;
+                hash = (53 * hash) + getDistrictName().hashCode();
+                hash = (37 * hash) + DETAIL_FIELD_NUMBER;
+                hash = (53 * hash) + getDetail().hashCode();
+                hash = (37 * hash) + LABEL_FIELD_NUMBER;
+                hash = (53 * hash) + getLabel().hashCode();
+                hash = (37 * hash) + ISDEFAULT_FIELD_NUMBER;
+                hash = (53 * hash) + getIsDefault().hashCode();
+                hash = (37 * hash) + CREATETIME_FIELD_NUMBER;
+                hash = (53 * hash) + getCreateTime().hashCode();
+                hash = (37 * hash) + UPDATETIME_FIELD_NUMBER;
+                hash = (53 * hash) + getUpdateTime().hashCode();
+                hash = (37 * hash) + CREATEUSER_FIELD_NUMBER;
+                hash = (53 * hash) + getCreateUser().hashCode();
+                hash = (37 * hash) + UPDATEUSER_FIELD_NUMBER;
+                hash = (53 * hash) + getUpdateUser().hashCode();
+                hash = (37 * hash) + ISDELETED_FIELD_NUMBER;
+                hash = (53 * hash) + getIsDeleted().hashCode();
+                hash = (37 * hash) + ID_FIELD_NUMBER;
+                hash = (53 * hash) + getId().hashCode();
+                hash = (29 * hash) + unknownFields.hashCode();
+                memoizedHashCode = hash;
+                return hash;
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq parseFrom(
+                    java.nio.ByteBuffer data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq parseFrom(
+                    java.nio.ByteBuffer data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq parseFrom(
+                    com.google.protobuf.ByteString data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq parseFrom(
+                    com.google.protobuf.ByteString data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq parseFrom(byte[] data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq parseFrom(
+                    byte[] data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq parseFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq parseFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq parseDelimitedFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq parseDelimitedFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq parseFrom(
+                    com.google.protobuf.CodedInputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq parseFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+
+            @java.lang.Override
+            public Builder newBuilderForType() { return newBuilder(); }
+            public static Builder newBuilder() {
+                return DEFAULT_INSTANCE.toBuilder();
+            }
+            public static Builder newBuilder(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq prototype) {
+                return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+            }
+            @java.lang.Override
+            public Builder toBuilder() {
+                return this == DEFAULT_INSTANCE
+                        ? new Builder() : new Builder().mergeFrom(this);
+            }
+
+            @java.lang.Override
+            protected Builder newBuilderForType(
+                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                Builder builder = new Builder(parent);
+                return builder;
+            }
+            /**
+             * <pre>
+             *添加收货地址请求
+             * </pre>
+             *
+             * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.AddressReq}
+             */
+            public static final class Builder extends
+                    com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+                    // @@protoc_insertion_point(builder_implements:NettyProtobufWebsocketClient.MessageBase.AddressReq)
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder {
+                public static final com.google.protobuf.Descriptors.Descriptor
+                getDescriptor() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_AddressReq_descriptor;
+                }
+
+                @java.lang.Override
+                protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+                internalGetFieldAccessorTable() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_AddressReq_fieldAccessorTable
+                            .ensureFieldAccessorsInitialized(
+                                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder.class);
+                }
+
+                // Construct using com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.newBuilder()
+                private Builder() {
+                    maybeForceBuilderInitialization();
+                }
+
+                private Builder(
+                        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                    super(parent);
+                    maybeForceBuilderInitialization();
+                }
+                private void maybeForceBuilderInitialization() {
+                    if (com.google.protobuf.GeneratedMessageV3
+                            .alwaysUseFieldBuilders) {
+                    }
+                }
+                @java.lang.Override
+                public Builder clear() {
+                    super.clear();
+                    userId_ = "";
+
+                    consignee_ = "";
+
+                    phone_ = "";
+
+                    sex_ = "";
+
+                    provinceName_ = "";
+
+                    cityName_ = "";
+
+                    districtName_ = "";
+
+                    detail_ = "";
+
+                    label_ = "";
+
+                    isDefault_ = "";
+
+                    createTime_ = "";
+
+                    updateTime_ = "";
+
+                    createUser_ = "";
+
+                    updateUser_ = "";
+
+                    isDeleted_ = "";
+
+                    id_ = "";
+
+                    return this;
+                }
+
+                @java.lang.Override
+                public com.google.protobuf.Descriptors.Descriptor
+                getDescriptorForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_AddressReq_descriptor;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq getDefaultInstanceForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.getDefaultInstance();
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq build() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq result = buildPartial();
+                    if (!result.isInitialized()) {
+                        throw newUninitializedMessageException(result);
+                    }
+                    return result;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq buildPartial() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq result = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq(this);
+                    result.userId_ = userId_;
+                    result.consignee_ = consignee_;
+                    result.phone_ = phone_;
+                    result.sex_ = sex_;
+                    result.provinceName_ = provinceName_;
+                    result.cityName_ = cityName_;
+                    result.districtName_ = districtName_;
+                    result.detail_ = detail_;
+                    result.label_ = label_;
+                    result.isDefault_ = isDefault_;
+                    result.createTime_ = createTime_;
+                    result.updateTime_ = updateTime_;
+                    result.createUser_ = createUser_;
+                    result.updateUser_ = updateUser_;
+                    result.isDeleted_ = isDeleted_;
+                    result.id_ = id_;
+                    onBuilt();
+                    return result;
+                }
+
+                @java.lang.Override
+                public Builder clone() {
+                    return super.clone();
+                }
+                @java.lang.Override
+                public Builder setField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.setField(field, value);
+                }
+                @java.lang.Override
+                public Builder clearField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field) {
+                    return super.clearField(field);
+                }
+                @java.lang.Override
+                public Builder clearOneof(
+                        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+                    return super.clearOneof(oneof);
+                }
+                @java.lang.Override
+                public Builder setRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        int index, java.lang.Object value) {
+                    return super.setRepeatedField(field, index, value);
+                }
+                @java.lang.Override
+                public Builder addRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.addRepeatedField(field, value);
+                }
+                @java.lang.Override
+                public Builder mergeFrom(com.google.protobuf.Message other) {
+                    if (other instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq) {
+                        return mergeFrom((com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq)other);
+                    } else {
+                        super.mergeFrom(other);
+                        return this;
+                    }
+                }
+
+                public Builder mergeFrom(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq other) {
+                    if (other == com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.getDefaultInstance()) return this;
+                    if (!other.getUserId().isEmpty()) {
+                        userId_ = other.userId_;
+                        onChanged();
+                    }
+                    if (!other.getConsignee().isEmpty()) {
+                        consignee_ = other.consignee_;
+                        onChanged();
+                    }
+                    if (!other.getPhone().isEmpty()) {
+                        phone_ = other.phone_;
+                        onChanged();
+                    }
+                    if (!other.getSex().isEmpty()) {
+                        sex_ = other.sex_;
+                        onChanged();
+                    }
+                    if (!other.getProvinceName().isEmpty()) {
+                        provinceName_ = other.provinceName_;
+                        onChanged();
+                    }
+                    if (!other.getCityName().isEmpty()) {
+                        cityName_ = other.cityName_;
+                        onChanged();
+                    }
+                    if (!other.getDistrictName().isEmpty()) {
+                        districtName_ = other.districtName_;
+                        onChanged();
+                    }
+                    if (!other.getDetail().isEmpty()) {
+                        detail_ = other.detail_;
+                        onChanged();
+                    }
+                    if (!other.getLabel().isEmpty()) {
+                        label_ = other.label_;
+                        onChanged();
+                    }
+                    if (!other.getIsDefault().isEmpty()) {
+                        isDefault_ = other.isDefault_;
+                        onChanged();
+                    }
+                    if (!other.getCreateTime().isEmpty()) {
+                        createTime_ = other.createTime_;
+                        onChanged();
+                    }
+                    if (!other.getUpdateTime().isEmpty()) {
+                        updateTime_ = other.updateTime_;
+                        onChanged();
+                    }
+                    if (!other.getCreateUser().isEmpty()) {
+                        createUser_ = other.createUser_;
+                        onChanged();
+                    }
+                    if (!other.getUpdateUser().isEmpty()) {
+                        updateUser_ = other.updateUser_;
+                        onChanged();
+                    }
+                    if (!other.getIsDeleted().isEmpty()) {
+                        isDeleted_ = other.isDeleted_;
+                        onChanged();
+                    }
+                    if (!other.getId().isEmpty()) {
+                        id_ = other.id_;
+                        onChanged();
+                    }
+                    this.mergeUnknownFields(other.unknownFields);
+                    onChanged();
+                    return this;
+                }
+
+                @java.lang.Override
+                public final boolean isInitialized() {
+                    return true;
+                }
+
+                @java.lang.Override
+                public Builder mergeFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws java.io.IOException {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq parsedMessage = null;
+                    try {
+                        parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                        parsedMessage = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq) e.getUnfinishedMessage();
+                        throw e.unwrapIOException();
+                    } finally {
+                        if (parsedMessage != null) {
+                            mergeFrom(parsedMessage);
+                        }
+                    }
+                    return this;
+                }
+
+                private java.lang.Object userId_ = "";
+                /**
+                 * <pre>
+                 *用户id
+                 * </pre>
+                 *
+                 * <code>string userId = 1;</code>
+                 */
+                public java.lang.String getUserId() {
+                    java.lang.Object ref = userId_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        userId_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *用户id
+                 * </pre>
+                 *
+                 * <code>string userId = 1;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getUserIdBytes() {
+                    java.lang.Object ref = userId_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        userId_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *用户id
+                 * </pre>
+                 *
+                 * <code>string userId = 1;</code>
+                 */
+                public Builder setUserId(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    userId_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *用户id
+                 * </pre>
+                 *
+                 * <code>string userId = 1;</code>
+                 */
+                public Builder clearUserId() {
+
+                    userId_ = getDefaultInstance().getUserId();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *用户id
+                 * </pre>
+                 *
+                 * <code>string userId = 1;</code>
+                 */
+                public Builder setUserIdBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    userId_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object consignee_ = "";
+                /**
+                 * <pre>
+                 *收货人
+                 * </pre>
+                 *
+                 * <code>string consignee = 2;</code>
+                 */
+                public java.lang.String getConsignee() {
+                    java.lang.Object ref = consignee_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        consignee_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *收货人
+                 * </pre>
+                 *
+                 * <code>string consignee = 2;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getConsigneeBytes() {
+                    java.lang.Object ref = consignee_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        consignee_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *收货人
+                 * </pre>
+                 *
+                 * <code>string consignee = 2;</code>
+                 */
+                public Builder setConsignee(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    consignee_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *收货人
+                 * </pre>
+                 *
+                 * <code>string consignee = 2;</code>
+                 */
+                public Builder clearConsignee() {
+
+                    consignee_ = getDefaultInstance().getConsignee();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *收货人
+                 * </pre>
+                 *
+                 * <code>string consignee = 2;</code>
+                 */
+                public Builder setConsigneeBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    consignee_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object phone_ = "";
+                /**
+                 * <pre>
+                 *手机号
+                 * </pre>
+                 *
+                 * <code>string phone = 3;</code>
+                 */
+                public java.lang.String getPhone() {
+                    java.lang.Object ref = phone_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        phone_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *手机号
+                 * </pre>
+                 *
+                 * <code>string phone = 3;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getPhoneBytes() {
+                    java.lang.Object ref = phone_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        phone_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *手机号
+                 * </pre>
+                 *
+                 * <code>string phone = 3;</code>
+                 */
+                public Builder setPhone(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    phone_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *手机号
+                 * </pre>
+                 *
+                 * <code>string phone = 3;</code>
+                 */
+                public Builder clearPhone() {
+
+                    phone_ = getDefaultInstance().getPhone();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *手机号
+                 * </pre>
+                 *
+                 * <code>string phone = 3;</code>
+                 */
+                public Builder setPhoneBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    phone_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object sex_ = "";
+                /**
+                 * <pre>
+                 *性别
+                 * </pre>
+                 *
+                 * <code>string sex = 4;</code>
+                 */
+                public java.lang.String getSex() {
+                    java.lang.Object ref = sex_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        sex_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *性别
+                 * </pre>
+                 *
+                 * <code>string sex = 4;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getSexBytes() {
+                    java.lang.Object ref = sex_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        sex_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *性别
+                 * </pre>
+                 *
+                 * <code>string sex = 4;</code>
+                 */
+                public Builder setSex(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    sex_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *性别
+                 * </pre>
+                 *
+                 * <code>string sex = 4;</code>
+                 */
+                public Builder clearSex() {
+
+                    sex_ = getDefaultInstance().getSex();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *性别
+                 * </pre>
+                 *
+                 * <code>string sex = 4;</code>
+                 */
+                public Builder setSexBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    sex_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object provinceName_ = "";
+                /**
+                 * <pre>
+                 *省级名称
+                 * </pre>
+                 *
+                 * <code>string provinceName = 5;</code>
+                 */
+                public java.lang.String getProvinceName() {
+                    java.lang.Object ref = provinceName_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        provinceName_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *省级名称
+                 * </pre>
+                 *
+                 * <code>string provinceName = 5;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getProvinceNameBytes() {
+                    java.lang.Object ref = provinceName_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        provinceName_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *省级名称
+                 * </pre>
+                 *
+                 * <code>string provinceName = 5;</code>
+                 */
+                public Builder setProvinceName(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    provinceName_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *省级名称
+                 * </pre>
+                 *
+                 * <code>string provinceName = 5;</code>
+                 */
+                public Builder clearProvinceName() {
+
+                    provinceName_ = getDefaultInstance().getProvinceName();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *省级名称
+                 * </pre>
+                 *
+                 * <code>string provinceName = 5;</code>
+                 */
+                public Builder setProvinceNameBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    provinceName_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object cityName_ = "";
+                /**
+                 * <pre>
+                 *市级名称
+                 * </pre>
+                 *
+                 * <code>string cityName = 6;</code>
+                 */
+                public java.lang.String getCityName() {
+                    java.lang.Object ref = cityName_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        cityName_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *市级名称
+                 * </pre>
+                 *
+                 * <code>string cityName = 6;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getCityNameBytes() {
+                    java.lang.Object ref = cityName_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        cityName_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *市级名称
+                 * </pre>
+                 *
+                 * <code>string cityName = 6;</code>
+                 */
+                public Builder setCityName(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    cityName_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *市级名称
+                 * </pre>
+                 *
+                 * <code>string cityName = 6;</code>
+                 */
+                public Builder clearCityName() {
+
+                    cityName_ = getDefaultInstance().getCityName();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *市级名称
+                 * </pre>
+                 *
+                 * <code>string cityName = 6;</code>
+                 */
+                public Builder setCityNameBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    cityName_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object districtName_ = "";
+                /**
+                 * <pre>
+                 *区级名称
+                 * </pre>
+                 *
+                 * <code>string districtName = 7;</code>
+                 */
+                public java.lang.String getDistrictName() {
+                    java.lang.Object ref = districtName_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        districtName_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *区级名称
+                 * </pre>
+                 *
+                 * <code>string districtName = 7;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getDistrictNameBytes() {
+                    java.lang.Object ref = districtName_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        districtName_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *区级名称
+                 * </pre>
+                 *
+                 * <code>string districtName = 7;</code>
+                 */
+                public Builder setDistrictName(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    districtName_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *区级名称
+                 * </pre>
+                 *
+                 * <code>string districtName = 7;</code>
+                 */
+                public Builder clearDistrictName() {
+
+                    districtName_ = getDefaultInstance().getDistrictName();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *区级名称
+                 * </pre>
+                 *
+                 * <code>string districtName = 7;</code>
+                 */
+                public Builder setDistrictNameBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    districtName_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object detail_ = "";
+                /**
+                 * <pre>
+                 *详细地址
+                 * </pre>
+                 *
+                 * <code>string detail = 8;</code>
+                 */
+                public java.lang.String getDetail() {
+                    java.lang.Object ref = detail_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        detail_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *详细地址
+                 * </pre>
+                 *
+                 * <code>string detail = 8;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getDetailBytes() {
+                    java.lang.Object ref = detail_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        detail_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *详细地址
+                 * </pre>
+                 *
+                 * <code>string detail = 8;</code>
+                 */
+                public Builder setDetail(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    detail_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *详细地址
+                 * </pre>
+                 *
+                 * <code>string detail = 8;</code>
+                 */
+                public Builder clearDetail() {
+
+                    detail_ = getDefaultInstance().getDetail();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *详细地址
+                 * </pre>
+                 *
+                 * <code>string detail = 8;</code>
+                 */
+                public Builder setDetailBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    detail_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object label_ = "";
+                /**
+                 * <pre>
+                 *标签
+                 * </pre>
+                 *
+                 * <code>string label = 9;</code>
+                 */
+                public java.lang.String getLabel() {
+                    java.lang.Object ref = label_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        label_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *标签
+                 * </pre>
+                 *
+                 * <code>string label = 9;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getLabelBytes() {
+                    java.lang.Object ref = label_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        label_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *标签
+                 * </pre>
+                 *
+                 * <code>string label = 9;</code>
+                 */
+                public Builder setLabel(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    label_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *标签
+                 * </pre>
+                 *
+                 * <code>string label = 9;</code>
+                 */
+                public Builder clearLabel() {
+
+                    label_ = getDefaultInstance().getLabel();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *标签
+                 * </pre>
+                 *
+                 * <code>string label = 9;</code>
+                 */
+                public Builder setLabelBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    label_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object isDefault_ = "";
+                /**
+                 * <pre>
+                 *默认
+                 * </pre>
+                 *
+                 * <code>string isDefault = 10;</code>
+                 */
+                public java.lang.String getIsDefault() {
+                    java.lang.Object ref = isDefault_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        isDefault_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *默认
+                 * </pre>
+                 *
+                 * <code>string isDefault = 10;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getIsDefaultBytes() {
+                    java.lang.Object ref = isDefault_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        isDefault_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *默认
+                 * </pre>
+                 *
+                 * <code>string isDefault = 10;</code>
+                 */
+                public Builder setIsDefault(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    isDefault_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *默认
+                 * </pre>
+                 *
+                 * <code>string isDefault = 10;</code>
+                 */
+                public Builder clearIsDefault() {
+
+                    isDefault_ = getDefaultInstance().getIsDefault();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *默认
+                 * </pre>
+                 *
+                 * <code>string isDefault = 10;</code>
+                 */
+                public Builder setIsDefaultBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    isDefault_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object createTime_ = "";
+                /**
+                 * <pre>
+                 *创建时间
+                 * </pre>
+                 *
+                 * <code>string createTime = 11;</code>
+                 */
+                public java.lang.String getCreateTime() {
+                    java.lang.Object ref = createTime_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        createTime_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *创建时间
+                 * </pre>
+                 *
+                 * <code>string createTime = 11;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getCreateTimeBytes() {
+                    java.lang.Object ref = createTime_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        createTime_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *创建时间
+                 * </pre>
+                 *
+                 * <code>string createTime = 11;</code>
+                 */
+                public Builder setCreateTime(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    createTime_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *创建时间
+                 * </pre>
+                 *
+                 * <code>string createTime = 11;</code>
+                 */
+                public Builder clearCreateTime() {
+
+                    createTime_ = getDefaultInstance().getCreateTime();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *创建时间
+                 * </pre>
+                 *
+                 * <code>string createTime = 11;</code>
+                 */
+                public Builder setCreateTimeBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    createTime_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object updateTime_ = "";
+                /**
+                 * <pre>
+                 *更新时间
+                 * </pre>
+                 *
+                 * <code>string updateTime = 12;</code>
+                 */
+                public java.lang.String getUpdateTime() {
+                    java.lang.Object ref = updateTime_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        updateTime_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *更新时间
+                 * </pre>
+                 *
+                 * <code>string updateTime = 12;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getUpdateTimeBytes() {
+                    java.lang.Object ref = updateTime_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        updateTime_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *更新时间
+                 * </pre>
+                 *
+                 * <code>string updateTime = 12;</code>
+                 */
+                public Builder setUpdateTime(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    updateTime_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *更新时间
+                 * </pre>
+                 *
+                 * <code>string updateTime = 12;</code>
+                 */
+                public Builder clearUpdateTime() {
+
+                    updateTime_ = getDefaultInstance().getUpdateTime();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *更新时间
+                 * </pre>
+                 *
+                 * <code>string updateTime = 12;</code>
+                 */
+                public Builder setUpdateTimeBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    updateTime_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object createUser_ = "";
+                /**
+                 * <pre>
+                 *创建人
+                 * </pre>
+                 *
+                 * <code>string createUser = 13;</code>
+                 */
+                public java.lang.String getCreateUser() {
+                    java.lang.Object ref = createUser_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        createUser_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *创建人
+                 * </pre>
+                 *
+                 * <code>string createUser = 13;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getCreateUserBytes() {
+                    java.lang.Object ref = createUser_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        createUser_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *创建人
+                 * </pre>
+                 *
+                 * <code>string createUser = 13;</code>
+                 */
+                public Builder setCreateUser(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    createUser_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *创建人
+                 * </pre>
+                 *
+                 * <code>string createUser = 13;</code>
+                 */
+                public Builder clearCreateUser() {
+
+                    createUser_ = getDefaultInstance().getCreateUser();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *创建人
+                 * </pre>
+                 *
+                 * <code>string createUser = 13;</code>
+                 */
+                public Builder setCreateUserBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    createUser_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object updateUser_ = "";
+                /**
+                 * <pre>
+                 *修改人
+                 * </pre>
+                 *
+                 * <code>string updateUser = 14;</code>
+                 */
+                public java.lang.String getUpdateUser() {
+                    java.lang.Object ref = updateUser_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        updateUser_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *修改人
+                 * </pre>
+                 *
+                 * <code>string updateUser = 14;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getUpdateUserBytes() {
+                    java.lang.Object ref = updateUser_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        updateUser_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *修改人
+                 * </pre>
+                 *
+                 * <code>string updateUser = 14;</code>
+                 */
+                public Builder setUpdateUser(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    updateUser_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *修改人
+                 * </pre>
+                 *
+                 * <code>string updateUser = 14;</code>
+                 */
+                public Builder clearUpdateUser() {
+
+                    updateUser_ = getDefaultInstance().getUpdateUser();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *修改人
+                 * </pre>
+                 *
+                 * <code>string updateUser = 14;</code>
+                 */
+                public Builder setUpdateUserBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    updateUser_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object isDeleted_ = "";
+                /**
+                 * <pre>
+                 *是否删除
+                 * </pre>
+                 *
+                 * <code>string isDeleted = 15;</code>
+                 */
+                public java.lang.String getIsDeleted() {
+                    java.lang.Object ref = isDeleted_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        isDeleted_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *是否删除
+                 * </pre>
+                 *
+                 * <code>string isDeleted = 15;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getIsDeletedBytes() {
+                    java.lang.Object ref = isDeleted_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        isDeleted_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *是否删除
+                 * </pre>
+                 *
+                 * <code>string isDeleted = 15;</code>
+                 */
+                public Builder setIsDeleted(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    isDeleted_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *是否删除
+                 * </pre>
+                 *
+                 * <code>string isDeleted = 15;</code>
+                 */
+                public Builder clearIsDeleted() {
+
+                    isDeleted_ = getDefaultInstance().getIsDeleted();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *是否删除
+                 * </pre>
+                 *
+                 * <code>string isDeleted = 15;</code>
+                 */
+                public Builder setIsDeletedBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    isDeleted_ = value;
+                    onChanged();
+                    return this;
+                }
+
+                private java.lang.Object id_ = "";
+                /**
+                 * <pre>
+                 *地址表主键
+                 * </pre>
+                 *
+                 * <code>string id = 16;</code>
+                 */
+                public java.lang.String getId() {
+                    java.lang.Object ref = id_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        id_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *地址表主键
+                 * </pre>
+                 *
+                 * <code>string id = 16;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getIdBytes() {
+                    java.lang.Object ref = id_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        id_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *地址表主键
+                 * </pre>
+                 *
+                 * <code>string id = 16;</code>
+                 */
+                public Builder setId(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    id_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表主键
+                 * </pre>
+                 *
+                 * <code>string id = 16;</code>
+                 */
+                public Builder clearId() {
+
+                    id_ = getDefaultInstance().getId();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表主键
+                 * </pre>
+                 *
+                 * <code>string id = 16;</code>
+                 */
+                public Builder setIdBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    id_ = value;
+                    onChanged();
+                    return this;
+                }
+                @java.lang.Override
+                public final Builder setUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.setUnknownFields(unknownFields);
+                }
+
+                @java.lang.Override
+                public final Builder mergeUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.mergeUnknownFields(unknownFields);
+                }
+
+
+                // @@protoc_insertion_point(builder_scope:NettyProtobufWebsocketClient.MessageBase.AddressReq)
+            }
+
+            // @@protoc_insertion_point(class_scope:NettyProtobufWebsocketClient.MessageBase.AddressReq)
+            private static final com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq DEFAULT_INSTANCE;
+            static {
+                DEFAULT_INSTANCE = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq();
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq getDefaultInstance() {
+                return DEFAULT_INSTANCE;
+            }
+
+            private static final com.google.protobuf.Parser<AddressReq>
+                    PARSER = new com.google.protobuf.AbstractParser<AddressReq>() {
+                @java.lang.Override
+                public AddressReq parsePartialFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws com.google.protobuf.InvalidProtocolBufferException {
+                    return new AddressReq(input, extensionRegistry);
+                }
+            };
+
+            public static com.google.protobuf.Parser<AddressReq> parser() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.google.protobuf.Parser<AddressReq> getParserForType() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq getDefaultInstanceForType() {
+                return DEFAULT_INSTANCE;
+            }
+
+        }
+
+        public interface AddressRespOrBuilder extends
+                // @@protoc_insertion_point(interface_extends:NettyProtobufWebsocketClient.MessageBase.AddressResp)
+                com.google.protobuf.MessageOrBuilder {
+
+            /**
+             * <pre>
+             *状态码1为添加修改删除成功，0为失败
+             * </pre>
+             *
+             * <code>string status = 1;</code>
+             */
+            java.lang.String getStatus();
+            /**
+             * <pre>
+             *状态码1为添加修改删除成功，0为失败
+             * </pre>
+             *
+             * <code>string status = 1;</code>
+             */
+            com.google.protobuf.ByteString
+            getStatusBytes();
+        }
+        /**
+         * <pre>
+         *添加、修改、删除收货地址响应
+         * </pre>
+         *
+         * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.AddressResp}
+         */
+        public  static final class AddressResp extends
+                com.google.protobuf.GeneratedMessageV3 implements
+                // @@protoc_insertion_point(message_implements:NettyProtobufWebsocketClient.MessageBase.AddressResp)
+                AddressRespOrBuilder {
+            private static final long serialVersionUID = 0L;
+            // Use AddressResp.newBuilder() to construct.
+            private AddressResp(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+                super(builder);
+            }
+            private AddressResp() {
+                status_ = "";
+            }
+
+            @java.lang.Override
+            public final com.google.protobuf.UnknownFieldSet
+            getUnknownFields() {
+                return this.unknownFields;
+            }
+            private AddressResp(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                this();
+                if (extensionRegistry == null) {
+                    throw new java.lang.NullPointerException();
+                }
+                int mutable_bitField0_ = 0;
+                com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                        com.google.protobuf.UnknownFieldSet.newBuilder();
+                try {
+                    boolean done = false;
+                    while (!done) {
+                        int tag = input.readTag();
+                        switch (tag) {
+                            case 0:
+                                done = true;
+                                break;
+                            case 10: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                status_ = s;
+                                break;
+                            }
+                            default: {
+                                if (!parseUnknownField(
+                                        input, unknownFields, extensionRegistry, tag)) {
+                                    done = true;
+                                }
+                                break;
+                            }
+                        }
+                    }
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    throw e.setUnfinishedMessage(this);
+                } catch (java.io.IOException e) {
+                    throw new com.google.protobuf.InvalidProtocolBufferException(
+                            e).setUnfinishedMessage(this);
+                } finally {
+                    this.unknownFields = unknownFields.build();
+                    makeExtensionsImmutable();
+                }
+            }
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_AddressResp_descriptor;
+            }
+
+            @java.lang.Override
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_AddressResp_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.Builder.class);
+            }
+
+            public static final int STATUS_FIELD_NUMBER = 1;
+            private volatile java.lang.Object status_;
+            /**
+             * <pre>
+             *状态码1为添加修改删除成功，0为失败
+             * </pre>
+             *
+             * <code>string status = 1;</code>
+             */
+            public java.lang.String getStatus() {
+                java.lang.Object ref = status_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    status_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *状态码1为添加修改删除成功，0为失败
+             * </pre>
+             *
+             * <code>string status = 1;</code>
+             */
+            public com.google.protobuf.ByteString
+            getStatusBytes() {
+                java.lang.Object ref = status_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    status_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            private byte memoizedIsInitialized = -1;
+            @java.lang.Override
+            public final boolean isInitialized() {
+                byte isInitialized = memoizedIsInitialized;
+                if (isInitialized == 1) return true;
+                if (isInitialized == 0) return false;
+
+                memoizedIsInitialized = 1;
+                return true;
+            }
+
+            @java.lang.Override
+            public void writeTo(com.google.protobuf.CodedOutputStream output)
+                    throws java.io.IOException {
+                if (!getStatusBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 1, status_);
+                }
+                unknownFields.writeTo(output);
+            }
+
+            @java.lang.Override
+            public int getSerializedSize() {
+                int size = memoizedSize;
+                if (size != -1) return size;
+
+                size = 0;
+                if (!getStatusBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, status_);
+                }
+                size += unknownFields.getSerializedSize();
+                memoizedSize = size;
+                return size;
+            }
+
+            @java.lang.Override
+            public boolean equals(final java.lang.Object obj) {
+                if (obj == this) {
+                    return true;
+                }
+                if (!(obj instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp)) {
+                    return super.equals(obj);
+                }
+                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp other = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp) obj;
+
+                if (!getStatus()
+                        .equals(other.getStatus())) return false;
+                if (!unknownFields.equals(other.unknownFields)) return false;
+                return true;
+            }
+
+            @java.lang.Override
+            public int hashCode() {
+                if (memoizedHashCode != 0) {
+                    return memoizedHashCode;
+                }
+                int hash = 41;
+                hash = (19 * hash) + getDescriptor().hashCode();
+                hash = (37 * hash) + STATUS_FIELD_NUMBER;
+                hash = (53 * hash) + getStatus().hashCode();
+                hash = (29 * hash) + unknownFields.hashCode();
+                memoizedHashCode = hash;
+                return hash;
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp parseFrom(
+                    java.nio.ByteBuffer data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp parseFrom(
+                    java.nio.ByteBuffer data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp parseFrom(
+                    com.google.protobuf.ByteString data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp parseFrom(
+                    com.google.protobuf.ByteString data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp parseFrom(byte[] data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp parseFrom(
+                    byte[] data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp parseFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp parseFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp parseDelimitedFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp parseDelimitedFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp parseFrom(
+                    com.google.protobuf.CodedInputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp parseFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+
+            @java.lang.Override
+            public Builder newBuilderForType() { return newBuilder(); }
+            public static Builder newBuilder() {
+                return DEFAULT_INSTANCE.toBuilder();
+            }
+            public static Builder newBuilder(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp prototype) {
+                return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+            }
+            @java.lang.Override
+            public Builder toBuilder() {
+                return this == DEFAULT_INSTANCE
+                        ? new Builder() : new Builder().mergeFrom(this);
+            }
+
+            @java.lang.Override
+            protected Builder newBuilderForType(
+                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                Builder builder = new Builder(parent);
+                return builder;
+            }
+            /**
+             * <pre>
+             *添加、修改、删除收货地址响应
+             * </pre>
+             *
+             * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.AddressResp}
+             */
+            public static final class Builder extends
+                    com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+                    // @@protoc_insertion_point(builder_implements:NettyProtobufWebsocketClient.MessageBase.AddressResp)
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressRespOrBuilder {
+                public static final com.google.protobuf.Descriptors.Descriptor
+                getDescriptor() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_AddressResp_descriptor;
+                }
+
+                @java.lang.Override
+                protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+                internalGetFieldAccessorTable() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_AddressResp_fieldAccessorTable
+                            .ensureFieldAccessorsInitialized(
+                                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.Builder.class);
+                }
+
+                // Construct using com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.newBuilder()
+                private Builder() {
+                    maybeForceBuilderInitialization();
+                }
+
+                private Builder(
+                        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                    super(parent);
+                    maybeForceBuilderInitialization();
+                }
+                private void maybeForceBuilderInitialization() {
+                    if (com.google.protobuf.GeneratedMessageV3
+                            .alwaysUseFieldBuilders) {
+                    }
+                }
+                @java.lang.Override
+                public Builder clear() {
+                    super.clear();
+                    status_ = "";
+
+                    return this;
+                }
+
+                @java.lang.Override
+                public com.google.protobuf.Descriptors.Descriptor
+                getDescriptorForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_AddressResp_descriptor;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp getDefaultInstanceForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.getDefaultInstance();
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp build() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp result = buildPartial();
+                    if (!result.isInitialized()) {
+                        throw newUninitializedMessageException(result);
+                    }
+                    return result;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp buildPartial() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp result = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp(this);
+                    result.status_ = status_;
+                    onBuilt();
+                    return result;
+                }
+
+                @java.lang.Override
+                public Builder clone() {
+                    return super.clone();
+                }
+                @java.lang.Override
+                public Builder setField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.setField(field, value);
+                }
+                @java.lang.Override
+                public Builder clearField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field) {
+                    return super.clearField(field);
+                }
+                @java.lang.Override
+                public Builder clearOneof(
+                        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+                    return super.clearOneof(oneof);
+                }
+                @java.lang.Override
+                public Builder setRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        int index, java.lang.Object value) {
+                    return super.setRepeatedField(field, index, value);
+                }
+                @java.lang.Override
+                public Builder addRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.addRepeatedField(field, value);
+                }
+                @java.lang.Override
+                public Builder mergeFrom(com.google.protobuf.Message other) {
+                    if (other instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp) {
+                        return mergeFrom((com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp)other);
+                    } else {
+                        super.mergeFrom(other);
+                        return this;
+                    }
+                }
+
+                public Builder mergeFrom(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp other) {
+                    if (other == com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.getDefaultInstance()) return this;
+                    if (!other.getStatus().isEmpty()) {
+                        status_ = other.status_;
+                        onChanged();
+                    }
+                    this.mergeUnknownFields(other.unknownFields);
+                    onChanged();
+                    return this;
+                }
+
+                @java.lang.Override
+                public final boolean isInitialized() {
+                    return true;
+                }
+
+                @java.lang.Override
+                public Builder mergeFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws java.io.IOException {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp parsedMessage = null;
+                    try {
+                        parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                        parsedMessage = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp) e.getUnfinishedMessage();
+                        throw e.unwrapIOException();
+                    } finally {
+                        if (parsedMessage != null) {
+                            mergeFrom(parsedMessage);
+                        }
+                    }
+                    return this;
+                }
+
+                private java.lang.Object status_ = "";
+                /**
+                 * <pre>
+                 *状态码1为添加修改删除成功，0为失败
+                 * </pre>
+                 *
+                 * <code>string status = 1;</code>
+                 */
+                public java.lang.String getStatus() {
+                    java.lang.Object ref = status_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        status_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *状态码1为添加修改删除成功，0为失败
+                 * </pre>
+                 *
+                 * <code>string status = 1;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getStatusBytes() {
+                    java.lang.Object ref = status_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        status_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *状态码1为添加修改删除成功，0为失败
+                 * </pre>
+                 *
+                 * <code>string status = 1;</code>
+                 */
+                public Builder setStatus(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    status_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *状态码1为添加修改删除成功，0为失败
+                 * </pre>
+                 *
+                 * <code>string status = 1;</code>
+                 */
+                public Builder clearStatus() {
+
+                    status_ = getDefaultInstance().getStatus();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *状态码1为添加修改删除成功，0为失败
+                 * </pre>
+                 *
+                 * <code>string status = 1;</code>
+                 */
+                public Builder setStatusBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    status_ = value;
+                    onChanged();
+                    return this;
+                }
+                @java.lang.Override
+                public final Builder setUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.setUnknownFields(unknownFields);
+                }
+
+                @java.lang.Override
+                public final Builder mergeUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.mergeUnknownFields(unknownFields);
+                }
+
+
+                // @@protoc_insertion_point(builder_scope:NettyProtobufWebsocketClient.MessageBase.AddressResp)
+            }
+
+            // @@protoc_insertion_point(class_scope:NettyProtobufWebsocketClient.MessageBase.AddressResp)
+            private static final com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp DEFAULT_INSTANCE;
+            static {
+                DEFAULT_INSTANCE = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp();
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp getDefaultInstance() {
+                return DEFAULT_INSTANCE;
+            }
+
+            private static final com.google.protobuf.Parser<AddressResp>
+                    PARSER = new com.google.protobuf.AbstractParser<AddressResp>() {
+                @java.lang.Override
+                public AddressResp parsePartialFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws com.google.protobuf.InvalidProtocolBufferException {
+                    return new AddressResp(input, extensionRegistry);
+                }
+            };
+
+            public static com.google.protobuf.Parser<AddressResp> parser() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.google.protobuf.Parser<AddressResp> getParserForType() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp getDefaultInstanceForType() {
+                return DEFAULT_INSTANCE;
+            }
+
+        }
+
+        public interface UpdateAddressReqOrBuilder extends
+                // @@protoc_insertion_point(interface_extends:NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq)
+                com.google.protobuf.MessageOrBuilder {
+
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq>
+            getAddressReqList();
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq getAddressReq(int index);
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            int getAddressReqCount();
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            java.util.List<? extends com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder>
+            getAddressReqOrBuilderList();
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder getAddressReqOrBuilder(
+                    int index);
+        }
+        /**
+         * <pre>
+         *修改收货地址请求
+         * </pre>
+         *
+         * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq}
+         */
+        public  static final class UpdateAddressReq extends
+                com.google.protobuf.GeneratedMessageV3 implements
+                // @@protoc_insertion_point(message_implements:NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq)
+                UpdateAddressReqOrBuilder {
+            private static final long serialVersionUID = 0L;
+            // Use UpdateAddressReq.newBuilder() to construct.
+            private UpdateAddressReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+                super(builder);
+            }
+            private UpdateAddressReq() {
+                addressReq_ = java.util.Collections.emptyList();
+            }
+
+            @java.lang.Override
+            public final com.google.protobuf.UnknownFieldSet
+            getUnknownFields() {
+                return this.unknownFields;
+            }
+            private UpdateAddressReq(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                this();
+                if (extensionRegistry == null) {
+                    throw new java.lang.NullPointerException();
+                }
+                int mutable_bitField0_ = 0;
+                com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                        com.google.protobuf.UnknownFieldSet.newBuilder();
+                try {
+                    boolean done = false;
+                    while (!done) {
+                        int tag = input.readTag();
+                        switch (tag) {
+                            case 0:
+                                done = true;
+                                break;
+                            case 10: {
+                                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                                    addressReq_ = new java.util.ArrayList<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq>();
+                                    mutable_bitField0_ |= 0x00000001;
+                                }
+                                addressReq_.add(
+                                        input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.parser(), extensionRegistry));
+                                break;
+                            }
+                            default: {
+                                if (!parseUnknownField(
+                                        input, unknownFields, extensionRegistry, tag)) {
+                                    done = true;
+                                }
+                                break;
+                            }
+                        }
+                    }
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    throw e.setUnfinishedMessage(this);
+                } catch (java.io.IOException e) {
+                    throw new com.google.protobuf.InvalidProtocolBufferException(
+                            e).setUnfinishedMessage(this);
+                } finally {
+                    if (((mutable_bitField0_ & 0x00000001) != 0)) {
+                        addressReq_ = java.util.Collections.unmodifiableList(addressReq_);
+                    }
+                    this.unknownFields = unknownFields.build();
+                    makeExtensionsImmutable();
+                }
+            }
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_UpdateAddressReq_descriptor;
+            }
+
+            @java.lang.Override
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_UpdateAddressReq_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.Builder.class);
+            }
+
+            public static final int ADDRESSREQ_FIELD_NUMBER = 1;
+            private java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq> addressReq_;
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            public java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq> getAddressReqList() {
+                return addressReq_;
+            }
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            public java.util.List<? extends com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder>
+            getAddressReqOrBuilderList() {
+                return addressReq_;
+            }
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            public int getAddressReqCount() {
+                return addressReq_.size();
+            }
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq getAddressReq(int index) {
+                return addressReq_.get(index);
+            }
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder getAddressReqOrBuilder(
+                    int index) {
+                return addressReq_.get(index);
+            }
+
+            private byte memoizedIsInitialized = -1;
+            @java.lang.Override
+            public final boolean isInitialized() {
+                byte isInitialized = memoizedIsInitialized;
+                if (isInitialized == 1) return true;
+                if (isInitialized == 0) return false;
+
+                memoizedIsInitialized = 1;
+                return true;
+            }
+
+            @java.lang.Override
+            public void writeTo(com.google.protobuf.CodedOutputStream output)
+                    throws java.io.IOException {
+                for (int i = 0; i < addressReq_.size(); i++) {
+                    output.writeMessage(1, addressReq_.get(i));
+                }
+                unknownFields.writeTo(output);
+            }
+
+            @java.lang.Override
+            public int getSerializedSize() {
+                int size = memoizedSize;
+                if (size != -1) return size;
+
+                size = 0;
+                for (int i = 0; i < addressReq_.size(); i++) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeMessageSize(1, addressReq_.get(i));
+                }
+                size += unknownFields.getSerializedSize();
+                memoizedSize = size;
+                return size;
+            }
+
+            @java.lang.Override
+            public boolean equals(final java.lang.Object obj) {
+                if (obj == this) {
+                    return true;
+                }
+                if (!(obj instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq)) {
+                    return super.equals(obj);
+                }
+                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq other = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq) obj;
+
+                if (!getAddressReqList()
+                        .equals(other.getAddressReqList())) return false;
+                if (!unknownFields.equals(other.unknownFields)) return false;
+                return true;
+            }
+
+            @java.lang.Override
+            public int hashCode() {
+                if (memoizedHashCode != 0) {
+                    return memoizedHashCode;
+                }
+                int hash = 41;
+                hash = (19 * hash) + getDescriptor().hashCode();
+                if (getAddressReqCount() > 0) {
+                    hash = (37 * hash) + ADDRESSREQ_FIELD_NUMBER;
+                    hash = (53 * hash) + getAddressReqList().hashCode();
+                }
+                hash = (29 * hash) + unknownFields.hashCode();
+                memoizedHashCode = hash;
+                return hash;
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq parseFrom(
+                    java.nio.ByteBuffer data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq parseFrom(
+                    java.nio.ByteBuffer data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq parseFrom(
+                    com.google.protobuf.ByteString data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq parseFrom(
+                    com.google.protobuf.ByteString data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq parseFrom(byte[] data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq parseFrom(
+                    byte[] data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq parseFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq parseFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq parseDelimitedFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq parseDelimitedFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq parseFrom(
+                    com.google.protobuf.CodedInputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq parseFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+
+            @java.lang.Override
+            public Builder newBuilderForType() { return newBuilder(); }
+            public static Builder newBuilder() {
+                return DEFAULT_INSTANCE.toBuilder();
+            }
+            public static Builder newBuilder(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq prototype) {
+                return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+            }
+            @java.lang.Override
+            public Builder toBuilder() {
+                return this == DEFAULT_INSTANCE
+                        ? new Builder() : new Builder().mergeFrom(this);
+            }
+
+            @java.lang.Override
+            protected Builder newBuilderForType(
+                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                Builder builder = new Builder(parent);
+                return builder;
+            }
+            /**
+             * <pre>
+             *修改收货地址请求
+             * </pre>
+             *
+             * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq}
+             */
+            public static final class Builder extends
+                    com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+                    // @@protoc_insertion_point(builder_implements:NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq)
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReqOrBuilder {
+                public static final com.google.protobuf.Descriptors.Descriptor
+                getDescriptor() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_UpdateAddressReq_descriptor;
+                }
+
+                @java.lang.Override
+                protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+                internalGetFieldAccessorTable() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_UpdateAddressReq_fieldAccessorTable
+                            .ensureFieldAccessorsInitialized(
+                                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.Builder.class);
+                }
+
+                // Construct using com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.newBuilder()
+                private Builder() {
+                    maybeForceBuilderInitialization();
+                }
+
+                private Builder(
+                        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                    super(parent);
+                    maybeForceBuilderInitialization();
+                }
+                private void maybeForceBuilderInitialization() {
+                    if (com.google.protobuf.GeneratedMessageV3
+                            .alwaysUseFieldBuilders) {
+                        getAddressReqFieldBuilder();
+                    }
+                }
+                @java.lang.Override
+                public Builder clear() {
+                    super.clear();
+                    if (addressReqBuilder_ == null) {
+                        addressReq_ = java.util.Collections.emptyList();
+                        bitField0_ = (bitField0_ & ~0x00000001);
+                    } else {
+                        addressReqBuilder_.clear();
+                    }
+                    return this;
+                }
+
+                @java.lang.Override
+                public com.google.protobuf.Descriptors.Descriptor
+                getDescriptorForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_UpdateAddressReq_descriptor;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq getDefaultInstanceForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.getDefaultInstance();
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq build() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq result = buildPartial();
+                    if (!result.isInitialized()) {
+                        throw newUninitializedMessageException(result);
+                    }
+                    return result;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq buildPartial() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq result = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq(this);
+                    int from_bitField0_ = bitField0_;
+                    if (addressReqBuilder_ == null) {
+                        if (((bitField0_ & 0x00000001) != 0)) {
+                            addressReq_ = java.util.Collections.unmodifiableList(addressReq_);
+                            bitField0_ = (bitField0_ & ~0x00000001);
+                        }
+                        result.addressReq_ = addressReq_;
+                    } else {
+                        result.addressReq_ = addressReqBuilder_.build();
+                    }
+                    onBuilt();
+                    return result;
+                }
+
+                @java.lang.Override
+                public Builder clone() {
+                    return super.clone();
+                }
+                @java.lang.Override
+                public Builder setField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.setField(field, value);
+                }
+                @java.lang.Override
+                public Builder clearField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field) {
+                    return super.clearField(field);
+                }
+                @java.lang.Override
+                public Builder clearOneof(
+                        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+                    return super.clearOneof(oneof);
+                }
+                @java.lang.Override
+                public Builder setRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        int index, java.lang.Object value) {
+                    return super.setRepeatedField(field, index, value);
+                }
+                @java.lang.Override
+                public Builder addRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.addRepeatedField(field, value);
+                }
+                @java.lang.Override
+                public Builder mergeFrom(com.google.protobuf.Message other) {
+                    if (other instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq) {
+                        return mergeFrom((com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq)other);
+                    } else {
+                        super.mergeFrom(other);
+                        return this;
+                    }
+                }
+
+                public Builder mergeFrom(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq other) {
+                    if (other == com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.getDefaultInstance()) return this;
+                    if (addressReqBuilder_ == null) {
+                        if (!other.addressReq_.isEmpty()) {
+                            if (addressReq_.isEmpty()) {
+                                addressReq_ = other.addressReq_;
+                                bitField0_ = (bitField0_ & ~0x00000001);
+                            } else {
+                                ensureAddressReqIsMutable();
+                                addressReq_.addAll(other.addressReq_);
+                            }
+                            onChanged();
+                        }
+                    } else {
+                        if (!other.addressReq_.isEmpty()) {
+                            if (addressReqBuilder_.isEmpty()) {
+                                addressReqBuilder_.dispose();
+                                addressReqBuilder_ = null;
+                                addressReq_ = other.addressReq_;
+                                bitField0_ = (bitField0_ & ~0x00000001);
+                                addressReqBuilder_ =
+                                        com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                                                getAddressReqFieldBuilder() : null;
+                            } else {
+                                addressReqBuilder_.addAllMessages(other.addressReq_);
+                            }
+                        }
+                    }
+                    this.mergeUnknownFields(other.unknownFields);
+                    onChanged();
+                    return this;
+                }
+
+                @java.lang.Override
+                public final boolean isInitialized() {
+                    return true;
+                }
+
+                @java.lang.Override
+                public Builder mergeFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws java.io.IOException {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq parsedMessage = null;
+                    try {
+                        parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                        parsedMessage = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq) e.getUnfinishedMessage();
+                        throw e.unwrapIOException();
+                    } finally {
+                        if (parsedMessage != null) {
+                            mergeFrom(parsedMessage);
+                        }
+                    }
+                    return this;
+                }
+                private int bitField0_;
+
+                private java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq> addressReq_ =
+                        java.util.Collections.emptyList();
+                private void ensureAddressReqIsMutable() {
+                    if (!((bitField0_ & 0x00000001) != 0)) {
+                        addressReq_ = new java.util.ArrayList<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq>(addressReq_);
+                        bitField0_ |= 0x00000001;
+                    }
+                }
+
+                private com.google.protobuf.RepeatedFieldBuilderV3<
+                        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder> addressReqBuilder_;
+
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq> getAddressReqList() {
+                    if (addressReqBuilder_ == null) {
+                        return java.util.Collections.unmodifiableList(addressReq_);
+                    } else {
+                        return addressReqBuilder_.getMessageList();
+                    }
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public int getAddressReqCount() {
+                    if (addressReqBuilder_ == null) {
+                        return addressReq_.size();
+                    } else {
+                        return addressReqBuilder_.getCount();
+                    }
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq getAddressReq(int index) {
+                    if (addressReqBuilder_ == null) {
+                        return addressReq_.get(index);
+                    } else {
+                        return addressReqBuilder_.getMessage(index);
+                    }
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder setAddressReq(
+                        int index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq value) {
+                    if (addressReqBuilder_ == null) {
+                        if (value == null) {
+                            throw new NullPointerException();
+                        }
+                        ensureAddressReqIsMutable();
+                        addressReq_.set(index, value);
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.setMessage(index, value);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder setAddressReq(
+                        int index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder builderForValue) {
+                    if (addressReqBuilder_ == null) {
+                        ensureAddressReqIsMutable();
+                        addressReq_.set(index, builderForValue.build());
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.setMessage(index, builderForValue.build());
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder addAddressReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq value) {
+                    if (addressReqBuilder_ == null) {
+                        if (value == null) {
+                            throw new NullPointerException();
+                        }
+                        ensureAddressReqIsMutable();
+                        addressReq_.add(value);
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.addMessage(value);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder addAddressReq(
+                        int index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq value) {
+                    if (addressReqBuilder_ == null) {
+                        if (value == null) {
+                            throw new NullPointerException();
+                        }
+                        ensureAddressReqIsMutable();
+                        addressReq_.add(index, value);
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.addMessage(index, value);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder addAddressReq(
+                        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder builderForValue) {
+                    if (addressReqBuilder_ == null) {
+                        ensureAddressReqIsMutable();
+                        addressReq_.add(builderForValue.build());
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.addMessage(builderForValue.build());
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder addAddressReq(
+                        int index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder builderForValue) {
+                    if (addressReqBuilder_ == null) {
+                        ensureAddressReqIsMutable();
+                        addressReq_.add(index, builderForValue.build());
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.addMessage(index, builderForValue.build());
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder addAllAddressReq(
+                        java.lang.Iterable<? extends com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq> values) {
+                    if (addressReqBuilder_ == null) {
+                        ensureAddressReqIsMutable();
+                        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+                                values, addressReq_);
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.addAllMessages(values);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder clearAddressReq() {
+                    if (addressReqBuilder_ == null) {
+                        addressReq_ = java.util.Collections.emptyList();
+                        bitField0_ = (bitField0_ & ~0x00000001);
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.clear();
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder removeAddressReq(int index) {
+                    if (addressReqBuilder_ == null) {
+                        ensureAddressReqIsMutable();
+                        addressReq_.remove(index);
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.remove(index);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder getAddressReqBuilder(
+                        int index) {
+                    return getAddressReqFieldBuilder().getBuilder(index);
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder getAddressReqOrBuilder(
+                        int index) {
+                    if (addressReqBuilder_ == null) {
+                        return addressReq_.get(index);  } else {
+                        return addressReqBuilder_.getMessageOrBuilder(index);
+                    }
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public java.util.List<? extends com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder>
+                getAddressReqOrBuilderList() {
+                    if (addressReqBuilder_ != null) {
+                        return addressReqBuilder_.getMessageOrBuilderList();
+                    } else {
+                        return java.util.Collections.unmodifiableList(addressReq_);
+                    }
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder addAddressReqBuilder() {
+                    return getAddressReqFieldBuilder().addBuilder(
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.getDefaultInstance());
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder addAddressReqBuilder(
+                        int index) {
+                    return getAddressReqFieldBuilder().addBuilder(
+                            index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.getDefaultInstance());
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder>
+                getAddressReqBuilderList() {
+                    return getAddressReqFieldBuilder().getBuilderList();
+                }
+                private com.google.protobuf.RepeatedFieldBuilderV3<
+                        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder>
+                getAddressReqFieldBuilder() {
+                    if (addressReqBuilder_ == null) {
+                        addressReqBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder>(
+                                addressReq_,
+                                ((bitField0_ & 0x00000001) != 0),
+                                getParentForChildren(),
+                                isClean());
+                        addressReq_ = null;
+                    }
+                    return addressReqBuilder_;
+                }
+                @java.lang.Override
+                public final Builder setUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.setUnknownFields(unknownFields);
+                }
+
+                @java.lang.Override
+                public final Builder mergeUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.mergeUnknownFields(unknownFields);
+                }
+
+
+                // @@protoc_insertion_point(builder_scope:NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq)
+            }
+
+            // @@protoc_insertion_point(class_scope:NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq)
+            private static final com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq DEFAULT_INSTANCE;
+            static {
+                DEFAULT_INSTANCE = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq();
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq getDefaultInstance() {
+                return DEFAULT_INSTANCE;
+            }
+
+            private static final com.google.protobuf.Parser<UpdateAddressReq>
+                    PARSER = new com.google.protobuf.AbstractParser<UpdateAddressReq>() {
+                @java.lang.Override
+                public UpdateAddressReq parsePartialFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws com.google.protobuf.InvalidProtocolBufferException {
+                    return new UpdateAddressReq(input, extensionRegistry);
+                }
+            };
+
+            public static com.google.protobuf.Parser<UpdateAddressReq> parser() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.google.protobuf.Parser<UpdateAddressReq> getParserForType() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq getDefaultInstanceForType() {
+                return DEFAULT_INSTANCE;
+            }
+
+        }
+
+        public interface DeleteAddressReqOrBuilder extends
+                // @@protoc_insertion_point(interface_extends:NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq)
+                com.google.protobuf.MessageOrBuilder {
+
+            /**
+             * <pre>
+             *地址表主键
+             * </pre>
+             *
+             * <code>string addressId = 1;</code>
+             */
+            java.lang.String getAddressId();
+            /**
+             * <pre>
+             *地址表主键
+             * </pre>
+             *
+             * <code>string addressId = 1;</code>
+             */
+            com.google.protobuf.ByteString
+            getAddressIdBytes();
+        }
+        /**
+         * <pre>
+         *删除收货地址请求
+         * </pre>
+         *
+         * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq}
+         */
+        public  static final class DeleteAddressReq extends
+                com.google.protobuf.GeneratedMessageV3 implements
+                // @@protoc_insertion_point(message_implements:NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq)
+                DeleteAddressReqOrBuilder {
+            private static final long serialVersionUID = 0L;
+            // Use DeleteAddressReq.newBuilder() to construct.
+            private DeleteAddressReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+                super(builder);
+            }
+            private DeleteAddressReq() {
+                addressId_ = "";
+            }
+
+            @java.lang.Override
+            public final com.google.protobuf.UnknownFieldSet
+            getUnknownFields() {
+                return this.unknownFields;
+            }
+            private DeleteAddressReq(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                this();
+                if (extensionRegistry == null) {
+                    throw new java.lang.NullPointerException();
+                }
+                int mutable_bitField0_ = 0;
+                com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                        com.google.protobuf.UnknownFieldSet.newBuilder();
+                try {
+                    boolean done = false;
+                    while (!done) {
+                        int tag = input.readTag();
+                        switch (tag) {
+                            case 0:
+                                done = true;
+                                break;
+                            case 10: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                addressId_ = s;
+                                break;
+                            }
+                            default: {
+                                if (!parseUnknownField(
+                                        input, unknownFields, extensionRegistry, tag)) {
+                                    done = true;
+                                }
+                                break;
+                            }
+                        }
+                    }
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    throw e.setUnfinishedMessage(this);
+                } catch (java.io.IOException e) {
+                    throw new com.google.protobuf.InvalidProtocolBufferException(
+                            e).setUnfinishedMessage(this);
+                } finally {
+                    this.unknownFields = unknownFields.build();
+                    makeExtensionsImmutable();
+                }
+            }
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_DeleteAddressReq_descriptor;
+            }
+
+            @java.lang.Override
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_DeleteAddressReq_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.Builder.class);
+            }
+
+            public static final int ADDRESSID_FIELD_NUMBER = 1;
+            private volatile java.lang.Object addressId_;
+            /**
+             * <pre>
+             *地址表主键
+             * </pre>
+             *
+             * <code>string addressId = 1;</code>
+             */
+            public java.lang.String getAddressId() {
+                java.lang.Object ref = addressId_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    addressId_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *地址表主键
+             * </pre>
+             *
+             * <code>string addressId = 1;</code>
+             */
+            public com.google.protobuf.ByteString
+            getAddressIdBytes() {
+                java.lang.Object ref = addressId_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    addressId_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            private byte memoizedIsInitialized = -1;
+            @java.lang.Override
+            public final boolean isInitialized() {
+                byte isInitialized = memoizedIsInitialized;
+                if (isInitialized == 1) return true;
+                if (isInitialized == 0) return false;
+
+                memoizedIsInitialized = 1;
+                return true;
+            }
+
+            @java.lang.Override
+            public void writeTo(com.google.protobuf.CodedOutputStream output)
+                    throws java.io.IOException {
+                if (!getAddressIdBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 1, addressId_);
+                }
+                unknownFields.writeTo(output);
+            }
+
+            @java.lang.Override
+            public int getSerializedSize() {
+                int size = memoizedSize;
+                if (size != -1) return size;
+
+                size = 0;
+                if (!getAddressIdBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, addressId_);
+                }
+                size += unknownFields.getSerializedSize();
+                memoizedSize = size;
+                return size;
+            }
+
+            @java.lang.Override
+            public boolean equals(final java.lang.Object obj) {
+                if (obj == this) {
+                    return true;
+                }
+                if (!(obj instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq)) {
+                    return super.equals(obj);
+                }
+                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq other = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq) obj;
+
+                if (!getAddressId()
+                        .equals(other.getAddressId())) return false;
+                if (!unknownFields.equals(other.unknownFields)) return false;
+                return true;
+            }
+
+            @java.lang.Override
+            public int hashCode() {
+                if (memoizedHashCode != 0) {
+                    return memoizedHashCode;
+                }
+                int hash = 41;
+                hash = (19 * hash) + getDescriptor().hashCode();
+                hash = (37 * hash) + ADDRESSID_FIELD_NUMBER;
+                hash = (53 * hash) + getAddressId().hashCode();
+                hash = (29 * hash) + unknownFields.hashCode();
+                memoizedHashCode = hash;
+                return hash;
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq parseFrom(
+                    java.nio.ByteBuffer data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq parseFrom(
+                    java.nio.ByteBuffer data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq parseFrom(
+                    com.google.protobuf.ByteString data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq parseFrom(
+                    com.google.protobuf.ByteString data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq parseFrom(byte[] data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq parseFrom(
+                    byte[] data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq parseFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq parseFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq parseDelimitedFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq parseDelimitedFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq parseFrom(
+                    com.google.protobuf.CodedInputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq parseFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+
+            @java.lang.Override
+            public Builder newBuilderForType() { return newBuilder(); }
+            public static Builder newBuilder() {
+                return DEFAULT_INSTANCE.toBuilder();
+            }
+            public static Builder newBuilder(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq prototype) {
+                return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+            }
+            @java.lang.Override
+            public Builder toBuilder() {
+                return this == DEFAULT_INSTANCE
+                        ? new Builder() : new Builder().mergeFrom(this);
+            }
+
+            @java.lang.Override
+            protected Builder newBuilderForType(
+                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                Builder builder = new Builder(parent);
+                return builder;
+            }
+            /**
+             * <pre>
+             *删除收货地址请求
+             * </pre>
+             *
+             * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq}
+             */
+            public static final class Builder extends
+                    com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+                    // @@protoc_insertion_point(builder_implements:NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq)
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReqOrBuilder {
+                public static final com.google.protobuf.Descriptors.Descriptor
+                getDescriptor() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_DeleteAddressReq_descriptor;
+                }
+
+                @java.lang.Override
+                protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+                internalGetFieldAccessorTable() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_DeleteAddressReq_fieldAccessorTable
+                            .ensureFieldAccessorsInitialized(
+                                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.Builder.class);
+                }
+
+                // Construct using com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.newBuilder()
+                private Builder() {
+                    maybeForceBuilderInitialization();
+                }
+
+                private Builder(
+                        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                    super(parent);
+                    maybeForceBuilderInitialization();
+                }
+                private void maybeForceBuilderInitialization() {
+                    if (com.google.protobuf.GeneratedMessageV3
+                            .alwaysUseFieldBuilders) {
+                    }
+                }
+                @java.lang.Override
+                public Builder clear() {
+                    super.clear();
+                    addressId_ = "";
+
+                    return this;
+                }
+
+                @java.lang.Override
+                public com.google.protobuf.Descriptors.Descriptor
+                getDescriptorForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_DeleteAddressReq_descriptor;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq getDefaultInstanceForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.getDefaultInstance();
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq build() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq result = buildPartial();
+                    if (!result.isInitialized()) {
+                        throw newUninitializedMessageException(result);
+                    }
+                    return result;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq buildPartial() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq result = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq(this);
+                    result.addressId_ = addressId_;
+                    onBuilt();
+                    return result;
+                }
+
+                @java.lang.Override
+                public Builder clone() {
+                    return super.clone();
+                }
+                @java.lang.Override
+                public Builder setField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.setField(field, value);
+                }
+                @java.lang.Override
+                public Builder clearField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field) {
+                    return super.clearField(field);
+                }
+                @java.lang.Override
+                public Builder clearOneof(
+                        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+                    return super.clearOneof(oneof);
+                }
+                @java.lang.Override
+                public Builder setRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        int index, java.lang.Object value) {
+                    return super.setRepeatedField(field, index, value);
+                }
+                @java.lang.Override
+                public Builder addRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.addRepeatedField(field, value);
+                }
+                @java.lang.Override
+                public Builder mergeFrom(com.google.protobuf.Message other) {
+                    if (other instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq) {
+                        return mergeFrom((com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq)other);
+                    } else {
+                        super.mergeFrom(other);
+                        return this;
+                    }
+                }
+
+                public Builder mergeFrom(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq other) {
+                    if (other == com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.getDefaultInstance()) return this;
+                    if (!other.getAddressId().isEmpty()) {
+                        addressId_ = other.addressId_;
+                        onChanged();
+                    }
+                    this.mergeUnknownFields(other.unknownFields);
+                    onChanged();
+                    return this;
+                }
+
+                @java.lang.Override
+                public final boolean isInitialized() {
+                    return true;
+                }
+
+                @java.lang.Override
+                public Builder mergeFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws java.io.IOException {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq parsedMessage = null;
+                    try {
+                        parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                        parsedMessage = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq) e.getUnfinishedMessage();
+                        throw e.unwrapIOException();
+                    } finally {
+                        if (parsedMessage != null) {
+                            mergeFrom(parsedMessage);
+                        }
+                    }
+                    return this;
+                }
+
+                private java.lang.Object addressId_ = "";
+                /**
+                 * <pre>
+                 *地址表主键
+                 * </pre>
+                 *
+                 * <code>string addressId = 1;</code>
+                 */
+                public java.lang.String getAddressId() {
+                    java.lang.Object ref = addressId_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        addressId_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *地址表主键
+                 * </pre>
+                 *
+                 * <code>string addressId = 1;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getAddressIdBytes() {
+                    java.lang.Object ref = addressId_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        addressId_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *地址表主键
+                 * </pre>
+                 *
+                 * <code>string addressId = 1;</code>
+                 */
+                public Builder setAddressId(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    addressId_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表主键
+                 * </pre>
+                 *
+                 * <code>string addressId = 1;</code>
+                 */
+                public Builder clearAddressId() {
+
+                    addressId_ = getDefaultInstance().getAddressId();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表主键
+                 * </pre>
+                 *
+                 * <code>string addressId = 1;</code>
+                 */
+                public Builder setAddressIdBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    addressId_ = value;
+                    onChanged();
+                    return this;
+                }
+                @java.lang.Override
+                public final Builder setUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.setUnknownFields(unknownFields);
+                }
+
+                @java.lang.Override
+                public final Builder mergeUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.mergeUnknownFields(unknownFields);
+                }
+
+
+                // @@protoc_insertion_point(builder_scope:NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq)
+            }
+
+            // @@protoc_insertion_point(class_scope:NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq)
+            private static final com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq DEFAULT_INSTANCE;
+            static {
+                DEFAULT_INSTANCE = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq();
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq getDefaultInstance() {
+                return DEFAULT_INSTANCE;
+            }
+
+            private static final com.google.protobuf.Parser<DeleteAddressReq>
+                    PARSER = new com.google.protobuf.AbstractParser<DeleteAddressReq>() {
+                @java.lang.Override
+                public DeleteAddressReq parsePartialFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws com.google.protobuf.InvalidProtocolBufferException {
+                    return new DeleteAddressReq(input, extensionRegistry);
+                }
+            };
+
+            public static com.google.protobuf.Parser<DeleteAddressReq> parser() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.google.protobuf.Parser<DeleteAddressReq> getParserForType() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq getDefaultInstanceForType() {
+                return DEFAULT_INSTANCE;
+            }
+
+        }
+
+        public interface SelectAddressReqOrBuilder extends
+                // @@protoc_insertion_point(interface_extends:NettyProtobufWebsocketClient.MessageBase.SelectAddressReq)
+                com.google.protobuf.MessageOrBuilder {
+
+            /**
+             * <pre>
+             *用户id
+             * </pre>
+             *
+             * <code>string userId = 1;</code>
+             */
+            java.lang.String getUserId();
+            /**
+             * <pre>
+             *用户id
+             * </pre>
+             *
+             * <code>string userId = 1;</code>
+             */
+            com.google.protobuf.ByteString
+            getUserIdBytes();
+        }
+        /**
+         * <pre>
+         *查询该用户所有收货地址请求
+         * </pre>
+         *
+         * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.SelectAddressReq}
+         */
+        public  static final class SelectAddressReq extends
+                com.google.protobuf.GeneratedMessageV3 implements
+                // @@protoc_insertion_point(message_implements:NettyProtobufWebsocketClient.MessageBase.SelectAddressReq)
+                SelectAddressReqOrBuilder {
+            private static final long serialVersionUID = 0L;
+            // Use SelectAddressReq.newBuilder() to construct.
+            private SelectAddressReq(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+                super(builder);
+            }
+            private SelectAddressReq() {
+                userId_ = "";
+            }
+
+            @java.lang.Override
+            public final com.google.protobuf.UnknownFieldSet
+            getUnknownFields() {
+                return this.unknownFields;
+            }
+            private SelectAddressReq(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                this();
+                if (extensionRegistry == null) {
+                    throw new java.lang.NullPointerException();
+                }
+                int mutable_bitField0_ = 0;
+                com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                        com.google.protobuf.UnknownFieldSet.newBuilder();
+                try {
+                    boolean done = false;
+                    while (!done) {
+                        int tag = input.readTag();
+                        switch (tag) {
+                            case 0:
+                                done = true;
+                                break;
+                            case 10: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                userId_ = s;
+                                break;
+                            }
+                            default: {
+                                if (!parseUnknownField(
+                                        input, unknownFields, extensionRegistry, tag)) {
+                                    done = true;
+                                }
+                                break;
+                            }
+                        }
+                    }
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    throw e.setUnfinishedMessage(this);
+                } catch (java.io.IOException e) {
+                    throw new com.google.protobuf.InvalidProtocolBufferException(
+                            e).setUnfinishedMessage(this);
+                } finally {
+                    this.unknownFields = unknownFields.build();
+                    makeExtensionsImmutable();
+                }
+            }
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressReq_descriptor;
+            }
+
+            @java.lang.Override
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressReq_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.Builder.class);
+            }
+
+            public static final int USERID_FIELD_NUMBER = 1;
+            private volatile java.lang.Object userId_;
+            /**
+             * <pre>
+             *用户id
+             * </pre>
+             *
+             * <code>string userId = 1;</code>
+             */
+            public java.lang.String getUserId() {
+                java.lang.Object ref = userId_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    userId_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *用户id
+             * </pre>
+             *
+             * <code>string userId = 1;</code>
+             */
+            public com.google.protobuf.ByteString
+            getUserIdBytes() {
+                java.lang.Object ref = userId_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    userId_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            private byte memoizedIsInitialized = -1;
+            @java.lang.Override
+            public final boolean isInitialized() {
+                byte isInitialized = memoizedIsInitialized;
+                if (isInitialized == 1) return true;
+                if (isInitialized == 0) return false;
+
+                memoizedIsInitialized = 1;
+                return true;
+            }
+
+            @java.lang.Override
+            public void writeTo(com.google.protobuf.CodedOutputStream output)
+                    throws java.io.IOException {
+                if (!getUserIdBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 1, userId_);
+                }
+                unknownFields.writeTo(output);
+            }
+
+            @java.lang.Override
+            public int getSerializedSize() {
+                int size = memoizedSize;
+                if (size != -1) return size;
+
+                size = 0;
+                if (!getUserIdBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, userId_);
+                }
+                size += unknownFields.getSerializedSize();
+                memoizedSize = size;
+                return size;
+            }
+
+            @java.lang.Override
+            public boolean equals(final java.lang.Object obj) {
+                if (obj == this) {
+                    return true;
+                }
+                if (!(obj instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq)) {
+                    return super.equals(obj);
+                }
+                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq other = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq) obj;
+
+                if (!getUserId()
+                        .equals(other.getUserId())) return false;
+                if (!unknownFields.equals(other.unknownFields)) return false;
+                return true;
+            }
+
+            @java.lang.Override
+            public int hashCode() {
+                if (memoizedHashCode != 0) {
+                    return memoizedHashCode;
+                }
+                int hash = 41;
+                hash = (19 * hash) + getDescriptor().hashCode();
+                hash = (37 * hash) + USERID_FIELD_NUMBER;
+                hash = (53 * hash) + getUserId().hashCode();
+                hash = (29 * hash) + unknownFields.hashCode();
+                memoizedHashCode = hash;
+                return hash;
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq parseFrom(
+                    java.nio.ByteBuffer data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq parseFrom(
+                    java.nio.ByteBuffer data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq parseFrom(
+                    com.google.protobuf.ByteString data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq parseFrom(
+                    com.google.protobuf.ByteString data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq parseFrom(byte[] data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq parseFrom(
+                    byte[] data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq parseFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq parseFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq parseDelimitedFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq parseDelimitedFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq parseFrom(
+                    com.google.protobuf.CodedInputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq parseFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+
+            @java.lang.Override
+            public Builder newBuilderForType() { return newBuilder(); }
+            public static Builder newBuilder() {
+                return DEFAULT_INSTANCE.toBuilder();
+            }
+            public static Builder newBuilder(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq prototype) {
+                return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+            }
+            @java.lang.Override
+            public Builder toBuilder() {
+                return this == DEFAULT_INSTANCE
+                        ? new Builder() : new Builder().mergeFrom(this);
+            }
+
+            @java.lang.Override
+            protected Builder newBuilderForType(
+                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                Builder builder = new Builder(parent);
+                return builder;
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址请求
+             * </pre>
+             *
+             * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.SelectAddressReq}
+             */
+            public static final class Builder extends
+                    com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+                    // @@protoc_insertion_point(builder_implements:NettyProtobufWebsocketClient.MessageBase.SelectAddressReq)
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReqOrBuilder {
+                public static final com.google.protobuf.Descriptors.Descriptor
+                getDescriptor() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressReq_descriptor;
+                }
+
+                @java.lang.Override
+                protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+                internalGetFieldAccessorTable() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressReq_fieldAccessorTable
+                            .ensureFieldAccessorsInitialized(
+                                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.Builder.class);
+                }
+
+                // Construct using com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.newBuilder()
+                private Builder() {
+                    maybeForceBuilderInitialization();
+                }
+
+                private Builder(
+                        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                    super(parent);
+                    maybeForceBuilderInitialization();
+                }
+                private void maybeForceBuilderInitialization() {
+                    if (com.google.protobuf.GeneratedMessageV3
+                            .alwaysUseFieldBuilders) {
+                    }
+                }
+                @java.lang.Override
+                public Builder clear() {
+                    super.clear();
+                    userId_ = "";
+
+                    return this;
+                }
+
+                @java.lang.Override
+                public com.google.protobuf.Descriptors.Descriptor
+                getDescriptorForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressReq_descriptor;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq getDefaultInstanceForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.getDefaultInstance();
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq build() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq result = buildPartial();
+                    if (!result.isInitialized()) {
+                        throw newUninitializedMessageException(result);
+                    }
+                    return result;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq buildPartial() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq result = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq(this);
+                    result.userId_ = userId_;
+                    onBuilt();
+                    return result;
+                }
+
+                @java.lang.Override
+                public Builder clone() {
+                    return super.clone();
+                }
+                @java.lang.Override
+                public Builder setField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.setField(field, value);
+                }
+                @java.lang.Override
+                public Builder clearField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field) {
+                    return super.clearField(field);
+                }
+                @java.lang.Override
+                public Builder clearOneof(
+                        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+                    return super.clearOneof(oneof);
+                }
+                @java.lang.Override
+                public Builder setRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        int index, java.lang.Object value) {
+                    return super.setRepeatedField(field, index, value);
+                }
+                @java.lang.Override
+                public Builder addRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.addRepeatedField(field, value);
+                }
+                @java.lang.Override
+                public Builder mergeFrom(com.google.protobuf.Message other) {
+                    if (other instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq) {
+                        return mergeFrom((com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq)other);
+                    } else {
+                        super.mergeFrom(other);
+                        return this;
+                    }
+                }
+
+                public Builder mergeFrom(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq other) {
+                    if (other == com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.getDefaultInstance()) return this;
+                    if (!other.getUserId().isEmpty()) {
+                        userId_ = other.userId_;
+                        onChanged();
+                    }
+                    this.mergeUnknownFields(other.unknownFields);
+                    onChanged();
+                    return this;
+                }
+
+                @java.lang.Override
+                public final boolean isInitialized() {
+                    return true;
+                }
+
+                @java.lang.Override
+                public Builder mergeFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws java.io.IOException {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq parsedMessage = null;
+                    try {
+                        parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                        parsedMessage = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq) e.getUnfinishedMessage();
+                        throw e.unwrapIOException();
+                    } finally {
+                        if (parsedMessage != null) {
+                            mergeFrom(parsedMessage);
+                        }
+                    }
+                    return this;
+                }
+
+                private java.lang.Object userId_ = "";
+                /**
+                 * <pre>
+                 *用户id
+                 * </pre>
+                 *
+                 * <code>string userId = 1;</code>
+                 */
+                public java.lang.String getUserId() {
+                    java.lang.Object ref = userId_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        userId_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *用户id
+                 * </pre>
+                 *
+                 * <code>string userId = 1;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getUserIdBytes() {
+                    java.lang.Object ref = userId_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        userId_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *用户id
+                 * </pre>
+                 *
+                 * <code>string userId = 1;</code>
+                 */
+                public Builder setUserId(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    userId_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *用户id
+                 * </pre>
+                 *
+                 * <code>string userId = 1;</code>
+                 */
+                public Builder clearUserId() {
+
+                    userId_ = getDefaultInstance().getUserId();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *用户id
+                 * </pre>
+                 *
+                 * <code>string userId = 1;</code>
+                 */
+                public Builder setUserIdBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    userId_ = value;
+                    onChanged();
+                    return this;
+                }
+                @java.lang.Override
+                public final Builder setUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.setUnknownFields(unknownFields);
+                }
+
+                @java.lang.Override
+                public final Builder mergeUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.mergeUnknownFields(unknownFields);
+                }
+
+
+                // @@protoc_insertion_point(builder_scope:NettyProtobufWebsocketClient.MessageBase.SelectAddressReq)
+            }
+
+            // @@protoc_insertion_point(class_scope:NettyProtobufWebsocketClient.MessageBase.SelectAddressReq)
+            private static final com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq DEFAULT_INSTANCE;
+            static {
+                DEFAULT_INSTANCE = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq();
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq getDefaultInstance() {
+                return DEFAULT_INSTANCE;
+            }
+
+            private static final com.google.protobuf.Parser<SelectAddressReq>
+                    PARSER = new com.google.protobuf.AbstractParser<SelectAddressReq>() {
+                @java.lang.Override
+                public SelectAddressReq parsePartialFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws com.google.protobuf.InvalidProtocolBufferException {
+                    return new SelectAddressReq(input, extensionRegistry);
+                }
+            };
+
+            public static com.google.protobuf.Parser<SelectAddressReq> parser() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.google.protobuf.Parser<SelectAddressReq> getParserForType() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq getDefaultInstanceForType() {
+                return DEFAULT_INSTANCE;
+            }
+
+        }
+
+        public interface SelectAddressRespOrBuilder extends
+                // @@protoc_insertion_point(interface_extends:NettyProtobufWebsocketClient.MessageBase.SelectAddressResp)
+                com.google.protobuf.MessageOrBuilder {
+
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq>
+            getAddressReqList();
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq getAddressReq(int index);
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            int getAddressReqCount();
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            java.util.List<? extends com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder>
+            getAddressReqOrBuilderList();
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder getAddressReqOrBuilder(
+                    int index);
+        }
+        /**
+         * <pre>
+         *查询该用户所有收货地址响应
+         * </pre>
+         *
+         * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.SelectAddressResp}
+         */
+        public  static final class SelectAddressResp extends
+                com.google.protobuf.GeneratedMessageV3 implements
+                // @@protoc_insertion_point(message_implements:NettyProtobufWebsocketClient.MessageBase.SelectAddressResp)
+                SelectAddressRespOrBuilder {
+            private static final long serialVersionUID = 0L;
+            // Use SelectAddressResp.newBuilder() to construct.
+            private SelectAddressResp(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+                super(builder);
+            }
+            private SelectAddressResp() {
+                addressReq_ = java.util.Collections.emptyList();
+            }
+
+            @java.lang.Override
+            public final com.google.protobuf.UnknownFieldSet
+            getUnknownFields() {
+                return this.unknownFields;
+            }
+            private SelectAddressResp(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                this();
+                if (extensionRegistry == null) {
+                    throw new java.lang.NullPointerException();
+                }
+                int mutable_bitField0_ = 0;
+                com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+                        com.google.protobuf.UnknownFieldSet.newBuilder();
+                try {
+                    boolean done = false;
+                    while (!done) {
+                        int tag = input.readTag();
+                        switch (tag) {
+                            case 0:
+                                done = true;
+                                break;
+                            case 10: {
+                                if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                                    addressReq_ = new java.util.ArrayList<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq>();
+                                    mutable_bitField0_ |= 0x00000001;
+                                }
+                                addressReq_.add(
+                                        input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.parser(), extensionRegistry));
+                                break;
+                            }
+                            default: {
+                                if (!parseUnknownField(
+                                        input, unknownFields, extensionRegistry, tag)) {
+                                    done = true;
+                                }
+                                break;
+                            }
+                        }
+                    }
+                } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                    throw e.setUnfinishedMessage(this);
+                } catch (java.io.IOException e) {
+                    throw new com.google.protobuf.InvalidProtocolBufferException(
+                            e).setUnfinishedMessage(this);
+                } finally {
+                    if (((mutable_bitField0_ & 0x00000001) != 0)) {
+                        addressReq_ = java.util.Collections.unmodifiableList(addressReq_);
+                    }
+                    this.unknownFields = unknownFields.build();
+                    makeExtensionsImmutable();
+                }
+            }
+            public static final com.google.protobuf.Descriptors.Descriptor
+            getDescriptor() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressResp_descriptor;
+            }
+
+            @java.lang.Override
+            protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internalGetFieldAccessorTable() {
+                return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressResp_fieldAccessorTable
+                        .ensureFieldAccessorsInitialized(
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.Builder.class);
+            }
+
+            public static final int ADDRESSREQ_FIELD_NUMBER = 1;
+            private java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq> addressReq_;
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            public java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq> getAddressReqList() {
+                return addressReq_;
+            }
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            public java.util.List<? extends com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder>
+            getAddressReqOrBuilderList() {
+                return addressReq_;
+            }
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            public int getAddressReqCount() {
+                return addressReq_.size();
+            }
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq getAddressReq(int index) {
+                return addressReq_.get(index);
+            }
+            /**
+             * <pre>
+             *地址表
+             * </pre>
+             *
+             * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder getAddressReqOrBuilder(
+                    int index) {
+                return addressReq_.get(index);
+            }
+
+            private byte memoizedIsInitialized = -1;
+            @java.lang.Override
+            public final boolean isInitialized() {
+                byte isInitialized = memoizedIsInitialized;
+                if (isInitialized == 1) return true;
+                if (isInitialized == 0) return false;
+
+                memoizedIsInitialized = 1;
+                return true;
+            }
+
+            @java.lang.Override
+            public void writeTo(com.google.protobuf.CodedOutputStream output)
+                    throws java.io.IOException {
+                for (int i = 0; i < addressReq_.size(); i++) {
+                    output.writeMessage(1, addressReq_.get(i));
+                }
+                unknownFields.writeTo(output);
+            }
+
+            @java.lang.Override
+            public int getSerializedSize() {
+                int size = memoizedSize;
+                if (size != -1) return size;
+
+                size = 0;
+                for (int i = 0; i < addressReq_.size(); i++) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeMessageSize(1, addressReq_.get(i));
+                }
+                size += unknownFields.getSerializedSize();
+                memoizedSize = size;
+                return size;
+            }
+
+            @java.lang.Override
+            public boolean equals(final java.lang.Object obj) {
+                if (obj == this) {
+                    return true;
+                }
+                if (!(obj instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp)) {
+                    return super.equals(obj);
+                }
+                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp other = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp) obj;
+
+                if (!getAddressReqList()
+                        .equals(other.getAddressReqList())) return false;
+                if (!unknownFields.equals(other.unknownFields)) return false;
+                return true;
+            }
+
+            @java.lang.Override
+            public int hashCode() {
+                if (memoizedHashCode != 0) {
+                    return memoizedHashCode;
+                }
+                int hash = 41;
+                hash = (19 * hash) + getDescriptor().hashCode();
+                if (getAddressReqCount() > 0) {
+                    hash = (37 * hash) + ADDRESSREQ_FIELD_NUMBER;
+                    hash = (53 * hash) + getAddressReqList().hashCode();
+                }
+                hash = (29 * hash) + unknownFields.hashCode();
+                memoizedHashCode = hash;
+                return hash;
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp parseFrom(
+                    java.nio.ByteBuffer data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp parseFrom(
+                    java.nio.ByteBuffer data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp parseFrom(
+                    com.google.protobuf.ByteString data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp parseFrom(
+                    com.google.protobuf.ByteString data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp parseFrom(byte[] data)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp parseFrom(
+                    byte[] data,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws com.google.protobuf.InvalidProtocolBufferException {
+                return PARSER.parseFrom(data, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp parseFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp parseFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp parseDelimitedFrom(java.io.InputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp parseDelimitedFrom(
+                    java.io.InputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp parseFrom(
+                    com.google.protobuf.CodedInputStream input)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input);
+            }
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp parseFrom(
+                    com.google.protobuf.CodedInputStream input,
+                    com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                    throws java.io.IOException {
+                return com.google.protobuf.GeneratedMessageV3
+                        .parseWithIOException(PARSER, input, extensionRegistry);
+            }
+
+            @java.lang.Override
+            public Builder newBuilderForType() { return newBuilder(); }
+            public static Builder newBuilder() {
+                return DEFAULT_INSTANCE.toBuilder();
+            }
+            public static Builder newBuilder(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp prototype) {
+                return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+            }
+            @java.lang.Override
+            public Builder toBuilder() {
+                return this == DEFAULT_INSTANCE
+                        ? new Builder() : new Builder().mergeFrom(this);
+            }
+
+            @java.lang.Override
+            protected Builder newBuilderForType(
+                    com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                Builder builder = new Builder(parent);
+                return builder;
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址响应
+             * </pre>
+             *
+             * Protobuf type {@code NettyProtobufWebsocketClient.MessageBase.SelectAddressResp}
+             */
+            public static final class Builder extends
+                    com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+                    // @@protoc_insertion_point(builder_implements:NettyProtobufWebsocketClient.MessageBase.SelectAddressResp)
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressRespOrBuilder {
+                public static final com.google.protobuf.Descriptors.Descriptor
+                getDescriptor() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressResp_descriptor;
+                }
+
+                @java.lang.Override
+                protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+                internalGetFieldAccessorTable() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressResp_fieldAccessorTable
+                            .ensureFieldAccessorsInitialized(
+                                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.class, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.Builder.class);
+                }
+
+                // Construct using com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.newBuilder()
+                private Builder() {
+                    maybeForceBuilderInitialization();
+                }
+
+                private Builder(
+                        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+                    super(parent);
+                    maybeForceBuilderInitialization();
+                }
+                private void maybeForceBuilderInitialization() {
+                    if (com.google.protobuf.GeneratedMessageV3
+                            .alwaysUseFieldBuilders) {
+                        getAddressReqFieldBuilder();
+                    }
+                }
+                @java.lang.Override
+                public Builder clear() {
+                    super.clear();
+                    if (addressReqBuilder_ == null) {
+                        addressReq_ = java.util.Collections.emptyList();
+                        bitField0_ = (bitField0_ & ~0x00000001);
+                    } else {
+                        addressReqBuilder_.clear();
+                    }
+                    return this;
+                }
+
+                @java.lang.Override
+                public com.google.protobuf.Descriptors.Descriptor
+                getDescriptorForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressResp_descriptor;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp getDefaultInstanceForType() {
+                    return com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.getDefaultInstance();
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp build() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp result = buildPartial();
+                    if (!result.isInitialized()) {
+                        throw newUninitializedMessageException(result);
+                    }
+                    return result;
+                }
+
+                @java.lang.Override
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp buildPartial() {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp result = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp(this);
+                    int from_bitField0_ = bitField0_;
+                    if (addressReqBuilder_ == null) {
+                        if (((bitField0_ & 0x00000001) != 0)) {
+                            addressReq_ = java.util.Collections.unmodifiableList(addressReq_);
+                            bitField0_ = (bitField0_ & ~0x00000001);
+                        }
+                        result.addressReq_ = addressReq_;
+                    } else {
+                        result.addressReq_ = addressReqBuilder_.build();
+                    }
+                    onBuilt();
+                    return result;
+                }
+
+                @java.lang.Override
+                public Builder clone() {
+                    return super.clone();
+                }
+                @java.lang.Override
+                public Builder setField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.setField(field, value);
+                }
+                @java.lang.Override
+                public Builder clearField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field) {
+                    return super.clearField(field);
+                }
+                @java.lang.Override
+                public Builder clearOneof(
+                        com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+                    return super.clearOneof(oneof);
+                }
+                @java.lang.Override
+                public Builder setRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        int index, java.lang.Object value) {
+                    return super.setRepeatedField(field, index, value);
+                }
+                @java.lang.Override
+                public Builder addRepeatedField(
+                        com.google.protobuf.Descriptors.FieldDescriptor field,
+                        java.lang.Object value) {
+                    return super.addRepeatedField(field, value);
+                }
+                @java.lang.Override
+                public Builder mergeFrom(com.google.protobuf.Message other) {
+                    if (other instanceof com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp) {
+                        return mergeFrom((com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp)other);
+                    } else {
+                        super.mergeFrom(other);
+                        return this;
+                    }
+                }
+
+                public Builder mergeFrom(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp other) {
+                    if (other == com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.getDefaultInstance()) return this;
+                    if (addressReqBuilder_ == null) {
+                        if (!other.addressReq_.isEmpty()) {
+                            if (addressReq_.isEmpty()) {
+                                addressReq_ = other.addressReq_;
+                                bitField0_ = (bitField0_ & ~0x00000001);
+                            } else {
+                                ensureAddressReqIsMutable();
+                                addressReq_.addAll(other.addressReq_);
+                            }
+                            onChanged();
+                        }
+                    } else {
+                        if (!other.addressReq_.isEmpty()) {
+                            if (addressReqBuilder_.isEmpty()) {
+                                addressReqBuilder_.dispose();
+                                addressReqBuilder_ = null;
+                                addressReq_ = other.addressReq_;
+                                bitField0_ = (bitField0_ & ~0x00000001);
+                                addressReqBuilder_ =
+                                        com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
+                                                getAddressReqFieldBuilder() : null;
+                            } else {
+                                addressReqBuilder_.addAllMessages(other.addressReq_);
+                            }
+                        }
+                    }
+                    this.mergeUnknownFields(other.unknownFields);
+                    onChanged();
+                    return this;
+                }
+
+                @java.lang.Override
+                public final boolean isInitialized() {
+                    return true;
+                }
+
+                @java.lang.Override
+                public Builder mergeFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws java.io.IOException {
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp parsedMessage = null;
+                    try {
+                        parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+                    } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+                        parsedMessage = (com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp) e.getUnfinishedMessage();
+                        throw e.unwrapIOException();
+                    } finally {
+                        if (parsedMessage != null) {
+                            mergeFrom(parsedMessage);
+                        }
+                    }
+                    return this;
+                }
+                private int bitField0_;
+
+                private java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq> addressReq_ =
+                        java.util.Collections.emptyList();
+                private void ensureAddressReqIsMutable() {
+                    if (!((bitField0_ & 0x00000001) != 0)) {
+                        addressReq_ = new java.util.ArrayList<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq>(addressReq_);
+                        bitField0_ |= 0x00000001;
+                    }
+                }
+
+                private com.google.protobuf.RepeatedFieldBuilderV3<
+                        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder> addressReqBuilder_;
+
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq> getAddressReqList() {
+                    if (addressReqBuilder_ == null) {
+                        return java.util.Collections.unmodifiableList(addressReq_);
+                    } else {
+                        return addressReqBuilder_.getMessageList();
+                    }
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public int getAddressReqCount() {
+                    if (addressReqBuilder_ == null) {
+                        return addressReq_.size();
+                    } else {
+                        return addressReqBuilder_.getCount();
+                    }
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq getAddressReq(int index) {
+                    if (addressReqBuilder_ == null) {
+                        return addressReq_.get(index);
+                    } else {
+                        return addressReqBuilder_.getMessage(index);
+                    }
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder setAddressReq(
+                        int index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq value) {
+                    if (addressReqBuilder_ == null) {
+                        if (value == null) {
+                            throw new NullPointerException();
+                        }
+                        ensureAddressReqIsMutable();
+                        addressReq_.set(index, value);
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.setMessage(index, value);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder setAddressReq(
+                        int index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder builderForValue) {
+                    if (addressReqBuilder_ == null) {
+                        ensureAddressReqIsMutable();
+                        addressReq_.set(index, builderForValue.build());
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.setMessage(index, builderForValue.build());
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder addAddressReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq value) {
+                    if (addressReqBuilder_ == null) {
+                        if (value == null) {
+                            throw new NullPointerException();
+                        }
+                        ensureAddressReqIsMutable();
+                        addressReq_.add(value);
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.addMessage(value);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder addAddressReq(
+                        int index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq value) {
+                    if (addressReqBuilder_ == null) {
+                        if (value == null) {
+                            throw new NullPointerException();
+                        }
+                        ensureAddressReqIsMutable();
+                        addressReq_.add(index, value);
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.addMessage(index, value);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder addAddressReq(
+                        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder builderForValue) {
+                    if (addressReqBuilder_ == null) {
+                        ensureAddressReqIsMutable();
+                        addressReq_.add(builderForValue.build());
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.addMessage(builderForValue.build());
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder addAddressReq(
+                        int index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder builderForValue) {
+                    if (addressReqBuilder_ == null) {
+                        ensureAddressReqIsMutable();
+                        addressReq_.add(index, builderForValue.build());
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.addMessage(index, builderForValue.build());
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder addAllAddressReq(
+                        java.lang.Iterable<? extends com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq> values) {
+                    if (addressReqBuilder_ == null) {
+                        ensureAddressReqIsMutable();
+                        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+                                values, addressReq_);
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.addAllMessages(values);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder clearAddressReq() {
+                    if (addressReqBuilder_ == null) {
+                        addressReq_ = java.util.Collections.emptyList();
+                        bitField0_ = (bitField0_ & ~0x00000001);
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.clear();
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public Builder removeAddressReq(int index) {
+                    if (addressReqBuilder_ == null) {
+                        ensureAddressReqIsMutable();
+                        addressReq_.remove(index);
+                        onChanged();
+                    } else {
+                        addressReqBuilder_.remove(index);
+                    }
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder getAddressReqBuilder(
+                        int index) {
+                    return getAddressReqFieldBuilder().getBuilder(index);
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder getAddressReqOrBuilder(
+                        int index) {
+                    if (addressReqBuilder_ == null) {
+                        return addressReq_.get(index);  } else {
+                        return addressReqBuilder_.getMessageOrBuilder(index);
+                    }
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public java.util.List<? extends com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder>
+                getAddressReqOrBuilderList() {
+                    if (addressReqBuilder_ != null) {
+                        return addressReqBuilder_.getMessageOrBuilderList();
+                    } else {
+                        return java.util.Collections.unmodifiableList(addressReq_);
+                    }
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder addAddressReqBuilder() {
+                    return getAddressReqFieldBuilder().addBuilder(
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.getDefaultInstance());
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder addAddressReqBuilder(
+                        int index) {
+                    return getAddressReqFieldBuilder().addBuilder(
+                            index, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.getDefaultInstance());
+                }
+                /**
+                 * <pre>
+                 *地址表
+                 * </pre>
+                 *
+                 * <code>repeated .NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 1;</code>
+                 */
+                public java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder>
+                getAddressReqBuilderList() {
+                    return getAddressReqFieldBuilder().getBuilderList();
+                }
+                private com.google.protobuf.RepeatedFieldBuilderV3<
+                        com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder>
+                getAddressReqFieldBuilder() {
+                    if (addressReqBuilder_ == null) {
+                        addressReqBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder>(
+                                addressReq_,
+                                ((bitField0_ & 0x00000001) != 0),
+                                getParentForChildren(),
+                                isClean());
+                        addressReq_ = null;
+                    }
+                    return addressReqBuilder_;
+                }
+                @java.lang.Override
+                public final Builder setUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.setUnknownFields(unknownFields);
+                }
+
+                @java.lang.Override
+                public final Builder mergeUnknownFields(
+                        final com.google.protobuf.UnknownFieldSet unknownFields) {
+                    return super.mergeUnknownFields(unknownFields);
+                }
+
+
+                // @@protoc_insertion_point(builder_scope:NettyProtobufWebsocketClient.MessageBase.SelectAddressResp)
+            }
+
+            // @@protoc_insertion_point(class_scope:NettyProtobufWebsocketClient.MessageBase.SelectAddressResp)
+            private static final com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp DEFAULT_INSTANCE;
+            static {
+                DEFAULT_INSTANCE = new com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp();
+            }
+
+            public static com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp getDefaultInstance() {
+                return DEFAULT_INSTANCE;
+            }
+
+            private static final com.google.protobuf.Parser<SelectAddressResp>
+                    PARSER = new com.google.protobuf.AbstractParser<SelectAddressResp>() {
+                @java.lang.Override
+                public SelectAddressResp parsePartialFrom(
+                        com.google.protobuf.CodedInputStream input,
+                        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+                        throws com.google.protobuf.InvalidProtocolBufferException {
+                    return new SelectAddressResp(input, extensionRegistry);
+                }
+            };
+
+            public static com.google.protobuf.Parser<SelectAddressResp> parser() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.google.protobuf.Parser<SelectAddressResp> getParserForType() {
+                return PARSER;
+            }
+
+            @java.lang.Override
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp getDefaultInstanceForType() {
+                return DEFAULT_INSTANCE;
+            }
+
+        }
+
         public static final int CLIENTID_FIELD_NUMBER = 1;
         private volatile java.lang.Object clientId_;
         /**
@@ -39640,6 +57820,468 @@ public final class MessageProtocol {
             return getCollectionListResp();
         }
 
+        public static final int PARTICULARSREQ_FIELD_NUMBER = 30;
+        private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq particularsReq_;
+        /**
+         * <pre>
+         *订单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsReq particularsReq = 30;</code>
+         */
+        public boolean hasParticularsReq() {
+            return particularsReq_ != null;
+        }
+        /**
+         * <pre>
+         *订单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsReq particularsReq = 30;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq getParticularsReq() {
+            return particularsReq_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.getDefaultInstance() : particularsReq_;
+        }
+        /**
+         * <pre>
+         *订单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsReq particularsReq = 30;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReqOrBuilder getParticularsReqOrBuilder() {
+            return getParticularsReq();
+        }
+
+        public static final int PARTICULARSRESP_FIELD_NUMBER = 31;
+        private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp particularsResp_;
+        /**
+         * <pre>
+         *订单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 31;</code>
+         */
+        public boolean hasParticularsResp() {
+            return particularsResp_ != null;
+        }
+        /**
+         * <pre>
+         *订单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 31;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp getParticularsResp() {
+            return particularsResp_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.getDefaultInstance() : particularsResp_;
+        }
+        /**
+         * <pre>
+         *订单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 31;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsRespOrBuilder getParticularsRespOrBuilder() {
+            return getParticularsResp();
+        }
+
+        public static final int LOGINPASSWORDREQ_FIELD_NUMBER = 32;
+        private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq loginPasswordReq_;
+        /**
+         * <pre>
+         *找回密码
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq loginPasswordReq = 32;</code>
+         */
+        public boolean hasLoginPasswordReq() {
+            return loginPasswordReq_ != null;
+        }
+        /**
+         * <pre>
+         *找回密码
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq loginPasswordReq = 32;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq getLoginPasswordReq() {
+            return loginPasswordReq_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.getDefaultInstance() : loginPasswordReq_;
+        }
+        /**
+         * <pre>
+         *找回密码
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq loginPasswordReq = 32;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReqOrBuilder getLoginPasswordReqOrBuilder() {
+            return getLoginPasswordReq();
+        }
+
+        public static final int PARTICULARSLISTREQ_FIELD_NUMBER = 33;
+        private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq particularsListReq_;
+        /**
+         * <pre>
+         *用户全部订单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListReq particularsListReq = 33;</code>
+         */
+        public boolean hasParticularsListReq() {
+            return particularsListReq_ != null;
+        }
+        /**
+         * <pre>
+         *用户全部订单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListReq particularsListReq = 33;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq getParticularsListReq() {
+            return particularsListReq_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.getDefaultInstance() : particularsListReq_;
+        }
+        /**
+         * <pre>
+         *用户全部订单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListReq particularsListReq = 33;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReqOrBuilder getParticularsListReqOrBuilder() {
+            return getParticularsListReq();
+        }
+
+        public static final int PARTICULARSLISTRESP_FIELD_NUMBER = 34;
+        private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp particularsListResp_;
+        /**
+         * <pre>
+         *用户全部订单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListResp particularsListResp = 34;</code>
+         */
+        public boolean hasParticularsListResp() {
+            return particularsListResp_ != null;
+        }
+        /**
+         * <pre>
+         *用户全部订单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListResp particularsListResp = 34;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp getParticularsListResp() {
+            return particularsListResp_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.getDefaultInstance() : particularsListResp_;
+        }
+        /**
+         * <pre>
+         *用户全部订单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListResp particularsListResp = 34;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListRespOrBuilder getParticularsListRespOrBuilder() {
+            return getParticularsListResp();
+        }
+
+        public static final int PARTICULARSORDERRESP_FIELD_NUMBER = 35;
+        private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp particularsOrderResp_;
+        /**
+         * <pre>
+         *用户全部订单数据响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 35;</code>
+         */
+        public boolean hasParticularsOrderResp() {
+            return particularsOrderResp_ != null;
+        }
+        /**
+         * <pre>
+         *用户全部订单数据响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 35;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp getParticularsOrderResp() {
+            return particularsOrderResp_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.getDefaultInstance() : particularsOrderResp_;
+        }
+        /**
+         * <pre>
+         *用户全部订单数据响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 35;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderRespOrBuilder getParticularsOrderRespOrBuilder() {
+            return getParticularsOrderResp();
+        }
+
+        public static final int PLACEANORDERREQ_FIELD_NUMBER = 36;
+        private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq placeAnOrderReq_;
+        /**
+         * <pre>
+         *下单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq placeAnOrderReq = 36;</code>
+         */
+        public boolean hasPlaceAnOrderReq() {
+            return placeAnOrderReq_ != null;
+        }
+        /**
+         * <pre>
+         *下单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq placeAnOrderReq = 36;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq getPlaceAnOrderReq() {
+            return placeAnOrderReq_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.getDefaultInstance() : placeAnOrderReq_;
+        }
+        /**
+         * <pre>
+         *下单请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq placeAnOrderReq = 36;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReqOrBuilder getPlaceAnOrderReqOrBuilder() {
+            return getPlaceAnOrderReq();
+        }
+
+        public static final int PLACEANORDERRESP_FIELD_NUMBER = 37;
+        private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp placeAnOrderResp_;
+        /**
+         * <pre>
+         *下单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp placeAnOrderResp = 37;</code>
+         */
+        public boolean hasPlaceAnOrderResp() {
+            return placeAnOrderResp_ != null;
+        }
+        /**
+         * <pre>
+         *下单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp placeAnOrderResp = 37;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp getPlaceAnOrderResp() {
+            return placeAnOrderResp_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.getDefaultInstance() : placeAnOrderResp_;
+        }
+        /**
+         * <pre>
+         *下单响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp placeAnOrderResp = 37;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderRespOrBuilder getPlaceAnOrderRespOrBuilder() {
+            return getPlaceAnOrderResp();
+        }
+
+        public static final int ADDRESSREQ_FIELD_NUMBER = 38;
+        private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq addressReq_;
+        /**
+         * <pre>
+         *添加收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 38;</code>
+         */
+        public boolean hasAddressReq() {
+            return addressReq_ != null;
+        }
+        /**
+         * <pre>
+         *添加收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 38;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq getAddressReq() {
+            return addressReq_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.getDefaultInstance() : addressReq_;
+        }
+        /**
+         * <pre>
+         *添加收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 38;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder getAddressReqOrBuilder() {
+            return getAddressReq();
+        }
+
+        public static final int ADDRESSRESP_FIELD_NUMBER = 39;
+        private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp addressResp_;
+        /**
+         * <pre>
+         *添加、修改、删除收货地址响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.AddressResp addressResp = 39;</code>
+         */
+        public boolean hasAddressResp() {
+            return addressResp_ != null;
+        }
+        /**
+         * <pre>
+         *添加、修改、删除收货地址响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.AddressResp addressResp = 39;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp getAddressResp() {
+            return addressResp_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.getDefaultInstance() : addressResp_;
+        }
+        /**
+         * <pre>
+         *添加、修改、删除收货地址响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.AddressResp addressResp = 39;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressRespOrBuilder getAddressRespOrBuilder() {
+            return getAddressResp();
+        }
+
+        public static final int UPDATEADDRESSREQ_FIELD_NUMBER = 40;
+        private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq updateAddressReq_;
+        /**
+         * <pre>
+         *修改收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq updateAddressReq = 40;</code>
+         */
+        public boolean hasUpdateAddressReq() {
+            return updateAddressReq_ != null;
+        }
+        /**
+         * <pre>
+         *修改收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq updateAddressReq = 40;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq getUpdateAddressReq() {
+            return updateAddressReq_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.getDefaultInstance() : updateAddressReq_;
+        }
+        /**
+         * <pre>
+         *修改收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq updateAddressReq = 40;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReqOrBuilder getUpdateAddressReqOrBuilder() {
+            return getUpdateAddressReq();
+        }
+
+        public static final int DELETEADDRESSREQ_FIELD_NUMBER = 41;
+        private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq deleteAddressReq_;
+        /**
+         * <pre>
+         *删除收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq deleteAddressReq = 41;</code>
+         */
+        public boolean hasDeleteAddressReq() {
+            return deleteAddressReq_ != null;
+        }
+        /**
+         * <pre>
+         *删除收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq deleteAddressReq = 41;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq getDeleteAddressReq() {
+            return deleteAddressReq_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.getDefaultInstance() : deleteAddressReq_;
+        }
+        /**
+         * <pre>
+         *删除收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq deleteAddressReq = 41;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReqOrBuilder getDeleteAddressReqOrBuilder() {
+            return getDeleteAddressReq();
+        }
+
+        public static final int SELECTADDRESSREQ_FIELD_NUMBER = 42;
+        private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq selectAddressReq_;
+        /**
+         * <pre>
+         *查询该用户所有收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressReq selectAddressReq = 42;</code>
+         */
+        public boolean hasSelectAddressReq() {
+            return selectAddressReq_ != null;
+        }
+        /**
+         * <pre>
+         *查询该用户所有收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressReq selectAddressReq = 42;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq getSelectAddressReq() {
+            return selectAddressReq_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.getDefaultInstance() : selectAddressReq_;
+        }
+        /**
+         * <pre>
+         *查询该用户所有收货地址请求
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressReq selectAddressReq = 42;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReqOrBuilder getSelectAddressReqOrBuilder() {
+            return getSelectAddressReq();
+        }
+
+        public static final int SELECTADDRESSRESP_FIELD_NUMBER = 43;
+        private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp selectAddressResp_;
+        /**
+         * <pre>
+         *查询该用户所有收货地址响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressResp selectAddressResp = 43;</code>
+         */
+        public boolean hasSelectAddressResp() {
+            return selectAddressResp_ != null;
+        }
+        /**
+         * <pre>
+         *查询该用户所有收货地址响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressResp selectAddressResp = 43;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp getSelectAddressResp() {
+            return selectAddressResp_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.getDefaultInstance() : selectAddressResp_;
+        }
+        /**
+         * <pre>
+         *查询该用户所有收货地址响应
+         * </pre>
+         *
+         * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressResp selectAddressResp = 43;</code>
+         */
+        public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressRespOrBuilder getSelectAddressRespOrBuilder() {
+            return getSelectAddressResp();
+        }
+
         private byte memoizedIsInitialized = -1;
         @java.lang.Override
         public final boolean isInitialized() {
@@ -39740,6 +58382,48 @@ public final class MessageProtocol {
             }
             if (collectionListResp_ != null) {
                 output.writeMessage(29, getCollectionListResp());
+            }
+            if (particularsReq_ != null) {
+                output.writeMessage(30, getParticularsReq());
+            }
+            if (particularsResp_ != null) {
+                output.writeMessage(31, getParticularsResp());
+            }
+            if (loginPasswordReq_ != null) {
+                output.writeMessage(32, getLoginPasswordReq());
+            }
+            if (particularsListReq_ != null) {
+                output.writeMessage(33, getParticularsListReq());
+            }
+            if (particularsListResp_ != null) {
+                output.writeMessage(34, getParticularsListResp());
+            }
+            if (particularsOrderResp_ != null) {
+                output.writeMessage(35, getParticularsOrderResp());
+            }
+            if (placeAnOrderReq_ != null) {
+                output.writeMessage(36, getPlaceAnOrderReq());
+            }
+            if (placeAnOrderResp_ != null) {
+                output.writeMessage(37, getPlaceAnOrderResp());
+            }
+            if (addressReq_ != null) {
+                output.writeMessage(38, getAddressReq());
+            }
+            if (addressResp_ != null) {
+                output.writeMessage(39, getAddressResp());
+            }
+            if (updateAddressReq_ != null) {
+                output.writeMessage(40, getUpdateAddressReq());
+            }
+            if (deleteAddressReq_ != null) {
+                output.writeMessage(41, getDeleteAddressReq());
+            }
+            if (selectAddressReq_ != null) {
+                output.writeMessage(42, getSelectAddressReq());
+            }
+            if (selectAddressResp_ != null) {
+                output.writeMessage(43, getSelectAddressResp());
             }
             unknownFields.writeTo(output);
         }
@@ -39864,6 +58548,62 @@ public final class MessageProtocol {
             if (collectionListResp_ != null) {
                 size += com.google.protobuf.CodedOutputStream
                         .computeMessageSize(29, getCollectionListResp());
+            }
+            if (particularsReq_ != null) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(30, getParticularsReq());
+            }
+            if (particularsResp_ != null) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(31, getParticularsResp());
+            }
+            if (loginPasswordReq_ != null) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(32, getLoginPasswordReq());
+            }
+            if (particularsListReq_ != null) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(33, getParticularsListReq());
+            }
+            if (particularsListResp_ != null) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(34, getParticularsListResp());
+            }
+            if (particularsOrderResp_ != null) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(35, getParticularsOrderResp());
+            }
+            if (placeAnOrderReq_ != null) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(36, getPlaceAnOrderReq());
+            }
+            if (placeAnOrderResp_ != null) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(37, getPlaceAnOrderResp());
+            }
+            if (addressReq_ != null) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(38, getAddressReq());
+            }
+            if (addressResp_ != null) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(39, getAddressResp());
+            }
+            if (updateAddressReq_ != null) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(40, getUpdateAddressReq());
+            }
+            if (deleteAddressReq_ != null) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(41, getDeleteAddressReq());
+            }
+            if (selectAddressReq_ != null) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(42, getSelectAddressReq());
+            }
+            if (selectAddressResp_ != null) {
+                size += com.google.protobuf.CodedOutputStream
+                        .computeMessageSize(43, getSelectAddressResp());
             }
             size += unknownFields.getSerializedSize();
             memoizedSize = size;
@@ -40015,6 +58755,76 @@ public final class MessageProtocol {
                 if (!getCollectionListResp()
                         .equals(other.getCollectionListResp())) return false;
             }
+            if (hasParticularsReq() != other.hasParticularsReq()) return false;
+            if (hasParticularsReq()) {
+                if (!getParticularsReq()
+                        .equals(other.getParticularsReq())) return false;
+            }
+            if (hasParticularsResp() != other.hasParticularsResp()) return false;
+            if (hasParticularsResp()) {
+                if (!getParticularsResp()
+                        .equals(other.getParticularsResp())) return false;
+            }
+            if (hasLoginPasswordReq() != other.hasLoginPasswordReq()) return false;
+            if (hasLoginPasswordReq()) {
+                if (!getLoginPasswordReq()
+                        .equals(other.getLoginPasswordReq())) return false;
+            }
+            if (hasParticularsListReq() != other.hasParticularsListReq()) return false;
+            if (hasParticularsListReq()) {
+                if (!getParticularsListReq()
+                        .equals(other.getParticularsListReq())) return false;
+            }
+            if (hasParticularsListResp() != other.hasParticularsListResp()) return false;
+            if (hasParticularsListResp()) {
+                if (!getParticularsListResp()
+                        .equals(other.getParticularsListResp())) return false;
+            }
+            if (hasParticularsOrderResp() != other.hasParticularsOrderResp()) return false;
+            if (hasParticularsOrderResp()) {
+                if (!getParticularsOrderResp()
+                        .equals(other.getParticularsOrderResp())) return false;
+            }
+            if (hasPlaceAnOrderReq() != other.hasPlaceAnOrderReq()) return false;
+            if (hasPlaceAnOrderReq()) {
+                if (!getPlaceAnOrderReq()
+                        .equals(other.getPlaceAnOrderReq())) return false;
+            }
+            if (hasPlaceAnOrderResp() != other.hasPlaceAnOrderResp()) return false;
+            if (hasPlaceAnOrderResp()) {
+                if (!getPlaceAnOrderResp()
+                        .equals(other.getPlaceAnOrderResp())) return false;
+            }
+            if (hasAddressReq() != other.hasAddressReq()) return false;
+            if (hasAddressReq()) {
+                if (!getAddressReq()
+                        .equals(other.getAddressReq())) return false;
+            }
+            if (hasAddressResp() != other.hasAddressResp()) return false;
+            if (hasAddressResp()) {
+                if (!getAddressResp()
+                        .equals(other.getAddressResp())) return false;
+            }
+            if (hasUpdateAddressReq() != other.hasUpdateAddressReq()) return false;
+            if (hasUpdateAddressReq()) {
+                if (!getUpdateAddressReq()
+                        .equals(other.getUpdateAddressReq())) return false;
+            }
+            if (hasDeleteAddressReq() != other.hasDeleteAddressReq()) return false;
+            if (hasDeleteAddressReq()) {
+                if (!getDeleteAddressReq()
+                        .equals(other.getDeleteAddressReq())) return false;
+            }
+            if (hasSelectAddressReq() != other.hasSelectAddressReq()) return false;
+            if (hasSelectAddressReq()) {
+                if (!getSelectAddressReq()
+                        .equals(other.getSelectAddressReq())) return false;
+            }
+            if (hasSelectAddressResp() != other.hasSelectAddressResp()) return false;
+            if (hasSelectAddressResp()) {
+                if (!getSelectAddressResp()
+                        .equals(other.getSelectAddressResp())) return false;
+            }
             if (!unknownFields.equals(other.unknownFields)) return false;
             return true;
         }
@@ -40135,6 +58945,62 @@ public final class MessageProtocol {
             if (hasCollectionListResp()) {
                 hash = (37 * hash) + COLLECTIONLISTRESP_FIELD_NUMBER;
                 hash = (53 * hash) + getCollectionListResp().hashCode();
+            }
+            if (hasParticularsReq()) {
+                hash = (37 * hash) + PARTICULARSREQ_FIELD_NUMBER;
+                hash = (53 * hash) + getParticularsReq().hashCode();
+            }
+            if (hasParticularsResp()) {
+                hash = (37 * hash) + PARTICULARSRESP_FIELD_NUMBER;
+                hash = (53 * hash) + getParticularsResp().hashCode();
+            }
+            if (hasLoginPasswordReq()) {
+                hash = (37 * hash) + LOGINPASSWORDREQ_FIELD_NUMBER;
+                hash = (53 * hash) + getLoginPasswordReq().hashCode();
+            }
+            if (hasParticularsListReq()) {
+                hash = (37 * hash) + PARTICULARSLISTREQ_FIELD_NUMBER;
+                hash = (53 * hash) + getParticularsListReq().hashCode();
+            }
+            if (hasParticularsListResp()) {
+                hash = (37 * hash) + PARTICULARSLISTRESP_FIELD_NUMBER;
+                hash = (53 * hash) + getParticularsListResp().hashCode();
+            }
+            if (hasParticularsOrderResp()) {
+                hash = (37 * hash) + PARTICULARSORDERRESP_FIELD_NUMBER;
+                hash = (53 * hash) + getParticularsOrderResp().hashCode();
+            }
+            if (hasPlaceAnOrderReq()) {
+                hash = (37 * hash) + PLACEANORDERREQ_FIELD_NUMBER;
+                hash = (53 * hash) + getPlaceAnOrderReq().hashCode();
+            }
+            if (hasPlaceAnOrderResp()) {
+                hash = (37 * hash) + PLACEANORDERRESP_FIELD_NUMBER;
+                hash = (53 * hash) + getPlaceAnOrderResp().hashCode();
+            }
+            if (hasAddressReq()) {
+                hash = (37 * hash) + ADDRESSREQ_FIELD_NUMBER;
+                hash = (53 * hash) + getAddressReq().hashCode();
+            }
+            if (hasAddressResp()) {
+                hash = (37 * hash) + ADDRESSRESP_FIELD_NUMBER;
+                hash = (53 * hash) + getAddressResp().hashCode();
+            }
+            if (hasUpdateAddressReq()) {
+                hash = (37 * hash) + UPDATEADDRESSREQ_FIELD_NUMBER;
+                hash = (53 * hash) + getUpdateAddressReq().hashCode();
+            }
+            if (hasDeleteAddressReq()) {
+                hash = (37 * hash) + DELETEADDRESSREQ_FIELD_NUMBER;
+                hash = (53 * hash) + getDeleteAddressReq().hashCode();
+            }
+            if (hasSelectAddressReq()) {
+                hash = (37 * hash) + SELECTADDRESSREQ_FIELD_NUMBER;
+                hash = (53 * hash) + getSelectAddressReq().hashCode();
+            }
+            if (hasSelectAddressResp()) {
+                hash = (37 * hash) + SELECTADDRESSRESP_FIELD_NUMBER;
+                hash = (53 * hash) + getSelectAddressResp().hashCode();
             }
             hash = (29 * hash) + unknownFields.hashCode();
             memoizedHashCode = hash;
@@ -40435,6 +59301,90 @@ public final class MessageProtocol {
                     collectionListResp_ = null;
                     collectionListRespBuilder_ = null;
                 }
+                if (particularsReqBuilder_ == null) {
+                    particularsReq_ = null;
+                } else {
+                    particularsReq_ = null;
+                    particularsReqBuilder_ = null;
+                }
+                if (particularsRespBuilder_ == null) {
+                    particularsResp_ = null;
+                } else {
+                    particularsResp_ = null;
+                    particularsRespBuilder_ = null;
+                }
+                if (loginPasswordReqBuilder_ == null) {
+                    loginPasswordReq_ = null;
+                } else {
+                    loginPasswordReq_ = null;
+                    loginPasswordReqBuilder_ = null;
+                }
+                if (particularsListReqBuilder_ == null) {
+                    particularsListReq_ = null;
+                } else {
+                    particularsListReq_ = null;
+                    particularsListReqBuilder_ = null;
+                }
+                if (particularsListRespBuilder_ == null) {
+                    particularsListResp_ = null;
+                } else {
+                    particularsListResp_ = null;
+                    particularsListRespBuilder_ = null;
+                }
+                if (particularsOrderRespBuilder_ == null) {
+                    particularsOrderResp_ = null;
+                } else {
+                    particularsOrderResp_ = null;
+                    particularsOrderRespBuilder_ = null;
+                }
+                if (placeAnOrderReqBuilder_ == null) {
+                    placeAnOrderReq_ = null;
+                } else {
+                    placeAnOrderReq_ = null;
+                    placeAnOrderReqBuilder_ = null;
+                }
+                if (placeAnOrderRespBuilder_ == null) {
+                    placeAnOrderResp_ = null;
+                } else {
+                    placeAnOrderResp_ = null;
+                    placeAnOrderRespBuilder_ = null;
+                }
+                if (addressReqBuilder_ == null) {
+                    addressReq_ = null;
+                } else {
+                    addressReq_ = null;
+                    addressReqBuilder_ = null;
+                }
+                if (addressRespBuilder_ == null) {
+                    addressResp_ = null;
+                } else {
+                    addressResp_ = null;
+                    addressRespBuilder_ = null;
+                }
+                if (updateAddressReqBuilder_ == null) {
+                    updateAddressReq_ = null;
+                } else {
+                    updateAddressReq_ = null;
+                    updateAddressReqBuilder_ = null;
+                }
+                if (deleteAddressReqBuilder_ == null) {
+                    deleteAddressReq_ = null;
+                } else {
+                    deleteAddressReq_ = null;
+                    deleteAddressReqBuilder_ = null;
+                }
+                if (selectAddressReqBuilder_ == null) {
+                    selectAddressReq_ = null;
+                } else {
+                    selectAddressReq_ = null;
+                    selectAddressReqBuilder_ = null;
+                }
+                if (selectAddressRespBuilder_ == null) {
+                    selectAddressResp_ = null;
+                } else {
+                    selectAddressResp_ = null;
+                    selectAddressRespBuilder_ = null;
+                }
                 return this;
             }
 
@@ -40594,6 +59544,76 @@ public final class MessageProtocol {
                 } else {
                     result.collectionListResp_ = collectionListRespBuilder_.build();
                 }
+                if (particularsReqBuilder_ == null) {
+                    result.particularsReq_ = particularsReq_;
+                } else {
+                    result.particularsReq_ = particularsReqBuilder_.build();
+                }
+                if (particularsRespBuilder_ == null) {
+                    result.particularsResp_ = particularsResp_;
+                } else {
+                    result.particularsResp_ = particularsRespBuilder_.build();
+                }
+                if (loginPasswordReqBuilder_ == null) {
+                    result.loginPasswordReq_ = loginPasswordReq_;
+                } else {
+                    result.loginPasswordReq_ = loginPasswordReqBuilder_.build();
+                }
+                if (particularsListReqBuilder_ == null) {
+                    result.particularsListReq_ = particularsListReq_;
+                } else {
+                    result.particularsListReq_ = particularsListReqBuilder_.build();
+                }
+                if (particularsListRespBuilder_ == null) {
+                    result.particularsListResp_ = particularsListResp_;
+                } else {
+                    result.particularsListResp_ = particularsListRespBuilder_.build();
+                }
+                if (particularsOrderRespBuilder_ == null) {
+                    result.particularsOrderResp_ = particularsOrderResp_;
+                } else {
+                    result.particularsOrderResp_ = particularsOrderRespBuilder_.build();
+                }
+                if (placeAnOrderReqBuilder_ == null) {
+                    result.placeAnOrderReq_ = placeAnOrderReq_;
+                } else {
+                    result.placeAnOrderReq_ = placeAnOrderReqBuilder_.build();
+                }
+                if (placeAnOrderRespBuilder_ == null) {
+                    result.placeAnOrderResp_ = placeAnOrderResp_;
+                } else {
+                    result.placeAnOrderResp_ = placeAnOrderRespBuilder_.build();
+                }
+                if (addressReqBuilder_ == null) {
+                    result.addressReq_ = addressReq_;
+                } else {
+                    result.addressReq_ = addressReqBuilder_.build();
+                }
+                if (addressRespBuilder_ == null) {
+                    result.addressResp_ = addressResp_;
+                } else {
+                    result.addressResp_ = addressRespBuilder_.build();
+                }
+                if (updateAddressReqBuilder_ == null) {
+                    result.updateAddressReq_ = updateAddressReq_;
+                } else {
+                    result.updateAddressReq_ = updateAddressReqBuilder_.build();
+                }
+                if (deleteAddressReqBuilder_ == null) {
+                    result.deleteAddressReq_ = deleteAddressReq_;
+                } else {
+                    result.deleteAddressReq_ = deleteAddressReqBuilder_.build();
+                }
+                if (selectAddressReqBuilder_ == null) {
+                    result.selectAddressReq_ = selectAddressReq_;
+                } else {
+                    result.selectAddressReq_ = selectAddressReqBuilder_.build();
+                }
+                if (selectAddressRespBuilder_ == null) {
+                    result.selectAddressResp_ = selectAddressResp_;
+                } else {
+                    result.selectAddressResp_ = selectAddressRespBuilder_.build();
+                }
                 onBuilt();
                 return result;
             }
@@ -40729,6 +59749,48 @@ public final class MessageProtocol {
                 }
                 if (other.hasCollectionListResp()) {
                     mergeCollectionListResp(other.getCollectionListResp());
+                }
+                if (other.hasParticularsReq()) {
+                    mergeParticularsReq(other.getParticularsReq());
+                }
+                if (other.hasParticularsResp()) {
+                    mergeParticularsResp(other.getParticularsResp());
+                }
+                if (other.hasLoginPasswordReq()) {
+                    mergeLoginPasswordReq(other.getLoginPasswordReq());
+                }
+                if (other.hasParticularsListReq()) {
+                    mergeParticularsListReq(other.getParticularsListReq());
+                }
+                if (other.hasParticularsListResp()) {
+                    mergeParticularsListResp(other.getParticularsListResp());
+                }
+                if (other.hasParticularsOrderResp()) {
+                    mergeParticularsOrderResp(other.getParticularsOrderResp());
+                }
+                if (other.hasPlaceAnOrderReq()) {
+                    mergePlaceAnOrderReq(other.getPlaceAnOrderReq());
+                }
+                if (other.hasPlaceAnOrderResp()) {
+                    mergePlaceAnOrderResp(other.getPlaceAnOrderResp());
+                }
+                if (other.hasAddressReq()) {
+                    mergeAddressReq(other.getAddressReq());
+                }
+                if (other.hasAddressResp()) {
+                    mergeAddressResp(other.getAddressResp());
+                }
+                if (other.hasUpdateAddressReq()) {
+                    mergeUpdateAddressReq(other.getUpdateAddressReq());
+                }
+                if (other.hasDeleteAddressReq()) {
+                    mergeDeleteAddressReq(other.getDeleteAddressReq());
+                }
+                if (other.hasSelectAddressReq()) {
+                    mergeSelectAddressReq(other.getSelectAddressReq());
+                }
+                if (other.hasSelectAddressResp()) {
+                    mergeSelectAddressResp(other.getSelectAddressResp());
                 }
                 this.mergeUnknownFields(other.unknownFields);
                 onChanged();
@@ -44908,6 +63970,2148 @@ public final class MessageProtocol {
                 }
                 return collectionListRespBuilder_;
             }
+
+            private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq particularsReq_;
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReqOrBuilder> particularsReqBuilder_;
+            /**
+             * <pre>
+             *订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsReq particularsReq = 30;</code>
+             */
+            public boolean hasParticularsReq() {
+                return particularsReqBuilder_ != null || particularsReq_ != null;
+            }
+            /**
+             * <pre>
+             *订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsReq particularsReq = 30;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq getParticularsReq() {
+                if (particularsReqBuilder_ == null) {
+                    return particularsReq_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.getDefaultInstance() : particularsReq_;
+                } else {
+                    return particularsReqBuilder_.getMessage();
+                }
+            }
+            /**
+             * <pre>
+             *订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsReq particularsReq = 30;</code>
+             */
+            public Builder setParticularsReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq value) {
+                if (particularsReqBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    particularsReq_ = value;
+                    onChanged();
+                } else {
+                    particularsReqBuilder_.setMessage(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsReq particularsReq = 30;</code>
+             */
+            public Builder setParticularsReq(
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.Builder builderForValue) {
+                if (particularsReqBuilder_ == null) {
+                    particularsReq_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    particularsReqBuilder_.setMessage(builderForValue.build());
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsReq particularsReq = 30;</code>
+             */
+            public Builder mergeParticularsReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq value) {
+                if (particularsReqBuilder_ == null) {
+                    if (particularsReq_ != null) {
+                        particularsReq_ =
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.newBuilder(particularsReq_).mergeFrom(value).buildPartial();
+                    } else {
+                        particularsReq_ = value;
+                    }
+                    onChanged();
+                } else {
+                    particularsReqBuilder_.mergeFrom(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsReq particularsReq = 30;</code>
+             */
+            public Builder clearParticularsReq() {
+                if (particularsReqBuilder_ == null) {
+                    particularsReq_ = null;
+                    onChanged();
+                } else {
+                    particularsReq_ = null;
+                    particularsReqBuilder_ = null;
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsReq particularsReq = 30;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.Builder getParticularsReqBuilder() {
+
+                onChanged();
+                return getParticularsReqFieldBuilder().getBuilder();
+            }
+            /**
+             * <pre>
+             *订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsReq particularsReq = 30;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReqOrBuilder getParticularsReqOrBuilder() {
+                if (particularsReqBuilder_ != null) {
+                    return particularsReqBuilder_.getMessageOrBuilder();
+                } else {
+                    return particularsReq_ == null ?
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.getDefaultInstance() : particularsReq_;
+                }
+            }
+            /**
+             * <pre>
+             *订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsReq particularsReq = 30;</code>
+             */
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReqOrBuilder>
+            getParticularsReqFieldBuilder() {
+                if (particularsReqBuilder_ == null) {
+                    particularsReqBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsReqOrBuilder>(
+                            getParticularsReq(),
+                            getParentForChildren(),
+                            isClean());
+                    particularsReq_ = null;
+                }
+                return particularsReqBuilder_;
+            }
+
+            private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp particularsResp_;
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsRespOrBuilder> particularsRespBuilder_;
+            /**
+             * <pre>
+             *订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 31;</code>
+             */
+            public boolean hasParticularsResp() {
+                return particularsRespBuilder_ != null || particularsResp_ != null;
+            }
+            /**
+             * <pre>
+             *订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 31;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp getParticularsResp() {
+                if (particularsRespBuilder_ == null) {
+                    return particularsResp_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.getDefaultInstance() : particularsResp_;
+                } else {
+                    return particularsRespBuilder_.getMessage();
+                }
+            }
+            /**
+             * <pre>
+             *订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 31;</code>
+             */
+            public Builder setParticularsResp(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp value) {
+                if (particularsRespBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    particularsResp_ = value;
+                    onChanged();
+                } else {
+                    particularsRespBuilder_.setMessage(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 31;</code>
+             */
+            public Builder setParticularsResp(
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder builderForValue) {
+                if (particularsRespBuilder_ == null) {
+                    particularsResp_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    particularsRespBuilder_.setMessage(builderForValue.build());
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 31;</code>
+             */
+            public Builder mergeParticularsResp(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp value) {
+                if (particularsRespBuilder_ == null) {
+                    if (particularsResp_ != null) {
+                        particularsResp_ =
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.newBuilder(particularsResp_).mergeFrom(value).buildPartial();
+                    } else {
+                        particularsResp_ = value;
+                    }
+                    onChanged();
+                } else {
+                    particularsRespBuilder_.mergeFrom(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 31;</code>
+             */
+            public Builder clearParticularsResp() {
+                if (particularsRespBuilder_ == null) {
+                    particularsResp_ = null;
+                    onChanged();
+                } else {
+                    particularsResp_ = null;
+                    particularsRespBuilder_ = null;
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 31;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder getParticularsRespBuilder() {
+
+                onChanged();
+                return getParticularsRespFieldBuilder().getBuilder();
+            }
+            /**
+             * <pre>
+             *订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 31;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsRespOrBuilder getParticularsRespOrBuilder() {
+                if (particularsRespBuilder_ != null) {
+                    return particularsRespBuilder_.getMessageOrBuilder();
+                } else {
+                    return particularsResp_ == null ?
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.getDefaultInstance() : particularsResp_;
+                }
+            }
+            /**
+             * <pre>
+             *订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsResp particularsResp = 31;</code>
+             */
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsRespOrBuilder>
+            getParticularsRespFieldBuilder() {
+                if (particularsRespBuilder_ == null) {
+                    particularsRespBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsRespOrBuilder>(
+                            getParticularsResp(),
+                            getParentForChildren(),
+                            isClean());
+                    particularsResp_ = null;
+                }
+                return particularsRespBuilder_;
+            }
+
+            private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq loginPasswordReq_;
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReqOrBuilder> loginPasswordReqBuilder_;
+            /**
+             * <pre>
+             *找回密码
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq loginPasswordReq = 32;</code>
+             */
+            public boolean hasLoginPasswordReq() {
+                return loginPasswordReqBuilder_ != null || loginPasswordReq_ != null;
+            }
+            /**
+             * <pre>
+             *找回密码
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq loginPasswordReq = 32;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq getLoginPasswordReq() {
+                if (loginPasswordReqBuilder_ == null) {
+                    return loginPasswordReq_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.getDefaultInstance() : loginPasswordReq_;
+                } else {
+                    return loginPasswordReqBuilder_.getMessage();
+                }
+            }
+            /**
+             * <pre>
+             *找回密码
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq loginPasswordReq = 32;</code>
+             */
+            public Builder setLoginPasswordReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq value) {
+                if (loginPasswordReqBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    loginPasswordReq_ = value;
+                    onChanged();
+                } else {
+                    loginPasswordReqBuilder_.setMessage(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *找回密码
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq loginPasswordReq = 32;</code>
+             */
+            public Builder setLoginPasswordReq(
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.Builder builderForValue) {
+                if (loginPasswordReqBuilder_ == null) {
+                    loginPasswordReq_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    loginPasswordReqBuilder_.setMessage(builderForValue.build());
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *找回密码
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq loginPasswordReq = 32;</code>
+             */
+            public Builder mergeLoginPasswordReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq value) {
+                if (loginPasswordReqBuilder_ == null) {
+                    if (loginPasswordReq_ != null) {
+                        loginPasswordReq_ =
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.newBuilder(loginPasswordReq_).mergeFrom(value).buildPartial();
+                    } else {
+                        loginPasswordReq_ = value;
+                    }
+                    onChanged();
+                } else {
+                    loginPasswordReqBuilder_.mergeFrom(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *找回密码
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq loginPasswordReq = 32;</code>
+             */
+            public Builder clearLoginPasswordReq() {
+                if (loginPasswordReqBuilder_ == null) {
+                    loginPasswordReq_ = null;
+                    onChanged();
+                } else {
+                    loginPasswordReq_ = null;
+                    loginPasswordReqBuilder_ = null;
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *找回密码
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq loginPasswordReq = 32;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.Builder getLoginPasswordReqBuilder() {
+
+                onChanged();
+                return getLoginPasswordReqFieldBuilder().getBuilder();
+            }
+            /**
+             * <pre>
+             *找回密码
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq loginPasswordReq = 32;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReqOrBuilder getLoginPasswordReqOrBuilder() {
+                if (loginPasswordReqBuilder_ != null) {
+                    return loginPasswordReqBuilder_.getMessageOrBuilder();
+                } else {
+                    return loginPasswordReq_ == null ?
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.getDefaultInstance() : loginPasswordReq_;
+                }
+            }
+            /**
+             * <pre>
+             *找回密码
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.LoginPasswordReq loginPasswordReq = 32;</code>
+             */
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReqOrBuilder>
+            getLoginPasswordReqFieldBuilder() {
+                if (loginPasswordReqBuilder_ == null) {
+                    loginPasswordReqBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.LoginPasswordReqOrBuilder>(
+                            getLoginPasswordReq(),
+                            getParentForChildren(),
+                            isClean());
+                    loginPasswordReq_ = null;
+                }
+                return loginPasswordReqBuilder_;
+            }
+
+            private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq particularsListReq_;
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReqOrBuilder> particularsListReqBuilder_;
+            /**
+             * <pre>
+             *用户全部订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListReq particularsListReq = 33;</code>
+             */
+            public boolean hasParticularsListReq() {
+                return particularsListReqBuilder_ != null || particularsListReq_ != null;
+            }
+            /**
+             * <pre>
+             *用户全部订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListReq particularsListReq = 33;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq getParticularsListReq() {
+                if (particularsListReqBuilder_ == null) {
+                    return particularsListReq_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.getDefaultInstance() : particularsListReq_;
+                } else {
+                    return particularsListReqBuilder_.getMessage();
+                }
+            }
+            /**
+             * <pre>
+             *用户全部订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListReq particularsListReq = 33;</code>
+             */
+            public Builder setParticularsListReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq value) {
+                if (particularsListReqBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    particularsListReq_ = value;
+                    onChanged();
+                } else {
+                    particularsListReqBuilder_.setMessage(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *用户全部订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListReq particularsListReq = 33;</code>
+             */
+            public Builder setParticularsListReq(
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.Builder builderForValue) {
+                if (particularsListReqBuilder_ == null) {
+                    particularsListReq_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    particularsListReqBuilder_.setMessage(builderForValue.build());
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *用户全部订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListReq particularsListReq = 33;</code>
+             */
+            public Builder mergeParticularsListReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq value) {
+                if (particularsListReqBuilder_ == null) {
+                    if (particularsListReq_ != null) {
+                        particularsListReq_ =
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.newBuilder(particularsListReq_).mergeFrom(value).buildPartial();
+                    } else {
+                        particularsListReq_ = value;
+                    }
+                    onChanged();
+                } else {
+                    particularsListReqBuilder_.mergeFrom(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *用户全部订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListReq particularsListReq = 33;</code>
+             */
+            public Builder clearParticularsListReq() {
+                if (particularsListReqBuilder_ == null) {
+                    particularsListReq_ = null;
+                    onChanged();
+                } else {
+                    particularsListReq_ = null;
+                    particularsListReqBuilder_ = null;
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *用户全部订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListReq particularsListReq = 33;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.Builder getParticularsListReqBuilder() {
+
+                onChanged();
+                return getParticularsListReqFieldBuilder().getBuilder();
+            }
+            /**
+             * <pre>
+             *用户全部订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListReq particularsListReq = 33;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReqOrBuilder getParticularsListReqOrBuilder() {
+                if (particularsListReqBuilder_ != null) {
+                    return particularsListReqBuilder_.getMessageOrBuilder();
+                } else {
+                    return particularsListReq_ == null ?
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.getDefaultInstance() : particularsListReq_;
+                }
+            }
+            /**
+             * <pre>
+             *用户全部订单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListReq particularsListReq = 33;</code>
+             */
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReqOrBuilder>
+            getParticularsListReqFieldBuilder() {
+                if (particularsListReqBuilder_ == null) {
+                    particularsListReqBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListReqOrBuilder>(
+                            getParticularsListReq(),
+                            getParentForChildren(),
+                            isClean());
+                    particularsListReq_ = null;
+                }
+                return particularsListReqBuilder_;
+            }
+
+            private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp particularsListResp_;
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListRespOrBuilder> particularsListRespBuilder_;
+            /**
+             * <pre>
+             *用户全部订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListResp particularsListResp = 34;</code>
+             */
+            public boolean hasParticularsListResp() {
+                return particularsListRespBuilder_ != null || particularsListResp_ != null;
+            }
+            /**
+             * <pre>
+             *用户全部订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListResp particularsListResp = 34;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp getParticularsListResp() {
+                if (particularsListRespBuilder_ == null) {
+                    return particularsListResp_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.getDefaultInstance() : particularsListResp_;
+                } else {
+                    return particularsListRespBuilder_.getMessage();
+                }
+            }
+            /**
+             * <pre>
+             *用户全部订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListResp particularsListResp = 34;</code>
+             */
+            public Builder setParticularsListResp(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp value) {
+                if (particularsListRespBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    particularsListResp_ = value;
+                    onChanged();
+                } else {
+                    particularsListRespBuilder_.setMessage(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *用户全部订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListResp particularsListResp = 34;</code>
+             */
+            public Builder setParticularsListResp(
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.Builder builderForValue) {
+                if (particularsListRespBuilder_ == null) {
+                    particularsListResp_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    particularsListRespBuilder_.setMessage(builderForValue.build());
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *用户全部订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListResp particularsListResp = 34;</code>
+             */
+            public Builder mergeParticularsListResp(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp value) {
+                if (particularsListRespBuilder_ == null) {
+                    if (particularsListResp_ != null) {
+                        particularsListResp_ =
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.newBuilder(particularsListResp_).mergeFrom(value).buildPartial();
+                    } else {
+                        particularsListResp_ = value;
+                    }
+                    onChanged();
+                } else {
+                    particularsListRespBuilder_.mergeFrom(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *用户全部订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListResp particularsListResp = 34;</code>
+             */
+            public Builder clearParticularsListResp() {
+                if (particularsListRespBuilder_ == null) {
+                    particularsListResp_ = null;
+                    onChanged();
+                } else {
+                    particularsListResp_ = null;
+                    particularsListRespBuilder_ = null;
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *用户全部订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListResp particularsListResp = 34;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.Builder getParticularsListRespBuilder() {
+
+                onChanged();
+                return getParticularsListRespFieldBuilder().getBuilder();
+            }
+            /**
+             * <pre>
+             *用户全部订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListResp particularsListResp = 34;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListRespOrBuilder getParticularsListRespOrBuilder() {
+                if (particularsListRespBuilder_ != null) {
+                    return particularsListRespBuilder_.getMessageOrBuilder();
+                } else {
+                    return particularsListResp_ == null ?
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.getDefaultInstance() : particularsListResp_;
+                }
+            }
+            /**
+             * <pre>
+             *用户全部订单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsListResp particularsListResp = 34;</code>
+             */
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListRespOrBuilder>
+            getParticularsListRespFieldBuilder() {
+                if (particularsListRespBuilder_ == null) {
+                    particularsListRespBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsListRespOrBuilder>(
+                            getParticularsListResp(),
+                            getParentForChildren(),
+                            isClean());
+                    particularsListResp_ = null;
+                }
+                return particularsListRespBuilder_;
+            }
+
+            private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp particularsOrderResp_;
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderRespOrBuilder> particularsOrderRespBuilder_;
+            /**
+             * <pre>
+             *用户全部订单数据响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 35;</code>
+             */
+            public boolean hasParticularsOrderResp() {
+                return particularsOrderRespBuilder_ != null || particularsOrderResp_ != null;
+            }
+            /**
+             * <pre>
+             *用户全部订单数据响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 35;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp getParticularsOrderResp() {
+                if (particularsOrderRespBuilder_ == null) {
+                    return particularsOrderResp_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.getDefaultInstance() : particularsOrderResp_;
+                } else {
+                    return particularsOrderRespBuilder_.getMessage();
+                }
+            }
+            /**
+             * <pre>
+             *用户全部订单数据响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 35;</code>
+             */
+            public Builder setParticularsOrderResp(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp value) {
+                if (particularsOrderRespBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    particularsOrderResp_ = value;
+                    onChanged();
+                } else {
+                    particularsOrderRespBuilder_.setMessage(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *用户全部订单数据响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 35;</code>
+             */
+            public Builder setParticularsOrderResp(
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder builderForValue) {
+                if (particularsOrderRespBuilder_ == null) {
+                    particularsOrderResp_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    particularsOrderRespBuilder_.setMessage(builderForValue.build());
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *用户全部订单数据响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 35;</code>
+             */
+            public Builder mergeParticularsOrderResp(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp value) {
+                if (particularsOrderRespBuilder_ == null) {
+                    if (particularsOrderResp_ != null) {
+                        particularsOrderResp_ =
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.newBuilder(particularsOrderResp_).mergeFrom(value).buildPartial();
+                    } else {
+                        particularsOrderResp_ = value;
+                    }
+                    onChanged();
+                } else {
+                    particularsOrderRespBuilder_.mergeFrom(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *用户全部订单数据响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 35;</code>
+             */
+            public Builder clearParticularsOrderResp() {
+                if (particularsOrderRespBuilder_ == null) {
+                    particularsOrderResp_ = null;
+                    onChanged();
+                } else {
+                    particularsOrderResp_ = null;
+                    particularsOrderRespBuilder_ = null;
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *用户全部订单数据响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 35;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder getParticularsOrderRespBuilder() {
+
+                onChanged();
+                return getParticularsOrderRespFieldBuilder().getBuilder();
+            }
+            /**
+             * <pre>
+             *用户全部订单数据响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 35;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderRespOrBuilder getParticularsOrderRespOrBuilder() {
+                if (particularsOrderRespBuilder_ != null) {
+                    return particularsOrderRespBuilder_.getMessageOrBuilder();
+                } else {
+                    return particularsOrderResp_ == null ?
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.getDefaultInstance() : particularsOrderResp_;
+                }
+            }
+            /**
+             * <pre>
+             *用户全部订单数据响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.ParticularsOrderResp particularsOrderResp = 35;</code>
+             */
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderRespOrBuilder>
+            getParticularsOrderRespFieldBuilder() {
+                if (particularsOrderRespBuilder_ == null) {
+                    particularsOrderRespBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.ParticularsOrderRespOrBuilder>(
+                            getParticularsOrderResp(),
+                            getParentForChildren(),
+                            isClean());
+                    particularsOrderResp_ = null;
+                }
+                return particularsOrderRespBuilder_;
+            }
+
+            private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq placeAnOrderReq_;
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReqOrBuilder> placeAnOrderReqBuilder_;
+            /**
+             * <pre>
+             *下单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq placeAnOrderReq = 36;</code>
+             */
+            public boolean hasPlaceAnOrderReq() {
+                return placeAnOrderReqBuilder_ != null || placeAnOrderReq_ != null;
+            }
+            /**
+             * <pre>
+             *下单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq placeAnOrderReq = 36;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq getPlaceAnOrderReq() {
+                if (placeAnOrderReqBuilder_ == null) {
+                    return placeAnOrderReq_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.getDefaultInstance() : placeAnOrderReq_;
+                } else {
+                    return placeAnOrderReqBuilder_.getMessage();
+                }
+            }
+            /**
+             * <pre>
+             *下单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq placeAnOrderReq = 36;</code>
+             */
+            public Builder setPlaceAnOrderReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq value) {
+                if (placeAnOrderReqBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    placeAnOrderReq_ = value;
+                    onChanged();
+                } else {
+                    placeAnOrderReqBuilder_.setMessage(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *下单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq placeAnOrderReq = 36;</code>
+             */
+            public Builder setPlaceAnOrderReq(
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.Builder builderForValue) {
+                if (placeAnOrderReqBuilder_ == null) {
+                    placeAnOrderReq_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    placeAnOrderReqBuilder_.setMessage(builderForValue.build());
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *下单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq placeAnOrderReq = 36;</code>
+             */
+            public Builder mergePlaceAnOrderReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq value) {
+                if (placeAnOrderReqBuilder_ == null) {
+                    if (placeAnOrderReq_ != null) {
+                        placeAnOrderReq_ =
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.newBuilder(placeAnOrderReq_).mergeFrom(value).buildPartial();
+                    } else {
+                        placeAnOrderReq_ = value;
+                    }
+                    onChanged();
+                } else {
+                    placeAnOrderReqBuilder_.mergeFrom(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *下单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq placeAnOrderReq = 36;</code>
+             */
+            public Builder clearPlaceAnOrderReq() {
+                if (placeAnOrderReqBuilder_ == null) {
+                    placeAnOrderReq_ = null;
+                    onChanged();
+                } else {
+                    placeAnOrderReq_ = null;
+                    placeAnOrderReqBuilder_ = null;
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *下单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq placeAnOrderReq = 36;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.Builder getPlaceAnOrderReqBuilder() {
+
+                onChanged();
+                return getPlaceAnOrderReqFieldBuilder().getBuilder();
+            }
+            /**
+             * <pre>
+             *下单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq placeAnOrderReq = 36;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReqOrBuilder getPlaceAnOrderReqOrBuilder() {
+                if (placeAnOrderReqBuilder_ != null) {
+                    return placeAnOrderReqBuilder_.getMessageOrBuilder();
+                } else {
+                    return placeAnOrderReq_ == null ?
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.getDefaultInstance() : placeAnOrderReq_;
+                }
+            }
+            /**
+             * <pre>
+             *下单请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderReq placeAnOrderReq = 36;</code>
+             */
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReqOrBuilder>
+            getPlaceAnOrderReqFieldBuilder() {
+                if (placeAnOrderReqBuilder_ == null) {
+                    placeAnOrderReqBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderReqOrBuilder>(
+                            getPlaceAnOrderReq(),
+                            getParentForChildren(),
+                            isClean());
+                    placeAnOrderReq_ = null;
+                }
+                return placeAnOrderReqBuilder_;
+            }
+
+            private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp placeAnOrderResp_;
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderRespOrBuilder> placeAnOrderRespBuilder_;
+            /**
+             * <pre>
+             *下单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp placeAnOrderResp = 37;</code>
+             */
+            public boolean hasPlaceAnOrderResp() {
+                return placeAnOrderRespBuilder_ != null || placeAnOrderResp_ != null;
+            }
+            /**
+             * <pre>
+             *下单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp placeAnOrderResp = 37;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp getPlaceAnOrderResp() {
+                if (placeAnOrderRespBuilder_ == null) {
+                    return placeAnOrderResp_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.getDefaultInstance() : placeAnOrderResp_;
+                } else {
+                    return placeAnOrderRespBuilder_.getMessage();
+                }
+            }
+            /**
+             * <pre>
+             *下单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp placeAnOrderResp = 37;</code>
+             */
+            public Builder setPlaceAnOrderResp(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp value) {
+                if (placeAnOrderRespBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    placeAnOrderResp_ = value;
+                    onChanged();
+                } else {
+                    placeAnOrderRespBuilder_.setMessage(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *下单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp placeAnOrderResp = 37;</code>
+             */
+            public Builder setPlaceAnOrderResp(
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.Builder builderForValue) {
+                if (placeAnOrderRespBuilder_ == null) {
+                    placeAnOrderResp_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    placeAnOrderRespBuilder_.setMessage(builderForValue.build());
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *下单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp placeAnOrderResp = 37;</code>
+             */
+            public Builder mergePlaceAnOrderResp(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp value) {
+                if (placeAnOrderRespBuilder_ == null) {
+                    if (placeAnOrderResp_ != null) {
+                        placeAnOrderResp_ =
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.newBuilder(placeAnOrderResp_).mergeFrom(value).buildPartial();
+                    } else {
+                        placeAnOrderResp_ = value;
+                    }
+                    onChanged();
+                } else {
+                    placeAnOrderRespBuilder_.mergeFrom(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *下单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp placeAnOrderResp = 37;</code>
+             */
+            public Builder clearPlaceAnOrderResp() {
+                if (placeAnOrderRespBuilder_ == null) {
+                    placeAnOrderResp_ = null;
+                    onChanged();
+                } else {
+                    placeAnOrderResp_ = null;
+                    placeAnOrderRespBuilder_ = null;
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *下单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp placeAnOrderResp = 37;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.Builder getPlaceAnOrderRespBuilder() {
+
+                onChanged();
+                return getPlaceAnOrderRespFieldBuilder().getBuilder();
+            }
+            /**
+             * <pre>
+             *下单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp placeAnOrderResp = 37;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderRespOrBuilder getPlaceAnOrderRespOrBuilder() {
+                if (placeAnOrderRespBuilder_ != null) {
+                    return placeAnOrderRespBuilder_.getMessageOrBuilder();
+                } else {
+                    return placeAnOrderResp_ == null ?
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.getDefaultInstance() : placeAnOrderResp_;
+                }
+            }
+            /**
+             * <pre>
+             *下单响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.PlaceAnOrderResp placeAnOrderResp = 37;</code>
+             */
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderRespOrBuilder>
+            getPlaceAnOrderRespFieldBuilder() {
+                if (placeAnOrderRespBuilder_ == null) {
+                    placeAnOrderRespBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.PlaceAnOrderRespOrBuilder>(
+                            getPlaceAnOrderResp(),
+                            getParentForChildren(),
+                            isClean());
+                    placeAnOrderResp_ = null;
+                }
+                return placeAnOrderRespBuilder_;
+            }
+
+            private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq addressReq_;
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder> addressReqBuilder_;
+            /**
+             * <pre>
+             *添加收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 38;</code>
+             */
+            public boolean hasAddressReq() {
+                return addressReqBuilder_ != null || addressReq_ != null;
+            }
+            /**
+             * <pre>
+             *添加收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 38;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq getAddressReq() {
+                if (addressReqBuilder_ == null) {
+                    return addressReq_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.getDefaultInstance() : addressReq_;
+                } else {
+                    return addressReqBuilder_.getMessage();
+                }
+            }
+            /**
+             * <pre>
+             *添加收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 38;</code>
+             */
+            public Builder setAddressReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq value) {
+                if (addressReqBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    addressReq_ = value;
+                    onChanged();
+                } else {
+                    addressReqBuilder_.setMessage(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *添加收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 38;</code>
+             */
+            public Builder setAddressReq(
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder builderForValue) {
+                if (addressReqBuilder_ == null) {
+                    addressReq_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    addressReqBuilder_.setMessage(builderForValue.build());
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *添加收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 38;</code>
+             */
+            public Builder mergeAddressReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq value) {
+                if (addressReqBuilder_ == null) {
+                    if (addressReq_ != null) {
+                        addressReq_ =
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.newBuilder(addressReq_).mergeFrom(value).buildPartial();
+                    } else {
+                        addressReq_ = value;
+                    }
+                    onChanged();
+                } else {
+                    addressReqBuilder_.mergeFrom(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *添加收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 38;</code>
+             */
+            public Builder clearAddressReq() {
+                if (addressReqBuilder_ == null) {
+                    addressReq_ = null;
+                    onChanged();
+                } else {
+                    addressReq_ = null;
+                    addressReqBuilder_ = null;
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *添加收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 38;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder getAddressReqBuilder() {
+
+                onChanged();
+                return getAddressReqFieldBuilder().getBuilder();
+            }
+            /**
+             * <pre>
+             *添加收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 38;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder getAddressReqOrBuilder() {
+                if (addressReqBuilder_ != null) {
+                    return addressReqBuilder_.getMessageOrBuilder();
+                } else {
+                    return addressReq_ == null ?
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.getDefaultInstance() : addressReq_;
+                }
+            }
+            /**
+             * <pre>
+             *添加收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressReq addressReq = 38;</code>
+             */
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder>
+            getAddressReqFieldBuilder() {
+                if (addressReqBuilder_ == null) {
+                    addressReqBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressReqOrBuilder>(
+                            getAddressReq(),
+                            getParentForChildren(),
+                            isClean());
+                    addressReq_ = null;
+                }
+                return addressReqBuilder_;
+            }
+
+            private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp addressResp_;
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressRespOrBuilder> addressRespBuilder_;
+            /**
+             * <pre>
+             *添加、修改、删除收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressResp addressResp = 39;</code>
+             */
+            public boolean hasAddressResp() {
+                return addressRespBuilder_ != null || addressResp_ != null;
+            }
+            /**
+             * <pre>
+             *添加、修改、删除收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressResp addressResp = 39;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp getAddressResp() {
+                if (addressRespBuilder_ == null) {
+                    return addressResp_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.getDefaultInstance() : addressResp_;
+                } else {
+                    return addressRespBuilder_.getMessage();
+                }
+            }
+            /**
+             * <pre>
+             *添加、修改、删除收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressResp addressResp = 39;</code>
+             */
+            public Builder setAddressResp(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp value) {
+                if (addressRespBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    addressResp_ = value;
+                    onChanged();
+                } else {
+                    addressRespBuilder_.setMessage(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *添加、修改、删除收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressResp addressResp = 39;</code>
+             */
+            public Builder setAddressResp(
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.Builder builderForValue) {
+                if (addressRespBuilder_ == null) {
+                    addressResp_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    addressRespBuilder_.setMessage(builderForValue.build());
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *添加、修改、删除收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressResp addressResp = 39;</code>
+             */
+            public Builder mergeAddressResp(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp value) {
+                if (addressRespBuilder_ == null) {
+                    if (addressResp_ != null) {
+                        addressResp_ =
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.newBuilder(addressResp_).mergeFrom(value).buildPartial();
+                    } else {
+                        addressResp_ = value;
+                    }
+                    onChanged();
+                } else {
+                    addressRespBuilder_.mergeFrom(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *添加、修改、删除收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressResp addressResp = 39;</code>
+             */
+            public Builder clearAddressResp() {
+                if (addressRespBuilder_ == null) {
+                    addressResp_ = null;
+                    onChanged();
+                } else {
+                    addressResp_ = null;
+                    addressRespBuilder_ = null;
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *添加、修改、删除收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressResp addressResp = 39;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.Builder getAddressRespBuilder() {
+
+                onChanged();
+                return getAddressRespFieldBuilder().getBuilder();
+            }
+            /**
+             * <pre>
+             *添加、修改、删除收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressResp addressResp = 39;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressRespOrBuilder getAddressRespOrBuilder() {
+                if (addressRespBuilder_ != null) {
+                    return addressRespBuilder_.getMessageOrBuilder();
+                } else {
+                    return addressResp_ == null ?
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.getDefaultInstance() : addressResp_;
+                }
+            }
+            /**
+             * <pre>
+             *添加、修改、删除收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.AddressResp addressResp = 39;</code>
+             */
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressRespOrBuilder>
+            getAddressRespFieldBuilder() {
+                if (addressRespBuilder_ == null) {
+                    addressRespBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.AddressRespOrBuilder>(
+                            getAddressResp(),
+                            getParentForChildren(),
+                            isClean());
+                    addressResp_ = null;
+                }
+                return addressRespBuilder_;
+            }
+
+            private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq updateAddressReq_;
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReqOrBuilder> updateAddressReqBuilder_;
+            /**
+             * <pre>
+             *修改收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq updateAddressReq = 40;</code>
+             */
+            public boolean hasUpdateAddressReq() {
+                return updateAddressReqBuilder_ != null || updateAddressReq_ != null;
+            }
+            /**
+             * <pre>
+             *修改收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq updateAddressReq = 40;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq getUpdateAddressReq() {
+                if (updateAddressReqBuilder_ == null) {
+                    return updateAddressReq_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.getDefaultInstance() : updateAddressReq_;
+                } else {
+                    return updateAddressReqBuilder_.getMessage();
+                }
+            }
+            /**
+             * <pre>
+             *修改收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq updateAddressReq = 40;</code>
+             */
+            public Builder setUpdateAddressReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq value) {
+                if (updateAddressReqBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    updateAddressReq_ = value;
+                    onChanged();
+                } else {
+                    updateAddressReqBuilder_.setMessage(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *修改收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq updateAddressReq = 40;</code>
+             */
+            public Builder setUpdateAddressReq(
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.Builder builderForValue) {
+                if (updateAddressReqBuilder_ == null) {
+                    updateAddressReq_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    updateAddressReqBuilder_.setMessage(builderForValue.build());
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *修改收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq updateAddressReq = 40;</code>
+             */
+            public Builder mergeUpdateAddressReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq value) {
+                if (updateAddressReqBuilder_ == null) {
+                    if (updateAddressReq_ != null) {
+                        updateAddressReq_ =
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.newBuilder(updateAddressReq_).mergeFrom(value).buildPartial();
+                    } else {
+                        updateAddressReq_ = value;
+                    }
+                    onChanged();
+                } else {
+                    updateAddressReqBuilder_.mergeFrom(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *修改收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq updateAddressReq = 40;</code>
+             */
+            public Builder clearUpdateAddressReq() {
+                if (updateAddressReqBuilder_ == null) {
+                    updateAddressReq_ = null;
+                    onChanged();
+                } else {
+                    updateAddressReq_ = null;
+                    updateAddressReqBuilder_ = null;
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *修改收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq updateAddressReq = 40;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.Builder getUpdateAddressReqBuilder() {
+
+                onChanged();
+                return getUpdateAddressReqFieldBuilder().getBuilder();
+            }
+            /**
+             * <pre>
+             *修改收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq updateAddressReq = 40;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReqOrBuilder getUpdateAddressReqOrBuilder() {
+                if (updateAddressReqBuilder_ != null) {
+                    return updateAddressReqBuilder_.getMessageOrBuilder();
+                } else {
+                    return updateAddressReq_ == null ?
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.getDefaultInstance() : updateAddressReq_;
+                }
+            }
+            /**
+             * <pre>
+             *修改收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.UpdateAddressReq updateAddressReq = 40;</code>
+             */
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReqOrBuilder>
+            getUpdateAddressReqFieldBuilder() {
+                if (updateAddressReqBuilder_ == null) {
+                    updateAddressReqBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.UpdateAddressReqOrBuilder>(
+                            getUpdateAddressReq(),
+                            getParentForChildren(),
+                            isClean());
+                    updateAddressReq_ = null;
+                }
+                return updateAddressReqBuilder_;
+            }
+
+            private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq deleteAddressReq_;
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReqOrBuilder> deleteAddressReqBuilder_;
+            /**
+             * <pre>
+             *删除收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq deleteAddressReq = 41;</code>
+             */
+            public boolean hasDeleteAddressReq() {
+                return deleteAddressReqBuilder_ != null || deleteAddressReq_ != null;
+            }
+            /**
+             * <pre>
+             *删除收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq deleteAddressReq = 41;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq getDeleteAddressReq() {
+                if (deleteAddressReqBuilder_ == null) {
+                    return deleteAddressReq_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.getDefaultInstance() : deleteAddressReq_;
+                } else {
+                    return deleteAddressReqBuilder_.getMessage();
+                }
+            }
+            /**
+             * <pre>
+             *删除收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq deleteAddressReq = 41;</code>
+             */
+            public Builder setDeleteAddressReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq value) {
+                if (deleteAddressReqBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    deleteAddressReq_ = value;
+                    onChanged();
+                } else {
+                    deleteAddressReqBuilder_.setMessage(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *删除收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq deleteAddressReq = 41;</code>
+             */
+            public Builder setDeleteAddressReq(
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.Builder builderForValue) {
+                if (deleteAddressReqBuilder_ == null) {
+                    deleteAddressReq_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    deleteAddressReqBuilder_.setMessage(builderForValue.build());
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *删除收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq deleteAddressReq = 41;</code>
+             */
+            public Builder mergeDeleteAddressReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq value) {
+                if (deleteAddressReqBuilder_ == null) {
+                    if (deleteAddressReq_ != null) {
+                        deleteAddressReq_ =
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.newBuilder(deleteAddressReq_).mergeFrom(value).buildPartial();
+                    } else {
+                        deleteAddressReq_ = value;
+                    }
+                    onChanged();
+                } else {
+                    deleteAddressReqBuilder_.mergeFrom(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *删除收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq deleteAddressReq = 41;</code>
+             */
+            public Builder clearDeleteAddressReq() {
+                if (deleteAddressReqBuilder_ == null) {
+                    deleteAddressReq_ = null;
+                    onChanged();
+                } else {
+                    deleteAddressReq_ = null;
+                    deleteAddressReqBuilder_ = null;
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *删除收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq deleteAddressReq = 41;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.Builder getDeleteAddressReqBuilder() {
+
+                onChanged();
+                return getDeleteAddressReqFieldBuilder().getBuilder();
+            }
+            /**
+             * <pre>
+             *删除收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq deleteAddressReq = 41;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReqOrBuilder getDeleteAddressReqOrBuilder() {
+                if (deleteAddressReqBuilder_ != null) {
+                    return deleteAddressReqBuilder_.getMessageOrBuilder();
+                } else {
+                    return deleteAddressReq_ == null ?
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.getDefaultInstance() : deleteAddressReq_;
+                }
+            }
+            /**
+             * <pre>
+             *删除收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.DeleteAddressReq deleteAddressReq = 41;</code>
+             */
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReqOrBuilder>
+            getDeleteAddressReqFieldBuilder() {
+                if (deleteAddressReqBuilder_ == null) {
+                    deleteAddressReqBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.DeleteAddressReqOrBuilder>(
+                            getDeleteAddressReq(),
+                            getParentForChildren(),
+                            isClean());
+                    deleteAddressReq_ = null;
+                }
+                return deleteAddressReqBuilder_;
+            }
+
+            private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq selectAddressReq_;
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReqOrBuilder> selectAddressReqBuilder_;
+            /**
+             * <pre>
+             *查询该用户所有收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressReq selectAddressReq = 42;</code>
+             */
+            public boolean hasSelectAddressReq() {
+                return selectAddressReqBuilder_ != null || selectAddressReq_ != null;
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressReq selectAddressReq = 42;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq getSelectAddressReq() {
+                if (selectAddressReqBuilder_ == null) {
+                    return selectAddressReq_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.getDefaultInstance() : selectAddressReq_;
+                } else {
+                    return selectAddressReqBuilder_.getMessage();
+                }
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressReq selectAddressReq = 42;</code>
+             */
+            public Builder setSelectAddressReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq value) {
+                if (selectAddressReqBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    selectAddressReq_ = value;
+                    onChanged();
+                } else {
+                    selectAddressReqBuilder_.setMessage(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressReq selectAddressReq = 42;</code>
+             */
+            public Builder setSelectAddressReq(
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.Builder builderForValue) {
+                if (selectAddressReqBuilder_ == null) {
+                    selectAddressReq_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    selectAddressReqBuilder_.setMessage(builderForValue.build());
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressReq selectAddressReq = 42;</code>
+             */
+            public Builder mergeSelectAddressReq(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq value) {
+                if (selectAddressReqBuilder_ == null) {
+                    if (selectAddressReq_ != null) {
+                        selectAddressReq_ =
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.newBuilder(selectAddressReq_).mergeFrom(value).buildPartial();
+                    } else {
+                        selectAddressReq_ = value;
+                    }
+                    onChanged();
+                } else {
+                    selectAddressReqBuilder_.mergeFrom(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressReq selectAddressReq = 42;</code>
+             */
+            public Builder clearSelectAddressReq() {
+                if (selectAddressReqBuilder_ == null) {
+                    selectAddressReq_ = null;
+                    onChanged();
+                } else {
+                    selectAddressReq_ = null;
+                    selectAddressReqBuilder_ = null;
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressReq selectAddressReq = 42;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.Builder getSelectAddressReqBuilder() {
+
+                onChanged();
+                return getSelectAddressReqFieldBuilder().getBuilder();
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressReq selectAddressReq = 42;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReqOrBuilder getSelectAddressReqOrBuilder() {
+                if (selectAddressReqBuilder_ != null) {
+                    return selectAddressReqBuilder_.getMessageOrBuilder();
+                } else {
+                    return selectAddressReq_ == null ?
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.getDefaultInstance() : selectAddressReq_;
+                }
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址请求
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressReq selectAddressReq = 42;</code>
+             */
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReqOrBuilder>
+            getSelectAddressReqFieldBuilder() {
+                if (selectAddressReqBuilder_ == null) {
+                    selectAddressReqBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReq.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressReqOrBuilder>(
+                            getSelectAddressReq(),
+                            getParentForChildren(),
+                            isClean());
+                    selectAddressReq_ = null;
+                }
+                return selectAddressReqBuilder_;
+            }
+
+            private com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp selectAddressResp_;
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressRespOrBuilder> selectAddressRespBuilder_;
+            /**
+             * <pre>
+             *查询该用户所有收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressResp selectAddressResp = 43;</code>
+             */
+            public boolean hasSelectAddressResp() {
+                return selectAddressRespBuilder_ != null || selectAddressResp_ != null;
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressResp selectAddressResp = 43;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp getSelectAddressResp() {
+                if (selectAddressRespBuilder_ == null) {
+                    return selectAddressResp_ == null ? com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.getDefaultInstance() : selectAddressResp_;
+                } else {
+                    return selectAddressRespBuilder_.getMessage();
+                }
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressResp selectAddressResp = 43;</code>
+             */
+            public Builder setSelectAddressResp(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp value) {
+                if (selectAddressRespBuilder_ == null) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    selectAddressResp_ = value;
+                    onChanged();
+                } else {
+                    selectAddressRespBuilder_.setMessage(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressResp selectAddressResp = 43;</code>
+             */
+            public Builder setSelectAddressResp(
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.Builder builderForValue) {
+                if (selectAddressRespBuilder_ == null) {
+                    selectAddressResp_ = builderForValue.build();
+                    onChanged();
+                } else {
+                    selectAddressRespBuilder_.setMessage(builderForValue.build());
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressResp selectAddressResp = 43;</code>
+             */
+            public Builder mergeSelectAddressResp(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp value) {
+                if (selectAddressRespBuilder_ == null) {
+                    if (selectAddressResp_ != null) {
+                        selectAddressResp_ =
+                                com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.newBuilder(selectAddressResp_).mergeFrom(value).buildPartial();
+                    } else {
+                        selectAddressResp_ = value;
+                    }
+                    onChanged();
+                } else {
+                    selectAddressRespBuilder_.mergeFrom(value);
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressResp selectAddressResp = 43;</code>
+             */
+            public Builder clearSelectAddressResp() {
+                if (selectAddressRespBuilder_ == null) {
+                    selectAddressResp_ = null;
+                    onChanged();
+                } else {
+                    selectAddressResp_ = null;
+                    selectAddressRespBuilder_ = null;
+                }
+
+                return this;
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressResp selectAddressResp = 43;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.Builder getSelectAddressRespBuilder() {
+
+                onChanged();
+                return getSelectAddressRespFieldBuilder().getBuilder();
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressResp selectAddressResp = 43;</code>
+             */
+            public com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressRespOrBuilder getSelectAddressRespOrBuilder() {
+                if (selectAddressRespBuilder_ != null) {
+                    return selectAddressRespBuilder_.getMessageOrBuilder();
+                } else {
+                    return selectAddressResp_ == null ?
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.getDefaultInstance() : selectAddressResp_;
+                }
+            }
+            /**
+             * <pre>
+             *查询该用户所有收货地址响应
+             * </pre>
+             *
+             * <code>.NettyProtobufWebsocketClient.MessageBase.SelectAddressResp selectAddressResp = 43;</code>
+             */
+            private com.google.protobuf.SingleFieldBuilderV3<
+                    com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressRespOrBuilder>
+            getSelectAddressRespFieldBuilder() {
+                if (selectAddressRespBuilder_ == null) {
+                    selectAddressRespBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+                            com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressResp.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.SelectAddressRespOrBuilder>(
+                            getSelectAddressResp(),
+                            getParentForChildren(),
+                            isClean());
+                    selectAddressResp_ = null;
+                }
+                return selectAddressRespBuilder_;
+            }
             @java.lang.Override
             public final Builder setUnknownFields(
                     final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -45126,6 +66330,76 @@ public final class MessageProtocol {
     private static final
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
             internal_static_NettyProtobufWebsocketClient_MessageBase_CollectionListResp_fieldAccessorTable;
+    private static final com.google.protobuf.Descriptors.Descriptor
+            internal_static_NettyProtobufWebsocketClient_MessageBase_LoginPasswordReq_descriptor;
+    private static final
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internal_static_NettyProtobufWebsocketClient_MessageBase_LoginPasswordReq_fieldAccessorTable;
+    private static final com.google.protobuf.Descriptors.Descriptor
+            internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsReq_descriptor;
+    private static final
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsReq_fieldAccessorTable;
+    private static final com.google.protobuf.Descriptors.Descriptor
+            internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsResp_descriptor;
+    private static final
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsResp_fieldAccessorTable;
+    private static final com.google.protobuf.Descriptors.Descriptor
+            internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListReq_descriptor;
+    private static final
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListReq_fieldAccessorTable;
+    private static final com.google.protobuf.Descriptors.Descriptor
+            internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsOrderResp_descriptor;
+    private static final
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsOrderResp_fieldAccessorTable;
+    private static final com.google.protobuf.Descriptors.Descriptor
+            internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListResp_descriptor;
+    private static final
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListResp_fieldAccessorTable;
+    private static final com.google.protobuf.Descriptors.Descriptor
+            internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderReq_descriptor;
+    private static final
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderReq_fieldAccessorTable;
+    private static final com.google.protobuf.Descriptors.Descriptor
+            internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderResp_descriptor;
+    private static final
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderResp_fieldAccessorTable;
+    private static final com.google.protobuf.Descriptors.Descriptor
+            internal_static_NettyProtobufWebsocketClient_MessageBase_AddressReq_descriptor;
+    private static final
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internal_static_NettyProtobufWebsocketClient_MessageBase_AddressReq_fieldAccessorTable;
+    private static final com.google.protobuf.Descriptors.Descriptor
+            internal_static_NettyProtobufWebsocketClient_MessageBase_AddressResp_descriptor;
+    private static final
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internal_static_NettyProtobufWebsocketClient_MessageBase_AddressResp_fieldAccessorTable;
+    private static final com.google.protobuf.Descriptors.Descriptor
+            internal_static_NettyProtobufWebsocketClient_MessageBase_UpdateAddressReq_descriptor;
+    private static final
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internal_static_NettyProtobufWebsocketClient_MessageBase_UpdateAddressReq_fieldAccessorTable;
+    private static final com.google.protobuf.Descriptors.Descriptor
+            internal_static_NettyProtobufWebsocketClient_MessageBase_DeleteAddressReq_descriptor;
+    private static final
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internal_static_NettyProtobufWebsocketClient_MessageBase_DeleteAddressReq_fieldAccessorTable;
+    private static final com.google.protobuf.Descriptors.Descriptor
+            internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressReq_descriptor;
+    private static final
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressReq_fieldAccessorTable;
+    private static final com.google.protobuf.Descriptors.Descriptor
+            internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressResp_descriptor;
+    private static final
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+            internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressResp_fieldAccessorTable;
 
     public static com.google.protobuf.Descriptors.FileDescriptor
     getDescriptor() {
@@ -45136,7 +66410,7 @@ public final class MessageProtocol {
     static {
         java.lang.String[] descriptorData = {
                 "\n\025MessageProtocol.proto\022\034NettyProtobufWe" +
-                        "bsocketClient\"\2605\n\013MessageBase\022\020\n\010clientI" +
+                        "bsocketClient\"\376N\n\013MessageBase\022\020\n\010clientI" +
                         "d\030\001 \001(\t\022\014\n\004code\030\002 \001(\005\022<\n\004type\030\003 \001(\0162..Ne" +
                         "ttyProtobufWebsocketClient.MessageBase.T" +
                         "ype\022D\n\010loginReq\030\004 \001(\01322.NettyProtobufWeb" +
@@ -45191,124 +66465,206 @@ public final class MessageProtocol {
                         "ocketClient.MessageBase.CollectionListRe" +
                         "q\022X\n\022collectionListResp\030\035 \001(\0132<.NettyPro" +
                         "tobufWebsocketClient.MessageBase.Collect" +
-                        "ionListResp\032N\n\010LoginReq\022\023\n\013phoneNumber\030\001" +
-                        " \001(\t\022\020\n\010password\030\002 \001(\t\022\014\n\004code\030\003 \001(\t\022\r\n\005" +
-                        "token\030\004 \001(\t\032r\n\tLoginResp\022\n\n\002id\030\001 \001(\003\022\023\n\013" +
-                        "phoneNumber\030\002 \001(\t\022\024\n\014userNickname\030\003 \001(\t\022" +
-                        "\016\n\006gender\030\004 \001(\005\022\017\n\007headImg\030\005 \001(\t\022\r\n\005toke" +
-                        "n\030\006 \001(\t\032=\n\rUpdateUserReq\022\n\n\002id\030\001 \001(\005\022\020\n\010" +
-                        "nickname\030\002 \001(\t\022\016\n\006gender\030\003 \001(\005\032>\n\016Update" +
-                        "UserResp\022\n\n\002id\030\001 \001(\005\022\020\n\010nickname\030\002 \001(\t\022\016" +
-                        "\n\006gender\030\003 \001(\005\032\226\001\n\rModelTypeResp\022\n\n\002id\030\001" +
-                        " \001(\003\022\014\n\004name\030\002 \001(\t\022\014\n\004type\030\003 \001(\005\022\013\n\003img\030" +
-                        "\004 \001(\t\022P\n\016modelStyleResp\030\005 \003(\01328.NettyPro" +
-                        "tobufWebsocketClient.MessageBase.ModelSt" +
-                        "yleResp\032c\n\021ModelTypeListResp\022N\n\rmodelTyp" +
-                        "eResp\030\001 \003(\01327.NettyProtobufWebsocketClie" +
-                        "nt.MessageBase.ModelTypeResp\032>\n\014ModelTyp" +
-                        "eReq\022\017\n\007modelId\030\001 \001(\003\022\014\n\004type\030\002 \001(\005\022\017\n\007s" +
-                        "tyleId\030\003 \001(\003\032V\n\016ModelStyleResp\022\017\n\007modelI" +
-                        "d\030\001 \001(\003\022\014\n\004name\030\002 \001(\t\022\014\n\004code\030\003 \001(\t\022\n\n\002i" +
-                        "d\030\004 \001(\003\022\013\n\003img\030\005 \001(\t\032\314\001\n LoginOrRegister" +
-                        "UpdateUserInfoReq\022\n\n\002id\030\001 \001(\003\022\016\n\006gender\030" +
-                        "\002 \001(\005\022\024\n\014userNickname\030\003 \001(\t\022\020\n\010birthday\030" +
-                        "\004 \001(\t\022\016\n\006height\030\005 \001(\001\022\016\n\006weight\030\006 \001(\001\022\017\n" +
-                        "\007isFirst\030\007 \001(\005\022\023\n\013phoneNumber\030\010 \001(\t\022\020\n\010p" +
-                        "assword\030\t \001(\t\022\014\n\004code\030\n \001(\t\032w\n\014UserInfoR" +
-                        "esp\022\n\n\002id\030\001 \001(\003\022\016\n\006gender\030\002 \001(\005\022\024\n\014userN" +
-                        "ickname\030\003 \001(\t\022\023\n\013phoneNumber\030\004 \001(\t\022\017\n\007is" +
-                        "First\030\005 \001(\005\022\017\n\007headImg\030\006 \001(\t\032\272\001\n\022PlateCl" +
-                        "assListResp\022P\n\016plateClassResp\030\001 \003(\01328.Ne" +
+                        "ionListResp\022P\n\016particularsReq\030\036 \001(\01328.Ne" +
                         "ttyProtobufWebsocketClient.MessageBase.P" +
-                        "lateClassResp\022R\n\017userWardrobeReq\030\006 \001(\01329" +
+                        "articularsReq\022R\n\017particularsResp\030\037 \001(\01329" +
                         ".NettyProtobufWebsocketClient.MessageBas" +
-                        "e.UserWardrobeReq\032\243\001\n\016PlateClassResp\022\n\n\002" +
-                        "id\030\001 \001(\003\022\014\n\004name\030\002 \001(\t\022\014\n\004code\030\003 \001(\t\022\020\n\010" +
-                        "parentId\030\004 \001(\003\022\013\n\003img\030\005 \001(\t\022J\n\013plateCutW" +
-                        "ay\030\006 \003(\01325.NettyProtobufWebsocketClient." +
-                        "MessageBase.PlateCutWay\032\304\001\n\013PlateCutWay\022" +
-                        "\n\n\002id\030\001 \001(\003\022\014\n\004name\030\002 \001(\t\022\014\n\004code\030\003 \001(\t\022" +
-                        "\020\n\010parentId\030\004 \001(\003\022\013\n\003img\030\005 \001(\t\022\022\n\nsuffix" +
-                        "Code\030\006 \001(\t\022\016\n\006qrCode\030\007 \001(\t\022J\n\rcomponentL" +
-                        "ist\030\010 \003(\01323.NettyProtobufWebsocketClient" +
-                        ".MessageBase.Component\032\255\004\n\tComponent\022\n\n\002" +
-                        "id\030\001 \001(\003\022\014\n\004name\030\002 \001(\t\022\014\n\004code\030\003 \001(\t\022\020\n\010" +
-                        "parentId\030\004 \001(\003\022\017\n\007picture\030\005 \001(\t\022\020\n\010model" +
-                        "Url\030\006 \001(\t\022\022\n\nbasicPrice\030\007 \001(\001\022\026\n\016materia" +
-                        "lDosage\030\010 \001(\001\022\022\n\nsuffixCode\030\016 \001(\t\022\016\n\006qrC" +
-                        "ode\030\017 \001(\t\022K\n\017outBottomFabric\030\t \003(\01322.Net" +
-                        "tyProtobufWebsocketClient.MessageBase.Cl" +
-                        "assify\022L\n\020outSurfaceFabric\030\n \003(\01322.Netty" +
-                        "ProtobufWebsocketClient.MessageBase.Clas" +
-                        "sify\022G\n\013outUnfilled\030\013 \003(\01322.NettyProtobu" +
-                        "fWebsocketClient.MessageBase.Classify\022G\n" +
-                        "\013outFillAble\030\014 \003(\01322.NettyProtobufWebsoc" +
-                        "ketClient.MessageBase.Classify\022F\n\noutPat" +
-                        "tern\030\r \003(\01322.NettyProtobufWebsocketClien" +
-                        "t.MessageBase.Classify\032\311\003\n\010Classify\022\n\n\002i" +
-                        "d\030\001 \001(\003\022\014\n\004name\030\002 \001(\t\022\014\n\004type\030\003 \001(\005\022\013\n\003p" +
-                        "Id\030\004 \001(\003\022\020\n\010parentId\030\005 \001(\003\022N\n\022innerSurfa" +
-                        "ceFabric\030\006 \003(\01322.NettyProtobufWebsocketC" +
-                        "lient.MessageBase.Classify\022M\n\021innerBotto" +
-                        "mFabric\030\007 \003(\01322.NettyProtobufWebsocketCl" +
-                        "ient.MessageBase.Classify\022H\n\014innerPatter" +
-                        "n\030\010 \003(\01322.NettyProtobufWebsocketClient.M" +
-                        "essageBase.Classify\022I\n\rinnerUnfilled\030\t \003" +
-                        "(\01322.NettyProtobufWebsocketClient.Messag" +
-                        "eBase.Classify\022B\n\007pattern\030\n \003(\01321.NettyP" +
-                        "rotobufWebsocketClient.MessageBase.Patte" +
-                        "rn\032\205\001\n\007Pattern\022\n\n\002id\030\001 \001(\003\022\014\n\004name\030\002 \001(\t" +
-                        "\022\014\n\004code\030\003 \001(\t\022\017\n\007picture\030\004 \001(\t\022\016\n\006typeI" +
-                        "d\030\005 \001(\005\022\r\n\005price\030\006 \001(\001\022\022\n\nsuffixCode\030\007 \001" +
-                        "(\t\022\016\n\006qrCode\030\010 \001(\t\032\200\001\n\017UserWardrobeReq\022\016" +
-                        "\n\006userId\030\001 \001(\003\022\014\n\004name\030\002 \001(\t\022\023\n\013clothesJ" +
-                        "son\030\003 \001(\t\022\016\n\006qrCode\030\004 \001(\t\022\017\n\007styleId\030\005 \001" +
-                        "(\003\022\r\n\005image\030\006 \001(\t\022\n\n\002id\030\007 \001(\003\032j\n\024UserWar" +
-                        "drobeListResp\022R\n\017userWardrobeReq\030\001 \003(\01329" +
-                        ".NettyProtobufWebsocketClient.MessageBas" +
-                        "e.UserWardrobeReq\032!\n\nSendMsgReq\022\023\n\013phone" +
-                        "Number\030\001 \001(\t\032\"\n\013SendMsgResp\022\023\n\013phoneNumb" +
-                        "er\030\001 \001(\t\032\034\n\010OrderReq\022\020\n\010prepayId\030\001 \001(\t\032c" +
-                        "\n\tOrderResp\022\021\n\tpartnerId\030\001 \001(\t\022\020\n\010prepay" +
-                        "Id\030\002 \001(\t\022\020\n\010nonceStr\030\003 \001(\t\022\021\n\ttimeStamp\030" +
-                        "\004 \001(\t\022\014\n\004sign\030\005 \001(\t\032\031\n\007MallReq\022\016\n\006userId" +
-                        "\030\001 \001(\003\032c\n\010MallResp\022\n\n\002id\030\001 \001(\005\022\021\n\ttbStor" +
-                        "eId\030\002 \001(\005\022\014\n\004name\030\003 \001(\t\022\013\n\003img\030\004 \001(\t\022\r\n\005" +
-                        "price\030\005 \001(\t\022\016\n\006status\030\006 \001(\005\032T\n\014MallListR" +
-                        "esp\022D\n\010mallResp\030\001 \003(\01322.NettyProtobufWeb" +
-                        "socketClient.MessageBase.MallResp\032\030\n\nMal" +
-                        "lImgReq\022\n\n\002id\030\001 \001(\005\0326\n\013MallImgResp\022\n\n\002id" +
-                        "\030\001 \001(\005\022\016\n\006mallId\030\002 \001(\005\022\013\n\003img\030\003 \001(\t\032Z\n\014M" +
-                        "allImgsResp\022J\n\013mallImgResp\030\001 \003(\01325.Netty" +
-                        "ProtobufWebsocketClient.MessageBase.Mall" +
-                        "ImgResp\032?\n\rCollectionReq\022\016\n\006mallId\030\001 \001(\005" +
-                        "\022\016\n\006userId\030\002 \001(\005\022\016\n\006status\030\003 \001(\005\032f\n\016Coll" +
-                        "ectionResp\022\016\n\006userId\030\002 \001(\005\022D\n\010mallResp\030\001" +
+                        "e.ParticularsResp\022T\n\020loginPasswordReq\030  " +
+                        "\001(\0132:.NettyProtobufWebsocketClient.Messa" +
+                        "geBase.LoginPasswordReq\022X\n\022particularsLi" +
+                        "stReq\030! \001(\0132<.NettyProtobufWebsocketClie" +
+                        "nt.MessageBase.ParticularsListReq\022Z\n\023par" +
+                        "ticularsListResp\030\" \001(\0132=.NettyProtobufWe" +
+                        "bsocketClient.MessageBase.ParticularsLis" +
+                        "tResp\022\\\n\024particularsOrderResp\030# \001(\0132>.Ne" +
+                        "ttyProtobufWebsocketClient.MessageBase.P" +
+                        "articularsOrderResp\022R\n\017placeAnOrderReq\030$" +
+                        " \001(\01329.NettyProtobufWebsocketClient.Mess" +
+                        "ageBase.PlaceAnOrderReq\022T\n\020placeAnOrderR" +
+                        "esp\030% \001(\0132:.NettyProtobufWebsocketClient" +
+                        ".MessageBase.PlaceAnOrderResp\022H\n\naddress" +
+                        "Req\030& \001(\01324.NettyProtobufWebsocketClient" +
+                        ".MessageBase.AddressReq\022J\n\013addressResp\030\'" +
+                        " \001(\01325.NettyProtobufWebsocketClient.Mess" +
+                        "ageBase.AddressResp\022T\n\020updateAddressReq\030" +
+                        "( \001(\0132:.NettyProtobufWebsocketClient.Mes" +
+                        "sageBase.UpdateAddressReq\022T\n\020deleteAddre" +
+                        "ssReq\030) \001(\0132:.NettyProtobufWebsocketClie" +
+                        "nt.MessageBase.DeleteAddressReq\022T\n\020selec" +
+                        "tAddressReq\030* \001(\0132:.NettyProtobufWebsock" +
+                        "etClient.MessageBase.SelectAddressReq\022V\n" +
+                        "\021selectAddressResp\030+ \001(\0132;.NettyProtobuf" +
+                        "WebsocketClient.MessageBase.SelectAddres" +
+                        "sResp\032N\n\010LoginReq\022\023\n\013phoneNumber\030\001 \001(\t\022\020" +
+                        "\n\010password\030\002 \001(\t\022\014\n\004code\030\003 \001(\t\022\r\n\005token\030" +
+                        "\004 \001(\t\032r\n\tLoginResp\022\n\n\002id\030\001 \001(\003\022\023\n\013phoneN" +
+                        "umber\030\002 \001(\t\022\024\n\014userNickname\030\003 \001(\t\022\016\n\006gen" +
+                        "der\030\004 \001(\005\022\017\n\007headImg\030\005 \001(\t\022\r\n\005token\030\006 \001(" +
+                        "\t\032=\n\rUpdateUserReq\022\n\n\002id\030\001 \001(\005\022\020\n\010nickna" +
+                        "me\030\002 \001(\t\022\016\n\006gender\030\003 \001(\005\032>\n\016UpdateUserRe" +
+                        "sp\022\n\n\002id\030\001 \001(\005\022\020\n\010nickname\030\002 \001(\t\022\016\n\006gend" +
+                        "er\030\003 \001(\005\032\226\001\n\rModelTypeResp\022\n\n\002id\030\001 \001(\003\022\014" +
+                        "\n\004name\030\002 \001(\t\022\014\n\004type\030\003 \001(\005\022\013\n\003img\030\004 \001(\t\022" +
+                        "P\n\016modelStyleResp\030\005 \003(\01328.NettyProtobufW" +
+                        "ebsocketClient.MessageBase.ModelStyleRes" +
+                        "p\032c\n\021ModelTypeListResp\022N\n\rmodelTypeResp\030" +
+                        "\001 \003(\01327.NettyProtobufWebsocketClient.Mes" +
+                        "sageBase.ModelTypeResp\032>\n\014ModelTypeReq\022\017" +
+                        "\n\007modelId\030\001 \001(\003\022\014\n\004type\030\002 \001(\005\022\017\n\007styleId" +
+                        "\030\003 \001(\003\032V\n\016ModelStyleResp\022\017\n\007modelId\030\001 \001(" +
+                        "\003\022\014\n\004name\030\002 \001(\t\022\014\n\004code\030\003 \001(\t\022\n\n\002id\030\004 \001(" +
+                        "\003\022\013\n\003img\030\005 \001(\t\032\314\001\n LoginOrRegisterUpdate" +
+                        "UserInfoReq\022\n\n\002id\030\001 \001(\003\022\016\n\006gender\030\002 \001(\005\022" +
+                        "\024\n\014userNickname\030\003 \001(\t\022\020\n\010birthday\030\004 \001(\t\022" +
+                        "\016\n\006height\030\005 \001(\001\022\016\n\006weight\030\006 \001(\001\022\017\n\007isFir" +
+                        "st\030\007 \001(\005\022\023\n\013phoneNumber\030\010 \001(\t\022\020\n\010passwor" +
+                        "d\030\t \001(\t\022\014\n\004code\030\n \001(\t\032w\n\014UserInfoResp\022\n\n" +
+                        "\002id\030\001 \001(\003\022\016\n\006gender\030\002 \001(\005\022\024\n\014userNicknam" +
+                        "e\030\003 \001(\t\022\023\n\013phoneNumber\030\004 \001(\t\022\017\n\007isFirst\030" +
+                        "\005 \001(\005\022\017\n\007headImg\030\006 \001(\t\032\272\001\n\022PlateClassLis" +
+                        "tResp\022P\n\016plateClassResp\030\001 \003(\01328.NettyPro" +
+                        "tobufWebsocketClient.MessageBase.PlateCl" +
+                        "assResp\022R\n\017userWardrobeReq\030\006 \001(\01329.Netty" +
+                        "ProtobufWebsocketClient.MessageBase.User" +
+                        "WardrobeReq\032\243\001\n\016PlateClassResp\022\n\n\002id\030\001 \001" +
+                        "(\003\022\014\n\004name\030\002 \001(\t\022\014\n\004code\030\003 \001(\t\022\020\n\010parent" +
+                        "Id\030\004 \001(\003\022\013\n\003img\030\005 \001(\t\022J\n\013plateCutWay\030\006 \003" +
+                        "(\01325.NettyProtobufWebsocketClient.Messag" +
+                        "eBase.PlateCutWay\032\304\001\n\013PlateCutWay\022\n\n\002id\030" +
+                        "\001 \001(\003\022\014\n\004name\030\002 \001(\t\022\014\n\004code\030\003 \001(\t\022\020\n\010par" +
+                        "entId\030\004 \001(\003\022\013\n\003img\030\005 \001(\t\022\022\n\nsuffixCode\030\006" +
+                        " \001(\t\022\016\n\006qrCode\030\007 \001(\t\022J\n\rcomponentList\030\010 " +
+                        "\003(\01323.NettyProtobufWebsocketClient.Messa" +
+                        "geBase.Component\032\255\004\n\tComponent\022\n\n\002id\030\001 \001" +
+                        "(\003\022\014\n\004name\030\002 \001(\t\022\014\n\004code\030\003 \001(\t\022\020\n\010parent" +
+                        "Id\030\004 \001(\003\022\017\n\007picture\030\005 \001(\t\022\020\n\010modelUrl\030\006 " +
+                        "\001(\t\022\022\n\nbasicPrice\030\007 \001(\001\022\026\n\016materialDosag" +
+                        "e\030\010 \001(\001\022\022\n\nsuffixCode\030\016 \001(\t\022\016\n\006qrCode\030\017 " +
+                        "\001(\t\022K\n\017outBottomFabric\030\t \003(\01322.NettyProt" +
+                        "obufWebsocketClient.MessageBase.Classify" +
+                        "\022L\n\020outSurfaceFabric\030\n \003(\01322.NettyProtob" +
+                        "ufWebsocketClient.MessageBase.Classify\022G" +
+                        "\n\013outUnfilled\030\013 \003(\01322.NettyProtobufWebso" +
+                        "cketClient.MessageBase.Classify\022G\n\013outFi" +
+                        "llAble\030\014 \003(\01322.NettyProtobufWebsocketCli" +
+                        "ent.MessageBase.Classify\022F\n\noutPattern\030\r" +
                         " \003(\01322.NettyProtobufWebsocketClient.Mess" +
-                        "ageBase.MallResp\032#\n\021CollectionListReq\022\016\n" +
-                        "\006userId\030\001 \001(\005\032Z\n\022CollectionListResp\022D\n\010m" +
-                        "allResp\030\001 \003(\01322.NettyProtobufWebsocketCl" +
-                        "ient.MessageBase.MallResp\"\344\005\n\004Type\022\010\n\004PI" +
-                        "NG\020\000\022\r\n\tLOGIN_REQ\020\001\022\016\n\nLOGIN_RESP\020\002\022\023\n\017U" +
-                        "PDATE_USER_REQ\020\003\022\024\n\020UPDATE_USER_RESP\020\004\022\022" +
-                        "\n\016MODEL_TYPE_REQ\020\007\022\023\n\017MODEL_TYPE_RESP\020\005\022" +
-                        "\023\n\017MODEL_STYLE_REQ\020\010\022\024\n\020MODEL_STYLE_RESP" +
-                        "\020\006\022\024\n\020PLATE_CLASS_RESP\020\t\022\023\n\017PLATE_CLASS_" +
-                        "REQ\020\n\022\020\n\014REGISTER_REQ\020\013\022\021\n\rREGISTER_RESP" +
-                        "\020\014\022\017\n\013PERFECT_REQ\020\r\022\020\n\014PERFECT_RESP\020\016\022\025\n" +
-                        "\021WARDROBE_SAVE_REQ\020\017\022\026\n\022WARDROBE_SAVE_RE" +
-                        "SP\020\020\022\031\n\025GET_USER_WARDROBE_REQ\020\021\022\032\n\026GET_U" +
-                        "SER_WARDROBE_RESP\020\022\022\024\n\020WHITE_DESIGN_REQ\020" +
-                        "\023\022\025\n\021WHITE_DESIGN_RESP\020\024\022\020\n\014SEND_MSG_REQ" +
-                        "\020\025\022\021\n\rSEND_MSG_RESP\020\026\022\r\n\tORDER_REQ\020\027\022\016\n\n" +
-                        "ORDER_RESP\020\030\022\014\n\010MALL_REQ\020\031\022\r\n\tMALL_RESP\020" +
-                        "\032\022\021\n\rMALL_LIST_REQ\020\033\022\022\n\016MALL_LIST_RESP\020\034" +
-                        "\022\020\n\014MALL_IMG_REQ\020\035\022\021\n\rMALL_IMG_RESP\020\036\022\021\n" +
-                        "\rMALL_IMGS_REQ\020\037\022\022\n\016MALL_IMGS_RESP\020 \022\022\n\016" +
-                        "COLLECTION_REQ\020!\022\023\n\017COLLECTION_RESP\020\"\022\027\n" +
-                        "\023COLLECTION_LIST_REQ\020#\022\030\n\024COLLECTION_LIS" +
-                        "T_RESP\020$B2\n\037com.ruoyi.netty.common.proto" +
-                        "bufB\017MessageProtocolb\006proto3"
+                        "ageBase.Classify\032\311\003\n\010Classify\022\n\n\002id\030\001 \001(" +
+                        "\003\022\014\n\004name\030\002 \001(\t\022\014\n\004type\030\003 \001(\005\022\013\n\003pId\030\004 \001" +
+                        "(\003\022\020\n\010parentId\030\005 \001(\003\022N\n\022innerSurfaceFabr" +
+                        "ic\030\006 \003(\01322.NettyProtobufWebsocketClient." +
+                        "MessageBase.Classify\022M\n\021innerBottomFabri" +
+                        "c\030\007 \003(\01322.NettyProtobufWebsocketClient.M" +
+                        "essageBase.Classify\022H\n\014innerPattern\030\010 \003(" +
+                        "\01322.NettyProtobufWebsocketClient.Message" +
+                        "Base.Classify\022I\n\rinnerUnfilled\030\t \003(\01322.N" +
+                        "ettyProtobufWebsocketClient.MessageBase." +
+                        "Classify\022B\n\007pattern\030\n \003(\01321.NettyProtobu" +
+                        "fWebsocketClient.MessageBase.Pattern\032\205\001\n" +
+                        "\007Pattern\022\n\n\002id\030\001 \001(\003\022\014\n\004name\030\002 \001(\t\022\014\n\004co" +
+                        "de\030\003 \001(\t\022\017\n\007picture\030\004 \001(\t\022\016\n\006typeId\030\005 \001(" +
+                        "\005\022\r\n\005price\030\006 \001(\001\022\022\n\nsuffixCode\030\007 \001(\t\022\016\n\006" +
+                        "qrCode\030\010 \001(\t\032\200\001\n\017UserWardrobeReq\022\016\n\006user" +
+                        "Id\030\001 \001(\003\022\014\n\004name\030\002 \001(\t\022\023\n\013clothesJson\030\003 " +
+                        "\001(\t\022\016\n\006qrCode\030\004 \001(\t\022\017\n\007styleId\030\005 \001(\003\022\r\n\005" +
+                        "image\030\006 \001(\t\022\n\n\002id\030\007 \001(\003\032j\n\024UserWardrobeL" +
+                        "istResp\022R\n\017userWardrobeReq\030\001 \003(\01329.Netty" +
+                        "ProtobufWebsocketClient.MessageBase.User" +
+                        "WardrobeReq\032!\n\nSendMsgReq\022\023\n\013phoneNumber" +
+                        "\030\001 \001(\t\032\"\n\013SendMsgResp\022\023\n\013phoneNumber\030\001 \001" +
+                        "(\t\032\037\n\010OrderReq\022\023\n\013phoneNumber\030\001 \001(\t\032c\n\tO" +
+                        "rderResp\022\021\n\tpartnerId\030\001 \001(\t\022\020\n\010prepayId\030" +
+                        "\002 \001(\t\022\020\n\010nonceStr\030\003 \001(\t\022\021\n\ttimeStamp\030\004 \001" +
+                        "(\t\022\014\n\004sign\030\005 \001(\t\032\031\n\007MallReq\022\016\n\006userId\030\001 " +
+                        "\001(\003\032c\n\010MallResp\022\n\n\002id\030\001 \001(\005\022\021\n\ttbStoreId" +
+                        "\030\002 \001(\005\022\014\n\004name\030\003 \001(\t\022\013\n\003img\030\004 \001(\t\022\r\n\005pri" +
+                        "ce\030\005 \001(\t\022\016\n\006status\030\006 \001(\005\032T\n\014MallListResp" +
+                        "\022D\n\010mallResp\030\001 \003(\01322.NettyProtobufWebsoc" +
+                        "ketClient.MessageBase.MallResp\032\030\n\nMallIm" +
+                        "gReq\022\n\n\002id\030\001 \001(\005\0326\n\013MallImgResp\022\n\n\002id\030\001 " +
+                        "\001(\005\022\016\n\006mallId\030\002 \001(\005\022\013\n\003img\030\003 \001(\t\032Z\n\014Mall" +
+                        "ImgsResp\022J\n\013mallImgResp\030\001 \003(\01325.NettyPro" +
+                        "tobufWebsocketClient.MessageBase.MallImg" +
+                        "Resp\032?\n\rCollectionReq\022\016\n\006mallId\030\001 \001(\005\022\016\n" +
+                        "\006userId\030\002 \001(\005\022\016\n\006status\030\003 \001(\005\032f\n\016Collect" +
+                        "ionResp\022\016\n\006userId\030\002 \001(\005\022D\n\010mallResp\030\001 \003(" +
+                        "\01322.NettyProtobufWebsocketClient.Message" +
+                        "Base.MallResp\032#\n\021CollectionListReq\022\016\n\006us" +
+                        "erId\030\001 \001(\005\032Z\n\022CollectionListResp\022D\n\010mall" +
+                        "Resp\030\001 \003(\01322.NettyProtobufWebsocketClien" +
+                        "t.MessageBase.MallResp\032G\n\020LoginPasswordR" +
+                        "eq\022\023\n\013phoneNumber\030\001 \001(\t\022\020\n\010password\030\002 \001(" +
+                        "\t\022\014\n\004code\030\003 \001(\t\032=\n\016ParticularsReq\022\026\n\016ord" +
+                        "erDerailsId\030\001 \001(\005\022\023\n\013phoneNumber\030\002 \001(\t\032\267" +
+                        "\001\n\017ParticularsResp\022\021\n\tderailsId\030\001 \001(\005\022\014\n" +
+                        "\004name\030\002 \001(\t\022\023\n\013orderInfoId\030\003 \001(\005\022\016\n\006mall" +
+                        "Id\030\004 \001(\005\022\017\n\007storeId\030\005 \001(\005\022\014\n\004size\030\006 \001(\t\022" +
+                        "\016\n\006colour\030\007 \001(\t\022\020\n\010quantity\030\010 \001(\005\022\016\n\006amo" +
+                        "unt\030\t \001(\t\022\r\n\005image\030\n \001(\t\032)\n\022ParticularsL" +
+                        "istReq\022\023\n\013phoneNumber\030\001 \001(\t\032\360\002\n\024Particul" +
+                        "arsOrderResp\022\017\n\007orderId\030\001 \001(\005\022\020\n\010payAmon" +
+                        "t\030\002 \001(\t\022\016\n\006amount\030\003 \001(\t\022\017\n\007orderSn\030\004 \001(\t" +
+                        "\022\021\n\tmodelType\030\005 \001(\t\022\017\n\007storeId\030\006 \001(\005\022\016\n\006" +
+                        "mallId\030\007 \001(\005\022\016\n\006userId\030\010 \001(\005\022\016\n\006status\030\t" +
+                        " \001(\005\022\022\n\ncreateTime\030\n \001(\t\022\017\n\007payType\030\013 \001(" +
+                        "\005\022\017\n\007address\030\014 \001(\t\022\r\n\005phone\030\r \001(\t\022\021\n\tcon" +
+                        "signee\030\016 \001(\t\022\016\n\006remark\030\017 \001(\t\022\017\n\007payTime\030" +
+                        "\020 \001(\t\022\017\n\007delFlag\030\021 \001(\005\022\r\n\005delBy\030\022 \001(\t\022\023\n" +
+                        "\013timeOutFlag\030\023 \001(\005\022\022\n\nupdateTime\030\024 \001(\t\032\307" +
+                        "\001\n\023ParticularsListResp\022R\n\017particularsRes" +
+                        "p\030\001 \003(\01329.NettyProtobufWebsocketClient.M" +
+                        "essageBase.ParticularsResp\022\\\n\024particular" +
+                        "sOrderResp\030\002 \003(\0132>.NettyProtobufWebsocke" +
+                        "tClient.MessageBase.ParticularsOrderResp" +
+                        "\032\262\001\n\017PlaceAnOrderReq\022\016\n\006mallId\030\001 \001(\005\022\021\n\t" +
+                        "addressId\030\002 \001(\005\022\016\n\006remark\030\003 \001(\t\022\016\n\006colou" +
+                        "r\030\004 \001(\t\022\014\n\004size\030\005 \001(\t\022\013\n\003pay\030\006 \001(\005\022\016\n\006us" +
+                        "erId\030\007 \001(\005\022\017\n\007storeId\030\010 \001(\005\022\020\n\010quantity\030" +
+                        "\t \001(\005\022\016\n\006amount\030\n \001(\t\032\'\n\020PlaceAnOrderRes" +
+                        "p\022\023\n\013orderNumber\030\001 \001(\t\032\252\002\n\nAddressReq\022\016\n" +
+                        "\006userId\030\001 \001(\t\022\021\n\tconsignee\030\002 \001(\t\022\r\n\005phon" +
+                        "e\030\003 \001(\t\022\013\n\003sex\030\004 \001(\t\022\024\n\014provinceName\030\005 \001" +
+                        "(\t\022\020\n\010cityName\030\006 \001(\t\022\024\n\014districtName\030\007 \001" +
+                        "(\t\022\016\n\006detail\030\010 \001(\t\022\r\n\005label\030\t \001(\t\022\021\n\tisD" +
+                        "efault\030\n \001(\t\022\022\n\ncreateTime\030\013 \001(\t\022\022\n\nupda" +
+                        "teTime\030\014 \001(\t\022\022\n\ncreateUser\030\r \001(\t\022\022\n\nupda" +
+                        "teUser\030\016 \001(\t\022\021\n\tisDeleted\030\017 \001(\t\022\n\n\002id\030\020 " +
+                        "\001(\t\032\035\n\013AddressResp\022\016\n\006status\030\001 \001(\t\032\\\n\020Up" +
+                        "dateAddressReq\022H\n\naddressReq\030\001 \003(\01324.Net" +
+                        "tyProtobufWebsocketClient.MessageBase.Ad" +
+                        "dressReq\032%\n\020DeleteAddressReq\022\021\n\taddressI" +
+                        "d\030\001 \001(\t\032\"\n\020SelectAddressReq\022\016\n\006userId\030\001 " +
+                        "\001(\t\032]\n\021SelectAddressResp\022H\n\naddressReq\030\001" +
+                        " \003(\01324.NettyProtobufWebsocketClient.Mess" +
+                        "ageBase.AddressReq\"\251\010\n\004Type\022\010\n\004PING\020\000\022\r\n" +
+                        "\tLOGIN_REQ\020\001\022\016\n\nLOGIN_RESP\020\002\022\023\n\017UPDATE_U" +
+                        "SER_REQ\020\003\022\024\n\020UPDATE_USER_RESP\020\004\022\022\n\016MODEL" +
+                        "_TYPE_REQ\020\007\022\023\n\017MODEL_TYPE_RESP\020\005\022\023\n\017MODE" +
+                        "L_STYLE_REQ\020\010\022\024\n\020MODEL_STYLE_RESP\020\006\022\024\n\020P" +
+                        "LATE_CLASS_RESP\020\t\022\023\n\017PLATE_CLASS_REQ\020\n\022\020" +
+                        "\n\014REGISTER_REQ\020\013\022\021\n\rREGISTER_RESP\020\014\022\017\n\013P" +
+                        "ERFECT_REQ\020\r\022\020\n\014PERFECT_RESP\020\016\022\025\n\021WARDRO" +
+                        "BE_SAVE_REQ\020\017\022\026\n\022WARDROBE_SAVE_RESP\020\020\022\031\n" +
+                        "\025GET_USER_WARDROBE_REQ\020\021\022\032\n\026GET_USER_WAR" +
+                        "DROBE_RESP\020\022\022\024\n\020WHITE_DESIGN_REQ\020\023\022\025\n\021WH" +
+                        "ITE_DESIGN_RESP\020\024\022\020\n\014SEND_MSG_REQ\020\025\022\021\n\rS" +
+                        "END_MSG_RESP\020\026\022\r\n\tORDER_REQ\020\027\022\016\n\nORDER_R" +
+                        "ESP\020\030\022\014\n\010MALL_REQ\020\031\022\r\n\tMALL_RESP\020\032\022\021\n\rMA" +
+                        "LL_LIST_REQ\020\033\022\022\n\016MALL_LIST_RESP\020\034\022\020\n\014MAL" +
+                        "L_IMG_REQ\020\035\022\021\n\rMALL_IMG_RESP\020\036\022\021\n\rMALL_I" +
+                        "MGS_REQ\020\037\022\022\n\016MALL_IMGS_RESP\020 \022\022\n\016COLLECT" +
+                        "ION_REQ\020!\022\023\n\017COLLECTION_RESP\020\"\022\027\n\023COLLEC" +
+                        "TION_LIST_REQ\020#\022\030\n\024COLLECTION_LIST_RESP\020" +
+                        "$\022\026\n\022LOGIN_PASSWORD_REQ\020%\022\023\n\017PARTICULARS" +
+                        "_REQ\020&\022\024\n\020PARTICULARS_RESP\020\'\022\030\n\024PARTICUL" +
+                        "ARS_LIST_REQ\020(\022\031\n\025PARTICULARS_LIST_RESP\020" +
+                        ")\022\032\n\026PARTICULARS_ORDER_RESP\020*\022\024\n\020PLACEAN" +
+                        "ORDER_REQ\020+\022\025\n\021PLACEANORDER_RESP\020,\022\017\n\013AD" +
+                        "DRESS_REP\020-\022\020\n\014ADDRESS_RESP\020.\022\026\n\022UPDATE_" +
+                        "ADDRESS_REQ\020/\022\026\n\022DELETE_ADDRESS_REQ\0200\022\026\n" +
+                        "\022SELECT_ADDRESS_REQ\0201\022\027\n\023SELECT_ADDRESS_" +
+                        "RESP\0202B2\n\037com.ruoyi.netty.common.protobu" +
+                        "fB\017MessageProtocolb\006proto3"
         };
         com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
                 new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -45327,7 +66683,7 @@ public final class MessageProtocol {
         internal_static_NettyProtobufWebsocketClient_MessageBase_fieldAccessorTable = new
                 com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
                 internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor,
-                new java.lang.String[] { "ClientId", "Code", "Type", "LoginReq", "LoginResp", "UpdateUserReq", "UpdateUserResp", "ModelTypeListResp", "ModelTypeReq", "ModelStyle", "PlateClassListResp", "LoginOrRegisterUpdateUserInfoReq", "UserInfoResp", "UserWardrobeReq", "UserWardrobeListResp", "SendMsgReq", "SendMsgResp", "OrderReq", "OrderResp", "MallReq", "MallResp", "MallListResp", "MallImgReq", "MallImgResp", "MallImgsResp", "CollectionReq", "CollectionResp", "CollectionListReq", "CollectionListResp", });
+                new java.lang.String[] { "ClientId", "Code", "Type", "LoginReq", "LoginResp", "UpdateUserReq", "UpdateUserResp", "ModelTypeListResp", "ModelTypeReq", "ModelStyle", "PlateClassListResp", "LoginOrRegisterUpdateUserInfoReq", "UserInfoResp", "UserWardrobeReq", "UserWardrobeListResp", "SendMsgReq", "SendMsgResp", "OrderReq", "OrderResp", "MallReq", "MallResp", "MallListResp", "MallImgReq", "MallImgResp", "MallImgsResp", "CollectionReq", "CollectionResp", "CollectionListReq", "CollectionListResp", "ParticularsReq", "ParticularsResp", "LoginPasswordReq", "ParticularsListReq", "ParticularsListResp", "ParticularsOrderResp", "PlaceAnOrderReq", "PlaceAnOrderResp", "AddressReq", "AddressResp", "UpdateAddressReq", "DeleteAddressReq", "SelectAddressReq", "SelectAddressResp", });
         internal_static_NettyProtobufWebsocketClient_MessageBase_LoginReq_descriptor =
                 internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(0);
         internal_static_NettyProtobufWebsocketClient_MessageBase_LoginReq_fieldAccessorTable = new
@@ -45453,7 +66809,7 @@ public final class MessageProtocol {
         internal_static_NettyProtobufWebsocketClient_MessageBase_OrderReq_fieldAccessorTable = new
                 com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
                 internal_static_NettyProtobufWebsocketClient_MessageBase_OrderReq_descriptor,
-                new java.lang.String[] { "PrepayId", });
+                new java.lang.String[] { "PhoneNumber", });
         internal_static_NettyProtobufWebsocketClient_MessageBase_OrderResp_descriptor =
                 internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(21);
         internal_static_NettyProtobufWebsocketClient_MessageBase_OrderResp_fieldAccessorTable = new
@@ -45520,6 +66876,90 @@ public final class MessageProtocol {
                 com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
                 internal_static_NettyProtobufWebsocketClient_MessageBase_CollectionListResp_descriptor,
                 new java.lang.String[] { "MallResp", });
+        internal_static_NettyProtobufWebsocketClient_MessageBase_LoginPasswordReq_descriptor =
+                internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(32);
+        internal_static_NettyProtobufWebsocketClient_MessageBase_LoginPasswordReq_fieldAccessorTable = new
+                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+                internal_static_NettyProtobufWebsocketClient_MessageBase_LoginPasswordReq_descriptor,
+                new java.lang.String[] { "PhoneNumber", "Password", "Code", });
+        internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsReq_descriptor =
+                internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(33);
+        internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsReq_fieldAccessorTable = new
+                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+                internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsReq_descriptor,
+                new java.lang.String[] { "OrderDerailsId", "PhoneNumber", });
+        internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsResp_descriptor =
+                internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(34);
+        internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsResp_fieldAccessorTable = new
+                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+                internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsResp_descriptor,
+                new java.lang.String[] { "DerailsId", "Name", "OrderInfoId", "MallId", "StoreId", "Size", "Colour", "Quantity", "Amount", "Image", });
+        internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListReq_descriptor =
+                internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(35);
+        internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListReq_fieldAccessorTable = new
+                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+                internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListReq_descriptor,
+                new java.lang.String[] { "PhoneNumber", });
+        internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsOrderResp_descriptor =
+                internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(36);
+        internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsOrderResp_fieldAccessorTable = new
+                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+                internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsOrderResp_descriptor,
+                new java.lang.String[] { "OrderId", "PayAmont", "Amount", "OrderSn", "ModelType", "StoreId", "MallId", "UserId", "Status", "CreateTime", "PayType", "Address", "Phone", "Consignee", "Remark", "PayTime", "DelFlag", "DelBy", "TimeOutFlag", "UpdateTime", });
+        internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListResp_descriptor =
+                internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(37);
+        internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListResp_fieldAccessorTable = new
+                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+                internal_static_NettyProtobufWebsocketClient_MessageBase_ParticularsListResp_descriptor,
+                new java.lang.String[] { "ParticularsResp", "ParticularsOrderResp", });
+        internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderReq_descriptor =
+                internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(38);
+        internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderReq_fieldAccessorTable = new
+                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+                internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderReq_descriptor,
+                new java.lang.String[] { "MallId", "AddressId", "Remark", "Colour", "Size", "Pay", "UserId", "StoreId", "Quantity", "Amount", });
+        internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderResp_descriptor =
+                internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(39);
+        internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderResp_fieldAccessorTable = new
+                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+                internal_static_NettyProtobufWebsocketClient_MessageBase_PlaceAnOrderResp_descriptor,
+                new java.lang.String[] { "OrderNumber", });
+        internal_static_NettyProtobufWebsocketClient_MessageBase_AddressReq_descriptor =
+                internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(40);
+        internal_static_NettyProtobufWebsocketClient_MessageBase_AddressReq_fieldAccessorTable = new
+                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+                internal_static_NettyProtobufWebsocketClient_MessageBase_AddressReq_descriptor,
+                new java.lang.String[] { "UserId", "Consignee", "Phone", "Sex", "ProvinceName", "CityName", "DistrictName", "Detail", "Label", "IsDefault", "CreateTime", "UpdateTime", "CreateUser", "UpdateUser", "IsDeleted", "Id", });
+        internal_static_NettyProtobufWebsocketClient_MessageBase_AddressResp_descriptor =
+                internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(41);
+        internal_static_NettyProtobufWebsocketClient_MessageBase_AddressResp_fieldAccessorTable = new
+                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+                internal_static_NettyProtobufWebsocketClient_MessageBase_AddressResp_descriptor,
+                new java.lang.String[] { "Status", });
+        internal_static_NettyProtobufWebsocketClient_MessageBase_UpdateAddressReq_descriptor =
+                internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(42);
+        internal_static_NettyProtobufWebsocketClient_MessageBase_UpdateAddressReq_fieldAccessorTable = new
+                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+                internal_static_NettyProtobufWebsocketClient_MessageBase_UpdateAddressReq_descriptor,
+                new java.lang.String[] { "AddressReq", });
+        internal_static_NettyProtobufWebsocketClient_MessageBase_DeleteAddressReq_descriptor =
+                internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(43);
+        internal_static_NettyProtobufWebsocketClient_MessageBase_DeleteAddressReq_fieldAccessorTable = new
+                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+                internal_static_NettyProtobufWebsocketClient_MessageBase_DeleteAddressReq_descriptor,
+                new java.lang.String[] { "AddressId", });
+        internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressReq_descriptor =
+                internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(44);
+        internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressReq_fieldAccessorTable = new
+                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+                internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressReq_descriptor,
+                new java.lang.String[] { "UserId", });
+        internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressResp_descriptor =
+                internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(45);
+        internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressResp_fieldAccessorTable = new
+                com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+                internal_static_NettyProtobufWebsocketClient_MessageBase_SelectAddressResp_descriptor,
+                new java.lang.String[] { "AddressReq", });
     }
 
     // @@protoc_insertion_point(outer_class_scope)

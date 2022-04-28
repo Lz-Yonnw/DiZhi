@@ -1,7 +1,7 @@
 package com.ruoyi.system.mapper;
 
 import com.ruoyi.system.domain.TbMall;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -22,4 +22,11 @@ public interface TbMallMapper {
      * @return
      */
     List<TbMall> selectListMall(List<Long> mallIds);
+
+    /**
+     * 查询商品信息
+     * @param mallId
+     * @return
+     */
+    TbMall select(@Param("mallId") int mallId);
 }

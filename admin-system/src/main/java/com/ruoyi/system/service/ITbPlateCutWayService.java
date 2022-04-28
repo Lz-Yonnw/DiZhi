@@ -1,7 +1,8 @@
 package com.ruoyi.system.service;
 
-import java.util.List;
 import com.ruoyi.system.domain.TbPlateCutWay;
+
+import java.util.List;
 
 /**
  * 板块小类-裁剪方式Service接口
@@ -26,6 +27,8 @@ public interface ITbPlateCutWayService
      * @return 板块小类-裁剪方式集合
      */
     public List<TbPlateCutWay> selectTbPlateCutWayList(TbPlateCutWay tbPlateCutWay);
+    List<TbPlateCutWay> selectTbPlateCutWayList(long parentId);
+
 
     /**
      * 新增板块小类-裁剪方式
@@ -58,4 +61,5 @@ public interface ITbPlateCutWayService
      * @return 结果
      */
     public int deleteTbPlateCutWayById(Long id);
+
 }

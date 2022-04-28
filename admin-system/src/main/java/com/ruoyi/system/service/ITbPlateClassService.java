@@ -1,7 +1,8 @@
 package com.ruoyi.system.service;
 
-import java.util.List;
 import com.ruoyi.system.domain.TbPlateClass;
+
+import java.util.List;
 
 /**
  * 板块大类-部位Service接口
@@ -26,6 +27,7 @@ public interface ITbPlateClassService
      * @return 板块大类-部位集合
      */
     public List<TbPlateClass> selectTbPlateClassList(TbPlateClass tbPlateClass);
+    List<TbPlateClass> selectTbPlateClassByList(long parentId);
 
     /**
      * 新增板块大类-部位
@@ -58,4 +60,6 @@ public interface ITbPlateClassService
      * @return 结果
      */
     public int deleteTbPlateClassById(Long id);
+
+
 }

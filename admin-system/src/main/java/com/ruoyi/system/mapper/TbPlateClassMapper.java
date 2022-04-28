@@ -1,7 +1,8 @@
 package com.ruoyi.system.mapper;
 
-import java.util.List;
 import com.ruoyi.system.domain.TbPlateClass;
+
+import java.util.List;
 
 /**
  * 板块大类-部位Mapper接口
@@ -26,6 +27,14 @@ public interface TbPlateClassMapper
      * @return 板块大类-部位集合
      */
     public List<TbPlateClass> selectTbPlateClassList(TbPlateClass tbPlateClass);
+
+    /**
+     * 根据id查询板块大类-部位列表
+     * @param parentId 上级id
+     * @return 板块大类部位集合
+     */
+    List<TbPlateClass> selectTbPlateClassByList(long parentId);
+
 
     /**
      * 新增板块大类-部位
@@ -58,4 +67,5 @@ public interface TbPlateClassMapper
      * @return 结果
      */
     public int deleteTbPlateClassByIds(Long[] ids);
+
 }

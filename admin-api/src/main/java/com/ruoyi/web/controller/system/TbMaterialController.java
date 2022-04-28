@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSONObject;
 import com.ruoyi.common.core.controller.BaseController;
 import com.ruoyi.common.core.domain.AjaxResult;
 import com.ruoyi.common.core.domain.ModelTreeSelect;
-import com.ruoyi.common.core.domain.entity.SysDept;
 import com.ruoyi.system.domain.*;
 import com.ruoyi.system.service.*;
 import org.slf4j.Logger;
@@ -63,7 +62,7 @@ public class TbMaterialController extends BaseController
             list.add(modelTreeSelect);
             indexMap.put("modelType_"+modelType.getId(), modelTreeSelect);
         }
-        System.out.println(JSONObject.toJSONString(list));
+        logger.info("类别"+JSONObject.toJSONString(list));
         List<TbModelStyle> modelStyles = iTbModelStyleService.selectTbModelStyleList(null);
         for(TbModelStyle tbModelStyle: modelStyles){
             ModelTreeSelect firstModel = (ModelTreeSelect) indexMap.get("modelType_"+tbModelStyle.getParentId());
@@ -81,7 +80,7 @@ public class TbMaterialController extends BaseController
                 indexMap.put("modelStyle_" + tbModelStyle.getId(), modelTreeSelect);
             }
         }
-        logger.info(JSONObject.toJSONString(list));
+        logger.info("类型"+JSONObject.toJSONString(list));
 
         List<TbPlateClass> plateClasses = iTbPlateClassService.selectTbPlateClassList(null);
         for(TbPlateClass plateClass: plateClasses){
@@ -101,7 +100,7 @@ public class TbMaterialController extends BaseController
             }
         }
 
-        logger.info(JSONObject.toJSONString(list));
+        logger.info("部位"+JSONObject.toJSONString(list));
 
         List<TbPlateCutWay> plateCutWays = iTbPlateCutWayService.selectTbPlateCutWayList(null);
         for(TbPlateCutWay plateCutWay: plateCutWays){
@@ -120,11 +119,11 @@ public class TbMaterialController extends BaseController
                 indexMap.put("plateCutWay_" + plateCutWay.getId(), modelTreeSelect);
             }
         }
-        logger.info(JSONObject.toJSONString(list));
+        logger.info("部位组成"+JSONObject.toJSONString(list));
         return AjaxResult.success(list);
     }
 
-
+    //TODO 后台管理系统上传文件
     @GetMapping("/getComponents")
     public AjaxResult getComponents(Long parentId)
     {
@@ -133,6 +132,23 @@ public class TbMaterialController extends BaseController
         List<TbComponent> components = iTbComponentService.selectTbComponentList(tbComponent);
         return AjaxResult.success(components);
     }
+
+    /**
+     * 添加衣服
+     */
+    @PostMapping("/mall")
+    public AjaxResult getMall(@RequestBody TbModelStyle tbModelStyle){
+        int i = iTbModelStyleService.insertTbModelStyle(tbModelStyle);
+        return toAjax(i);
+    }
+
+    /**
+     * 添加部位
+     */
+
+    /**
+     * 各种部位
+     */
 
 
 }

@@ -1,11 +1,12 @@
 package com.ruoyi.system.service.impl;
 
-import java.util.List;
+import com.ruoyi.system.domain.TbPlateCutWay;
+import com.ruoyi.system.mapper.TbPlateCutWayMapper;
+import com.ruoyi.system.service.ITbPlateCutWayService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.ruoyi.system.mapper.TbPlateCutWayMapper;
-import com.ruoyi.system.domain.TbPlateCutWay;
-import com.ruoyi.system.service.ITbPlateCutWayService;
+
+import java.util.List;
 
 /**
  * 板块小类-裁剪方式Service业务层处理
@@ -41,6 +42,11 @@ public class TbPlateCutWayServiceImpl implements ITbPlateCutWayService
     public List<TbPlateCutWay> selectTbPlateCutWayList(TbPlateCutWay tbPlateCutWay)
     {
         return tbPlateCutWayMapper.selectTbPlateCutWayList(tbPlateCutWay);
+    }
+
+    @Override
+    public List<TbPlateCutWay> selectTbPlateCutWayList(long parentId) {
+        return tbPlateCutWayMapper.selectTbPlateCutWayByList(parentId);
     }
 
     /**

@@ -34,7 +34,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         <include refid="selectTbPlateCutWayVo"/>
         where id = #{id}
     </select>
-        
+    <select id="selectTbPlateCutWayByList" resultType="com.ruoyi.system.domain.TbPlateCutWay">
+        <include refid="selectTbPlateCutWayVo"/>
+        where parent_id = #{parentId}
+    </select>
+
     <insert id="insertTbPlateCutWay" parameterType="TbPlateCutWay" useGeneratedKeys="true" keyProperty="id">
         insert into tb_plate_cut_way
         <trim prefix="(" suffix=")" suffixOverrides=",">

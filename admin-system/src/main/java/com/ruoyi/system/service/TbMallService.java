@@ -2,7 +2,7 @@ package com.ruoyi.system.service;
 
 import com.ruoyi.system.domain.TbCollection;
 import com.ruoyi.system.domain.TbMall;
-import com.ruoyi.system.domain.dto.TbMallDto;
+import com.ruoyi.system.domain.TbMallImgs;
 
 import java.util.List;
 
@@ -24,7 +24,7 @@ public interface TbMallService {
     /**
      * 根据用户id查询收藏的商品
      */
-    TbCollection selectTbCollection(Integer id,Long mallId);
+    TbCollection selectTbCollection(Long id,Long mallId);
 
 
 
@@ -32,6 +32,11 @@ public interface TbMallService {
      * 展示用户的全部收藏
      */
     List<TbMall> selectTbMallListStatus(Long id);
+
+    /**
+     * 查询单个商品的·详细信息
+     */
+    List<TbMallImgs> selectTbMallImgs(Long id);
 
 
 

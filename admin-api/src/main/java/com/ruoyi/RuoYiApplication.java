@@ -25,4 +25,5 @@ public class RuoYiApplication
         TCPServer tcpServer = context.getBean(TCPServer.class);
         tcpServer.start();
     }
+
 }

@@ -1,11 +1,12 @@
 package com.ruoyi.system.service.impl;
 
-import java.util.List;
+import com.ruoyi.system.domain.TbPlateClass;
+import com.ruoyi.system.mapper.TbPlateClassMapper;
+import com.ruoyi.system.service.ITbPlateClassService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.ruoyi.system.mapper.TbPlateClassMapper;
-import com.ruoyi.system.domain.TbPlateClass;
-import com.ruoyi.system.service.ITbPlateClassService;
+
+import java.util.List;
 
 /**
  * 板块大类-部位Service业务层处理
@@ -41,6 +42,11 @@ public class TbPlateClassServiceImpl implements ITbPlateClassService
     public List<TbPlateClass> selectTbPlateClassList(TbPlateClass tbPlateClass)
     {
         return tbPlateClassMapper.selectTbPlateClassList(tbPlateClass);
+    }
+
+    @Override
+    public List<TbPlateClass> selectTbPlateClassByList(long parentId) {
+        return tbPlateClassMapper.selectTbPlateClassByList(parentId);
     }
 
     /**

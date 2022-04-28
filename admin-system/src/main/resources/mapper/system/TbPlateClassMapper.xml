@@ -30,7 +30,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         <include refid="selectTbPlateClassVo"/>
         where id = #{id}
     </select>
-        
+    <select id="selectTbPlateClassByList" resultType="com.ruoyi.system.domain.TbPlateClass">
+        <include refid="selectTbPlateClassVo"/>
+        where parent_id = #{parentId}
+    </select>
+
     <insert id="insertTbPlateClass" parameterType="TbPlateClass" useGeneratedKeys="true" keyProperty="id">
         insert into tb_plate_class
         <trim prefix="(" suffix=")" suffixOverrides=",">

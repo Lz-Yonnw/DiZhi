@@ -16,12 +16,12 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         select id, name, type,p_id,parent_id from tb_classify
     </sql>
 
-    <select id="selectTbClassifyList" parameterType="TbClassify" resultMap="TbClassifyResult">
+    <select id="selectTbClassifyList" parameterType="com.ruoyi.system.domain.TbClassify" resultMap="TbClassifyResult">
         <include refid="selectTbClassifyVo"/>
         <where>  
             <if test="name != null  and name != ''"> and name like concat('%', #{name}, '%')</if>
             <if test="type != null "> and type = #{type}</if>
-            <if test="1== 1 "> and parent_id = #{parentId}</if>
+            <if test="parentId != null "> and parent_id = #{parentId}</if>
             <if test="pId != null "> and p_id = #{pId}</if>
         </where>
     </select>

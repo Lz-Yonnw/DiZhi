@@ -20,7 +20,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         <include refid="selectTbModelStyleVo"/>
         <where>  
             <if test="name != null  and name != ''"> and name like concat('%', #{name}, '%')</if>
-            <if test="code != null  and code != ''"> and code = #{code}</if>
+            <if test="code != null  and code != ''"> and code like concat ('%',#{code},'%')</if>
             <if test="parentId != null "> and parent_id = #{parentId}</if>
         </where>
     </select>

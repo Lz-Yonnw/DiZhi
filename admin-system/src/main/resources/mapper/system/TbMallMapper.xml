@@ -15,7 +15,7 @@
     </resultMap>
 
     <sql id="selectTbMallVo">
-        select id,tb_store_id, name,img, price from tb_mall
+        select id,tb_store_id, name,img, price,description from tb_mall
     </sql>
 
     <select id="selectList" resultType="com.ruoyi.system.domain.TbMall" resultMap="TbMall">
@@ -24,6 +24,16 @@
 
     <!--根据id查询商品-->
     <select id="selectListMall" resultType="com.ruoyi.system.domain.TbMall">
-        select * from tb_mall where id in (#{mallIds})
+        select * from tb_mall where id in
+        <foreach collection="list" open="(" separator="," close=")" item="id" index="index">
+            #{id}
+        </foreach>
+    </select>
+    <!--查询单个商品-->
+    <select id="select" resultType="com.ruoyi.system.domain.TbMall">
+        <include refid="selectTbMallVo"></include>
+        <where>
+            <if test="mallId!=null">id=#{mallId}</if>
+        </where>
     </select>
 </mapper>

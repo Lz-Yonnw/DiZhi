@@ -2,12 +2,12 @@ package com.ruoyi.system.service.impl;
 
 import com.ruoyi.system.domain.TbCollection;
 import com.ruoyi.system.domain.TbMall;
-import com.ruoyi.system.domain.dto.TbMallDto;
+import com.ruoyi.system.domain.TbMallImgs;
 import com.ruoyi.system.mapper.TbCollectionMapper;
+import com.ruoyi.system.mapper.TbMallImgsMapper;
 import com.ruoyi.system.mapper.TbMallMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
@@ -20,6 +20,8 @@ public class TbMallServiceIml implements com.ruoyi.system.service.TbMallService 
     private TbMallMapper tbMallMapper;
     @Autowired
     private TbCollectionMapper tbCollectionMapper;
+    @Autowired
+    private TbMallImgsMapper tbMallImgsMapper;
 
     /**
      * 展示全部商品
@@ -56,7 +58,7 @@ public class TbMallServiceIml implements com.ruoyi.system.service.TbMallService 
      * 根据用户id查询收藏的商品
      */
     @Override
-    public TbCollection selectTbCollection(Integer id,Long mallId) {
+    public TbCollection selectTbCollection(Long id,Long mallId) {
 
         return tbCollectionMapper.selectone(id,mallId);
     }
@@ -72,5 +74,14 @@ public class TbMallServiceIml implements com.ruoyi.system.service.TbMallService 
         return mallList;
     }
 
+
+    /**
+     * 查询单个商品的·详细信息
+     */
+    @Override
+    public List<TbMallImgs> selectTbMallImgs(Long id) {
+        return tbMallImgsMapper.selectMallId(id);
+
+    }
 
 }

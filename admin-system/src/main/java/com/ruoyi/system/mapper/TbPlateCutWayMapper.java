@@ -1,7 +1,8 @@
 package com.ruoyi.system.mapper;
 
-import java.util.List;
 import com.ruoyi.system.domain.TbPlateCutWay;
+
+import java.util.List;
 
 /**
  * 板块小类-裁剪方式Mapper接口
@@ -26,6 +27,14 @@ public interface TbPlateCutWayMapper
      * @return 板块小类-裁剪方式集合
      */
     public List<TbPlateCutWay> selectTbPlateCutWayList(TbPlateCutWay tbPlateCutWay);
+
+    /**
+     * 根据上级id查询板块小类-裁剪方式列表
+     * @param parentId 上级id
+     * @return 板块小类-裁剪方式集合
+     */
+    List<TbPlateCutWay> selectTbPlateCutWayByList(long parentId);
+
 
     /**
      * 新增板块小类-裁剪方式
@@ -58,4 +67,5 @@ public interface TbPlateCutWayMapper
      * @return 结果
      */
     public int deleteTbPlateCutWayByIds(Long[] ids);
+
 }

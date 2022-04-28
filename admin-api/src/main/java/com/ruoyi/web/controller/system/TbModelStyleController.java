@@ -1,30 +1,22 @@
 package com.ruoyi.web.controller.system;
 
-import java.util.List;
-
-import com.ruoyi.system.domain.TbUserWardrobe;
-import com.ruoyi.system.service.ITbUserWardrobeService;
-import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 import com.ruoyi.common.annotation.Log;
 import com.ruoyi.common.core.controller.BaseController;
 import com.ruoyi.common.core.domain.AjaxResult;
-import com.ruoyi.common.enums.BusinessType;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiOperation;
-import com.ruoyi.system.domain.TbModelStyle;
-import com.ruoyi.system.service.ITbModelStyleService;
-import com.ruoyi.common.utils.poi.ExcelUtil;
 import com.ruoyi.common.core.page.TableDataInfo;
+import com.ruoyi.common.enums.BusinessType;
+import com.ruoyi.common.utils.poi.ExcelUtil;
+import com.ruoyi.system.domain.*;
+import com.ruoyi.system.domain.dto.TbModelStyleDto;
+import com.ruoyi.system.service.*;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 版型小类Controller
@@ -43,16 +35,20 @@ public class TbModelStyleController extends BaseController
     @Autowired
     private ITbUserWardrobeService iTbUserWardrobeService;
 
+    @Autowired
+    private ITbModelTypeService tbModelTypeService;
+
     /**
      * 查询版型小类列表
      */
     @ApiOperation("查询版型小类列表")
     @PreAuthorize("@ss.hasPermi('system:modelStyle:list')")
-    @GetMapping("/getList")
-    public AjaxResult getList(TbModelStyle tbModelStyle)
+    @GetMapping("/list")
+    public TableDataInfo<List<TbModelStyle>> getList(TbModelStyle tbModelStyle)
     {
+        startPage();
         List<TbModelStyle> list = tbModelStyleService.selectTbModelStyleList(tbModelStyle);
-        return AjaxResult.success(list);
+        return getDataTable(list);
     }
 
     /**
@@ -112,8 +108,8 @@ public class TbModelStyleController extends BaseController
     @PutMapping
     public AjaxResult edit(@RequestBody TbModelStyle tbModelStyle)
     {
-        TbUserWardrobe tbUserWardrobe = iTbUserWardrobeService.selectTbUserWardrobeById(tbModelStyle.getWardrobeId());
-        tbModelStyle.setClothesJson(tbUserWardrobe.getClothesJson());
+//        TbUserWardrobe tbUserWardrobe = iTbUserWardrobeService.selectTbUserWardrobeById(tbModelStyle.getId());
+//        tbModelStyle.setClothesJson(tbUserWardrobe.getClothesJson());
         return toAjax(tbModelStyleService.updateTbModelStyle(tbModelStyle));
     }
 
@@ -127,5 +123,99 @@ public class TbModelStyleController extends BaseController
     public AjaxResult remove(@PathVariable Long[] ids)
     {
         return toAjax(tbModelStyleService.deleteTbModelStyleByIds(ids));
+    }
+    /**
+     * 展示所有的衣服及部位
+     */
+    @ApiOperation("展示所有的衣服及部位")
+    @PreAuthorize("@ss.hasPermi('system:modelStyle:fourList')")
+    @Log(title = "版型小类", businessType = BusinessType.OTHER)
+    @GetMapping("/fourList")
+    public AjaxResult getFourList()
+    {
+
+        List<TbModelStyleDto> dto = getModelTypeList();
+
+        return AjaxResult.success(dto);
+    }
+
+    /**
+     * 查询板块大类
+     */
+
+    private List<TbModelStyleDto> getModelTypeList() {
+        List<TbModelStyleDto> dto = new ArrayList<>();
+        List<TbModelType> list =  tbModelTypeService.selectTbModelTypeList(new TbModelType());
+        TbModelStyleDto tbModelStyleDto=null;
+        if (list.size()>0){
+            for (TbModelType tbModelType : list) {
+                tbModelStyleDto = new TbModelStyleDto();
+                tbModelStyleDto.setId(tbModelType.getId());
+                tbModelStyleDto.setName(tbModelType.getName());
+                tbModelStyleDto.setParentId(0L);
+                tbModelStyleDto.setStatus(1);
+                tbModelStyleDto.setData(getModelTypeList(tbModelType.getId()));
+                dto.add(tbModelStyleDto);
+            }
+
+        }
+        return dto;
+    }
+    private List<TbModelStyleDto> getModelTypeList(long parentId) {
+        List<TbModelStyleDto> dto = new ArrayList<>();
+        List<TbModelStyle> list = tbModelStyleService.selectTbModelStyleByList(parentId);
+        TbModelStyleDto tbModelStyleDto=null;
+        if (list.size()>0){
+            for (int i = 0; i < list.size(); i++) {
+                tbModelStyleDto = new TbModelStyleDto();
+                tbModelStyleDto.setId(list.get(i).getId());
+                tbModelStyleDto.setName(list.get(i).getName());
+                tbModelStyleDto.setParentId(parentId);
+                tbModelStyleDto.setStatus(2);
+              tbModelStyleDto.setData(getPlateClassList(list.get(i).getId()));
+
+                dto.add(tbModelStyleDto);
+            }
+        }
+        return dto;
+    }
+    @Autowired
+    private ITbPlateClassService tbPlateClassService;
+    @Autowired
+    private ITbPlateCutWayService tbPlateCutWayService;
+    private List<TbModelStyleDto> getPlateClassList(long parentId) {
+        List<TbModelStyleDto> dto = new ArrayList<>();
+        List<TbPlateClass> list = tbPlateClassService.selectTbPlateClassByList(parentId);
+        TbModelStyleDto tbModelStyleDto=null;
+        if (list.size()>0){
+            for (int i = 0; i < list.size(); i++) {
+                tbModelStyleDto = new TbModelStyleDto();
+                tbModelStyleDto.setId(list.get(i).getId());
+                tbModelStyleDto.setParentId(parentId);
+                tbModelStyleDto.setName(list.get(i).getName());
+                tbModelStyleDto.setStatus(3);
+                tbModelStyleDto.setData(getPlateCutWayList(list.get(i).getId()));
+
+                dto.add(tbModelStyleDto);
+            }
+        }
+        return dto;
+    }
+
+    private List<TbModelStyleDto> getPlateCutWayList(long parentId) {
+        List<TbModelStyleDto> dto = new ArrayList<>();
+        List<TbPlateCutWay> list = tbPlateCutWayService.selectTbPlateCutWayList(parentId);
+        TbModelStyleDto tbModelStyleDto=null;
+        if (list.size()>0){
+            for (int i = 0; i < list.size(); i++) {
+                tbModelStyleDto = new TbModelStyleDto();
+                tbModelStyleDto.setId(list.get(i).getId());
+                tbModelStyleDto.setName(list.get(i).getName());
+                tbModelStyleDto.setParentId(parentId);
+                tbModelStyleDto.setStatus(4);
+                dto.add(tbModelStyleDto);
+            }
+        }
+        return dto;
     }
 }

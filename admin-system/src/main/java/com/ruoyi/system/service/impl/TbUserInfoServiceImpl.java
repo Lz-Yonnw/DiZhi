@@ -2,6 +2,8 @@ package com.ruoyi.system.service.impl;
 
 import java.util.List;
 import com.ruoyi.common.utils.DateUtils;
+import com.ruoyi.system.domain.TbUserSole;
+import com.ruoyi.system.mapper.TbUserSoleMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.ruoyi.system.mapper.TbUserInfoMapper;
@@ -19,6 +21,8 @@ public class TbUserInfoServiceImpl implements ITbUserInfoService
 {
     @Autowired
     private TbUserInfoMapper tbUserInfoMapper;
+    @Autowired
+    private TbUserSoleMapper tbUserSoleMapper;
 
     /**
      * 查询用户信息
@@ -108,6 +112,12 @@ public class TbUserInfoServiceImpl implements ITbUserInfoService
     public TbUserInfo selectTbUserInfoByPhoneNumber(String phoneNumber)
     {
         return tbUserInfoMapper.selectTbUserInfoByPhoneNumber(phoneNumber);
+    }
+
+    @Override
+    public TbUserSole sleectTbUserSolePhoneNumber(String phoneNumber) {
+
+        return tbUserSoleMapper.sleectTbUserSolePhoneNumber(phoneNumber);
     }
 
 }

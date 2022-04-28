@@ -2,6 +2,7 @@ package com.ruoyi.system.service;
 
 import java.util.List;
 import com.ruoyi.system.domain.TbUserInfo;
+import com.ruoyi.system.domain.TbUserSole;
 
 /**
  * 用户信息Service接口
@@ -62,4 +63,6 @@ public interface ITbUserInfoService
     public int deleteTbUserInfoById(Long id);
 
     public TbUserInfo selectTbUserInfoByPhoneNumber(String phoneNumber);
+
+    public TbUserSole sleectTbUserSolePhoneNumber(String phoneNumber);
 }

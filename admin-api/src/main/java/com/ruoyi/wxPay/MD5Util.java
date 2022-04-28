@@ -1,7 +1,8 @@
 package com.ruoyi.wxPay;
 
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
 import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 
 
@@ -9,7 +10,11 @@ import java.security.NoSuchAlgorithmException;
 public class MD5Util{
 
     public static void main(String[] args) {
-        System.out.println(md5Encode("444"));
+        System.out.println(md5Encode("123"));
+        boolean flag = new BCryptPasswordEncoder().matches("123456","$2a$10$fyAQymyTn.BTAO0pOfkPCexpA/gXhOW1w1v2sPL.FGJd/TyBvVG3S" );
+        String encode = new BCryptPasswordEncoder().encode("123456");
+        System.out.println("encode = " + encode);
+        System.out.println(flag);
     }
 
     //MD5加密 编码：UTF-8

@@ -3,20 +3,15 @@ package com.ruoyi.web.controller.system;
 import com.ruoyi.common.core.controller.BaseController;
 import com.ruoyi.common.core.domain.AjaxResult;
 import com.ruoyi.common.core.page.TableDataInfo;
-import com.ruoyi.netty.common.encode.MessageDecoder;
-import com.ruoyi.system.domain.TbClothesStyle;
 import com.ruoyi.system.domain.TbCollection;
 import com.ruoyi.system.domain.TbMall;
 import com.ruoyi.system.service.TbMallService;
-import io.netty.buffer.ByteBuf;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 /**
