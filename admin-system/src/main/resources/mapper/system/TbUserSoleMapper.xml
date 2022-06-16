@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.TbUserSoleMapper">
+
+    <resultMap type="com.ruoyi.system.domain.TbUserSole" id="TbUserSloeResult">
+            <result property="id" column="id"/>
+            <result property="phoneNumber" column="phone_number"/>
+    </resultMap>
+
+    <sql id="selectTbUserSloeVo">
+        select id, phone_number from tb_user_sole
+    </sql>
+    <select id="sleectTbUserSolePhoneNumber" resultType="com.ruoyi.system.domain.TbUserSole">
+        <include refid="selectTbUserSloeVo"/>
+    </select>
+
+
+</mapper>

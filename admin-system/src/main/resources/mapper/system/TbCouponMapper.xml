@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.TbCouponMapper">
+
+    <resultMap type="TbCoupon" id="TbCouponResult">
+        <result property="id"    column="id"    />
+        <result property="couponTitle"    column="coupon_title"    />
+        <result property="couponUrl"    column="coupon_url"    />
+        <result property="couponLimit"    column="coupon_limit"    />
+        <result property="couponPrice"    column="coupon_price"    />
+        <result property="couponNumber"    column="coupon_number"    />
+        <result property="couponAllavailable"    column="coupon_allAvailable"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="createStatus"    column="create_status"    />
+    </resultMap>
+
+    <sql id="selectTbCouponVo">
+        select id, coupon_title, coupon_url, coupon_limit, coupon_price, coupon_number, coupon_allAvailable, create_time, create_status from tb_coupon
+    </sql>
+
+    <select id="selectTbCouponList" parameterType="TbCoupon" resultMap="TbCouponResult">
+        <include refid="selectTbCouponVo"/>
+        <where>
+            <if test="couponTitle != null  and couponTitle != ''"> and coupon_title = #{couponTitle}</if>
+            <if test="couponUrl != null  and couponUrl != ''"> and coupon_url = #{couponUrl}</if>
+            <if test="couponLimit != null "> and coupon_limit = #{couponLimit}</if>
+            <if test="couponPrice != null "> and coupon_price = #{couponPrice}</if>
+            <if test="couponNumber != null "> and coupon_number = #{couponNumber}</if>
+            <if test="couponAllavailable != null "> and coupon_allAvailable = #{couponAllavailable}</if>
+            <if test="createStatus != null "> and create_status = #{createStatus}</if>
+        </where>
+    </select>
+
+    <select id="selectTbCouponById" parameterType="Long" resultMap="TbCouponResult">
+        <include refid="selectTbCouponVo"/>
+        where id = #{id}
+    </select>
+
+    <insert id="insertTbCoupon" parameterType="TbCoupon" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_coupon
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="couponTitle != null">coupon_title,</if>
+            <if test="couponUrl != null">coupon_url,</if>
+            <if test="couponLimit != null">coupon_limit,</if>
+            <if test="couponPrice != null">coupon_price,</if>
+            <if test="couponNumber != null">coupon_number,</if>
+            <if test="couponAllavailable != null">coupon_allAvailable,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="createStatus != null">create_status,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="couponTitle != null">#{couponTitle},</if>
+            <if test="couponUrl != null">#{couponUrl},</if>
+            <if test="couponLimit != null">#{couponLimit},</if>
+            <if test="couponPrice != null">#{couponPrice},</if>
+            <if test="couponNumber != null">#{couponNumber},</if>
+            <if test="couponAllavailable != null">#{couponAllavailable},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="createStatus != null">#{createStatus},</if>
+         </trim>
+    </insert>
+
+    <update id="updateTbCoupon" parameterType="TbCoupon">
+        update tb_coupon
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="couponTitle != null">coupon_title = #{couponTitle},</if>
+            <if test="couponUrl != null">coupon_url = #{couponUrl},</if>
+            <if test="couponLimit != null">coupon_limit = #{couponLimit},</if>
+            <if test="couponPrice != null">coupon_price = #{couponPrice},</if>
+            <if test="couponNumber != null">coupon_number = #{couponNumber},</if>
+            <if test="couponAllavailable != null">coupon_allAvailable = #{couponAllavailable},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="createStatus != null">create_status = #{createStatus},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteTbCouponById" parameterType="Long">
+        delete from tb_coupon where id = #{id}
+    </delete>
+
+    <delete id="deleteTbCouponByIds" parameterType="String">
+        delete from tb_coupon where id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+<!--    * 商品未关联的优惠劵集-->
+<!--    * @param mallId    商品Id-->
+<!--    * @return-->
+    <select id="selectTbCouponnotInMallCoupon" resultMap="TbCouponResult">
+           select * from tb_coupon where id not in (select coupon_id from tb_mall_coupon where mall_id=#{mallId})
+    </select>
+</mapper>

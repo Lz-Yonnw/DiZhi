@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.TbMallSkuMapper">
+
+    <resultMap type="TbMallSku" id="TbMallSkuResult">
+        <result property="id"    column="id"    />
+        <result property="mallId"    column="mall_id"    />
+        <result property="specsData"    column="specs_data"    />
+        <result property="amount"    column="amount"    />
+        <result property="price"    column="price"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="status"    column="status"    />
+    </resultMap>
+
+    <sql id="selectTbMallSkuVo">
+        select id, mall_id, specs_data, amount, price, create_time, update_time, status from tb_mall_sku
+    </sql>
+
+    <select id="selectTbMallSkuList" parameterType="TbMallSku" resultMap="TbMallSkuResult">
+        <include refid="selectTbMallSkuVo"/>
+        <where>
+            <if test="mallId != null "> and mall_id = #{mallId}</if>
+            <if test="specsData != null  and specsData != ''"> and specs_data = #{specsData}</if>
+            <if test="amount != null "> and amount = #{amount}</if>
+            <if test="price != null "> and price = #{price}</if>
+            <if test="status != null "> and status = #{status}</if>
+        </where>
+    </select>
+
+    <select id="selectTbMallSkuById" parameterType="Long" resultMap="TbMallSkuResult">
+        <include refid="selectTbMallSkuVo"/>
+        where id = #{id}
+    </select>
+
+    <insert id="insertTbMallSku" parameterType="TbMallSku" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_mall_sku
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="mallId != null">mall_id,</if>
+            <if test="specsData != null">specs_data,</if>
+            <if test="amount != null">amount,</if>
+            <if test="price != null">price,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="status != null">status,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="mallId != null">#{mallId},</if>
+            <if test="specsData != null">#{specsData},</if>
+            <if test="amount != null">#{amount},</if>
+            <if test="price != null">#{price},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="status != null">#{status},</if>
+         </trim>
+    </insert>
+
+    <update id="updateTbMallSku" parameterType="TbMallSku">
+        update tb_mall_sku
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="mallId != null">mall_id = #{mallId},</if>
+            <if test="specsData != null">specs_data = #{specsData},</if>
+            <if test="amount != null">amount = #{amount},</if>
+            <if test="price != null">price = #{price},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="updateTime != null">update_time = #{updateTime},</if>
+            <if test="status != null">status = #{status},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteTbMallSkuById" parameterType="Long">
+        update tb_mall_sku set status = 2 where id = #{id}
+    </delete>
+
+    <delete id="deleteTbMallSkuByIds" parameterType="String">
+        update tb_mall_sku set status = 2 where id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

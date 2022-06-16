@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.TbCommentMapper">
+
+    <resultMap type="TbComment" id="TbCommentResult">
+        <result property="id"    column="id"    />
+        <result property="userId"    column="user_id"    />
+        <result property="data"    column="data"    />
+        <result property="storeId"    column="store_id"    />
+        <result property="typeId"    column="type_id"    />
+        <result property="mallId"    column="mall_id"    />
+        <result property="userNickname"    column="user_nickname"    />
+        <result property="headImg"    column="head_img"    />
+    </resultMap>
+
+    <sql id="selectTbCommentVo">
+        select id, user_id, data, store_id, type_id, mall_id from tb_comment
+    </sql>
+
+    <select id="selectTbCommentList" parameterType="TbComment" resultMap="TbCommentResult">
+        <include refid="selectTbCommentVo"/>
+        <where>
+            <if test="userId != null "> and user_id = #{userId}</if>
+            <if test="data != null  and data != ''"> and data = #{data}</if>
+            <if test="storeId != null "> and store_id = #{storeId}</if>
+            <if test="typeId != null "> and type_id = #{typeId}</if>
+            <if test="mallId != null "> and mall_id = #{mallId}</if>
+        </where>
+    </select>
+
+    <select id="selectTbCommentById" parameterType="Integer" resultMap="TbCommentResult">
+        <include refid="selectTbCommentVo"/>
+        where id = #{id}
+    </select>
+
+    <insert id="insertTbComment" parameterType="TbComment" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_comment
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">user_id,</if>
+            <if test="data != null and data != ''">data,</if>
+            <if test="storeId != null">store_id,</if>
+            <if test="typeId != null">type_id,</if>
+            <if test="mallId != null">mall_id,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">#{userId},</if>
+            <if test="data != null and data != ''">#{data},</if>
+            <if test="storeId != null">#{storeId},</if>
+            <if test="typeId != null">#{typeId},</if>
+            <if test="mallId != null">#{mallId},</if>
+         </trim>
+    </insert>
+
+    <update id="updateTbComment" parameterType="TbComment">
+        update tb_comment
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="userId != null">user_id = #{userId},</if>
+            <if test="data != null and data != ''">data = #{data},</if>
+            <if test="storeId != null">store_id = #{storeId},</if>
+            <if test="typeId != null">type_id = #{typeId},</if>
+            <if test="mallId != null">mall_id = #{mallId},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteTbCommentById" parameterType="Integer">
+        delete from tb_comment where id = #{id}
+    </delete>
+
+    <delete id="deleteTbCommentByIds" parameterType="String">
+        delete from tb_comment where id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <select id="selectTbCommentByMallId" resultMap="TbCommentResult" parameterType="long">
+        select tbcomment.id,tbcomment.data,tbcomment.store_id,tbcomment.type_id,tbcomment.mall_id,tbuser.user_nickname,tbuser.head_img from tb_comment tbcomment
+        INNER JOIN tb_user_info tbuser
+        on tbcomment.user_id=tbuser.id
+        where tbcomment.mall_id = #{mallId}
+    </select>
+</mapper>

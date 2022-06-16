@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.TbMallImgsMapper">
+    <resultMap id="tbMallImgs" type="com.ruoyi.system.domain.TbMallImgs">
+        <result property="id" column="id" />
+        <result property="mallId" column="mall_id" />
+        <result property="img" column="img" />
+    </resultMap>
+    <sql id="selectTbMallImgsVo">
+        select id, mall_id, img from tb_mall_imgs
+    </sql>
+    <select id="selectMallId" resultType="com.ruoyi.system.domain.TbMallImgs">
+        select id, mall_id, img from tb_mall_imgs where mall_id = #{id};
+    </select>
+
+    <insert id="insertTbMallImgs" parameterType="com.ruoyi.system.domain.TbMallImgs">
+            insert into tb_mall_imgs(mall_id,img) value (#{mallId},#{img})
+    </insert>
+
+
+    <delete id="deleteTbMallImgsByIds" parameterType="String">
+        delete from tb_mall_imgs where id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <delete id="deleteTbMallImgsByMallId" parameterType="long">
+        delete from tb_mall_imgs where mall_id = #{mallId}
+    </delete>
+
+    <insert id="insertTbMallImagsList" parameterType="java.util.Map">
+        insert into tb_mall_imgs(mall_id,img) values
+        <foreach collection="mallImgsList" item="item" separator=",">
+             (#{item.mallId},#{item.img})
+        </foreach>
+    </insert>
+
+    <update id="updateTbMallImagsList" parameterType="com.ruoyi.system.domain.TbMallImgs">
+        update tb_mall_imgs
+        <trim prefix="set" suffixOverrides=",">
+            <foreach collection="mallImgsList" item="item">
+                img=#{item.img} where id=#{item.id}
+            </foreach>
+        </trim>
+    </update>
+
+</mapper>
