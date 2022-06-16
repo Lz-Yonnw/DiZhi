@@ -2,8 +2,8 @@ package com.ruoyi.framework.web.domain.server;
 
 /**
  * 系统文件相关信息
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 public class SysFile
 {

@@ -2,8 +2,8 @@ package com.ruoyi.common.utils;
 
 /**
  * 处理并记录日志文件
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 public class LogUtils
 {

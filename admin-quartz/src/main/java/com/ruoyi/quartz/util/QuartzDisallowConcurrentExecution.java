@@ -7,7 +7,7 @@ import com.ruoyi.quartz.domain.SysJob;
 /**
  * 定时任务处理（禁止并发执行）
  * 
- * @author ruoyi
+ * @author liaozan8888@163.com
  *
  */
 @DisallowConcurrentExecution

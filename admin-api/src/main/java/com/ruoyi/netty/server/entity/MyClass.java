@@ -1,20 +1,16 @@
 package com.ruoyi.netty.server.entity;
 
 
-import com.ruoyi.framework.web.exception.GlobalExceptionHandler;
-import com.tencent.mm.opensdk.modelbase.BaseResp;
 import com.wechat.pay.contrib.apache.httpclient.WechatPayHttpClientBuilder;
 import com.wechat.pay.contrib.apache.httpclient.auth.AutoUpdateCertificatesVerifier;
 import com.wechat.pay.contrib.apache.httpclient.auth.PrivateKeySigner;
 import com.wechat.pay.contrib.apache.httpclient.auth.WechatPay2Credentials;
 import com.wechat.pay.contrib.apache.httpclient.auth.WechatPay2Validator;
 import com.wechat.pay.contrib.apache.httpclient.util.PemUtil;
-
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.node.ObjectNode;
@@ -28,11 +24,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
-import java.security.InvalidKeyException;
-import java.security.NoSuchAlgorithmException;
-import java.security.PrivateKey;
-import java.security.Signature;
-import java.security.SignatureException;
+import java.security.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -43,7 +35,7 @@ public class MyClass   {
     private static final Logger log = LoggerFactory.getLogger(MyClass.class);
 
     public static void main(String[] args) {
-        requestPrepayId();
+//        requestPrepayId();
     }
     public static String requestPrepayId() {
 
@@ -137,8 +129,6 @@ public class MyClass   {
         map.put("sign",sign);
         System.out.println("---"+ nonceStr + "---" + timeStamp + "---" + sign);
         return map;
-
-
     }
 
     public static String createSign(String appid, long timeStamp, String nonceStr, String prepayId) {
@@ -170,6 +160,7 @@ public class MyClass   {
     static String mchid = "1582797471";
     static String apiV3Key = "mglobalsourcing12345678999999999";
 
+    //私钥
     static String privateKey = "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC2W8WLPz7znGkx\n" +
             "NgO+3/Bh7lnK6mErAF2JCVjxy1M8g3wXi9C0SbAMID5YC6h8MArIH4Uz7cRvsAGv\n" +
             "hFbodknXAJlpDRODjqm6BDw+HZV2VmI/r8Eg9DpRmWXXUO7tQrLCxrVDIVx+Tlfd\n" +

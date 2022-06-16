@@ -86,11 +86,6 @@
 
 
 
-        <!-- swagger2-->
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-        </dependency>
 
         <!--防止进入swagger页面报类型转换错误，排除2.9.2中的引用，手动增加1.5.21版本-->
         <dependency>
@@ -110,7 +105,11 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.6.Final</version>
+        </dependency>
          <!-- Mysql驱动包 -->
         <dependency>
             <groupId>mysql</groupId>
@@ -122,7 +121,11 @@
             <groupId>com.ruoyi</groupId>
             <artifactId>admin-framework</artifactId>
         </dependency>
-
+        <!-- webSocket 实时通讯 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+        </dependency>
         <!-- 定时任务-->
         <dependency>
             <groupId>com.ruoyi</groupId>

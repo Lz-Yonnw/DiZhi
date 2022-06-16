@@ -10,8 +10,8 @@ import com.ruoyi.common.utils.http.HttpUtils;
 
 /**
  * 获取地址类
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 public class AddressUtils
 {

@@ -6,8 +6,8 @@ import com.ruoyi.common.utils.spring.SpringUtils;
 
 /**
  * 获取i18n资源文件
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 public class MessageUtils
 {

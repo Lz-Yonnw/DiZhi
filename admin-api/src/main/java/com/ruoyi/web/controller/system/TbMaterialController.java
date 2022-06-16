@@ -19,7 +19,7 @@ import java.util.Map;
 /**
  * 素材中心
  * 
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 @RestController
 @RequestMapping("/system/material")

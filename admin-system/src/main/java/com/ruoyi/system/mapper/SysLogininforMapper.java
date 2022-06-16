@@ -6,7 +6,7 @@ import com.ruoyi.system.domain.SysLogininfor;
 /**
  * 系统访问日志情况信息 数据层
  * 
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 public interface SysLogininforMapper
 {

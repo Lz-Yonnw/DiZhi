@@ -1,16 +1,16 @@
 package com.ruoyi.system.domain;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
 import com.ruoyi.common.annotation.Excel;
-import lombok.Data;
+import com.ruoyi.common.core.domain.BaseEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import com.ruoyi.common.core.domain.BaseEntity;
+import lombok.Data;
+
+import java.util.List;
 
 /**
  * 版型小类对象 tb_model_style
- * 
+ *
  * @author zzz
  * @date 2021-08-10
  */
@@ -46,5 +46,5 @@ public class TbModelStyle extends BaseEntity
 
     private Long wardrobeId;
 
-
+    private List<TbPlateClass> tbPlateClassList;//版型大类-部位
 }

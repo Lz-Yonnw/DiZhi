@@ -22,23 +22,23 @@ public class ServerChannelInitializer extends ChannelInitializer<SocketChannel> 
 	private final static int READER_IDLE_TIME_SECONDS = 20;//读操作空闲20秒
 	private final static int WRITER_IDLE_TIME_SECONDS = 20;//写操作空闲20秒
 	private final static int ALL_IDLE_TIME_SECONDS = 40;//读写全部空闲40秒
-	
+
     @Autowired
     @Qualifier("authServerHandler")
     private ChannelInboundHandlerAdapter authServerHandler;
-    
+
     @Autowired
     @Qualifier("logicServerHandler")
     private ChannelInboundHandlerAdapter logicServerHandler;
-    
+
     @Override
     protected void initChannel(SocketChannel socketChannel) throws Exception {
     	ChannelPipeline p = socketChannel.pipeline();
-    	
+
     	p.addLast("idleStateHandler", new IdleStateHandler(READER_IDLE_TIME_SECONDS
     			, WRITER_IDLE_TIME_SECONDS, ALL_IDLE_TIME_SECONDS, TimeUnit.SECONDS));
 	    p.addLast("idleTimeoutHandler", new IdleServerHandler());
-	    
+
 //        p.addLast(new ProtobufVarint32FrameDecoder());
         p.addLast(new MessageEncode());
         p.addLast(new MessageDecoder());
@@ -46,7 +46,7 @@ public class ServerChannelInitializer extends ChannelInitializer<SocketChannel> 
 
 //        p.addLast(new ProtobufVarint32LengthFieldPrepender());
 //        p.addLast(new ProtobufEncoder());
-	    
+
         p.addLast("authServerHandler", authServerHandler);
 //        p.addLast("hearableServerHandler", logicServerHandler);
     }

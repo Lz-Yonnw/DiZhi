@@ -2,8 +2,8 @@ package com.ruoyi.common.enums;
 
 /**
  * 用户状态
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 public enum UserStatus
 {

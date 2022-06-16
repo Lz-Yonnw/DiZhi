@@ -6,7 +6,7 @@ import com.ruoyi.generator.domain.GenTable;
 /**
  * 业务 数据层
  * 
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 public interface GenTableMapper
 {

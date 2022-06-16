@@ -9,8 +9,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * 启动程序
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 @SpringBootApplication(exclude = { DataSourceAutoConfiguration.class })
 @EnableSwagger2
@@ -18,12 +18,17 @@ public class RuoYiApplication
 {
     public static void main(String[] args) throws Exception {
         // System.setProperty("spring.devtools.restart.enabled", "false");
-        ConfigurableApplicationContext context = SpringApplication.run(RuoYiApplication.class, args);
-        System.out.println("(♥◠‿◠)ﾉﾞ  启动成功   ლ(´ڡ`ლ)ﾞ ");
 
-        //启动netty服务
-        TCPServer tcpServer = context.getBean(TCPServer.class);
-        tcpServer.start();
+        try {
+            ConfigurableApplicationContext context = SpringApplication.run(RuoYiApplication.class, args);
+            System.out.println("(♥◠‿◠)ﾉﾞ  启动成功   ლ(´ڡ`ლ)ﾞ ");
+
+            //启动netty服务
+            TCPServer tcpServer = context.getBean(TCPServer.class);
+            tcpServer.start();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 }

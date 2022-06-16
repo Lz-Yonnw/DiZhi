@@ -1,11 +1,14 @@
 package com.ruoyi.system.service.impl;
 
-import java.util.List;
+import com.ruoyi.system.domain.TbModelStyle;
+import com.ruoyi.system.domain.TbModelType;
+import com.ruoyi.system.mapper.TbModelStyleMapper;
+import com.ruoyi.system.mapper.TbModelTypeMapper;
+import com.ruoyi.system.service.ITbModelTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.ruoyi.system.mapper.TbModelTypeMapper;
-import com.ruoyi.system.domain.TbModelType;
-import com.ruoyi.system.service.ITbModelTypeService;
+
+import java.util.List;
 
 /**
  * 版型大类Service业务层处理
@@ -18,6 +21,9 @@ public class TbModelTypeServiceImpl implements ITbModelTypeService
 {
     @Autowired
     private TbModelTypeMapper tbModelTypeMapper;
+
+    @Autowired
+    private TbModelStyleMapper tbModelStyleMapper;
 
     /**
      * 查询版型大类
@@ -89,5 +95,24 @@ public class TbModelTypeServiceImpl implements ITbModelTypeService
     public int deleteTbModelTypeById(Long id)
     {
         return tbModelTypeMapper.deleteTbModelTypeById(id);
+    }
+
+    /**
+     * 随机生成一套版型衣服   版型小类参数 顺机
+     * @param id
+     * @return
+     */
+    @Override
+    public int insertTbModelComplete(Long id) {
+        TbModelStyle tbModelStyle = new TbModelStyle();
+        tbModelStyle.setParentId(id);
+        //根据大类版型ID获取版型小类
+        List<TbModelStyle> modelStyles = tbModelStyleMapper.selectTbModelStyleList(tbModelStyle);
+        //随机一套小类版型
+        int ran = (int) Math.random()*(modelStyles.size()-1)+1;
+        TbModelStyle tbModelStyleMin = modelStyles.get(ran);
+
+
+        return 0;
     }
 }

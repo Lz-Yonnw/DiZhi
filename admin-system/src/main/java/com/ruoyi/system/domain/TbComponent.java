@@ -1,17 +1,17 @@
 package com.ruoyi.system.domain;
 
-import java.math.BigDecimal;
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
 import com.ruoyi.common.annotation.Excel;
-import lombok.Data;
+import com.ruoyi.common.core.domain.BaseEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import com.ruoyi.common.core.domain.BaseEntity;
+import lombok.Data;
+
+import java.math.BigDecimal;
+import java.util.List;
 
 /**
  * 部件对象 tb_component
- * 
+ *
  * @author zzz
  * @date 2021-08-16
  */
@@ -62,4 +62,7 @@ public class TbComponent extends BaseEntity
     private String suffixCode;
 
     private String qrCode;
+
+    private List<TbClassify> tbClassifyList;//分类
+
 }

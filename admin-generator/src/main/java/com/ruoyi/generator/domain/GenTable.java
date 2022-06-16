@@ -10,8 +10,8 @@ import com.ruoyi.common.utils.StringUtils;
 
 /**
  * 业务表 gen_table
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 public class GenTable extends BaseEntity
 {

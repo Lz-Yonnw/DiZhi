@@ -27,7 +27,7 @@ import com.ruoyi.quartz.util.CronUtils;
 /**
  * 调度任务信息操作处理
  * 
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 @RestController
 @RequestMapping("/monitor/job")

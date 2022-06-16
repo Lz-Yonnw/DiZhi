@@ -7,7 +7,7 @@ import com.ruoyi.common.core.domain.entity.SysMenu;
 /**
  * 菜单表 数据层
  *
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 public interface SysMenuMapper
 {

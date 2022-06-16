@@ -13,8 +13,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * redis配置
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 @Configuration
 @EnableCaching

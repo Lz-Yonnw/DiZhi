@@ -33,7 +33,9 @@ public class TCPServer {
 					.handler(new LoggingHandler(LogLevel.TRACE))
 					.channel(NioServerSocketChannel.class)
 					.childHandler(serverChannelInitializer);
+			// 配置完成，开始绑定server，通过调用sync同步方法阻塞直到绑定成功
 			ChannelFuture channelFuture = bootstrap.bind(port).sync();
+			// 对关闭通道进行监听
 			channelFuture.channel().closeFuture().sync();
 		} finally {
 			bossGroup.shutdownGracefully();

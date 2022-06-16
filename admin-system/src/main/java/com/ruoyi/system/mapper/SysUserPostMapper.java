@@ -6,7 +6,7 @@ import com.ruoyi.system.domain.SysUserPost;
 /**
  * 用户与岗位关联表 数据层
  * 
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 public interface SysUserPostMapper
 {

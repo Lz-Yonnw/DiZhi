@@ -5,14 +5,14 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * 角色和部门关联 sys_role_dept
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 public class SysRoleDept
 {
     /** 角色ID */
     private Long roleId;
-    
+
     /** 部门ID */
     private Long deptId;
 

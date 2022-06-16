@@ -137,49 +137,9 @@ public class AuthServerHandler extends ChannelInboundHandlerAdapter {
 			}
 
 			MessageBase msgBase = MessageBase.parseFrom(dataBytes);
-
 			if(msgBase.getType().equals(MessageBase.Type.LOGIN_REQ)){
 				log.info("===登录/注册===");
 				authService.login(ctx, msgBase);
-
-				/*MessageBase.Builder authMsg= MessageBase.newBuilder();
-				authMsg.setClientId(ctx.channel().id().toString());
-				authMsg.setType(MessageBase.Type.LOGIN_RESP);
-				String phoneNumber = msgBase.getLoginReq().getPhoneNumber();
-				if(StringUtils.isNotBlank(phoneNumber)){
-					String code = msgBase.getLoginReq().getCode();
-					if(StringUtils.isNotBlank(code)){//校验验证码
-						String cacheCode = redisCache.getCacheObject(Constants.MSG_CACHE_PREFIX+phoneNumber);
-						if(StringUtils.isNotBlank(cacheCode) && cacheCode.equals(code)){
-							System.out.println("进行登录/注册流程");
-
-							TbUserInfo tbUserInfo = iTbUserInfoService.selectTbUserInfoByPhoneNumber(phoneNumber);
-							if(tbUserInfo == null){
-								tbUserInfo = new TbUserInfo();
-								tbUserInfo.setPhoneNumber(phoneNumber);
-								String number="";
-								for(int n=0;n<4;n++ ) {
-									number+=(int)(10*(Math.random()));
-								}
-								tbUserInfo.setUserNickname("点指_"+number);
-								tbUserInfo.setHeadImg("https://app-1255978856.cos.ap-shanghai.myqcloud.com/upload/2021/11/05/e00adef7fbca40fbb52734fa6386004c.png");
-
-								int count = iTbUserInfoService.insertTbUserInfo(tbUserInfo);
-							}
-							tbUserInfo = iTbUserInfoService.selectTbUserInfoByPhoneNumber(phoneNumber);
-							if(tbUserInfo != null){
-								authMsg.setLoginResp(MessageBase.LoginResp.newBuilder()
-										.setId(tbUserInfo.getId())
-										.setPhoneNumber(tbUserInfo.getPhoneNumber())
-										.setHeadImg(tbUserInfo.getHeadImg())
-										.setUserNickname(tbUserInfo.getUserNickname()));
-								this.send(ctx, authMsg,200);
-								return;
-							}
-						}
-					}
-				}
-				this.send(ctx,authMsg,500);*/
 			}else if(msgBase.getType().equals(MessageBase.Type.REGISTER_REQ)){
 				log.info("===注册===");
 				MessageBase.Builder authMsg= MessageBase.newBuilder();
@@ -432,7 +392,6 @@ public class AuthServerHandler extends ChannelInboundHandlerAdapter {
 				authMsg.setUserWardrobeListResp(list);
 				this.send(ctx,authMsg,200);
 				}
-
 			else if(msgBase.getType().equals(MessageBase.Type.WHITE_DESIGN_REQ)){
 				log.info("查看白膜==={}");
 				MessageBase.Builder authMsg= MessageBase.newBuilder();
@@ -565,7 +524,16 @@ public class AuthServerHandler extends ChannelInboundHandlerAdapter {
 				this.send(ctx,authMsg,200);
 
 
+				MessageBase.CommentResp.Builder builder = MessageBase.CommentResp.newBuilder();
 
+				int count = iTbCommentService.insertTbComment(tbComment);
+				if(count>0){
+					builder.setStatus(count);
+					authMsg.setCommentResp(builder);
+					this.send(ctx,authMsg,200);
+					return;
+				}
+				this.send(ctx,authMsg,304);
 			}
 			/*else if (msgBase.getType().equals(MessageBase.Type.WX_REQ)){
 				log.info("微信支付");

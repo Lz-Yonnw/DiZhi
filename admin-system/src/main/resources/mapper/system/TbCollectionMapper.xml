@@ -10,6 +10,24 @@
         <result property="status" column="status" />
 
     </resultMap>
+    <select id="selectTbCollectionList" parameterType="com.ruoyi.system.domain.TbCollection" resultMap="TbCollection">
+        <include refid="selectCollection"/>
+        <where>
+            <if test="mallId != null "> and mall_id = #{mallId}</if>
+            <if test="userId != null "> and user_id = #{userId}</if>
+            <if test="status != null "> and status = #{status}</if>
+            <if test="mallName != null ">and mall_id in (select id from tb_mall where name like concat('%', #{mallName}, '%')) </if>
+            <if test="userName != null ">and user_id in (select id from tb_user_info where user_nickname like concat('%',#{userName},'%')) </if>
+        </where>
+        ORDER BY mall_id DESC
+    </select>
+
+    <delete id="deleteTbCollectionByIds" parameterType="String">
+        delete from tb_collection where id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
 
     <sql id="selectCollection">
            select id,mall_id, user_id,status from tb_collection
@@ -30,16 +48,14 @@
     <select id="selectone" resultType="com.ruoyi.system.domain.TbCollection">
         <include refid="selectCollection"></include>
         <where>
+            <if test="id !=0 and id!=null ">and id = #{id}</if>
             <if test="mallId !=null">and mall_id = #{mallId}</if>
-            <if test="id !=null">and user_id = #{id}</if>
+            <if test="userId !=null">and user_id = #{userId}</if>
         </where>
     </select>
     <!--查询用户收藏的全部商品id-->
     <select id="selectMallIds" resultType="java.lang.Long">
         select mall_id from tb_collection where user_id=#{userId};
     </select>
-
-
-
 
 </mapper>

@@ -18,7 +18,7 @@ import com.ruoyi.common.utils.StringUtils;
 /**
  * 防止XSS攻击的过滤器
  * 
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 public class XssFilter implements Filter
 {

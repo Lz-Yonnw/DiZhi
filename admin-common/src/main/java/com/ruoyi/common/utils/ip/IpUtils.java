@@ -8,8 +8,8 @@ import com.ruoyi.common.utils.html.EscapeUtil;
 
 /**
  * 获取IP方法
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 public class IpUtils
 {
@@ -89,7 +89,7 @@ public class IpUtils
 
     /**
      * 将IPv4地址转换成字节
-     * 
+     *
      * @param text IPv4地址
      * @return byte 字节
      */

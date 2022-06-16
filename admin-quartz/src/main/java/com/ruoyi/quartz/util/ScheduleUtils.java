@@ -17,8 +17,8 @@ import com.ruoyi.quartz.domain.SysJob;
 
 /**
  * 定时任务工具类
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  *
  */
 public class ScheduleUtils

@@ -2,8 +2,8 @@ package com.ruoyi.common.constant;
 
 /**
  * 返回状态码
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 public class HttpStatus
 {

@@ -8,8 +8,8 @@ import com.ruoyi.common.core.controller.BaseController;
 
 /**
  * swagger 接口
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 @Controller
 @RequestMapping("/tool/swagger")

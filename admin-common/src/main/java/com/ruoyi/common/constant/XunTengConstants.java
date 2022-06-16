@@ -2,8 +2,8 @@ package com.ruoyi.common.constant;
 
 /**
  * 通用常量信息
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 public class XunTengConstants
 {

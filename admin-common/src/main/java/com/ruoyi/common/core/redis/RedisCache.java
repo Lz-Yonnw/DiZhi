@@ -1,20 +1,21 @@
 package com.ruoyi.common.core.redis;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Component;
 
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
 /**
  * spring redis 工具类
  *
- * @author ruoyi
+ * @author liaozan8888@163.com
  **/
 @SuppressWarnings(value = { "unchecked", "rawtypes" })
 @Component
@@ -22,6 +23,7 @@ public class RedisCache
 {
     @Autowired
     public RedisTemplate redisTemplate;
+
 
     /**
      * 缓存基本的对象，Integer、String、实体类等

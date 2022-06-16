@@ -20,8 +20,8 @@ import com.ruoyi.framework.security.handle.LogoutSuccessHandlerImpl;
 
 /**
  * spring security配置
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter
@@ -31,7 +31,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
      */
     @Autowired
     private UserDetailsService userDetailsService;
-    
+
     /**
      * 认证失败处理类
      */
@@ -55,7 +55,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
      */
     @Autowired
     private CorsFilter corsFilter;
-    
+
     /**
      * 解决 无法直接注入 AuthenticationManager
      *
@@ -98,6 +98,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
                 .authorizeRequests()
                 // 对于登录login 验证码captchaImage 允许匿名访问
                 .antMatchers("/login", "/captchaImage").anonymous()
+                .antMatchers("/monitor/server/voltmeterEquipmentControl").anonymous()
                 .antMatchers(
                         HttpMethod.GET,
                         "/*.html",
@@ -120,7 +121,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
                 .antMatchers("/common/getCode").anonymous()
                 .antMatchers("/common/u3dUploadFile").anonymous()
                 .antMatchers("/system/demo").anonymous()
-//                .antMatchers("/system/modelStyle/fourList").anonymous()
                 // 除上面外的所有请求全部需要鉴权认证
                 .anyRequest().authenticated()
                 .and()
@@ -133,7 +133,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
         httpSecurity.addFilterBefore(corsFilter, LogoutFilter.class);
     }
 
-    
+
     /**
      * 强散列哈希加密实现
      */

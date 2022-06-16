@@ -1,16 +1,16 @@
 package com.ruoyi.system.domain;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
 import com.ruoyi.common.annotation.Excel;
-import lombok.Data;
+import com.ruoyi.common.core.domain.BaseEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import com.ruoyi.common.core.domain.BaseEntity;
+import lombok.Data;
+
+import java.util.List;
 
 /**
  * 板块小类-裁剪方式对象 tb_plate_cut_way
- * 
+ *
  * @author zzz
  * @date 2021-09-13
  */
@@ -47,5 +47,6 @@ public class TbPlateCutWay extends BaseEntity
 
     private String qrCode;
 
+    private List<TbComponent> tbComponentList;//部件表
 
 }

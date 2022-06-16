@@ -1,18 +1,17 @@
 package com.ruoyi.system.domain;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
 import com.ruoyi.common.annotation.Excel;
-import lombok.Data;
+import com.ruoyi.common.core.domain.BaseEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import com.ruoyi.common.core.domain.BaseEntity;
+import lombok.Data;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 /**
  * 图案部件中间对象 tb_pattern_component
- * 
+ *
  * @author zzz
  * @date 2021-09-13
  */
@@ -60,4 +59,5 @@ public class TbPatternComponent extends BaseEntity
 
     private Long  typeId;
 
+    private List<TbPattern> tbPatternList;//图案
 }

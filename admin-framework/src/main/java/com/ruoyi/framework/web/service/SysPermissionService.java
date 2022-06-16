@@ -11,7 +11,7 @@ import com.ruoyi.system.service.ISysRoleService;
 /**
  * 用户权限处理
  * 
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 @Component
 public class SysPermissionService

@@ -36,8 +36,8 @@ import static com.ruoyi.common.utils.file.FileUploadUtils.getExtension;
 
 /**
  * 通用请求处理
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 @RestController
 public class CommonController
@@ -57,6 +57,9 @@ public class CommonController
     @Value("${spring.tengxun.qianzui}")
     private String qianzui;
 
+    @Value("${spring.tengxun.modelPrefix}")
+    private String modelPrefix;
+
     @Autowired
     private ServerConfig serverConfig;
 
@@ -65,7 +68,7 @@ public class CommonController
 
     /**
      * 通用下载请求
-     * 
+     *
      * @param fileName 文件名称
      * @param delete 是否删除
      */
@@ -164,6 +167,41 @@ public class CommonController
     }
 
 
+    /**
+     * 模型上传
+     * @param file
+     * @return
+     */
+    @PostMapping("/common/model/upload")
+    public AjaxResult uploadFileModel(MultipartFile file){
+        COSCredentials cred = new BasicCOSCredentials(accessKey, secretKey);
+        ClientConfig clientConfig = new ClientConfig(new Region(bucket));
+        COSClient cosClient = new COSClient(cred, clientConfig);
+        try {
+            String bucketName=this.bucketName;
+            File file1 = multipartFileToFile(file);
+
+            String originalFilename = file.getOriginalFilename().substring(0,file.getOriginalFilename().indexOf(".fbx"));
+
+            String extension = getExtension(file);
+            String fileName = DateUtils.datePath() + "/" +originalFilename+"-"+ IdUtils.fastSimpleUUID() + "." + extension;
+            // 上传文件路径
+            PutObjectRequest putObjectRequest=new PutObjectRequest(bucketName,this.modelPrefix+fileName,file1);
+            cosClient.putObject(putObjectRequest);
+            // 上传并返回新文件名称
+//            String fileNameOne = putObjectRequest.getFile().getName();
+            String url = this.path + putObjectRequest.getKey();
+            AjaxResult ajax = AjaxResult.success();
+            ajax.put("name",file.getOriginalFilename());
+            ajax.put("fileName",putObjectRequest.getKey());
+            ajax.put("url", url);
+            return ajax;
+        }catch (Exception e){
+            return AjaxResult.error(e.getMessage());
+        }finally {
+            cosClient.shutdown();
+        }
+    }
     /**
      * 通用上传请求
      */

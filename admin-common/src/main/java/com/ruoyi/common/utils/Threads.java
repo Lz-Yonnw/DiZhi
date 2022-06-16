@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 /**
  * 线程相关工具类.
  * 
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 public class Threads
 {

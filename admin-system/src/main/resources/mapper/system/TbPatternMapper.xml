@@ -3,7 +3,7 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ruoyi.system.mapper.TbPatternMapper">
-    
+
     <resultMap type="TbPattern" id="TbPatternResult">
         <result property="id"    column="id"    />
         <result property="name"    column="name"    />
@@ -23,7 +23,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
     <select id="selectTbPatternList" parameterType="TbPattern" resultMap="TbPatternResult">
         <include refid="selectTbPatternVo"/>
-        <where>  
+        <where>
             <if test="name != null  and name != ''"> and name like concat('%', #{name}, '%')</if>
             <if test="code != null  and code != ''"> and code = #{code}</if>
             <if test="picture != null  and picture != ''"> and picture = #{picture}</if>
@@ -31,7 +31,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             <if test="typeId != null  and typeId != ''"> and type_id = #{typeId}</if>
         </where>
     </select>
-    
+
     <select id="selectTbPatternById" parameterType="Long" resultMap="TbPatternResult">
         <include refid="selectTbPatternVo"/>
         where id = #{id}
@@ -45,7 +45,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 FROM
 	( SELECT * FROM tb_pattern where type_id=#{classId}) AS a
     </select>
-        
+
     <insert id="insertTbPattern" parameterType="TbPattern" useGeneratedKeys="true" keyProperty="id">
         insert into tb_pattern
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -85,10 +85,10 @@ FROM
     </delete>
 
     <delete id="deleteTbPatternByIds" parameterType="String">
-        delete from tb_pattern where id in 
+        delete from tb_pattern where id in
         <foreach item="id" collection="array" open="(" separator="," close=")">
             #{id}
         </foreach>
     </delete>
-    
+
 </mapper>

@@ -25,7 +25,7 @@ import com.ruoyi.system.service.ISysMenuService;
 /**
  * 菜单 业务层处理
  * 
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 @Service
 public class SysMenuServiceImpl implements ISysMenuService

@@ -3,7 +3,7 @@ package com.ruoyi.common.enums;
 /**
  * 业务操作类型
  * 
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 public enum BusinessType
 {

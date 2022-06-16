@@ -1,16 +1,16 @@
 package com.ruoyi.system.domain;
 
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
 import com.ruoyi.common.annotation.Excel;
-import lombok.Data;
+import com.ruoyi.common.core.domain.BaseEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import com.ruoyi.common.core.domain.BaseEntity;
+import lombok.Data;
+
+import java.util.List;
 
 /**
  * 分类对象 tb_classify
- * 
+ *
  * @author zzz
  * @date 2021-08-17
  */
@@ -43,5 +43,5 @@ public class TbClassify extends BaseEntity
     @ApiModelProperty("部件上级id")
     private Long parentId;
 
-
+    private List<TbPattern> tbPatternList;//图案部件公共类
 }

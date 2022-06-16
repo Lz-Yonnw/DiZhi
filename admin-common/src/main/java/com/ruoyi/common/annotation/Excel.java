@@ -8,8 +8,8 @@ import java.math.BigDecimal;
 
 /**
  * 自定义导出Excel数据注解
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)

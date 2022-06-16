@@ -2,8 +2,8 @@ package com.ruoyi.common.exception.user;
 
 /**
  * 用户密码不正确或不符合规范异常类
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 public class UserPasswordNotMatchException extends UserException
 {

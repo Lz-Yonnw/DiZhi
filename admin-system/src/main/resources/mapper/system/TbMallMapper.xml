@@ -4,18 +4,20 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ruoyi.system.mapper.TbMallMapper">
     <resultMap id="TbMall" type="com.ruoyi.system.domain.TbMall">
-        <result property="id" column="id" />
-        <result property="tbStoreId" column="tb_store_id" />
-        <result property="name" column="name" />
-        <result property="description" column="description" />
-        <result property="status" column="status" />
-        <result property="img" column="img" />
-        <result property="price" column="price" />
-
+        <result property="id"    column="id"    />
+        <result property="tbStoreId"    column="tb_store_id"    />
+        <result property="name"    column="name"    />
+        <result property="price"    column="price"    />
+        <result property="description"    column="description"    />
+        <result property="status"    column="status"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateTime"    column="update_time"    />
+        <result property="img"    column="img"    />
+        <result property="mallType"    column="mall_type"    />
     </resultMap>
 
     <sql id="selectTbMallVo">
-        select id,tb_store_id, name,img, price,description from tb_mall
+        select id,tb_store_id, name,img, price,description,status,create_time,update_time,mall_type from tb_mall
     </sql>
 
     <select id="selectList" resultType="com.ruoyi.system.domain.TbMall" resultMap="TbMall">
@@ -36,4 +38,71 @@
             <if test="mallId!=null">id=#{mallId}</if>
         </where>
     </select>
+
+    <!-- 修改商品 -->
+    <update id="updateMallById" parameterType="com.ruoyi.system.domain.TbMall">
+            update tb_mall
+            <trim prefix="set" suffixOverrides=",">
+                <if test="tbStoreId !=null">tb_store_id=#{tbStoreId},</if>
+                <if test="name !=null">name=#{name},</if>
+                <if test="description !=null">description=#{description},</if>
+                <if test="status !=null and status!=0">`status`=#{status},</if>
+                <if test="img !=null">img=#{img},</if>
+                <if test="price !=null">price=#{price},</if>
+            </trim>
+            where id=#{id}
+    </update>
+
+    <select id="selectTbMallById" parameterType="Long" resultMap="TbMall">
+        <include refid="selectTbMallVo"/>
+        where id = #{id}
+    </select>
+
+    <select id="selectTbMallList" parameterType="com.ruoyi.system.domain.TbMall" resultMap="TbMall">
+        <include refid="selectTbMallVo"/>
+        <where>
+            <if test="tbStoreId != null "> and tb_store_id = #{tbStoreId}</if>
+            <if test="name != null  and name != ''"> and name like concat('%', #{name}, '%')</if>
+            <if test="price != null "> and price = #{price}</if>
+            <if test="description != null  and description != ''"> and description = #{description}</if>
+            <if test="status != null and status!=0"> and status = #{status}</if>
+            <if test="img != null  and img != ''"> and img = #{img}</if>
+            <if test="mallType != null  and mallType != ''"> and mall_type = #{mallType}</if>
+        </where>
+    </select>
+
+    <insert id="insertTbMall" parameterType="com.ruoyi.system.domain.TbMall" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_mall
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="tbStoreId != null">tb_store_id,</if>
+            <if test="name != null and name != ''">name,</if>
+            <if test="price != null">price,</if>
+            <if test="description != null">description,</if>
+            <if test="status != null">status,</if>
+            <if test="createTime != null">create_time,</if>
+            <if test="updateTime != null">update_time,</if>
+            <if test="img != null and img != ''">img,</if>
+            <if test="mallType != null and mallType != ''">mall_type,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="tbStoreId != null">#{tbStoreId},</if>
+            <if test="name != null and name != ''">#{name},</if>
+            <if test="price != null">#{price},</if>
+            <if test="description != null">#{description},</if>
+            <if test="status != null">#{status},</if>
+            <if test="createTime != null">#{createTime},</if>
+            <if test="updateTime != null">#{updateTime},</if>
+            <if test="img != null and img != ''">#{img},</if>
+            <if test="mallType != null and mallType != ''">#{mallType},</if>
+        </trim>
+    </insert>
+    <delete id="deleteTbMallById" parameterType="Long">
+        update tb_mall set status=2,update_time = now() where id=#{id}
+    </delete>
+    <delete id="deleteTbMallByIds" parameterType="String">
+        update tb_mall set status=2,update_time = now() where id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+              #{id}
+        </foreach>
+    </delete>
 </mapper>

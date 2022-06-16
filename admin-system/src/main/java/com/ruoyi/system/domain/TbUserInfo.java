@@ -1,19 +1,18 @@
 package com.ruoyi.system.domain;
 
-import java.math.BigDecimal;
-import java.util.Date;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.apache.commons.lang3.builder.ToStringStyle;
 import com.ruoyi.common.annotation.Excel;
-import lombok.Data;
+import com.ruoyi.common.core.domain.BaseEntity;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import com.ruoyi.common.core.domain.BaseEntity;
+import lombok.Data;
+
+import java.math.BigDecimal;
+import java.util.Date;
 
 /**
  * 用户信息对象 tb_user_info
- * 
+ *
  * @author zzz
  * @date 2021-09-17
  */
@@ -162,6 +161,8 @@ public class TbUserInfo extends BaseEntity
     @Excel(name = "体重")
     @ApiModelProperty("体重")
     private BigDecimal weight;
+
+
 
 
 }

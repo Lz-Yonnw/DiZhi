@@ -2,8 +2,8 @@ package com.ruoyi.system.domain.vo;
 
 /**
  * 路由显示信息
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 public class MetaVo
 {

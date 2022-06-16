@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiModel;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 /**
  * 商品信息
@@ -48,5 +49,13 @@ public class TbMall extends BaseEntity {
      */
     private BigDecimal price;
 
+    /** 商品类别 */
+    private String mallType;
+
+    //详情图
+    private List<TbMallImgs> imgsList;
+
+    //SKU详情
+    private List<TbMallSku> tbMallSkuList;
 
 }

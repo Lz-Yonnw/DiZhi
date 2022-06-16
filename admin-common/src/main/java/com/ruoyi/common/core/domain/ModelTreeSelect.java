@@ -10,8 +10,8 @@ import java.util.stream.Collectors;
 
 /**
  * Treeselect树结构实体类
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 public class ModelTreeSelect implements Serializable
 {

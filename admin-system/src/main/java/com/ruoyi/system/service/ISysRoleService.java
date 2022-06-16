@@ -7,7 +7,7 @@ import com.ruoyi.common.core.domain.entity.SysRole;
 /**
  * 角色业务层
  * 
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 public interface ISysRoleService
 {

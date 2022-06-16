@@ -5,7 +5,7 @@ import com.ruoyi.common.utils.StringUtils;
 /**
  * 分页数据
  * 
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 public class PageDomain
 {

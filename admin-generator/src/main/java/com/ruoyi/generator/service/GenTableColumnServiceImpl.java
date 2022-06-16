@@ -10,7 +10,7 @@ import com.ruoyi.generator.mapper.GenTableColumnMapper;
 /**
  * 业务字段 服务层实现
  * 
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 @Service
 public class GenTableColumnServiceImpl implements IGenTableColumnService 

@@ -2,8 +2,8 @@ package com.ruoyi.common.core.domain.model;
 
 /**
  * 用户登录对象
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 public class LoginBody
 {

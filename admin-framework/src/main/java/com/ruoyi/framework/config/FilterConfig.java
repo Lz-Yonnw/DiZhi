@@ -14,7 +14,7 @@ import com.ruoyi.common.utils.StringUtils;
 /**
  * Filter配置
  *
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 @Configuration
 public class FilterConfig

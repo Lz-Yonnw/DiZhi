@@ -5,8 +5,8 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 /**
  * web容器中进行部署
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 public class RuoYiServletInitializer extends SpringBootServletInitializer
 {

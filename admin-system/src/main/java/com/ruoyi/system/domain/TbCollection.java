@@ -25,4 +25,8 @@ public class TbCollection extends BaseEntity {
      */
     private int status;
 
+    private String mallName; //商品name
+
+    private String userName; //用户name
+
 }

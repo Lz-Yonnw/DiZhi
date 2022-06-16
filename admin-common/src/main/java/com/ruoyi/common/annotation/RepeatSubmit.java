@@ -9,8 +9,8 @@ import java.lang.annotation.Target;
 
 /**
  * 自定义注解防止表单重复提交
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  *
  */
 @Inherited

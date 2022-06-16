@@ -7,7 +7,7 @@ import org.apache.commons.lang3.exception.ExceptionUtils;
 /**
  * 错误信息处理类。
  *
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 public class ExceptionUtil
 {

@@ -6,8 +6,8 @@ import com.ruoyi.common.utils.StringUtils;
 
 /**
  * 代码生成业务字段表 gen_table_column
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 public class GenTableColumn extends BaseEntity
 {

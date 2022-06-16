@@ -26,7 +26,7 @@ import com.ruoyi.system.service.ISysDictTypeService;
 /**
  * 数据字典信息
  * 
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 @RestController
 @RequestMapping("/system/dict/type")

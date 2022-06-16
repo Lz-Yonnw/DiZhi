@@ -8,8 +8,8 @@ import com.ruoyi.common.core.domain.BaseEntity;
 
 /**
  * 系统访问记录表 sys_logininfor
- * 
- * @author ruoyi
+ *
+ * @author liaozan8888@163.com
  */
 public class SysLogininfor extends BaseEntity
 {

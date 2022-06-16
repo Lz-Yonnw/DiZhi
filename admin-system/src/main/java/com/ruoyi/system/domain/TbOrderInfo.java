@@ -20,8 +20,11 @@ public class TbOrderInfo extends BaseEntity {
   private String orderSn;//订单号
   private String modelType;//订单类型
   private long storeId;//商户Id
+  private String storeName;//商户名称
   private long mallId;//商品id
+  private String mallName;//商品名称
   private long userId;//用户id
+  private String userName;//用户名称
   private long status;//状态
   private long payType;//支付方式
   private String payAccount;//支付账号
@@ -38,7 +41,35 @@ public class TbOrderInfo extends BaseEntity {
 
   private long timeOutFlag;//是否超时
 
+  private TbAddressBook tbAddressBook;//收货地址
 
+  /** 衣服字符串 */
+  private String clothesJson;
 
-
+  @Override
+  public String toString() {
+    return "TbOrderInfo{" +
+            "id=" + id +
+            ", payAmount=" + payAmount +
+            ", amount=" + amount +
+            ", orderSn='" + orderSn + '\'' +
+            ", modelType='" + modelType + '\'' +
+            ", storeId=" + storeId +
+            ", mallId=" + mallId +
+            ", userId=" + userId +
+            ", status=" + status +
+            ", payType=" + payType +
+            ", payAccount='" + payAccount + '\'' +
+            ", address='" + address + '\'' +
+            ", phone='" + phone + '\'' +
+            ", consignee='" + consignee + '\'' +
+            ", remark='" + remark + '\'' +
+            ", payTime=" + payTime +
+            ", delTime=" + delTime +
+            ", delFlag=" + delFlag +
+            ", delBy='" + delBy + '\'' +
+            ", timeOutFlag=" + timeOutFlag +
+            ", clothesJson='" + clothesJson + '\'' +
+            '}';
+  }
 }

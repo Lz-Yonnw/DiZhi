@@ -6,7 +6,7 @@ import com.ruoyi.common.utils.StringUtils;
 /**
  * 定时任务调度测试
  * 
- * @author ruoyi
+ * @author liaozan8888@163.com
  */
 @Component("ryTask")
 public class RyTask
