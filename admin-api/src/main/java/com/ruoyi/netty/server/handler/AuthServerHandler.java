@@ -367,7 +367,6 @@ public class AuthServerHandler extends ChannelInboundHandlerAdapter {
 				tbUserWardrobe.setQrCode(msgBase.getUserWardrobeReq().getQrCode());
 				tbUserWardrobe.setImage(msgBase.getUserWardrobeReq().getImage());
 				tbUserWardrobe.setCreateTime(DateUtils.getNowDate());
-
 				tbUserWardrobe.setClothesJson(msgBase.getUserWardrobeReq().getClothesJson());
 				iTbUserWardrobeService.insertTbUserWardrobe(tbUserWardrobe);
 				this.send(ctx,authMsg,200);
@@ -461,7 +460,6 @@ public class AuthServerHandler extends ChannelInboundHandlerAdapter {
 				MessageBase.MallListResp.Builder builders = MessageBase.MallListResp.newBuilder();
 				for (TbMall tbMall : tbMallList) {
 					TbCollection tbCollection = tbMallService.selectTbCollection(id,tbMall.getId());
-
 					MessageBase.MallResp.Builder builder = MessageBase.MallResp.newBuilder();
 					builder.setId(tbMall.getId().intValue());
 					builder.setTbStoreId(tbMall.getTbStoreId());
@@ -516,7 +514,7 @@ public class AuthServerHandler extends ChannelInboundHandlerAdapter {
 					builder.setName(tbMall.getName());
 					builder.setImg(tbMall.getImg());
 					builder.setPrice(tbMall.getPrice().toString());
-					builder.setStatus(1);
+					builder.setMallStatus(tbMall.getStatus());
 					builders.addMallResp(builder);
 
 				}

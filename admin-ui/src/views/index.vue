@@ -1,5 +1,24 @@
 <template>
-  <div>
-    <p style="font-size: 30px;left: 50px">欢迎使用后台管理系统!!!</p>
+  <div style="background-image: url('../views/datav/img/bg.png');height: 1500px;">
+    <datav />
   </div>
 </template>
+
+<script>
+  import datav from '../views/datav/index'
+
+  export default {
+    name: "homeIndex",
+    components: {
+      datav
+    },
+    data() {
+      return{
+
+      }
+    }
+  }
+</script>
+<style lang="less">
+
+</style>

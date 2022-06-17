@@ -33280,12 +33280,21 @@ public final class MessageProtocol {
 
             /**
              * <pre>
-             *是否被收藏，0为未收藏，1为收藏
+             *是否被收藏，0为未收藏，
              * </pre>
              *
              * <code>int32 status = 6;</code>
              */
             int getStatus();
+
+            /**
+             * <pre>
+             *商品是否下架 1上架  2下架
+             * </pre>
+             *
+             * <code>int32 mallStatus = 7;</code>
+             */
+            int getMallStatus();
         }
         /**
          * <pre>
@@ -33364,6 +33373,11 @@ public final class MessageProtocol {
                             case 48: {
 
                                 status_ = input.readInt32();
+                                break;
+                            }
+                            case 56: {
+
+                                mallStatus_ = input.readInt32();
                                 break;
                             }
                             default: {
@@ -33554,13 +33568,26 @@ public final class MessageProtocol {
             private int status_;
             /**
              * <pre>
-             *是否被收藏，0为未收藏，1为收藏
+             *是否被收藏，0为未收藏，
              * </pre>
              *
              * <code>int32 status = 6;</code>
              */
             public int getStatus() {
                 return status_;
+            }
+
+            public static final int MALLSTATUS_FIELD_NUMBER = 7;
+            private int mallStatus_;
+            /**
+             * <pre>
+             *商品是否下架 1上架  2下架
+             * </pre>
+             *
+             * <code>int32 mallStatus = 7;</code>
+             */
+            public int getMallStatus() {
+                return mallStatus_;
             }
 
             private byte memoizedIsInitialized = -1;
@@ -33595,6 +33622,9 @@ public final class MessageProtocol {
                 if (status_ != 0) {
                     output.writeInt32(6, status_);
                 }
+                if (mallStatus_ != 0) {
+                    output.writeInt32(7, mallStatus_);
+                }
                 unknownFields.writeTo(output);
             }
 
@@ -33625,6 +33655,10 @@ public final class MessageProtocol {
                     size += com.google.protobuf.CodedOutputStream
                             .computeInt32Size(6, status_);
                 }
+                if (mallStatus_ != 0) {
+                    size += com.google.protobuf.CodedOutputStream
+                            .computeInt32Size(7, mallStatus_);
+                }
                 size += unknownFields.getSerializedSize();
                 memoizedSize = size;
                 return size;
@@ -33652,6 +33686,8 @@ public final class MessageProtocol {
                         .equals(other.getPrice())) return false;
                 if (getStatus()
                         != other.getStatus()) return false;
+                if (getMallStatus()
+                        != other.getMallStatus()) return false;
                 if (!unknownFields.equals(other.unknownFields)) return false;
                 return true;
             }
@@ -33675,6 +33711,8 @@ public final class MessageProtocol {
                 hash = (53 * hash) + getPrice().hashCode();
                 hash = (37 * hash) + STATUS_FIELD_NUMBER;
                 hash = (53 * hash) + getStatus();
+                hash = (37 * hash) + MALLSTATUS_FIELD_NUMBER;
+                hash = (53 * hash) + getMallStatus();
                 hash = (29 * hash) + unknownFields.hashCode();
                 memoizedHashCode = hash;
                 return hash;
@@ -33824,6 +33862,8 @@ public final class MessageProtocol {
 
                     status_ = 0;
 
+                    mallStatus_ = 0;
+
                     return this;
                 }
 
@@ -33856,6 +33896,7 @@ public final class MessageProtocol {
                     result.img_ = img_;
                     result.price_ = price_;
                     result.status_ = status_;
+                    result.mallStatus_ = mallStatus_;
                     onBuilt();
                     return result;
                 }
@@ -33924,6 +33965,9 @@ public final class MessageProtocol {
                     }
                     if (other.getStatus() != 0) {
                         setStatus(other.getStatus());
+                    }
+                    if (other.getMallStatus() != 0) {
+                        setMallStatus(other.getMallStatus());
                     }
                     this.mergeUnknownFields(other.unknownFields);
                     onChanged();
@@ -34300,7 +34344,7 @@ public final class MessageProtocol {
                 private int status_ ;
                 /**
                  * <pre>
-                 *是否被收藏，0为未收藏，1为收藏
+                 *是否被收藏，0为未收藏，
                  * </pre>
                  *
                  * <code>int32 status = 6;</code>
@@ -34310,7 +34354,7 @@ public final class MessageProtocol {
                 }
                 /**
                  * <pre>
-                 *是否被收藏，0为未收藏，1为收藏
+                 *是否被收藏，0为未收藏，
                  * </pre>
                  *
                  * <code>int32 status = 6;</code>
@@ -34323,7 +34367,7 @@ public final class MessageProtocol {
                 }
                 /**
                  * <pre>
-                 *是否被收藏，0为未收藏，1为收藏
+                 *是否被收藏，0为未收藏，
                  * </pre>
                  *
                  * <code>int32 status = 6;</code>
@@ -34331,6 +34375,44 @@ public final class MessageProtocol {
                 public Builder clearStatus() {
 
                     status_ = 0;
+                    onChanged();
+                    return this;
+                }
+
+                private int mallStatus_ ;
+                /**
+                 * <pre>
+                 *商品是否下架 1上架  2下架
+                 * </pre>
+                 *
+                 * <code>int32 mallStatus = 7;</code>
+                 */
+                public int getMallStatus() {
+                    return mallStatus_;
+                }
+                /**
+                 * <pre>
+                 *商品是否下架 1上架  2下架
+                 * </pre>
+                 *
+                 * <code>int32 mallStatus = 7;</code>
+                 */
+                public Builder setMallStatus(int value) {
+
+                    mallStatus_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *商品是否下架 1上架  2下架
+                 * </pre>
+                 *
+                 * <code>int32 mallStatus = 7;</code>
+                 */
+                public Builder clearMallStatus() {
+
+                    mallStatus_ = 0;
                     onChanged();
                     return this;
                 }
@@ -63299,6 +63381,24 @@ public final class MessageProtocol {
 
             /**
              * <pre>
+             *商品图
+             * </pre>
+             *
+             * <code>string pathImg = 8;</code>
+             */
+            java.lang.String getPathImg();
+            /**
+             * <pre>
+             *商品图
+             * </pre>
+             *
+             * <code>string pathImg = 8;</code>
+             */
+            com.google.protobuf.ByteString
+            getPathImgBytes();
+
+            /**
+             * <pre>
              *商品详情图
              * </pre>
              *
@@ -63493,6 +63593,7 @@ public final class MessageProtocol {
                 name_ = "";
                 price_ = "";
                 description_ = "";
+                pathImg_ = "";
                 goodsImgEntity_ = java.util.Collections.emptyList();
                 goodsSkuEntity_ = java.util.Collections.emptyList();
                 goodsCouPonEntity_ = java.util.Collections.emptyList();
@@ -63542,39 +63643,45 @@ public final class MessageProtocol {
                                 break;
                             }
                             case 34: {
-                                if (!((mutable_bitField0_ & 0x00000008) != 0)) {
+                                if (!((mutable_bitField0_ & 0x00000010) != 0)) {
                                     goodsImgEntity_ = new java.util.ArrayList<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsImgEntity>();
-                                    mutable_bitField0_ |= 0x00000008;
+                                    mutable_bitField0_ |= 0x00000010;
                                 }
                                 goodsImgEntity_.add(
                                         input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsImgEntity.parser(), extensionRegistry));
                                 break;
                             }
                             case 42: {
-                                if (!((mutable_bitField0_ & 0x00000010) != 0)) {
+                                if (!((mutable_bitField0_ & 0x00000020) != 0)) {
                                     goodsSkuEntity_ = new java.util.ArrayList<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsSkuEntity>();
-                                    mutable_bitField0_ |= 0x00000010;
+                                    mutable_bitField0_ |= 0x00000020;
                                 }
                                 goodsSkuEntity_.add(
                                         input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsSkuEntity.parser(), extensionRegistry));
                                 break;
                             }
                             case 50: {
-                                if (!((mutable_bitField0_ & 0x00000020) != 0)) {
+                                if (!((mutable_bitField0_ & 0x00000040) != 0)) {
                                     goodsCouPonEntity_ = new java.util.ArrayList<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsCouPonEntity>();
-                                    mutable_bitField0_ |= 0x00000020;
+                                    mutable_bitField0_ |= 0x00000040;
                                 }
                                 goodsCouPonEntity_.add(
                                         input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsCouPonEntity.parser(), extensionRegistry));
                                 break;
                             }
                             case 58: {
-                                if (!((mutable_bitField0_ & 0x00000040) != 0)) {
+                                if (!((mutable_bitField0_ & 0x00000080) != 0)) {
                                     commentEntity_ = new java.util.ArrayList<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.CommentEntity>();
-                                    mutable_bitField0_ |= 0x00000040;
+                                    mutable_bitField0_ |= 0x00000080;
                                 }
                                 commentEntity_.add(
                                         input.readMessage(com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.CommentEntity.parser(), extensionRegistry));
+                                break;
+                            }
+                            case 66: {
+                                java.lang.String s = input.readStringRequireUtf8();
+
+                                pathImg_ = s;
                                 break;
                             }
                             default: {
@@ -63592,16 +63699,16 @@ public final class MessageProtocol {
                     throw new com.google.protobuf.InvalidProtocolBufferException(
                             e).setUnfinishedMessage(this);
                 } finally {
-                    if (((mutable_bitField0_ & 0x00000008) != 0)) {
+                    if (((mutable_bitField0_ & 0x00000010) != 0)) {
                         goodsImgEntity_ = java.util.Collections.unmodifiableList(goodsImgEntity_);
                     }
-                    if (((mutable_bitField0_ & 0x00000010) != 0)) {
+                    if (((mutable_bitField0_ & 0x00000020) != 0)) {
                         goodsSkuEntity_ = java.util.Collections.unmodifiableList(goodsSkuEntity_);
                     }
-                    if (((mutable_bitField0_ & 0x00000020) != 0)) {
+                    if (((mutable_bitField0_ & 0x00000040) != 0)) {
                         goodsCouPonEntity_ = java.util.Collections.unmodifiableList(goodsCouPonEntity_);
                     }
-                    if (((mutable_bitField0_ & 0x00000040) != 0)) {
+                    if (((mutable_bitField0_ & 0x00000080) != 0)) {
                         commentEntity_ = java.util.Collections.unmodifiableList(commentEntity_);
                     }
                     this.unknownFields = unknownFields.build();
@@ -63742,6 +63849,48 @@ public final class MessageProtocol {
                             com.google.protobuf.ByteString.copyFromUtf8(
                                     (java.lang.String) ref);
                     description_ = b;
+                    return b;
+                } else {
+                    return (com.google.protobuf.ByteString) ref;
+                }
+            }
+
+            public static final int PATHIMG_FIELD_NUMBER = 8;
+            private volatile java.lang.Object pathImg_;
+            /**
+             * <pre>
+             *商品图
+             * </pre>
+             *
+             * <code>string pathImg = 8;</code>
+             */
+            public java.lang.String getPathImg() {
+                java.lang.Object ref = pathImg_;
+                if (ref instanceof java.lang.String) {
+                    return (java.lang.String) ref;
+                } else {
+                    com.google.protobuf.ByteString bs =
+                            (com.google.protobuf.ByteString) ref;
+                    java.lang.String s = bs.toStringUtf8();
+                    pathImg_ = s;
+                    return s;
+                }
+            }
+            /**
+             * <pre>
+             *商品图
+             * </pre>
+             *
+             * <code>string pathImg = 8;</code>
+             */
+            public com.google.protobuf.ByteString
+            getPathImgBytes() {
+                java.lang.Object ref = pathImg_;
+                if (ref instanceof java.lang.String) {
+                    com.google.protobuf.ByteString b =
+                            com.google.protobuf.ByteString.copyFromUtf8(
+                                    (java.lang.String) ref);
+                    pathImg_ = b;
                     return b;
                 } else {
                     return (com.google.protobuf.ByteString) ref;
@@ -64003,6 +64152,9 @@ public final class MessageProtocol {
                 for (int i = 0; i < commentEntity_.size(); i++) {
                     output.writeMessage(7, commentEntity_.get(i));
                 }
+                if (!getPathImgBytes().isEmpty()) {
+                    com.google.protobuf.GeneratedMessageV3.writeString(output, 8, pathImg_);
+                }
                 unknownFields.writeTo(output);
             }
 
@@ -64037,6 +64189,9 @@ public final class MessageProtocol {
                     size += com.google.protobuf.CodedOutputStream
                             .computeMessageSize(7, commentEntity_.get(i));
                 }
+                if (!getPathImgBytes().isEmpty()) {
+                    size += com.google.protobuf.GeneratedMessageV3.computeStringSize(8, pathImg_);
+                }
                 size += unknownFields.getSerializedSize();
                 memoizedSize = size;
                 return size;
@@ -64058,6 +64213,8 @@ public final class MessageProtocol {
                         .equals(other.getPrice())) return false;
                 if (!getDescription()
                         .equals(other.getDescription())) return false;
+                if (!getPathImg()
+                        .equals(other.getPathImg())) return false;
                 if (!getGoodsImgEntityList()
                         .equals(other.getGoodsImgEntityList())) return false;
                 if (!getGoodsSkuEntityList()
@@ -64083,6 +64240,8 @@ public final class MessageProtocol {
                 hash = (53 * hash) + getPrice().hashCode();
                 hash = (37 * hash) + DESCRIPTION_FIELD_NUMBER;
                 hash = (53 * hash) + getDescription().hashCode();
+                hash = (37 * hash) + PATHIMG_FIELD_NUMBER;
+                hash = (53 * hash) + getPathImg().hashCode();
                 if (getGoodsImgEntityCount() > 0) {
                     hash = (37 * hash) + GOODSIMGENTITY_FIELD_NUMBER;
                     hash = (53 * hash) + getGoodsImgEntityList().hashCode();
@@ -64246,27 +64405,29 @@ public final class MessageProtocol {
 
                     description_ = "";
 
+                    pathImg_ = "";
+
                     if (goodsImgEntityBuilder_ == null) {
                         goodsImgEntity_ = java.util.Collections.emptyList();
-                        bitField0_ = (bitField0_ & ~0x00000008);
+                        bitField0_ = (bitField0_ & ~0x00000010);
                     } else {
                         goodsImgEntityBuilder_.clear();
                     }
                     if (goodsSkuEntityBuilder_ == null) {
                         goodsSkuEntity_ = java.util.Collections.emptyList();
-                        bitField0_ = (bitField0_ & ~0x00000010);
+                        bitField0_ = (bitField0_ & ~0x00000020);
                     } else {
                         goodsSkuEntityBuilder_.clear();
                     }
                     if (goodsCouPonEntityBuilder_ == null) {
                         goodsCouPonEntity_ = java.util.Collections.emptyList();
-                        bitField0_ = (bitField0_ & ~0x00000020);
+                        bitField0_ = (bitField0_ & ~0x00000040);
                     } else {
                         goodsCouPonEntityBuilder_.clear();
                     }
                     if (commentEntityBuilder_ == null) {
                         commentEntity_ = java.util.Collections.emptyList();
-                        bitField0_ = (bitField0_ & ~0x00000040);
+                        bitField0_ = (bitField0_ & ~0x00000080);
                     } else {
                         commentEntityBuilder_.clear();
                     }
@@ -64301,37 +64462,38 @@ public final class MessageProtocol {
                     result.name_ = name_;
                     result.price_ = price_;
                     result.description_ = description_;
+                    result.pathImg_ = pathImg_;
                     if (goodsImgEntityBuilder_ == null) {
-                        if (((bitField0_ & 0x00000008) != 0)) {
+                        if (((bitField0_ & 0x00000010) != 0)) {
                             goodsImgEntity_ = java.util.Collections.unmodifiableList(goodsImgEntity_);
-                            bitField0_ = (bitField0_ & ~0x00000008);
+                            bitField0_ = (bitField0_ & ~0x00000010);
                         }
                         result.goodsImgEntity_ = goodsImgEntity_;
                     } else {
                         result.goodsImgEntity_ = goodsImgEntityBuilder_.build();
                     }
                     if (goodsSkuEntityBuilder_ == null) {
-                        if (((bitField0_ & 0x00000010) != 0)) {
+                        if (((bitField0_ & 0x00000020) != 0)) {
                             goodsSkuEntity_ = java.util.Collections.unmodifiableList(goodsSkuEntity_);
-                            bitField0_ = (bitField0_ & ~0x00000010);
+                            bitField0_ = (bitField0_ & ~0x00000020);
                         }
                         result.goodsSkuEntity_ = goodsSkuEntity_;
                     } else {
                         result.goodsSkuEntity_ = goodsSkuEntityBuilder_.build();
                     }
                     if (goodsCouPonEntityBuilder_ == null) {
-                        if (((bitField0_ & 0x00000020) != 0)) {
+                        if (((bitField0_ & 0x00000040) != 0)) {
                             goodsCouPonEntity_ = java.util.Collections.unmodifiableList(goodsCouPonEntity_);
-                            bitField0_ = (bitField0_ & ~0x00000020);
+                            bitField0_ = (bitField0_ & ~0x00000040);
                         }
                         result.goodsCouPonEntity_ = goodsCouPonEntity_;
                     } else {
                         result.goodsCouPonEntity_ = goodsCouPonEntityBuilder_.build();
                     }
                     if (commentEntityBuilder_ == null) {
-                        if (((bitField0_ & 0x00000040) != 0)) {
+                        if (((bitField0_ & 0x00000080) != 0)) {
                             commentEntity_ = java.util.Collections.unmodifiableList(commentEntity_);
-                            bitField0_ = (bitField0_ & ~0x00000040);
+                            bitField0_ = (bitField0_ & ~0x00000080);
                         }
                         result.commentEntity_ = commentEntity_;
                     } else {
@@ -64398,11 +64560,15 @@ public final class MessageProtocol {
                         description_ = other.description_;
                         onChanged();
                     }
+                    if (!other.getPathImg().isEmpty()) {
+                        pathImg_ = other.pathImg_;
+                        onChanged();
+                    }
                     if (goodsImgEntityBuilder_ == null) {
                         if (!other.goodsImgEntity_.isEmpty()) {
                             if (goodsImgEntity_.isEmpty()) {
                                 goodsImgEntity_ = other.goodsImgEntity_;
-                                bitField0_ = (bitField0_ & ~0x00000008);
+                                bitField0_ = (bitField0_ & ~0x00000010);
                             } else {
                                 ensureGoodsImgEntityIsMutable();
                                 goodsImgEntity_.addAll(other.goodsImgEntity_);
@@ -64415,7 +64581,7 @@ public final class MessageProtocol {
                                 goodsImgEntityBuilder_.dispose();
                                 goodsImgEntityBuilder_ = null;
                                 goodsImgEntity_ = other.goodsImgEntity_;
-                                bitField0_ = (bitField0_ & ~0x00000008);
+                                bitField0_ = (bitField0_ & ~0x00000010);
                                 goodsImgEntityBuilder_ =
                                         com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                                                 getGoodsImgEntityFieldBuilder() : null;
@@ -64428,7 +64594,7 @@ public final class MessageProtocol {
                         if (!other.goodsSkuEntity_.isEmpty()) {
                             if (goodsSkuEntity_.isEmpty()) {
                                 goodsSkuEntity_ = other.goodsSkuEntity_;
-                                bitField0_ = (bitField0_ & ~0x00000010);
+                                bitField0_ = (bitField0_ & ~0x00000020);
                             } else {
                                 ensureGoodsSkuEntityIsMutable();
                                 goodsSkuEntity_.addAll(other.goodsSkuEntity_);
@@ -64441,7 +64607,7 @@ public final class MessageProtocol {
                                 goodsSkuEntityBuilder_.dispose();
                                 goodsSkuEntityBuilder_ = null;
                                 goodsSkuEntity_ = other.goodsSkuEntity_;
-                                bitField0_ = (bitField0_ & ~0x00000010);
+                                bitField0_ = (bitField0_ & ~0x00000020);
                                 goodsSkuEntityBuilder_ =
                                         com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                                                 getGoodsSkuEntityFieldBuilder() : null;
@@ -64454,7 +64620,7 @@ public final class MessageProtocol {
                         if (!other.goodsCouPonEntity_.isEmpty()) {
                             if (goodsCouPonEntity_.isEmpty()) {
                                 goodsCouPonEntity_ = other.goodsCouPonEntity_;
-                                bitField0_ = (bitField0_ & ~0x00000020);
+                                bitField0_ = (bitField0_ & ~0x00000040);
                             } else {
                                 ensureGoodsCouPonEntityIsMutable();
                                 goodsCouPonEntity_.addAll(other.goodsCouPonEntity_);
@@ -64467,7 +64633,7 @@ public final class MessageProtocol {
                                 goodsCouPonEntityBuilder_.dispose();
                                 goodsCouPonEntityBuilder_ = null;
                                 goodsCouPonEntity_ = other.goodsCouPonEntity_;
-                                bitField0_ = (bitField0_ & ~0x00000020);
+                                bitField0_ = (bitField0_ & ~0x00000040);
                                 goodsCouPonEntityBuilder_ =
                                         com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                                                 getGoodsCouPonEntityFieldBuilder() : null;
@@ -64480,7 +64646,7 @@ public final class MessageProtocol {
                         if (!other.commentEntity_.isEmpty()) {
                             if (commentEntity_.isEmpty()) {
                                 commentEntity_ = other.commentEntity_;
-                                bitField0_ = (bitField0_ & ~0x00000040);
+                                bitField0_ = (bitField0_ & ~0x00000080);
                             } else {
                                 ensureCommentEntityIsMutable();
                                 commentEntity_.addAll(other.commentEntity_);
@@ -64493,7 +64659,7 @@ public final class MessageProtocol {
                                 commentEntityBuilder_.dispose();
                                 commentEntityBuilder_ = null;
                                 commentEntity_ = other.commentEntity_;
-                                bitField0_ = (bitField0_ & ~0x00000040);
+                                bitField0_ = (bitField0_ & ~0x00000080);
                                 commentEntityBuilder_ =
                                         com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                                                 getCommentEntityFieldBuilder() : null;
@@ -64799,12 +64965,101 @@ public final class MessageProtocol {
                     return this;
                 }
 
+                private java.lang.Object pathImg_ = "";
+                /**
+                 * <pre>
+                 *商品图
+                 * </pre>
+                 *
+                 * <code>string pathImg = 8;</code>
+                 */
+                public java.lang.String getPathImg() {
+                    java.lang.Object ref = pathImg_;
+                    if (!(ref instanceof java.lang.String)) {
+                        com.google.protobuf.ByteString bs =
+                                (com.google.protobuf.ByteString) ref;
+                        java.lang.String s = bs.toStringUtf8();
+                        pathImg_ = s;
+                        return s;
+                    } else {
+                        return (java.lang.String) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *商品图
+                 * </pre>
+                 *
+                 * <code>string pathImg = 8;</code>
+                 */
+                public com.google.protobuf.ByteString
+                getPathImgBytes() {
+                    java.lang.Object ref = pathImg_;
+                    if (ref instanceof String) {
+                        com.google.protobuf.ByteString b =
+                                com.google.protobuf.ByteString.copyFromUtf8(
+                                        (java.lang.String) ref);
+                        pathImg_ = b;
+                        return b;
+                    } else {
+                        return (com.google.protobuf.ByteString) ref;
+                    }
+                }
+                /**
+                 * <pre>
+                 *商品图
+                 * </pre>
+                 *
+                 * <code>string pathImg = 8;</code>
+                 */
+                public Builder setPathImg(
+                        java.lang.String value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+
+                    pathImg_ = value;
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *商品图
+                 * </pre>
+                 *
+                 * <code>string pathImg = 8;</code>
+                 */
+                public Builder clearPathImg() {
+
+                    pathImg_ = getDefaultInstance().getPathImg();
+                    onChanged();
+                    return this;
+                }
+                /**
+                 * <pre>
+                 *商品图
+                 * </pre>
+                 *
+                 * <code>string pathImg = 8;</code>
+                 */
+                public Builder setPathImgBytes(
+                        com.google.protobuf.ByteString value) {
+                    if (value == null) {
+                        throw new NullPointerException();
+                    }
+                    checkByteStringIsUtf8(value);
+
+                    pathImg_ = value;
+                    onChanged();
+                    return this;
+                }
+
                 private java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsImgEntity> goodsImgEntity_ =
                         java.util.Collections.emptyList();
                 private void ensureGoodsImgEntityIsMutable() {
-                    if (!((bitField0_ & 0x00000008) != 0)) {
+                    if (!((bitField0_ & 0x00000010) != 0)) {
                         goodsImgEntity_ = new java.util.ArrayList<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsImgEntity>(goodsImgEntity_);
-                        bitField0_ |= 0x00000008;
+                        bitField0_ |= 0x00000010;
                     }
                 }
 
@@ -64998,7 +65253,7 @@ public final class MessageProtocol {
                 public Builder clearGoodsImgEntity() {
                     if (goodsImgEntityBuilder_ == null) {
                         goodsImgEntity_ = java.util.Collections.emptyList();
-                        bitField0_ = (bitField0_ & ~0x00000008);
+                        bitField0_ = (bitField0_ & ~0x00000010);
                         onChanged();
                     } else {
                         goodsImgEntityBuilder_.clear();
@@ -65103,7 +65358,7 @@ public final class MessageProtocol {
                         goodsImgEntityBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
                                 com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsImgEntity, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsImgEntity.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsImgEntityOrBuilder>(
                                 goodsImgEntity_,
-                                ((bitField0_ & 0x00000008) != 0),
+                                ((bitField0_ & 0x00000010) != 0),
                                 getParentForChildren(),
                                 isClean());
                         goodsImgEntity_ = null;
@@ -65114,9 +65369,9 @@ public final class MessageProtocol {
                 private java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsSkuEntity> goodsSkuEntity_ =
                         java.util.Collections.emptyList();
                 private void ensureGoodsSkuEntityIsMutable() {
-                    if (!((bitField0_ & 0x00000010) != 0)) {
+                    if (!((bitField0_ & 0x00000020) != 0)) {
                         goodsSkuEntity_ = new java.util.ArrayList<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsSkuEntity>(goodsSkuEntity_);
-                        bitField0_ |= 0x00000010;
+                        bitField0_ |= 0x00000020;
                     }
                 }
 
@@ -65310,7 +65565,7 @@ public final class MessageProtocol {
                 public Builder clearGoodsSkuEntity() {
                     if (goodsSkuEntityBuilder_ == null) {
                         goodsSkuEntity_ = java.util.Collections.emptyList();
-                        bitField0_ = (bitField0_ & ~0x00000010);
+                        bitField0_ = (bitField0_ & ~0x00000020);
                         onChanged();
                     } else {
                         goodsSkuEntityBuilder_.clear();
@@ -65415,7 +65670,7 @@ public final class MessageProtocol {
                         goodsSkuEntityBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
                                 com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsSkuEntity, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsSkuEntity.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsSkuEntityOrBuilder>(
                                 goodsSkuEntity_,
-                                ((bitField0_ & 0x00000010) != 0),
+                                ((bitField0_ & 0x00000020) != 0),
                                 getParentForChildren(),
                                 isClean());
                         goodsSkuEntity_ = null;
@@ -65426,9 +65681,9 @@ public final class MessageProtocol {
                 private java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsCouPonEntity> goodsCouPonEntity_ =
                         java.util.Collections.emptyList();
                 private void ensureGoodsCouPonEntityIsMutable() {
-                    if (!((bitField0_ & 0x00000020) != 0)) {
+                    if (!((bitField0_ & 0x00000040) != 0)) {
                         goodsCouPonEntity_ = new java.util.ArrayList<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsCouPonEntity>(goodsCouPonEntity_);
-                        bitField0_ |= 0x00000020;
+                        bitField0_ |= 0x00000040;
                     }
                 }
 
@@ -65622,7 +65877,7 @@ public final class MessageProtocol {
                 public Builder clearGoodsCouPonEntity() {
                     if (goodsCouPonEntityBuilder_ == null) {
                         goodsCouPonEntity_ = java.util.Collections.emptyList();
-                        bitField0_ = (bitField0_ & ~0x00000020);
+                        bitField0_ = (bitField0_ & ~0x00000040);
                         onChanged();
                     } else {
                         goodsCouPonEntityBuilder_.clear();
@@ -65727,7 +65982,7 @@ public final class MessageProtocol {
                         goodsCouPonEntityBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
                                 com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsCouPonEntity, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsCouPonEntity.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.GoodsCouPonEntityOrBuilder>(
                                 goodsCouPonEntity_,
-                                ((bitField0_ & 0x00000020) != 0),
+                                ((bitField0_ & 0x00000040) != 0),
                                 getParentForChildren(),
                                 isClean());
                         goodsCouPonEntity_ = null;
@@ -65738,9 +65993,9 @@ public final class MessageProtocol {
                 private java.util.List<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.CommentEntity> commentEntity_ =
                         java.util.Collections.emptyList();
                 private void ensureCommentEntityIsMutable() {
-                    if (!((bitField0_ & 0x00000040) != 0)) {
+                    if (!((bitField0_ & 0x00000080) != 0)) {
                         commentEntity_ = new java.util.ArrayList<com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.CommentEntity>(commentEntity_);
-                        bitField0_ |= 0x00000040;
+                        bitField0_ |= 0x00000080;
                     }
                 }
 
@@ -65934,7 +66189,7 @@ public final class MessageProtocol {
                 public Builder clearCommentEntity() {
                     if (commentEntityBuilder_ == null) {
                         commentEntity_ = java.util.Collections.emptyList();
-                        bitField0_ = (bitField0_ & ~0x00000040);
+                        bitField0_ = (bitField0_ & ~0x00000080);
                         onChanged();
                     } else {
                         commentEntityBuilder_.clear();
@@ -66039,7 +66294,7 @@ public final class MessageProtocol {
                         commentEntityBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
                                 com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.CommentEntity, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.CommentEntity.Builder, com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase.CommentEntityOrBuilder>(
                                 commentEntity_,
-                                ((bitField0_ & 0x00000040) != 0),
+                                ((bitField0_ & 0x00000080) != 0),
                                 getParentForChildren(),
                                 isClean());
                         commentEntity_ = null;
@@ -80823,7 +81078,7 @@ public final class MessageProtocol {
     static {
         java.lang.String[] descriptorData = {
                 "\n\025MessageProtocol.proto\022\034NettyProtobufWe" +
-                        "bsocketClient\"\253^\n\013MessageBase\022\020\n\010clientI" +
+                        "bsocketClient\"\320^\n\013MessageBase\022\020\n\010clientI" +
                         "d\030\001 \001(\t\022\014\n\004code\030\002 \001(\005\022<\n\004type\030\003 \001(\0162..Ne" +
                         "ttyProtobufWebsocketClient.MessageBase.T" +
                         "ype\022D\n\010loginReq\030\004 \001(\01322.NettyProtobufWeb" +
@@ -81001,132 +81256,133 @@ public final class MessageProtocol {
                         "(\t\022\021\n\tpartnerid\030\002 \001(\t\022\020\n\010prepayid\030\003 \001(\t\022" +
                         "\017\n\007package\030\004 \001(\t\022\020\n\010noncestr\030\005 \001(\t\022\021\n\tti" +
                         "mestamp\030\006 \001(\t\022\014\n\004sign\030\007 \001(\t\032\031\n\007MallReq\022\016" +
-                        "\n\006userId\030\001 \001(\003\032c\n\010MallResp\022\n\n\002id\030\001 \001(\005\022\021" +
+                        "\n\006userId\030\001 \001(\003\032w\n\010MallResp\022\n\n\002id\030\001 \001(\005\022\021" +
                         "\n\ttbStoreId\030\002 \001(\005\022\014\n\004name\030\003 \001(\t\022\013\n\003img\030\004" +
-                        " \001(\t\022\r\n\005price\030\005 \001(\t\022\016\n\006status\030\006 \001(\005\032T\n\014M" +
-                        "allListResp\022D\n\010mallResp\030\001 \003(\01322.NettyPro" +
-                        "tobufWebsocketClient.MessageBase.MallRes" +
-                        "p\032?\n\rCollectionReq\022\016\n\006mallId\030\001 \001(\005\022\016\n\006us" +
-                        "erId\030\002 \001(\005\022\016\n\006status\030\003 \001(\005\032f\n\016Collection" +
-                        "Resp\022\016\n\006userId\030\002 \001(\005\022D\n\010mallResp\030\001 \003(\01322" +
+                        " \001(\t\022\r\n\005price\030\005 \001(\t\022\016\n\006status\030\006 \001(\005\022\022\n\nm" +
+                        "allStatus\030\007 \001(\005\032T\n\014MallListResp\022D\n\010mallR" +
+                        "esp\030\001 \003(\01322.NettyProtobufWebsocketClient" +
+                        ".MessageBase.MallResp\032?\n\rCollectionReq\022\016" +
+                        "\n\006mallId\030\001 \001(\005\022\016\n\006userId\030\002 \001(\005\022\016\n\006status" +
+                        "\030\003 \001(\005\032f\n\016CollectionResp\022\016\n\006userId\030\002 \001(\005" +
+                        "\022D\n\010mallResp\030\001 \003(\01322.NettyProtobufWebsoc" +
+                        "ketClient.MessageBase.MallResp\032#\n\021Collec" +
+                        "tionListReq\022\016\n\006userId\030\001 \001(\005\032Z\n\022Collectio" +
+                        "nListResp\022D\n\010mallResp\030\001 \003(\01322.NettyProto" +
+                        "bufWebsocketClient.MessageBase.MallResp\032" +
+                        "G\n\020LoginPasswordReq\022\023\n\013phoneNumber\030\001 \001(\t" +
+                        "\022\020\n\010password\030\002 \001(\t\022\014\n\004code\030\003 \001(\t\032=\n\016Part" +
+                        "icularsReq\022\026\n\016orderDerailsId\030\001 \001(\005\022\023\n\013ph" +
+                        "oneNumber\030\002 \001(\t\032\267\001\n\017ParticularsResp\022\021\n\td" +
+                        "erailsId\030\001 \001(\005\022\014\n\004name\030\002 \001(\t\022\023\n\013orderInf" +
+                        "oId\030\003 \001(\005\022\016\n\006mallId\030\004 \001(\005\022\017\n\007storeId\030\005 \001" +
+                        "(\005\022\014\n\004size\030\006 \001(\t\022\016\n\006colour\030\007 \001(\t\022\020\n\010quan" +
+                        "tity\030\010 \001(\005\022\016\n\006amount\030\t \001(\t\022\r\n\005image\030\n \001(" +
+                        "\t\032E\n\022ParticularsListReq\022\016\n\006userId\030\001 \001(\005\022" +
+                        "\016\n\006status\030\002 \001(\005\022\017\n\007orderSn\030\003 \001(\t\032\360\002\n\024Par" +
+                        "ticularsOrderResp\022\017\n\007orderId\030\001 \001(\005\022\020\n\010pa" +
+                        "yAmont\030\002 \001(\t\022\016\n\006amount\030\003 \001(\t\022\017\n\007orderSn\030" +
+                        "\004 \001(\t\022\021\n\tmodelType\030\005 \001(\t\022\017\n\007storeId\030\006 \001(" +
+                        "\005\022\016\n\006mallId\030\007 \001(\005\022\016\n\006userId\030\010 \001(\005\022\016\n\006sta" +
+                        "tus\030\t \001(\005\022\022\n\ncreateTime\030\n \001(\t\022\017\n\007payType" +
+                        "\030\013 \001(\005\022\017\n\007address\030\014 \001(\t\022\r\n\005phone\030\r \001(\t\022\021" +
+                        "\n\tconsignee\030\016 \001(\t\022\016\n\006remark\030\017 \001(\t\022\017\n\007pay" +
+                        "Time\030\020 \001(\t\022\017\n\007delFlag\030\021 \001(\005\022\r\n\005delBy\030\022 \001" +
+                        "(\t\022\023\n\013timeOutFlag\030\023 \001(\005\022\022\n\nupdateTime\030\024 " +
+                        "\001(\t\032\307\001\n\023ParticularsListResp\022R\n\017particula" +
+                        "rsResp\030\001 \003(\01329.NettyProtobufWebsocketCli" +
+                        "ent.MessageBase.ParticularsResp\022\\\n\024parti" +
+                        "cularsOrderResp\030\002 \003(\0132>.NettyProtobufWeb" +
+                        "socketClient.MessageBase.ParticularsOrde" +
+                        "rResp\032\332\001\n\017PlaceAnOrderReq\022\016\n\006mallId\030\001 \001(" +
+                        "\005\022\021\n\taddressId\030\002 \001(\005\022\016\n\006remark\030\003 \001(\t\022\016\n\006" +
+                        "colour\030\004 \001(\t\022\014\n\004size\030\005 \001(\t\022\013\n\003pay\030\006 \001(\005\022" +
+                        "\016\n\006userId\030\007 \001(\005\022\017\n\007storeId\030\010 \001(\005\022\020\n\010quan" +
+                        "tity\030\t \001(\005\022\016\n\006amount\030\n \001(\t\022\023\n\013clothesJso" +
+                        "n\030\013 \001(\t\022\021\n\tmodelType\030\014 \001(\005\032\'\n\020PlaceAnOrd" +
+                        "erResp\022\023\n\013orderNumber\030\001 \001(\t\032\350\002\n\nAddressR" +
+                        "eq\022\016\n\006userId\030\001 \001(\t\022\021\n\tconsignee\030\002 \001(\t\022\r\n" +
+                        "\005phone\030\003 \001(\t\022\013\n\003sex\030\004 \001(\t\022\024\n\014provinceNam" +
+                        "e\030\005 \001(\t\022\020\n\010cityName\030\006 \001(\t\022\024\n\014districtNam" +
+                        "e\030\007 \001(\t\022\016\n\006detail\030\010 \001(\t\022\r\n\005label\030\t \001(\t\022\021" +
+                        "\n\tisDefault\030\n \001(\t\022\022\n\ncreateTime\030\013 \001(\t\022\022\n" +
+                        "\nupdateTime\030\014 \001(\t\022\022\n\ncreateUser\030\r \001(\t\022\022\n" +
+                        "\nupdateUser\030\016 \001(\t\022\021\n\tisDeleted\030\017 \001(\t\022\024\n\014" +
+                        "provinceCode\030\020 \001(\t\022\020\n\010cityCode\030\021 \001(\t\022\024\n\014" +
+                        "districtCode\030\022 \001(\t\022\n\n\002id\030\023 \001(\t\032+\n\013Addres" +
+                        "sResp\022\016\n\006status\030\001 \001(\t\022\014\n\004type\030\002 \001(\t\032\\\n\020U" +
+                        "pdateAddressReq\022H\n\naddressReq\030\001 \001(\01324.Ne" +
+                        "ttyProtobufWebsocketClient.MessageBase.A" +
+                        "ddressReq\032%\n\020DeleteAddressReq\022\021\n\taddress" +
+                        "Id\030\001 \001(\t\032\"\n\020SelectAddressReq\022\016\n\006userId\030\001" +
+                        " \001(\t\032]\n\021SelectAddressResp\022H\n\naddressReq\030" +
+                        "\001 \003(\01324.NettyProtobufWebsocketClient.Mes" +
+                        "sageBase.AddressReq\032C\n\tRegionReq\022\020\n\010regi" +
+                        "onId\030\001 \001(\t\022\022\n\nregionName\030\002 \001(\t\022\020\n\010parent" +
+                        "Id\030\003 \001(\t\032T\n\nRegionResp\022F\n\tregionReq\030\001 \003(" +
+                        "\01323.NettyProtobufWebsocketClient.Message" +
+                        "Base.RegionReq\032\035\n\016GoodsImgEntity\022\013\n\003img\030" +
+                        "\001 \001(\t\032b\n\016GoodsSkuEntity\022\016\n\006mallId\030\001 \001(\005\022" +
+                        "\r\n\005skuId\030\002 \001(\005\022\022\n\nspecs_data\030\003 \001(\t\022\016\n\006am" +
+                        "ount\030\004 \001(\005\022\r\n\005price\030\005 \001(\t\032\246\001\n\021GoodsCouPo" +
+                        "nEntity\022\n\n\002id\030\001 \001(\005\022\023\n\013couponTitle\030\002 \001(\t" +
+                        "\022\021\n\tcouponUrl\030\003 \001(\t\022\023\n\013couponLimit\030\004 \001(\t" +
+                        "\022\023\n\013couponPrice\030\005 \001(\t\022\022\n\ncreateTime\030\006 \001(" +
+                        "\t\022\017\n\007endTime\030\007 \001(\t\022\016\n\006status\030\010 \001(\005\032\205\001\n\rC" +
+                        "ommentEntity\022\016\n\006userId\030\001 \001(\005\022\017\n\007storeId\030" +
+                        "\002 \001(\005\022\016\n\006mallId\030\003 \001(\005\022\014\n\004data\030\004 \001(\t\022\016\n\006t" +
+                        "ypeId\030\005 \001(\005\022\024\n\014userNickName\030\006 \001(\t\022\017\n\007hea" +
+                        "dImg\030\007 \001(\t\032\036\n\014GoodsDescReq\022\016\n\006mallId\030\001 \001" +
+                        "(\005\032\236\003\n\rGoodsDescResp\022\014\n\004name\030\001 \001(\t\022\r\n\005pr" +
+                        "ice\030\002 \001(\t\022\023\n\013description\030\003 \001(\t\022\017\n\007pathIm" +
+                        "g\030\010 \001(\t\022P\n\016GoodsImgEntity\030\004 \003(\01328.NettyP" +
+                        "rotobufWebsocketClient.MessageBase.Goods" +
+                        "ImgEntity\022P\n\016goodsSkuEntity\030\005 \003(\01328.Nett" +
+                        "yProtobufWebsocketClient.MessageBase.Goo" +
+                        "dsSkuEntity\022V\n\021goodsCouPonEntity\030\006 \003(\0132;" +
                         ".NettyProtobufWebsocketClient.MessageBas" +
-                        "e.MallResp\032#\n\021CollectionListReq\022\016\n\006userI" +
-                        "d\030\001 \001(\005\032Z\n\022CollectionListResp\022D\n\010mallRes" +
-                        "p\030\001 \003(\01322.NettyProtobufWebsocketClient.M" +
-                        "essageBase.MallResp\032G\n\020LoginPasswordReq\022" +
-                        "\023\n\013phoneNumber\030\001 \001(\t\022\020\n\010password\030\002 \001(\t\022\014" +
-                        "\n\004code\030\003 \001(\t\032=\n\016ParticularsReq\022\026\n\016orderD" +
-                        "erailsId\030\001 \001(\005\022\023\n\013phoneNumber\030\002 \001(\t\032\267\001\n\017" +
-                        "ParticularsResp\022\021\n\tderailsId\030\001 \001(\005\022\014\n\004na" +
-                        "me\030\002 \001(\t\022\023\n\013orderInfoId\030\003 \001(\005\022\016\n\006mallId\030" +
-                        "\004 \001(\005\022\017\n\007storeId\030\005 \001(\005\022\014\n\004size\030\006 \001(\t\022\016\n\006" +
-                        "colour\030\007 \001(\t\022\020\n\010quantity\030\010 \001(\005\022\016\n\006amount" +
-                        "\030\t \001(\t\022\r\n\005image\030\n \001(\t\032E\n\022ParticularsList" +
-                        "Req\022\016\n\006userId\030\001 \001(\005\022\016\n\006status\030\002 \001(\005\022\017\n\007o" +
-                        "rderSn\030\003 \001(\t\032\360\002\n\024ParticularsOrderResp\022\017\n" +
-                        "\007orderId\030\001 \001(\005\022\020\n\010payAmont\030\002 \001(\t\022\016\n\006amou" +
-                        "nt\030\003 \001(\t\022\017\n\007orderSn\030\004 \001(\t\022\021\n\tmodelType\030\005" +
-                        " \001(\t\022\017\n\007storeId\030\006 \001(\005\022\016\n\006mallId\030\007 \001(\005\022\016\n" +
-                        "\006userId\030\010 \001(\005\022\016\n\006status\030\t \001(\005\022\022\n\ncreateT" +
-                        "ime\030\n \001(\t\022\017\n\007payType\030\013 \001(\005\022\017\n\007address\030\014 " +
-                        "\001(\t\022\r\n\005phone\030\r \001(\t\022\021\n\tconsignee\030\016 \001(\t\022\016\n" +
-                        "\006remark\030\017 \001(\t\022\017\n\007payTime\030\020 \001(\t\022\017\n\007delFla" +
-                        "g\030\021 \001(\005\022\r\n\005delBy\030\022 \001(\t\022\023\n\013timeOutFlag\030\023 " +
-                        "\001(\005\022\022\n\nupdateTime\030\024 \001(\t\032\307\001\n\023ParticularsL" +
-                        "istResp\022R\n\017particularsResp\030\001 \003(\01329.Netty" +
-                        "ProtobufWebsocketClient.MessageBase.Part" +
-                        "icularsResp\022\\\n\024particularsOrderResp\030\002 \003(" +
-                        "\0132>.NettyProtobufWebsocketClient.Message" +
-                        "Base.ParticularsOrderResp\032\332\001\n\017PlaceAnOrd" +
-                        "erReq\022\016\n\006mallId\030\001 \001(\005\022\021\n\taddressId\030\002 \001(\005" +
-                        "\022\016\n\006remark\030\003 \001(\t\022\016\n\006colour\030\004 \001(\t\022\014\n\004size" +
-                        "\030\005 \001(\t\022\013\n\003pay\030\006 \001(\005\022\016\n\006userId\030\007 \001(\005\022\017\n\007s" +
-                        "toreId\030\010 \001(\005\022\020\n\010quantity\030\t \001(\005\022\016\n\006amount" +
-                        "\030\n \001(\t\022\023\n\013clothesJson\030\013 \001(\t\022\021\n\tmodelType" +
-                        "\030\014 \001(\005\032\'\n\020PlaceAnOrderResp\022\023\n\013orderNumbe" +
-                        "r\030\001 \001(\t\032\350\002\n\nAddressReq\022\016\n\006userId\030\001 \001(\t\022\021" +
-                        "\n\tconsignee\030\002 \001(\t\022\r\n\005phone\030\003 \001(\t\022\013\n\003sex\030" +
-                        "\004 \001(\t\022\024\n\014provinceName\030\005 \001(\t\022\020\n\010cityName\030" +
-                        "\006 \001(\t\022\024\n\014districtName\030\007 \001(\t\022\016\n\006detail\030\010 " +
-                        "\001(\t\022\r\n\005label\030\t \001(\t\022\021\n\tisDefault\030\n \001(\t\022\022\n" +
-                        "\ncreateTime\030\013 \001(\t\022\022\n\nupdateTime\030\014 \001(\t\022\022\n" +
-                        "\ncreateUser\030\r \001(\t\022\022\n\nupdateUser\030\016 \001(\t\022\021\n" +
-                        "\tisDeleted\030\017 \001(\t\022\024\n\014provinceCode\030\020 \001(\t\022\020" +
-                        "\n\010cityCode\030\021 \001(\t\022\024\n\014districtCode\030\022 \001(\t\022\n" +
-                        "\n\002id\030\023 \001(\t\032+\n\013AddressResp\022\016\n\006status\030\001 \001(" +
-                        "\t\022\014\n\004type\030\002 \001(\t\032\\\n\020UpdateAddressReq\022H\n\na" +
-                        "ddressReq\030\001 \001(\01324.NettyProtobufWebsocket" +
-                        "Client.MessageBase.AddressReq\032%\n\020DeleteA" +
-                        "ddressReq\022\021\n\taddressId\030\001 \001(\t\032\"\n\020SelectAd" +
-                        "dressReq\022\016\n\006userId\030\001 \001(\t\032]\n\021SelectAddres" +
-                        "sResp\022H\n\naddressReq\030\001 \003(\01324.NettyProtobu" +
-                        "fWebsocketClient.MessageBase.AddressReq\032" +
-                        "C\n\tRegionReq\022\020\n\010regionId\030\001 \001(\t\022\022\n\nregion" +
-                        "Name\030\002 \001(\t\022\020\n\010parentId\030\003 \001(\t\032T\n\nRegionRe" +
-                        "sp\022F\n\tregionReq\030\001 \003(\01323.NettyProtobufWeb" +
-                        "socketClient.MessageBase.RegionReq\032\035\n\016Go" +
-                        "odsImgEntity\022\013\n\003img\030\001 \001(\t\032b\n\016GoodsSkuEnt" +
-                        "ity\022\016\n\006mallId\030\001 \001(\005\022\r\n\005skuId\030\002 \001(\005\022\022\n\nsp" +
-                        "ecs_data\030\003 \001(\t\022\016\n\006amount\030\004 \001(\005\022\r\n\005price\030" +
-                        "\005 \001(\t\032\246\001\n\021GoodsCouPonEntity\022\n\n\002id\030\001 \001(\005\022" +
-                        "\023\n\013couponTitle\030\002 \001(\t\022\021\n\tcouponUrl\030\003 \001(\t\022" +
-                        "\023\n\013couponLimit\030\004 \001(\t\022\023\n\013couponPrice\030\005 \001(" +
-                        "\t\022\022\n\ncreateTime\030\006 \001(\t\022\017\n\007endTime\030\007 \001(\t\022\016" +
-                        "\n\006status\030\010 \001(\005\032\205\001\n\rCommentEntity\022\016\n\006user" +
-                        "Id\030\001 \001(\005\022\017\n\007storeId\030\002 \001(\005\022\016\n\006mallId\030\003 \001(" +
-                        "\005\022\014\n\004data\030\004 \001(\t\022\016\n\006typeId\030\005 \001(\005\022\024\n\014userN" +
-                        "ickName\030\006 \001(\t\022\017\n\007headImg\030\007 \001(\t\032\036\n\014GoodsD" +
-                        "escReq\022\016\n\006mallId\030\001 \001(\005\032\215\003\n\rGoodsDescResp" +
-                        "\022\014\n\004name\030\001 \001(\t\022\r\n\005price\030\002 \001(\t\022\023\n\013descrip" +
-                        "tion\030\003 \001(\t\022P\n\016GoodsImgEntity\030\004 \003(\01328.Net" +
-                        "tyProtobufWebsocketClient.MessageBase.Go" +
-                        "odsImgEntity\022P\n\016goodsSkuEntity\030\005 \003(\01328.N" +
-                        "ettyProtobufWebsocketClient.MessageBase." +
-                        "GoodsSkuEntity\022V\n\021goodsCouPonEntity\030\006 \003(" +
-                        "\0132;.NettyProtobufWebsocketClient.Message" +
-                        "Base.GoodsCouPonEntity\022N\n\rcommentEntity\030" +
-                        "\007 \003(\01327.NettyProtobufWebsocketClient.Mes" +
-                        "sageBase.CommentEntity\032c\n\020WxpaySuccessRe" +
-                        "sp\022\022\n\nouttradeno\030\001 \001(\t\022\022\n\ntradestate\030\002 \001" +
-                        "(\t\022\022\n\npayertotal\030\003 \001(\t\022\023\n\013successtime\030\004 " +
-                        "\001(\t\032\\\n\nCommentReq\022N\n\rcommentEntity\030\001 \001(\013" +
-                        "27.NettyProtobufWebsocketClient.MessageB" +
-                        "ase.CommentEntity\032\035\n\013CommentResp\022\016\n\006stat" +
-                        "us\030\001 \001(\005\032-\n\tCouponReq\022\016\n\006userId\030\001 \001(\005\022\020\n" +
-                        "\010couponId\030\002 \001(\005\032t\n\nCouponResp\022\016\n\006status\030" +
-                        "\001 \001(\005\022V\n\021goodsCouPonEntity\030\006 \003(\0132;.Netty" +
-                        "ProtobufWebsocketClient.MessageBase.Good" +
-                        "sCouPonEntity\"\203\t\n\004Type\022\010\n\004PING\020\000\022\r\n\tLOGI" +
-                        "N_REQ\020\001\022\016\n\nLOGIN_RESP\020\002\022\023\n\017UPDATE_USER_R" +
-                        "EQ\020\003\022\024\n\020UPDATE_USER_RESP\020\004\022\022\n\016MODEL_TYPE" +
-                        "_REQ\020\007\022\023\n\017MODEL_TYPE_RESP\020\005\022\023\n\017MODEL_STY" +
-                        "LE_REQ\020\010\022\024\n\020MODEL_STYLE_RESP\020\006\022\024\n\020PLATE_" +
-                        "CLASS_RESP\020\t\022\023\n\017PLATE_CLASS_REQ\020\n\022\020\n\014REG" +
-                        "ISTER_REQ\020\013\022\021\n\rREGISTER_RESP\020\014\022\017\n\013PERFEC" +
-                        "T_REQ\020\r\022\020\n\014PERFECT_RESP\020\016\022\025\n\021WARDROBE_SA" +
-                        "VE_REQ\020\017\022\026\n\022WARDROBE_SAVE_RESP\020\020\022\031\n\025GET_" +
-                        "USER_WARDROBE_REQ\020\021\022\032\n\026GET_USER_WARDROBE" +
-                        "_RESP\020\022\022\024\n\020WHITE_DESIGN_REQ\020\023\022\025\n\021WHITE_D" +
-                        "ESIGN_RESP\020\024\022\020\n\014SEND_MSG_REQ\020\025\022\021\n\rSEND_M" +
-                        "SG_RESP\020\026\022\r\n\tORDER_REQ\020\027\022\016\n\nORDER_RESP\020\030" +
-                        "\022\014\n\010MALL_REQ\020\031\022\r\n\tMALL_RESP\020\032\022\021\n\rMALL_LI" +
-                        "ST_REQ\020\033\022\022\n\016MALL_LIST_RESP\020\034\022\022\n\016COLLECTI" +
-                        "ON_REQ\020!\022\023\n\017COLLECTION_RESP\020\"\022\027\n\023COLLECT" +
-                        "ION_LIST_REQ\020#\022\030\n\024COLLECTION_LIST_RESP\020$" +
-                        "\022\026\n\022LOGIN_PASSWORD_REQ\020%\022\023\n\017PARTICULARS_" +
-                        "REQ\020&\022\024\n\020PARTICULARS_RESP\020\'\022\030\n\024PARTICULA" +
-                        "RS_LIST_REQ\020(\022\031\n\025PARTICULARS_LIST_RESP\020)" +
-                        "\022\032\n\026PARTICULARS_ORDER_RESP\020*\022\024\n\020PLACEANO" +
-                        "RDER_REQ\020+\022\025\n\021PLACEANORDER_RESP\020,\022\017\n\013ADD" +
-                        "RESS_REP\020-\022\020\n\014ADDRESS_RESP\020.\022\026\n\022UPDATE_A" +
-                        "DDRESS_REQ\020/\022\026\n\022DELETE_ADDRESS_REQ\0200\022\026\n\022" +
-                        "SELECT_ADDRESS_REQ\0201\022\027\n\023SELECT_ADDRESS_R" +
-                        "ESP\0202\022\016\n\nREGION_REQ\0203\022\017\n\013REGION_RESP\0204\022\022" +
-                        "\n\016GOODS_DESC_REQ\0205\022\023\n\017GOODS_DESC_RESP\0206\022" +
-                        "\026\n\022WXPAY_SUCCESS_RESP\0207\022\017\n\013COMMENT_REQ\0208" +
-                        "\022\020\n\014COMMENT_RESP\0209\022\016\n\nCOUPON_REQ\020:\022\017\n\013CO" +
-                        "UPON_RESP\020;B2\n\037com.ruoyi.netty.common.pr" +
-                        "otobufB\017MessageProtocolb\006proto3"
+                        "e.GoodsCouPonEntity\022N\n\rcommentEntity\030\007 \003" +
+                        "(\01327.NettyProtobufWebsocketClient.Messag" +
+                        "eBase.CommentEntity\032c\n\020WxpaySuccessResp\022" +
+                        "\022\n\nouttradeno\030\001 \001(\t\022\022\n\ntradestate\030\002 \001(\t\022" +
+                        "\022\n\npayertotal\030\003 \001(\t\022\023\n\013successtime\030\004 \001(\t" +
+                        "\032\\\n\nCommentReq\022N\n\rcommentEntity\030\001 \001(\01327." +
+                        "NettyProtobufWebsocketClient.MessageBase" +
+                        ".CommentEntity\032\035\n\013CommentResp\022\016\n\006status\030" +
+                        "\001 \001(\005\032-\n\tCouponReq\022\016\n\006userId\030\001 \001(\005\022\020\n\010co" +
+                        "uponId\030\002 \001(\005\032t\n\nCouponResp\022\016\n\006status\030\001 \001" +
+                        "(\005\022V\n\021goodsCouPonEntity\030\006 \003(\0132;.NettyPro" +
+                        "tobufWebsocketClient.MessageBase.GoodsCo" +
+                        "uPonEntity\"\203\t\n\004Type\022\010\n\004PING\020\000\022\r\n\tLOGIN_R" +
+                        "EQ\020\001\022\016\n\nLOGIN_RESP\020\002\022\023\n\017UPDATE_USER_REQ\020" +
+                        "\003\022\024\n\020UPDATE_USER_RESP\020\004\022\022\n\016MODEL_TYPE_RE" +
+                        "Q\020\007\022\023\n\017MODEL_TYPE_RESP\020\005\022\023\n\017MODEL_STYLE_" +
+                        "REQ\020\010\022\024\n\020MODEL_STYLE_RESP\020\006\022\024\n\020PLATE_CLA" +
+                        "SS_RESP\020\t\022\023\n\017PLATE_CLASS_REQ\020\n\022\020\n\014REGIST" +
+                        "ER_REQ\020\013\022\021\n\rREGISTER_RESP\020\014\022\017\n\013PERFECT_R" +
+                        "EQ\020\r\022\020\n\014PERFECT_RESP\020\016\022\025\n\021WARDROBE_SAVE_" +
+                        "REQ\020\017\022\026\n\022WARDROBE_SAVE_RESP\020\020\022\031\n\025GET_USE" +
+                        "R_WARDROBE_REQ\020\021\022\032\n\026GET_USER_WARDROBE_RE" +
+                        "SP\020\022\022\024\n\020WHITE_DESIGN_REQ\020\023\022\025\n\021WHITE_DESI" +
+                        "GN_RESP\020\024\022\020\n\014SEND_MSG_REQ\020\025\022\021\n\rSEND_MSG_" +
+                        "RESP\020\026\022\r\n\tORDER_REQ\020\027\022\016\n\nORDER_RESP\020\030\022\014\n" +
+                        "\010MALL_REQ\020\031\022\r\n\tMALL_RESP\020\032\022\021\n\rMALL_LIST_" +
+                        "REQ\020\033\022\022\n\016MALL_LIST_RESP\020\034\022\022\n\016COLLECTION_" +
+                        "REQ\020!\022\023\n\017COLLECTION_RESP\020\"\022\027\n\023COLLECTION" +
+                        "_LIST_REQ\020#\022\030\n\024COLLECTION_LIST_RESP\020$\022\026\n" +
+                        "\022LOGIN_PASSWORD_REQ\020%\022\023\n\017PARTICULARS_REQ" +
+                        "\020&\022\024\n\020PARTICULARS_RESP\020\'\022\030\n\024PARTICULARS_" +
+                        "LIST_REQ\020(\022\031\n\025PARTICULARS_LIST_RESP\020)\022\032\n" +
+                        "\026PARTICULARS_ORDER_RESP\020*\022\024\n\020PLACEANORDE" +
+                        "R_REQ\020+\022\025\n\021PLACEANORDER_RESP\020,\022\017\n\013ADDRES" +
+                        "S_REP\020-\022\020\n\014ADDRESS_RESP\020.\022\026\n\022UPDATE_ADDR" +
+                        "ESS_REQ\020/\022\026\n\022DELETE_ADDRESS_REQ\0200\022\026\n\022SEL" +
+                        "ECT_ADDRESS_REQ\0201\022\027\n\023SELECT_ADDRESS_RESP" +
+                        "\0202\022\016\n\nREGION_REQ\0203\022\017\n\013REGION_RESP\0204\022\022\n\016G" +
+                        "OODS_DESC_REQ\0205\022\023\n\017GOODS_DESC_RESP\0206\022\026\n\022" +
+                        "WXPAY_SUCCESS_RESP\0207\022\017\n\013COMMENT_REQ\0208\022\020\n" +
+                        "\014COMMENT_RESP\0209\022\016\n\nCOUPON_REQ\020:\022\017\n\013COUPO" +
+                        "N_RESP\020;B2\n\037com.ruoyi.netty.common.proto" +
+                        "bufB\017MessageProtocolb\006proto3"
         };
         com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
                 new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -81289,7 +81545,7 @@ public final class MessageProtocol {
         internal_static_NettyProtobufWebsocketClient_MessageBase_MallResp_fieldAccessorTable = new
                 com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
                 internal_static_NettyProtobufWebsocketClient_MessageBase_MallResp_descriptor,
-                new java.lang.String[] { "Id", "TbStoreId", "Name", "Img", "Price", "Status", });
+                new java.lang.String[] { "Id", "TbStoreId", "Name", "Img", "Price", "Status", "MallStatus", });
         internal_static_NettyProtobufWebsocketClient_MessageBase_MallListResp_descriptor =
                 internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(24);
         internal_static_NettyProtobufWebsocketClient_MessageBase_MallListResp_fieldAccessorTable = new
@@ -81451,7 +81707,7 @@ public final class MessageProtocol {
         internal_static_NettyProtobufWebsocketClient_MessageBase_GoodsDescResp_fieldAccessorTable = new
                 com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
                 internal_static_NettyProtobufWebsocketClient_MessageBase_GoodsDescResp_descriptor,
-                new java.lang.String[] { "Name", "Price", "Description", "GoodsImgEntity", "GoodsSkuEntity", "GoodsCouPonEntity", "CommentEntity", });
+                new java.lang.String[] { "Name", "Price", "Description", "PathImg", "GoodsImgEntity", "GoodsSkuEntity", "GoodsCouPonEntity", "CommentEntity", });
         internal_static_NettyProtobufWebsocketClient_MessageBase_WxpaySuccessResp_descriptor =
                 internal_static_NettyProtobufWebsocketClient_MessageBase_descriptor.getNestedTypes().get(51);
         internal_static_NettyProtobufWebsocketClient_MessageBase_WxpaySuccessResp_fieldAccessorTable = new

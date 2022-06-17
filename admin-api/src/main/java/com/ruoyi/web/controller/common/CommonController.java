@@ -21,6 +21,7 @@ import com.ruoyi.netty.util.SMSUtil;
 import com.ruoyi.netty.util.keyUtil;
 import com.ruoyi.system.domain.TbPattern;
 import com.ruoyi.system.service.ITbPatternService;
+import net.coobird.thumbnailator.Thumbnails;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -215,16 +216,16 @@ public class CommonController
         {
             String bucketName=this.bucketName;
             File file1 = multipartFileToFile(file);
-//            // 上传文件路径
-//            String filePath = RuoYiConfig.getUploadPath();
-//            // 上传并返回新文件名称
-//            String fileName = FileUploadUtils.upload(filePath, file);
 
             // 上传文件路径
             PutObjectRequest putObjectRequest=new PutObjectRequest(bucketName,this.qianzui+extractFilename(file),file1);
+            File file2 = putObjectRequest.getFile();
+            //压缩图片
+            Thumbnails.of(file1).scale(0.5f)    //压缩大小
+                    .toFile(file2);
             cosClient.putObject(putObjectRequest);
+
             // 上传并返回新文件名称
-//            String fileNameOne = putObjectRequest.getFile().getName();
             String url = this.path + putObjectRequest.getKey();
             AjaxResult ajax = AjaxResult.success();
             ajax.put("fileName",putObjectRequest.getKey());

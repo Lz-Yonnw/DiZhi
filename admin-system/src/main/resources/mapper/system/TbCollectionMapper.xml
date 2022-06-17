@@ -55,7 +55,7 @@
     </select>
     <!--查询用户收藏的全部商品id-->
     <select id="selectMallIds" resultType="java.lang.Long">
-        select mall_id from tb_collection where user_id=#{userId};
+        select mall_id from tb_collection where status = 1 and user_id=#{userId};
     </select>
 
 </mapper>

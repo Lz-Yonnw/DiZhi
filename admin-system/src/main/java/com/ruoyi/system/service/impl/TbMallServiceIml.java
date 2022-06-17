@@ -72,7 +72,7 @@ public class TbMallServiceIml implements com.ruoyi.system.service.TbMallService 
     public TbCollection selectTbCollection(Long id,Long mallId) {
 
         TbCollection tbCollection = new TbCollection();
-        tbCollection.setId(id);
+        tbCollection.setUserId(id);
         tbCollection.setMallId(mallId);
 
         return tbCollectionMapper.selectone(tbCollection);
