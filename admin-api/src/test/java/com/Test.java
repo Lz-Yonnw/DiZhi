@@ -1,7 +1,176 @@
 package com;
 
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.EncodeHintType;
+import com.google.zxing.MultiFormatWriter;
+import com.google.zxing.WriterException;
+import com.google.zxing.common.BitMatrix;
+import com.ruoyi.netty.server.entity.PayConstants;
+import com.wechat.pay.contrib.apache.httpclient.WechatPayHttpClientBuilder;
+import com.wechat.pay.contrib.apache.httpclient.auth.PrivateKeySigner;
+import com.wechat.pay.contrib.apache.httpclient.auth.Verifier;
+import com.wechat.pay.contrib.apache.httpclient.auth.WechatPay2Credentials;
+import com.wechat.pay.contrib.apache.httpclient.auth.WechatPay2Validator;
+import com.wechat.pay.contrib.apache.httpclient.cert.CertificatesManager;
+import com.wechat.pay.contrib.apache.httpclient.util.PemUtil;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.util.EntityUtils;
+
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.security.PrivateKey;
+import java.util.HashMap;
+import java.util.Map;
+
 public class Test {
+
+
+    private CloseableHttpClient httpClient;
+
+    private CertificatesManager certificatesManager;
+
+    private Verifier verifier;
+
+    @org.junit.Test
+    public void test() throws Exception {
+        try {
+            String resource = "{\"mchid\":\"1582797471\",\"appid\":\"wx5573711f9b6d2664\",\"out_trade_no\":\"1656691280717111115\",\"transaction_id\":\"4200001520202207027274194452\",\"trade_type\":\"NATIVE\",\"trade_state\":\"SUCCESS\",\"trade_state_desc\":\"支付成功\",\"bank_type\":\"OTHERS\",\"attach\":\"\",\"success_time\":\"2022-07-02T00:01:58+08:00\",\"payer\":{\"openid\":\"oVX2q5zuwZMEetXMTJ3bi6yfluQY\"},\"amount\":{\"total\":1,\"payer_total\":1,\"currency\":\"CNY\",\"payer_currency\":\"CNY\"}}";
+
+            ObjectMapper objectMapper = new ObjectMapper();
+            JsonNode jsonNode = objectMapper.readTree(resource);
+
+            String orderSn = jsonNode.get("out_trade_no").toString();
+
+
+//            MessageProtocol.MessageBase.WxpaySuccessResp.Builder wxpaySuccessRespbuilder = MessageProtocol.MessageBase.WxpaySuccessResp.newBuilder();
+//            wxpaySuccessRespbuilder.setOuttradeno(jsonNode.get("transaction_id").toString());
+//            wxpaySuccessRespbuilder.setPayertotal(jsonNode.get("amount").get("payer_total").toString());
+//            wxpaySuccessRespbuilder.setTradestate(jsonNode.get("trade_state").toString());
+//            wxpaySuccessRespbuilder.setSuccesstime(jsonNode.get("success_time").toString());
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
+
+
+
+//        String nifoewfwff = requestPartnerid("49845194984984", 1, "nifoewfwff");
+//        JSONObject jsonObject = JSONObject.parseObject(nifoewfwff);
+//        System.out.println(nifoewfwff);
+//        Test.zxingCodeCreate(jsonObject.getString("code_url"),300, 300, "E:/borths.jpg", "jpg");
+    }
+
+    /**
+     * App下单
+     * @param total
+     * @param description
+     * @return 预支付ID
+     * @throws Exception
+     */
+    public String requestPartnerid(String orderSn,int total,String description) throws Exception {
+        PrivateKey merchantPrivateKey = PemUtil.loadPrivateKey(new ByteArrayInputStream(PayConstants.privateKey.getBytes("utf-8")));
+        // 获取证书管理器实例
+        certificatesManager = CertificatesManager.getInstance();
+        // 向证书管理器增加需要自动更新平台证书的商户信息
+        certificatesManager.putMerchant(PayConstants.MCH_ID, new WechatPay2Credentials(PayConstants.MCH_ID,
+                        new PrivateKeySigner(PayConstants.MCH_SERIAL_NO, merchantPrivateKey)),
+                PayConstants.API_3KEY.getBytes(StandardCharsets.UTF_8));
+        // 从证书管理器中获取verifier
+        verifier = certificatesManager.getVerifier(PayConstants.MCH_ID);
+        httpClient = WechatPayHttpClientBuilder.create()
+                .withMerchant(PayConstants.MCH_ID, PayConstants.MCH_SERIAL_NO, merchantPrivateKey)
+                .withValidator(new WechatPay2Validator(certificatesManager.getVerifier(PayConstants.MCH_ID)))
+                .build();
+
+        HttpPost httpPost = new HttpPost("https://api.mch.weixin.qq.com/v3/pay/transactions/native");
+        httpPost.addHeader("Accept", "application/json");
+        httpPost.addHeader("Content-type","application/json; charset=utf-8");
+
+        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        ObjectNode rootNode = objectMapper.createObjectNode();
+        rootNode.put("mchid", PayConstants.MCH_ID)
+                .put("appid", PayConstants.APP_ID)
+                .put("notify_url", PayConstants.NOTIFY_URL)
+                .put("description", description)
+                .put("out_trade_no", orderSn);
+        rootNode.putObject("amount")
+                .put("total", total)
+                .put("currency","CNY");
+        try {
+            objectMapper.writeValue(bos, rootNode);
+            httpPost.setEntity(new StringEntity(bos.toString("UTF-8"), "UTF-8"));
+            CloseableHttpResponse response = httpClient.execute(httpPost);
+            String bodyAsString = EntityUtils.toString(response.getEntity());
+            return bodyAsString;
+        }catch (Exception e){
+
+        }
+        return "";
+    }
+
+    //二维码颜色
+    private static final int BLACK = 0xFF000000;
+    //二维码颜色
+    private static final int WHITE = 0xFFFFFFFF;
+
+    /**
+     * <span style="font-size:18px;font-weight:blod;">ZXing 方式生成二维码</span>
+     * @param text    <a href="javascript:void();">二维码内容</a>
+     * @param width    二维码宽
+     * @param height    二维码高
+     * @param outPutPath    二维码生成保存路径
+     * @param imageType        二维码生成格式
+     */
+    public static void zxingCodeCreate(String text, int width, int height, String outPutPath, String imageType){
+        Map<EncodeHintType, String> his = new HashMap<EncodeHintType, String>();
+        //设置编码字符集
+        his.put(EncodeHintType.CHARACTER_SET, "utf-8");
+        try {
+            //1、生成二维码
+            BitMatrix encode = new MultiFormatWriter().encode(text, BarcodeFormat.QR_CODE, width, height, his);
+
+            //2、获取二维码宽高
+            int codeWidth = encode.getWidth();
+            int codeHeight = encode.getHeight();
+
+            //3、将二维码放入缓冲流
+            BufferedImage image = new BufferedImage(codeWidth, codeHeight, BufferedImage.TYPE_INT_RGB);
+            for (int i = 0; i < codeWidth; i++) {
+                for (int j = 0; j < codeHeight; j++) {
+                    //4、循环将二维码内容定入图片
+                    image.setRGB(i, j, encode.get(i, j) ? BLACK : WHITE);
+                }
+            }
+            File outPutImage = new File(outPutPath);
+            //如果图片不存在创建图片
+            if(!outPutImage.exists())
+                outPutImage.createNewFile();
+            //5、将二维码写入图片
+            ImageIO.write(image, imageType, outPutImage);
+        } catch (WriterException e) {
+            e.printStackTrace();
+            System.out.println("二维码生成失败");
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("生成二维码图片失败");
+        }
+    }
+
     /**
     private static java.lang.String getParsingSpecsValueJson(java.lang.String specsData){
         java.lang.String[] split = specsData.split(",");

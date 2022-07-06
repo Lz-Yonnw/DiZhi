@@ -2,13 +2,16 @@ package com.ruoyi.netty.server.entity;
 
 public interface PayConstants {
 
-    String NOTIFY_URL = "http://www.iclickdesign.com"; //支付成功回调地址
+
+
+    String NOTIFY_URL = "https://api.iclickdesign.com/wxPay/"; //回调地址
+
 
     String MCH_ID = "1582797471"; //商户号
 
     String MCH_SERIAL_NO = "17BA244A4574F53CA4E1A650555A1E4AADF95658"; //商户证书序列号
 
-    String API_3KEY = "mglobalsourcing12345678999999999";   //Api密钥
+    String API_3KEY = "mglobalsourcing12345678999999999";   //Api密钥class_id
 
     String APP_ID = "wx5573711f9b6d2664";     //ApId
 

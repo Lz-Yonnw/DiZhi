@@ -3,9 +3,7 @@ package com.ruoyi.web.controller.monitor;
 import com.ruoyi.common.core.controller.BaseController;
 import com.ruoyi.common.core.domain.AjaxResult;
 import com.ruoyi.framework.web.domain.Server;
-import com.ruoyi.netty.common.protobuf.MessageProtocol;
 import com.ruoyi.netty.server.handler.AuthServerHandler;
-import io.netty.channel.ChannelHandlerContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -35,13 +33,13 @@ public class ServerController extends BaseController {
 
     @PostMapping(value = "/voltmeterEquipmentControl")
     public Object voltmeterController(String userId, String msg) throws Exception {
-        ChannelHandlerContext myctx = AuthServerHandler.ctxMap.get(userId);
-        MessageProtocol.MessageBase.Builder authMsg= MessageProtocol.MessageBase.newBuilder();
-        //响应微信支付成功通知
-        MessageProtocol.MessageBase.WxpaySuccessResp.Builder builder = MessageProtocol.MessageBase.WxpaySuccessResp.newBuilder();
-        authMsg.setWxpaySuccessResp(builder);
-        //推送消息给客户端
-        authServerHandler.send(myctx,authMsg,200);
+//        ChannelHandlerContext myctx = AuthServerHandler.ctxMap.get(userId);
+//        MessageProtocol.MessageBase.Builder authMsg= MessageProtocol.MessageBase.newBuilder();
+//        //响应微信支付成功通知
+//        MessageProtocol.MessageBase.WxpaySuccessResp.Builder builder = MessageProtocol.MessageBase.WxpaySuccessResp.newBuilder();
+//        authMsg.setWxpaySuccessResp(builder);
+//        //推送消息给客户端
+//        authServerHandler.send(myctx,authMsg,200);
         return null;
     }
 }

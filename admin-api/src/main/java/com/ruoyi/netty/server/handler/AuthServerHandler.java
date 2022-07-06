@@ -1,12 +1,11 @@
 package com.ruoyi.netty.server.handler;
 
-
 import com.ruoyi.common.constant.Constants;
 import com.ruoyi.common.core.redis.RedisCache;
 import com.ruoyi.common.utils.DateUtils;
 import com.ruoyi.common.utils.StringUtils;
+import com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase;
 import com.ruoyi.netty.server.ChannelRepository;
-import com.ruoyi.netty.server.entity.MyClass;
 import com.ruoyi.netty.server.serviceImpl.AuthServiceImpl;
 import com.ruoyi.netty.util.SMSUtil;
 import com.ruoyi.netty.util.keyUtil;
@@ -14,7 +13,6 @@ import com.ruoyi.system.domain.*;
 import com.ruoyi.system.service.*;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
-import com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.util.AttributeKey;
 import io.netty.util.ReferenceCountUtil;
@@ -22,6 +20,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 import sun.misc.BASE64Decoder;
 
@@ -32,7 +32,7 @@ import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
 import java.net.InetSocketAddress;
-import java.util.HashMap;
+import java.util.Date;
 import java.util.List;
 
 
@@ -516,7 +516,6 @@ public class AuthServerHandler extends ChannelInboundHandlerAdapter {
 					builder.setPrice(tbMall.getPrice().toString());
 					builder.setMallStatus(tbMall.getStatus());
 					builders.addMallResp(builder);
-
 				}
 				authMsg.setCollectionListResp(builders);
 				this.send(ctx,authMsg,200);

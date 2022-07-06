@@ -18,7 +18,7 @@ import java.util.Map;
 
 /**
  * 素材中心
- * 
+ *
  * @author liaozan8888@163.com
  */
 @RestController
@@ -132,6 +132,7 @@ public class TbMaterialController extends BaseController
         List<TbComponent> components = iTbComponentService.selectTbComponentList(tbComponent);
         return AjaxResult.success(components);
     }
+
 
     /**
      * 添加衣服

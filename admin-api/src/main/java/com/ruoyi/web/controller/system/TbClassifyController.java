@@ -46,7 +46,7 @@ public class TbClassifyController extends BaseController
     {
         startPage();
         List<TbClassify> list = tbClassifyService.selectTbClassifyList(tbClassify);
-        
+
       return getDataTable(list);
     }
 
@@ -113,7 +113,12 @@ public class TbClassifyController extends BaseController
     }
 
 
-
+    /**
+     * 部件小块分类
+     * @param parentId 部件小块ID
+     * @param pId 分类上级ID
+     * @return
+     */
     @GetMapping("/getClassifyByComponentId")
     public AjaxResult getClassifyByComponentId(Long parentId,Long pId)
     {

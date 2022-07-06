@@ -92,7 +92,6 @@
           v-hasPermi="['system:info:export']"
         >导出</el-button>
       </el-col>
-      <right-toolbar :showSearch.sync="showSearch" @queryTable="getList"></right-toolbar>
     </el-row>
 
     <el-table v-loading="loading" :data="infoList" @selection-change="handleSelectionChange">
@@ -696,9 +695,6 @@ export default {
     /** 根据模型分类获取所有面料*/
     getPatterByClassId(row,id){
       this.orgPatternId = id;
-
-      console.log(row);
-      console.log(id)
       getClassifyPictureById(row.id).then(response=>{
         this.tbPatternComponents = response.data;
         this.visiblePattern = true;

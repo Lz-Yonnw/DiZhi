@@ -141,7 +141,6 @@ public class TbPatternComponentController extends BaseController
             return AjaxResult.success(tbPatternComponentService.insertTbPatternComponent(patternComponent));
         }
         return AjaxResult.error("系统有误");
-
     }
 
 }

@@ -9,7 +9,7 @@ ruoyi:
   # 实例演示开关
   demoEnabled: true
   # 文件路径 示例（ Windows配置D:/ruoyi/uploadPath，Linux配置 /home/ruoyi/uploadPath）
-  profile: https://app-1255978856.cos.ap-shanghai.myqcloud.com
+  profile: D:/ruoyi/uploadPath/
   # 获取ip地址开关
   addressEnabled: false
   # 验证码类型 math 数组计算 char 字符验证 number 数字验证
@@ -92,9 +92,9 @@ spring:
     druid:
       # 主库数据源
       master:
-#        url: jdbc:mysql://127.0.0.1:3306/costume?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
-#        username: root
-#        password: root
+#        url: jdbc:mysql://119.23.160.222:3306/costume?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+#        username: costume
+#        password: costume
         url: jdbc:mysql://1.15.239.85:3306/costume?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=GMT%2B8
         username: costume
         password: 3rRfnYt4Lj4c6H4D

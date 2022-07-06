@@ -38,18 +38,12 @@
                              <div class="cell" style="text-align: left;margin-left: 20px;font-size: 16px;color: #7DBEFF">基础价:{{data.basicPrice}}</div>
                         </el-card>
                       </div>
-
-
-
-                  </div>
+                    </div>
                     <!-- 如果需要分页器 -->
                     <div class="swiper-pagination"></div>
-
                     <!-- 如果需要导航按钮 -->
                     <!--<div class="swiper-button-prev"></div>-->
 <!--                    <div class="swiper-button-next"></div>-->
-
-
                   </div>
                 </el-collapse-item>
 
@@ -1109,7 +1103,6 @@ export default {
         prevEl: '.swiper-button-prev'
       },
     })
-
   },
   created() {
 
@@ -1385,6 +1378,8 @@ export default {
           this.innerUnfilledPicture=null;
           this.innerSurfaceFabricPicture=null;
           this.innerBottomFabricPicture=null;
+
+          console.log("--------------"+id);
           getClassifyByComponentId(this.compinetId, id).then(
             (response) => {
               this.innerSurfaceFabric = response.data.innerSurfaceFabric;
