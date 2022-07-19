@@ -44,6 +44,12 @@ public class TbModelStyle extends BaseEntity
     @ApiModelProperty("衣服json")
     private String clothesJson;
 
+    @ApiModelProperty("尺码字符串")
+    private String size;
+
+    @ApiModelProperty("尺码表图")
+    private String sizedescUrl;
+
     private Long wardrobeId;
 
     private List<TbPlateClass> tbPlateClassList;//版型大类-部位

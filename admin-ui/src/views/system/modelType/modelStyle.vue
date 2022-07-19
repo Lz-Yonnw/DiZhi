@@ -83,7 +83,6 @@
           v-hasPermi="['system:modelStyle:export']"
         >导出</el-button>
       </el-col>
-	  <right-toolbar :showSearch.sync="showSearch" @queryTable="getList"></right-toolbar>
     </el-row>
 
     <el-table v-loading="loading" :data="modelStyleList" @selection-change="handleSelectionChange">
@@ -149,6 +148,17 @@
         <el-form-item label="编号" prop="code">
           <el-input v-model="form.code" placeholder="请输入编号" />
         </el-form-item>
+
+        <el-form-item label="尺码" prop="size">
+          <el-select v-model="form.size" multiple placeholder="请选择尺码">
+            <el-option
+              v-for="data in modelSizeClassifyList"
+              :key="data.dictValue"
+              :label="data.dictLabel"
+              :value="data.dictLabel">
+            </el-option>
+          </el-select>
+        </el-form-item>
         <el-form-item label="图片" prop="img">
           <el-upload
             class="avatar-uploader"
@@ -159,6 +169,20 @@
             :before-upload="quillImgBefore"
             accept=".jpg,.jpeg,.png">
             <img width="100px" height="100px" v-if="form.img" :src="getImage(form.img)" class="avatar">
+            <i v-else class="el-icon-plus avatar-uploader-icon"></i>
+          </el-upload>
+        </el-form-item>
+
+        <el-form-item label="尺码表" prop="sizedescUrl">
+          <el-upload
+            class="avatar-uploader"
+            :action="uploadImgUrl"
+            :headers="headers"
+            :show-file-list="false"
+            :on-success="handleSizeAvatarSuccess"
+            :before-upload="quillImgBefore"
+            accept=".jpg,.jpeg,.png">
+            <img width="100px" height="100px" v-if="form.sizedescUrl" :src="getImage(form.sizedescUrl)" class="avatar">
             <i v-else class="el-icon-plus avatar-uploader-icon"></i>
           </el-upload>
         </el-form-item>
@@ -177,7 +201,11 @@ import { listModelType } from "@/api/system/modelType";
 import logoImg from '@/assets/image/default-icon.png'
 import { getToken } from "@/utils/auth";
 import { formatDate } from "@/api/system/date";
+import {getDicts} from "@/api/system/dict/data"
 import { addClothesStyle} from "@/api/system/clothesStyle";
+import fa from '../../../element-ui/src/locale/lang/fa'
+import he from '../../../element-ui/src/locale/lang/he'
+import fi from '../../../element-ui/src/locale/lang/fi'
 export default {
   name: "ModelStyle",
   data() {
@@ -213,6 +241,8 @@ export default {
       categoryOptions: [],
       // 树型数据
       treeData: "",
+      //模型尺码分类
+      modelSizeClassifyList:[],
       defaultProps: {
         //树形控件的树形绑定对象
         children: 'children',//设置通过chiledren树形展示节点信息
@@ -252,9 +282,8 @@ export default {
     };
   },
   created() {
-
-
     this.getList()
+    this.getModelSizeClassifyList();
     this.getModelTypeList()
     this.getFourList()
     const id = this.$route.params && this.$route.params.id;
@@ -266,11 +295,20 @@ export default {
   },
 
   methods: {
+    //获取模型尺码分类列表
+    getModelSizeClassifyList(){
+      getDicts("model_size_classify").then(response=>{
+        this.modelSizeClassifyList = response.data;
+      })
+    },
     getImage(img){
       return "https://app-1255978856.cos.ap-shanghai.myqcloud.com/"+img;
     },
     handleAvatarSuccess(res, file) {
       this.form.img = res.fileName;
+    },
+    handleSizeAvatarSuccess(res, file){
+      this.form.sizedescUrl = res.fileName;
     },
     getBaseUrl(){
       return process.env.VUE_APP_IMG_BASE_API;
@@ -424,6 +462,7 @@ export default {
       const id = row.id || this.ids
       getModelStyle(id).then(response => {
         this.form = response.data;
+        this.form.size = JSON.parse(this.form.size)
         this.open = true;
         if(response.data.img != null && response.data.img != ''){
           this.fileList = [{url: process.env.VUE_APP_IMG_BASE_API + response.data.img}]
@@ -436,6 +475,7 @@ export default {
       this.$refs["form"].validate(valid => {
         if (valid) {
           if (this.form.id != null) {
+            this.form.size = JSON.stringify(this.form.size);
             updateModelStyle(this.form).then(response => {
               if (response.code === 200) {
                 this.msgSuccess("修改成功");

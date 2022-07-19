@@ -1,10 +1,10 @@
 package com.ruoyi.system.service.impl;
 
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import com.ruoyi.common.utils.DateUtils;
 import com.ruoyi.system.domain.*;
-import com.ruoyi.system.mapper.TbAddressBookMapper;
-import com.ruoyi.system.mapper.TbOrderDerailsMapper;
-import com.ruoyi.system.mapper.TbOrderMapper;
+import com.ruoyi.system.mapper.*;
 import com.ruoyi.system.service.ITbCouponService;
 import com.ruoyi.system.service.ITbOrderService;
 import com.ruoyi.system.service.TbMallService;
@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -39,17 +40,46 @@ public class TbOrderServiceImpl implements ITbOrderService
     @Autowired
     private ITbCouponService tbCouponService;
 
+    @Autowired
+    private TbModelStyleMapper tbModelStyleMapper;
+
+    @Autowired
+    private TbPlateClassMapper tbPlateClassMapper;
+
+    @Autowired
+    private TbPlateCutWayMapper tbPlateCutWayMapper;
+
+    @Autowired
+    private TbComponentMapper tbComponentMapper;
+
+    @Autowired
+    private TbClassifyMapper tbClassifyMapper;
+
+    @Autowired
+    private TbPatternComponentMapper tbPatternComponentMapper;
+
+    @Autowired
+    private TbPatternMapper tbPatternMapper;
+
+    @Autowired
+    private TbOrderReturnMapper tbOrderReturnMapper;
 
     /**
-     * 查询订单
+     * 根据订单号获取订单详情
      *
-     * @param id 订单主键
+     * @param orderSn 订单主键
      * @return 订单
      */
     @Override
-    public TbOrder selectTbOrderById(Long id)
+    public TbOrder selectTbOrderByOrderSn(String orderSn)
     {
-        return tbOrderMapper.selectTbOrderById(id);
+        //获取当前订单
+        TbOrder tbOrder = new TbOrder();
+        tbOrder.setOrderSn(orderSn);
+        TbOrder result = tbOrderMapper.selectTbOrderList(tbOrder).get(0);
+        //获取当前订单详情
+        getTbOrderAllDesc(result);
+        return result;
     }
 
     /**
@@ -65,6 +95,17 @@ public class TbOrderServiceImpl implements ITbOrderService
     }
 
     /**
+     * 查询当前用户有无购买过此版型模型
+     * @param userId
+     * @param modelStyleId
+     * @return
+     */
+    @Override
+    public Integer selectTborderModelStyleUser(Integer userId, Integer modelStyleId) {
+        return tbOrderMapper.selectTborderModelStyleUser(userId,modelStyleId);
+    }
+
+    /**
      * 查询订单列表  详情
      * @param orderSn
      * @param status
@@ -76,35 +117,148 @@ public class TbOrderServiceImpl implements ITbOrderService
     public List<TbOrder> selectTbOrderDerailsList(String orderSn, Integer status, Integer modelType, Integer userId) {
         //订单列表
         List<TbOrder> tbOrders = tbOrderMapper.selectTbOrderDerailsList(orderSn, status, modelType, userId);
-        for (TbOrder item : tbOrders){
+        //重做订单
+        if(status==13){
+            for (TbOrder item : tbOrders){
+                TbOrderReturn tbOrderReturn = new TbOrderReturn();
+                tbOrderReturn.setOrderSn(item.getOrderSn());
+                tbOrderReturn.setReturnStatus(modelType);
+                item.setReturnList(tbOrderReturnMapper.selectTbOrderReturnList(tbOrderReturn));
 
+            }
+            return tbOrders;
+        }
+        for (TbOrder item : tbOrders){
             TbOrderDerails tbOrderDerails = new TbOrderDerails();
             tbOrderDerails.setOrdersn(item.getOrderSn());
-            //订单详情
-            TbOrderDerails orderDerail = tbOrderDerailsMapper.selectTbOrderDerailsList(tbOrderDerails).get(0);
-            //用户地址
-            TbAddressBook tbAddressBook = tbAddressBookMapper.selectTbAddressBookById(orderDerail.getAddressId());
+            TbAddressBook tbAddressBook = tbAddressBookMapper.selectTbAddressBookById(item.getTbOrderDerails().getAddressId());
             item.setTbAddressBook(tbAddressBook);
-            item.setTbOrderDerails(orderDerail);
         }
         return tbOrders;
     }
 
     /**
-     * 查询订单详情  列表
-     * @param tbOrder
+     * 根据订单编号  获取所有详情消息
+     * @param item
+     */
+    public void getTbOrderAllDesc(TbOrder item){
+        TbOrderDerails tbOrderDerails = new TbOrderDerails();
+        tbOrderDerails.setOrdersn(item.getOrderSn());
+        //订单详情
+        TbOrderDerails orderDerail = tbOrderDerailsMapper.selectTbOrderDerailsList(tbOrderDerails).get(0);
+        //用户地址
+        if(item.getModelType()==1){
+            //商品详情
+            TbMall tbMall = tbMallService.selectTbMallById(orderDerail.getMallId());
+            item.setImgsList(tbMall.getImgsList());
+        }else {
+            //模型属性JSON解析
+            TbModelStyle modelParam = getModelParam(item.getClothesJson());
+            item.setTbModelStyle(modelParam);
+        }
+        if(orderDerail.getCouponId()!=null){
+            //优惠卷
+            item.setTbCoupon(tbCouponService.selectTbCouponById(orderDerail.getCouponId()));
+        }
+        if(item.getStatus()==6||item.getStatus()==11){
+            //退款  查询
+            TbOrderReturn tbOrderReturn = tbOrderReturnMapper.selectTbOrderReturnByOrderSn(item.getOrderSn());
+            item.setTbOrderReturn(tbOrderReturn);
+        }
+        if(item.getStatus()==13){
+            //重做
+            TbOrderReturn tbOrderReturn = new TbOrderReturn();
+            tbOrderReturn.setOrderSn(item.getOrderSn());
+            item.setReturnList(tbOrderReturnMapper.selectTborderReturnAddressList(tbOrderReturn));
+        }
+        TbAddressBook tbAddressBook = tbAddressBookMapper.selectTbAddressBookById(orderDerail.getAddressId());
+        item.setTbAddressBook(tbAddressBook);
+        item.setTbOrderDerails(orderDerail);
+    }
+
+    /**
+     * 解析 模型部件参数json
+     * @param json
      * @return
      */
-    @Override
-    public List<TbOrder> selectTbOrderDerailsList(TbOrder tbOrder) {
+    public TbModelStyle getModelParam(String json){
+        JSONArray jsonArray = JSONArray.parseArray(json);
 
-        return tbOrderMapper.selectTbOrderList(tbOrder);
+        //当前版型小类
+        Long modelStyleId = jsonArray.getJSONObject(0).getLong("parentId");
+        TbModelStyle tbModelStyle = tbModelStyleMapper.selectTbModelStyleById(modelStyleId);
+
+        ArrayList<TbPlateClass> plateClassList = new ArrayList<TbPlateClass>();
+        //版型大类-部位
+        for (int i =0;i<jsonArray.size();i++){
+            //版型大类-部位
+            JSONObject plateClassObject = jsonArray.getJSONObject(i);
+            Long plateClassId = plateClassObject.getLong("id");
+            TbPlateClass tbPlateClass = tbPlateClassMapper.selectTbPlateClassById(plateClassId);
+            plateClassList.add(tbPlateClass);
+
+            String plateCutWayJSON = plateClassObject.getString("plateCutWay");
+            //板块小类-裁剪方式
+            JSONArray plateCutWay = JSONArray.parseArray(plateCutWayJSON);
+            ArrayList<TbPlateCutWay> tbPlateCutWayList = new ArrayList<TbPlateCutWay>();
+            for (int j=0;j<plateCutWay.size();j++){
+                JSONObject plateCutWayObject = plateCutWay.getJSONObject(j);
+                Long id = plateCutWayObject.getLong("id");
+                TbPlateCutWay tbPlateCutWay = tbPlateCutWayMapper.selectTbPlateCutWayById(id);
+                tbPlateCutWayList.add(tbPlateCutWay);
+
+                String componentJSON = plateCutWayObject.getString("componentList");
+                //部位
+                JSONArray component = JSONArray.parseArray(componentJSON);
+                ArrayList<TbComponent> tbComponentList = new ArrayList<TbComponent>();
+                for (int l=0;l<component.size();l++){
+                    JSONObject componentObject = component.getJSONObject(l);
+                    Long componentId = componentObject.getLong("id");
+                    TbComponent tbComponent = tbComponentMapper.selectTbComponentById(componentId);
+                    tbComponentList.add(tbComponent);
+
+                    //分类
+                    String tbClassify = componentObject.getString("outBottomFabric");
+                    if(tbClassify==null){
+                        continue;
+                    }
+                    JSONArray tbClassifyJSON = JSONArray.parseArray(tbClassify);
+                    ArrayList<TbClassify> classifyList = new ArrayList<TbClassify>();
+                    for (int c=0;c<tbClassifyJSON.size();c++){
+                        JSONObject tbClassifyJObject = tbClassifyJSON.getJSONObject(c);
+                        Long tbClassifyId = tbClassifyJObject.getLong("id");
+                        TbClassify classify = tbClassifyMapper.selectTbClassifyById(tbClassifyId);
+                        classifyList.add(classify);
+
+                        String pattern = tbClassifyJObject.getString("pattern");
+                        //图库-分类-部位中间类
+                        JSONArray tbPatternComponentJSON = JSONArray.parseArray(pattern);
+                        ArrayList<TbPattern> tbPatternList = new ArrayList<TbPattern>();
+                        for (int d=0;d<tbPatternComponentJSON.size();d++){
+                            JSONObject tbPatternComponentObject = tbPatternComponentJSON.getJSONObject(d);
+                            Long tbPatternComponentObjectId = tbPatternComponentObject.getLong("id");
+                            TbPatternComponent patternComponent = tbPatternComponentMapper.selectTbPatternComponentById(tbPatternComponentObjectId);
+                            if(patternComponent!=null){
+                                //获取面料
+                                TbPattern tbPattern = tbPatternMapper.selectTbPatternById(patternComponent.getPatternId());
+                                tbPatternList.add(tbPattern);
+                            }
+                        }
+                        classify.setTbPatternList(tbPatternList);
+                    }
+                    tbComponent.setTbClassifyList(classifyList);
+                }
+                tbPlateCutWay.setTbComponentList(tbComponentList);
+            }
+            tbPlateClass.setTbPlateCutWayList(tbPlateCutWayList);
+        }
+        tbModelStyle.setTbPlateClassList(plateClassList);
+        return tbModelStyle;
     }
 
 
     /**
      * 添加订单
-     * @param orderSn  订单号
      * @param name      订单名称
      * @param image     订单图
      * @param payAmount 订单金额
@@ -125,7 +279,14 @@ public class TbOrderServiceImpl implements ITbOrderService
      */
     @Transactional
     @Override
-    public int insertTbOrder(String orderSn, String name, String image, String payAmount, String amount, Integer storeId, Integer mallId, Integer userId, Integer addressId, Integer couponId, String size, String colour, Integer quantity, String remark, Integer payType, Integer modelType, String clothes_json) {
+    public String insertTbOrder(String name, String image, String payAmount, String amount, Integer storeId, Integer mallId, Integer userId, Integer addressId, Integer couponId, String size, String colour, Integer quantity, String remark, Integer payType, Integer modelType, String clothes_json) {
+        //订单号生成
+        String orderSn = "10";
+        for (Integer i = 0; i < 18; i++) {
+            String randChar = String.valueOf(Math.round(Math.random() * 9));
+            orderSn = orderSn.concat(randChar);
+        }
+
         TbOrder tbOrder = new TbOrder();
         tbOrder.setOrderSn(orderSn);
         tbOrder.setName(name);
@@ -151,7 +312,7 @@ public class TbOrderServiceImpl implements ITbOrderService
             tbOrderDerails.setCouponAmount(tbCoupon.getCouponPrice());
         }
         tbOrderDerails.setSize(size);
-        tbOrderDerails.setQuantity(quantity);
+        tbOrderDerails.setQuantity(quantity.intValue());
         //计算总金额  数量乘以单价
         BigDecimal count = new BigDecimal(quantity.toString());
         tbOrderDerails.setTotalAmount(count.multiply(new BigDecimal(amount)));
@@ -180,7 +341,8 @@ public class TbOrderServiceImpl implements ITbOrderService
         //添加订单
         tbOrderMapper.insertTbOrder(tbOrder);
         //添加订单详情
-        return tbOrderDerailsMapper.insertTbOrderDerails(tbOrderDerails);
+        tbOrderDerailsMapper.insertTbOrderDerails(tbOrderDerails);
+        return orderSn;
     }
 
 
@@ -194,6 +356,16 @@ public class TbOrderServiceImpl implements ITbOrderService
     public int updateTbOrder(TbOrder tbOrder)
     {
         return tbOrderMapper.updateTbOrder(tbOrder);
+    }
+
+    /**
+     * 根据订单号修改
+     * @param tbOrder
+     * @return
+     */
+    @Override
+    public int updateTbOrderByOrderSn(TbOrder tbOrder) {
+        return tbOrderMapper.updateTbOrderByOrderSn(tbOrder);
     }
 
     /**
@@ -218,5 +390,31 @@ public class TbOrderServiceImpl implements ITbOrderService
     public int deleteTbOrderById(String id,Integer userId)
     {
         return tbOrderMapper.deleteTbOrderById(id,userId);
+    }
+
+    /**
+     * 申请 1：退货  2：重做 3：取消  订单
+     * @param tbOrderReturn
+     * @return
+     */
+    @Transactional
+    @Override
+    public int applyTbOrderRefund(TbOrderReturn tbOrderReturn,Integer type) {
+        TbOrder tbOrder = tbOrderMapper.selectTbOrderDerailsList(tbOrderReturn.getOrderSn(), null, null, null).get(0);
+        switch (type){
+            case 1:
+                tbOrder.setStatus(6);
+                break;
+            case 2:
+                tbOrder.setStatus(13);
+                break;
+            case 3:
+                tbOrder.setStatus(12);
+                break;
+        }
+        //修改订单状态
+        tbOrderMapper.updateTbOrder(tbOrder);
+        //保存订单操作信息
+        return tbOrderReturnMapper.insertTbOrderReturn(tbOrderReturn);
     }
 }

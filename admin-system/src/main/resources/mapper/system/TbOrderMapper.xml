@@ -41,6 +41,40 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             <result property="totalAmount"    column="total_amount"    />
         </association>
     </resultMap>
+    <!-- 重做订单返回map -->
+    <resultMap type="com.ruoyi.system.domain.TbOrder" id="TbOrderReturnResult">
+        <result property="orderSn"    column="order_sn"    />
+        <result property="name"    column="name"    />
+        <result property="phone"    column="phone"    />
+        <result property="consignee"    column="consignee"    />
+        <result property="image"    column="image"    />
+        <result property="payAmount"    column="pay_amount"    />
+        <result property="status"    column="status"    />
+        <result property="modelType"    column="model_type"    />
+        <collection property="returnList" ofType="com.ruoyi.system.domain.TbOrderReturn">
+            <result property="returnWhy"    column="return_why"    />
+            <result property="returnWhydesc"    column="return_whyDesc"    />
+            <result property="returnImags"    column="return_imags"    />
+            <result property="returnLogisticssn"    column="return_logisticsSn"    />
+            <result property="newAddressid"    column="new_addressId"    />
+            <result property="newClothesjson"    column="new_clothesJson"    />
+            <result property="returnStatus"    column="return_status"    />
+        </collection>
+    </resultMap>
+
+    <!-- 重做订单查询 -->
+    <select id="selectTborderByOrderSnReturn" resultMap="TbOrderReturnResult">
+        select tborder.order_sn,tborder.name,tborder.phone,tborder.consignee,tborder.image,tborder.pay_amount,tborder.model_type,tborder.`status`,tborderReturn.return_time,tborderReturn.return_why from tb_order tborder
+        INNER JOIN tb_order_return tborderReturn
+        on tborder.order_sn = tborderReturn.order_sn
+        <where>
+            <if test="orderSn != null  and orderSn != ''"> and tborder.order_sn = #{orderSn}</if>
+            <if test="status != null and status!=0 ">
+                    and tborder.status = #{status}
+            </if>
+            <if test="modelType != null and modelType!=0 "> and tborder.model_type = #{modelType}</if>
+        </where>
+    </select>
 
     <sql id="selectTbOrderVo">
         select id, order_sn, name, phone, consignee, image, pay_amount, create_time, pay_type, pay_account, pay_time, refund_time, received_time, remark, status, model_type, del_time, del_flag, del_by, time_out_flag, clothes_json from tb_order
@@ -60,7 +94,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             <if test="payTime != null "> and pay_time = #{payTime}</if>
             <if test="refundTime != null "> and refund_time = #{refundTime}</if>
             <if test="receivedTime != null "> and received_time = #{receivedTime}</if>
-            <if test="status != null "> and status = #{status}</if>
+            <if test="status != null ">
+             and status = #{status}
+
+            </if>
             <if test="modelType != null "> and model_type = #{modelType}</if>
             <if test="delTime != null "> and del_time = #{delTime}</if>
             <if test="delBy != null "> and del_by = #{delBy}</if>
@@ -68,6 +105,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             <if test="clothesJson != null "> and clothes_json = #{clothesJson}</if>
         </where>
     </select>
+
+
+
 
     <select id="selectTbOrderById" parameterType="Long" resultMap="TbOrderResult">
         <include refid="selectTbOrderVo"/>
@@ -79,7 +119,14 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         select * from tb_order o INNER JOIN tb_order_derails d on o.order_sn=d.orderSn
         <where>
             <if test="orderSn != null  and orderSn != ''"> and o.order_sn = #{orderSn}</if>
-            <if test="status != null and status!=0 "> and o.status = #{status}</if>
+            <if test="status != null and status!=0 ">
+                <if test="status==11 or status==6">
+                    and (o.status = 11 or o.status = 6)
+                </if>
+                <if test="status!=11 and status!=6">
+                    and o.status = #{status}
+                </if>
+            </if>
             <if test="modelType != null and modelType!=0 "> and o.model_type = #{modelType}</if>
             <if test="userId != null "> and d.user_id = #{userId}</if>
         </where>
@@ -161,6 +208,35 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         where id = #{id}
     </update>
 
+    <!-- 根据订单号修改 -->
+    <update id="updateTbOrderByOrderSn" parameterType="TbOrder">
+        update tb_order
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="orderSn != null">order_sn = #{orderSn},</if>
+            <if test="name != null">name = #{name},</if>
+            <if test="phone != null">phone = #{phone},</if>
+            <if test="consignee != null">consignee = #{consignee},</if>
+            <if test="image != null">image = #{image},</if>
+            <if test="payAmount != null">pay_amount = #{payAmount},</if>
+            <if test="createTime != null">create_time = #{createTime},</if>
+            <if test="payType != null">pay_type = #{payType},</if>
+            <if test="payAccount != null">pay_account = #{payAccount},</if>
+            <if test="payTime != null">pay_time = #{payTime},</if>
+            <if test="refundTime != null">refund_time = #{refundTime},</if>
+            <if test="receivedTime != null">received_time = #{receivedTime},</if>
+            <if test="remark != null">remark = #{remark},</if>
+            <if test="status != null">status = #{status},</if>
+            <if test="modelType != null">model_type = #{modelType},</if>
+            <if test="delTime != null">del_time = #{delTime},</if>
+            <if test="delFlag != null">del_flag = #{delFlag},</if>
+            <if test="delBy != null">del_by = #{delBy},</if>
+            <if test="timeOutFlag != null">time_out_flag = #{timeOutFlag},</if>
+            <if test="clothesJson != null">clothes_json = #{clothesJson},</if>
+        </trim>
+        where order_sn = #{orderSn}
+    </update>
+
+
     <update id="deleteTbOrderById">
         update tb_order set del_flag = 2,del_time = now(),del_by = #{userId} where order_sn = #{orderSn}
     </update>
@@ -171,4 +247,5 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             #{orderSn}
         </foreach>
     </update>
+
 </mapper>

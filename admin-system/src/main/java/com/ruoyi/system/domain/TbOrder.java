@@ -9,6 +9,7 @@ import org.apache.commons.lang3.builder.ToStringStyle;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 /**
  * 订单对象 tb_order
@@ -105,6 +106,14 @@ public class TbOrder extends BaseEntity
     private TbAddressBook tbAddressBook; //用户地址
 
     private TbCoupon tbCoupon;//优惠卷
+
+    private List<TbMallImgs> imgsList;//商品
+
+    private TbModelStyle tbModelStyle;//模型
+
+    private TbOrderReturn tbOrderReturn;//退款  退货
+
+    private List<TbOrderReturn> returnList;
 
     @Override
     public String toString() {

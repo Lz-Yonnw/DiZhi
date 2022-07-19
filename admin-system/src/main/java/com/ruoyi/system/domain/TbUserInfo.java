@@ -162,7 +162,7 @@ public class TbUserInfo extends BaseEntity
     @ApiModelProperty("体重")
     private BigDecimal weight;
 
+    private Long levelId;//等级ID
 
-
-
+    private Integer gradeValue;//经验值
 }

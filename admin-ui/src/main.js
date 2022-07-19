@@ -10,7 +10,6 @@ import './assets/styles/element-variables.scss'
 import '@/assets/styles/index.scss' // global css
 import '@/assets/styles/ruoyi.scss' // ruoyi css
 import App from './App'
-import store from './store'
 import router from './router'
 import permission from './directive/permission'
 
@@ -20,6 +19,7 @@ import { getDicts } from "@/api/system/dict/data";
 import { getConfigKey } from "@/api/system/config";
 import { parseTime, resetForm, addDateRange, selectDictLabel, selectDictLabels, download, handleTree, commonSelect } from "@/utils/ruoyi";
 import Pagination from "@/components/Pagination";
+import store from './store'
 
 Vue.directive('dialogDrag',{
   bind(el,binding,vnode){

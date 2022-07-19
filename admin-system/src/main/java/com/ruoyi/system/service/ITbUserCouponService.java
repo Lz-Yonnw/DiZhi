@@ -20,6 +20,12 @@ public interface ITbUserCouponService
      */
     public TbUserCoupon selectTbUserCouponById(Long id);
 
+    /**
+     * 优惠价数量
+     * @param userId
+     * @return
+     */
+    public int selectTbUserCouponCountByUserId(Integer userId);
 
     /**
      * 根据用户查询

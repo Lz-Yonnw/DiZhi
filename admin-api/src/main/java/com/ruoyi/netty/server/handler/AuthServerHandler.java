@@ -1,15 +1,20 @@
 package com.ruoyi.netty.server.handler;
 
+import com.alibaba.fastjson.JSONObject;
 import com.ruoyi.common.constant.Constants;
+import com.ruoyi.common.core.domain.entity.SysDictData;
 import com.ruoyi.common.core.redis.RedisCache;
 import com.ruoyi.common.utils.DateUtils;
 import com.ruoyi.common.utils.StringUtils;
 import com.ruoyi.netty.common.protobuf.MessageProtocol.MessageBase;
 import com.ruoyi.netty.server.ChannelRepository;
+import com.ruoyi.netty.server.entity.Domain;
 import com.ruoyi.netty.server.serviceImpl.AuthServiceImpl;
+import com.ruoyi.netty.util.PayUtil;
 import com.ruoyi.netty.util.SMSUtil;
 import com.ruoyi.netty.util.keyUtil;
 import com.ruoyi.system.domain.*;
+import com.ruoyi.system.domain.dto.TbUserDescDto;
 import com.ruoyi.system.service.*;
 import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerContext;
@@ -99,6 +104,9 @@ public class AuthServerHandler extends ChannelInboundHandlerAdapter {
 
 	@Autowired
 	RedisCache redisCache;
+
+	@Value("${domain_name}")
+	private String domainName;
 
 	/**
 	 * 通道建立调用
@@ -251,6 +259,7 @@ public class AuthServerHandler extends ChannelInboundHandlerAdapter {
 									.setParentId(component.getParentId()).setPicture(component.getPicture()==null?"":component.getPicture()).setModelUrl(component.getModelUrl()==null?"":component.getModelUrl())
 									.setBasicPrice(new Double(component.getBasicPrice().toString())).setMaterialDosage(new Double(component.getMaterialDosage().toString()))
 									.setQrCode(component.getQrCode()==null?"":component.getQrCode()).setSuffixCode(component.getSuffixCode()==null?"":component.getSuffixCode());
+							mComponent.setModelUrl(component.getModelUrl());
 							TbClassify classify = new TbClassify();
 							classify.setParentId(component.getId());
 							List<TbClassify> classifies = iTbClassifyService.selectTbClassifyList(classify);
@@ -390,8 +399,7 @@ public class AuthServerHandler extends ChannelInboundHandlerAdapter {
 				}
 				authMsg.setUserWardrobeListResp(list);
 				this.send(ctx,authMsg,200);
-				}
-			else if(msgBase.getType().equals(MessageBase.Type.WHITE_DESIGN_REQ)){
+			}else if(msgBase.getType().equals(MessageBase.Type.WHITE_DESIGN_REQ)){
 				log.info("查看白膜==={}");
 				MessageBase.Builder authMsg= MessageBase.newBuilder();
 				authMsg.setClientId(ctx.channel().id().toString());

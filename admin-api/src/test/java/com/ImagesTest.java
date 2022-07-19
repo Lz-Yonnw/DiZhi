@@ -1,8 +1,39 @@
 package com;
 
+import java.io.IOException;
+
 public class ImagesTest {
 
-//    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
+
+        String uid = "10";
+        for (Integer i = 0; i < 32; i++) {
+            String randChar = String.valueOf(Math.round(Math.random() * 9));
+            uid = uid.concat(randChar);
+        }
+        System.out.println(uid);
+
+        //AuthServerHandler.ctxMap.get("165733324087415");
+//        //模型详情
+//        String clothesJson = "[{\"id\":\"15\",\"parentId\":\"1\",\"plateCutWay\":[{\"id\":\"16\",\"parentId\":\"15\",\"componentList\":[{\"id\":\"62\",\"parentId\":\"16\",\"outBottomFabric\":[{\"id\":\"18\",\"parentId\":\"62\",\"pattern\":[{\"id\":\"194\",\"typeId\":18}]}]}]}]},{\"id\":\"11\",\"parentId\":\"1\",\"plateCutWay\":[{\"id\":\"8\",\"parentId\":\"11\",\"componentList\":[{\"id\":\"53\",\"parentId\":\"8\",\"outBottomFabric\":[{\"id\":\"6\",\"parentId\":\"53\",\"pattern\":[{\"id\":\"383\",\"typeId\":6}]}]},{\"id\":\"54\",\"parentId\":\"8\",\"outBottomFabric\":[{\"id\":\"7\",\"parentId\":\"54\",\"pattern\":[{\"id\":\"350\",\"typeId\":7}]}]},{\"id\":\"55\",\"parentId\":\"8\",\"outBottomFabric\":[{\"id\":\"8\",\"parentId\":\"55\",\"pattern\":[{\"id\":\"354\",\"typeId\":8}]}]},{\"id\":\"56\",\"parentId\":\"8\",\"outBottomFabric\":[{\"id\":\"9\",\"parentId\":\"56\",\"pattern\":[{\"id\":\"358\",\"typeId\":9}]}]}]}]},{\"id\":\"1\",\"parentId\":\"1\",\"plateCutWay\":[{\"id\":\"3\",\"parentId\":\"1\",\"componentList\":[{\"id\":\"63\",\"parentId\":\"3\",\"outBottomFabric\":[{\"id\":\"20\",\"parentId\":\"63\",\"pattern\":[{\"id\":\"37\",\"typeId\":20}]}]},{\"id\":\"64\",\"parentId\":\"3\",\"outBottomFabric\":[{\"id\":\"21\",\"parentId\":\"64\",\"pattern\":[{\"id\":\"52\",\"typeId\":21}]}]},{\"id\":\"65\",\"parentId\":\"3\",\"outBottomFabric\":[{\"id\":\"22\",\"parentId\":\"65\",\"pattern\":[{\"id\":\"68\",\"typeId\":22}]}]},{\"id\":\"66\",\"parentId\":\"3\",\"outBottomFabric\":[{\"id\":\"23\",\"parentId\":\"66\",\"pattern\":[{\"id\":\"84\",\"typeId\":23}]}]},{\"id\":\"67\",\"parentId\":\"3\",\"outBottomFabric\":[{\"id\":\"24\",\"parentId\":\"67\",\"pattern\":[{\"id\":\"100\",\"typeId\":24}]}]}]}]},{\"id\":\"13\",\"parentId\":\"1\",\"plateCutWay\":[{\"id\":\"12\",\"parentId\":\"13\",\"componentList\":[{\"id\":\"60\",\"parentId\":\"12\",\"outBottomFabric\":[{\"id\":\"16\",\"parentId\":\"60\",\"pattern\":[{\"id\":\"338\",\"typeId\":16}]}]}]}]}]";
+//        try {
+//            JSONArray jsonArray = JSONArray.parseArray(clothesJson);
+//
+//            for(int i = 0; i<jsonArray.size();i++){
+//                //版型小类
+//                JSONObject jsonObject = jsonArray.getJSONObject(i);
+//                //版心大类
+//                JSONObject plateCutWay = JSONArray.parseArray(jsonObject.getString("plateCutWay")).getJSONObject(0);
+//
+//            }
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+
+
+
+
 //        //图片路径
 //        String imagePath = "E:\\DianZhi\\点指服装物料（后端版）\\所有衣服款式（后端完整版）\\布料\\净色天鹅绒\\TER00019（湖蓝色)29cm 四方连续.png";
 //
@@ -22,5 +53,5 @@ public class ImagesTest {
 //                // //asBufferedImage()返回BufferedImage  ImageIO.write(thumbnail,"jpg",newFile("c:/a380_1280x1024_BufferedImage.jpg"));
 ////                .asBufferedImages()
 //                .toFile(genePath);
-//    }
+    }
 }

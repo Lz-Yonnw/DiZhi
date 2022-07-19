@@ -17,6 +17,7 @@ import org.apache.http.util.EntityUtils;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
+import java.net.InetAddress;
 import java.nio.charset.StandardCharsets;
 import java.security.PrivateKey;
 
@@ -27,8 +28,13 @@ public class PayClass {
 
     private static Verifier verifier;
     public static void main(String[] args) throws Exception {
-        String result = requestPartnerid(System.currentTimeMillis() + "", 100, "真的很好");
-        System.out.println(result);
+        InetAddress localHost = InetAddress.getLocalHost();
+        System.out.println("localhost: " + localHost);
+        System.out.println("getHostAddress:  " + localHost.getHostAddress());
+        System.out.println("getHostName:  " + localHost.getHostName());
+
+//        String result = requestPartnerid(System.currentTimeMillis() + "", 100, "真的很好");
+//        System.out.println(result);
     }
 
     public static String requestPartnerid(String orderSn, int total, String description) throws Exception {

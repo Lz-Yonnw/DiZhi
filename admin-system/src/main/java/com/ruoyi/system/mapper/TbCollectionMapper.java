@@ -2,6 +2,7 @@ package com.ruoyi.system.mapper;
 
 import com.ruoyi.common.annotation.DataSource;
 import com.ruoyi.system.domain.TbCollection;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -18,6 +19,14 @@ public interface TbCollectionMapper {
     void insertOne(TbCollection tbCollection);
 
     List<Long> selectMallIds(Long id);
+
+    /**
+     * 收藏数量
+     * @param userId
+     * @return
+     */
+    @Select("select count(*) from tb_collection where user_id = #{userId}")
+    public int selectTbCollectionCountByUserId(Integer userId);
 
     /**
      * 查询收藏列表

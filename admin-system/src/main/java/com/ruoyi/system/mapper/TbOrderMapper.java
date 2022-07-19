@@ -2,6 +2,7 @@ package com.ruoyi.system.mapper;
 
 import com.ruoyi.system.domain.TbOrder;
 import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
@@ -20,6 +21,28 @@ public interface TbOrderMapper
      * @return 订单
      */
     public TbOrder selectTbOrderById(Long id);
+
+    /**
+     * 所有重做订单
+     * @param orderSn
+     * @return
+     */
+    public List<TbOrder> selectTborderByOrderSnReturn(@Param("orderSn") String orderSn,
+                                                      @Param("status")Integer status,
+                                                      @Param("modelType")Integer modelType);
+
+
+    /**
+     * 查询当前用户有无购买过此版型模型
+     * @param userId
+     * @param modelStyleId
+     * @return
+     */
+    @Select("select count(*) from tb_order tborder\n" +
+            "INNER JOIN tb_order_derails tborderDerails\n" +
+            "on tborder.order_sn = tborderDerails.orderSn\n" +
+            "where tborderDerails.user_id = #{userId} and tborderDerails.mall_id = #{modelStyleId} and (tborder.model_type = 2 or tborder.model_type = 3)")
+    public Integer selectTborderModelStyleUser(Integer userId,Integer modelStyleId);
 
     /**
      * 查询订单详情
@@ -57,6 +80,13 @@ public interface TbOrderMapper
      * @return 结果
      */
     public int updateTbOrder(TbOrder tbOrder);
+
+    /**
+     * 根据订单号修改
+     * @param tbMall
+     * @return
+     */
+    public int updateTbOrderByOrderSn(TbOrder tbOrder);
 
     /**
      * 删除订单

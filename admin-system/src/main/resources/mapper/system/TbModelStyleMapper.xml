@@ -3,22 +3,24 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ruoyi.system.mapper.TbModelStyleMapper">
-    
+
     <resultMap type="TbModelStyle" id="TbModelStyleResult">
         <result property="id"    column="id"    />
         <result property="name"    column="name"    />
         <result property="code"    column="code"    />
         <result property="img"    column="img"    />
         <result property="parentId"    column="parent_id"    />
+        <result property="size"    column="size"    />
+        <result property="sizedescUrl"    column="sizedesc_url"    />
     </resultMap>
 
     <sql id="selectTbModelStyleVo">
-        select id, name,img, code, parent_id from tb_model_style
+        select id, name,img, code, parent_id,size,sizedesc_url from tb_model_style
     </sql>
 
     <select id="selectTbModelStyleList" parameterType="TbModelStyle" resultMap="TbModelStyleResult">
         <include refid="selectTbModelStyleVo"/>
-        <where>  
+        <where>
             <if test="name != null  and name != ''"> and name like concat('%', #{name}, '%')</if>
             <if test="code != null  and code != ''"> and code like concat ('%',#{code},'%')</if>
             <if test="parentId != null "> and parent_id = #{parentId}</if>
@@ -36,7 +38,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </select>
 
 
-        
+
     <insert id="insertTbModelStyle" parameterType="TbModelStyle" useGeneratedKeys="true" keyProperty="id">
         insert into tb_model_style
         <trim prefix="(" suffix=")" suffixOverrides=",">
@@ -45,6 +47,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             <if test="img != null">img,</if>
             <if test="clothesJson != null">clothes_json,</if>
             <if test="parentId != null">parent_id,</if>
+            <if test="size != null">size,</if>
+            <if test="sizedescUrl != null">sizedesc_url,</if>
          </trim>
         <trim prefix="values (" suffix=")" suffixOverrides=",">
             <if test="name != null">#{name},</if>
@@ -63,6 +67,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
             <if test="img != null">img = #{img},</if>
             <if test="clothesJson != null">clothes_json = #{clothesJson},</if>
             <if test="parentId != null">parent_id = #{parentId},</if>
+            <if test="size != null">size = #{size},</if>
+            <if test="sizedescUrl != null">sizedesc_url = #{sizedescUrl},</if>
         </trim>
         where id = #{id}
     </update>
@@ -72,10 +78,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     </delete>
 
     <delete id="deleteTbModelStyleByIds" parameterType="String">
-        delete from tb_model_style where id in 
+        delete from tb_model_style where id in
         <foreach item="id" collection="array" open="(" separator="," close=")">
             #{id}
         </foreach>
     </delete>
-    
+
 </mapper>

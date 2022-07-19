@@ -2,10 +2,51 @@ package com.ruoyi.netty.server.entity;
 
 public interface PayConstants {
 
+//    String NOTIFY_URL = "https://api.iclickdesign.com/wxPay/"; //回调地址
+//
+//    String MCH_ID = "1587927351"; //商户号
+//
+//    String MCH_SERIAL_NO = "4E2D0512951DFF4C828CDB824BB7E86330B5CEB2"; //商户证书序列号
+//
+//    String API_3KEY = "WIUBGRRJHQCBSIHVPBYQPVSBKMPWGZDX";   //Api密钥class_id
+//
+//    String APP_ID = "wx9f70cd2204e5e8a8";     //ApId
+//
+//    String PACKAGE = "Sign=WXPay";  //签名国定字符串
+//
+//    //商户私钥
+//    static final String privateKey = "-----BEGIN PRIVATE KEY-----\n" +
+//            "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDbVBLPbM2XraWY\n" +
+//            "nInLKAnBd6Wo3UsIDY4I0ty2+VI9lxKWSt4R40M7TxMApJh+M+F3z2wLICqm4LzG\n" +
+//            "Rwpf8DqHa+HsxslaOLjFUKEyyMGZOigTHtKQj0os0MmVVz6bFW/CTciWhSsRmX3L\n" +
+//            "D1objxzPvER74r7XKnfLU+Vh7pFZsbt7++wf5ZV+GNaKreOtYVngORPQphOq/vmY\n" +
+//            "abmQMRhLyzJ4LbX+BYW0zG8r+wT398SjXrnL8gSSX0yfiLuEfqlOohSPqDCt7vV2\n" +
+//            "mviLODgDsYbcp+f31igqFESIWJAO4YsxnvYDQt2rMO/wnqfNw+QY3FpfNB0FdAq6\n" +
+//            "iSbDNMGnAgMBAAECggEBALZ/qnc2TYwcTWJDPtTwp813xTxRhpFY1gq5ijYmFyxw\n" +
+//            "fGLaQRYZSGQdU+6BBvJcMQwEaB6J0XOyJOHHUvapacotFnxynDCaagSlJryfF5hs\n" +
+//            "L9RZHVR0JoBL6rB9O/bHS4seNf4pKMEoOuewCoZL+ulP+pwq/CkFiVCCqqdmX0OF\n" +
+//            "ea3VL89I+3LMTF8sOST58oqeq3tu+B+l5XqW1PbJoLpLgC49JyIEd9Mq5cW0MY5X\n" +
+//            "1yNVWDSKwrpeIk+hWufJx4aGVCZWwAyK64y/rxVroyyEvUz1qwLbpk4DuPNJ54Rf\n" +
+//            "Rzw93KTwZzInkgpP1PlZdL+MCaqx+lVLYffqYQVbzWECgYEA9TW65eXfgaQF4MUe\n" +
+//            "phKm+Q2dfa0qGPYXGAPGuA3hdsFNrIWP3wTRdZ2Y/XKLJXNlfAt74DcHDn8XPAWK\n" +
+//            "5i08kgsFY4/hCG1YH+V6bOVmTuBa/vOuXIRq0Yi5MRJ1beXeMcjV05+BxoKW0QsF\n" +
+//            "QXxSacBE34QiQgeIo4KkNIcQQ20CgYEA5PrKajxi0+7EwPOoGebgf+9jgW93myu9\n" +
+//            "9qWviGvNiiAORVy0r6MzwPZFOPl6uvH76+PvQ6sZdXp/+4FueHDeO53oF1X+JY01\n" +
+//            "SEOnIMIkpMRIy7DG9P/UE5D9mqqfAzji2LBJekHkhhsIBvcEMX18Jxk//Ne/alPW\n" +
+//            "5q+70W5Z2OMCgYEAlrWnYZWfgbamRjfhVoEwTvKnUY8UyLK4DvKDOKyPXsYAT4Dn\n" +
+//            "pFL5yihK17uG+kWqoksMoAoyNB640RM3A7HaAIj1jvPng55xA2mvjS6RavlJ9Fkh\n" +
+//            "WYupe49lA1wtAJa/simWArOOt8ublnAHkvAuVwDtU9OKmrq2qIirE/3PaSECgYBW\n" +
+//            "Jw4VnpbIiqO4vXRYGogJWrajsp7b4T9eF8TNnVH+UEVOT60kEFGenoo4/5Tv1bAl\n" +
+//            "duNFIJE5pFeW94HrCvxyjd0POqme01xiziGJr8I9xCRnjyGseL0Ah6MDmIKvoa2o\n" +
+//            "PdvHhhdHZdBFXpdTT5Vw2I08wqggh17p+OC/0bc4ZQKBgQDL1KB2f4VlwVG9kiWj\n" +
+//            "NzFZGCT8Jj0vyLcJ3k5Nb28TwUR5gZJsq7uJDnYXk0Z5ifomzrsDNxDE0zKVpd4W\n" +
+//            "dTNQQGOi+Ewvw5TjFTZzvK1OL1v/LXii4wQsh5frIOG79X3SXAWXwWcwb9JX/ed0\n" +
+//            "mDcKnJ+I//Jk0SEOhtvChmmAAQ==\n" +
+//            "-----END PRIVATE KEY-----\n";
+
 
 
     String NOTIFY_URL = "https://api.iclickdesign.com/wxPay/"; //回调地址
-
 
     String MCH_ID = "1582797471"; //商户号
 

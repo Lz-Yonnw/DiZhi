@@ -1,20 +1,22 @@
 package com.ruoyi.system.service;
 
-import java.util.List;
 import com.ruoyi.system.domain.TbUserInfo;
 import com.ruoyi.system.domain.TbUserSole;
+import com.ruoyi.system.domain.dto.TbUserDescDto;
+
+import java.util.List;
 
 /**
  * 用户信息Service接口
- * 
+ *
  * @author zzz
  * @date 2021-09-13
  */
-public interface ITbUserInfoService 
+public interface ITbUserInfoService
 {
     /**
      * 查询用户信息
-     * 
+     *
      * @param id 用户信息ID
      * @return 用户信息
      */
@@ -23,8 +25,15 @@ public interface ITbUserInfoService
     public TbUserInfo selectTbUserInfoByOtherParam(TbUserInfo tbUserInfo);
 
     /**
+     * 用户信息详情
+     * @param phoneNumber
+     * @return
+     */
+    public TbUserDescDto selectTbUserDescBy(String phoneNumber);
+
+    /**
      * 查询用户信息列表
-     * 
+     *
      * @param tbUserInfo 用户信息
      * @return 用户信息集合
      */
@@ -32,7 +41,7 @@ public interface ITbUserInfoService
 
     /**
      * 新增用户信息
-     * 
+     *
      * @param tbUserInfo 用户信息
      * @return 结果
      */
@@ -40,7 +49,7 @@ public interface ITbUserInfoService
 
     /**
      * 修改用户信息
-     * 
+     *
      * @param tbUserInfo 用户信息
      * @return 结果
      */
@@ -48,7 +57,7 @@ public interface ITbUserInfoService
 
     /**
      * 批量删除用户信息
-     * 
+     *
      * @param ids 需要删除的用户信息ID
      * @return 结果
      */
@@ -56,7 +65,7 @@ public interface ITbUserInfoService
 
     /**
      * 删除用户信息信息
-     * 
+     *
      * @param id 用户信息ID
      * @return 结果
      */

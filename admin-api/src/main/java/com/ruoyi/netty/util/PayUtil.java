@@ -118,11 +118,6 @@ public class PayUtil {
      */
     public String requestH5fPartnerid(String orderSn,int total,String description) throws Exception {
 
-
-
-
-
-
         HttpPost httpPost = new HttpPost("https://api.mch.weixin.qq.com/v3/pay/transactions/h5");
         httpPost.addHeader("Accept", "application/json");
         httpPost.addHeader("Content-type","application/json; charset=utf-8");
@@ -166,7 +161,19 @@ public class PayUtil {
      */
     public String requestH5Partnerid(String orderSn,int total,String description) throws Exception {
 
-
+        PrivateKey merchantPrivateKey = PemUtil.loadPrivateKey(new ByteArrayInputStream(PayConstants.privateKey.getBytes("utf-8")));
+        // 获取证书管理器实例
+        certificatesManager = CertificatesManager.getInstance();
+        // 向证书管理器增加需要自动更新平台证书的商户信息
+        certificatesManager.putMerchant(PayConstants.MCH_ID, new WechatPay2Credentials(PayConstants.MCH_ID,
+                        new PrivateKeySigner(PayConstants.MCH_SERIAL_NO, merchantPrivateKey)),
+                PayConstants.API_3KEY.getBytes(StandardCharsets.UTF_8));
+        // 从证书管理器中获取verifier
+        verifier = certificatesManager.getVerifier(PayConstants.MCH_ID);
+        httpClient = WechatPayHttpClientBuilder.create()
+                .withMerchant(PayConstants.MCH_ID, PayConstants.MCH_SERIAL_NO, merchantPrivateKey)
+                .withValidator(new WechatPay2Validator(certificatesManager.getVerifier(PayConstants.MCH_ID)))
+                .build();
 
 
 
@@ -410,8 +417,8 @@ public class PayUtil {
 
 //        orderCheckList("4200001521202207011314708946");
 
-//        String feoinogejge = requestH5fPartnerid("456435151616633", 1, "feoinogejge");
-//        System.out.println(feoinogejge);
+        String feoinogejge = requestH5fPartnerid("456435151616633", 1, "feoinogejge");
+        System.out.println(feoinogejge);
 
 
 //        PayUtil payUtil = new PayUtil();
@@ -431,6 +438,9 @@ public class PayUtil {
      * @return
      */
     public static String decryptToString(SuccessCallBackObj successCallBackObj){
+        if(successCallBackObj.getResource().getAssociated_data()==null){
+            return null;
+        }
         String associated_data = successCallBackObj.getResource().getAssociated_data();
         String nonce = successCallBackObj.getResource().getNonce();
         String ciphertext = successCallBackObj.getResource().getCiphertext();

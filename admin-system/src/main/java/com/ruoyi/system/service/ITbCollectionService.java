@@ -13,6 +13,13 @@ import java.util.List;
 public interface ITbCollectionService
 {
     /**
+     * 收藏数量
+     * @param userId
+     * @return
+     */
+    public int selectTbCollectionCountByUserId(Integer userId);
+
+    /**
      * 查询收藏列表
      *
      * @param tbCollection 收藏

@@ -1,19 +1,21 @@
 package com.ruoyi.system.mapper;
 
-import java.util.List;
 import com.ruoyi.system.domain.TbUserWardrobe;
+import org.apache.ibatis.annotations.Select;
+
+import java.util.List;
 
 /**
  * 衣柜列表Mapper接口
- * 
+ *
  * @author zzz
  * @date 2021-09-25
  */
-public interface TbUserWardrobeMapper 
+public interface TbUserWardrobeMapper
 {
     /**
      * 查询衣柜列表
-     * 
+     *
      * @param id 衣柜列表ID
      * @return 衣柜列表
      */
@@ -21,7 +23,7 @@ public interface TbUserWardrobeMapper
 
     /**
      * 查询衣柜列表列表
-     * 
+     *
      * @param tbUserWardrobe 衣柜列表
      * @return 衣柜列表集合
      */
@@ -29,7 +31,7 @@ public interface TbUserWardrobeMapper
 
     /**
      * 新增衣柜列表
-     * 
+     *
      * @param tbUserWardrobe 衣柜列表
      * @return 结果
      */
@@ -37,7 +39,7 @@ public interface TbUserWardrobeMapper
 
     /**
      * 修改衣柜列表
-     * 
+     *
      * @param tbUserWardrobe 衣柜列表
      * @return 结果
      */
@@ -45,7 +47,7 @@ public interface TbUserWardrobeMapper
 
     /**
      * 删除衣柜列表
-     * 
+     *
      * @param id 衣柜列表ID
      * @return 结果
      */
@@ -53,7 +55,7 @@ public interface TbUserWardrobeMapper
 
     /**
      * 批量删除衣柜列表
-     * 
+     *
      * @param ids 需要删除的数据ID
      * @return 结果
      */

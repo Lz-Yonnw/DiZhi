@@ -23,6 +23,16 @@ public class TbCollectionServiceImpl implements ITbCollectionService {
     private TbUserInfoMapper tbUserInfoMapper;
 
     /**
+     * 收藏数量
+     * @param userId
+     * @return
+     */
+    @Override
+    public int selectTbCollectionCountByUserId(Integer userId) {
+        return tbCollectionMapper.selectTbCollectionCountByUserId(userId);
+    }
+
+    /**
      * 查询收藏列表
      *
      * @param tbCollection 收藏

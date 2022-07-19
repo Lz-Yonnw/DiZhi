@@ -39,6 +39,16 @@ public class TbUserCouponServiceImpl implements ITbUserCouponService
     }
 
     /**
+     * 优惠价数量
+     * @param userId
+     * @return
+     */
+    @Override
+    public int selectTbUserCouponCountByUserId(Integer userId) {
+        return tbUserCouponMapper.selectTbUserCouponCountByUserId(userId);
+    }
+
+    /**
      * 根据用户查询
      * @param userId
      * @return
