@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.TbUserLevelMapper">
+    
+    <resultMap type="TbUserLevel" id="TbUserLevelResult">
+        <result property="id"    column="id"    />
+        <result property="name"    column="name"    />
+        <result property="value"    column="value"    />
+        <result property="redoNumber"    column="redo_number"    />
+    </resultMap>
+
+    <sql id="selectTbUserLevelVo">
+        select id, name, value, redo_number from tb_user_level
+    </sql>
+
+    <select id="selectTbUserLevelList" parameterType="TbUserLevel" resultMap="TbUserLevelResult">
+        <include refid="selectTbUserLevelVo"/>
+        <where>  
+            <if test="name != null  and name != ''"> and name like concat('%', #{name}, '%')</if>
+            <if test="value != null "> and value = #{value}</if>
+            <if test="redoNumber != null "> and redo_number = #{redoNumber}</if>
+        </where>
+    </select>
+    
+    <select id="selectTbUserLevelById" parameterType="Long" resultMap="TbUserLevelResult">
+        <include refid="selectTbUserLevelVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insertTbUserLevel" parameterType="TbUserLevel" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_user_level
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="name != null">name,</if>
+            <if test="value != null">value,</if>
+            <if test="redoNumber != null">redo_number,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="name != null">#{name},</if>
+            <if test="value != null">#{value},</if>
+            <if test="redoNumber != null">#{redoNumber},</if>
+         </trim>
+    </insert>
+
+    <update id="updateTbUserLevel" parameterType="TbUserLevel">
+        update tb_user_level
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="name != null">name = #{name},</if>
+            <if test="value != null">value = #{value},</if>
+            <if test="redoNumber != null">redo_number = #{redoNumber},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+    <delete id="deleteTbUserLevelById" parameterType="Long">
+        delete from tb_user_level where id = #{id}
+    </delete>
+
+    <delete id="deleteTbUserLevelByIds" parameterType="String">
+        delete from tb_user_level where id in 
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+</mapper>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.system.mapper.TbOrderReturnMapper">
+
+    <resultMap type="TbOrderReturn" id="TbOrderReturnResult">
+        <result property="id"    column="id"    />
+        <result property="orderSn"    column="order_sn"    />
+        <result property="returnWhy"    column="return_why"    />
+        <result property="returnWhydesc"    column="return_whyDesc"    />
+        <result property="returnImags"    column="return_imags"    />
+        <result property="returnLogisticssn"    column="return_logisticsSn"    />
+        <result property="newAddressid"    column="new_addressId"    />
+        <result property="newClothesjson"    column="new_clothesJson"    />
+        <result property="returnStatus"    column="return_status"    />
+        <result property="createTime"    column="return_time"    />
+        <association property="tbAddressBook" javaType="com.ruoyi.system.domain.TbAddressBook">
+            <result property="id"    column="id"    />
+            <result property="userId"    column="user_id"    />
+            <result property="consignee"    column="consignee"    />
+            <result property="phone"    column="phone"    />
+            <result property="sex"    column="sex"    />
+            <result property="provinceCode"    column="province_code"    />
+            <result property="provinceName"    column="province_name"    />
+            <result property="cityCode"    column="city_code"    />
+            <result property="cityName"    column="city_name"    />
+            <result property="districtCode"    column="district_code"    />
+            <result property="districtName"    column="district_name"    />
+            <result property="detail"    column="detail"    />
+            <result property="label"    column="label"    />
+            <result property="isDefault"    column="is_default"    />
+            <result property="createTime"    column="create_time"    />
+            <result property="updateTime"    column="update_time"    />
+            <result property="createUser"    column="create_user"    />
+            <result property="updateUser"    column="update_user"    />
+            <result property="isDeleted"    column="is_deleted"    />
+        </association>
+    </resultMap>
+
+    <sql id="selectTbOrderReturnVo">
+        select id,order_sn, return_why, return_whyDesc, return_imags, return_logisticsSn, new_addressId, new_clothesJson, return_status,return_time from tb_order_return
+    </sql>
+
+    <select id="selectTborderReturnAddressList" parameterType="TbOrderReturn" resultMap="TbOrderReturnResult">
+        select * from tb_order_return tbor
+        INNER JOIN tb_address_book tbab
+        on tbor.new_addressId=tbab.id
+        <where>
+            <if test="orderSn != null  and orderSn != ''"> and tbor.order_sn = #{orderSn}</if>
+            <if test="returnStatus != null "> and tbor.return_status = #{returnStatus}</if>
+        </where>
+        ORDER BY return_time ASC
+    </select>
+
+    <select id="selectTbOrderReturnList" parameterType="TbOrderReturn" resultMap="TbOrderReturnResult">
+        <include refid="selectTbOrderReturnVo"/>
+        <where>
+            <if test="orderSn != null  and orderSn != ''"> and order_sn = #{orderSn}</if>
+            <if test="returnWhy != null  and returnWhy != ''"> and return_why = #{returnWhy}</if>
+            <if test="returnWhydesc != null  and returnWhydesc != ''"> and return_whyDesc = #{returnWhydesc}</if>
+            <if test="returnImags != null  and returnImags != ''"> and return_imags = #{returnImags}</if>
+            <if test="returnLogisticssn != null  and returnLogisticssn != ''"> and return_logisticsSn = #{returnLogisticssn}</if>
+            <if test="newAddressid != null "> and new_addressId = #{newAddressid}</if>
+            <if test="newClothesjson != null  and newClothesjson != ''"> and new_clothesJson = #{newClothesjson}</if>
+            <if test="returnStatus != null "> and return_status = #{returnStatus}</if>
+        </where>
+        ORDER BY return_time DESC
+    </select>
+
+    <select id="selectTbOrderReturnByOrderSn" parameterType="String" resultMap="TbOrderReturnResult">
+        <include refid="selectTbOrderReturnVo"/>
+        where order_sn = #{orderSn}
+    </select>
+
+    <insert id="insertTbOrderReturn" parameterType="TbOrderReturn">
+        insert into tb_order_return
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="orderSn != null">order_sn,</if>
+            <if test="returnWhy != null">return_why,</if>
+            <if test="returnWhydesc != null">return_whyDesc,</if>
+            <if test="returnImags != null">return_imags,</if>
+            <if test="returnLogisticssn != null">return_logisticsSn,</if>
+            <if test="newAddressid != null">new_addressId,</if>
+            <if test="newClothesjson != null">new_clothesJson,</if>
+            <if test="returnStatus != null">return_status,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="orderSn != null">#{orderSn},</if>
+            <if test="returnWhy != null">#{returnWhy},</if>
+            <if test="returnWhydesc != null">#{returnWhydesc},</if>
+            <if test="returnImags != null">#{returnImags},</if>
+            <if test="returnLogisticssn != null">#{returnLogisticssn},</if>
+            <if test="newAddressid != null">#{newAddressid},</if>
+            <if test="newClothesjson != null">#{newClothesjson},</if>
+            <if test="returnStatus != null">#{returnStatus},</if>
+         </trim>
+    </insert>
+
+    <update id="updateTbOrderReturn" parameterType="TbOrderReturn">
+        update tb_order_return
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="returnWhy != null">return_why = #{returnWhy},</if>
+            <if test="returnWhydesc != null">return_whyDesc = #{returnWhydesc},</if>
+            <if test="returnImags != null">return_imags = #{returnImags},</if>
+            <if test="returnLogisticssn != null">return_logisticsSn = #{returnLogisticssn},</if>
+            <if test="newAddressid != null">new_addressId = #{newAddressid},</if>
+            <if test="newClothesjson != null">new_clothesJson = #{newClothesjson},</if>
+            <if test="returnStatus != null">return_status = #{returnStatus},</if>
+        </trim>
+        where order_sn = #{orderSn}
+    </update>
+
+    <delete id="deleteTbOrderReturnByOrderSn" parameterType="String">
+        delete from tb_order_return where order_sn = #{orderSn}
+    </delete>
+
+    <delete id="deleteTbOrderReturnByOrderSns" parameterType="String">
+        delete from tb_order_return where order_sn in
+        <foreach item="orderSn" collection="array" open="(" separator="," close=")">
+            #{orderSn}
+        </foreach>
+    </delete>
+</mapper>
